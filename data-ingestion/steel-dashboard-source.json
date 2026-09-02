@@ -1,0 +1,57 @@
+{
+  "source_id": "steel-dashboard-public",
+  "name": "钢材市场数据看板（公开快照）",
+  "dashboard_url": "https://sleepycat-db612-d4flpypa62d30215-1466100115.tcloudbaseapp.com/steel-dashboard/",
+  "data_url": "https://sleepycat-db612-d4flpypa62d30215-1466100115.tcloudbaseapp.com/steel-dashboard/data.json",
+  "schedule": "每天 18:00（Asia/Shanghai）",
+  "retry": {
+    "attempts": 3,
+    "timeoutMs": 30000,
+    "baseDelayMs": 800,
+    "maxDelayMs": 8000
+  },
+  "transport": "公开 HTTPS JSON",
+  "excel_role": "人工校核与临时导出，不作为定时任务主入口",
+  "targets": [
+    {
+      "source_key": "inventory.assoc_inv_raw",
+      "indicator_code": "STEEL_ASSOC_MEMBER_INVENTORY",
+      "indicator_name": "Steel Association Member Inventory",
+      "chinese_name": "钢协会员企业库存",
+      "unit": "万吨",
+      "frequency": "旬"
+    },
+    {
+      "source_key": "inventory.social_inv_raw",
+      "indicator_code": "STEEL_SOCIAL_INVENTORY",
+      "indicator_name": "China Steel Social Inventory",
+      "chinese_name": "中国钢材社会库存",
+      "unit": "万吨",
+      "frequency": "旬"
+    },
+    {
+      "source_key": "inventory.op_rate_raw",
+      "indicator_code": "BLAST_FURNACE_OPERATING_RATE",
+      "indicator_name": "Blast Furnace Operating Rate",
+      "chinese_name": "高炉开工率",
+      "unit": "%",
+      "frequency": "周"
+    },
+    {
+      "source_key": "inventory.cap_rate_raw",
+      "indicator_code": "BLAST_FURNACE_CAPACITY_UTILIZATION",
+      "indicator_name": "Blast Furnace Capacity Utilization",
+      "chinese_name": "高炉产能利用率",
+      "unit": "%",
+      "frequency": "周"
+    },
+    {
+      "source_key": "platts_daily",
+      "indicator_code": "PLATTS_IRON_ORE_INDEX",
+      "indicator_name": "Platts Iron Ore Index",
+      "chinese_name": "普氏铁矿石指数",
+      "unit": "USD/ton",
+      "frequency": "日"
+    }
+  ]
+}

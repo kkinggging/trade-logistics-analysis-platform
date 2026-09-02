@@ -1,0 +1,15 @@
+{
+  "source_id": "steel-export-dashboard-public",
+  "name": "海关钢材出口数据看板（公开快照）",
+  "dashboard_url": "https://sleepycat-db612-d4flpypa62d30215-1466100115.tcloudbaseapp.com/steel-export-dashboard/index.html",
+  "assets_base_url": "https://sleepycat-db612-d4flpypa62d30215-1466100115.tcloudbaseapp.com/steel-export-dashboard/assets",
+  "schedule": "每天 18:00（Asia/Shanghai）",
+  "retry": {
+    "attempts": 3,
+    "timeoutMs": 30000,
+    "baseDelayMs": 800,
+    "maxDelayMs": 8000
+  },
+  "transport": "公开 HTTPS codebook + gzip 二进制分片",
+  "excel_role": "人工校核与临时导出，不作为定时任务主入口"
+}

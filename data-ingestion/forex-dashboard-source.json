@@ -1,0 +1,15 @@
+{
+  "source_id": "forex-dashboard-public",
+  "name": "外汇汇率历史看板（公开快照）",
+  "dashboard_url": "https://sleepycat-db612-d4flpypa62d30215-1466100115.tcloudbaseapp.com/forex-dashboard/",
+  "data_url": "https://sleepycat-db612-d4flpypa62d30215-1466100115.tcloudbaseapp.com/forex-dashboard/data.json",
+  "schedule": "每天 18:00（Asia/Shanghai）",
+  "retry": {
+    "attempts": 3,
+    "timeoutMs": 30000,
+    "baseDelayMs": 800,
+    "maxDelayMs": 8000
+  },
+  "symbols": ["DINIW", "USDCNY", "EURUSD"],
+  "window": "三者共同近12个月交易日"
+}

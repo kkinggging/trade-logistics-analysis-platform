@@ -1,0 +1,272 @@
+[
+  {
+    "scenario_id": "FX-2026-08-BASE",
+    "base_currency": "USD",
+    "quote_currency": "CNY",
+    "scenario_name": "Current Rate",
+    "base_rate": 7.24,
+    "scenario_pct": 0.0,
+    "scenario_rate": 7.24,
+    "as_of": "2026-08-26"
+  },
+  {
+    "scenario_id": "FX-2026-08-CNY-S1",
+    "base_currency": "USD",
+    "quote_currency": "CNY",
+    "scenario_name": "CNY Strengthens 3%",
+    "base_rate": 7.24,
+    "scenario_pct": -3.0,
+    "scenario_rate": 7.02,
+    "as_of": "2026-08-26"
+  },
+  {
+    "scenario_id": "FX-2026-08-CNY-S2",
+    "base_currency": "USD",
+    "quote_currency": "CNY",
+    "scenario_name": "CNY Weakens 5%",
+    "base_rate": 7.24,
+    "scenario_pct": 5.0,
+    "scenario_rate": 7.60,
+    "as_of": "2026-08-26"
+  },
+  {
+    "scenario_id": "FX-2026-08-EUR-BASE",
+    "base_currency": "USD",
+    "quote_currency": "EUR",
+    "scenario_name": "Current Rate",
+    "base_rate": 0.92,
+    "scenario_pct": 0.0,
+    "scenario_rate": 0.92,
+    "as_of": "2026-08-26"
+  },
+  {
+    "scenario_id": "FX-2026-08-EUR-S1",
+    "base_currency": "USD",
+    "quote_currency": "EUR",
+    "scenario_name": "EUR Strengthens 4%",
+    "base_rate": 0.92,
+    "scenario_pct": 4.0,
+    "scenario_rate": 0.957,
+    "as_of": "2026-08-26"
+  },
+  {
+    "scenario_id": "FX-2026-08-EUR-S2",
+    "base_currency": "USD",
+    "quote_currency": "EUR",
+    "scenario_name": "EUR Weakens 3%",
+    "base_rate": 0.92,
+    "scenario_pct": -3.0,
+    "scenario_rate": 0.892,
+    "as_of": "2026-08-26"
+  },
+  {
+    "scenario_id": "FX-2026-08-JPY-BASE",
+    "base_currency": "USD",
+    "quote_currency": "JPY",
+    "scenario_name": "Current Rate",
+    "base_rate": 148.5,
+    "scenario_pct": 0.0,
+    "scenario_rate": 148.5,
+    "as_of": "2026-08-26"
+  },
+  {
+    "scenario_id": "FX-2026-08-JPY-S1",
+    "base_currency": "USD",
+    "quote_currency": "JPY",
+    "scenario_name": "JPY Strengthens 5%",
+    "base_rate": 148.5,
+    "scenario_pct": -5.0,
+    "scenario_rate": 141.1,
+    "as_of": "2026-08-26"
+  },
+  {
+    "scenario_id": "FX-2026-08-JPY-S2",
+    "base_currency": "USD",
+    "quote_currency": "JPY",
+    "scenario_name": "JPY Weakens 6%",
+    "base_rate": 148.5,
+    "scenario_pct": 6.0,
+    "scenario_rate": 157.4,
+    "as_of": "2026-08-26"
+  },
+  {
+    "scenario_id": "FX-2026-08-KRW-BASE",
+    "base_currency": "USD",
+    "quote_currency": "KRW",
+    "scenario_name": "Current Rate",
+    "base_rate": 1335.0,
+    "scenario_pct": 0.0,
+    "scenario_rate": 1335.0,
+    "as_of": "2026-08-26"
+  },
+  {
+    "scenario_id": "FX-2026-08-KRW-S1",
+    "base_currency": "USD",
+    "quote_currency": "KRW",
+    "scenario_name": "KRW Strengthens 4%",
+    "base_rate": 1335.0,
+    "scenario_pct": -4.0,
+    "scenario_rate": 1281.6,
+    "as_of": "2026-08-26"
+  },
+  {
+    "scenario_id": "FX-2026-08-KRW-S2",
+    "base_currency": "USD",
+    "quote_currency": "KRW",
+    "scenario_name": "KRW Weakens 5%",
+    "base_rate": 1335.0,
+    "scenario_pct": 5.0,
+    "scenario_rate": 1401.8,
+    "as_of": "2026-08-26"
+  },
+  {
+    "scenario_id": "FX-2026-08-INR-BASE",
+    "base_currency": "USD",
+    "quote_currency": "INR",
+    "scenario_name": "Current Rate",
+    "base_rate": 83.2,
+    "scenario_pct": 0.0,
+    "scenario_rate": 83.2,
+    "as_of": "2026-08-26"
+  },
+  {
+    "scenario_id": "FX-2026-08-INR-S1",
+    "base_currency": "USD",
+    "quote_currency": "INR",
+    "scenario_name": "INR Strengthens 2%",
+    "base_rate": 83.2,
+    "scenario_pct": -2.0,
+    "scenario_rate": 81.5,
+    "as_of": "2026-08-26"
+  },
+  {
+    "scenario_id": "FX-2026-08-INR-S2",
+    "base_currency": "USD",
+    "quote_currency": "INR",
+    "scenario_name": "INR Weakens 4%",
+    "base_rate": 83.2,
+    "scenario_pct": 4.0,
+    "scenario_rate": 86.5,
+    "as_of": "2026-08-26"
+  },
+  {
+    "scenario_id": "FX-2026-08-THB-BASE",
+    "base_currency": "USD",
+    "quote_currency": "THB",
+    "scenario_name": "Current Rate",
+    "base_rate": 35.8,
+    "scenario_pct": 0.0,
+    "scenario_rate": 35.8,
+    "as_of": "2026-08-26"
+  },
+  {
+    "scenario_id": "FX-2026-08-THB-S1",
+    "base_currency": "USD",
+    "quote_currency": "THB",
+    "scenario_name": "THB Strengthens 3%",
+    "base_rate": 35.8,
+    "scenario_pct": -3.0,
+    "scenario_rate": 34.7,
+    "as_of": "2026-08-26"
+  },
+  {
+    "scenario_id": "FX-2026-08-THB-S2",
+    "base_currency": "USD",
+    "quote_currency": "THB",
+    "scenario_name": "THB Weakens 4%",
+    "base_rate": 35.8,
+    "scenario_pct": 4.0,
+    "scenario_rate": 37.2,
+    "as_of": "2026-08-26"
+  },
+  {
+    "scenario_id": "FX-2026-08-VND-BASE",
+    "base_currency": "USD",
+    "quote_currency": "VND",
+    "scenario_name": "Current Rate",
+    "base_rate": 25450.0,
+    "scenario_pct": 0.0,
+    "scenario_rate": 25450.0,
+    "as_of": "2026-08-26"
+  },
+  {
+    "scenario_id": "FX-2026-08-VND-S1",
+    "base_currency": "USD",
+    "quote_currency": "VND",
+    "scenario_name": "VND Strengthens 2%",
+    "base_rate": 25450.0,
+    "scenario_pct": -2.0,
+    "scenario_rate": 24941.0,
+    "as_of": "2026-08-26"
+  },
+  {
+    "scenario_id": "FX-2026-08-VND-S2",
+    "base_currency": "USD",
+    "quote_currency": "VND",
+    "scenario_name": "VND Weakens 3%",
+    "base_rate": 25450.0,
+    "scenario_pct": 3.0,
+    "scenario_rate": 26213.5,
+    "as_of": "2026-08-26"
+  },
+  {
+    "scenario_id": "FX-2026-08-GBP-BASE",
+    "base_currency": "USD",
+    "quote_currency": "GBP",
+    "scenario_name": "Current Rate",
+    "base_rate": 0.79,
+    "scenario_pct": 0.0,
+    "scenario_rate": 0.79,
+    "as_of": "2026-08-26"
+  },
+  {
+    "scenario_id": "FX-2026-08-GBP-S1",
+    "base_currency": "USD",
+    "quote_currency": "GBP",
+    "scenario_name": "GBP Strengthens 3%",
+    "base_rate": 0.79,
+    "scenario_pct": 3.0,
+    "scenario_rate": 0.814,
+    "as_of": "2026-08-26"
+  },
+  {
+    "scenario_id": "FX-2026-08-GBP-S2",
+    "base_currency": "USD",
+    "quote_currency": "GBP",
+    "scenario_name": "GBP Weakens 4%",
+    "base_rate": 0.79,
+    "scenario_pct": -4.0,
+    "scenario_rate": 0.758,
+    "as_of": "2026-08-26"
+  },
+  {
+    "scenario_id": "FX-2026-08-STRESS-CNY",
+    "base_currency": "USD",
+    "quote_currency": "CNY",
+    "scenario_name": "CNY Crisis +15%",
+    "base_rate": 7.24,
+    "scenario_pct": 15.0,
+    "scenario_rate": 8.33,
+    "as_of": "2026-08-26"
+  },
+  {
+    "scenario_id": "FX-2026-08-STRESS-EUR",
+    "base_currency": "USD",
+    "quote_currency": "EUR",
+    "scenario_name": "EUR Crisis +10%",
+    "base_rate": 0.92,
+    "scenario_pct": 10.0,
+    "scenario_rate": 1.012,
+    "as_of": "2026-08-26"
+  },
+  {
+    "scenario_id": "FX-2026-08-BULL-CNY",
+    "base_currency": "USD",
+    "quote_currency": "CNY",
+    "scenario_name": "CNY Bull Case -8%",
+    "base_rate": 7.24,
+    "scenario_pct": -8.0,
+    "scenario_rate": 6.66,
+    "as_of": "2026-08-26"
+  }
+]

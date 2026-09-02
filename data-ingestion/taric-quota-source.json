@@ -1,0 +1,18 @@
+{
+  "source_id": "taric-quota-dashboard-public",
+  "name": "EU / UK 关税配额数据看板",
+  "dashboard_url": "https://2dd5c5df3ee548b0bdeaf88032624bd6.app.codebuddy.work/index.html",
+  "csv_url": "https://2dd5c5df3ee548b0bdeaf88032624bd6.app.codebuddy.work/taric_quota_data.csv",
+  "uk_csv_url": "https://2dd5c5df3ee548b0bdeaf88032624bd6.app.codebuddy.work/uk_quota_data.csv",
+  "schedule": "每天 18:00（Asia/Shanghai）",
+  "retry": {
+    "attempts": 3,
+    "timeoutMs": 30000,
+    "baseDelayMs": 800,
+    "maxDelayMs": 8000
+  },
+  "transport": "公开 HTTPS CSV",
+  "csv_role": "定时抓取主入口；网页下载按钮用于人工核验",
+  "unit_conversion": "Kilogram → 吨（÷1000）",
+  "scope": "EU TARIC 与 UK 配额分源展示；按 Code/订单号、配额期和 fetch_date 去重"
+}

@@ -1,0 +1,10 @@
+{
+  "source_id": "trade-remedy-dashboard-public",
+  "name": "出口贸易救济案件看板（钢材）",
+  "dashboard_url": "https://9b513f610dab4bbdb84874f48e01629d.app.codebuddy.work/#sec-type",
+  "data_role": "页面内嵌全量案件 JSON；页面下载按钮用于人工核验",
+  "schedule": "每天 18:00（Asia/Shanghai）",
+  "transport": "公开 HTTPS HTML，解析 window.__DATA__",
+  "retry": { "attempts": 3, "timeoutMs": 30000, "baseDelayMs": 800, "maxDelayMs": 8000 },
+  "coverage": "钢材全部大类；反倾销、反补贴、保障措施；案件阶段时间线、HS 税号、措施和首钢适用值"
+}

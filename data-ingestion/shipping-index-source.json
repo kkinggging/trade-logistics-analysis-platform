@@ -1,0 +1,23 @@
+{
+  "source_id": "shipping-index-dashboard-public",
+  "name": "航运指数数据看板（公开快照）",
+  "dashboard_url": "https://cb3e42b893e04a0daa4c606705c2dacf.app.codebuddy.work/index.html",
+  "data_base_url": "https://cb3e42b893e04a0daa4c606705c2dacf.app.codebuddy.work/data",
+  "schedule": "每天 18:00（Asia/Shanghai）",
+  "transport": "公开 HTTPS JSON",
+  "excel_role": "人工抽样校核与临时导出，不作为定时任务主入口",
+  "sources": ["ccfi.json", "scfi.json", "bsi.json", "bdi.json", "brent.json", "nymex.json"],
+  "retry": {
+    "attempts": 3,
+    "timeoutMs": 30000,
+    "baseDelayMs": 800,
+    "maxDelayMs": 8000
+  },
+  "validation": {
+    "required_series": ["CCFI", "SCFI", "BSI", "BDI", "BRENT", "NYMEX"],
+    "minimum_points_per_series": 2,
+    "ccfi_core_route": "中国出口集装箱运价综合指数",
+    "reject_duplicate_date_route": true,
+    "reject_non_finite_value": true
+  }
+}

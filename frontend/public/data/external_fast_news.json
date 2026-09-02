@@ -1,0 +1,32 @@
+{
+  "schema_version": "1.0",
+  "source": {
+    "source_id": "mysteel-fast-news",
+    "name": "我的钢铁网快讯",
+    "dashboard_url": "https://www.mysteel.com/fastcomment/#/",
+    "api_url": "https://openapi.mysteel.com/without_sign/newsflash/flashnews/query_by_tags.htm",
+    "taxonomy_url": "https://a.mysteelcdn.com/common/publish/newsflash/newsflash_column.json",
+    "captured_at": "2026-09-02T08:23:21.000Z",
+    "coverage_start": "2026-09-02",
+    "coverage_end": "2026-09-02",
+    "latest_published_at": "2026-09-02T16:21:00+08:00",
+    "timezone": "Asia/Shanghai",
+    "fetch_mode": "observed_dom_fixture",
+    "request_params": { "pageSize": 100, "target_date": "2026-09-02", "note": "等待部署环境放行 API 后由适配器替换" },
+    "raw_sha256": "observed-dom-fixture-2026-09-02",
+    "page_count": 1,
+    "reported_total": 2690,
+    "truncation_detected": true,
+    "watermark": { "publisher_time_ms": 1788344460000, "id": "fixture-mysteel-20260902-001" }
+  },
+  "items": [
+    { "news_id": "fixture-mysteel-20260902-001", "published_at": "2026-09-02T16:21:00+08:00", "published_at_ms": 1788344460000, "timezone": "Asia/Shanghai", "content_text": "9月2日午后商丘市场建筑钢材价格下跌，现主流钢厂螺纹价格3300左右。", "category": { "id": 2, "name": "黑色金属" }, "section": { "id": 0, "name": "价格" }, "products": [{ "id": "螺纹钢", "name": "螺纹钢", "source": "source" }], "regions": [{ "id": "商丘", "name": "商丘" }], "source_name": "我的钢铁网", "source_url": null, "in_article_url": null, "out_article_url": null, "in_article_title": null, "out_article_title": null, "source_link_status": "no_link", "platform_product_line": null, "mapping_status": "unmapped", "quality_flags": ["observed_dom_fixture", "source_link_missing"] },
+    { "news_id": "fixture-mysteel-20260902-002", "published_at": "2026-09-02T16:21:00+08:00", "published_at_ms": 1788344460000, "timezone": "Asia/Shanghai", "content_text": "9月2日尾盘宁波中板价格暂稳，普板：六钢3600，旋力3600，西城3580；低合金：六钢3740，旋力3740，萍钢3730。(单位：元/吨）", "category": { "id": 2, "name": "黑色金属" }, "section": { "id": 0, "name": "价格" }, "products": [{ "id": "低合金高强板", "name": "低合金高强板", "source": "source" }], "regions": [{ "id": "宁波", "name": "宁波" }], "source_name": "我的钢铁网", "source_url": null, "in_article_url": null, "out_article_url": null, "in_article_title": null, "out_article_title": null, "source_link_status": "no_link", "platform_product_line": null, "mapping_status": "unmapped", "quality_flags": ["observed_dom_fixture", "source_link_missing"] },
+    { "news_id": "fixture-mysteel-20260902-003", "published_at": "2026-09-02T16:20:00+08:00", "published_at_ms": 1788344400000, "timezone": "Asia/Shanghai", "content_text": "调价：邯郸热轧板卷价格午后下调10，普卷：邯钢3270，天铁3250，裕华3240。宽卷：邯宝3460。低合金卷：邯钢3390。（元/吨）", "category": { "id": 2, "name": "黑色金属" }, "section": { "id": 0, "name": "价格" }, "products": [{ "id": "热轧板卷", "name": "热轧板卷", "source": "source" }], "regions": [{ "id": "邯郸", "name": "邯郸" }], "source_name": "我的钢铁网", "source_url": "http://rezha.mysteel.com/m/26090216/8D0D4928B3EDA570.html", "in_article_url": "http://rezha.mysteel.com/m/26090216/8D0D4928B3EDA570.html", "out_article_url": null, "in_article_title": "9月2日(16:20)邯郸市场热轧板卷价格行情", "out_article_title": null, "source_link_status": "article_link", "platform_product_line": "hot-rolled", "mapping_status": "mapped", "quality_flags": ["observed_dom_fixture"] },
+    { "news_id": "fixture-mysteel-20260902-004", "published_at": "2026-09-02T16:20:00+08:00", "published_at_ms": 1788344400000, "timezone": "Asia/Shanghai", "content_text": "成本端支撑上移，坯价底部抬升。焦炭提涨落地后，焦煤端延续偏强，焦企在亏损下仍有继续提涨诉求，钢坯成本重心大概率继续上移。钢厂处于亏损状态，成本支撑将由“托底”转为“助推”，为价格上行提供内生动力。", "category": { "id": 2, "name": "黑色金属" }, "section": { "id": 0, "name": "分析" }, "products": [{ "id": "焦炭", "name": "焦炭", "source": "source" }, { "id": "炼焦煤", "name": "炼焦煤", "source": "source" }, { "id": "钢坯", "name": "钢坯", "source": "source" }], "regions": [], "source_name": "我的钢铁网", "source_url": "http://gangpi.mysteel.com/a/26090215/9C72276B2F7AF894.html", "in_article_url": "http://gangpi.mysteel.com/a/26090215/9C72276B2F7AF894.html", "out_article_url": null, "in_article_title": "Mysteel月报：9月全国钢坯仍有上行空间", "out_article_title": null, "source_link_status": "article_link", "platform_product_line": null, "mapping_status": "ambiguous", "quality_flags": ["observed_dom_fixture", "content_observed_truncated_by_source"] },
+    { "news_id": "fixture-mysteel-20260902-005", "published_at": "2026-09-02T16:19:00+08:00", "published_at_ms": 1788344340000, "timezone": "Asia/Shanghai", "content_text": "2026年10月份宝山电镀锡（铬）、梅山、武钢日铁电镀锡产品价格在9月份的基础上调整，电镀锡基价上调150元/吨，电镀铬基价上调150元/吨。其它政策维持不变，以上价格均为不含税价格，调整通知自公布之日起生效执行。", "category": { "id": 2, "name": "黑色金属" }, "section": { "id": 0, "name": "动态" }, "products": [{ "id": "铬", "name": "铬", "source": "source" }], "regions": [], "source_name": "我的钢铁网", "source_url": null, "in_article_url": null, "out_article_url": null, "in_article_title": null, "out_article_title": null, "source_link_status": "no_link", "platform_product_line": null, "mapping_status": "unmapped", "quality_flags": ["observed_dom_fixture", "source_link_missing"] },
+    { "news_id": "fixture-mysteel-20260902-006", "published_at": "2026-09-02T16:19:00+08:00", "published_at_ms": 1788344340000, "timezone": "Asia/Shanghai", "content_text": "9月2日，广东省三防办、广东省气象局发布台风“沙德尔”强降雨防御提醒。受台风“沙德尔”影响，9月2日至4日，广东省东部市县有大雨到暴雨，局部大暴雨；南海东北部及广东海面风力6~8级阵风8~10级，沿海市县和高地、江河湖面阵风6~8级。", "category": { "id": 1, "name": "宏观" }, "section": { "id": 0, "name": "动态" }, "products": [], "regions": [{ "id": "广东", "name": "广东" }], "source_name": "我的钢铁网", "source_url": null, "in_article_url": null, "out_article_url": null, "in_article_title": null, "out_article_title": null, "source_link_status": "no_link", "platform_product_line": null, "mapping_status": "unmapped", "quality_flags": ["observed_dom_fixture", "source_link_missing"] }
+  ],
+  "quality": { "raw_count": 6, "accepted_count": 6, "rejected_count": 0, "deduped_count": 0, "missing_source_link_count": 4, "missing_product_count": 1, "malformed_content_count": 0, "duplicate_group_count": 0, "warnings": ["这是页面核验样例，并非接口全量快照；API 抓取器放行后将在每天任务中覆盖。", "源站页面显示今日更新 2690 条，但样例仅保留 6 条用于验收页面，不代表全量。"] },
+  "taxonomy": { "source": "页面分类", "categories": ["宏观", "黑色金属", "不锈钢", "新能源", "有色金属", "建筑材料", "农产品", "再生资源", "贵金属", "下游", "前沿"] }
+}

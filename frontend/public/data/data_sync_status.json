@@ -1,0 +1,69 @@
+{
+  "schema_version": "1.1",
+  "generated_at": "2026-09-01T01:15:21.195Z",
+  "schedule": "每天 18:00（Asia/Shanghai）",
+  "scheduler": "cron 或 launchd（由部署环境安装；本仓库不自动启动后台服务）",
+  "sources": {
+    "steel-dashboard-public": {
+      "source_id": "steel-dashboard-public",
+      "state": "fallback",
+      "attempted_at": "2026-08-30T12:58:30.684Z",
+      "success_at": "2026-08-28T15:03:01.090Z",
+      "snapshot_captured_at": "2026-08-28T15:03:01.090Z",
+      "coverage_end": "2026-08-28",
+      "error": "本次抓取失败，继续使用上一次成功快照"
+    },
+    "steel-export-dashboard-public": {
+      "source_id": "steel-export-dashboard-public",
+      "state": "fallback",
+      "attempted_at": "2026-08-30T12:58:30.684Z",
+      "success_at": "2026-08-28T17:21:22.037Z",
+      "snapshot_captured_at": "2026-08-28T17:21:22.037Z",
+      "coverage_end": "2026-07",
+      "error": "本次抓取失败，继续使用上一次成功快照"
+    },
+    "forex-dashboard-public": {
+      "source_id": "forex-dashboard-public",
+      "state": "fallback",
+      "attempted_at": "2026-08-30T12:58:30.684Z",
+      "success_at": "2026-08-29T13:20:05.535Z",
+      "snapshot_captured_at": "2026-08-29T13:20:05.535Z",
+      "coverage_end": "2026-08-26",
+      "error": "本次抓取失败，继续使用上一次成功快照"
+    },
+    "taric-quota-dashboard-public": {
+      "source_id": "taric-quota-dashboard-public",
+      "state": "fresh",
+      "attempted_at": "2026-09-01T01:15:21.195Z",
+      "success_at": "2026-09-01T01:15:21.195Z",
+      "snapshot_captured_at": "2026-09-01T01:15:21.195Z",
+      "coverage_end": "2026-08-31"
+    },
+    "shipping-index-dashboard-public": {
+      "source_id": "shipping-index-dashboard-public",
+      "state": "fallback",
+      "attempted_at": "2026-08-30T12:58:30.684Z",
+      "success_at": "2026-08-30T12:48:34.240Z",
+      "snapshot_captured_at": "2026-08-30T12:48:34.240Z",
+      "coverage_end": "2026-08-24",
+      "error": "本次抓取失败，继续使用上一次成功快照"
+    },
+    "trade-remedy-dashboard-public": {
+      "source_id": "trade-remedy-dashboard-public",
+      "state": "fresh",
+      "attempted_at": "2026-08-31T15:11:25.642Z",
+      "success_at": "2026-08-31T15:11:25.642Z",
+      "snapshot_captured_at": "2026-08-31T15:11:25.642Z",
+      "coverage_end": "2026-08-22"
+    },
+    "mysteel-fast-news": {
+      "source_id": "mysteel-fast-news",
+      "state": "fallback",
+      "attempted_at": "2026-09-02T08:23:21.000Z",
+      "success_at": "2026-09-02T08:23:21.000Z",
+      "snapshot_captured_at": "2026-09-02T08:23:21.000Z",
+      "coverage_end": "2026-09-02",
+      "error": "当前为页面核验样例；部署环境放行 Mysteel API 后由定时适配器替换"
+    }
+  }
+}

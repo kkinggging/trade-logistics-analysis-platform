@@ -1,0 +1,12 @@
+{
+  "source_id": "mysteel-fast-news",
+  "name": "我的钢铁网快讯",
+  "dashboard_url": "https://www.mysteel.com/fastcomment/#/",
+  "api_url": "https://openapi.mysteel.com/without_sign/newsflash/flashnews/query_by_tags.htm",
+  "taxonomy_url": "https://a.mysteelcdn.com/common/publish/newsflash/newsflash_column.json",
+  "schedule": "每天 18:00（Asia/Shanghai）",
+  "page_size": 100,
+  "max_pages": 100,
+  "target_categories": [[2, 84, 584]],
+  "retry": { "attempts": 3, "timeoutMs": 30000, "baseDelayMs": 800, "maxDelayMs": 8000 }
+}

@@ -1,0 +1,28 @@
+# Local dependencies and generated static preview
+frontend/node_modules/
+offline-demo/
+
+# Local demo runtime artifacts
+frontend/.demo-server.log
+frontend/.demo-server.pid
+data-ingestion/.sync-all.lock
+data-ingestion/.sync-all-status.json
+
+# Development-only diagnostic pages
+frontend/diagnose.html
+frontend/test-*.html
+
+# Operating-system/editor artifacts
+.DS_Store
+.idea/
+.vscode/
+*.swp
+
+# Local environment files and secrets
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+

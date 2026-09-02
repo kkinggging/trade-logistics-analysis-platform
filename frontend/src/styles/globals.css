@@ -1,0 +1,368 @@
+:root {
+  /* Restrained dark product palette: depth comes from spacing and motion. */
+  --surface-0: #0b0c10;
+  --surface-1: #111319;
+  --surface-2: #171922;
+  --surface-3: #1d202b;
+  --surface-4: #262a38;
+
+  /* Accent colors */
+  --accent-primary: #a78bfa;
+  --accent-secondary: #5eead4;
+  --accent-warning: #f6c76b;
+  --accent-danger: #fb7185;
+  --accent-warning-soft: rgba(246, 199, 107, 0.12);
+  --accent-secondary-soft: rgba(94, 234, 212, 0.1);
+  --accent-danger-soft: rgba(251, 113, 133, 0.1);
+  --accent-danger-border: rgba(251, 113, 133, 0.45);
+  --kind-market: #a78bfa;
+  --kind-market-soft: rgba(167, 139, 250, 0.12);
+  --kind-fx: #9ac7ff;
+  --kind-fx-soft: rgba(100, 170, 255, 0.11);
+  --accent-primary-soft: rgba(167, 139, 250, 0.14);
+  --accent-primary-wash: rgba(167, 139, 250, 0.07);
+  --accent-primary-border: rgba(167, 139, 250, 0.38);
+  --surface-card: rgba(255, 255, 255, 0.035);
+  --surface-card-hover: rgba(255, 255, 255, 0.07);
+
+  /* Text colors */
+  --text-primary: #f4f3f8;
+  --text-secondary: #c0bfca;
+  --text-tertiary: #8d8c99;
+  --text-disabled: #5d5d69;
+
+  /* Border & divider */
+  --border-subtle: rgba(255, 255, 255, 0.08);
+  --border-default: rgba(255, 255, 255, 0.14);
+  --border-emphasis: rgba(255, 255, 255, 0.26);
+
+  /* Spacing scale */
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-5: 1.25rem;
+  --space-6: 1.5rem;
+  --space-8: 2rem;
+  --space-10: 2.5rem;
+  --space-12: 3rem;
+  --space-16: 4rem;
+
+  /* Soft product geometry without turning the UI into decoration. */
+  --radius-sm: 0.5rem;
+  --radius-md: 0.75rem;
+  --radius-lg: 1rem;
+  --radius-xl: 1.25rem;
+  --radius-full: 999px;
+
+  /* Typography */
+  --font-sans: Manrope, 'Noto Sans SC', -apple-system, BlinkMacSystemFont,
+    'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif;
+  --font-serif: var(--font-sans);
+  --font-mono: 'SF Mono', Monaco, 'Cascadia Code', 'Roboto Mono', Consolas,
+    'Courier New', monospace;
+
+  /* Fluid typography */
+  --text-xs: clamp(0.75rem, 0.7rem + 0.2vw, 0.8rem);
+  --text-sm: clamp(0.875rem, 0.8rem + 0.3vw, 0.95rem);
+  --text-base: clamp(1rem, 0.95rem + 0.25vw, 1.125rem);
+  --text-lg: clamp(1.125rem, 1rem + 0.5vw, 1.35rem);
+  --text-xl: clamp(1.25rem, 1.1rem + 0.6vw, 1.5rem);
+  --text-2xl: clamp(1.5rem, 1.3rem + 0.8vw, 1.875rem);
+  --text-3xl: clamp(1.875rem, 1.6rem + 1.2vw, 2.25rem);
+  --text-4xl: clamp(2.25rem, 2rem + 1.5vw, 3rem);
+
+  /* Shadows */
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.2);
+  --shadow-md: 0 12px 30px rgba(0, 0, 0, 0.24);
+  --shadow-lg: 0 18px 48px rgba(0, 0, 0, 0.32);
+  --shadow-xl: 0 26px 70px rgba(0, 0, 0, 0.4);
+
+  /* Transitions */
+  --transition-fast: 150ms cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-base: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-slow: 350ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  /* Z-index */
+  --z-dropdown: 1000;
+  --z-sticky: 1100;
+  --z-modal: 1300;
+  --z-toast: 1400;
+}
+
+:root[data-theme='steel-blue'] {
+  /* 明色钢蓝：与暗色形成明确对照，参考钢材看板的白底、深蓝、橙色强调。 */
+  --surface-0: #f4f6f9;
+  --surface-1: #ffffff;
+  --surface-2: #f7f9fc;
+  --surface-3: #ffffff;
+  --surface-4: #e8eef5;
+  --accent-primary: #1f4e79;
+  --accent-secondary: #2e6da4;
+  --accent-warning: #c66a20;
+  --accent-danger: #bd3f4d;
+  --accent-warning-soft: rgba(232, 132, 42, 0.13);
+  --accent-secondary-soft: rgba(46, 109, 164, 0.12);
+  --accent-danger-soft: rgba(189, 63, 77, 0.1);
+  --accent-danger-border: rgba(189, 63, 77, 0.35);
+  --kind-market: #1f4e79;
+  --kind-market-soft: rgba(31, 78, 121, 0.1);
+  --kind-fx: #267b9e;
+  --kind-fx-soft: rgba(38, 123, 158, 0.1);
+  --accent-primary-soft: rgba(31, 78, 121, 0.1);
+  --accent-primary-wash: rgba(31, 78, 121, 0.055);
+  --accent-primary-border: rgba(31, 78, 121, 0.34);
+  --text-primary: #1f2a37;
+  --text-secondary: #526274;
+  --text-tertiary: #718096;
+  --text-disabled: #a0aab6;
+  --border-subtle: #e0e7ef;
+  --border-default: #cbd6e2;
+  --border-emphasis: #9fb2c7;
+  --surface-card: #ffffff;
+  --surface-card-hover: #f1f6fb;
+  --shadow-sm: 0 1px 3px rgba(31, 78, 121, 0.08), 0 6px 18px rgba(31, 78, 121, 0.045);
+  --shadow-md: 0 12px 30px rgba(31, 78, 121, 0.12);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body,
+#root {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+body {
+  font-family: var(--font-sans);
+  font-size: var(--text-base);
+  line-height: 1.6;
+  color: var(--text-primary);
+  background: var(--surface-0);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+:root[data-theme='steel-blue'] body {
+  background: linear-gradient(180deg, #edf3f8 0, var(--surface-0) 15rem);
+}
+
+:root[data-theme='steel-blue'] .sidebar,
+:root[data-theme='steel-blue'] .header {
+  background: rgba(255, 255, 255, 0.96);
+  border-color: #d7e1eb;
+  box-shadow: 0 8px 22px rgba(31, 78, 121, 0.06);
+}
+
+:root[data-theme='steel-blue'] .sidebar-brand-mark {
+  background: #1f4e79;
+  color: #ffffff;
+}
+
+:root[data-theme='steel-blue'] option {
+  background: #ffffff;
+  color: #1f2a37;
+}
+
+:root[data-theme='steel-blue'] ::-webkit-scrollbar-thumb {
+  background: #b7c6d5;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* Global readable baseline: compact labels may be 14px, body copy stays 16px. */
+body,
+button,
+input,
+textarea,
+select {
+  font-size: 16px;
+}
+
+code,
+pre {
+  font-family: var(--font-mono);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: -0.035em;
+}
+
+h1 {
+  font-size: var(--text-4xl);
+}
+
+h2 {
+  font-size: var(--text-3xl);
+}
+
+h3 {
+  font-size: var(--text-2xl);
+}
+
+h4 {
+  font-size: var(--text-xl);
+}
+
+h5 {
+  font-size: var(--text-lg);
+}
+
+h6 {
+  font-size: var(--text-base);
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+  border: none;
+  background: none;
+  color: inherit;
+}
+
+a {
+  color: var(--accent-primary);
+  text-decoration: none;
+  transition: color var(--transition-fast);
+}
+
+a:hover {
+  color: #c85228;
+}
+
+input,
+textarea,
+select {
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+  background: var(--surface-2);
+  border: 1px solid var(--border-default);
+  border-radius: var(--radius-md);
+  padding: var(--space-2) var(--space-3);
+  transition: border-color var(--transition-fast), box-shadow var(--transition-fast),
+    background-color var(--transition-fast);
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  outline: none;
+  border-color: var(--accent-primary);
+  box-shadow: 0 0 0 3px rgba(230, 106, 57, 0.14);
+}
+
+button:focus-visible,
+a:focus-visible {
+  outline: 2px solid var(--accent-primary);
+  outline-offset: 3px;
+}
+
+::selection {
+  background: rgba(230, 106, 57, 0.2);
+  color: var(--text-primary);
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: var(--text-tertiary);
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #cbd6cf;
+  border-radius: var(--radius-full);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #595b69;
+}
+
+/* Shared dark canvas and quiet surface language. */
+body {
+  background:
+    radial-gradient(circle at 84% -12%, rgba(117, 92, 220, 0.11), transparent 32rem),
+    var(--surface-0);
+}
+
+option {
+  background: var(--surface-2);
+  color: var(--text-primary);
+}
+
+/* Utility classes */
+.text-xs {
+  font-size: var(--text-xs);
+}
+
+.text-sm {
+  font-size: var(--text-sm);
+}
+
+.text-base {
+  font-size: var(--text-base);
+}
+
+.text-lg {
+  font-size: var(--text-lg);
+}
+
+.text-xl {
+  font-size: var(--text-xl);
+}
+
+.text-primary {
+  color: var(--text-primary);
+}
+
+.text-secondary {
+  color: var(--text-secondary);
+}
+
+.text-tertiary {
+  color: var(--text-tertiary);
+}
+
+.text-accent {
+  color: var(--accent-primary);
+}
+
+.font-mono {
+  font-family: var(--font-mono);
+}
+
+.truncate {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}

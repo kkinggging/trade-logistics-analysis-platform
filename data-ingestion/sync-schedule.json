@@ -1,0 +1,19 @@
+{
+  "schedule_label": "每天 18:00（Asia/Shanghai）",
+  "timezone": "Asia/Shanghai",
+  "scheduler": "cron 或 launchd（由部署环境安装；本仓库不自动启动后台服务）",
+  "entrypoint": "sync-all.mjs",
+  "lock_stale_after_ms": 43200000,
+  "task_retry": {
+    "attempts": 2,
+    "timeoutMs": 180000,
+    "baseDelayMs": 3000,
+    "maxDelayMs": 15000
+  },
+  "failure_policy": {
+    "preserve_last_success": true,
+    "atomic_snapshot_replace": true,
+    "write_status_after_each_source": true,
+    "non_zero_exit_on_partial_failure": true
+  }
+}

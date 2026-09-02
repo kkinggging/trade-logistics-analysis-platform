@@ -1,0 +1,4 @@
+# 安装到部署机的受控调度器，不要直接在代码仓库中执行。
+# 每天 18:00（Asia/Shanghai）运行；日志和告警由部署环境接管。
+CRON_TZ=Asia/Shanghai
+0 18 * * * cd /Users/ken/work/贸易分析平台/platform/data-ingestion && /usr/local/bin/node sync-all.mjs --build >> /Users/ken/work/贸易分析平台/platform/data-ingestion/sync-all.log 2>&1

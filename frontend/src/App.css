@@ -1,0 +1,858 @@
+.placeholder-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 60vh;
+  gap: var(--space-4);
+}
+
+.placeholder-page h2 {
+  color: var(--text-primary);
+  font-size: var(--text-2xl);
+}
+
+.placeholder-page p {
+  color: var(--text-tertiary);
+  font-size: var(--text-base);
+}
+
+/* Shared editorial shell: keeps every functional page on one visual grid. */
+.dashboard,
+.cost-calculator,
+.risk-center,
+.overview,
+.morning-brief,
+.shipping-assistance,
+.marketing-strategy {
+  max-width: 1440px;
+  margin-inline: auto;
+}
+
+.dashboard-header,
+.cost-calculator-header,
+.risk-center-header,
+.overview-header,
+.brief-header,
+.shipping-header,
+.strategy-header {
+  min-height: 58px;
+}
+
+.dashboard-header h2,
+.cost-calculator-header h2,
+.risk-center-header h2,
+.overview-header h2,
+.brief-header h1,
+.shipping-header h1,
+.strategy-header h1 {
+  font-family: Georgia, 'Songti SC', 'Noto Serif SC', serif;
+  letter-spacing: -0.035em;
+}
+
+.metric-card,
+.risk-stat-card,
+.nav-card,
+.dashboard-section,
+.input-section,
+.cost-breakdown,
+.scenario-comparison,
+.sensitivity-chart,
+.risk-dashboard,
+.trend-analysis,
+.order-input-section,
+.route-card,
+.strategy-card,
+.brief-content,
+.history-section {
+  box-shadow: var(--shadow-sm);
+}
+
+.refresh-button,
+.btn-secondary,
+.btn-feedback,
+.outline-button,
+.outline {
+  border-radius: var(--radius-sm);
+  letter-spacing: 0.01em;
+}
+
+@media (max-width: 800px) {
+  .dashboard,
+  .cost-calculator,
+  .risk-center,
+  .overview,
+  .morning-brief,
+  .shipping-assistance,
+  .marketing-strategy {
+    padding-inline: var(--space-2);
+  }
+}
+
+/* Compact dynamic composition: hierarchy is created by grid proportions,
+   not oversized empty gaps or decorative effects. */
+.app-content > * {
+  animation: content-enter 220ms ease-out both;
+}
+
+.morning-brief,
+.dashboard,
+.overview,
+.risk-center,
+.cost-calculator,
+.shipping-assistance,
+.marketing-strategy {
+  gap: 1rem;
+  padding-block: 0.25rem 2.5rem;
+}
+
+.brief-content,
+.dashboard-content,
+.risk-content,
+.cost-calculator-content {
+  min-width: 0;
+}
+
+.brief-header,
+.dashboard-header,
+.overview-header,
+.risk-center-header,
+.cost-calculator-header,
+.shipping-header,
+.strategy-header {
+  min-height: 0;
+  margin-bottom: 0;
+  min-height: 40px;
+  align-items: center;
+}
+
+.morning-brief {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  grid-template-areas:
+    'content'
+    'history';
+  align-items: start;
+}
+
+.morning-brief > .brief-header { display: none; }
+.morning-brief > .brief-content { grid-area: content; }
+.morning-brief > .history-section {
+  grid-area: history;
+  width: min(100%, 980px);
+  margin-inline: auto;
+}
+
+.brief-content {
+  max-width: none;
+  gap: 1rem;
+}
+
+.brief-meta {
+  padding: 1.15rem 1.35rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.brief-eyebrow {
+  color: var(--text-tertiary);
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  letter-spacing: 0.09em;
+  line-height: 1.4;
+}
+
+.brief-meta .brief-date {
+  margin-top: 0.2rem;
+}
+
+.brief-section,
+.dashboard-section,
+.cost-breakdown,
+.scenario-comparison,
+.sensitivity-chart,
+.risk-dashboard,
+.trend-analysis,
+.order-input-section,
+.strategy-input-section,
+.strategies-section,
+.history-section {
+  padding: 1.1rem;
+}
+
+.brief-section h2,
+.section-title,
+.routes-header h2,
+.strategies-header h2 {
+  font-size: 1.25rem;
+  margin-bottom: 0.9rem;
+}
+
+.brief-content > .brief-section:first-of-type {
+  border-top: 2px solid rgba(167, 139, 250, 0.7);
+}
+
+.brief-content > .brief-section:nth-of-type(2) {
+  min-height: 11rem;
+}
+
+.brief-content > .brief-section:nth-of-type(3) {
+  min-height: 9rem;
+}
+
+.risk-list-brief {
+  grid-template-columns: repeat(auto-fit, minmax(245px, 1fr));
+}
+
+.risk-item-header {
+  margin-bottom: 0.55rem;
+}
+
+.risk-item-brief {
+  min-height: 7.25rem;
+}
+
+.risk-factor-brief {
+  font-size: 1rem;
+}
+
+.risk-metric-brief,
+.policy-meta-brief {
+  font-size: 0.9375rem;
+}
+
+.risk-delta-brief {
+  font-size: 0.875rem;
+}
+
+.history-section {
+  margin-top: 0.25rem;
+}
+
+.history-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 0.85rem;
+}
+
+.history-heading h2 {
+  margin: 0.15rem 0 0;
+}
+
+.history-count {
+  color: var(--text-tertiary);
+  font-size: 0.875rem;
+}
+
+.history-list {
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+
+.history-item {
+  width: 100%;
+  color: inherit;
+  text-align: left;
+  font: inherit;
+}
+
+.metrics-row,
+.metrics-grid,
+.kpi-cards,
+.risk-stats {
+  gap: 0.75rem;
+}
+
+.metric-card,
+.kpi-card,
+.risk-stat-card {
+  min-height: 7.75rem;
+  padding: 1rem 1.1rem;
+}
+
+.metric-card,
+.kpi-card,
+.risk-stat-card,
+.dashboard-section,
+.brief-section,
+.history-section,
+.route-card,
+.strategy-card,
+.input-section,
+.order-input-section,
+.strategy-input-section,
+.cost-breakdown,
+.scenario-comparison,
+.sensitivity-chart,
+.risk-dashboard,
+.trend-analysis {
+  background: linear-gradient(145deg, rgba(30, 32, 43, 0.94), rgba(18, 20, 27, 0.96));
+  border-color: var(--border-subtle);
+  box-shadow: var(--shadow-sm);
+}
+
+.metric-card:hover,
+.kpi-card:hover,
+.route-card:hover,
+.strategy-card:hover,
+.policy-item:hover,
+.risk-item:hover {
+  transform: translateY(-2px);
+  border-color: var(--border-emphasis);
+  box-shadow: var(--shadow-md);
+}
+
+.metric-item,
+.policy-item,
+.risk-item,
+.risk-item-brief,
+.objective-card,
+.history-item,
+.route-details,
+.impact-item {
+  background: rgba(255, 255, 255, 0.045);
+  border-color: var(--border-subtle);
+}
+
+.section-title,
+.brief-section h2,
+.routes-header h2,
+.strategies-header h2 {
+  font-family: var(--font-sans);
+  font-weight: 650;
+  letter-spacing: -0.02em;
+}
+
+.brief-date,
+.history-date,
+.metric-label,
+.policy-date,
+.risk-freshness,
+.kpi-subtitle,
+.chart-note,
+.note-text {
+  font-size: 0.9375rem;
+}
+
+.metric-title,
+.kpi-title,
+.stat-label,
+.input-group label,
+.header-control label {
+  font-size: 0.9375rem;
+}
+
+.metric-number,
+.metric-value-large,
+.kpi-value {
+  font-family: var(--font-sans);
+  font-weight: 700;
+}
+
+.brief-content > .brief-section:nth-of-type(2),
+.brief-content > .brief-section:nth-of-type(3) {
+  background: linear-gradient(145deg, rgba(38, 36, 46, 0.94), rgba(18, 20, 27, 0.96));
+}
+
+.history-section {
+  border-top: 2px solid rgba(167, 139, 250, 0.66);
+}
+
+/* Risk center follows the same page-level scrolling model as the other tools. */
+.risk-center {
+  height: auto;
+  min-height: 100%;
+  overflow: visible;
+  gap: 1rem;
+}
+
+.risk-center-header {
+  min-height: 36px;
+}
+
+.risk-stats {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 0.65rem;
+}
+
+.risk-stat-card {
+  min-height: 0;
+  height: 4.75rem;
+  padding: 0.7rem 0.9rem;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+  border-width: 1px;
+  border-top-width: 2px;
+}
+
+.risk-stat-card .stat-label {
+  font-size: 0.875rem;
+  line-height: 1.35;
+}
+
+.risk-stat-card .stat-value {
+  font-size: 1.65rem;
+  line-height: 1;
+}
+
+.risk-content {
+  flex: none;
+  overflow: visible;
+  gap: 1rem;
+}
+
+.risk-main {
+  overflow: visible;
+  gap: 1rem;
+}
+
+.risk-sidebar {
+  max-height: none;
+  overflow: visible;
+}
+
+.cost-calculator {
+  height: auto;
+  min-height: 100%;
+  overflow: visible;
+  gap: 1rem;
+}
+
+.cost-calculator-content {
+  gap: 1rem;
+  max-width: none;
+}
+
+.cost-calculator .input-section {
+  padding: 1rem 1.1rem;
+}
+
+.cost-calculator .input-grid {
+  gap: 0.75rem;
+}
+
+.cost-calculator .section-title {
+  margin-bottom: 0.75rem;
+}
+
+.cost-calculator .no-result {
+  min-height: 0;
+  padding: 0;
+  border: 0;
+  background: transparent;
+}
+
+.chart-placeholder,
+.chart-container {
+  background: rgba(4, 5, 8, 0.3);
+  border-color: var(--border-default);
+}
+
+.input-field,
+.input-group input,
+.input-group select,
+.date-picker,
+.header-select,
+.strategy-title-input {
+  background: rgba(4, 5, 8, 0.34);
+  border-color: var(--border-default);
+  color: var(--text-primary);
+}
+
+.btn-primary,
+.btn-primary-large,
+.calculate-button,
+.retry-button {
+  background: var(--text-primary);
+  color: #111217;
+  border-radius: var(--radius-full);
+  font-weight: 700;
+  transition: transform var(--transition-base), box-shadow var(--transition-base), background var(--transition-base);
+}
+
+.btn-primary:hover:not(:disabled),
+.btn-primary-large:hover:not(:disabled),
+.calculate-button:hover:not(:disabled),
+.retry-button:hover:not(:disabled) {
+  background: #fff;
+  box-shadow: 0 8px 22px rgba(255, 255, 255, 0.12);
+  transform: translateY(-1px);
+}
+
+.btn-secondary,
+.refresh-button,
+.outline,
+.outline-button,
+.btn-feedback {
+  color: var(--text-primary);
+  border-color: var(--border-default);
+  background: rgba(255, 255, 255, 0.045);
+  border-radius: var(--radius-full);
+}
+
+.btn-secondary:hover,
+.refresh-button:hover:not(:disabled),
+.outline:hover,
+.outline-button:hover,
+.btn-feedback:hover {
+  color: #fff;
+  background: rgba(255, 255, 255, 0.1);
+  border-color: var(--border-emphasis);
+}
+
+.history-list {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.45rem;
+}
+
+.history-item {
+  padding: 0.75rem 0.85rem;
+  border-radius: var(--radius-sm);
+}
+
+.history-section h2 {
+  font-size: 1.2rem;
+}
+
+@keyframes content-enter {
+  from { opacity: 0; transform: translateY(6px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@media (max-width: 900px) {
+  .morning-brief {
+    grid-template-columns: 1fr;
+    grid-template-areas: 'content' 'history';
+  }
+
+  .morning-brief > .history-section {
+    position: static;
+    max-height: none;
+  }
+
+  .brief-meta {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 700px) {
+  .risk-stats {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .risk-content {
+    grid-template-columns: 1fr;
+  }
+
+  .risk-sidebar {
+    width: 100%;
+  }
+}
+
+@media (max-width: 540px) {
+  .app-content {
+    padding: 1rem 0.9rem 2rem;
+  }
+
+  .morning-brief,
+  .dashboard,
+  .overview,
+  .risk-center,
+  .cost-calculator,
+  .shipping-assistance,
+  .marketing-strategy {
+    gap: 1rem;
+  }
+
+  .brief-controls,
+  .brief-actions,
+  .header-right {
+    flex-wrap: wrap;
+  }
+
+  .brief-controls > *,
+  .brief-actions > * {
+    flex: 1 1 auto;
+  }
+}
+
+/* Product-wide editorial composition. The data and actions stay intact; only
+   the visual reading order and surface hierarchy are refined here. */
+.app-content > * {
+  width: min(100%, 1440px);
+}
+
+.dashboard,
+.cost-calculator,
+.risk-center,
+.overview,
+.morning-brief,
+.shipping-assistance,
+.marketing-strategy {
+  padding-block: clamp(0.5rem, 1.2vw, 1.25rem) 3rem;
+}
+
+.dashboard-header,
+.cost-calculator-header,
+.risk-center-header,
+.overview-header,
+.brief-header,
+.shipping-header,
+.strategy-header {
+  position: relative;
+  align-items: flex-end;
+  min-height: 0;
+  padding-bottom: 0;
+  margin-bottom: 0;
+  border-bottom: 0;
+}
+
+.shipping-header:empty,
+.strategy-header:empty {
+  display: none;
+}
+
+.dashboard-header::after,
+.cost-calculator-header::after,
+.risk-center-header::after,
+.overview-header::after,
+.brief-header::after,
+.shipping-header::after,
+.strategy-header::after {
+  display: none;
+}
+
+.dashboard-header h2,
+.cost-calculator-header h2,
+.risk-center-header h2,
+.overview-header h2,
+.brief-header h1,
+.shipping-header h1,
+.strategy-header h1 {
+  font-family: var(--font-serif);
+  font-size: clamp(1.9rem, 2.2vw, 2.65rem);
+  line-height: 1.1;
+}
+
+.dashboard-header:has(button),
+.overview-header:has(button),
+.risk-center-header:has(button) {
+  justify-content: flex-end;
+}
+
+.dashboard-header:has(button),
+.overview-header:has(button),
+.risk-center-header:has(button),
+.cost-calculator-header:has(.disclaimer-tag),
+.brief-header:has(.brief-controls) {
+  min-height: 0;
+  height: auto;
+}
+
+.cost-calculator-header:has(.disclaimer-tag) {
+  justify-content: flex-end;
+}
+
+.metric-card,
+.kpi-card,
+.risk-stat-card {
+  min-height: 9.5rem;
+  border-radius: var(--radius-md);
+  padding: 1.25rem 1.35rem;
+  border: 1px solid var(--border-default);
+  background: var(--surface-2);
+}
+
+.metric-card:nth-child(2),
+.kpi-card:nth-child(2) {
+  border-top-color: var(--accent-secondary);
+}
+
+.metric-card:nth-child(3),
+.kpi-card:nth-child(3) {
+  border-top-color: var(--accent-warning);
+}
+
+.metric-card:nth-child(4),
+.kpi-card:nth-child(4) {
+  border-top-color: var(--accent-danger);
+}
+
+.metric-number,
+.kpi-value,
+.stat-value,
+.route-score {
+  font-variant-numeric: tabular-nums;
+}
+
+.dashboard-section,
+.input-section,
+.cost-breakdown,
+.scenario-comparison,
+.sensitivity-chart,
+.risk-dashboard,
+.trend-analysis,
+.brief-section,
+.order-input-section,
+.comparison-section,
+.strategy-input-section,
+.strategies-section,
+.history-section {
+  border-radius: var(--radius-md);
+  background: var(--surface-2);
+  border: 1px solid var(--border-default);
+  box-shadow: var(--shadow-sm);
+}
+
+.dashboard-section,
+.brief-section,
+.comparison-section,
+.history-section {
+  padding: clamp(1.15rem, 2vw, 1.65rem);
+}
+
+.section-title,
+.brief-section h2,
+.comparison-section h2,
+.history-section h2,
+.routes-header h2,
+.strategies-header h2 {
+  font-family: var(--font-serif);
+  letter-spacing: -0.025em;
+}
+
+.section-title::before,
+.brief-section h2::before,
+.comparison-section h2::before,
+.history-section h2::before,
+.routes-header h2::before,
+.strategies-header h2::before {
+  content: '';
+  display: inline-block;
+  width: 1.25rem;
+  height: 2px;
+  margin: 0 0.55rem 0.3rem 0;
+  background: var(--accent-primary);
+}
+
+.chart-placeholder,
+.chart-container {
+  background: var(--surface-1);
+  border-color: var(--border-default);
+}
+
+.policy-item,
+.risk-item,
+.risk-item-brief,
+.metric-item,
+.objective-card,
+.history-item,
+.route-details,
+.impact-item {
+  border-radius: var(--radius-sm);
+  background: var(--surface-1);
+  border-color: var(--border-subtle);
+}
+
+.input-section,
+.strategy-input-section,
+.order-input-section {
+  border-top: 3px solid var(--accent-primary);
+}
+
+.input-field,
+.input-group input,
+.input-group select,
+.date-picker,
+.header-select,
+.strategy-title-input {
+  min-height: 2.75rem;
+  border-radius: var(--radius-sm);
+  background: var(--surface-1);
+}
+
+.calculate-button,
+.btn-primary,
+.btn-primary-large,
+.retry-button {
+  border-radius: var(--radius-sm);
+  min-height: 2.75rem;
+  background: var(--accent-primary);
+  color: #fff;
+}
+
+.refresh-button,
+.btn-secondary,
+.btn-feedback,
+.outline,
+.outline-button {
+  min-height: 2.5rem;
+  background: transparent;
+}
+
+.dashboard-grid,
+.overview-grid {
+  align-items: start;
+}
+
+@media (min-width: 1100px) {
+  .metrics-grid,
+  .kpi-cards {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
+  .dashboard-grid {
+    grid-template-columns: minmax(0, 1.15fr) minmax(0, 0.85fr);
+  }
+
+  .overview-grid {
+    grid-template-columns: minmax(0, 1.25fr) minmax(320px, 0.75fr);
+  }
+}
+
+@media (max-width: 800px) {
+  .dashboard,
+  .cost-calculator,
+  .risk-center,
+  .overview,
+  .morning-brief,
+  .shipping-assistance,
+  .marketing-strategy {
+    padding-block: 0.25rem 2rem;
+  }
+
+  .dashboard-header,
+  .cost-calculator-header,
+  .risk-center-header,
+  .overview-header,
+  .brief-header,
+  .shipping-header,
+  .strategy-header {
+    align-items: flex-start;
+  }
+
+  .dashboard-header,
+  .cost-calculator-header,
+  .risk-center-header,
+  .overview-header,
+  .brief-header,
+  .shipping-header,
+  .strategy-header {
+    flex-direction: column;
+  }
+
+  .dashboard-header:has(button),
+  .overview-header:has(button),
+  .risk-center-header:has(button),
+  .cost-calculator-header:has(.disclaimer-tag) {
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+}

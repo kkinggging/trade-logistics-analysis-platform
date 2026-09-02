@@ -1,0 +1,130 @@
+{
+  "schema_version": "1.0",
+  "purpose": "航运指数快照到综合分析图表的独立映射契约；主前端接入完成前用于审查遗漏",
+  "source_id": "shipping-index-dashboard-public",
+  "snapshot_file": "../frontend/public/data/external_shipping_indices.json",
+  "raw_point_fields": {
+    "date": "date",
+    "value": "value",
+    "previous_value": "prev_value",
+    "previous_date": "prev_date",
+    "change_rate_pct": "change_rate",
+    "route_name_cn": "route_cn",
+    "route_code_en": "route_en"
+  },
+  "normalized_point_fields": [
+    "date",
+    "value",
+    "previousValue",
+    "previousDate",
+    "changeRatePct",
+    "routeName",
+    "routeCode"
+  ],
+  "series": [
+    {
+      "code": "CCFI",
+      "source_file": "ccfi.json",
+      "category": "集装箱",
+      "frequency": "周频",
+      "unit": "指数点",
+      "latest_scope": "core_route",
+      "core_route_cn": "中国出口集装箱运价综合指数",
+      "chart_roles": ["航运核心指标卡", "集装箱运价趋势", "CCFI航线明细"],
+      "business_meaning": "中国出口集装箱整体运价及主要航线环境"
+    },
+    {
+      "code": "SCFI",
+      "source_file": "scfi.json",
+      "category": "集装箱",
+      "frequency": "周频",
+      "unit": "指数点",
+      "latest_scope": "global",
+      "chart_roles": ["航运核心指标卡", "集装箱运价趋势"],
+      "business_meaning": "上海出口集装箱即期运价环境"
+    },
+    {
+      "code": "BSI",
+      "source_file": "bsi.json",
+      "category": "干散货",
+      "frequency": "日频",
+      "unit": "指数点",
+      "latest_scope": "global",
+      "chart_roles": ["航运核心指标卡", "干散货与能源趋势"],
+      "business_meaning": "超灵便型船市场环境，作为散货运输参考"
+    },
+    {
+      "code": "BDI",
+      "source_file": "bdi.json",
+      "category": "干散货",
+      "frequency": "日频",
+      "unit": "指数点",
+      "latest_scope": "global",
+      "chart_roles": ["航运核心指标卡", "干散货与能源趋势", "物流建议"],
+      "business_meaning": "全球干散货运输景气环境"
+    },
+    {
+      "code": "BRENT",
+      "source_file": "brent.json",
+      "category": "能源",
+      "frequency": "日频",
+      "unit": "USD/bbl",
+      "latest_scope": "global",
+      "chart_roles": ["航运核心指标卡", "干散货与能源趋势", "能源成本参考"],
+      "business_meaning": "燃油与海运成本的宏观能源参考"
+    },
+    {
+      "code": "NYMEX",
+      "source_file": "nymex.json",
+      "category": "能源",
+      "frequency": "日频",
+      "unit": "USD/bbl",
+      "latest_scope": "global",
+      "chart_roles": ["航运核心指标卡", "干散货与能源趋势", "能源成本参考"],
+      "business_meaning": "WTI 原油与燃油成本的宏观参考"
+    }
+  ],
+  "chart_bindings": [
+    {
+      "chart_id": "shipping-kpi-strip",
+      "placement": "综合分析 / 航运核心指标",
+      "type": "kpi_cards",
+      "series": ["CCFI", "SCFI", "BSI", "BDI", "BRENT", "NYMEX"],
+      "required_fields": ["latest.date", "latest.value", "latest.changeRatePct", "frequency", "unit"],
+      "display_rule": "六张同尺度核心卡片；指数点与美元/桶不混轴；卡片只显示最新值、环比、频率和日期"
+    },
+    {
+      "chart_id": "shipping-container-trend",
+      "placement": "综合分析 / 航运指数趋势",
+      "type": "dual_line",
+      "series": ["CCFI", "SCFI"],
+      "required_fields": ["points.date", "points.value", "points.changeRatePct"],
+      "display_rule": "按周频对齐；默认显示近12个月；tooltip显示具体日期和单位"
+    },
+    {
+      "chart_id": "shipping-bulk-energy-context",
+      "placement": "综合分析 / 航运指数趋势",
+      "type": "small_multiples",
+      "series": ["BSI", "BDI", "BRENT", "NYMEX"],
+      "required_fields": ["points.date", "points.value", "points.changeRatePct"],
+      "display_rule": "干散货指数与能源价格分面展示；不得把指数点和美元/桶画在同一坐标轴"
+    },
+    {
+      "chart_id": "shipping-logistics-advice",
+      "placement": "综合分析 / 对应建议",
+      "type": "evidence_card",
+      "series": ["BDI", "BSI", "CCFI", "SCFI"],
+      "required_fields": ["latest.date", "latest.value", "latest.changeRatePct", "source.raw_sha256"],
+      "display_rule": "建议必须带来源、日期、变化值；航运指数只能判断市场环境，不能替代具体航线、舱位和 ETA"
+    }
+  ],
+  "integration_contract": {
+    "provider_file": "platform/frontend/src/core/data/provider.ts",
+    "provider_method": "getShippingIndexSnapshot",
+    "strategy_bundle_file": "platform/frontend/src/core/strategy/data.ts",
+    "strategy_bundle_field": "shippingIndices",
+    "strategy_engine_file": "platform/frontend/src/core/strategy/engine.ts",
+    "current_expected_status": "partial",
+    "partial_reason": "当前策略引擎仅消费 BDI/BSI 二选一生成物流建议；综合分析尚未消费 shippingIndices 生成六组核心卡片与趋势图"
+  }
+}
