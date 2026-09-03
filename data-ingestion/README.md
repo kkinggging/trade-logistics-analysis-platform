@@ -159,7 +159,7 @@ node fetch-steel-dashboard.mjs
 
 ## 当前同步状态与每日 18:00 调度
 
-当前仓库已经具备“抓取—校验—处理—生成结构化快照—前端读取”的适配器和统一入口，但不会自行常驻运行；代码仓库也没有自动安装 cron/launchd。若不在部署机安装调度器，`external_*.json` 会停留在最近一次成功生成的内容。
+当前仓库已经具备“抓取—校验—处理—生成结构化快照—前端读取”的适配器和统一入口。GitHub Pages 工作流已提供每天北京时间 18:00 的 GitHub Actions 定时入口，会在可联网的 Actions runner 上尝试同步并提交新快照；如果不使用该工作流，代码仓库也不会自行安装 cron/launchd，`external_*.json` 会停留在最近一次成功生成的内容。GitHub Actions 的定时触发由平台调度，实际启动时间可能有延迟，不应视为严格准点。
 
 快照不是截图：它是结构化 JSON，包含源站原始数据哈希、源站生成时间（如有）、本地抓取时间、覆盖日期、标准化字段、去重结果、质量告警和面向图表的计算指标。前端读取的是这份数据，不会在浏览器中直接抓取外站。
 
@@ -199,7 +199,7 @@ node data-ingestion/audit-taric-quota-completeness.mjs
 
 验收至少要求 raw = accepted + rejected、accepted 与落盘 `accepted_rows` 一致、deduped 与 `normalized_rows` 一致、latest 为最新日期全部记录，并且印度、土耳其、配额 Code `099835` / `099840` 和 UK 国家组 `1100` 均可追溯到源行。
 
-生产调度示例见 [`sync-all.cron.example`](./sync-all.cron.example) 和 macOS 的 [`sync-all.launchd.plist.example`](./sync-all.launchd.plist.example)。这些只是配置模板，当前没有自动安装或运行；正式启用需要部署人员将其中一个配置安装到实际运行机器，并配置日志、失败告警和权限。cron 示例使用 `CRON_TZ=Asia/Shanghai`；launchd 使用机器本地时区，若机器不是中国标准时间，应在部署环境将时区设为 `Asia/Shanghai` 或改用具备时区字段的调度器。
+生产调度示例见 [`sync-all.cron.example`](./sync-all.cron.example) 和 macOS 的 [`sync-all.launchd.plist.example`](./sync-all.launchd.plist.example)。GitHub Actions 方案不需要在本机安装调度器；如果改用自有服务器或 Mac，则这些文件只是配置模板，仍需部署人员安装并配置日志、失败告警和权限。cron 示例使用 `CRON_TZ=Asia/Shanghai`；launchd 使用机器本地时区，若机器不是中国标准时间，应在部署环境将时区设为 `Asia/Shanghai` 或改用具备时区字段的调度器。
 
 由部署环境的受控调度器调用：
 
