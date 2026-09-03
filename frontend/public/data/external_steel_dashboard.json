@@ -6,12 +6,18 @@
     "dashboard_url": "https://sleepycat-db612-d4flpypa62d30215-1466100115.tcloudbaseapp.com/steel-dashboard/",
     "data_url": "https://sleepycat-db612-d4flpypa62d30215-1466100115.tcloudbaseapp.com/steel-dashboard/data.json",
     "generated_at": "2026-08-28 17:06:25",
-    "captured_at": "2026-08-28T15:03:01.090Z",
+    "captured_at": "2026-09-03T10:41:41.378Z",
     "raw_sha256": "95ee3572481ad04b98497c40412e46b2034c5956cb9b821e921841a2a7188c47",
     "coverage_start": "2006-01-01",
     "coverage_end": "2026-08-28",
     "schedule": "每天 18:00（Asia/Shanghai）",
-    "excel_role": "人工校核与临时导出，不作为定时任务主入口"
+    "excel_role": "人工校核与临时导出，不作为定时任务主入口",
+    "retry": {
+      "attempts": 3,
+      "timeout_ms": 30000,
+      "backoff_ms": 800,
+      "max_backoff_ms": 8000
+    }
   },
   "market_quotes": [
     {

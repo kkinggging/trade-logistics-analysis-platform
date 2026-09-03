@@ -5,17 +5,17 @@
     "name": "航运指数数据看板（公开快照）",
     "dashboard_url": "https://cb3e42b893e04a0daa4c606705c2dacf.app.codebuddy.work/index.html",
     "data_base_url": "https://cb3e42b893e04a0daa4c606705c2dacf.app.codebuddy.work/data",
-    "captured_at": "2026-08-30T13:01:45.395Z",
+    "captured_at": "2026-09-03T10:42:30.801Z",
     "raw_sha256": {
-      "CCFI": "509bba8b305b7781c9452965263451f1bfb56c60693c1365e3cefbb28e809c5e",
-      "SCFI": "dea05728f17b1577f27026a7fb8d0137715857c96794f4084ecfb1814bb5d8c4",
-      "BSI": "951dc376745aa9289cb45b80479a974c40dcd63d36b746d6adecc338a7ea024f",
-      "BDI": "dc57c9ecaa6ab880ba4b26efb125c570880aa48b83dc45c60902e6bb93cfeca0",
-      "BRENT": "1512d5d2938e489427531ca391641031ced5131158c140e930e8f11bc318aef5",
-      "NYMEX": "546643841378e0b034204fbe43ccce0649c2493cc4ac881a96ef598360a6d046"
+      "CCFI": "93d089d68762ab9180d82b269642ecd09907d625bee32d2636595d31ce50424a",
+      "SCFI": "613e06506d4c0239b2c45b8bf8a3f0195fb03fb54c0138e997bdc3c540c0738c",
+      "BSI": "96a695862bcb648e6f5e0220c2987fde76f46ab7180c065e480a63b7ff39971f",
+      "BDI": "67bc875b3a3aef52c94c44ce07d921bd16e96653c9518145b01d4c041cdff0b0",
+      "BRENT": "cc946e83bc1f93d54f91c73ec0a7376a37c3cbc950e5b9ff9f52372622502732",
+      "NYMEX": "f2a320bac1e5c8cf3d513ae3961bf726a33e9115dbb5eecd0bca3a5b7023f6b9"
     },
     "coverage_start": "1988-10-19",
-    "coverage_end": "2026-08-24",
+    "coverage_end": "2026-09-02",
     "schedule": "每天 18:00（Asia/Shanghai）",
     "transport": "公开 HTTPS JSON",
     "excel_role": "人工抽样校核与临时导出，不作为定时任务主入口",
@@ -9635,18 +9635,135 @@
           "changeRatePct": -3.2376830784633452,
           "routeName": "韩国航线",
           "routeCode": "KOREA SERVICE"
+        },
+        {
+          "date": "2026-08-28",
+          "value": 989.03,
+          "previousValue": 972.46,
+          "previousDate": "2026-08-21",
+          "changeRatePct": 1.7039261254961575,
+          "routeName": "东南亚航线",
+          "routeCode": "SOUTHEAST ASIA SERVICE"
+        },
+        {
+          "date": "2026-08-28",
+          "value": 1167.12,
+          "previousValue": 1172.16,
+          "previousDate": "2026-08-21",
+          "changeRatePct": -0.4299754299754463,
+          "routeName": "东西非航线",
+          "routeCode": "WEST EAST AFRICA SERVICE"
+        },
+        {
+          "date": "2026-08-28",
+          "value": 1833.99,
+          "previousValue": 1821.65,
+          "previousDate": "2026-08-21",
+          "changeRatePct": 0.677407844536542,
+          "routeName": "中国出口集装箱运价综合指数",
+          "routeCode": ""
+        },
+        {
+          "date": "2026-08-28",
+          "value": 1417.68,
+          "previousValue": 1358.77,
+          "previousDate": "2026-08-21",
+          "changeRatePct": 4.335538759319096,
+          "routeName": "南美航线",
+          "routeCode": "SOUTH AMERICA SERVICE"
+        },
+        {
+          "date": "2026-08-28",
+          "value": 1438.89,
+          "previousValue": 1453.47,
+          "previousDate": "2026-08-21",
+          "changeRatePct": -1.0031166793948225,
+          "routeName": "南非航线",
+          "routeCode": "SOUTH AFRICA SERVICE"
+        },
+        {
+          "date": "2026-08-28",
+          "value": 2758.59,
+          "previousValue": 2883.78,
+          "previousDate": "2026-08-21",
+          "changeRatePct": -4.341177204918546,
+          "routeName": "地中海航线",
+          "routeCode": "MEDITERRANEAN SERVICE"
+        },
+        {
+          "date": "2026-08-28",
+          "value": 951.76,
+          "previousValue": 936.35,
+          "previousDate": "2026-08-21",
+          "changeRatePct": 1.6457521226037237,
+          "routeName": "日本航线",
+          "routeCode": "JAPAN SERVICE"
+        },
+        {
+          "date": "2026-08-28",
+          "value": 2300.64,
+          "previousValue": 2270.18,
+          "previousDate": "2026-08-21",
+          "changeRatePct": 1.3417438264807213,
+          "routeName": "欧洲航线",
+          "routeCode": "EUROPE SERVICE"
+        },
+        {
+          "date": "2026-08-28",
+          "value": 3407.62,
+          "previousValue": 3319.06,
+          "previousDate": "2026-08-21",
+          "changeRatePct": 2.6682253409097743,
+          "routeName": "波红航线",
+          "routeCode": "PERSIAN GULF/RED SEA SERVICE"
+        },
+        {
+          "date": "2026-08-28",
+          "value": 1670.65,
+          "previousValue": 1651.73,
+          "previousDate": "2026-08-21",
+          "changeRatePct": 1.1454656632742684,
+          "routeName": "澳新航线",
+          "routeCode": "AUSTRALIA/NEW ZEALAND SERVICE"
+        },
+        {
+          "date": "2026-08-28",
+          "value": 1836.94,
+          "previousValue": 1803.23,
+          "previousDate": "2026-08-21",
+          "changeRatePct": 1.869423201699175,
+          "routeName": "美东航线",
+          "routeCode": "E/C AMERICA SERVICE"
+        },
+        {
+          "date": "2026-08-28",
+          "value": 1538.78,
+          "previousValue": 1541.49,
+          "previousDate": "2026-08-21",
+          "changeRatePct": -0.17580392996386848,
+          "routeName": "美西航线",
+          "routeCode": "W/C AMERICA SERVICE"
+        },
+        {
+          "date": "2026-08-28",
+          "value": 637.5,
+          "previousValue": 599.22,
+          "previousDate": "2026-08-21",
+          "changeRatePct": 6.388304796235101,
+          "routeName": "韩国航线",
+          "routeCode": "KOREA SERVICE"
         }
       ],
       "latest": {
-        "date": "2026-08-21",
-        "value": 1821.65,
-        "previousValue": 1846.96,
-        "previousDate": "2026-08-14",
-        "changeRatePct": -1.3703599428249633,
+        "date": "2026-08-28",
+        "value": 1833.99,
+        "previousValue": 1821.65,
+        "previousDate": "2026-08-21",
+        "changeRatePct": 0.677407844536542,
         "routeName": "中国出口集装箱运价综合指数",
         "routeCode": ""
       },
-      "observationCount": 1066
+      "observationCount": 1079
     },
     "SCFI": {
       "code": "SCFI",
@@ -10140,18 +10257,27 @@
           "changeRatePct": 1.6210464825169086,
           "routeName": null,
           "routeCode": null
+        },
+        {
+          "date": "2026-08-28",
+          "value": 3509.53,
+          "previousValue": 3409.63,
+          "previousDate": "2026-08-21",
+          "changeRatePct": 2.929936679346442,
+          "routeName": null,
+          "routeCode": null
         }
       ],
       "latest": {
-        "date": "2026-08-21",
-        "value": 3409.63,
-        "previousValue": 3355.24,
-        "previousDate": "2026-08-14",
-        "changeRatePct": 1.6210464825169086,
+        "date": "2026-08-28",
+        "value": 3509.53,
+        "previousValue": 3409.63,
+        "previousDate": "2026-08-21",
+        "changeRatePct": 2.929936679346442,
         "routeName": null,
         "routeCode": null
       },
-      "observationCount": 54
+      "observationCount": 55
     },
     "BSI": {
       "code": "BSI",
@@ -55672,18 +55798,72 @@
           "changeRatePct": 0.18326206,
           "routeName": null,
           "routeCode": null
+        },
+        {
+          "date": "2026-08-24",
+          "value": 1641,
+          "previousValue": null,
+          "previousDate": null,
+          "changeRatePct": 0.06097561,
+          "routeName": null,
+          "routeCode": null
+        },
+        {
+          "date": "2026-08-25",
+          "value": 1643,
+          "previousValue": null,
+          "previousDate": null,
+          "changeRatePct": 0.1218769,
+          "routeName": null,
+          "routeCode": null
+        },
+        {
+          "date": "2026-08-26",
+          "value": 1644,
+          "previousValue": null,
+          "previousDate": null,
+          "changeRatePct": 0.06086427,
+          "routeName": null,
+          "routeCode": null
+        },
+        {
+          "date": "2026-08-27",
+          "value": 1645,
+          "previousValue": null,
+          "previousDate": null,
+          "changeRatePct": 0.06082725,
+          "routeName": null,
+          "routeCode": null
+        },
+        {
+          "date": "2026-08-28",
+          "value": 1647,
+          "previousValue": null,
+          "previousDate": null,
+          "changeRatePct": 0.12158055,
+          "routeName": null,
+          "routeCode": null
+        },
+        {
+          "date": "2026-09-01",
+          "value": 1650,
+          "previousValue": null,
+          "previousDate": null,
+          "changeRatePct": 0.18214936,
+          "routeName": null,
+          "routeCode": null
         }
       ],
       "latest": {
-        "date": "2026-08-21",
-        "value": 1640,
+        "date": "2026-09-01",
+        "value": 1650,
         "previousValue": null,
         "previousDate": null,
-        "changeRatePct": 0.18326206,
+        "changeRatePct": 0.18214936,
         "routeName": null,
         "routeCode": null
       },
-      "observationCount": 5057
+      "observationCount": 5063
     },
     "BDI": {
       "code": "BDI",
@@ -141398,18 +141578,72 @@
           "changeRatePct": 1.79147259,
           "routeName": null,
           "routeCode": null
+        },
+        {
+          "date": "2026-08-24",
+          "value": 2882,
+          "previousValue": null,
+          "previousDate": null,
+          "changeRatePct": 1.44315382,
+          "routeName": null,
+          "routeCode": null
+        },
+        {
+          "date": "2026-08-25",
+          "value": 2926,
+          "previousValue": null,
+          "previousDate": null,
+          "changeRatePct": 1.52671756,
+          "routeName": null,
+          "routeCode": null
+        },
+        {
+          "date": "2026-08-26",
+          "value": 3056,
+          "previousValue": null,
+          "previousDate": null,
+          "changeRatePct": 4.4429255,
+          "routeName": null,
+          "routeCode": null
+        },
+        {
+          "date": "2026-08-27",
+          "value": 3107,
+          "previousValue": null,
+          "previousDate": null,
+          "changeRatePct": 1.66884817,
+          "routeName": null,
+          "routeCode": null
+        },
+        {
+          "date": "2026-08-28",
+          "value": 3186,
+          "previousValue": null,
+          "previousDate": null,
+          "changeRatePct": 2.54264564,
+          "routeName": null,
+          "routeCode": null
+        },
+        {
+          "date": "2026-09-01",
+          "value": 3157,
+          "previousValue": null,
+          "previousDate": null,
+          "changeRatePct": -0.91023227,
+          "routeName": null,
+          "routeCode": null
         }
       ],
       "latest": {
-        "date": "2026-08-21",
-        "value": 2841,
+        "date": "2026-09-01",
+        "value": 3157,
         "previousValue": null,
         "previousDate": null,
-        "changeRatePct": 1.79147259,
+        "changeRatePct": -0.91023227,
         "routeName": null,
         "routeCode": null
       },
-      "observationCount": 9523
+      "observationCount": 9529
     },
     "BRENT": {
       "code": "BRENT",
@@ -141418,69 +141652,6 @@
       "frequency": "日频",
       "unit": "USD/bbl",
       "points": [
-        {
-          "date": "2024-09-16",
-          "value": 72.37,
-          "previousValue": null,
-          "previousDate": null,
-          "changeRatePct": 1.25,
-          "routeName": null,
-          "routeCode": null
-        },
-        {
-          "date": "2024-09-17",
-          "value": 73.05,
-          "previousValue": null,
-          "previousDate": null,
-          "changeRatePct": 0.94,
-          "routeName": null,
-          "routeCode": null
-        },
-        {
-          "date": "2024-09-18",
-          "value": 72.15,
-          "previousValue": null,
-          "previousDate": null,
-          "changeRatePct": -1.23,
-          "routeName": null,
-          "routeCode": null
-        },
-        {
-          "date": "2024-09-19",
-          "value": 74.02,
-          "previousValue": null,
-          "previousDate": null,
-          "changeRatePct": 2.59,
-          "routeName": null,
-          "routeCode": null
-        },
-        {
-          "date": "2024-09-20",
-          "value": 73.9,
-          "previousValue": null,
-          "previousDate": null,
-          "changeRatePct": -0.16,
-          "routeName": null,
-          "routeCode": null
-        },
-        {
-          "date": "2024-09-23",
-          "value": 73.57,
-          "previousValue": null,
-          "previousDate": null,
-          "changeRatePct": -0.45,
-          "routeName": null,
-          "routeCode": null
-        },
-        {
-          "date": "2024-09-24",
-          "value": 74.48,
-          "previousValue": null,
-          "previousDate": null,
-          "changeRatePct": 1.24,
-          "routeName": null,
-          "routeCode": null
-        },
         {
           "date": "2024-09-25",
           "value": 73.13,
@@ -145911,20 +146082,83 @@
         },
         {
           "date": "2026-08-24",
-          "value": 91.38,
+          "value": 90.29,
           "previousValue": null,
           "previousDate": null,
-          "changeRatePct": -0.61,
+          "changeRatePct": -1.79,
+          "routeName": null,
+          "routeCode": null
+        },
+        {
+          "date": "2026-08-25",
+          "value": 85.79,
+          "previousValue": null,
+          "previousDate": null,
+          "changeRatePct": -4.98,
+          "routeName": null,
+          "routeCode": null
+        },
+        {
+          "date": "2026-08-26",
+          "value": 86.62,
+          "previousValue": null,
+          "previousDate": null,
+          "changeRatePct": 0.97,
+          "routeName": null,
+          "routeCode": null
+        },
+        {
+          "date": "2026-08-27",
+          "value": 88.44,
+          "previousValue": null,
+          "previousDate": null,
+          "changeRatePct": 2.1,
+          "routeName": null,
+          "routeCode": null
+        },
+        {
+          "date": "2026-08-28",
+          "value": 88.27,
+          "previousValue": null,
+          "previousDate": null,
+          "changeRatePct": -0.19,
+          "routeName": null,
+          "routeCode": null
+        },
+        {
+          "date": "2026-08-31",
+          "value": 90.67,
+          "previousValue": null,
+          "previousDate": null,
+          "changeRatePct": 2.72,
+          "routeName": null,
+          "routeCode": null
+        },
+        {
+          "date": "2026-09-01",
+          "value": 95.11,
+          "previousValue": null,
+          "previousDate": null,
+          "changeRatePct": 4.9,
+          "routeName": null,
+          "routeCode": null
+        },
+        {
+          "date": "2026-09-02",
+          "value": 94.74,
+          "previousValue": null,
+          "previousDate": null,
+          "changeRatePct": -0.39,
           "routeName": null,
           "routeCode": null
         }
       ],
       "latest": {
-        "date": "2026-08-24",
-        "value": 91.38,
+        "date": "2026-09-02",
+        "value": 94.74,
         "previousValue": null,
         "previousDate": null,
-        "changeRatePct": -0.61,
+        "changeRatePct": -0.39,
         "routeName": null,
         "routeCode": null
       },
@@ -145937,69 +146171,6 @@
       "frequency": "日频",
       "unit": "USD/bbl",
       "points": [
-        {
-          "date": "2024-09-16",
-          "value": 69.32,
-          "previousValue": null,
-          "previousDate": null,
-          "changeRatePct": 1.52,
-          "routeName": null,
-          "routeCode": null
-        },
-        {
-          "date": "2024-09-17",
-          "value": 69.91,
-          "previousValue": null,
-          "previousDate": null,
-          "changeRatePct": 0.85,
-          "routeName": null,
-          "routeCode": null
-        },
-        {
-          "date": "2024-09-18",
-          "value": 69.15,
-          "previousValue": null,
-          "previousDate": null,
-          "changeRatePct": -1.09,
-          "routeName": null,
-          "routeCode": null
-        },
-        {
-          "date": "2024-09-19",
-          "value": 71.12,
-          "previousValue": null,
-          "previousDate": null,
-          "changeRatePct": 2.85,
-          "routeName": null,
-          "routeCode": null
-        },
-        {
-          "date": "2024-09-20",
-          "value": 71.25,
-          "previousValue": null,
-          "previousDate": null,
-          "changeRatePct": 0.18,
-          "routeName": null,
-          "routeCode": null
-        },
-        {
-          "date": "2024-09-23",
-          "value": 70.72,
-          "previousValue": null,
-          "previousDate": null,
-          "changeRatePct": -0.74,
-          "routeName": null,
-          "routeCode": null
-        },
-        {
-          "date": "2024-09-24",
-          "value": 71.54,
-          "previousValue": null,
-          "previousDate": null,
-          "changeRatePct": 1.16,
-          "routeName": null,
-          "routeCode": null
-        },
         {
           "date": "2024-09-25",
           "value": 69.84,
@@ -150430,20 +150601,83 @@
         },
         {
           "date": "2026-08-24",
-          "value": 85.79,
+          "value": 84.96,
           "previousValue": null,
           "previousDate": null,
-          "changeRatePct": -0.99,
+          "changeRatePct": -1.95,
+          "routeName": null,
+          "routeCode": null
+        },
+        {
+          "date": "2026-08-25",
+          "value": 81.09,
+          "previousValue": null,
+          "previousDate": null,
+          "changeRatePct": -4.56,
+          "routeName": null,
+          "routeCode": null
+        },
+        {
+          "date": "2026-08-26",
+          "value": 81.89,
+          "previousValue": null,
+          "previousDate": null,
+          "changeRatePct": 0.99,
+          "routeName": null,
+          "routeCode": null
+        },
+        {
+          "date": "2026-08-27",
+          "value": 83.55,
+          "previousValue": null,
+          "previousDate": null,
+          "changeRatePct": 2.03,
+          "routeName": null,
+          "routeCode": null
+        },
+        {
+          "date": "2026-08-28",
+          "value": 83.43,
+          "previousValue": null,
+          "previousDate": null,
+          "changeRatePct": -0.14,
+          "routeName": null,
+          "routeCode": null
+        },
+        {
+          "date": "2026-08-31",
+          "value": 86.29,
+          "previousValue": null,
+          "previousDate": null,
+          "changeRatePct": 3.43,
+          "routeName": null,
+          "routeCode": null
+        },
+        {
+          "date": "2026-09-01",
+          "value": 90.67,
+          "previousValue": null,
+          "previousDate": null,
+          "changeRatePct": 5.08,
+          "routeName": null,
+          "routeCode": null
+        },
+        {
+          "date": "2026-09-02",
+          "value": 90.43,
+          "previousValue": null,
+          "previousDate": null,
+          "changeRatePct": -0.26,
           "routeName": null,
           "routeCode": null
         }
       ],
       "latest": {
-        "date": "2026-08-24",
-        "value": 85.79,
+        "date": "2026-09-02",
+        "value": 90.43,
         "previousValue": null,
         "previousDate": null,
-        "changeRatePct": -0.99,
+        "changeRatePct": -0.26,
         "routeName": null,
         "routeCode": null
       },

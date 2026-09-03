@@ -1,5 +1,24 @@
 [
   {
+    "date": "2026-09-03",
+    "generated_at": "2026-09-03T10:42:57.137Z",
+    "data_state": "fresh",
+    "summary": "本期有 3 条未关闭风险信号，销售动作以风险与合规闸门为先。",
+    "actions": [
+      "风险信号 3 条：先完成人工核验，再推进相关订单动作。",
+      "钢价 628.00 USD/ton：成交前复核成本与汇率，不套用固定加价比例。",
+      "签约币种按 EUR/CNY 历史收益风险评分比较，最终按账期回测和客户接受度复核。",
+      "EU 配额剩余 27.3%：报价前核验具体 Code 余额。",
+      "出口伙伴 Top1 为 越南（3,420,497 吨），新增市场先做客户与合规核验。"
+    ],
+    "evidence": [
+      "Cold-Rolled Coil FOB China: 628 USD/ton",
+      "Capesize Pacific Route Freight: 32 USD/ton",
+      "出口伙伴 Top1: 越南",
+      "EU剩余比例: 27.27739328937207%"
+    ]
+  },
+  {
     "date": "2026-08-30",
     "generated_at": "2026-08-30T12:59:10.493Z",
     "data_state": "partial",
