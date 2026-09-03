@@ -6,10 +6,10 @@
     "dashboard_url": "https://www.mysteel.com/fastcomment/#/",
     "api_url": "https://openapi.mysteel.com/without_sign/newsflash/flashnews/query_by_tags.htm",
     "taxonomy_url": "https://a.mysteelcdn.com/common/publish/newsflash/newsflash_column.json",
-    "captured_at": "2026-09-03T10:42:56.960Z",
+    "captured_at": "2026-09-03T11:43:44.986Z",
     "coverage_start": "2026-09-03",
     "coverage_end": "2026-09-03",
-    "latest_published_at": "2026-09-03T10:36:46.552Z",
+    "latest_published_at": "2026-09-03T11:38:44.051Z",
     "timezone": "Asia/Shanghai",
     "fetch_mode": "api",
     "request_params": {
@@ -23,47 +23,47 @@
         ]
       ]
     },
-    "raw_sha256": "4675e4831a6267a66d9224c7a2e50513e052ebf7112da946c32159516b46f6e7",
+    "raw_sha256": "aef34597722aadee336babb91dffff7699f0311afe276f951fda7ff2f251bfec",
     "taxonomy_sha256": "af4dcfbf85783efab2f26eeb65116e4ca28573d05e07f03816421e63b79712ab",
     "response_sha256": [
-      "0f4745609479339e752ff07e2658a4c2929bce585ad5eee5f58ead8b92843cd9",
-      "053bd0a9680243cde18e3e5ad4c2bf5ddd5a7d6d7d3404a870842e0c32bc8207",
-      "aae691da2a548abe088581fd34ffabab47db7a4e72b648a91e7253a7257f1368",
-      "8dfa1583c907bd27bc410fd6abb08d0f624fb8c51519716eb08d6dcbd8ac25ba",
-      "a450f635817d04764a7dd876eb25ad1da0838f004aa13fbb9001c625d556286c",
-      "f3d702be8bd456b97ed4c49b363dc3b4668243f285c986e5d2cd70bdb3904ad4",
-      "84c2988b21a63f377f7587c02277948cdcfe9fde313edad67613cc7dd7891e20",
-      "9c4042764e0c9372f687fe2428a06cfa5c2f697048f3b98c300a829691bfc2c6",
-      "e5f2500c96b6fdc52127640a0e5d6c8b44dcb11e11e0bdb06b883f377bbfa945",
-      "fd1b69f5cec1e86d04ed44bd1449ca90fbfcf26d97fa86491f63b676910bb89d",
-      "7aeacf8eeab26ea20651b96dc8b5257b9dab61afd651075fe61261dee46c0281",
-      "1da42cde61bb74a23bb1a371e90f3e704d7518cb05c8e810825b036cbe55ca3a",
-      "895cc053744ef12c195481adf089d6880ab951718bf516dcc37050ae181a2bac",
-      "f36ad1ba06b3d6bee0837a2c16be0655bb0c1294693cccdd182378a7bd8472cd",
-      "350811de1ea59e69d541bef16430a591a048062bfb7ed4b4cbb6ab42b6a171b4",
-      "e435d030dfaa91a51541f7e6c40728e83247633670939539677408d9f688726e",
-      "188c2c28d10c433f14568a3a3209da02b946b25de5acb10f2f43db0356a5e8e8",
-      "b20a135229dd31f394fcefeb29bfb9fe0b7c883ad31323d699b0d494768a3fad",
-      "e9a8c27e477c6d8c9f13f0f3d074435b716c0cb7b5e4289a4a461cadcb4eab0c",
-      "753f114ab97604f10b2536525932c040a3a2da2cb13ef2809becc2a62e4cabf1",
-      "778b91cb16b3b53503ecdffe11c04e52018464ce5e9cf29e81798b91190a14c0",
-      "2d9a743e5c5cf5a17862da4dfc199cef52fb74f5d702e60222312b5ebed64e1e",
-      "b213cf1a994c748e57de8a87c88739a7d9ab742085b656b724f6b9a7ee8a2d2d",
-      "47834830c2de7fe23213ea6150bb62555734f0f17ac0d867f11642031c9f232a",
-      "1c1e916fe1412a46054a2746de7df337f11b9fea4d9c6d74b91418e59532ecb3",
-      "c8b58bb8a7c0d4928f440fe3c9507a6826ecab9c402510801a1799d2c0ff09a4",
-      "a3820276a9a11a08c7abfafe2df17c5b515e732052b616c94e1c339edcef852e",
-      "0b4d753b2dde29297dbea0d8aa4e572ad00b96a61276d90429143eb0cc163189",
-      "6920f7845b32e17e522ca2228eae5fbc2603ddd6eab661b7a5964e41e2cebd92",
-      "263e8745b76689ce12b710ca66c488b2373db4c31a92ca9e43fe4991e57ec1ef",
-      "6b83bd9cca0e593e5425f57bed9e6b795ac1c34884cd4d89b0f795631407ebd3"
+      "7e7a5a3346cd369822b1cbcf0c6f27dab3fede7d62c7f02aacbf36b4eea5612e",
+      "79f688cbfa9e8599afd109a214155c268ba783c07098c3adc9afd9573b0e1ae2",
+      "8cdeec745322bb2869f43bf974a721d938f26b9e007911c5f95e3f74c19092e5",
+      "37b35d513a3929695bf74c6059a2aaae0f554e13e616f47d38a3bb6042d9ee9e",
+      "b7585282b3a6746ca8271972108825a4dc3e29c988582de4acf743b1fa6579d5",
+      "286ca1749078fb0c3ecf6b6a222a6299c5f87cce16453c39dbbc948b83191cc8",
+      "5cb59575669de7eaeb4784351a6e830b560f99f46af4d23f02579d12f64dce18",
+      "a8be7ba3ab6771dc0412a374d2e6d2296bcbf65bf4e21c11c7edb2958a8814f4",
+      "8ee40eb8b8a3223c8734f6e456c9d44f350a48ebcf1da36f350a62e68a40acc0",
+      "c9e2c22d54f2362841116a06210a60e3cbcd300ba9e598b9390d4113ba1e2699",
+      "060f0c1ae3f69f9f3d32f913b5977855e7f748f46996c99b38e411f43068c3b3",
+      "3c919e0d707526afe6f081dd5a9c29c8a1fc0baab72bb8a80b07c74686d2e83f",
+      "2f24dafef67b3812d5569f3829edf7ea45924ab2ccebdd6f74022244b25d0e86",
+      "992e983c2f6413c6d25be1d5ff76ea98f3216e94dd46ea133705a9d3703e0b4d",
+      "3637eb66c75567569ec20624434007b9ba114133355156075098d5142ed12a15",
+      "d14dc4d849efc889f969f152a2b961e4c0f38245c2c7d5092fb7d9a8016be4c3",
+      "3eb4226e3ca4661dad8cf40a4eb1e77bf8109cd61cf0139d8afa26bb289f7e48",
+      "1806582c0c5a8761ba0f047c4ef09f322ca3be3d76feec6821a0b327f4ff2966",
+      "47ad1bc9145104a9b84946c1eefc0a60e851a21810d69a89ea12ead7bce4bdb6",
+      "80e19d282ea365f4ee3aeb16c88cc02c5405c7567906c09a96a34a6872eddd23",
+      "9ed6fa5268df15bafc44fff62c9b8186456dbd3bb02ae198c60581fcccc409e9",
+      "161fb51b17230c0fd5577be11436b7a77a8381d1cc946ec7cbdea9a6d1fd66b2",
+      "184225636c8afb0e3989cab1b0c5bf450cdcf76ba53c19c856f16318de3fc7e4",
+      "e63fa220f9f0879cded8ea2338dd6ea15663c0a227ed4c0f7806d82e18bb0dc1",
+      "c83838288866478ae061faeaaa373e76a179d48763aa8192673a63ea6b01a085",
+      "8bc812a0369a62e082fb1f3c3cc6668ab3013e6a9bb6a799d9a18c7215d2e8b8",
+      "5490a3cfb2b8d7f483efe6fac02886665fcd2486c557088179708ec878e0aa2b",
+      "f7e83491725f0bbdeee5d1e8ad913681ac9e7e84c9fbcdc396e7dea6f47f0fbb",
+      "a77c72cc610432f204d0abbd2f4e495db050fb613f322037b4d78a0c5ac17d95",
+      "18bd224002cee558f90c6c574b7cec2ee8c9bb29eca3668406db1bf5cfafc7c2",
+      "35d8baa9d73c138076feb750cbfad2806ba5bc8c2f62a0f413889bcacb5a9bcc"
     ],
     "page_count": 31,
     "reported_total": 10000,
     "truncation_detected": true,
     "watermark": {
-      "publisher_time_ms": 1788431806552,
-      "id": "4840617"
+      "publisher_time_ms": 1788435524051,
+      "id": "4840623"
     },
     "retry": {
       "attempts": 3,
@@ -73,6 +73,332 @@
     }
   },
   "items": [
+    {
+      "news_id": "4840623",
+      "published_at": "2026-09-03T11:38:44.051Z",
+      "published_at_ms": 1788435524051,
+      "timezone": "Asia/Shanghai",
+      "content_text": "9月3日涉县天铁明天重废类降10，具体以价格表为准",
+      "content_html": "9月3日涉县天铁明天重废类降10，具体以价格表为准",
+      "raw_content": "9月3日涉县天铁明天重废类降10，具体以价格表为准",
+      "category": {
+        "id": 2,
+        "name": "2"
+      },
+      "section": {
+        "id": 9,
+        "name": "9"
+      },
+      "products": [
+        {
+          "id": "0306",
+          "name": "废钢",
+          "source": "relationBreed"
+        },
+        {
+          "id": "重废",
+          "name": "重废",
+          "source": "breedTag"
+        }
+      ],
+      "regions": [
+        {
+          "id": "01040304",
+          "name": "邯郸"
+        }
+      ],
+      "source_name": null,
+      "source_url": null,
+      "in_article_url": null,
+      "out_article_url": null,
+      "in_article_title": null,
+      "out_article_title": null,
+      "source_link_status": "no_link",
+      "data_source": 2,
+      "publisher_id": 215826,
+      "relation_id": 7591884,
+      "ai_flag": 0,
+      "platform_product_line": null,
+      "mapping_status": "ambiguous",
+      "quality_flags": [
+        "source_link_missing"
+      ]
+    },
+    {
+      "news_id": "4840622",
+      "published_at": "2026-09-03T11:31:19.037Z",
+      "published_at_ms": 1788435079037,
+      "timezone": "Asia/Shanghai",
+      "content_text": "9月4日起石横特钢废钢价格下调20元/吨，具体如下：1%增值税价格为：重三2222；重二2273；重一2323；薄花料2353；管头花料2374；钢筋压块2273、特级破碎料2232、镀锌压块2242、螺纹钢压块2323。",
+      "content_html": "9月4日起石横特钢废钢价格下调20元/吨，具体如下：1%增值税价格为：重三2222；重二2273；重一2323；薄花料2353；管头花料2374；钢筋压块2273、特级破碎料2232、镀锌压块2242、螺纹钢压块2323。",
+      "raw_content": "9月4日起石横特钢废钢价格下调20元/吨，具体如下：1%增值税价格为：重三2222；重二2273；重一2323；薄花料2353；管头花料2374；钢筋压块2273、特级破碎料2232、镀锌压块2242、螺纹钢压块2323。",
+      "category": {
+        "id": 2,
+        "name": "2"
+      },
+      "section": {
+        "id": 9,
+        "name": "9"
+      },
+      "products": [
+        {
+          "id": "0306",
+          "name": "废钢",
+          "source": "relationBreed"
+        },
+        {
+          "id": "特级破碎料",
+          "name": "特级破碎料",
+          "source": "breedTag"
+        },
+        {
+          "id": "钢筋压块",
+          "name": "钢筋压块",
+          "source": "breedTag"
+        },
+        {
+          "id": "特钢",
+          "name": "特钢",
+          "source": "breedTag"
+        },
+        {
+          "id": "镀锌压块",
+          "name": "镀锌压块",
+          "source": "breedTag"
+        },
+        {
+          "id": "重废Ⅰ类",
+          "name": "重废Ⅰ类",
+          "source": "breedTag"
+        },
+        {
+          "id": "重废Ⅱ类",
+          "name": "重废Ⅱ类",
+          "source": "breedTag"
+        },
+        {
+          "id": "再生金属",
+          "name": "再生金属",
+          "source": "breedTag"
+        }
+      ],
+      "regions": [
+        {
+          "id": "01010208",
+          "name": "泰安"
+        }
+      ],
+      "source_name": null,
+      "source_url": null,
+      "in_article_url": null,
+      "out_article_url": null,
+      "in_article_title": null,
+      "out_article_title": null,
+      "source_link_status": "no_link",
+      "data_source": 2,
+      "publisher_id": 220108,
+      "relation_id": 7591882,
+      "ai_flag": 0,
+      "platform_product_line": null,
+      "mapping_status": "ambiguous",
+      "quality_flags": [
+        "source_link_missing"
+      ]
+    },
+    {
+      "news_id": "4840621",
+      "published_at": "2026-09-03T11:17:50.897Z",
+      "published_at_ms": 1788434270897,
+      "timezone": "Asia/Shanghai",
+      "content_text": "9月3日首钢贵钢废钢采购价格上调20，调后：具体见价格表单。不含税，单位：元/吨。",
+      "content_html": "9月3日首钢贵钢废钢采购价格上调20，调后：具体见价格表单。不含税，单位：元/吨。",
+      "raw_content": "9月3日首钢贵钢废钢采购价格上调20，调后：具体见价格表单。不含税，单位：元/吨。",
+      "category": {
+        "id": 2,
+        "name": "2"
+      },
+      "section": {
+        "id": 9,
+        "name": "9"
+      },
+      "products": [
+        {
+          "id": "0306",
+          "name": "废钢",
+          "source": "relationBreed"
+        },
+        {
+          "id": "再生金属",
+          "name": "再生金属",
+          "source": "breedTag"
+        }
+      ],
+      "regions": [
+        {
+          "id": "01060301",
+          "name": "贵阳"
+        }
+      ],
+      "source_name": null,
+      "source_url": null,
+      "in_article_url": null,
+      "out_article_url": null,
+      "in_article_title": null,
+      "out_article_title": null,
+      "source_link_status": "no_link",
+      "data_source": 2,
+      "publisher_id": 220107,
+      "relation_id": 7591881,
+      "ai_flag": 0,
+      "platform_product_line": null,
+      "mapping_status": "ambiguous",
+      "quality_flags": [
+        "source_link_missing"
+      ]
+    },
+    {
+      "news_id": "4840620",
+      "published_at": "2026-09-03T11:15:47.346Z",
+      "published_at_ms": 1788434147346,
+      "timezone": "Asia/Shanghai",
+      "content_text": "9月3日邢台德龙德龙散料类下调10元，具体以价格表为准",
+      "content_html": "9月3日邢台德龙德龙散料类下调10元，具体以价格表为准",
+      "raw_content": "9月3日邢台德龙德龙散料类下调10元，具体以价格表为准",
+      "category": {
+        "id": 2,
+        "name": "2"
+      },
+      "section": {
+        "id": 9,
+        "name": "9"
+      },
+      "products": [
+        {
+          "id": "0306",
+          "name": "废钢",
+          "source": "relationBreed"
+        },
+        {
+          "id": "再生金属",
+          "name": "再生金属",
+          "source": "breedTag"
+        }
+      ],
+      "regions": [
+        {
+          "id": "01040305",
+          "name": "邢台"
+        }
+      ],
+      "source_name": null,
+      "source_url": null,
+      "in_article_url": null,
+      "out_article_url": null,
+      "in_article_title": null,
+      "out_article_title": null,
+      "source_link_status": "no_link",
+      "data_source": 2,
+      "publisher_id": 215826,
+      "relation_id": 7591880,
+      "ai_flag": 0,
+      "platform_product_line": null,
+      "mapping_status": "ambiguous",
+      "quality_flags": [
+        "source_link_missing"
+      ]
+    },
+    {
+      "news_id": "4840619",
+      "published_at": "2026-09-03T11:02:39.543Z",
+      "published_at_ms": 1788433359543,
+      "timezone": "Asia/Shanghai",
+      "content_text": "9月3日Mysteel铁矿石港口现货价格指数：62%指数708涨9，58%指数619涨7，65%指数845涨10。",
+      "content_html": "9月3日Mysteel铁矿石港口现货价格指数：62%指数708涨9，58%指数619涨7，65%指数845涨10。",
+      "raw_content": "9月3日Mysteel铁矿石港口现货价格指数：62%指数708涨9，58%指数619涨7，65%指数845涨10。",
+      "category": {
+        "id": 2,
+        "name": "2"
+      },
+      "section": {
+        "id": 7,
+        "name": "7"
+      },
+      "products": [
+        {
+          "id": "0311",
+          "name": "铁矿石",
+          "source": "relationBreed"
+        }
+      ],
+      "regions": [
+        {
+          "id": "01",
+          "name": "国内"
+        }
+      ],
+      "source_name": null,
+      "source_url": null,
+      "in_article_url": null,
+      "out_article_url": null,
+      "in_article_title": null,
+      "out_article_title": null,
+      "source_link_status": "no_link",
+      "data_source": 2,
+      "publisher_id": 225637,
+      "relation_id": 7591879,
+      "ai_flag": 0,
+      "platform_product_line": null,
+      "mapping_status": "ambiguous",
+      "quality_flags": [
+        "source_link_missing"
+      ]
+    },
+    {
+      "news_id": "4840618",
+      "published_at": "2026-09-03T10:55:03.129Z",
+      "published_at_ms": 1788432903129,
+      "timezone": "Asia/Shanghai",
+      "content_text": "9月3日，焊管全国贸易商成交量14024吨，日环比减少480吨，降幅3.35%。9月3日，焊管华北管厂出库量 20200吨，日环比减少260吨，降幅1.27%。",
+      "content_html": "9月3日，焊管全国贸易商成交量14024吨，日环比减少480吨，降幅3.35%。9月3日，焊管华北管厂出库量 20200吨，日环比减少260吨，降幅1.27%。",
+      "raw_content": "9月3日，焊管全国贸易商成交量14024吨，日环比减少480吨，降幅3.35%。9月3日，焊管华北管厂出库量 20200吨，日环比减少260吨，降幅1.27%。",
+      "category": {
+        "id": 2,
+        "name": "2"
+      },
+      "section": {
+        "id": 4,
+        "name": "4"
+      },
+      "products": [
+        {
+          "id": "010109",
+          "name": "钢管",
+          "source": "relationBreed"
+        },
+        {
+          "id": "焊管",
+          "name": "焊管",
+          "source": "breedTag"
+        }
+      ],
+      "regions": [],
+      "source_name": null,
+      "source_url": null,
+      "in_article_url": null,
+      "out_article_url": null,
+      "in_article_title": null,
+      "out_article_title": null,
+      "source_link_status": "no_link",
+      "data_source": 0,
+      "publisher_id": 208846,
+      "relation_id": 0,
+      "ai_flag": 0,
+      "platform_product_line": null,
+      "mapping_status": "ambiguous",
+      "quality_flags": [
+        "source_link_missing"
+      ]
+    },
     {
       "news_id": "4840617",
       "published_at": "2026-09-03T10:36:46.552Z",
@@ -4299,6 +4625,10 @@
           "name": "马鞍山"
         },
         {
+          "id": "01010703",
+          "name": "芜湖"
+        },
+        {
           "id": "01010705",
           "name": "安庆"
         },
@@ -4317,10 +4647,6 @@
         {
           "id": "01010716",
           "name": "亳州"
-        },
-        {
-          "id": "01010703",
-          "name": "芜湖"
         }
       ],
       "source_name": "我的钢铁网(Mysteel)",
@@ -104393,12 +104719,12 @@
           "name": "齐齐哈尔"
         },
         {
-          "id": "01050308",
-          "name": "牡丹江"
-        },
-        {
           "id": "01050310",
           "name": "佳木斯"
+        },
+        {
+          "id": "01050308",
+          "name": "牡丹江"
         }
       ],
       "source_name": null,
@@ -116358,12 +116684,12 @@
           "name": "太原"
         },
         {
-          "id": "01040404",
-          "name": "长治"
-        },
-        {
           "id": "01040402",
           "name": "大同"
+        },
+        {
+          "id": "01040404",
+          "name": "长治"
         }
       ],
       "source_name": "我的钢铁网(Mysteel)",
@@ -140455,13 +140781,13 @@
           "source": "relationBreed"
         },
         {
-          "id": "03030709",
-          "name": "钛渣",
+          "id": "030307",
+          "name": "钛系",
           "source": "relationBreed"
         },
         {
-          "id": "030307",
-          "name": "钛系",
+          "id": "03030709",
+          "name": "钛渣",
           "source": "relationBreed"
         },
         {
@@ -157955,12 +158281,12 @@
   ],
   "quality": {
     "raw_count": 3100,
-    "accepted_count": 3024,
-    "rejected_count": 76,
+    "accepted_count": 3030,
+    "rejected_count": 70,
     "deduped_count": 0,
-    "missing_source_link_count": 2406,
+    "missing_source_link_count": 2412,
     "missing_product_count": 74,
-    "malformed_content_count": 76,
+    "malformed_content_count": 70,
     "duplicate_group_count": 0,
     "warnings": [
       "API 报告总量超过本次分页采集量；快照仅覆盖目标日期窗口，需按分类/地区拆分请求补全。"
