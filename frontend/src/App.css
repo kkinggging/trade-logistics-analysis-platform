@@ -24,7 +24,8 @@
 .overview,
 .morning-brief,
 .shipping-assistance,
-.marketing-strategy {
+.marketing-strategy,
+.data-health {
   max-width: 1440px;
   margin-inline: auto;
 }
@@ -84,7 +85,8 @@
   .overview,
   .morning-brief,
   .shipping-assistance,
-  .marketing-strategy {
+  .marketing-strategy,
+  .data-health {
     padding-inline: var(--space-2);
   }
 }

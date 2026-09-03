@@ -5,6 +5,7 @@ import { MorningBrief } from './features/morning-brief';
 import { Shipping } from './features/shipping';
 import { Marketing } from './features/marketing';
 import { UnifiedAnalysis } from './features/analysis';
+import { DataHealth } from './features/data-health';
 import './App.css';
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
         <Routes>
           <Route path="/" element={<MorningBrief />} />
           <Route path="/analysis" element={<UnifiedAnalysis />} />
+          <Route path="/data-health" element={<DataHealth />} />
           {/* Backward-compatible aliases for the former three workspaces. */}
           <Route path="/dashboard" element={<UnifiedAnalysis />} />
           <Route path="/cost-calculator" element={<CostCalculator />} />
