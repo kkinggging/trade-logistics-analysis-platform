@@ -3,23 +3,32 @@ name: Deploy trade analysis platform to GitHub Pages
 on:
   push:
     branches: [main]
+  schedule:
+    # GitHub Actions 使用 UTC；10:00 UTC = 北京时间 18:00。
+    - cron: '0 10 * * *'
   workflow_dispatch:
 
 permissions:
-  contents: read
+  contents: write
   pages: write
   id-token: write
 
 concurrency:
-  group: pages
+  # 同步任务产生的机器人提交不应取消当前同步；同步与普通推送使用不同并发组。
+  group: pages-${{ github.event_name == 'push' && 'push' || 'sync' }}
   cancel-in-progress: true
 
 jobs:
   build:
+    # 同步任务提交数据后会触发一次新的 push 事件；本次工作流已经完成构建和发布，
+    # 因此跳过由机器人提交引起的重复运行，避免形成循环部署。
+    if: github.actor != 'github-actions[bot]'
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
       - name: Setup Node.js
         uses: actions/setup-node@v4
@@ -31,6 +40,23 @@ jobs:
       - name: Install dependencies
         working-directory: frontend
         run: npm ci
+
+      - name: Sync external data snapshots
+        id: sync
+        continue-on-error: true
+        run: node data-ingestion/sync-all.mjs
+
+      - name: Commit updated snapshots
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add frontend/public/data/*.json
+          if git diff --cached --quiet; then
+            echo "没有新的数据快照需要提交"
+          else
+            git commit -m "data: refresh external snapshots"
+            git push origin HEAD:main
+          fi
 
       - name: Type-check and build
         working-directory: frontend
@@ -45,6 +71,7 @@ jobs:
           path: offline-demo
 
   deploy:
+    if: github.actor != 'github-actions[bot]'
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
