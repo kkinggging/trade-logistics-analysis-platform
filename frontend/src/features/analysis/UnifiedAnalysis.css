@@ -56,6 +56,17 @@
 .map-mode-switch button.is-active { color: var(--accent-primary); background: var(--surface-card); box-shadow: var(--shadow-sm); }
 .map-toolbar { display: flex; align-items: center; flex-wrap: wrap; justify-content: space-between; gap: .45rem .8rem; padding: .4rem .1rem .25rem; color: var(--text-secondary); font-size: .8125rem; }
 .map-zoom-note { margin-left: 1rem; color: var(--text-tertiary); }
+.opportunity-rule-toggle { flex: 0 0 auto; padding: .3rem .58rem; color: var(--accent-primary); border: 1px solid var(--accent-primary-border); border-radius: .4rem; background: var(--surface-card); font-size: .78rem; font-weight: 650; }
+.opportunity-rule-toggle:hover { background: var(--accent-primary-soft); }
+.opportunity-rule-panel { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: .55rem; margin: .15rem 0 .6rem; padding: .65rem; border: 1px solid var(--accent-primary-border); border-radius: .55rem; background: var(--accent-primary-wash); }
+.opportunity-rule-panel > div { min-width: 0; display: flex; flex-direction: column; gap: .18rem; padding: .35rem .45rem; border-left: 2px solid var(--accent-primary); }
+.opportunity-rule-panel strong { color: var(--text-primary); font-size: .9rem; }
+.opportunity-rule-panel span { color: var(--text-secondary); font-size: .82rem; line-height: 1.5; }
+.opportunity-rule-panel .opportunity-status-legend span { color: inherit; }
+.opportunity-status-legend { grid-column: 1 / -1; display: flex !important; flex-direction: row !important; flex-wrap: wrap; gap: .35rem .8rem; padding: .35rem .45rem !important; border-left: 0 !important; border-top: 1px solid var(--accent-primary-border); }
+.opportunity-status-legend span { display: inline-flex; align-items: center; gap: .3rem; font-size: .8rem; }
+.opportunity-status-legend span::before { width: .55rem; height: .55rem; border-radius: 50%; background: currentColor; content: ''; }
+.opportunity-status-legend .is-score { color: var(--accent-primary); }.opportunity-status-legend .is-reference { color: #6976b6; }.opportunity-status-legend .is-restricted { color: #c4514c; }.opportunity-status-legend .is-missing { color: var(--text-tertiary); }
 .remedy-origin-switch { display: inline-flex; flex-wrap: wrap; gap: .2rem; padding: .18rem; border: 1px solid var(--border-default); border-radius: .45rem; background: var(--surface-2); }
 .remedy-origin-switch button { padding: .3rem .58rem; border-radius: .3rem; color: var(--text-secondary); font-size: .78rem; font-weight: 650; white-space: nowrap; }
 .remedy-origin-switch button:hover { color: var(--text-primary); background: var(--surface-card-hover); }
@@ -228,7 +239,9 @@
 @media (max-width: 1100px) { .shipping-index-kpis { grid-template-columns: repeat(3, minmax(0, 1fr)); }.shipping-index-charts { grid-template-columns: 1fr; } }
 @media (max-width: 900px) { .objective-charts { grid-template-columns: 1fr 1fr; }.objective-chart-card:first-child, .export-map-card, .quota-wide { grid-column: 1 / -1; }.export-trend-card, .export-rank-card, .quota-rank, .quota-mix { grid-column: auto; } }
 @media (max-width: 1100px) { .export-map-card .objective-chart-heading { align-items: flex-start; flex-direction: column; gap: .55rem; }.export-map-card .map-mode-switch { width: 100%; }.export-map-card .map-mode-switch button { flex: 1; } }
+@media (max-width: 900px) { .opportunity-rule-panel { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
 @media (max-width: 620px) { .analysis-intro, .section-heading { align-items: flex-start; flex-direction: column; }.analysis-intro h1 { font-size: 2rem; }.analysis-context { justify-content: flex-start; }.search-row { align-items: flex-start; flex-direction: column; gap: .35rem; }.search-toggle { margin-left: 0; }.fact-strip, .processed-grid, .concern-grid, .compare-grid, .signal-list, .objective-grid, .objective-charts { grid-template-columns: 1fr; }.objective-chart-card:first-child, .map-card, .trend-card, .export-map-card, .export-trend-card, .export-rank-card, .quota-wide, .quota-rank, .quota-mix { grid-column: auto; }.objective-scroll { height: min(78vh, 42rem); min-height: 26rem; padding: .55rem; }.objective-grid-meta { align-items: flex-start; flex-direction: column; gap: .15rem; }.objective-card { min-height: 9.8rem; }.analysis-section { padding: .8rem; }.objective-chart, .export-chart, .export-map-card .objective-chart, .quota-chart { height: 16rem; }.export-map-card .map-main-chart { min-height: 16rem; }.map-toolbar { align-items: flex-start; flex-direction: column; gap: .2rem; }.map-zoom-note { margin-left: .5rem; }.map-mode-switch { width: 100%; }.map-mode-switch button { flex: 1; } }
+@media (max-width: 620px) { .opportunity-rule-panel { grid-template-columns: 1fr; } }
 @media (max-width: 620px) { .analysis-advice-strip { grid-template-columns: 1fr; } }
 @media (max-width: 620px) { .analysis-chart-grid-two { grid-template-columns: 1fr; }.analysis-chart { height: 15rem; }.analysis-chart-card { min-height: 16.5rem; }.analysis-chart-heading { align-items: flex-start; flex-direction: column; gap: .15rem; } }
 @media (max-width: 620px) { .policy-timeline { min-height: 15rem; }.policy-timeline-head { align-items: flex-start; flex-direction: column; gap: .2rem; }.policy-timeline-head > div { align-items: flex-start; flex-direction: column; gap: .1rem; }.policy-timeline-track { grid-template-columns: repeat(8, 5.7rem); }.policy-timeline-detail-head { align-items: flex-start; flex-direction: column; }.policy-event-top { flex-direction: column; gap: .4rem; } }
@@ -236,3 +249,145 @@
 @media (max-width: 620px) { .context-flow { width: 100%; margin-left: 0; }.filter-divider { display: none; }.objective-table-wrap { min-width: 720px; } }
 @media (max-width: 620px) { .forex-kpis, .forex-insight-strip { grid-template-columns: 1fr; }.forex-chart { height: 17rem; }.forex-chart-heading { align-items: flex-start; flex-direction: column; } }
 @media (max-width: 620px) { .shipping-index-heading { align-items: flex-start; flex-direction: column; gap: .2rem; }.shipping-index-kpis { grid-template-columns: repeat(2, minmax(0, 1fr)); }.shipping-index-charts article > div:last-child { height: 14rem; } }
+
+/* 部门出口业务：只展示脱敏后的聚合结果，实际值与增长目标保持视觉分离。 */
+.internal-business-panel { margin-top: .8rem; padding: 1rem; border: 1px solid var(--border-subtle); border-radius: .8rem; background: var(--surface-1); box-shadow: var(--shadow-sm); }
+.internal-business-heading { display: flex; align-items: flex-end; justify-content: space-between; gap: 1rem; margin-bottom: .75rem; }
+.internal-business-heading > div { display: flex; flex-direction: column; gap: .15rem; }
+.internal-business-kicker { color: var(--accent-primary); font: 700 .7rem var(--font-mono); letter-spacing: .08em; }
+.internal-business-heading h3 { margin: 0; color: var(--text-primary); font-size: 1.2rem; }
+.internal-business-heading > span { color: var(--text-tertiary); font-size: .82rem; }
+.internal-business-kpis { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: .55rem; }
+.internal-business-kpis > div { min-width: 0; padding: .65rem .75rem; border: 1px solid var(--border-subtle); border-radius: .6rem; background: var(--surface-card); }
+.internal-business-kpis span { display: block; color: var(--text-secondary); font-size: .82rem; }
+.internal-business-kpis strong { display: block; margin: .24rem 0 .1rem; color: var(--text-primary); font-size: 1.3rem; font-variant-numeric: tabular-nums; }
+.internal-business-kpis small { display: block; overflow-wrap: anywhere; color: var(--text-tertiary); font-size: .72rem; line-height: 1.35; }
+.internal-business-chart-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: .65rem; margin-top: .65rem; }
+.internal-business-chart-card { min-width: 0; padding: .65rem .7rem .35rem; border: 1px solid var(--border-subtle); border-radius: .65rem; background: var(--surface-card); }
+.internal-business-chart-title { display: flex; align-items: baseline; justify-content: space-between; gap: .6rem; }
+.internal-business-chart-title strong { color: var(--text-primary); font-size: .96rem; }
+.internal-business-chart-title span { color: var(--text-tertiary); font-size: .73rem; text-align: right; }
+.internal-business-chart { width: 100%; height: 16rem; }
+.internal-business-note { display: flex; align-items: flex-start; gap: .5rem; margin-top: .65rem; padding: .55rem .7rem; border-left: 2px solid var(--accent-primary); background: var(--accent-primary-wash); }
+.internal-business-note span { flex: 0 0 auto; color: var(--accent-primary); font-size: .78rem; font-weight: 700; }
+.internal-business-note p { margin: 0; color: var(--text-secondary); font-size: .78rem; line-height: 1.5; }
+@media (max-width: 900px) { .internal-business-kpis { grid-template-columns: repeat(2, minmax(0, 1fr)); }.internal-business-chart-grid { grid-template-columns: 1fr; } }
+@media (max-width: 620px) { .internal-business-heading { align-items: flex-start; flex-direction: column; gap: .25rem; }.internal-business-kpis { grid-template-columns: 1fr 1fr; }.internal-business-chart { height: 15rem; }.internal-business-chart-title { align-items: flex-start; flex-direction: column; gap: .15rem; }.internal-business-chart-title span { text-align: left; } }
+
+/* 目的国排名与政策时间线：政策图紧跟目的国图，保持同一业务阅读路径。 */
+.destination-policy-panel { display: grid; gap: .8rem; margin-top: .8rem; padding: 1rem; border: 1px solid var(--border-subtle); border-radius: .8rem; background: var(--surface-1); box-shadow: var(--shadow-sm); }
+.destination-policy-top-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: .8rem; }
+.destination-policy-chart-card, .destination-policy-timeline { min-width: 0; padding: .75rem .8rem .45rem; border: 1px solid var(--border-subtle); border-radius: .65rem; background: var(--surface-card); }
+.destination-policy-chart { width: 100%; height: 18rem; }
+.destination-policy-distribution { min-width: 0; padding: .75rem .8rem .45rem; border: 1px solid var(--border-subtle); border-radius: .65rem; background: var(--surface-card); }
+.destination-policy-distribution-chart { width: 100%; height: 18rem; }
+.destination-policy-empty { display: grid; min-height: 18rem; place-items: center; color: var(--text-tertiary); font-size: .9rem; text-align: center; }
+.destination-policy-timeline .policy-timeline { min-height: 0; }
+@media (max-width: 900px) { .destination-policy-top-grid { grid-template-columns: 1fr; } }
+@media (max-width: 620px) { .destination-policy-panel { padding: .8rem; }.destination-policy-chart { height: 16rem; } }
+@media (max-width: 620px) { .destination-policy-distribution-chart { height: 16rem; }.destination-policy-empty { min-height: 16rem; } }
+
+/* 01 客观信息：地图与联动面板共享首屏空间；细节图表只在面板内按模式挂载。 */
+.objective-charts {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  grid-template-rows: minmax(0, 1fr);
+  gap: .75rem;
+  height: clamp(21rem, 50vh, 40rem);
+  min-height: 0;
+  margin: .8rem 0 .65rem;
+  overflow: hidden;
+}
+.objective-chart-card.export-map-card {
+  grid-column: auto;
+  grid-row: 1;
+  min-width: 0;
+  min-height: 0;
+  height: 100%;
+  padding: .85rem .95rem .65rem;
+  overflow: hidden;
+}
+.export-map-card .objective-chart-heading { align-items: center; }
+.export-map-card .objective-chart-heading > div:first-child { min-width: 0; }
+.export-map-card .objective-chart-heading strong { font-size: 1.05rem; }
+.export-map-card .objective-chart-heading small { font-size: .8rem; }
+.export-map-card .map-toolbar { flex: 0 0 auto; }
+.export-map-card .objective-map-wrap { min-height: 0; height: calc(100% - 5.8rem); }
+.export-map-card .objective-map-wrap .objective-chart,
+.export-map-card .map-main-chart { height: 100%; min-height: 0; }
+.objective-linked-panel {
+  grid-column: auto;
+  grid-row: 1;
+  display: flex;
+  min-width: 0;
+  min-height: 0;
+  height: 100%;
+  flex-direction: column;
+  overflow: hidden;
+  border: 1px solid var(--border-subtle);
+  border-radius: .7rem;
+  background: var(--surface-card);
+}
+.objective-linked-header {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: .75rem;
+  padding: .75rem .85rem .55rem;
+  border-bottom: 1px solid var(--border-subtle);
+  background: var(--surface-1);
+}
+.objective-linked-header > div { display: flex; min-width: 0; flex-direction: column; gap: .15rem; }
+.objective-linked-header strong { overflow: hidden; color: var(--text-primary); font-size: 1.12rem; text-overflow: ellipsis; white-space: nowrap; }
+.objective-panel-eyebrow { color: var(--accent-primary); font: .7rem var(--font-mono); letter-spacing: .08em; }
+.objective-panel-meta { color: var(--text-tertiary); font-size: .78rem; white-space: nowrap; }
+.objective-panel-tabs {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: .25rem;
+  padding: .45rem .55rem;
+  border-bottom: 1px solid var(--border-subtle);
+  background: var(--surface-2);
+}
+.objective-panel-tabs button {
+  min-height: 2.55rem;
+  padding: .35rem .4rem;
+  color: var(--text-secondary);
+  border: 1px solid transparent;
+  border-radius: .42rem;
+  font-size: .86rem;
+  font-weight: 650;
+  line-height: 1.2;
+  transition: color var(--transition-fast), background var(--transition-fast), border-color var(--transition-fast);
+}
+.objective-panel-tabs button:hover { color: var(--text-primary); background: var(--surface-card-hover); }
+.objective-panel-tabs button:focus-visible { outline: 2px solid var(--accent-primary); outline-offset: 1px; }
+.objective-panel-tabs button.is-active { color: var(--accent-primary); border-color: var(--accent-primary-border); background: var(--surface-card); box-shadow: var(--shadow-sm); }
+.objective-panel-content { min-height: 0; flex: 1; overflow: hidden; }
+.objective-panel-view { height: 100%; min-height: 0; padding: .65rem; overflow-y: auto; scrollbar-gutter: stable; }
+.objective-panel-kpis { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: .45rem; margin-bottom: .55rem; }
+.objective-panel-kpis > div { min-width: 0; padding: .5rem .55rem; border: 1px solid var(--border-subtle); border-radius: .48rem; background: var(--surface-2); }
+.objective-panel-kpis span { display: block; color: var(--text-secondary); font-size: .78rem; }
+.objective-panel-kpis strong { display: block; margin: .16rem 0; overflow: hidden; color: var(--text-primary); font-size: 1.13rem; font-variant-numeric: tabular-nums; text-overflow: ellipsis; white-space: nowrap; }
+.objective-panel-kpis small { display: block; overflow: hidden; color: var(--text-tertiary); font-size: .7rem; text-overflow: ellipsis; white-space: nowrap; }
+.objective-panel-chart-card { min-width: 0; margin-bottom: .55rem; padding: .55rem .6rem .25rem; border: 1px solid var(--border-subtle); border-radius: .52rem; background: var(--surface-card); }
+.objective-panel-chart-card .objective-chart-heading strong { font-size: .94rem; }
+.objective-panel-chart-card .objective-chart-heading small { font-size: .75rem; }
+.objective-panel-chart-card .export-chart { height: 15.5rem; }
+.objective-panel-chart-card .quota-chart { height: 15rem; }
+.objective-panel-chart-card > .objective-chart { height: 15.5rem; }
+.objective-panel-chart-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: .55rem; }
+.objective-panel-chart-grid .objective-panel-chart-card { min-width: 0; }
+.objective-panel-empty { display: grid; min-height: 12rem; place-items: center; padding: 1rem; color: var(--text-tertiary); border: 1px dashed var(--border-default); border-radius: .55rem; font-size: .9rem; text-align: center; }
+
+@media (max-width: 900px) {
+  .objective-charts { grid-template-columns: 1fr; grid-template-rows: auto auto; height: auto; overflow: visible; }
+  .objective-chart-card.export-map-card, .objective-linked-panel { grid-column: auto; grid-row: auto; height: 30rem; }
+}
+@media (max-width: 620px) {
+  .objective-chart-card.export-map-card, .objective-linked-panel { height: 28rem; }
+  .objective-panel-tabs button { min-height: 2.8rem; padding-inline: .2rem; font-size: .78rem; }
+  .objective-panel-kpis strong { font-size: .98rem; }
+  .objective-panel-chart-grid { grid-template-columns: 1fr; }
+  .export-map-card .objective-map-wrap { height: calc(100% - 8.1rem); }
+}

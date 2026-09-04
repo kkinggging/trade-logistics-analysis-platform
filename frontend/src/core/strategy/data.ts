@@ -16,7 +16,7 @@ export type StrategyDataBundle = StrategyDataInputs & {
  * 这里不设置 limit，避免外部行情在生成方案时被截断。
  */
 export async function loadStrategyData(params?: QueryParams): Promise<StrategyDataBundle> {
-  const [quotes, risks, policies, aggregates, costs, fxScenarios, shippingOptions, steelExport, forex, taricQuota, shippingIndices, fastNews, syncStatus] = await Promise.all([
+  const [quotes, risks, policies, aggregates, costs, fxScenarios, shippingOptions, steelExport, forex, taricQuota, shippingIndices, fastNews, syncStatus, internalBusiness] = await Promise.all([
     dataProvider.getMarketQuotes(params),
     dataProvider.getRiskSignals(params),
     dataProvider.getPolicyEvents(params),
@@ -30,6 +30,7 @@ export async function loadStrategyData(params?: QueryParams): Promise<StrategyDa
     dataProvider.getShippingIndexSnapshot(),
     dataProvider.getFastNewsSnapshot(),
     dataProvider.getDataSyncStatus(),
+    dataProvider.getInternalBusinessSnapshot(),
   ]);
 
   return {
@@ -46,6 +47,7 @@ export async function loadStrategyData(params?: QueryParams): Promise<StrategyDa
     shippingIndices,
     fastNews,
     syncStatus,
+    internalBusiness,
   };
 }
 

@@ -1,6 +1,6 @@
 import { useEffect, useMemo, useState } from 'react';
 import { dataProvider } from '@/core/data/provider';
-import { DataSyncSourceStatus, DataSyncStatus } from '@/core/store/types';
+import { DataSyncSourceStatus, DataSyncStatus, InternalBusinessSnapshot } from '@/core/store/types';
 import { DataStatus } from '@/shared/components/data/DataStatus';
 import './DataHealth.css';
 
@@ -20,7 +20,7 @@ const sourceDefinitions: SourceDefinition[] = [
   { id: 'shipping-index-dashboard-public', label: '航运指数数据看板', kind: 'external', dependencies: ['综合分析 · 航运指数图表', '运输方案 · 物流环境参考', '销售方案 · 运费建议'], note: 'CCFI、SCFI、BSI、BDI、Brent、NYMEX' },
   { id: 'trade-remedy-dashboard-public', label: '出口贸易救济案件看板', kind: 'external', dependencies: ['综合分析 · 贸易救济地图', '综合分析 · 出口条件评估', '销售方案 · 合规风险闸门'], note: '反倾销、反补贴、保障措施、HS 税号与案件阶段' },
   { id: 'mysteel-fast-news', label: '我的钢铁网行业快讯', kind: 'external', dependencies: ['晨报 · 行业快讯'], note: '快讯正文、发布时间、产品归类与原文链接' },
-  { id: 'internal-business-snapshot', label: '公司内部业务数据', kind: 'internal', dependencies: ['综合分析 · 经营与成本', '成本计算器 · 成本测算', '运输方案 · 路线样本', '销售方案 · 经营约束'], note: '经营聚合、产品成本、政策事件、风险信号与运输样本' },
+  { id: 'internal-business-snapshot', label: '公司内部业务数据', kind: 'internal', dependencies: ['综合分析 · 03 业务关注点', '综合分析 · 04 企业出口结构对照', '销售方案 · 经营节奏参考'], note: '2025全年脱敏出口聚合：月度、目的国、区域、产品、渠道与基地结构' },
 ];
 
 function formatTime(value?: string | null) {
@@ -58,6 +58,7 @@ function stateClass(source: DataSyncSourceStatus | undefined, kind: SourceDefini
 
 export function DataHealth() {
   const [status, setStatus] = useState<DataSyncStatus | null>(null);
+  const [internalBusiness, setInternalBusiness] = useState<InternalBusinessSnapshot | null>(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
 
@@ -65,7 +66,9 @@ export function DataHealth() {
     try {
       setLoading(true);
       setError(null);
-      setStatus(await dataProvider.getDataSyncStatus());
+      const [nextStatus, nextInternalBusiness] = await Promise.all([dataProvider.getDataSyncStatus(), dataProvider.getInternalBusinessSnapshot()]);
+      setStatus(nextStatus);
+      setInternalBusiness(nextInternalBusiness);
     } catch (loadError) {
       setError(loadError instanceof Error ? loadError.message : '同步状态加载失败');
     } finally {
@@ -115,9 +118,9 @@ export function DataHealth() {
                 <div className="health-source-top"><div><span className="health-source-kind">{definition.kind === 'internal' ? '内部数据' : '外部数据'}</span><h3>{definition.label}</h3></div><span className="health-state"><i aria-hidden="true" />{stateLabel(source, definition.kind)}</span></div>
                 <p className="health-source-note">{definition.note}</p>
                 <div className="health-source-facts">
-                  <div><span>最后成功</span><strong>{definition.kind === 'internal' ? '已接入' : formatTime(source?.success_at)}</strong></div>
-                  <div><span>覆盖范围</span><strong>{definition.kind === 'internal' ? '项目结构化快照' : formatCoverage(source?.coverage_end)}</strong></div>
-                  <div><span>下次计划</span><strong>{definition.kind === 'internal' ? '随内部数据同步' : nextRun}</strong></div>
+                  <div><span>最后成功</span><strong>{definition.kind === 'internal' ? formatTime(internalBusiness?.source.captured_at) : formatTime(source?.success_at)}</strong></div>
+                  <div><span>覆盖范围</span><strong>{definition.kind === 'internal' ? internalBusiness ? `${internalBusiness.source.coverage_start} 至 ${internalBusiness.source.coverage_end} · ${internalBusiness.summary.record_count.toLocaleString('zh-CN')} 条` : '快照未读取' : formatCoverage(source?.coverage_end)}</strong></div>
+                  <div><span>下次计划</span><strong>{definition.kind === 'internal' ? '按内部快照更新' : nextRun}</strong></div>
                 </div>
                 {source?.error && <div className="health-source-error"><span>最近异常</span>{source.error}</div>}
                 <div className="health-dependencies"><span>影响模块</span><div>{definition.dependencies.map((dependency) => <span key={dependency}>{dependency}</span>)}</div></div>
@@ -129,7 +132,7 @@ export function DataHealth() {
 
       <section className="health-guidance">
         <div><span className="data-health-eyebrow">READING GUIDE / 判读口径</span><h2>如何理解这里的状态</h2></div>
-        <div className="health-guide-grid"><p><b>最新快照</b>表示本次同步成功生成了新的结构化数据，页面图表会在下一次发布后使用它。</p><p><b>沿用上次快照</b>表示本次抓取失败，但系统没有用半成品覆盖旧数据；相关建议应结合异常说明人工复核。</p><p><b>公司内部数据</b>按当前项目口径视为已完成接入，现以脱敏后的结构化业务快照供成本、经营、风险和运输模块使用。</p></div>
+        <div className="health-guide-grid"><p><b>最新快照</b>表示本次同步成功生成了新的结构化数据，页面图表会在下一次发布后使用它。</p><p><b>沿用上次快照</b>表示本次抓取失败，但系统没有用半成品覆盖旧数据；相关建议应结合异常说明人工复核。</p><p><b>公司内部数据</b>当前以 2025 年脱敏聚合快照接入 03/04；不含客户明细，金额、利润、贸易术语等未提供字段不会被推断。</p></div>
       </section>
     </div>
   );

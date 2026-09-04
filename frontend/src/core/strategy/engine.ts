@@ -11,6 +11,7 @@ import {
   FxScenario,
   ShippingOption,
   ShippingIndexSnapshot,
+  InternalBusinessSnapshot,
 } from '@/core/store/types';
 
 export interface StrategyDataInputs {
@@ -26,6 +27,7 @@ export interface StrategyDataInputs {
   fxScenarios?: FxScenario[];
   shippingOptions?: ShippingOption[];
   shippingIndices?: ShippingIndexSnapshot | null;
+  internalBusiness?: InternalBusinessSnapshot | null;
 }
 
 export interface AdviceEvidenceMeta {
@@ -180,6 +182,34 @@ function buildAdvice(input: StrategyDataInputs): DataDrivenAdvice[] {
     advice.push({ id: 'target', ruleId: 'TARGET-001', category: '经营', priority: completion != null && completion < 80 ? '中' : '低', title: '经营目标与销售节奏', recommendation: completion != null && completion < 80 ? '当前经营目标完成率偏低，销售方案应优先补齐目标缺口，并拆分到产品线、区域和客户，而不是只扩大报价量。' : '经营目标完成情况未形成明显缺口，销售动作按客户和利润条件筛选。', evidence: [`统计销量 ${tons(volume)}，目标 ${tons(target)}`, `目标完成率 ${completion?.toFixed(1) ?? '—'}%`], sourceLabels: ['内部经营聚合'], asOf: aggregateDates, evidenceMeta: [metaForLocal(input, '内部经营聚合', aggregateDates)] });
   }
 
+  if (input.internalBusiness) {
+    const business = input.internalBusiness;
+    const latestMonth = business.monthly[business.monthly.length - 1];
+    const topDestination = business.by_destination[0];
+    const topProduct = business.by_product[0];
+    const targetGap = latestMonth?.target_gap_t || 0;
+    const latestTargetMiss = latestMonth?.actual_growth_met === false;
+    advice.push({
+      id: 'internal-business-pulse',
+      ruleId: 'INTERNAL-BUSINESS-001',
+      category: '经营',
+      priority: latestTargetMiss ? '高' : '中',
+      title: '内部出口节奏与市场结构',
+      recommendation: latestTargetMiss
+        ? `最近统计月 ${latestMonth.label} 的实际出口量未达到“较上月增长 ${business.business_assumptions.target_growth_pct.toFixed(1)}%”的业务目标，缺口约 ${tons(targetGap)}；销售动作应优先核对可补量的产品与目的国，不将目标值当作实际值。`
+        : `最近统计月 ${latestMonth?.label || '—'} 已达到月度增长目标；可优先围绕 ${topDestination?.label || '主要目的国'} 和 ${topProduct?.label || '主要产品'} 复核后续订单机会，同时保留人工核验。`,
+      evidence: [
+        `2025年实际出口量 ${tons(business.summary.total_volume_t)}，覆盖 ${business.source.coverage_start} 至 ${business.source.coverage_end}`,
+        latestMonth ? `${latestMonth.month} 实际 ${tons(latestMonth.actual_volume_t)} · 目标 ${tons(latestMonth.target_volume_t)} · 实际环比 ${pct(latestMonth.actual_growth_pct)}` : '月度数据不可用',
+        topDestination ? `目的国 Top1：${topDestination.label}，${tons(topDestination.volume_t)}（${topDestination.share_pct.toFixed(1)}%）` : '目的国结构不可用',
+        topProduct ? `产品 Top1：${topProduct.label}，${tons(topProduct.volume_t)}（${topProduct.share_pct.toFixed(1)}%）` : '产品结构不可用',
+      ],
+      sourceLabels: [business.source.name],
+      asOf: [business.source.coverage_end],
+      evidenceMeta: [metaForLocal(input, business.source.source_id, [business.source.coverage_end])],
+    });
+  }
+
   return advice.sort((a, b) => ({ 高: 0, 中: 1, 低: 2 }[a.priority] - ({ 高: 0, 中: 1, 低: 2 }[b.priority])));
 }
 
@@ -188,7 +218,7 @@ export function buildDataDrivenAdvice(input: StrategyDataInputs) {
 }
 
 export function buildDataDrivenSalesPlan(input: StrategyDataInputs): DataDrivenSalesPlan {
-  if (!input.quotes.length && !input.risks.length && !input.policies.length && !input.aggregates.length && !input.forex && !input.taricQuota && !input.steelExport && !input.costs?.length && !input.shippingOptions?.length) {
+  if (!input.quotes.length && !input.risks.length && !input.policies.length && !input.aggregates.length && !input.internalBusiness && !input.forex && !input.taricQuota && !input.steelExport && !input.costs?.length && !input.shippingOptions?.length) {
     return { title: '数据驱动销售方案', summary: '当前没有可用数据依据，暂不生成销售方案。', actions: [], guardrails: ['请先恢复至少一个数据源或加载最近成功快照。'], evidence: [], advice: [], generatedAt: new Date().toISOString(), dataState: 'unavailable' };
   }
   const advice = buildAdvice(input);

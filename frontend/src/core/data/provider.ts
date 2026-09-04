@@ -1,6 +1,7 @@
 import {
   MarketQuote,
   InternalAggregate,
+  InternalBusinessSnapshot,
   ProductCost,
   FxScenario,
   PolicyEvent,
@@ -19,6 +20,7 @@ import {
 export interface DataProvider {
   getMarketQuotes(params?: QueryParams): Promise<MarketQuote[]>;
   getInternalAggregates(params?: QueryParams): Promise<InternalAggregate[]>;
+  getInternalBusinessSnapshot(): Promise<InternalBusinessSnapshot | null>;
   getProductCosts(params?: QueryParams): Promise<ProductCost[]>;
   getFxScenarios(): Promise<FxScenario[]>;
   getPolicyEvents(params?: QueryParams): Promise<PolicyEvent[]>;
@@ -150,6 +152,14 @@ export class StaticDataProvider implements DataProvider {
       'internal_aggregates.json'
     );
     return this.filterByParams(data, params);
+  }
+
+  async getInternalBusinessSnapshot(): Promise<InternalBusinessSnapshot | null> {
+    const snapshot = await this.fetchOptionalJson<InternalBusinessSnapshot>('internal_business_2025.json');
+    if (!snapshot || snapshot.schema_version !== '1.0.0' || !snapshot.source || !Array.isArray(snapshot.monthly) || snapshot.monthly.length !== 12 || !snapshot.summary || !snapshot.quality) return null;
+    if (snapshot.source.customer_names_retained || snapshot.source.selected_year !== 2025) return null;
+    if (snapshot.monthly.some((row) => !/^2025-(0[1-9]|1[0-2])$/.test(row.month) || !Number.isFinite(row.actual_volume_t) || !Number.isFinite(row.target_volume_t))) return null;
+    return snapshot;
   }
 
   async getProductCosts(params?: QueryParams): Promise<ProductCost[]> {

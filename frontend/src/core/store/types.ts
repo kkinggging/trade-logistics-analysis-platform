@@ -242,6 +242,85 @@ export interface InternalAggregate {
   desensitization_version: string;
 }
 
+// 部门出口业务的脱敏聚合快照：只承载统计结果，不承载客户明细、订单号或原始行。
+export interface InternalBusinessAggregateRow {
+  key: string;
+  label: string;
+  volume_t: number;
+  share_pct: number;
+  record_count: number;
+}
+
+export interface InternalBusinessMonth {
+  month: string;
+  label: string;
+  actual_volume_t: number;
+  record_count: number;
+  actual_growth_pct: number | null;
+  target_volume_t: number;
+  target_growth_pct: number | null;
+  target_gap_t: number;
+  actual_growth_met: boolean | null;
+}
+
+export interface InternalBusinessSnapshot {
+  schema_version: string;
+  source: {
+    source_id: string;
+    name: string;
+    source_file: string;
+    captured_at: string;
+    coverage_start: string;
+    coverage_end: string;
+    selected_year: number;
+    raw_sha256: string;
+    raw_record_count: number;
+    aggregation_level: string;
+    customer_names_retained: boolean;
+  };
+  summary: {
+    record_count: number;
+    total_volume_t: number;
+    positive_volume_t: number;
+    negative_volume_t: number;
+    negative_record_count: number;
+    country_count: number;
+    region_count: number;
+    product_count: number;
+    fine_product_count: number;
+    hscode_count: number;
+    customer_count: number;
+    base_count: number;
+  };
+  monthly: InternalBusinessMonth[];
+  by_region: InternalBusinessAggregateRow[];
+  by_business_region: InternalBusinessAggregateRow[];
+  by_destination: InternalBusinessAggregateRow[];
+  by_product: InternalBusinessAggregateRow[];
+  by_fine_product: InternalBusinessAggregateRow[];
+  by_product_class: InternalBusinessAggregateRow[];
+  by_direct_supply: InternalBusinessAggregateRow[];
+  by_base: InternalBusinessAggregateRow[];
+  by_hs_code: InternalBusinessAggregateRow[];
+  customer_concentration: { distinct_count: number; top5_share_pct: number; top10_share_pct: number };
+  quality: {
+    cleaning_actions: string[];
+    raw_rows_selected: number;
+    accepted_rows: number;
+    rejected_rows: number;
+    duplicate_rows: number;
+    blank_department_count: number;
+    negative_quantity_count: number;
+    warnings: string[];
+  };
+  business_assumptions: {
+    target_growth_pct: number;
+    target_definition: string;
+    actual_and_target_separated: boolean;
+    note: string;
+  };
+}
+
 // ============ 产品成本 ============
 export interface ProductCost {
   cost_id: string;

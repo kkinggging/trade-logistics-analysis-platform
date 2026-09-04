@@ -1,0 +1,1479 @@
+{
+  "schema_version": "1.0.0",
+  "source": {
+    "source_id": "internal-business-export-2025",
+    "name": "部门内部出口业务汇总（脱敏聚合）",
+    "source_file": "export_data_sg_fake_new.xlsx",
+    "captured_at": "2026-09-04T00:00:00+08:00",
+    "coverage_start": "2025-01",
+    "coverage_end": "2025-12",
+    "selected_year": 2025,
+    "raw_sha256": "19c49cd2fdc92f875478c89a41807e9ecdfc982a0889c95f6ee83ef11eda1c51",
+    "raw_record_count": 12799,
+    "aggregation_level": "月度/维度聚合，不含客户明细",
+    "customer_names_retained": false
+  },
+  "summary": {
+    "record_count": 12799,
+    "total_volume_t": 1925199.252,
+    "positive_volume_t": 1925245.602,
+    "negative_volume_t": -46.35,
+    "negative_record_count": 3,
+    "country_count": 77,
+    "region_count": 6,
+    "product_count": 6,
+    "fine_product_count": 26,
+    "hscode_count": 45,
+    "customer_count": 178,
+    "base_count": 4
+  },
+  "monthly": [
+    {
+      "month": "2025-01",
+      "label": "1月",
+      "actual_volume_t": 186735.424,
+      "record_count": 1278,
+      "actual_growth_pct": null,
+      "target_volume_t": 186735.424,
+      "target_growth_pct": null,
+      "target_gap_t": 0.0,
+      "actual_growth_met": null
+    },
+    {
+      "month": "2025-02",
+      "label": "2月",
+      "actual_volume_t": 152517.057,
+      "record_count": 907,
+      "actual_growth_pct": -18.32,
+      "target_volume_t": 188602.778,
+      "target_growth_pct": 1.0,
+      "target_gap_t": 36085.721,
+      "actual_growth_met": false
+    },
+    {
+      "month": "2025-03",
+      "label": "3月",
+      "actual_volume_t": 246610.294,
+      "record_count": 1545,
+      "actual_growth_pct": 61.69,
+      "target_volume_t": 154042.228,
+      "target_growth_pct": 1.0,
+      "target_gap_t": -92568.066,
+      "actual_growth_met": true
+    },
+    {
+      "month": "2025-04",
+      "label": "4月",
+      "actual_volume_t": 146799.133,
+      "record_count": 883,
+      "actual_growth_pct": -40.47,
+      "target_volume_t": 249076.397,
+      "target_growth_pct": 1.0,
+      "target_gap_t": 102277.264,
+      "actual_growth_met": false
+    },
+    {
+      "month": "2025-05",
+      "label": "5月",
+      "actual_volume_t": 154653.946,
+      "record_count": 889,
+      "actual_growth_pct": 5.35,
+      "target_volume_t": 148267.124,
+      "target_growth_pct": 1.0,
+      "target_gap_t": -6386.822,
+      "actual_growth_met": true
+    },
+    {
+      "month": "2025-06",
+      "label": "6月",
+      "actual_volume_t": 243603.673,
+      "record_count": 1464,
+      "actual_growth_pct": 57.52,
+      "target_volume_t": 156200.485,
+      "target_growth_pct": 1.0,
+      "target_gap_t": -87403.188,
+      "actual_growth_met": true
+    },
+    {
+      "month": "2025-07",
+      "label": "7月",
+      "actual_volume_t": 100829.959,
+      "record_count": 777,
+      "actual_growth_pct": -58.61,
+      "target_volume_t": 246039.71,
+      "target_growth_pct": 1.0,
+      "target_gap_t": 145209.751,
+      "actual_growth_met": false
+    },
+    {
+      "month": "2025-08",
+      "label": "8月",
+      "actual_volume_t": 146218.197,
+      "record_count": 897,
+      "actual_growth_pct": 45.01,
+      "target_volume_t": 101838.259,
+      "target_growth_pct": 1.0,
+      "target_gap_t": -44379.938,
+      "actual_growth_met": true
+    },
+    {
+      "month": "2025-09",
+      "label": "9月",
+      "actual_volume_t": 165338.482,
+      "record_count": 1403,
+      "actual_growth_pct": 13.08,
+      "target_volume_t": 147680.379,
+      "target_growth_pct": 1.0,
+      "target_gap_t": -17658.103,
+      "actual_growth_met": true
+    },
+    {
+      "month": "2025-10",
+      "label": "10月",
+      "actual_volume_t": 139392.474,
+      "record_count": 1348,
+      "actual_growth_pct": -15.69,
+      "target_volume_t": 166991.867,
+      "target_growth_pct": 1.0,
+      "target_gap_t": 27599.393,
+      "actual_growth_met": false
+    },
+    {
+      "month": "2025-11",
+      "label": "11月",
+      "actual_volume_t": 117895.211,
+      "record_count": 756,
+      "actual_growth_pct": -15.42,
+      "target_volume_t": 140786.399,
+      "target_growth_pct": 1.0,
+      "target_gap_t": 22891.188,
+      "actual_growth_met": false
+    },
+    {
+      "month": "2025-12",
+      "label": "12月",
+      "actual_volume_t": 124605.402,
+      "record_count": 652,
+      "actual_growth_pct": 5.69,
+      "target_volume_t": 119074.163,
+      "target_growth_pct": 1.0,
+      "target_gap_t": -5531.239,
+      "actual_growth_met": true
+    }
+  ],
+  "by_region": [
+    {
+      "key": "亚洲",
+      "label": "亚洲",
+      "volume_t": 497783.069,
+      "share_pct": 25.86,
+      "record_count": 4370
+    },
+    {
+      "key": "中东（含土耳其）",
+      "label": "中东（含土耳其）",
+      "volume_t": 465152.569,
+      "share_pct": 24.16,
+      "record_count": 2214
+    },
+    {
+      "key": "欧洲",
+      "label": "欧洲",
+      "volume_t": 330384.45,
+      "share_pct": 17.16,
+      "record_count": 2766
+    },
+    {
+      "key": "北美",
+      "label": "北美",
+      "volume_t": 291463.881,
+      "share_pct": 15.14,
+      "record_count": 826
+    },
+    {
+      "key": "非洲",
+      "label": "非洲",
+      "volume_t": 201163.781,
+      "share_pct": 10.45,
+      "record_count": 1549
+    },
+    {
+      "key": "中南美",
+      "label": "中南美",
+      "volume_t": 139251.502,
+      "share_pct": 7.23,
+      "record_count": 1074
+    }
+  ],
+  "by_business_region": [
+    {
+      "key": "中东",
+      "label": "中东",
+      "volume_t": 327596.602,
+      "share_pct": 17.02,
+      "record_count": 1491
+    },
+    {
+      "key": "北美",
+      "label": "北美",
+      "volume_t": 291463.881,
+      "share_pct": 15.14,
+      "record_count": 826
+    },
+    {
+      "key": "欧盟",
+      "label": "欧盟",
+      "volume_t": 290130.507,
+      "share_pct": 15.07,
+      "record_count": 2600
+    },
+    {
+      "key": "韩国",
+      "label": "韩国",
+      "volume_t": 232831.258,
+      "share_pct": 12.09,
+      "record_count": 1635
+    },
+    {
+      "key": "非洲",
+      "label": "非洲",
+      "volume_t": 201163.781,
+      "share_pct": 10.45,
+      "record_count": 1549
+    },
+    {
+      "key": "南美",
+      "label": "南美",
+      "volume_t": 139251.502,
+      "share_pct": 7.23,
+      "record_count": 1074
+    },
+    {
+      "key": "土耳其",
+      "label": "土耳其",
+      "volume_t": 137555.967,
+      "share_pct": 7.15,
+      "record_count": 723
+    },
+    {
+      "key": "东盟",
+      "label": "东盟",
+      "volume_t": 97131.595,
+      "share_pct": 5.05,
+      "record_count": 1411
+    },
+    {
+      "key": "印度",
+      "label": "印度",
+      "volume_t": 63471.473,
+      "share_pct": 3.3,
+      "record_count": 299
+    },
+    {
+      "key": "亚洲其它",
+      "label": "亚洲其它",
+      "volume_t": 59586.915,
+      "share_pct": 3.1,
+      "record_count": 427
+    },
+    {
+      "key": "欧洲其它",
+      "label": "欧洲其它",
+      "volume_t": 40253.943,
+      "share_pct": 2.09,
+      "record_count": 166
+    },
+    {
+      "key": "日本",
+      "label": "日本",
+      "volume_t": 39370.613,
+      "share_pct": 2.05,
+      "record_count": 460
+    },
+    {
+      "key": "大洋洲",
+      "label": "大洋洲",
+      "volume_t": 5391.215,
+      "share_pct": 0.28,
+      "record_count": 138
+    }
+  ],
+  "by_destination": [
+    {
+      "key": "沙特阿拉伯",
+      "label": "沙特阿拉伯",
+      "volume_t": 238883.162,
+      "share_pct": 12.41,
+      "record_count": 913
+    },
+    {
+      "key": "韩国",
+      "label": "韩国",
+      "volume_t": 232831.258,
+      "share_pct": 12.09,
+      "record_count": 1635
+    },
+    {
+      "key": "墨西哥",
+      "label": "墨西哥",
+      "volume_t": 142794.247,
+      "share_pct": 7.42,
+      "record_count": 210
+    },
+    {
+      "key": "土耳其",
+      "label": "土耳其",
+      "volume_t": 137555.967,
+      "share_pct": 7.15,
+      "record_count": 723
+    },
+    {
+      "key": "西班牙",
+      "label": "西班牙",
+      "volume_t": 85598.355,
+      "share_pct": 4.45,
+      "record_count": 899
+    },
+    {
+      "key": "美国",
+      "label": "美国",
+      "volume_t": 80608.6,
+      "share_pct": 4.19,
+      "record_count": 190
+    },
+    {
+      "key": "德国",
+      "label": "德国",
+      "volume_t": 78678.223,
+      "share_pct": 4.09,
+      "record_count": 624
+    },
+    {
+      "key": "印度",
+      "label": "印度",
+      "volume_t": 63471.473,
+      "share_pct": 3.3,
+      "record_count": 299
+    },
+    {
+      "key": "阿联酋",
+      "label": "阿联酋",
+      "volume_t": 56255.185,
+      "share_pct": 2.92,
+      "record_count": 352
+    },
+    {
+      "key": "摩洛哥",
+      "label": "摩洛哥",
+      "volume_t": 55105.966,
+      "share_pct": 2.86,
+      "record_count": 651
+    },
+    {
+      "key": "哥伦比亚",
+      "label": "哥伦比亚",
+      "volume_t": 44296.641,
+      "share_pct": 2.3,
+      "record_count": 343
+    },
+    {
+      "key": "葡萄牙",
+      "label": "葡萄牙",
+      "volume_t": 42316.528,
+      "share_pct": 2.2,
+      "record_count": 412
+    },
+    {
+      "key": "泰国",
+      "label": "泰国",
+      "volume_t": 40789.607,
+      "share_pct": 2.12,
+      "record_count": 682
+    },
+    {
+      "key": "日本",
+      "label": "日本",
+      "volume_t": 39370.613,
+      "share_pct": 2.05,
+      "record_count": 460
+    },
+    {
+      "key": "秘鲁",
+      "label": "秘鲁",
+      "volume_t": 35825.515,
+      "share_pct": 1.86,
+      "record_count": 347
+    },
+    {
+      "key": "巴基斯坦",
+      "label": "巴基斯坦",
+      "volume_t": 34627.184,
+      "share_pct": 1.8,
+      "record_count": 241
+    },
+    {
+      "key": "科特迪瓦共和国",
+      "label": "科特迪瓦共和国",
+      "volume_t": 30649.737,
+      "share_pct": 1.59,
+      "record_count": 109
+    },
+    {
+      "key": "意大利",
+      "label": "意大利",
+      "volume_t": 28361.987,
+      "share_pct": 1.47,
+      "record_count": 285
+    },
+    {
+      "key": "越南",
+      "label": "越南",
+      "volume_t": 25609.964,
+      "share_pct": 1.33,
+      "record_count": 271
+    },
+    {
+      "key": "多米尼加共和国",
+      "label": "多米尼加共和国",
+      "volume_t": 24651.108,
+      "share_pct": 1.28,
+      "record_count": 151
+    },
+    {
+      "key": "阿尔巴尼亚",
+      "label": "阿尔巴尼亚",
+      "volume_t": 24037.46,
+      "share_pct": 1.25,
+      "record_count": 51
+    },
+    {
+      "key": "巴拉圭",
+      "label": "巴拉圭",
+      "volume_t": 21030.12,
+      "share_pct": 1.09,
+      "record_count": 148
+    },
+    {
+      "key": "孟加拉",
+      "label": "孟加拉",
+      "volume_t": 19840.354,
+      "share_pct": 1.03,
+      "record_count": 63
+    },
+    {
+      "key": "法国",
+      "label": "法国",
+      "volume_t": 19223.08,
+      "share_pct": 1.0,
+      "record_count": 107
+    },
+    {
+      "key": "危地马拉共和国",
+      "label": "危地马拉共和国",
+      "volume_t": 19117.74,
+      "share_pct": 0.99,
+      "record_count": 128
+    },
+    {
+      "key": "坦桑尼亚",
+      "label": "坦桑尼亚",
+      "volume_t": 18751.045,
+      "share_pct": 0.97,
+      "record_count": 60
+    },
+    {
+      "key": "南非",
+      "label": "南非",
+      "volume_t": 17171.148,
+      "share_pct": 0.89,
+      "record_count": 243
+    },
+    {
+      "key": "约旦",
+      "label": "约旦",
+      "volume_t": 16398.99,
+      "share_pct": 0.85,
+      "record_count": 133
+    },
+    {
+      "key": "肯尼亚",
+      "label": "肯尼亚",
+      "volume_t": 14839.804,
+      "share_pct": 0.77,
+      "record_count": 137
+    },
+    {
+      "key": "比利时",
+      "label": "比利时",
+      "volume_t": 14260.434,
+      "share_pct": 0.74,
+      "record_count": 77
+    },
+    {
+      "key": "马来西亚",
+      "label": "马来西亚",
+      "volume_t": 14125.206,
+      "share_pct": 0.73,
+      "record_count": 307
+    },
+    {
+      "key": "智利",
+      "label": "智利",
+      "volume_t": 13672.979,
+      "share_pct": 0.71,
+      "record_count": 98
+    },
+    {
+      "key": "波兰",
+      "label": "波兰",
+      "volume_t": 12316.48,
+      "share_pct": 0.64,
+      "record_count": 92
+    },
+    {
+      "key": "厄瓜多尔",
+      "label": "厄瓜多尔",
+      "volume_t": 11809.62,
+      "share_pct": 0.61,
+      "record_count": 72
+    },
+    {
+      "key": "塞尔维亚共和国",
+      "label": "塞尔维亚共和国",
+      "volume_t": 11204.12,
+      "share_pct": 0.58,
+      "record_count": 79
+    },
+    {
+      "key": "喀麦隆",
+      "label": "喀麦隆",
+      "volume_t": 10940.94,
+      "share_pct": 0.57,
+      "record_count": 22
+    },
+    {
+      "key": "突尼斯",
+      "label": "突尼斯",
+      "volume_t": 9928.95,
+      "share_pct": 0.52,
+      "record_count": 48
+    },
+    {
+      "key": "菲律宾",
+      "label": "菲律宾",
+      "volume_t": 9618.915,
+      "share_pct": 0.5,
+      "record_count": 52
+    },
+    {
+      "key": "洪都拉斯",
+      "label": "洪都拉斯",
+      "volume_t": 8041.67,
+      "share_pct": 0.42,
+      "record_count": 34
+    },
+    {
+      "key": "塞内加尔",
+      "label": "塞内加尔",
+      "volume_t": 7171.445,
+      "share_pct": 0.37,
+      "record_count": 38
+    },
+    {
+      "key": "巴西",
+      "label": "巴西",
+      "volume_t": 7154.457,
+      "share_pct": 0.37,
+      "record_count": 45
+    },
+    {
+      "key": "莫桑比克",
+      "label": "莫桑比克",
+      "volume_t": 7079.69,
+      "share_pct": 0.37,
+      "record_count": 8
+    },
+    {
+      "key": "印度尼西亚",
+      "label": "印度尼西亚",
+      "volume_t": 6933.973,
+      "share_pct": 0.36,
+      "record_count": 98
+    },
+    {
+      "key": "吉布提",
+      "label": "吉布提",
+      "volume_t": 6536.819,
+      "share_pct": 0.34,
+      "record_count": 54
+    },
+    {
+      "key": "哥斯达黎加",
+      "label": "哥斯达黎加",
+      "volume_t": 6507.96,
+      "share_pct": 0.34,
+      "record_count": 42
+    },
+    {
+      "key": "加拿大",
+      "label": "加拿大",
+      "volume_t": 5599.166,
+      "share_pct": 0.29,
+      "record_count": 41
+    },
+    {
+      "key": "澳大利亚",
+      "label": "澳大利亚",
+      "volume_t": 5391.215,
+      "share_pct": 0.28,
+      "record_count": 138
+    },
+    {
+      "key": "赞比亚",
+      "label": "赞比亚",
+      "volume_t": 5302.25,
+      "share_pct": 0.28,
+      "record_count": 39
+    },
+    {
+      "key": "阿曼",
+      "label": "阿曼",
+      "volume_t": 4900.11,
+      "share_pct": 0.25,
+      "record_count": 39
+    },
+    {
+      "key": "埃及",
+      "label": "埃及",
+      "volume_t": 4742.454,
+      "share_pct": 0.25,
+      "record_count": 19
+    },
+    {
+      "key": "瑞士",
+      "label": "瑞士",
+      "volume_t": 4459.189,
+      "share_pct": 0.23,
+      "record_count": 24
+    },
+    {
+      "key": "埃塞俄比亚",
+      "label": "埃塞俄比亚",
+      "volume_t": 4391.41,
+      "share_pct": 0.23,
+      "record_count": 21
+    },
+    {
+      "key": "希腊",
+      "label": "希腊",
+      "volume_t": 4378.065,
+      "share_pct": 0.23,
+      "record_count": 29
+    },
+    {
+      "key": "阿尔及利亚",
+      "label": "阿尔及利亚",
+      "volume_t": 4243.595,
+      "share_pct": 0.22,
+      "record_count": 79
+    },
+    {
+      "key": "中国台湾",
+      "label": "中国台湾",
+      "volume_t": 4228.867,
+      "share_pct": 0.22,
+      "record_count": 60
+    },
+    {
+      "key": "斯洛文尼亚",
+      "label": "斯洛文尼亚",
+      "volume_t": 3933.872,
+      "share_pct": 0.2,
+      "record_count": 63
+    },
+    {
+      "key": "布基纳法索",
+      "label": "布基纳法索",
+      "volume_t": 2856.42,
+      "share_pct": 0.15,
+      "record_count": 6
+    },
+    {
+      "key": "以色列",
+      "label": "以色列",
+      "volume_t": 2736.71,
+      "share_pct": 0.14,
+      "record_count": 26
+    },
+    {
+      "key": "玻利维亚",
+      "label": "玻利维亚",
+      "volume_t": 2610.25,
+      "share_pct": 0.14,
+      "record_count": 7
+    },
+    {
+      "key": "乌拉圭",
+      "label": "乌拉圭",
+      "volume_t": 2549.41,
+      "share_pct": 0.13,
+      "record_count": 8
+    },
+    {
+      "key": "黎巴嫩",
+      "label": "黎巴嫩",
+      "volume_t": 2341.205,
+      "share_pct": 0.12,
+      "record_count": 7
+    },
+    {
+      "key": "科威特",
+      "label": "科威特",
+      "volume_t": 2291.09,
+      "share_pct": 0.12,
+      "record_count": 9
+    },
+    {
+      "key": "卡塔尔",
+      "label": "卡塔尔",
+      "volume_t": 2244.63,
+      "share_pct": 0.12,
+      "record_count": 11
+    },
+    {
+      "key": "萨尔瓦多",
+      "label": "萨尔瓦多",
+      "volume_t": 2242.35,
+      "share_pct": 0.12,
+      "record_count": 18
+    },
+    {
+      "key": "巴拿马",
+      "label": "巴拿马",
+      "volume_t": 1901.04,
+      "share_pct": 0.1,
+      "record_count": 12
+    },
+    {
+      "key": "伊拉克",
+      "label": "伊拉克",
+      "volume_t": 1545.52,
+      "share_pct": 0.08,
+      "record_count": 1
+    },
+    {
+      "key": "加纳",
+      "label": "加纳",
+      "volume_t": 1028.238,
+      "share_pct": 0.05,
+      "record_count": 13
+    },
+    {
+      "key": "匈牙利",
+      "label": "匈牙利",
+      "volume_t": 1025.141,
+      "share_pct": 0.05,
+      "record_count": 10
+    },
+    {
+      "key": "乌兹别克",
+      "label": "乌兹别克",
+      "volume_t": 890.51,
+      "share_pct": 0.05,
+      "record_count": 63
+    },
+    {
+      "key": "乌克兰",
+      "label": "乌克兰",
+      "volume_t": 498.774,
+      "share_pct": 0.03,
+      "record_count": 9
+    },
+    {
+      "key": "贝宁",
+      "label": "贝宁",
+      "volume_t": 423.87,
+      "share_pct": 0.02,
+      "record_count": 2
+    },
+    {
+      "key": "委内瑞拉",
+      "label": "委内瑞拉",
+      "volume_t": 302.51,
+      "share_pct": 0.02,
+      "record_count": 6
+    },
+    {
+      "key": "新加坡",
+      "label": "新加坡",
+      "volume_t": 53.93,
+      "share_pct": 0.0,
+      "record_count": 1
+    },
+    {
+      "key": "北马其顿",
+      "label": "北马其顿",
+      "volume_t": 49.965,
+      "share_pct": 0.0,
+      "record_count": 1
+    },
+    {
+      "key": "保加利亚",
+      "label": "保加利亚",
+      "volume_t": 20.312,
+      "share_pct": 0.0,
+      "record_count": 1
+    },
+    {
+      "key": "欧盟",
+      "label": "欧盟",
+      "volume_t": 18.03,
+      "share_pct": 0.0,
+      "record_count": 1
+    },
+    {
+      "key": "英国",
+      "label": "英国",
+      "volume_t": 4.435,
+      "share_pct": 0.0,
+      "record_count": 2
+    }
+  ],
+  "by_product": [
+    {
+      "key": "热轧",
+      "label": "热轧",
+      "volume_t": 781135.57,
+      "share_pct": 40.57,
+      "record_count": 3295
+    },
+    {
+      "key": "冷镀",
+      "label": "冷镀",
+      "volume_t": 326226.194,
+      "share_pct": 16.95,
+      "record_count": 2728
+    },
+    {
+      "key": "硅钢",
+      "label": "硅钢",
+      "volume_t": 285864.122,
+      "share_pct": 14.85,
+      "record_count": 1242
+    },
+    {
+      "key": "汽车板",
+      "label": "汽车板",
+      "volume_t": 285474.655,
+      "share_pct": 14.83,
+      "record_count": 3193
+    },
+    {
+      "key": "镀锡板",
+      "label": "镀锡板",
+      "volume_t": 125233.584,
+      "share_pct": 6.5,
+      "record_count": 701
+    },
+    {
+      "key": "中厚板",
+      "label": "中厚板",
+      "volume_t": 121265.127,
+      "share_pct": 6.3,
+      "record_count": 1640
+    }
+  ],
+  "by_fine_product": [
+    {
+      "key": "MCCR",
+      "label": "MCCR",
+      "volume_t": 458373.6,
+      "share_pct": 23.81,
+      "record_count": 1388
+    },
+    {
+      "key": "镀锌汽车板",
+      "label": "镀锌汽车板",
+      "volume_t": 266625.23,
+      "share_pct": 13.85,
+      "record_count": 2899
+    },
+    {
+      "key": "无取向硅钢",
+      "label": "无取向硅钢",
+      "volume_t": 214941.747,
+      "share_pct": 11.16,
+      "record_count": 710
+    },
+    {
+      "key": "热轧",
+      "label": "热轧",
+      "volume_t": 180252.196,
+      "share_pct": 9.36,
+      "record_count": 770
+    },
+    {
+      "key": "酸洗",
+      "label": "酸洗",
+      "volume_t": 132660.62,
+      "share_pct": 6.89,
+      "record_count": 1017
+    },
+    {
+      "key": "中厚板",
+      "label": "中厚板",
+      "volume_t": 116422.818,
+      "share_pct": 6.05,
+      "record_count": 1565
+    },
+    {
+      "key": "连退",
+      "label": "连退",
+      "volume_t": 112298.34,
+      "share_pct": 5.83,
+      "record_count": 1012
+    },
+    {
+      "key": "电镀锡",
+      "label": "电镀锡",
+      "volume_t": 111118.688,
+      "share_pct": 5.77,
+      "record_count": 518
+    },
+    {
+      "key": "热基锌铝镁",
+      "label": "热基锌铝镁",
+      "volume_t": 110107.435,
+      "share_pct": 5.72,
+      "record_count": 506
+    },
+    {
+      "key": "热镀锌",
+      "label": "热镀锌",
+      "volume_t": 80708.245,
+      "share_pct": 4.19,
+      "record_count": 746
+    },
+    {
+      "key": "取向硅钢",
+      "label": "取向硅钢",
+      "volume_t": 70922.375,
+      "share_pct": 3.68,
+      "record_count": 532
+    },
+    {
+      "key": "罩退",
+      "label": "罩退",
+      "volume_t": 20233.43,
+      "share_pct": 1.05,
+      "record_count": 414
+    },
+    {
+      "key": "连退汽车板",
+      "label": "连退汽车板",
+      "volume_t": 8653.61,
+      "share_pct": 0.45,
+      "record_count": 164
+    },
+    {
+      "key": "镀锡基板",
+      "label": "镀锡基板",
+      "volume_t": 8647.03,
+      "share_pct": 0.45,
+      "record_count": 49
+    },
+    {
+      "key": "热轧余材",
+      "label": "热轧余材",
+      "volume_t": 7443.85,
+      "share_pct": 0.39,
+      "record_count": 82
+    },
+    {
+      "key": "镀铬板",
+      "label": "镀铬板",
+      "volume_t": 5467.866,
+      "share_pct": 0.28,
+      "record_count": 134
+    },
+    {
+      "key": "冷基锌镁镀层汽车板",
+      "label": "冷基锌镁镀层汽车板",
+      "volume_t": 5058.18,
+      "share_pct": 0.26,
+      "record_count": 24
+    },
+    {
+      "key": "涂漆中厚板",
+      "label": "涂漆中厚板",
+      "volume_t": 4842.309,
+      "share_pct": 0.25,
+      "record_count": 75
+    },
+    {
+      "key": "合金化镀锌汽车板",
+      "label": "合金化镀锌汽车板",
+      "volume_t": 3364.88,
+      "share_pct": 0.17,
+      "record_count": 82
+    },
+    {
+      "key": "热轧切板",
+      "label": "热轧切板",
+      "volume_t": 2405.304,
+      "share_pct": 0.12,
+      "record_count": 38
+    },
+    {
+      "key": "镀铝硅",
+      "label": "镀铝硅",
+      "volume_t": 1471.71,
+      "share_pct": 0.08,
+      "record_count": 43
+    },
+    {
+      "key": "镀铝硅汽车板",
+      "label": "镀铝硅汽车板",
+      "volume_t": 1395.4,
+      "share_pct": 0.07,
+      "record_count": 16
+    },
+    {
+      "key": "彩涂",
+      "label": "彩涂",
+      "volume_t": 1322.884,
+      "share_pct": 0.07,
+      "record_count": 4
+    },
+    {
+      "key": "合金化镀锌汽车盒板",
+      "label": "合金化镀锌汽车盒板",
+      "volume_t": 377.355,
+      "share_pct": 0.02,
+      "record_count": 8
+    },
+    {
+      "key": "冷硬",
+      "label": "冷硬",
+      "volume_t": 55.31,
+      "share_pct": 0.0,
+      "record_count": 2
+    },
+    {
+      "key": "锌铝镁",
+      "label": "锌铝镁",
+      "volume_t": 28.84,
+      "share_pct": 0.0,
+      "record_count": 1
+    }
+  ],
+  "by_product_class": [
+    {
+      "key": "高端/领先",
+      "label": "高端/领先",
+      "volume_t": 1498543.907,
+      "share_pct": 77.84,
+      "record_count": 9552
+    },
+    {
+      "key": "普通/支撑",
+      "label": "普通/支撑",
+      "volume_t": 426655.345,
+      "share_pct": 22.16,
+      "record_count": 3247
+    }
+  ],
+  "by_direct_supply": [
+    {
+      "key": "非直供（中间商）",
+      "label": "非直供（中间商）",
+      "volume_t": 1206720.664,
+      "share_pct": 62.68,
+      "record_count": 7659
+    },
+    {
+      "key": "直供",
+      "label": "直供",
+      "volume_t": 718478.588,
+      "share_pct": 37.32,
+      "record_count": 5140
+    }
+  ],
+  "by_base": [
+    {
+      "key": "京唐",
+      "label": "京唐",
+      "volume_t": 1389570.195,
+      "share_pct": 72.18,
+      "record_count": 9903
+    },
+    {
+      "key": "智新",
+      "label": "智新",
+      "volume_t": 285864.122,
+      "share_pct": 14.85,
+      "record_count": 1242
+    },
+    {
+      "key": "迁钢",
+      "label": "迁钢",
+      "volume_t": 209284.44,
+      "share_pct": 10.87,
+      "record_count": 1214
+    },
+    {
+      "key": "顺义",
+      "label": "顺义",
+      "volume_t": 40480.495,
+      "share_pct": 2.1,
+      "record_count": 440
+    }
+  ],
+  "by_hs_code": [
+    {
+      "key": "72104900",
+      "label": "72104900",
+      "volume_t": 355861.465,
+      "share_pct": 18.48,
+      "record_count": 3752
+    },
+    {
+      "key": "72083910",
+      "label": "72083910",
+      "volume_t": 340422.56,
+      "share_pct": 17.68,
+      "record_count": 877
+    },
+    {
+      "key": "72251900",
+      "label": "72251900",
+      "volume_t": 188198.354,
+      "share_pct": 9.78,
+      "record_count": 552
+    },
+    {
+      "key": "72083990",
+      "label": "72083990",
+      "volume_t": 163149.11,
+      "share_pct": 8.47,
+      "record_count": 698
+    },
+    {
+      "key": "72109000",
+      "label": "72109000",
+      "volume_t": 137859.764,
+      "share_pct": 7.16,
+      "record_count": 686
+    },
+    {
+      "key": "72101200",
+      "label": "72101200",
+      "volume_t": 111118.688,
+      "share_pct": 5.77,
+      "record_count": 518
+    },
+    {
+      "key": "72082790",
+      "label": "72082790",
+      "volume_t": 102894.1,
+      "share_pct": 5.34,
+      "record_count": 635
+    },
+    {
+      "key": "72091790",
+      "label": "72091790",
+      "volume_t": 84877.72,
+      "share_pct": 4.41,
+      "record_count": 900
+    },
+    {
+      "key": "72251100",
+      "label": "72251100",
+      "volume_t": 70819.432,
+      "share_pct": 3.68,
+      "record_count": 521
+    },
+    {
+      "key": "72083890",
+      "label": "72083890",
+      "volume_t": 66956.71,
+      "share_pct": 3.48,
+      "record_count": 364
+    },
+    {
+      "key": "72085120",
+      "label": "72085120",
+      "volume_t": 64446.279,
+      "share_pct": 3.35,
+      "record_count": 501
+    },
+    {
+      "key": "72091690",
+      "label": "72091690",
+      "volume_t": 47254.53,
+      "share_pct": 2.45,
+      "record_count": 588
+    },
+    {
+      "key": "72083700",
+      "label": "72083700",
+      "volume_t": 40029.462,
+      "share_pct": 2.08,
+      "record_count": 203
+    },
+    {
+      "key": "72085190",
+      "label": "72085190",
+      "volume_t": 30070.926,
+      "share_pct": 1.56,
+      "record_count": 501
+    },
+    {
+      "key": "72083600",
+      "label": "72083600",
+      "volume_t": 27382.66,
+      "share_pct": 1.42,
+      "record_count": 45
+    },
+    {
+      "key": "72082690",
+      "label": "72082690",
+      "volume_t": 22460.02,
+      "share_pct": 1.17,
+      "record_count": 240
+    },
+    {
+      "key": "72085200",
+      "label": "72085200",
+      "volume_t": 12155.351,
+      "share_pct": 0.63,
+      "record_count": 428
+    },
+    {
+      "key": "72085110",
+      "label": "72085110",
+      "volume_t": 11143.019,
+      "share_pct": 0.58,
+      "record_count": 155
+    },
+    {
+      "key": "72091810",
+      "label": "72091810",
+      "volume_t": 8647.03,
+      "share_pct": 0.45,
+      "record_count": 49
+    },
+    {
+      "key": "72091890",
+      "label": "72091890",
+      "volume_t": 7605.92,
+      "share_pct": 0.4,
+      "record_count": 87
+    },
+    {
+      "key": "72082500",
+      "label": "72082500",
+      "volume_t": 5734.28,
+      "share_pct": 0.3,
+      "record_count": 95
+    },
+    {
+      "key": "72105000",
+      "label": "72105000",
+      "volume_t": 5467.866,
+      "share_pct": 0.28,
+      "record_count": 134
+    },
+    {
+      "key": "72107090",
+      "label": "72107090",
+      "volume_t": 4842.309,
+      "share_pct": 0.25,
+      "record_count": 75
+    },
+    {
+      "key": "72083810",
+      "label": "72083810",
+      "volume_t": 4087.34,
+      "share_pct": 0.21,
+      "record_count": 15
+    },
+    {
+      "key": "72253000",
+      "label": "72253000",
+      "volume_t": 1971.88,
+      "share_pct": 0.1,
+      "record_count": 36
+    },
+    {
+      "key": "72082610",
+      "label": "72082610",
+      "volume_t": 1789.82,
+      "share_pct": 0.09,
+      "record_count": 24
+    },
+    {
+      "key": "72081000",
+      "label": "72081000",
+      "volume_t": 1417.33,
+      "share_pct": 0.07,
+      "record_count": 16
+    },
+    {
+      "key": "72107010",
+      "label": "72107010",
+      "volume_t": 1322.884,
+      "share_pct": 0.07,
+      "record_count": 4
+    },
+    {
+      "key": "72125000",
+      "label": "72125000",
+      "volume_t": 1179.833,
+      "share_pct": 0.06,
+      "record_count": 8
+    },
+    {
+      "key": "72091699",
+      "label": "72091699",
+      "volume_t": 1042.07,
+      "share_pct": 0.05,
+      "record_count": 12
+    },
+    {
+      "key": "72085310",
+      "label": "72085310",
+      "volume_t": 449.588,
+      "share_pct": 0.02,
+      "record_count": 5
+    },
+    {
+      "key": "72106900",
+      "label": "72106900",
+      "volume_t": 399.12,
+      "share_pct": 0.02,
+      "record_count": 15
+    },
+    {
+      "key": "72104990",
+      "label": "72104990",
+      "volume_t": 377.355,
+      "share_pct": 0.02,
+      "record_count": 8
+    },
+    {
+      "key": "72254090",
+      "label": "72254090",
+      "volume_t": 300.46,
+      "share_pct": 0.02,
+      "record_count": 9
+    },
+    {
+      "key": "72254099",
+      "label": "72254099",
+      "volume_t": 238.132,
+      "share_pct": 0.01,
+      "record_count": 3
+    },
+    {
+      "key": "72082710",
+      "label": "72082710",
+      "volume_t": 233.61,
+      "share_pct": 0.01,
+      "record_count": 8
+    },
+    {
+      "key": "72259200",
+      "label": "72259200",
+      "volume_t": 185.09,
+      "share_pct": 0.01,
+      "record_count": 4
+    },
+    {
+      "key": "72085390",
+      "label": "72085390",
+      "volume_t": 174.652,
+      "share_pct": 0.01,
+      "record_count": 1
+    },
+    {
+      "key": "72091791",
+      "label": "72091791",
+      "volume_t": 157.25,
+      "share_pct": 0.01,
+      "record_count": 1
+    },
+    {
+      "key": "72091600",
+      "label": "72091600",
+      "volume_t": 127.83,
+      "share_pct": 0.01,
+      "record_count": 2
+    },
+    {
+      "key": "72261100",
+      "label": "72261100",
+      "volume_t": 102.943,
+      "share_pct": 0.01,
+      "record_count": 11
+    },
+    {
+      "key": "72091610",
+      "label": "72091610",
+      "volume_t": 98.3,
+      "share_pct": 0.01,
+      "record_count": 1
+    },
+    {
+      "key": "72091691",
+      "label": "72091691",
+      "volume_t": 77.07,
+      "share_pct": 0.0,
+      "record_count": 1
+    },
+    {
+      "key": "72085199",
+      "label": "72085199",
+      "volume_t": 51.099,
+      "share_pct": 0.0,
+      "record_count": 1
+    },
+    {
+      "key": "72261900",
+      "label": "72261900",
+      "volume_t": 18.041,
+      "share_pct": 0.0,
+      "record_count": 10
+    }
+  ],
+  "customer_concentration": {
+    "distinct_count": 178,
+    "top5_share_pct": 5.84,
+    "top10_share_pct": 10.45
+  },
+  "quality": {
+    "cleaning_actions": [
+      "仅裁剪结算年月/分类文本首尾空白",
+      "将结算年月统一为YYYY-MM",
+      "将装船数量转为数值并保留原正负号",
+      "移除空行；未填科室名称不补值"
+    ],
+    "raw_rows_selected": 12799,
+    "accepted_rows": 12799,
+    "rejected_rows": 0,
+    "duplicate_rows": 0,
+    "blank_department_count": 12799,
+    "negative_quantity_count": 3,
+    "warnings": [
+      "3条记录装船数量为负值，作为原始业务调整记录保留，不改写",
+      "科室名称在2025年记录中全部为空，未据此生成科室分析",
+      "未发现订单金额/利润/客户重要度/维护程度字段，相关结论不生成"
+    ]
+  },
+  "business_assumptions": {
+    "target_growth_pct": 1.0,
+    "target_definition": "自2025年2月起，以前一月实际出口量×1.01作为月度增长目标；2025年1月仅作实际基线",
+    "actual_and_target_separated": true,
+    "note": "增长目标线是业务期望，不是对原始实际量的修改"
+  }
+}
