@@ -5,7 +5,7 @@
   <key>Label</key><string>com.shougang.trade-platform-tide-brief</string>
   <key>WorkingDirectory</key><string>/Users/ken/work/贸易分析平台/platform/data-ingestion</string>
   <key>ProgramArguments</key>
-  <array><string>/usr/local/bin/node</string><string>/Users/ken/work/贸易分析平台/platform/data-ingestion/sync-all.mjs</string><string>--only=mysteel-fast-news,tide-global-news,hormuz-special</string><string>--build</string></array>
+  <array><string>/usr/local/bin/node</string><string>/Users/ken/work/贸易分析平台/platform/data-ingestion/sync-all.mjs</string><string>--only=mysteel-fast-news,tide-global-news</string><string>--build</string></array>
   <key>StartCalendarInterval</key>
   <dict><key>Hour</key><integer>9</integer><key>Minute</key><integer>0</integer></dict>
   <key>RunAtLoad</key><false/>

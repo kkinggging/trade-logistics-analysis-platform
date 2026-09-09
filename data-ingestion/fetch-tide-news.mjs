@@ -125,6 +125,10 @@ function sourceLink(raw, base) {
   ]), base);
 }
 
+function isKagiStoryUrl(value) {
+  return /^https:\/\/(?:news|kite)\.kagi\.com\//i.test(value || '');
+}
+
 function parseHtml(raw, category) {
   const blocks = [...raw.matchAll(/<article\b[^>]*>[\s\S]*?<\/article>/gi)].map((match) => match[0]);
   const candidates = blocks.length ? blocks : [raw];
@@ -193,11 +197,12 @@ function collectImages(raw, base) {
 }
 
 function parseDetail(raw, item, category) {
-  const title = first(raw, [
+  const parsedTitle = first(raw, [
     /<h1\b[^>]*>([\s\S]*?)<\/h1>/i,
     /<meta[^>]+property=["']og:title["'][^>]+content=["']([^"']+)/i,
     /<title\b[^>]*>([\s\S]*?)<\/title>/i,
-  ]) || item.title;
+  ]);
+  const title = parsedTitle && !/^(kagi news|kagi)$/i.test(parsedTitle.trim()) ? parsedTitle : item.title;
   const paragraphs = [...String(raw).matchAll(/<p\b[^>]*>([\s\S]*?)<\/p>/gi)]
     .map((match) => text(match[1]))
     .filter((value) => value.length > 30 && !/^(sources?|highlights?|perspectives?|timeline|historical background)$/i.test(value));
@@ -226,7 +231,7 @@ function parseDetail(raw, item, category) {
 }
 
 async function enrichDetail(item, category) {
-  if (!item.url || !/^https:\/\/news\.kagi\.com\//i.test(item.url)) return item;
+  if (!item.url || !isKagiStoryUrl(item.url)) return item;
   try {
     const response = await fetchWithRetry(item.url, { headers: { accept: 'text/html,application/xhtml+xml;q=0.9', 'user-agent': userAgent } }, retry);
     const raw = Buffer.from(await response.arrayBuffer()).toString('utf8');
@@ -259,7 +264,10 @@ async function fetchCategory(category) {
     const response = await fetchWithRetry(category.rss, { headers: { accept: 'application/rss+xml, application/atom+xml, application/xml, text/xml;q=0.9', 'user-agent': userAgent } }, retry);
     const raw = Buffer.from(await response.arrayBuffer()).toString('utf8');
     const items = normalize(parseRss(raw, category), category);
-    if (items.length) return { category, items, errors, mode: 'rss' };
+    if (items.length) {
+      const enriched = await Promise.all(items.map((item) => enrichDetail(item, category)));
+      return { category, items: normalize(enriched, category), errors, mode: 'rss+detail' };
+    }
     errors.push('RSS 未解析出有效新闻');
   } catch (error) { errors.push(`RSS：${error instanceof Error ? error.message : String(error)}`); }
   try {

@@ -26,7 +26,6 @@ const tasks = [
   ['trade-remedy-dashboard-public', '贸易救济案件', 'fetch-trade-remedy-dashboard.mjs', 'external_trade_remedy.json'],
   ['mysteel-fast-news', '我的钢铁快讯', 'fetch-mysteel-fast-news.mjs', 'external_fast_news.json'],
   ['tide-global-news', '潮汐早报 · Kagi 五板块新闻', 'fetch-tide-news.mjs', 'external_tide_news.json'],
-  ['hormuz-special', '霍尔木兹专题', 'fetch-hormuz-special.mjs', 'external_hormuz.json'],
 ];
 const selectedSourceIds = onlySourceId ? new Set(onlySourceId.split(',').map((value) => value.trim()).filter(Boolean)) : null;
 const selectedTasks = selectedSourceIds ? tasks.filter(([sourceId]) => selectedSourceIds.has(sourceId)) : tasks;

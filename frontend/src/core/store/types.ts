@@ -534,6 +534,7 @@ export interface TideNewsItem {
   source: string;
   source_id: string;
   url: string | null;
+  source_links?: string[];
   published_at: string;
   published_at_ms: number;
   author: string | null;
@@ -555,7 +556,7 @@ export interface TideNewsSnapshot {
     source_count: number;
     categories: string[];
   };
-  sources: Array<{ id: string; name: string; url: string; item_count: number; errors: string[]; captured_at: string | null }>;
+  sources: Array<{ id: string; name: string; url: string; item_count: number; errors: string[]; captured_at: string | null; fetch_mode?: string; used_fallback?: boolean }>;
   sections: { onthisday: TideNewsItem[]; world: TideNewsItem[]; business: TideNewsItem[]; science: TideNewsItem[]; sports: TideNewsItem[] };
   quality: { source_count: number; successful_source_count: number; item_count: number; image_count: number; full_content_count: number; warnings: string[] };
 }

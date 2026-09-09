@@ -2,6 +2,8 @@
   "schema_version": "1.1",
   "generated_at": "2026-09-13T14:07:27.447Z",
   "schedule": "每天 18:00（Asia/Shanghai）",
+  "generated_at": "2026-09-09T06:01:05.073Z",
+  "schedule": "全量每天 18:00；我的钢铁网快讯每天 08:10、09:00；潮汐早报与霍尔木兹专题每天 09:00（Asia/Shanghai）",
   "scheduler": "cron 或 launchd（由部署环境安装；本仓库不自动启动后台服务）",
   "sources": {
     "steel-dashboard-public": {
@@ -94,12 +96,17 @@
     },
     "tide-global-news": {
       "source_id": "tide-global-news",
-      "state": "unavailable",
-      "attempted_at": "2026-09-06T17:43:33.879Z",
-      "success_at": null,
-      "snapshot_captured_at": null,
-      "coverage_end": null,
-      "error": "本次抓取失败，当前没有可用历史快照"
+      "state": "fresh",
+      "attempted_at": "2026-09-09T06:00:59.940Z",
+      "success_at": "2026-09-09T06:01:05.073Z",
+      "snapshot_captured_at": "2026-09-09T06:00:59.972Z",
+      "coverage_end": "2026-09-08T12:01:25.000Z",
+      "retry": {
+        "attempts": 2,
+        "timeoutMs": 180000,
+        "baseDelayMs": 3000,
+        "maxDelayMs": 15000
+      }
     },
     "hormuz-special": {
       "source_id": "hormuz-special",

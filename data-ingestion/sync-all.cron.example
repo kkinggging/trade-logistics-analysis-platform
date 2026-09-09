@@ -3,4 +3,4 @@
 CRON_TZ=Asia/Shanghai
 0 18 * * * cd /Users/ken/work/贸易分析平台/platform/data-ingestion && /usr/local/bin/node sync-all.mjs --build >> /Users/ken/work/贸易分析平台/platform/data-ingestion/sync-all.log 2>&1
 10 8 * * * cd /Users/ken/work/贸易分析平台/platform/data-ingestion && /usr/local/bin/node sync-all.mjs --only=mysteel-fast-news --build >> /Users/ken/work/贸易分析平台/platform/data-ingestion/mysteel-fast-news.log 2>&1
-0 9 * * * cd /Users/ken/work/贸易分析平台/platform/data-ingestion && /usr/local/bin/node sync-all.mjs --only=mysteel-fast-news,tide-global-news,hormuz-special --build >> /Users/ken/work/贸易分析平台/platform/data-ingestion/morning-news.log 2>&1
+0 9 * * * cd /Users/ken/work/贸易分析平台/platform/data-ingestion && /usr/local/bin/node sync-all.mjs --only=mysteel-fast-news,tide-global-news --build >> /Users/ken/work/贸易分析平台/platform/data-ingestion/morning-news.log 2>&1

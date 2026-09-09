@@ -6,62 +6,45 @@ import './TideBrief.css';
 
 gsap.registerPlugin(useGSAP);
 
-const tideSources = [
-  { label: '路透社', url: 'https://www.reuters.com/' },
-  { label: '美联社', url: 'https://apnews.com/' },
-  { label: '新华社', url: 'http://www.xinhuanet.com/' },
-  { label: '半岛电视台', url: 'https://www.aljazeera.com/' },
-  { label: '金融时报', url: 'https://www.ft.com/' },
-  { label: '联合早报', url: 'https://www.zaobao.com.sg/' },
-  { label: 'ShipXY · 霍尔木兹专题', url: 'https://www.shipxy.com/special/hormuz' },
-];
+const sectionMeta = [
+  { id: 'onthisday', label: '历史上的今天', short: '今日封面', tone: 'gold' },
+  { id: 'world', label: '世界', short: '世界局势', tone: 'blue' },
+  { id: 'business', label: '商业', short: '商业脉搏', tone: 'green' },
+  { id: 'science', label: '科学', short: '科学前沿', tone: 'violet' },
+  { id: 'sports', label: '运动', short: '运动现场', tone: 'orange' },
+] as const;
 
-interface HormuzSnapshot {
-  schema_version: string;
-  source: { name: string; dashboard_url: string; captured_at: string; coverage_end?: string; fetch_mode?: string };
-  situation?: { title?: string; summary?: string; updated_at?: string };
-  live?: { title?: string; summary?: string; image_url?: string; image_alt?: string };
-  distribution?: { title?: string; summary?: string; image_url?: string; image_alt?: string };
-  items?: Array<{ title: string; summary?: string; category?: string; updated_at?: string; source_url?: string }>;
-}
+type SectionId = (typeof sectionMeta)[number]['id'];
+const sectionById = Object.fromEntries(sectionMeta.map((section) => [section.id, section])) as Record<SectionId, typeof sectionMeta[number]>;
 
-function formatTime(value?: string) { return value ? value.replace('T', ' ').slice(0, 16) : '—'; }
-function formatNewsTime(value: string) {
+function formatTime(value?: string) {
+  if (!value) return '—';
   const date = new Date(value);
-  if (Number.isNaN(date.getTime())) return formatTime(value);
+  if (Number.isNaN(date.getTime())) return value.replace('T', ' ').slice(0, 16);
   return new Intl.DateTimeFormat('zh-CN', { month: '2-digit', day: '2-digit', hour: '2-digit', minute: '2-digit', hour12: false, timeZone: 'Asia/Shanghai' }).format(date);
 }
+function categoryLabel(category: string) { return sectionById[category as SectionId]?.label || category; }
 async function readSnapshot<T>(url: string): Promise<T | null> {
-  try {
-    const response = await fetch(url);
-    if (!response.ok) return null;
-    return await response.json() as T;
-  } catch {
-    return null;
-  }
+  try { const response = await fetch(url, { cache: 'no-store' }); if (!response.ok) return null; return await response.json() as T; } catch { return null; }
 }
 
 export function TideBrief() {
   const root = useRef<HTMLDivElement>(null);
   const [news, setNews] = useState<TideNewsSnapshot | null>(null);
-  const [hormuz, setHormuz] = useState<HormuzSnapshot | null>(null);
+  const [activeSection, setActiveSection] = useState<SectionId>('world');
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
   const focus = news?.sections.onthisday?.[0] || news?.sections.world?.[0] || null;
-  const tradeNews = useMemo(() => news?.sections.business || [], [news]);
-  const geopoliticsNews = useMemo(() => news?.sections.world || [], [news]);
-  const keywords = useMemo(() => {
-    const labels: Record<TideNewsItem['category'], string> = { onthisday: '历史上的今天', world: '世界局势', business: '商业与贸易', science: '科学技术', sports: '体育动态' };
-    return Object.keys(news?.sections || {}).map((key) => labels[key as TideNewsItem['category']]).filter(Boolean);
-  }, [news]);
+  const activeItems = useMemo(() => news?.sections[activeSection] || [], [news, activeSection]);
+  const sectionCount = news ? Object.values(news.sections).reduce((total, items) => total + items.length, 0) : 0;
 
   useEffect(() => {
     let active = true;
-    Promise.all([
-      readSnapshot<TideNewsSnapshot>(`${import.meta.env.BASE_URL}data/external_tide_news.json`),
-      readSnapshot<HormuzSnapshot>(`${import.meta.env.BASE_URL}data/external_hormuz.json`),
-    ]).then(([nextNews, nextHormuz]) => { if (active) { setNews(nextNews); setHormuz(nextHormuz); if (!nextNews && !nextHormuz) setError('潮汐早报数据暂不可用，将保留页面结构并等待下一次同步。'); } })
-      .finally(() => active && setLoading(false));
+    readSnapshot<TideNewsSnapshot>(`${import.meta.env.BASE_URL}data/external_tide_news.json`).then((snapshot) => {
+      if (!active) return;
+      setNews(snapshot);
+      if (!snapshot) setError('今日 Kagi 新闻快照暂不可用，页面将保留上一次成功内容。');
+    }).finally(() => active && setLoading(false));
     return () => { active = false; };
   }, []);
 
@@ -69,25 +52,30 @@ export function TideBrief() {
     if (!root.current) return;
     const media = gsap.matchMedia();
     media.add('(prefers-reduced-motion: no-preference)', () => {
-      gsap.fromTo('.tide-hero, .tide-section', { autoAlpha: 0, y: 10 }, { autoAlpha: 1, y: 0, duration: .45, stagger: .06, ease: 'power3.out', clearProps: 'transform' });
+      const timeline = gsap.timeline({ defaults: { ease: 'power3.out' } });
+      timeline.fromTo('.tide-hero', { autoAlpha: 0, y: 16, clipPath: 'inset(0 0 8% 0)' }, { autoAlpha: 1, y: 0, clipPath: 'inset(0 0 0% 0)', duration: .55 })
+        .fromTo('.tide-hero-orbit, .tide-hero-copy > *, .tide-hero-meta > *', { autoAlpha: 0, y: 10 }, { autoAlpha: 1, y: 0, duration: .32, stagger: .05 }, '-=.3')
+        .fromTo('.tide-section', { autoAlpha: 0, y: 12 }, { autoAlpha: 1, y: 0, duration: .4, stagger: .06 }, '-=.18')
+        .fromTo('.tide-story-card', { autoAlpha: 0, y: 8 }, { autoAlpha: 1, y: 0, duration: .3, stagger: .035 }, '-=.16');
+      return () => timeline.kill();
     }, root);
     return () => media.revert();
-  }, { scope: root, dependencies: [loading, news, hormuz], revertOnUpdate: true });
+  }, { scope: root, dependencies: [loading, news, activeSection], revertOnUpdate: true });
 
   return <main className="tide-brief" ref={root}>
     <section className="tide-hero tide-reveal">
-      <div><span className="tide-kicker">TIDE BRIEF · GLOBAL COMMODITY TRADE</span><h1>潮汐早报</h1><p>把全球新闻、市场脉搏与航线态势收束成今天可读的一页。</p></div>
-      <div className="tide-hero-meta"><strong>{new Intl.DateTimeFormat('zh-CN', { dateStyle: 'full', timeZone: 'Asia/Shanghai' }).format(new Date())}</strong><span>每日 09:00 更新 · {news?.source?.captured_at ? `数据 ${formatTime(news.source.captured_at)}` : '等待同步'}</span></div>
+      <div className="tide-hero-orbit" aria-hidden="true"><span className="orbit-core">T</span><i /><i /><i /></div>
+      <div className="tide-hero-copy"><span className="tide-kicker">TIDE BRIEF · GLOBAL NEWS CURRENT</span><h1>潮汐早报</h1><p>从世界、商业、科学与运动新闻中，收束一页值得今天打开的全球脉搏。</p></div>
+      <div className="tide-hero-meta"><strong>{new Intl.DateTimeFormat('zh-CN', { dateStyle: 'full', timeZone: 'Asia/Shanghai' }).format(new Date())}</strong><span>{news?.source?.captured_at ? `快照 ${formatTime(news.source.captured_at)}` : '等待今日快照'} · 每日 09:00 更新</span><span className="tide-integrity"><b /> {news ? `${news.quality.successful_source_count}/${news.quality.source_count} 板块已更新` : '正在校验来源'}</span></div>
     </section>
     {error && <p className="tide-state tide-error" role="alert">{error}</p>}
-    <section className="tide-section tide-news tide-reveal" id="tide-news">
-      <div className="tide-heading"><div><span>今日焦点</span><h2>全球影响力最大的消息</h2></div><small>{focus ? '来自历史上的今天 / 世界新闻快照' : '等待今日快照'}</small></div>
-      {loading ? <div className="tide-state">正在读取新闻快照…</div> : focus ? <article className="tide-focus">{focus.image_url && <img src={focus.image_url} alt={focus.image_alt || focus.title} />}<div className="tide-news-meta"><span>{focus.source}</span><time>{formatNewsTime(focus.published_at)}</time></div><h3>{focus.title}</h3><p>{focus.summary || focus.content}</p><div className="tide-story-meta"><span>来源：{focus.source}</span>{focus.url && <a href={focus.url} target="_blank" rel="noreferrer">阅读原文 ↗</a>}</div></article> : <div className="tide-state">本期尚无可验证的焦点新闻，下一次同步后自动更新。</div>}
-    </section>
-    <section className="tide-section tide-market tide-reveal"><div className="tide-heading"><div><span>贸易与供应链脉动</span><h2>影响交易的变化</h2></div><small>{tradeNews.length} 条 · 商业新闻</small></div>{tradeNews.length ? <div className="tide-story-grid">{tradeNews.map((item) => <article className="tide-story" key={item.id}>{item.image_url && <img src={item.image_url} alt={item.image_alt || item.title} />}<div className="tide-news-meta"><span>{item.source}</span><time>{formatNewsTime(item.published_at)}</time></div><h3>{item.title}</h3><p>{item.summary || item.content}</p><strong className="tide-impact">信息分类：商业与贸易</strong><div className="tide-story-meta"><span>来源：{item.source}</span>{item.url && <a href={item.url} target="_blank" rel="noreferrer">原文 ↗</a>}</div></article>)}</div> : <div className="tide-state">暂无符合时间窗口的商业新闻。</div>}</section>
-    <section className="tide-section tide-geopolitics tide-reveal"><div className="tide-heading"><div><span>地缘冲突全景</span><h2>世界局势与通道风险</h2></div><small>{geopoliticsNews.length} 条 · 世界新闻</small></div>{geopoliticsNews.length ? <div className="tide-story-grid">{geopoliticsNews.map((item) => <article className="tide-story" key={item.id}>{item.image_url && <img src={item.image_url} alt={item.image_alt || item.title} />}<div className="tide-news-meta"><span>{item.source}</span><time>{formatNewsTime(item.published_at)}</time></div><h3>{item.title}</h3><p>{item.summary || item.content}</p><strong className="tide-risk">关注方向：世界局势与供应链通道</strong><div className="tide-story-meta"><span>来源：{item.source}</span>{item.url && <a href={item.url} target="_blank" rel="noreferrer">原文 ↗</a>}</div></article>)}</div> : <div className="tide-state">暂无符合时间窗口的世界新闻。</div>}</section>
-    <section className="tide-section tide-market tide-reveal"><div className="tide-heading"><div><span>今日关键词</span><h2>潮汐索引</h2></div><small>{news?.quality?.successful_source_count || 0}/{news?.quality?.source_count || 5} 个来源已成功更新</small></div><div className="tide-keywords">{(keywords.length ? keywords : ['世界局势', '商业与贸易', '科学技术']).map((keyword) => <span key={keyword}>{keyword}</span>)}</div></section>
-    <section className="tide-section tide-hormuz tide-reveal" id="tide-hormuz"><div className="tide-heading"><div><span>霍尔木兹专题</span><h2>海峡态势与分布画像</h2></div><small>{hormuz?.source?.captured_at ? `抓取 ${formatTime(hormuz.source.captured_at)}` : '按潮汐早报任务更新'}</small></div>{hormuz ? <div className="hormuz-grid"><article><span>最新态势</span><h3>{hormuz.situation?.title || '态势摘要'}</h3><p>{hormuz.situation?.summary || '专题数据已接入，等待态势文本更新。'}</p></article><article>{hormuz.live?.image_url ? <img src={hormuz.live.image_url} alt={hormuz.live.image_alt || '霍尔木兹实时态势'} /> : <div className="hormuz-placeholder">实时态势图</div>}<strong>{hormuz.live?.title || '实时态势'}</strong><p>{hormuz.live?.summary || '保留专题页面实时态势信息入口。'}</p></article><article>{hormuz.distribution?.image_url ? <img src={hormuz.distribution.image_url} alt={hormuz.distribution.image_alt || '霍尔木兹分布画像'} /> : <div className="hormuz-placeholder">分布画像</div>}<strong>{hormuz.distribution?.title || '分布画像'}</strong><p>{hormuz.distribution?.summary || '保留专题页面分布画像信息入口。'}</p></article>{(hormuz.items || []).map((item) => <article className="hormuz-item" key={`${item.title}-${item.updated_at}`}><span>{item.category || '专题信息'}</span><strong>{item.title}</strong><p>{item.summary}</p>{item.source_url && <a href={item.source_url} target="_blank" rel="noreferrer">查看来源 ↗</a>}</article>)}</div> : <div className="tide-state">霍尔木兹专题快照尚未生成；数据源接入后此处展示态势、实时图与分布画像。</div>}</section>
-    <footer className="tide-sources tide-reveal"><span>信息来源</span>{tideSources.map((source) => <a key={source.label} href={source.url} target="_blank" rel="noreferrer">{source.label} ↗</a>)}</footer>
+    <section className="tide-section tide-cover tide-reveal" id="tide-cover"><div className="tide-section-heading"><div><span>今日封面</span><h2>历史上的今天</h2></div><small>来自 Kagi News · {focus ? formatTime(focus.published_at) : '等待快照'}</small></div>{loading ? <div className="tide-state">正在读取今日快照…</div> : focus ? <FeatureStory item={focus} /> : <div className="tide-state">当前没有可验证的封面新闻。</div>}</section>
+    <section className="tide-section tide-stream tide-reveal" id="tide-stream"><div className="tide-section-heading tide-stream-heading"><div><span>全球新闻流</span><h2>{sectionById[activeSection].short}</h2></div><small>{activeItems.length} 条 · 共 {sectionCount} 条可读快讯</small></div><nav className="tide-tabs" aria-label="潮汐早报新闻板块">{sectionMeta.map((section) => <button key={section.id} type="button" className={`tide-tab tide-tab-${section.tone} ${activeSection === section.id ? 'is-active' : ''}`} onClick={() => setActiveSection(section.id)} aria-pressed={activeSection === section.id}><span>{section.label}</span><b>{news?.sections[section.id]?.length || 0}</b></button>)}</nav>{loading ? <div className="tide-state">正在整理新闻流…</div> : activeItems.length ? <div className="tide-story-grid">{activeItems.map((item) => <StoryCard key={item.id} item={item} />)}</div> : <div className="tide-state">该板块当前没有可验证内容。</div>}</section>
+    <section className="tide-section tide-index tide-reveal"><div className="tide-index-copy"><span>快照索引</span><h2>一份可追溯的今日新闻底稿</h2><p>每条新闻保留标题、摘要、正文、图片和原始入口；当某个板块暂时不可访问时，仅沿用该板块上一次成功快照，不覆盖其他板块。</p></div><div className="tide-index-facts"><div><strong>{sectionCount}</strong><span>新闻条目</span></div><div><strong>{news?.quality.image_count || 0}</strong><span>已提取图片</span></div><div><strong>{news?.quality.full_content_count || 0}</strong><span>含完整正文</span></div></div></section>
+    <footer className="tide-sources tide-reveal"><span>来源</span>{sectionMeta.map((section) => <a key={section.id} href={`https://news.kagi.com/${section.id}/latest`} target="_blank" rel="noreferrer">Kagi · {section.label} ↗</a>)}</footer>
   </main>;
 }
+
+function FeatureStory({ item }: { item: TideNewsItem }) { return <article className="tide-feature-story">{item.image_url ? <img src={item.image_url} alt={item.image_alt || item.title} /> : <div className="tide-feature-art" aria-hidden="true"><span>{item.title.slice(0, 1)}</span><i /></div>}<div className="tide-feature-content"><div className="tide-news-meta"><span>{item.source}</span><time>{formatTime(item.published_at)}</time></div><h3>{item.title}</h3><p>{item.summary || item.content}</p><StoryLinks item={item} /></div></article>; }
+function StoryCard({ item }: { item: TideNewsItem }) { return <article className="tide-story-card"><div className={`tide-story-image tide-story-image-${item.category}`}>{item.image_url ? <img src={item.image_url} alt={item.image_alt || item.title} loading="lazy" /> : <span aria-hidden="true">{categoryLabel(item.category).slice(0, 1)}</span>}</div><div className="tide-news-meta"><span>{item.source}</span><time>{formatTime(item.published_at)}</time></div><h3>{item.title}</h3><details><summary>展开摘要与来源</summary><p>{item.content || item.summary}</p><StoryLinks item={item} /></details></article>; }
+function StoryLinks({ item }: { item: TideNewsItem }) { return <div className="tide-story-links">{item.url && <a href={item.url} target="_blank" rel="noreferrer">Kagi 原文 ↗</a>}{item.source_links?.slice(0, 2).map((link) => <a key={link} href={link} target="_blank" rel="noreferrer">来源链接 ↗</a>)}</div>; }

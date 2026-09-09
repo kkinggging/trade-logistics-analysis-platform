@@ -38,13 +38,13 @@ jobs:
 
       - name: Sync scheduled morning news snapshots
         continue-on-error: true
-        run: node data-ingestion/sync-all.mjs ${{ github.event.schedule == '0 1 * * *' && '--only=mysteel-fast-news,tide-global-news,hormuz-special' || '--only=mysteel-fast-news' }}
+        run: node data-ingestion/sync-all.mjs ${{ github.event.schedule == '0 1 * * *' && '--only=mysteel-fast-news,tide-global-news' || '--only=mysteel-fast-news' }}
 
       - name: Commit updated news snapshot
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add frontend/public/data/external_fast_news.json frontend/public/data/external_tide_news.json frontend/public/data/external_hormuz.json frontend/public/data/data_sync_status.json frontend/public/data/brief_history.json
+          git add frontend/public/data/external_fast_news.json frontend/public/data/external_tide_news.json frontend/public/data/data_sync_status.json frontend/public/data/brief_history.json
           if git diff --cached --quiet; then
             echo "没有新的 MySteel 快讯快照需要提交"
           else
