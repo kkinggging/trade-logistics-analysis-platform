@@ -1,5 +1,8 @@
 {
-  "schedule_label": "每天 18:00（Asia/Shanghai）",
+  "schedule_label": "全量每天 18:00；我的钢铁网快讯每天 08:10、09:00；潮汐早报与霍尔木兹专题每天 09:00（Asia/Shanghai）",
+  "full_sync_schedule": "每天 18:00（Asia/Shanghai）",
+  "mysteel_fast_news_schedule": ["每天 08:10（Asia/Shanghai）", "每天 09:00（Asia/Shanghai）"],
+  "tide_brief_schedule": "每天 09:00（Asia/Shanghai）",
   "timezone": "Asia/Shanghai",
   "scheduler": "cron 或 launchd（由部署环境安装；本仓库不自动启动后台服务）",
   "entrypoint": "sync-all.mjs",

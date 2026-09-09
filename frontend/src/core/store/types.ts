@@ -254,6 +254,7 @@ export interface InternalBusinessAggregateRow {
 export interface InternalBusinessMonth {
   month: string;
   label: string;
+  prior_year_volume_t?: number;
   actual_volume_t: number;
   record_count: number;
   actual_growth_pct: number | null;
@@ -319,6 +320,30 @@ export interface InternalBusinessSnapshot {
     actual_and_target_separated: boolean;
     note: string;
   };
+  prior_year_summary?: {
+    year: number;
+    total_volume_t: number;
+    monthly_volume_t: number[];
+  };
+}
+
+export interface InternalBusinessCustomerSnapshot {
+  schema_version: string;
+  source: {
+    source_id: string;
+    name: string;
+    source_file: string;
+    selected_year: number;
+    coverage_start: string;
+    coverage_end: string;
+    aggregation_level: string;
+    customer_names_retained: boolean;
+  };
+  by_destination: Record<string, {
+    customer_count: number;
+    total_volume_t: number;
+    customers: Array<{ name: string; volume_t: number }>;
+  }>;
 }
 
 // ============ 产品成本 ============
@@ -495,6 +520,44 @@ export interface FastNewsSnapshot {
     warnings: string[];
   };
   taxonomy?: unknown;
+}
+
+export interface TideNewsItem {
+  id: string;
+  title: string;
+  summary: string;
+  content: string;
+  image_url: string | null;
+  image_alt: string | null;
+  location: string | null;
+  category: 'world' | 'business' | 'science' | 'sports' | 'onthisday';
+  source: string;
+  source_id: string;
+  url: string | null;
+  published_at: string;
+  published_at_ms: number;
+  author: string | null;
+}
+
+export interface TideNewsSnapshot {
+  schema_version: string;
+  source: {
+    source_id: string;
+    name: string;
+    captured_at: string;
+    coverage_start: string;
+    coverage_end: string;
+    timezone: 'Asia/Shanghai';
+    window_hours: number;
+    schedule: string;
+    fetch_mode: string;
+    raw_sha256: string;
+    source_count: number;
+    categories: string[];
+  };
+  sources: Array<{ id: string; name: string; url: string; item_count: number; errors: string[]; captured_at: string | null }>;
+  sections: { onthisday: TideNewsItem[]; world: TideNewsItem[]; business: TideNewsItem[]; science: TideNewsItem[]; sports: TideNewsItem[] };
+  quality: { source_count: number; successful_source_count: number; item_count: number; image_count: number; full_content_count: number; warnings: string[] };
 }
 
 // ============ 策略卡片 ============

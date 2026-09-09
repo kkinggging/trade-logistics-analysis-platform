@@ -1,5 +1,7 @@
 import { useEffect, useMemo, useState } from 'react';
 import { useRef } from 'react';
+import { useGSAP } from '@gsap/react';
+import gsap from 'gsap';
 import * as echarts from 'echarts';
 import { useAppContext } from '@/core/store/context';
 import { dataProvider } from '@/core/data/provider';
@@ -18,44 +20,11 @@ import {
   ShippingIndexSnapshot,
   TradeRemedySnapshot,
   InternalBusinessSnapshot,
+  FastNewsSnapshot,
 } from '@/core/store/types';
 import './UnifiedAnalysis.css';
 
-type ObjectiveKind = '行情' | '政策' | '经营' | '成本' | '汇率' | '风险';
-type ObjectivePriority = 'P0' | 'P1' | 'P2' | 'P3';
-
-interface ObjectiveItem {
-  id: string;
-  kind: ObjectiveKind;
-  title: string;
-  chineseHint: string;
-  value: string;
-  detail: string;
-  source: string;
-  date: string;
-  searchable: string;
-  priority: ObjectivePriority;
-}
-
-const riskLevelText: Record<RiskSignal['level'], string> = {
-  critical: '严重',
-  high_attention: '高度关注',
-  attention: '关注',
-  normal: '正常',
-};
-
-const riskLevelClass: Record<RiskSignal['level'], string> = {
-  critical: 'critical',
-  high_attention: 'high',
-  attention: 'attention',
-  normal: 'normal',
-};
-
-const periodChinese: Record<InternalAggregate['period'], string> = {
-  daily: '日',
-  weekly: '周',
-  monthly: '月',
-};
+gsap.registerPlugin(useGSAP);
 
 function formatDate(value?: string) {
   return value ? value.slice(0, 10) : '—';
@@ -67,41 +36,6 @@ function formatNumber(value: number, digits = 2) {
 
 function humanizeDisplay(value: string) {
   return value.replace(/_/g, ' ').replace(/\s+/g, ' ').trim();
-}
-
-function quoteChange(quote: MarketQuote) {
-  if (quote.baseline === undefined || quote.baseline === 0) return null;
-  return ((quote.value - quote.baseline) / quote.baseline) * 100;
-}
-
-function preferredAggregatePeriod(items: InternalAggregate[]) {
-  return (['monthly', 'weekly', 'daily'] as const).find((period) => items.some((item) => item.period === period)) || 'weekly';
-}
-
-function aggregateDurationDays(item: InternalAggregate) {
-  const start = Date.parse(item.start_date);
-  const end = Date.parse(item.end_date);
-  return Number.isFinite(start) && Number.isFinite(end) ? Math.max(1, Math.round((end - start) / 86400000) + 1) : 0;
-}
-
-function scopedAggregates(items: InternalAggregate[]) {
-  const period = preferredAggregatePeriod(items);
-  const expectedDays = period === 'daily' ? 1 : period === 'weekly' ? 7 : 30;
-  const samePeriod = items.filter((item) => item.period === period);
-  const periodSized = samePeriod.filter((item) => Math.abs(aggregateDurationDays(item) - expectedDays) <= (period === 'monthly' ? 6 : 2));
-  return periodSized.length ? periodSized : samePeriod;
-}
-
-function latestCostScenario(items: ProductCost[]) {
-  const latestDate = [...new Set(items.map((item) => item.effective_date))].sort().reverse()[0];
-  if (!latestDate) return [];
-  const latest = items.filter((item) => item.effective_date === latestDate);
-  const groups = new Map<string, ProductCost[]>();
-  latest.forEach((item) => {
-    const key = [item.product_code, item.trade_term, item.origin, item.destination, item.currency].join('|');
-    groups.set(key, [...(groups.get(key) || []), item]);
-  });
-  return [...groups.values()].sort((a, b) => b.length - a.length)[0] || [];
 }
 
 function chartThemeFromCss() {
@@ -136,37 +70,21 @@ const indicatorChinese: Record<string, string> = {
   NICKEL_LME_CASH: '镍 · LME 现货',
 };
 
-const policyChinese: Record<string, string> = {
-  regulation: '法规 / 监管',
-  tariff: '关税措施',
-  subsidy: '补贴 / 激励',
-  ban: '禁令 / 限制',
-  quota: '配额 / 许可',
-  anti_dumping: '反倾销',
+const indicatorShortChinese: Record<string, string> = {
+  STEEL_HR_FOB_CN: '热轧 FOB 中国',
+  STEEL_CR_FOB_CN: '冷轧 FOB 中国',
+  STEEL_HR_CIF_EU: '热轧 CIF 欧洲',
+  STEEL_SILICON_FOB_CN: '硅钢 FOB 中国',
+  STEEL_HR_CFR_SEA: '热轧 CFR 东南亚',
+  STEEL_CR_CFR_SEA: '冷轧 CFR 东南亚',
+  FREIGHT_CAPE_PACIFIC: '海运费 · 中欧',
+  CARBON_EUA: 'EUA 碳价',
+  IRON_ORE_62FE_CFR: '铁矿石 CFR 中国',
+  COKING_COAL_FOB_AUS: '炼焦煤 FOB 澳大利亚',
+  SCRAP_HMS_CFR_TR: '废钢 CFR 土耳其',
+  NICKEL_LME_CASH: '镍 · LME 现货',
 };
 
-const policyTitleChinese: Record<string, string> = {
-  'EU CBAM Full Implementation Phase': '欧盟 CBAM 全面实施阶段',
-  'US Section 232 Steel Tariff Review': '美国 232 条款钢材关税复审',
-  'India Safeguard Duty Extension': '印度保障措施关税延长',
-  'China Export Tax Rebate Adjustment': '中国钢材出口退税调整',
-  'EU Anti-Dumping Investigation - Cold-Rolled': '欧盟冷轧钢反倾销调查',
-  'ASEAN Harmonized Steel Standard': '东盟钢材标准协调统一',
-  'Vietnam Import Licensing Requirement': '越南钢材进口许可要求',
-  'Brazil Minimum Import Price': '巴西钢材最低进口价格',
-  'Turkey Additional Customs Duty': '土耳其钢材附加关税',
-  'Japan Green Steel Procurement Policy': '日本绿色钢材采购政策',
-  'Indonesia Nickel Export Ban Extension': '印度尼西亚镍出口禁令延长',
-  'South Korea Emissions Trading System Expansion': '韩国碳排放交易体系扩围',
-  'Mexico Steel Origin Verification Program': '墨西哥钢材原产地核验计划',
-  'UK Carbon Border Tax Proposal': '英国碳边境税提案',
-  'Australia Critical Minerals Strategy': '澳大利亚关键矿产战略',
-  'Thailand BOI Investment Incentives': '泰国 BOI 投资激励',
-  'Canada Underutilized Capacity Tariff': '加拿大产能不足附加关税',
-  'Philippines Anti-Circumvention Duty': '菲律宾反规避关税',
-  'EU Deforestation Regulation Impact': '欧盟零毁林法规影响',
-  'Singapore Carbon Tax Increase': '新加坡碳税上调',
-};
 
 const factorChinese: Record<string, string> = {
   price_volatility: '价格波动',
@@ -175,37 +93,15 @@ const factorChinese: Record<string, string> = {
   policy_risk: '政策风险',
   demand_weakness: '需求走弱',
   fx_volatility: '汇率波动',
+  inventory_pressure: '内部库存压力',
+  credit_risk: '客户信用风险',
+  supply_chain: '供应链稳定性',
+  market_access: '市场准入',
+  liquidity: '市场流动性',
+  market_sentiment: '市场情绪',
+  geopolitical: '地缘与重大事件',
+  operational: '内部运营波动',
 };
-
-const costComponentChinese: Record<string, string> = {
-  BASE_STEEL: '基础钢材价格',
-  INLAND_FREIGHT: '内陆运费',
-  OCEAN_FREIGHT: '海运费',
-  INSURANCE: '海运保险',
-  CUSTOMS_DUTY: '进口关税',
-  CBAM: 'CBAM证书成本',
-};
-
-const productChinese: Record<string, string> = {
-  'HR-Q235B-3.0': '热轧 Q235B · 3.0mm',
-  'CR-SPCC-1.2': '冷轧 SPCC · 1.2mm',
-  'SS-M470-50A': '硅钢 M470-50A',
-};
-
-const regionChinese: Record<string, string> = {
-  asia: '亚洲',
-  europe: '欧洲',
-  americas: '美洲',
-  africa: '非洲',
-  global: '全球',
-};
-
-function scenarioChinese(name: string) {
-  if (name === 'Current Rate') return '当前汇率';
-  const match = name.match(/^([A-Z]{3}) (Strengthens|Weakens) (.+)$/);
-  if (!match) return '汇率情景';
-  return `${match[1]}${match[2] === 'Strengthens' ? '升值' : '贬值'}${match[3]}`;
-}
 
 const metricChinese: Record<string, string> = {
   steel_price_volatility_30d: '30日钢价波动率',
@@ -216,28 +112,89 @@ const metricChinese: Record<string, string> = {
   fx_volatility_30d: '30日汇率波动率',
 };
 
-const metricEnglish: Record<string, string> = {
-  steel_price_volatility_30d: 'steel price volatility 30d',
-  ocean_freight_china_europe: 'ocean freight China Europe',
-  eua_price: 'EUA price',
-  eu_antidumping_probability: 'EU anti-dumping probability',
-  order_completion_rate: 'order completion rate',
-  fx_volatility_30d: 'FX volatility 30d',
+type RiskCategory = 'remedy' | 'quota' | 'market-volatility' | 'internal-competition' | 'trade-policy' | 'geopolitical';
+
+const riskCategoryMeta: Record<RiskCategory, { label: string; shortLabel: string; description: string }> = {
+  remedy: { label: '贸易救济', shortLabel: '救济', description: '反倾销、反补贴、保障措施及其调查进展' },
+  quota: { label: '关税配额', shortLabel: '配额', description: '配额余额、临界状态与可用性约束' },
+  'market-volatility': { label: '汇率及航运指数波动', shortLabel: '汇率 / 航运', description: '汇率、运费、钢价及能源成本的异常波动' },
+  'internal-competition': { label: '内部市场竞争', shortLabel: '内部市场', description: '订单、客户、库存与经营执行端的变化' },
+  'trade-policy': { label: '对等关税等贸易政策', shortLabel: '贸易政策', description: '关税、CBAM、许可和其他市场准入政策' },
+  geopolitical: { label: '重大新闻事件', shortLabel: '重大事件', description: '战争、航线中断及影响贸易的突发事件' },
 };
 
-function displayMetric(value: string) {
-  return metricEnglish[value] || humanizeDisplay(value);
+const riskCategoryOrder: RiskCategory[] = ['remedy', 'quota', 'market-volatility', 'internal-competition', 'trade-policy', 'geopolitical'];
+
+function classifyRisk(signal: RiskSignal): RiskCategory {
+  const text = `${signal.factor} ${signal.metric} ${signal.rule_id || ''}`.toLowerCase();
+  if (/antidump|anti.?dump|countervail|safeguard|remedy|救济/.test(text)) return 'remedy';
+  if (/quota|tariff.?quota|配额/.test(text)) return 'quota';
+  if (/geopolitical|war|route.?disruption|conflict|战争|地缘/.test(text)) return 'geopolitical';
+  if (/tariff|cbam|policy|market.?access|license|customs|关税|政策|许可/.test(text)) return 'trade-policy';
+  if (/fx|freight|shipping|vessel|price.?volatility|carbon|eua|航运|汇率|运费|钢价/.test(text)) return 'market-volatility';
+  return 'internal-competition';
 }
 
-function policySeverityLabel(severity: number) {
-  if (severity >= 8) return '严重';
-  if (severity >= 6) return '高度关注';
-  if (severity >= 4) return '关注';
-  return '一般';
+function riskValueText(signal: RiskSignal) {
+  const value = Number(signal.value);
+  if (!Number.isFinite(value)) return '—';
+  if (/probability|rate|ratio|pct|completion|reliability|share/.test(signal.metric.toLowerCase())) {
+    return `${(value <= 1 && value >= 0 ? value * 100 : value).toFixed(1)}%`;
+  }
+  return formatNumber(value, 2);
 }
 
-function policyVerifyLabel(status: PolicyEvent['verify_status']) {
-  return status === 'verified' ? '已核验' : status === 'pending' ? '待核验' : '未核验';
+function formatRiskChange(signal: RiskSignal) {
+  const delta = signal.delta_pct;
+  if (delta == null || !Number.isFinite(delta)) return `当前记录为 ${riskValueText(signal)}，暂无可比基线。`;
+  return `较基线${delta >= 0 ? '增加' : '减少'} ${Math.abs(delta).toFixed(1)}%，当前记录为 ${riskValueText(signal)}。`;
+}
+
+function riskTargetId(signal: RiskSignal) {
+  const text = `${signal.factor} ${signal.metric} ${signal.rule_id || ''}`.toLowerCase();
+  if (/fx|forex|汇率/.test(text)) return 'forex-analysis';
+  if (/freight|shipping|vessel|航运|运费|物流|supply.?chain/.test(text)) return 'shipping-indices';
+  return 'analysis-objective-charts';
+}
+
+function getSafeExternalLink(href?: string) {
+  if (!href) return null;
+  try {
+    const url = new URL(href);
+    if (!['http:', 'https:'].includes(url.protocol)) return null;
+    if (/example|localhost|127\.0\.0\.1|invalid/i.test(url.hostname)) return null;
+    return url.href;
+  } catch {
+    return null;
+  }
+}
+
+function riskSource(signal: RiskSignal, policies: PolicyEvent[], tradeRemedy: TradeRemedySnapshot | null, taricQuota: TaricQuotaSnapshot | null, shippingIndices: ShippingIndexSnapshot | null, forex: ForexSnapshot | null, fastNews: FastNewsSnapshot | null) {
+  const policy = signal.evidence_ref?.map((ref) => policies.find((item) => item.event_id === ref)).find(Boolean);
+  const category = classifyRisk(signal);
+  const source = policy?.source_url ? getSafeExternalLink(policy.source_url) : null;
+  if (source) return { label: '查看政策来源', href: source };
+  const remedyUrl = category === 'remedy' ? getSafeExternalLink(tradeRemedy?.source.dashboard_url) : null;
+  if (remedyUrl) return { label: '查看贸易救济看板', href: remedyUrl };
+  const quotaUrl = category === 'quota' ? getSafeExternalLink(taricQuota?.source.dashboard_url) : null;
+  if (quotaUrl) return { label: '查看配额来源', href: quotaUrl };
+  if (category === 'market-volatility') {
+    const forexUrl = signal.factor === 'fx_volatility' ? getSafeExternalLink(forex?.source.dashboard_url) : null;
+    if (forexUrl) return { label: '查看外汇看板', href: forexUrl };
+    const shippingUrl = (signal.factor === 'freight_cost' || signal.factor === 'supply_chain') ? getSafeExternalLink(shippingIndices?.source.dashboard_url) : null;
+    if (shippingUrl) return { label: '查看航运看板', href: shippingUrl };
+  }
+  const newsUrl = category === 'geopolitical' ? getSafeExternalLink(fastNews?.source.dashboard_url) : null;
+  if (newsUrl) return { label: '查看快讯来源', href: newsUrl };
+  return null;
+}
+
+function riskEvidence(signal: RiskSignal, policies: PolicyEvent[]) {
+  return (signal.evidence_ref || []).map((ref) => {
+    const policy = policies.find((item) => item.event_id === ref);
+    const href = getSafeExternalLink(policy?.source_url);
+    return href ? { label: ref, href } : null;
+  }).filter((item): item is { label: string; href: string } => Boolean(item));
 }
 
 interface ObjectiveChartsProps {
@@ -250,6 +207,150 @@ interface ObjectiveChartsProps {
   taricQuota: TaricQuotaSnapshot | null;
   advice: DataDrivenAdvice[];
   tradeRemedy: TradeRemedySnapshot | null;
+}
+
+interface TimelineEvent {
+  id: string;
+  date: string;
+  title: string;
+  type: string;
+  region: string;
+  summary: string;
+  sourceUrl?: string;
+  severity: number;
+  sourceLabel: string;
+}
+
+function build2025TimelineEvents(policies: PolicyEvent[], tradeRemedy: TradeRemedySnapshot | null): TimelineEvent[] {
+  const policyEvents: TimelineEvent[] = policies
+    .filter((item) => item.publish_date?.startsWith('2025-'))
+    .map((item) => ({
+      id: item.event_id,
+      date: item.publish_date,
+      title: item.title,
+      type: item.event_type === 'anti_dumping' ? '反倾销' : item.event_type === 'quota' ? '配额 / 许可' : '贸易政策',
+      region: item.country_region,
+      summary: item.summary,
+      sourceUrl: item.source_url,
+      severity: item.severity,
+      sourceLabel: '政策事件库',
+    }));
+  const remedyEvents: TimelineEvent[] = (tradeRemedy?.cases || [])
+    .map((item) => ({
+      id: `remedy-${item.case_id}`,
+      date: item.latest_stage_date || item.filing_date || item.first_seen || '',
+      title: item.case_name || `${item.country} ${item.variety || '钢材'}贸易救济案件`,
+      type: item.case_type || '贸易救济',
+      region: item.country,
+      summary: `${item.latest_stage || item.case_state || '案件状态待核验'}；涉及${item.product_cn || item.variety || '钢材'}${item.hs_text ? `，HS：${item.hs_text}` : ''}。`,
+      sourceUrl: item.original_article_url || item.source_url || item.stages?.find((stage) => stage.url)?.url || undefined,
+      severity: item.case_type === '保障措施' ? 8 : item.case_state?.includes('执行') ? 8 : 7,
+      sourceLabel: '出口贸易救济案件看板',
+    }))
+    .filter((item) => item.date.startsWith('2025-'));
+  return [...policyEvents, ...remedyEvents]
+    .filter((item) => /^2025-(0[1-9]|1[0-2])-\d{2}/.test(item.date))
+    .sort((a, b) => b.date.localeCompare(a.date) || b.severity - a.severity);
+}
+
+function BusinessOutputAndPolicyTimeline({ snapshot, policies, tradeRemedy }: { snapshot: InternalBusinessSnapshot; policies: PolicyEvent[]; tradeRemedy: TradeRemedySnapshot | null }) {
+  const chartRef = useRef<HTMLDivElement>(null);
+  const motionRef = useRef<HTMLDivElement>(null);
+  const themeKey = useThemeKey();
+  const [expandedMonth, setExpandedMonth] = useState<string | null>(null);
+  const timelineEvents = useMemo(() => build2025TimelineEvents(policies, tradeRemedy), [policies, tradeRemedy]);
+  const monthKeys = useMemo(() => Array.from({ length: 12 }, (_, index) => `2025-${String(index + 1).padStart(2, '0')}`), []);
+  const eventsByMonth = useMemo(() => {
+    const grouped = new Map<string, TimelineEvent[]>();
+    monthKeys.forEach((month) => grouped.set(month, []));
+    timelineEvents.forEach((event) => grouped.set(event.date.slice(0, 7), [...(grouped.get(event.date.slice(0, 7)) || []), event]));
+    return grouped;
+  }, [monthKeys, timelineEvents]);
+  const expandedEvents = expandedMonth ? eventsByMonth.get(expandedMonth) || [] : [];
+
+  useEffect(() => {
+    if (!chartRef.current) return;
+    const chart = echarts.getInstanceByDom(chartRef.current) || echarts.init(chartRef.current);
+    const theme = chartThemeFromCss();
+    const rows = snapshot.monthly.slice(0, 12);
+    const actual = rows.map((row) => row.actual_volume_t);
+    const target = rows.map((row) => row.target_volume_t);
+    chart.setOption({
+      animationDuration: 760,
+      animationEasing: 'cubicOut',
+      color: [theme.blue, theme.orange],
+      grid: { left: 58, right: 24, top: 24, bottom: 36, containLabel: true },
+      tooltip: {
+        trigger: 'axis',
+        confine: true,
+        formatter: (params: any[]) => {
+          const row = rows[params[0]?.dataIndex];
+          if (!row) return '';
+          const gap = row.actual_volume_t - row.target_volume_t;
+          return `${row.month}<br/>实际出口量：${formatNumber(row.actual_volume_t, 0)} 吨<br/>目标出口量：${formatNumber(row.target_volume_t, 0)} 吨<br/>差额：${gap >= 0 ? '+' : ''}${formatNumber(gap, 0)} 吨<br/>目标达成：${row.actual_growth_met ? '已达成' : '未达成'}`;
+        },
+      },
+      legend: { top: 0, textStyle: { color: theme.text, fontSize: 12 } },
+      xAxis: { type: 'category', data: rows.map((row) => row.label), axisLabel: { color: theme.text, fontSize: 12 }, axisLine: { lineStyle: { color: theme.grid } } },
+      yAxis: { type: 'value', name: '吨', nameTextStyle: { color: theme.text, fontSize: 12 }, axisLabel: { color: theme.text, fontSize: 12 }, splitLine: { lineStyle: { color: theme.grid } } },
+      series: [
+        { name: '实际出口量', type: 'bar', data: actual, barWidth: '42%', itemStyle: { color: theme.blue, borderRadius: [4, 4, 0, 0] } },
+        { name: '年度目标分解', type: 'line', data: target, smooth: true, symbol: 'circle', symbolSize: 7, lineStyle: { color: theme.orange, type: 'dashed', width: 2 }, itemStyle: { color: theme.orange, borderColor: theme.card, borderWidth: 2 } },
+      ],
+    }, true);
+    const resize = () => chart.resize();
+    const observer = typeof ResizeObserver !== 'undefined' ? new ResizeObserver(resize) : null;
+    observer?.observe(chartRef.current);
+    window.addEventListener('resize', resize);
+    const frame = window.requestAnimationFrame(resize);
+    return () => { window.cancelAnimationFrame(frame); observer?.disconnect(); window.removeEventListener('resize', resize); chart.dispose(); };
+  }, [snapshot, themeKey]);
+
+  useGSAP(() => {
+    const motion = gsap.matchMedia();
+    motion.add('(prefers-reduced-motion: no-preference)', () => {
+      const timeline = gsap.timeline({ defaults: { ease: 'power3.out' } });
+      timeline.fromTo('.business-output-heading', { autoAlpha: 0, y: 8 }, { autoAlpha: 1, y: 0, duration: .28 })
+        .fromTo('.business-output-chart', { autoAlpha: 0, y: 10 }, { autoAlpha: 1, y: 0, duration: .45 }, '-=.12')
+        .fromTo('.business-output-month', { autoAlpha: 0, y: 6 }, { autoAlpha: 1, y: 0, duration: .24, stagger: .035 }, '-=.22');
+      return () => timeline.kill();
+    }, motionRef);
+    return () => motion.revert();
+  }, { scope: motionRef, dependencies: [expandedMonth, timelineEvents.length], revertOnUpdate: true });
+
+  const totalVolume = snapshot.summary.total_volume_t;
+  const targetVolume = snapshot.monthly.reduce((sum, row) => sum + row.target_volume_t, 0);
+  const achievedMonths = snapshot.monthly.filter((row) => row.actual_growth_met).length;
+
+  return <section ref={motionRef} className="business-output-policy-panel" aria-label="年度出口目标与政策事件时间线">
+    <div className="business-output-heading">
+      <div><span className="business-output-kicker">BUSINESS PULSE · 2025</span><h2>出口规模与政策事件</h2></div>
+      <span>实际出货与同月政策变化共用 2025 年 1—12 月轴</span>
+    </div>
+    <article className="business-output-chart-card business-output-chart">
+      <div className="business-output-chart-title"><strong>月度出口量与年度目标分解</strong><span>目标由 2024 年月度结算结构提取，实际与目标严格分列</span></div>
+      <div ref={chartRef} className="business-output-chart-canvas" />
+      <div className="business-output-footnote">2024 年基准：{snapshot.prior_year_summary ? `${formatNumber(snapshot.prior_year_summary.total_volume_t / 10000, 2)} 万吨` : '未接入'} · 2025 年实际：{formatNumber(totalVolume / 10000, 2)} 万吨 · 年度目标：{formatNumber(targetVolume / 10000, 2)} 万吨 · 目标达成 {achievedMonths}/12 个月</div>
+    </article>
+    <article className="business-policy-timeline">
+      <div className="business-policy-heading"><div><strong>政策事件时间线</strong><span>按月份展开 2025 年可核验的贸易救济 / 政策事件</span></div><small>{timelineEvents.length} 条已匹配事件 · 来源链接可追溯</small></div>
+      <div className="business-output-months" role="list" aria-label="2025年月度政策事件">
+        {monthKeys.map((month) => {
+          const events = eventsByMonth.get(month) || [];
+          const expanded = expandedMonth === month;
+          return <div className={`business-output-month ${expanded ? 'is-expanded' : ''} ${events.length ? 'has-events' : 'is-empty'}`} key={month} role="listitem">
+            <button type="button" onClick={() => setExpandedMonth((current) => current === month ? null : month)} aria-expanded={expanded} aria-controls={`business-policy-${month}`}>
+              <span className="business-output-month-dot" aria-hidden="true" /><strong>{month.slice(0, 4)}年{Number(month.slice(5))}月</strong><b>{events.length} 条</b><small>{events.length ? `最高影响 ${Math.max(...events.map((event) => event.severity))}/10` : '暂无已匹配事件'}</small><i aria-hidden="true">{expanded ? '−' : '+'}</i>
+            </button>
+          </div>;
+        })}
+      </div>
+      {expandedMonth && <div className="business-policy-detail" id={`business-policy-${expandedMonth}`}>
+        <div className="business-policy-detail-heading"><strong>{expandedMonth.slice(0, 4)}年{Number(expandedMonth.slice(5))}月事件明细</strong><button type="button" onClick={() => setExpandedMonth(null)}>收起</button></div>
+        {expandedEvents.length ? <div className="business-policy-events">{expandedEvents.map((event) => <article className={`business-policy-event ${event.severity >= 8 ? 'is-critical' : ''}`} key={event.id}><div><span>{event.type}</span><strong>{event.title}</strong><small>{event.region} · {event.date} · {event.sourceLabel}</small></div><p>{event.summary}</p>{event.sourceUrl && <a href={event.sourceUrl} target="_blank" rel="noreferrer">查看来源 ↗</a>}</article>)}</div> : <p className="business-policy-empty">该月暂无具备日期和来源的可核验事件。</p>}
+      </div>}
+    </article>
+  </section>;
 }
 
 const remedyMapNames: Record<string, string> = {
@@ -463,9 +564,6 @@ function buildOpportunityAssessments(
     const status = rule === 'none' ? '暂无数据' : isRestricted ? '受贸易救济限制' : scoreKind === 'full' ? '可比评估 · 配额型' : scoreKind === 'market-reference' ? '市场级参考 · 配额数据缺口' : rule === 'standard' ? '有历史出口 · 待案件/配额核验' : rule === 'partial' ? '部分评估 · 数据缺口' : '数据不足 · 不输出综合分';
     const baseLabel = sourceLabelByWorld.get(worldName) || opportunityWorldChinese[worldName] || worldName;
     const label = baseLabel;
-    const quotaText = quota ? `${quota.sourceLabel}；余额 ${formatNumber(quota.balance, 0)} 吨，剩余 ${quota.remainingPct == null ? '—' : `${quota.remainingPct.toFixed(1)}%`}${quota.critical ? '，临界' : ''}` : '该市场配额数据未接入，不能视为无配额限制';
-    const remedyText = remedy ? `案件 ${remedy.case_count} 件；执行中 ${remedy.measures_in_force} 件；调查中 ${remedy.investigating} 件；${remedySafety.status}` : '未匹配到该市场案件，仍需国家/产品/HS级核验';
-    const historyText = hasHistory ? `海关 ${externalQty == null ? '—' : `${formatNumber(externalQty, 0)} 吨`}；内部 ${internalQty == null ? '—' : `${formatNumber(internalQty, 0)} 吨`}；历史基础 ${historyScore!.toFixed(1)} 分` : '暂无可匹配的历史出口数据';
     const missingItems = [
       !externalQty ? '海关出口' : '',
       !internalQty ? '内部业务' : '',
@@ -475,7 +573,8 @@ function buildOpportunityAssessments(
     ].filter(Boolean);
     const dataScope = euMemberWorldNames.has(worldName) ? '国家出口事实；欧盟案件/配额不复制到成员国' : worldName === 'European Union' ? '欧盟区域主体汇总；不拆分为成员国独立配额' : '市场级出口、案件与配额匹配；产品/HS级仍需复核';
     const freshness = `海关抓取 ${steelExport?.source.captured_at || steelExport?.source.generated_at || '—'}；内部业务快照 ${internalBusiness?.source.captured_at || '2025-12'}；贸易救济抓取 ${tradeRemedy?.source.captured_at || tradeRemedy?.source.generated_at || '—'}；配额抓取 ${taricQuota?.source.captured_at || '—'}`;
-    const scoreText = score == null ? '不输出可比综合分' : scoreKind === 'full' ? `${score} 分（满条件可比）` : `${score} 分（市场级参考，不与满条件分横比）`;
+    const scoreText = score == null ? '不输出可比综合分' : scoreKind === 'full' ? `${score} 分（满条件可比）` : `${score} 分（市场级参考）`;
+    const compactDetail = `<div class="map-tooltip-title">${label}</div><div class="map-tooltip-status">${status} · ${opportunityRuleLabel(rule)}</div><div class="map-tooltip-grid"><span>评分</span><strong>${scoreText}</strong><span>海关出口</span><strong>${externalQty == null ? '—' : `${formatNumber(externalQty, 0)} 吨`}</strong><span>内部业务</span><strong>${internalQty == null ? '—' : `${formatNumber(internalQty, 0)} 吨`}</strong><span>配额</span><strong>${quota ? `${formatNumber(quota.balance, 0)} 吨 · ${quota.remainingPct == null ? '—' : `${quota.remainingPct.toFixed(1)}%`}` : '未接入'}</strong><span>贸易救济</span><strong>${remedy ? `${remedy.case_count} 件 · 执行中 ${remedy.measures_in_force}` : '未匹配'}</strong></div><div class="map-tooltip-note">缺失：${missingItems.length ? missingItems.join('、') : '无'}<br/>${dataScope}<br/>数据时间：${freshness}</div>`;
     return {
       worldName,
       label,
@@ -491,7 +590,7 @@ function buildOpportunityAssessments(
       missingItems,
       dataScope,
       coordinate: coordinateByWorld.get(worldName) || opportunitySpecialCoordinates[worldName],
-      detail: `评估状态：${status}<br/>适用规则：${opportunityRuleLabel(rule)}<br/>评分输出：${scoreText}${isRestricted ? '（执行中措施封顶 20 分）' : ''}<br/>${historyText}<br/>配额：${quotaText}<br/>贸易救济：${remedyText}<br/>缺失项：${missingItems.length ? missingItems.join('、') : '无'}<br/>数据时间：${freshness}<br/>匹配口径：${dataScope}`,
+      detail: compactDetail,
     };
   });
 }
@@ -572,7 +671,7 @@ function ObjectiveCharts({ quotes, internalBusiness, steelExport, taricQuota, ad
     const palette = mapMode === 'partners' ? ['#dcebf5', '#9fc7df', '#4b8fbd', '#1e5e91', '#0b3b68'] : mapMode === 'remedy' ? ['#fff0df', '#eeae61', '#c85b3d', '#8c2538'] : ['#edf0fa', '#a5acd9', '#6875b7', '#333b78'];
     const title = mapMode === 'partners' ? '贸易伙伴世界分布 · 出口量' : mapMode === 'remedy' ? '贸易救济案件世界分布 · 案件数' : '区域出口条件辅助评估 · 综合适配度';
     chart.setOption({
-      tooltip: { trigger: 'item', formatter: (params: any) => `${params.data?.chineseName || opportunityWorldChinese[params.name] || params.name}<br/>${params.data?.detail || (params.value == null ? '暂无数据：尚未匹配到已接入数据源' : `数值：${params.value}`)}` },
+      tooltip: { trigger: 'item', confine: true, className: 'analysis-map-tooltip', formatter: (params: any) => params.data?.detail || `${params.data?.chineseName || opportunityWorldChinese[params.name] || params.name}<br/>${params.value == null ? '暂无数据：尚未匹配到已接入数据源' : `数值：${params.value}`}` },
       visualMap: { show: true, left: 18, bottom: 12, min: mapMode === 'opportunity' ? 0 : 0, max: activeMax, calculable: false, text: mapMode === 'partners' ? ['高出口量', '低出口量'] : mapMode === 'remedy' ? ['高案件数', '低案件数'] : ['高适配度', '低适配度'], textStyle: { color: chartTheme.text, fontSize: 12 }, inRange: { color: palette }, outOfRange: { color: chartTheme.muted } },
       geo: { map: 'trade-world', roam: true, zoom: 1.05, itemStyle: { areaColor: chartTheme.surface, borderColor: chartTheme.grid, borderWidth: 0.7 }, emphasis: { label: { show: false }, itemStyle: { areaColor: chartTheme.orange } } },
       series: [{ name: title, type: 'map', map: 'trade-world', geoIndex: 0, emphasis: { label: { show: false } }, data: activeMap }, { name: '地区明细', type: 'scatter', coordinateSystem: 'geo', symbolSize: (value: number[]) => Math.max(9, Math.min(25, Math.sqrt(Math.max(1, Number(value[2] || value[0])) / Math.max(1, activeMax)) * 26)), itemStyle: { color: mapMode === 'remedy' ? '#bd4f3d' : mapMode === 'opportunity' ? '#525fae' : chartTheme.orange, borderColor: chartTheme.card, borderWidth: 1 }, label: { show: false }, emphasis: { label: { show: false }, itemStyle: { borderColor: chartTheme.text, borderWidth: 2 } }, data: activeSpecial }],
@@ -659,16 +758,16 @@ function ObjectiveCharts({ quotes, internalBusiness, steelExport, taricQuota, ad
       const codeQuotes = quotes.filter((quote) => quote.indicator_code === code);
       const firstValue = codeQuotes.find((quote) => quote.value > 0)?.value || 1;
       const seriesQuotes = new Map(codeQuotes.map((quote) => [quote.date.slice(0, 10), Number((quote.value / firstValue * 100).toFixed(1))]));
-      return { name: indicatorChinese[code] || humanizeDisplay(code), type: 'line' as const, smooth: true, showSymbol: false, data: trendDates.map((date) => seriesQuotes.get(date) ?? null) };
+      return { name: indicatorShortChinese[code] || indicatorChinese[code] || humanizeDisplay(code), type: 'line' as const, smooth: true, showSymbol: false, data: trendDates.map((date) => seriesQuotes.get(date) ?? null) };
     });
     const text = chartTheme.text;
     chart.setOption({
       color: [chartTheme.blue, chartTheme.lightBlue, chartTheme.orange, chartTheme.green],
-      grid: { left: 48, right: 18, top: 30, bottom: 34, containLabel: true },
-      tooltip: { trigger: 'axis' },
-      legend: { top: 0, type: 'scroll', textStyle: { color: text, fontSize: 12 } },
-      xAxis: { type: 'category', data: trendDates, axisLabel: { color: text, fontSize: 11, interval: Math.max(0, Math.ceil(trendDates.length / 7) - 1), hideOverlap: true }, axisLine: { lineStyle: { color: chartTheme.grid } } },
-      yAxis: { type: 'value', name: '基期=100', nameTextStyle: { color: text, fontSize: 12 }, axisLabel: { color: text, fontSize: 11 }, splitLine: { lineStyle: { color: chartTheme.grid } } },
+      grid: { left: 48, right: 18, top: 48, bottom: 38, containLabel: true },
+      tooltip: { trigger: 'axis', confine: true, formatter: (params: any[]) => params.map((item) => `${indicatorChinese[item.seriesName] || item.seriesName}：${item.value == null ? '—' : item.value}`).join('<br/>') },
+      legend: { top: 4, type: 'scroll', itemWidth: 10, itemHeight: 8, textStyle: { color: text, fontSize: 11 }, pageTextStyle: { color: text } },
+      xAxis: { type: 'category', data: trendDates, axisLabel: { color: text, fontSize: 11, interval: Math.max(0, Math.ceil(trendDates.length / 6) - 1), hideOverlap: true }, axisLine: { lineStyle: { color: chartTheme.grid } } },
+      yAxis: { type: 'value', name: '指数（首个观测=100）', nameTextStyle: { color: text, fontSize: 11 }, axisLabel: { color: text, fontSize: 11 }, splitLine: { lineStyle: { color: chartTheme.grid } } },
       series: trendSeries,
     }, true);
     const resize = () => chart.resize();
@@ -718,197 +817,6 @@ function ObjectiveCharts({ quotes, internalBusiness, steelExport, taricQuota, ad
   );
 }
 
-interface InternalBusinessChartsProps {
-  snapshot: InternalBusinessSnapshot;
-  variant: 'concern' | 'compare';
-}
-
-function InternalBusinessCharts({ snapshot, variant }: InternalBusinessChartsProps) {
-  const firstRef = useRef<HTMLDivElement>(null);
-  const secondRef = useRef<HTMLDivElement>(null);
-  const themeKey = useThemeKey();
-
-  useEffect(() => {
-    const firstNode = firstRef.current;
-    const secondNode = secondRef.current;
-    if (!firstNode || !secondNode) return;
-    const first = echarts.getInstanceByDom(firstNode) || echarts.init(firstNode);
-    const second = echarts.getInstanceByDom(secondNode) || echarts.init(secondNode);
-    const chartTheme = chartThemeFromCss();
-    const text = chartTheme.text;
-    const grid = chartTheme.grid;
-    const actual = snapshot.monthly;
-    const number = (value: number) => formatNumber(value, 0);
-
-    if (variant === 'concern') {
-      first.setOption({
-        color: [chartTheme.blue, chartTheme.orange],
-        grid: { left: 52, right: 22, top: 28, bottom: 34, containLabel: true },
-        tooltip: {
-          trigger: 'axis',
-          formatter: (params: any) => {
-            const row = actual[params[0]?.dataIndex];
-            return `${row?.month || ''}<br/>实际出口量：${number(row?.actual_volume_t || 0)} 吨<br/>目标出口量：${number(row?.target_volume_t || 0)} 吨<br/>实际环比：${row?.actual_growth_pct == null ? '—' : `${row.actual_growth_pct >= 0 ? '+' : ''}${row.actual_growth_pct.toFixed(2)}%`}<br/>目标达成：${row?.actual_growth_met == null ? '基线月' : row.actual_growth_met ? '已达成' : '未达成'}`;
-          },
-        },
-        legend: { top: 0, textStyle: { color: text, fontSize: 12 } },
-        xAxis: { type: 'category', data: actual.map((row) => row.label), axisLabel: { color: text, fontSize: 12 }, axisLine: { lineStyle: { color: grid } } },
-        yAxis: { type: 'value', name: '吨', nameTextStyle: { color: text, fontSize: 12 }, axisLabel: { color: text, fontSize: 12 }, splitLine: { lineStyle: { color: grid } } },
-        series: [
-          { name: '实际出口量', type: 'bar', barWidth: '42%', data: actual.map((row) => row.actual_volume_t), itemStyle: { color: chartTheme.blue, borderRadius: [4, 4, 0, 0] } },
-          { name: '目标线 · +1%', type: 'line', smooth: true, symbolSize: 7, data: actual.map((row) => row.target_volume_t), lineStyle: { color: chartTheme.orange, type: 'dashed', width: 2 }, itemStyle: { color: chartTheme.orange } },
-        ],
-      }, true);
-
-      const rows = snapshot.by_product.slice(0, 8).reverse();
-      second.setOption({
-        grid: { left: 88, right: 30, top: 18, bottom: 28, containLabel: true },
-        tooltip: { trigger: 'axis', axisPointer: { type: 'shadow' }, formatter: (params: any) => { const row = rows[params[0]?.dataIndex]; return `${row?.label || ''}<br/>出口量：${number(row?.volume_t || 0)} 吨<br/>占年度：${row?.share_pct?.toFixed(1) || '0.0'}%<br/>记录数：${row?.record_count || 0}`; } },
-        xAxis: { type: 'value', name: '吨', nameTextStyle: { color: text, fontSize: 12 }, axisLabel: { color: text, fontSize: 12 }, splitLine: { lineStyle: { color: grid } } },
-        yAxis: { type: 'category', inverse: true, data: rows.map((row) => row.label), axisLabel: { color: text, fontSize: 12 }, axisLine: { lineStyle: { color: grid } } },
-        series: [{ name: '出口量', type: 'bar', barWidth: '58%', data: rows.map((row) => row.volume_t), itemStyle: { color: chartTheme.lightBlue, borderRadius: [0, 4, 4, 0] }, label: { show: true, position: 'right', color: text, fontSize: 11, formatter: (params: any) => number(params.value) } }],
-      }, true);
-    } else {
-      const regionRows = snapshot.by_region.slice(0, 8).reverse();
-      const destinationRows = snapshot.by_destination.slice(0, 10).reverse();
-      const horizontalBar = (rows: typeof regionRows, color: string, unit: string): echarts.EChartsOption => ({
-        grid: { left: 88, right: 30, top: 18, bottom: 28, containLabel: true },
-        tooltip: { trigger: 'axis', axisPointer: { type: 'shadow' }, formatter: (params: any) => { const row = rows[params[0]?.dataIndex]; return `${row?.label || ''}<br/>出口量：${number(row?.volume_t || 0)} ${unit}<br/>占年度：${row?.share_pct?.toFixed(1) || '0.0'}%<br/>记录数：${row?.record_count || 0}`; } },
-        xAxis: { type: 'value', name: unit, nameTextStyle: { color: text, fontSize: 12 }, axisLabel: { color: text, fontSize: 12 }, splitLine: { lineStyle: { color: grid } } },
-        yAxis: { type: 'category', inverse: true, data: rows.map((row) => row.label), axisLabel: { color: text, fontSize: 12 }, axisLine: { lineStyle: { color: grid } } },
-        series: [{ type: 'bar', barWidth: '56%', data: rows.map((row) => row.volume_t), itemStyle: { color, borderRadius: [0, 4, 4, 0] }, label: { show: true, position: 'right', color: text, fontSize: 11, formatter: (params: any) => number(params.value) } }],
-      });
-      first.setOption(horizontalBar(regionRows, chartTheme.blue, '吨'), true);
-      second.setOption(horizontalBar(destinationRows, chartTheme.lightBlue, '吨'), true);
-    }
-
-    const resize = () => { first.resize(); second.resize(); };
-    const observer = typeof ResizeObserver !== 'undefined' ? new ResizeObserver(resize) : null;
-    observer?.observe(firstNode);
-    observer?.observe(secondNode);
-    window.addEventListener('resize', resize);
-    const frame = window.requestAnimationFrame(resize);
-    return () => { window.cancelAnimationFrame(frame); observer?.disconnect(); window.removeEventListener('resize', resize); first.dispose(); second.dispose(); };
-  }, [snapshot, themeKey, variant]);
-
-  const summary = snapshot.summary;
-  const concentration = snapshot.customer_concentration;
-  return (
-    <section className="internal-business-panel" aria-label={variant === 'concern' ? '内部出口业务关注' : '内部出口与市场综合对照'}>
-      <div className="internal-business-heading">
-        <div><span className="internal-business-kicker">INTERNAL BUSINESS · 2025</span><h3>{variant === 'concern' ? '内部出口业务关注' : '企业出口结构对照'}</h3></div>
-        <span>{variant === 'concern' ? '脱敏聚合' : '企业内部结构 · 与外部行情分开展示'} · {snapshot.source.coverage_start} 至 {snapshot.source.coverage_end}</span>
-      </div>
-      <div className="internal-business-kpis">
-        <div><span>年度出口量</span><strong>{formatNumber(summary.total_volume_t / 10000, 2)} 万吨</strong><small>{summary.record_count.toLocaleString('zh-CN')} 条记录</small></div>
-        <div><span>目的国覆盖</span><strong>{summary.country_count} 个</strong><small>已纳入 2025 全年</small></div>
-        <div><span>产品品种</span><strong>{summary.product_count} 类</strong><small>另有 {summary.fine_product_count} 类细分</small></div>
-        <div><span>渠道结构</span><strong>{(snapshot.by_direct_supply.find((row) => row.label.includes('非直供'))?.share_pct || 0).toFixed(1)}%</strong><small>中间商渠道占比 · Top10客户 {concentration.top10_share_pct.toFixed(1)}%</small></div>
-      </div>
-      <div className="internal-business-chart-grid">
-        <article className="internal-business-chart-card"><div className="internal-business-chart-title"><strong>{variant === 'concern' ? '月度出口量与增长目标' : '区域出口结构'}</strong><span>{variant === 'concern' ? '实线为实际 · 虚线为业务目标 +1%' : '按二级区域分类 · 年度占比'}</span></div><div ref={firstRef} className="internal-business-chart" /></article>
-        <div className="internal-business-destination-stack">
-          <article className="internal-business-chart-card"><div className="internal-business-chart-title"><strong>{variant === 'concern' ? '产品结构贡献' : '目的国出口 Top 10'}</strong><span>{variant === 'concern' ? '前 8 类 · 出口量' : '国家/地区 · 出口量'}</span></div><div ref={secondRef} className="internal-business-chart" /></article>
-        </div>
-      </div>
-      <div className="internal-business-note"><span>口径说明</span><p>{snapshot.business_assumptions.note} 实际出口量按装船数量（吨）有符号求和；3 条负数调整记录保留在质量口径中，未被删除或取绝对值。</p></div>
-    </section>
-  );
-}
-
-interface DestinationPolicyPanelProps {
-  snapshot: InternalBusinessSnapshot;
-  policies: PolicyEvent[];
-  steelExport: SteelExportSnapshot | null;
-}
-
-function DestinationPolicyPanel({ snapshot, policies, steelExport }: DestinationPolicyPanelProps) {
-  const internalChartRef = useRef<HTMLDivElement>(null);
-  const customsChartRef = useRef<HTMLDivElement>(null);
-  const distributionChartRef = useRef<HTMLDivElement>(null);
-  const themeKey = useThemeKey();
-
-  useEffect(() => {
-    const internalNode = internalChartRef.current;
-    const customsNode = customsChartRef.current;
-    const distributionNode = distributionChartRef.current;
-    if (!internalNode || !customsNode || !distributionNode) return;
-    const charts = [internalNode, customsNode, distributionNode].map((node) => echarts.getInstanceByDom(node) || echarts.init(node));
-    const chartTheme = chartThemeFromCss();
-    const internalRows = snapshot.by_destination.slice(0, 10).reverse();
-    const customsTotal = steelExport?.default_view.partner.reduce((sum, row) => sum + Math.max(0, row.qty_t), 0) || 0;
-    const customsRows = (steelExport?.default_view.partner || []).slice(0, 10).reverse().map((row) => ({
-      label: row.label,
-      volume_t: row.qty_t,
-      share_pct: customsTotal ? row.qty_t / customsTotal * 100 : 0,
-    }));
-    const comparisonNames = [...new Set([
-      ...snapshot.by_destination.slice(0, 10).map((row) => row.label),
-      ...(steelExport?.default_view.partner || []).slice(0, 10).map((row) => row.label),
-    ])]
-      .map((label) => ({
-        label,
-        internal: snapshot.by_destination.find((row) => row.label === label)?.share_pct || 0,
-        customs: customsTotal ? ((steelExport?.default_view.partner.find((row) => row.label === label)?.qty_t || 0) / customsTotal) * 100 : 0,
-      }))
-      .sort((a, b) => (b.internal + b.customs) - (a.internal + a.customs))
-      .slice(0, 10)
-      .reverse();
-    const number = (value: number) => formatNumber(value, 0);
-    const volumeBarOption = (rows: Array<{ label: string; volume_t: number; share_pct?: number; record_count?: number }>, name: string, color: string): echarts.EChartsOption => ({
-      grid: { left: 96, right: 38, top: 18, bottom: 28, containLabel: true },
-      tooltip: { trigger: 'axis', axisPointer: { type: 'shadow' }, formatter: (params: any) => { const row = rows[params[0]?.dataIndex]; return `${row?.label || ''}<br/>${name}：${number(row?.volume_t || 0)} 吨<br/>占本组：${row?.share_pct?.toFixed(1) || '—'}%${row?.record_count == null ? '' : `<br/>记录数：${row.record_count}`}`; } },
-      xAxis: { type: 'value', name: '吨', nameTextStyle: { color: chartTheme.text, fontSize: 12 }, axisLabel: { color: chartTheme.text, fontSize: 12 }, splitLine: { lineStyle: { color: chartTheme.grid } } },
-      yAxis: { type: 'category', inverse: true, data: rows.map((row) => row.label), axisLabel: { color: chartTheme.text, fontSize: 12 }, axisLine: { lineStyle: { color: chartTheme.grid } } },
-      series: [{ name, type: 'bar', barWidth: '56%', data: rows.map((row) => row.volume_t), itemStyle: { color, borderRadius: [0, 4, 4, 0] }, label: { show: true, position: 'right', color: chartTheme.text, fontSize: 11, formatter: (params: any) => number(params.value) } }],
-    });
-    charts[0].setOption(volumeBarOption(internalRows, '内部出口量', chartTheme.blue), true);
-    charts[1].setOption(volumeBarOption(customsRows, '海关出口量', chartTheme.orange), true);
-    charts[2].setOption({
-      grid: { left: 96, right: 34, top: 34, bottom: 30, containLabel: true },
-      tooltip: { trigger: 'axis', axisPointer: { type: 'shadow' }, formatter: (params: any) => `${params[0]?.name}<br/>内部业务：${params[0]?.value?.toFixed?.(1) || '0.0'}%<br/>海关出口：${params[1]?.value?.toFixed?.(1) || '0.0'}%` },
-      legend: { top: 0, textStyle: { color: chartTheme.text, fontSize: 12 } },
-      xAxis: { type: 'value', name: '占各自出口总量（%）', max: 'dataMax', nameTextStyle: { color: chartTheme.text, fontSize: 12 }, axisLabel: { color: chartTheme.text, fontSize: 12, formatter: '{value}%' }, splitLine: { lineStyle: { color: chartTheme.grid } } },
-      yAxis: { type: 'category', inverse: true, data: comparisonNames.map((row) => row.label), axisLabel: { color: chartTheme.text, fontSize: 12 }, axisLine: { lineStyle: { color: chartTheme.grid } } },
-      series: [
-        { name: '内部业务', type: 'bar', barWidth: '34%', data: comparisonNames.map((row) => Number(row.internal.toFixed(1))), itemStyle: { color: chartTheme.blue, borderRadius: [0, 4, 4, 0] } },
-        { name: '海关出口', type: 'bar', barWidth: '34%', data: comparisonNames.map((row) => Number(row.customs.toFixed(1))), itemStyle: { color: chartTheme.orange, borderRadius: [0, 4, 4, 0] } },
-      ],
-    }, true);
-    const resize = () => charts.forEach((chart) => chart.resize());
-    const observer = typeof ResizeObserver !== 'undefined' ? new ResizeObserver(resize) : null;
-    observer?.observe(internalNode);
-    observer?.observe(customsNode);
-    observer?.observe(distributionNode);
-    window.addEventListener('resize', resize);
-    const frame = window.requestAnimationFrame(resize);
-    return () => { window.cancelAnimationFrame(frame); observer?.disconnect(); window.removeEventListener('resize', resize); charts.forEach((chart) => chart.dispose()); };
-  }, [snapshot, steelExport, themeKey]);
-
-  return (
-    <section className="destination-policy-panel" aria-label="内外部目的国出口对比与政策事件时间线">
-      <div className="destination-policy-top-grid">
-        <article className="destination-policy-chart-card">
-          <div className="internal-business-chart-title"><strong>内部业务 · 目的国出口 Top 10</strong><span>2025 年全年 · 国家/地区出口量</span></div>
-          <div ref={internalChartRef} className="destination-policy-chart" />
-        </article>
-        <article className="destination-policy-chart-card">
-          <div className="internal-business-chart-title"><strong>海关出口 · 目的国 Top 10</strong><span>{steelExport ? `${steelExport.default_view.filter.year} 年快照 · 国家/地区出口量` : '暂无海关出口快照'}</span></div>
-          {steelExport ? <div ref={customsChartRef} className="destination-policy-chart" /> : <div className="destination-policy-empty">暂无海关出口快照，暂不能进行外部平行对比。</div>}
-        </article>
-      </div>
-      <article className="destination-policy-distribution">
-        <div className="internal-business-chart-title"><strong>出口分布分析对比</strong><span>Top 10 目的国占各自出口总量的比例，消除总量规模差异</span></div>
-        <div ref={distributionChartRef} className="destination-policy-distribution-chart" />
-      </article>
-      <article className="destination-policy-timeline">
-        <div className="internal-business-chart-title"><strong>政策事件时间线</strong><span>按发布日期展开严重政策事件</span></div>
-        <PolicyTimeline policies={policies} />
-      </article>
-    </section>
-  );
-}
-
 interface ShippingIndexPanelProps {
   snapshot: ShippingIndexSnapshot;
 }
@@ -944,8 +852,7 @@ function ShippingIndexPanel({ snapshot }: ShippingIndexPanelProps) {
     const blue = styles.getPropertyValue('--accent-primary').trim() || '#1f4e79';
     const lightBlue = styles.getPropertyValue('--accent-secondary').trim() || '#4f8bb8';
     const orange = styles.getPropertyValue('--accent-warning').trim() || '#e8842a';
-    const green = '#1b9b6f';
-    const lineColors = [blue, lightBlue, orange, green, '#7b6cae', '#bd3f4d'];
+    const lineColors = [blue, lightBlue, orange, '#1b9b6f', '#7b6cae', '#bd3f4d'];
 
     const lineOption = (codes: readonly string[], title: string): echarts.EChartsOption => {
       const seriesRows = codes.map((code) => ({ code, rows: rowsForSeries(code) }));
@@ -984,7 +891,7 @@ function ShippingIndexPanel({ snapshot }: ShippingIndexPanelProps) {
 
   const cards = shippingIndexOrder.map((code) => snapshot.series[code]).filter((series): series is NonNullable<typeof series> => Boolean(series));
   return (
-    <section className="shipping-index-panel" aria-label="航运指数核心数据">
+    <section id="shipping-indices" className="shipping-index-panel" aria-label="航运指数核心数据">
       <div className="shipping-index-heading">
         <div><span className="section-index">SHIPPING</span><h2>航运指数与能源成本</h2></div>
         <p>航运市场环境参考 · 覆盖至 {snapshot.source.coverage_end} · 每日 18:00 更新</p>
@@ -1016,28 +923,23 @@ function ForexCharts({ forex }: ForexChartsProps) {
   const eurRef = useRef<HTMLDivElement>(null);
   const cnyRef = useRef<HTMLDivElement>(null);
   const yieldRef = useRef<HTMLDivElement>(null);
-  const riskRef = useRef<HTMLDivElement>(null);
-  const scoreRef = useRef<HTMLDivElement>(null);
-  const backtestRef = useRef<HTMLDivElement>(null);
-  const [horizon, setHorizon] = useState<30 | 60 | 90>(60);
   const [expandedFx, setExpandedFx] = useState(false);
   const themeKey = useThemeKey();
 
   useEffect(() => {
-    const nodes = [dxyRef.current, eurRef.current, cnyRef.current, yieldRef.current, riskRef.current, scoreRef.current, backtestRef.current];
+    const nodes = [dxyRef.current, eurRef.current, cnyRef.current, yieldRef.current];
     const charts = new Map<number, echarts.ECharts>();
     nodes.forEach((node, index) => {
       const visible = index > 2 || expandedFx;
       if (node && visible) charts.set(index, echarts.getInstanceByDom(node) || echarts.init(node));
     });
     const chartAt = (index: number) => charts.get(index);
-    if (![3, 4, 5, 6].every((index) => chartAt(index))) return;
+    if (!chartAt(3)) return;
     const styles = getComputedStyle(document.documentElement);
     const text = styles.getPropertyValue('--text-secondary').trim() || '#526274';
     const grid = styles.getPropertyValue('--border-default').trim() || '#dce5ee';
     const blue = '#3478b9';
     const orange = '#d88935';
-    const green = '#1b9b6f';
     const red = '#bd3f4d';
     const gray = '#8793a3';
     const baseAxis = { axisLabel: { color: text, fontSize: 13 }, axisLine: { lineStyle: { color: grid } } };
@@ -1059,18 +961,9 @@ function ForexCharts({ forex }: ForexChartsProps) {
     chartAt(2)?.setOption(lineOption('USDCNY', 'USDCNY 美元兑人民币', orange), true);
     const rel = forex.relative_yield;
     chartAt(3)?.setOption({ color: [blue, orange], grid: { left: 54, right: 20, top: 24, bottom: 36, containLabel: true }, tooltip: { trigger: 'axis', formatter: (params: any) => `${params[0]?.axisValue}<br/>EUR计价相对收益：${(rel[params[0]?.dataIndex]?.rel_yield_EUR ?? 0).toFixed(2)}%<br/>CNY计价相对收益：${(rel[params[0]?.dataIndex]?.rel_yield_CNY ?? 0).toFixed(2)}%` }, legend: { top: 0, textStyle: { color: text, fontSize: 13 } }, xAxis: { type: 'category', data: rel.map((row) => row.date), ...baseAxis, axisLabel: { ...baseAxis.axisLabel, interval: Math.max(0, Math.ceil(rel.length / 7) - 1), rotate: 0, hideOverlap: true, formatter: (value: string) => value.slice(0, 7) } }, yAxis: { type: 'value', name: '相对美元收益（%）', scale: true, splitNumber: 4, ...baseAxis, axisLabel: { ...baseAxis.axisLabel, formatter: '{value}%' }, splitLine: { lineStyle: { color: grid } } }, series: [{ name: 'EUR计价', type: 'line', data: rel.map((row) => row.rel_yield_EUR), smooth: true, showSymbol: false, lineStyle: { width: 2 }, markLine: { symbol: 'none', data: [{ yAxis: 0, name: 'USD基准' }], lineStyle: { color: grid, type: 'dashed' } } }, { name: 'CNY计价', type: 'line', data: rel.map((row) => row.rel_yield_CNY), smooth: true, showSymbol: false }] }, true);
-    const riskRows = [['EUR', forex.risk.EUR], ['CNY', forex.risk.CNY], ['USD', forex.risk.USD]] as const;
-    chartAt(4)?.setOption({ color: [blue, red, gray], grid: { left: 74, right: 26, top: 22, bottom: 32, containLabel: true }, tooltip: { trigger: 'axis' }, xAxis: { type: 'value', name: '百分比', ...baseAxis, splitLine: { lineStyle: { color: grid } } }, yAxis: { type: 'category', data: riskRows.map(([key]) => key), ...baseAxis }, series: [{ name: '历史波动率', type: 'bar', data: riskRows.map(([, row]) => row.volatility_pct), itemStyle: { color: (params: any) => riskRows[params.dataIndex][0] === 'USD' ? gray : blue } }, { name: '最大回撤（绝对值）', type: 'bar', data: riskRows.map(([, row]) => Math.abs(row.max_drawdown_pct)), itemStyle: { color: red } }] }, true);
-    const scores = [{ name: 'EUR', conservative: forex.risk.EUR.score_conservative ?? 0, aggressive: forex.risk.EUR.score_aggressive ?? 0 }, { name: 'CNY', conservative: forex.risk.CNY.score_conservative ?? 0, aggressive: forex.risk.CNY.score_aggressive ?? 0 }, { name: 'USD', conservative: 0, aggressive: 0 }];
-    chartAt(5)?.setOption({ color: [green, orange], grid: { left: 74, right: 26, top: 22, bottom: 32, containLabel: true }, tooltip: { trigger: 'axis' }, legend: { top: 0, textStyle: { color: text, fontSize: 13 } }, xAxis: { type: 'value', name: '综合得分', ...baseAxis, splitLine: { lineStyle: { color: grid } } }, yAxis: { type: 'category', data: scores.map((row) => row.name), ...baseAxis }, series: [{ name: '保守模式 λ=2', type: 'bar', data: scores.map((row) => ({ value: row.conservative, itemStyle: { color: row.conservative >= 0 ? green : red } })) }, { name: '激进模式 λ=0.8', type: 'bar', data: scores.map((row) => ({ value: row.aggressive, itemStyle: { color: row.aggressive >= 0 ? green : red } })) }] }, true);
-    const tests = forex.backtests[String(horizon) as '30' | '60' | '90'];
-    const boxStats = (rows: Array<{ return_pct: number }>) => { const values = rows.map((row) => row.return_pct).filter(Number.isFinite).sort((a, b) => a - b); if (!values.length) return [null, null, null, null, null]; const q = (ratio: number) => values[Math.floor((values.length - 1) * ratio)]; return [q(0), q(.25), q(.5), q(.75), q(1)]; };
-    const box = [['EUR', boxStats(tests.EUR)], ['CNY', boxStats(tests.CNY)], ['USD', boxStats(tests.USD)]] as const;
-    const loss = tests.loss_probability_pct || { EUR: 0, CNY: 0, USD: 0 };
-    chartAt(6)?.setOption({ color: [blue, orange, gray], grid: { left: 54, right: 20, top: 24, bottom: 36, containLabel: true }, tooltip: { trigger: 'item', formatter: (params: any) => `${params.name}<br/>最小：${params.value?.[0]?.toFixed?.(2) ?? '—'}%<br/>Q1：${params.value?.[1]?.toFixed?.(2) ?? '—'}%<br/>中位数：${params.value?.[2]?.toFixed?.(2) ?? '—'}%<br/>Q3：${params.value?.[3]?.toFixed?.(2) ?? '—'}%<br/>最大：${params.value?.[4]?.toFixed?.(2) ?? '—'}%<br/>亏损概率：${loss[params.name as 'EUR' | 'CNY' | 'USD']?.toFixed?.(1) ?? '—'}%` }, xAxis: { type: 'category', data: box.map(([name]) => name), ...baseAxis }, yAxis: { type: 'value', name: '到期相对收益（%）', ...baseAxis, splitLine: { lineStyle: { color: grid } } }, series: [{ type: 'boxplot', data: box.map(([name, stats], index) => ({ name, value: stats, itemStyle: { borderColor: [blue, orange, gray][index], color: `${[blue, orange, gray][index]}33` } })) }] }, true);
     const resize = () => charts.forEach((chart) => chart.resize()); window.addEventListener('resize', resize);
     return () => { window.removeEventListener('resize', resize); charts.forEach((chart) => chart.dispose()); };
-  }, [forex, horizon, themeKey, expandedFx]);
+  }, [forex, themeKey, expandedFx]);
 
   const latestEUR = forex.latest_independent?.EURUSD || forex.symbols.EURUSD[forex.symbols.EURUSD.length - 1];
   const latestCNY = forex.latest_independent?.USDCNY || forex.symbols.USDCNY[forex.symbols.USDCNY.length - 1];
@@ -1078,129 +971,28 @@ function ForexCharts({ forex }: ForexChartsProps) {
   const displayRate = (point?: { close: number }) => point && Number.isFinite(point.close) ? point.close.toFixed(4) : '—';
   const displayPercentile = (point?: { percentile: number }) => point && Number.isFinite(point.percentile) ? point.percentile.toFixed(1) : '—';
   const displaySigned = (value?: number) => value == null || !Number.isFinite(value) ? '—' : `${value >= 0 ? '+' : ''}${value.toFixed(2)}%`;
-  const selectedLoss = forex.backtests[String(horizon) as '30' | '60' | '90'].loss_probability_pct;
-  return <section className="forex-panel" aria-label="外汇汇率分析">
+  return <section id="forex-analysis" className="forex-panel" aria-label="外汇汇率分析">
     <div className="section-heading"><div><span className="section-index">FX</span><h2>外汇与签约币种</h2></div><p>近12个月历史统计 · 不构成预测</p></div>
     <div className="forex-kpis"><div><span>DXY 美元指数</span><strong>{displayRate(latestDXY)}</strong><small>{latestDXY?.date || '暂无日期'} · 宏观参考</small></div><div><span>EURUSD 欧元兑美元</span><strong className="forex-eur">{displayRate(latestEUR)}</strong><small>历史分位 {displayPercentile(latestEUR)}%</small></div><div><span>USDCNY 美元兑人民币</span><strong className="forex-cny">{displayRate(latestCNY)}</strong><small>历史分位 {displayPercentile(latestCNY)}%</small></div><div><span>数据区间</span><strong>{forex.source.observation_count} 日</strong><small>{forex.source.coverage_start} 至 {forex.source.coverage_end}</small></div></div>
-    <div className="forex-insight-strip"><div><span>EUR计价相对收益</span><strong className={forex.risk.EUR.current_relative_yield_pct >= 0 ? 'is-positive' : 'is-negative'}>{displaySigned(forex.risk.EUR.current_relative_yield_pct)}</strong><small>对比直接 USD 签约</small></div><div><span>CNY计价相对收益</span><strong className={forex.risk.CNY.current_relative_yield_pct >= 0 ? 'is-positive' : 'is-negative'}>{displaySigned(forex.risk.CNY.current_relative_yield_pct)}</strong><small>对比直接 USD 签约</small></div><div><span>综合评分</span><strong>{`保守 ${forex.risk.EUR.score_conservative == null ? '—' : forex.risk.EUR.score_conservative.toFixed(2)} / ${forex.risk.CNY.score_conservative == null ? '—' : forex.risk.CNY.score_conservative.toFixed(2)}`}</strong><small>EUR / CNY · λ=2</small></div><div><span>{horizon}天账期亏损概率</span><strong>{`EUR ${selectedLoss?.EUR == null ? '—' : selectedLoss.EUR.toFixed(1)}% · CNY ${selectedLoss?.CNY == null ? '—' : selectedLoss.CNY.toFixed(1)}%`}</strong><small>历史回测，不代表预测</small></div></div>
-    <div className="forex-chart-grid"><div className="forex-chart-toggle-row"><button type="button" className="forex-chart-toggle" onClick={() => setExpandedFx((current) => !current)} aria-expanded={expandedFx}>{expandedFx ? '收起行情图表' : '展开行情图表'}</button></div>{expandedFx && <><article className="forex-chart-card forex-wide"><div className="analysis-chart-heading"><strong>DXY 美元指数</strong><small>宏观背景参考 · {latestDXY?.date || '暂无日期'}</small></div><div ref={dxyRef} className="forex-chart" /></article><article className="forex-chart-card"><div className="analysis-chart-heading"><strong>EURUSD 欧元兑美元</strong><small>价格 · MA20 / MA60 · 25/50/75%分位 · 20日动量</small></div><div ref={eurRef} className="forex-chart" /></article><article className="forex-chart-card"><div className="analysis-chart-heading"><strong>USDCNY 美元兑人民币</strong><small>价格 · MA20 / MA60 · 25/50/75%分位 · 20日动量</small></div><div ref={cnyRef} className="forex-chart" /></article></>}<article className="forex-chart-card forex-wide"><div className="analysis-chart-heading"><strong>等价美元相对收益</strong><small>固定 100 万美元基准 · 0轴=USD计价</small></div><div ref={yieldRef} className="forex-chart" /></article><article className="forex-chart-card"><div className="analysis-chart-heading"><strong>收益风险概览</strong><small>波动率与最大历史回撤</small></div><div ref={riskRef} className="forex-chart" /></article><article className="forex-chart-card"><div className="analysis-chart-heading"><strong>收益-风险综合评分</strong><small>保守 λ=2 · 激进 λ=0.8</small></div><div ref={scoreRef} className="forex-chart" /></article><article className="forex-chart-card forex-wide"><div className="analysis-chart-heading"><strong>账期回测收益分布</strong><div className="forex-horizon"><span>账期</span>{([30, 60, 90] as const).map((days) => <button key={days} className={horizon === days ? 'is-active' : ''} onClick={() => setHorizon(days)}>{days}天</button>)}</div></div><div ref={backtestRef} className="forex-chart" /></article></div>
+    <div className="forex-insight-strip"><div><span>EUR计价相对收益</span><strong className={forex.risk.EUR.current_relative_yield_pct >= 0 ? 'is-positive' : 'is-negative'}>{displaySigned(forex.risk.EUR.current_relative_yield_pct)}</strong><small>对比直接 USD 签约</small></div><div><span>CNY计价相对收益</span><strong className={forex.risk.CNY.current_relative_yield_pct >= 0 ? 'is-positive' : 'is-negative'}>{displaySigned(forex.risk.CNY.current_relative_yield_pct)}</strong><small>对比直接 USD 签约</small></div></div>
+    <div className="forex-chart-grid"><div className="forex-chart-toggle-row"><button type="button" className="forex-chart-toggle" onClick={() => setExpandedFx((current) => !current)} aria-expanded={expandedFx}>{expandedFx ? '收起行情图表' : '展开行情图表'}</button></div>{expandedFx && <><article className="forex-chart-card forex-wide"><div className="analysis-chart-heading"><strong>DXY 美元指数</strong><small>宏观背景参考 · {latestDXY?.date || '暂无日期'}</small></div><div ref={dxyRef} className="forex-chart" /></article><article className="forex-chart-card"><div className="analysis-chart-heading"><strong>EURUSD 欧元兑美元</strong><small>价格 · MA20 / MA60 · 25/50/75%分位 · 20日动量</small></div><div ref={eurRef} className="forex-chart" /></article><article className="forex-chart-card"><div className="analysis-chart-heading"><strong>USDCNY 美元兑人民币</strong><small>价格 · MA20 / MA60 · 25/50/75%分位 · 20日动量</small></div><div ref={cnyRef} className="forex-chart" /></article></>}<article className="forex-chart-card forex-wide"><div className="analysis-chart-heading"><strong>等价美元相对收益</strong><small>固定 100 万美元基准 · 0轴=USD计价</small></div><div ref={yieldRef} className="forex-chart" /></article></div>
   </section>;
 }
 
-interface AnalysisChartProps {
+interface RiskDisplayItem {
+  id: string;
+  category: RiskCategory;
   title: string;
-  subtitle: string;
-  option: echarts.EChartsOption;
-  className?: string;
-  onPointClick?: (index: number) => void;
-  emptyMessage?: string;
-}
-
-interface PolicyTimelineProps {
-  policies: PolicyEvent[];
-}
-
-function PolicyTimeline({ policies }: PolicyTimelineProps) {
-  const periods = useMemo(() => {
-    const grouped = new Map<string, PolicyEvent[]>();
-    policies.forEach((policy) => {
-      const period = policy.publish_date?.slice(0, 7) || '未标注时间';
-      grouped.set(period, [...(grouped.get(period) || []), policy]);
-    });
-    return [...grouped.entries()]
-      .sort(([a], [b]) => b.localeCompare(a))
-      .map(([period, events]) => ({
-        period,
-        events: [...events].sort((a, b) => b.severity - a.severity || b.publish_date.localeCompare(a.publish_date)),
-        highCount: events.filter((event) => event.severity >= 6).length,
-        maxSeverity: Math.max(...events.map((event) => event.severity), 0),
-      }));
-  }, [policies]);
-  const [expandedPeriod, setExpandedPeriod] = useState<string | null>(null);
-  const activePeriod = periods.find((period) => period.period === expandedPeriod) || null;
-
-  if (!periods.length) return <div className="analysis-chart-empty">当前筛选范围暂无政策事件</div>;
-
-  return (
-    <div className="policy-timeline" aria-label="政策事件时间线">
-      <div className="policy-timeline-head">
-        <div>
-          <strong>按发布日期查看政策事件</strong>
-          <span>共 {policies.length} 条 · 高度关注及以上 {periods.reduce((sum, period) => sum + period.highCount, 0)} 条</span>
-        </div>
-        <span className="policy-timeline-hint">点击时间节点展开明细</span>
-      </div>
-      <div className="policy-timeline-track" role="list">
-        {periods.map((period, index) => {
-          const expanded = expandedPeriod === period.period;
-          return (
-            <div className={`policy-timeline-node ${expanded ? 'is-expanded' : ''}`} key={period.period} role="listitem">
-              <button
-                type="button"
-                className="policy-timeline-node-button"
-                onClick={() => setExpandedPeriod((current) => current === period.period ? null : period.period)}
-                aria-expanded={expanded}
-                aria-controls={`policy-period-${period.period}`}
-              >
-                <span className="policy-timeline-dot" aria-hidden="true" />
-                <span className="policy-timeline-period">{period.period === '未标注时间' ? period.period : `${period.period.slice(0, 4)}年${Number(period.period.slice(5))}月`}</span>
-                <strong>{period.events.length} 条</strong>
-                <small>{period.highCount ? `${period.highCount} 条高度关注` : '暂无高度关注'} · 最高 {period.maxSeverity}/10</small>
-                <span className="policy-timeline-chevron" aria-hidden="true">{expanded ? '−' : '+'}</span>
-              </button>
-              {index < periods.length - 1 && <span className="policy-timeline-connector" aria-hidden="true" />}
-            </div>
-          );
-        })}
-      </div>
-      {activePeriod && (
-        <div className="policy-timeline-detail" id={`policy-period-${activePeriod.period}`}>
-          <div className="policy-timeline-detail-head">
-            <div><strong>{activePeriod.period === '未标注时间' ? activePeriod.period : `${activePeriod.period.slice(0, 4)}年${Number(activePeriod.period.slice(5))}月政策事件`}</strong><span>按严重程度由高到低排列 · 点击来源可追溯原始页面</span></div>
-            <button type="button" onClick={() => setExpandedPeriod(null)}>收起</button>
-          </div>
-          <div className="policy-event-list">
-            {activePeriod.events.map((policy) => (
-              <article className={`policy-event-item ${policy.severity >= 8 ? 'is-critical' : policy.severity >= 6 ? 'is-high' : ''}`} key={policy.event_id}>
-                <div className="policy-event-top">
-                  <div><span className="policy-event-type">{policyChinese[policy.event_type] || '贸易政策'}</span><strong>{policyTitleChinese[policy.title] || policy.title}</strong><small>{policy.title}</small></div>
-                  <span className={`policy-severity severity-${policy.severity >= 8 ? 'critical' : policy.severity >= 6 ? 'high' : 'normal'}`}>{policySeverityLabel(policy.severity)} · {policy.severity}/10</span>
-                </div>
-                <p>{policy.summary}</p>
-                <div className="policy-event-meta"><span>发布 {formatDate(policy.publish_date)}</span>{policy.effective_date && <span>生效 {formatDate(policy.effective_date)}</span>}{policy.expiry_date && <span>到期 {formatDate(policy.expiry_date)}</span>}<span>发布方 {policy.issuer}</span><span>适用 {policy.country_region}</span><span>状态 {policyVerifyLabel(policy.verify_status)}</span>{policy.product_scope?.length ? <span>品类 {policy.product_scope.join('、')}</span> : null}{policy.source_url && <a href={policy.source_url} target="_blank" rel="noreferrer">查看来源 ↗</a>}</div>
-              </article>
-            ))}
-          </div>
-        </div>
-      )}
-    </div>
-  );
-}
-
-function AnalysisChart({ title, subtitle, option, className = '', onPointClick, emptyMessage }: AnalysisChartProps) {
-  const chartRef = useRef<HTMLDivElement>(null);
-
-  useEffect(() => {
-    if (emptyMessage || !chartRef.current) return;
-    const chart = echarts.getInstanceByDom(chartRef.current) || echarts.init(chartRef.current);
-    chart.setOption(option, true);
-    const handlePointClick = (params: any) => onPointClick?.(typeof params.dataIndex === 'number' ? params.dataIndex : 0);
-    if (onPointClick) chart.on('click', handlePointClick);
-    const handleResize = () => chart.resize();
-    window.addEventListener('resize', handleResize);
-    return () => {
-      window.removeEventListener('resize', handleResize);
-      if (onPointClick) chart.off('click', handlePointClick);
-      chart.dispose();
-    };
-  }, [emptyMessage, onPointClick, option]);
-
-  return (
-    <article className={`analysis-chart-card ${className}`}>
-      <div className="analysis-chart-heading"><strong>{title}</strong><small>{subtitle}</small></div>
-      {emptyMessage ? <div className="analysis-chart-empty">{emptyMessage}</div> : <div ref={chartRef} className="analysis-chart" />}
-    </article>
-  );
+  metric: string;
+  value: string;
+  baseline: number | null;
+  delta: number | null;
+  asOf: string;
+  freshness: string;
+  changeText: string;
+  evidence: Array<{ label: string; href: string }>;
+  source: { label: string; href: string } | null;
+  targetId: string;
 }
 
 export function UnifiedAnalysis() {
@@ -1211,21 +1003,19 @@ export function UnifiedAnalysis() {
   const [scenarios, setScenarios] = useState<FxScenario[]>([]);
   const [policies, setPolicies] = useState<PolicyEvent[]>([]);
   const [signals, setSignals] = useState<RiskSignal[]>([]);
-  const [query, setQuery] = useState('');
-  const [kindFilter, setKindFilter] = useState<'全部' | ObjectiveKind>('全部');
-  const [priorityFilter, setPriorityFilter] = useState<'全部' | ObjectivePriority>('全部');
-  const [searchOpen, setSearchOpen] = useState(false);
-  const [objectiveDetailsOpen, setObjectiveDetailsOpen] = useState(false);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
-  const [selectedRiskId, setSelectedRiskId] = useState<string | null>(null);
   const [steelExport, setSteelExport] = useState<SteelExportSnapshot | null>(null);
   const [forex, setForex] = useState<ForexSnapshot | null>(null);
   const [taricQuota, setTaricQuota] = useState<TaricQuotaSnapshot | null>(null);
   const [tradeRemedy, setTradeRemedy] = useState<TradeRemedySnapshot | null>(null);
   const [shippingIndices, setShippingIndices] = useState<ShippingIndexSnapshot | null>(null);
   const [internalBusiness, setInternalBusiness] = useState<InternalBusinessSnapshot | null>(null);
+  const [fastNews, setFastNews] = useState<FastNewsSnapshot | null>(null);
   const [analysisAdvice, setAnalysisAdvice] = useState<DataDrivenAdvice[]>([]);
+  const [riskFilter, setRiskFilter] = useState<'all' | RiskCategory>('remedy');
+  const [expandedRiskId, setExpandedRiskId] = useState<string | null>(null);
+  const riskSectionRef = useRef<HTMLElement>(null);
 
   useEffect(() => {
     let active = true;
@@ -1245,8 +1035,9 @@ export function UnifiedAnalysis() {
       dataProvider.getShippingIndexSnapshot(),
       dataProvider.getDataSyncStatus(),
       dataProvider.getInternalBusinessSnapshot(),
+      dataProvider.getFastNewsSnapshot(),
     ])
-      .then(([nextQuotes, nextAggregates, nextCosts, nextScenarios, nextPolicies, nextSignals, nextSteelExport, nextForex, nextTaricQuota, nextTradeRemedy, nextShippingIndices, nextSyncStatus, nextInternalBusiness]) => {
+      .then(([nextQuotes, nextAggregates, nextCosts, nextScenarios, nextPolicies, nextSignals, nextSteelExport, nextForex, nextTaricQuota, nextTradeRemedy, nextShippingIndices, nextSyncStatus, nextInternalBusiness, nextFastNews]) => {
         if (!active) return;
         setQuotes(nextQuotes);
         setAggregates(nextAggregates);
@@ -1260,6 +1051,7 @@ export function UnifiedAnalysis() {
         setTradeRemedy(nextTradeRemedy);
         setShippingIndices(nextShippingIndices);
         setInternalBusiness(nextInternalBusiness);
+        setFastNews(nextFastNews);
         setAnalysisAdvice(buildDataDrivenAdvice({ quotes: nextQuotes, risks: nextSignals, policies: nextPolicies, aggregates: nextAggregates, costs: nextCosts, fxScenarios: nextScenarios, steelExport: nextSteelExport, forex: nextForex, taricQuota: nextTaricQuota, shippingIndices: nextShippingIndices, internalBusiness: nextInternalBusiness, syncStatus: nextSyncStatus }));
         dispatch({ type: 'SET_MARKET_DATA', payload: nextQuotes });
         dispatch({ type: 'SET_INTERNAL_AGGREGATES', payload: nextAggregates });
@@ -1277,304 +1069,119 @@ export function UnifiedAnalysis() {
     };
   }, [state.dateRange, state.productLine, state.region]);
 
-  const objectiveItems = useMemo<ObjectiveItem[]>(() => {
-    const quoteItems = quotes.map((quote) => {
-      const change = quoteChange(quote);
-      const priority: ObjectivePriority = change !== null && Math.abs(change) >= 8 ? 'P1' : 'P2';
+  const riskItems = useMemo<RiskDisplayItem[]>(() => signals
+    .filter((signal) => signal.level !== 'normal')
+    .map((signal) => {
+      const category = classifyRisk(signal);
       return {
-        id: quote.quote_id,
-        kind: '行情' as const,
-        title: quote.indicator_name,
-        chineseHint: indicatorChinese[quote.indicator_code] || '市场指标',
-        value: `${formatNumber(quote.value)} ${quote.unit}`,
-        detail: change === null ? `来源 ${quote.source}` : `较基线 ${change >= 0 ? '+' : ''}${change.toFixed(1)}% · ${quote.fetch_mode || '本地快照'}`,
-        source: quote.source,
-        date: formatDate(quote.date),
-        priority,
-        searchable: `${quote.indicator_name} ${quote.indicator_code} ${indicatorChinese[quote.indicator_code] || ''} ${quote.source} ${quote.region || ''} ${quote.product_line || ''} ${quote.unit} 行情 市场 价格 运费 碳价 汇率`.toLowerCase(),
+        id: signal.signal_id,
+        category,
+        title: factorChinese[signal.factor] || humanizeDisplay(signal.factor),
+        metric: metricChinese[signal.metric] || humanizeDisplay(signal.metric),
+        value: riskValueText(signal),
+        baseline: signal.baseline ?? null,
+        delta: signal.delta_pct ?? null,
+        asOf: formatDate(signal.as_of),
+        freshness: signal.freshness,
+        changeText: formatRiskChange(signal),
+        evidence: riskEvidence(signal, policies),
+        source: riskSource(signal, policies, tradeRemedy, taricQuota, shippingIndices, forex, fastNews),
+        targetId: riskTargetId(signal),
       };
-    });
-    const policyItems = policies.map((policy) => ({
-      id: policy.event_id,
-      kind: '政策' as const,
-      title: policy.title,
-      chineseHint: policyChinese[policy.event_type] || '贸易政策',
-        value: policyChinese[policy.event_type] || humanizeDisplay(policy.event_type),
-      detail: `${policy.issuer} · ${policy.verify_status === 'pending' ? '待核验' : '已核验'}`,
-      source: policy.issuer,
-      date: formatDate(policy.publish_date),
-      priority: policy.severity >= 4 ? 'P1' as const : 'P2' as const,
-      searchable: `${policy.title} ${policy.summary} ${policy.issuer} ${policy.country_region} ${policy.event_type} ${policyChinese[policy.event_type] || ''} 政策 法规 关税 合规`.toLowerCase(),
-    }));
-    const aggregateItems = aggregates.map((aggregate) => ({
-      id: aggregate.aggregate_id,
-      kind: '经营' as const,
-      title: `${aggregate.product_grade || aggregate.product_line} · ${aggregate.region}`,
-      chineseHint: `经营聚合 · ${productChinese[aggregate.product_grade || ''] || aggregate.product_line} · ${regionChinese[aggregate.region] || aggregate.region}`,
-      value: `${formatNumber(aggregate.volume_t, 0)} t`,
-      detail: `目标完成 ${formatNumber(aggregate.completion_pct ?? (aggregate.target_volume_t ? aggregate.volume_t / aggregate.target_volume_t * 100 : 0), 1)}% · ${aggregate.period}`,
-      source: '内部聚合',
-      date: formatDate(aggregate.end_date),
-      priority: (Number(aggregate.completion_pct ?? (aggregate.target_volume_t ? aggregate.volume_t / aggregate.target_volume_t * 100 : 100)) < 80 ? 'P1' : 'P2') as ObjectivePriority,
-      searchable: `${aggregate.product_grade || ''} ${aggregate.product_line} ${aggregate.region} ${aggregate.customer_segment || ''} ${aggregate.order_type || ''} 内部聚合 销量 目标`.toLowerCase(),
-    }));
-    const costItems = costs.map((cost) => ({
-      id: cost.cost_id,
-      kind: '成本' as const,
-      title: `${cost.component_name} · ${cost.product_code}`,
-      chineseHint: `${costComponentChinese[cost.component_code] || '成本分项'} · ${productChinese[cost.product_code] || '产品成本'}`,
-      value: `${formatNumber(cost.value_per_ton)} ${cost.currency}/t`,
-      detail: `${cost.trade_term} · ${cost.origin} → ${cost.destination}`,
-      source: cost.source,
-      date: formatDate(cost.effective_date),
-      priority: 'P2' as const,
-      searchable: `${cost.component_name} ${cost.product_code} ${cost.trade_term} ${cost.origin} ${cost.destination} ${cost.source} 成本 分项 产品`.toLowerCase(),
-    }));
-    const fxItems = scenarios.map((scenario) => ({
-      id: scenario.scenario_id,
-      kind: '汇率' as const,
-      title: scenario.scenario_name,
-      chineseHint: scenarioChinese(scenario.scenario_name),
-      value: `${scenario.scenario_rate.toFixed(2)} ${scenario.quote_currency}/${scenario.base_currency}`,
-      detail: `情景变化 ${scenario.scenario_pct >= 0 ? '+' : ''}${scenario.scenario_pct.toFixed(1)}% · 基准 ${scenario.base_rate.toFixed(2)}`,
-      source: '汇率情景',
-      date: formatDate(scenario.as_of),
-      priority: 'P2' as const,
-      searchable: `${scenario.scenario_name} ${scenario.base_currency} ${scenario.quote_currency} 汇率情景 敏感度 当前汇率`.toLowerCase(),
-    }));
-    const riskItems = signals.map((signal) => ({
-      id: signal.signal_id,
-      kind: '风险' as const,
-      title: signal.factor,
-      chineseHint: factorChinese[signal.factor] || '风险因子',
-      value: riskLevelText[signal.level],
-      detail: `${metricChinese[signal.metric] || '风险指标'} · ${displayMetric(signal.metric)} · ${signal.review_status === 'pending' ? '待处理' : signal.review_status === 'confirmed' ? '已确认' : '已忽略'}`,
-      source: '风险规则',
-      date: formatDate(signal.as_of),
-      priority: (signal.level === 'critical' ? 'P0' : signal.level === 'high_attention' ? 'P1' : signal.level === 'attention' ? 'P2' : 'P3') as ObjectivePriority,
-      searchable: `${signal.factor} ${signal.metric} ${factorChinese[signal.factor] || ''} ${metricChinese[signal.metric] || ''} ${signal.level} ${riskLevelText[signal.level]} 风险 预警 信号`.toLowerCase(),
-    }));
-    return [...riskItems, ...policyItems, ...quoteItems, ...aggregateItems, ...costItems, ...fxItems]
-      .sort((a, b) => a.priority.localeCompare(b.priority) || b.date.localeCompare(a.date));
-  }, [aggregates, costs, policies, quotes, scenarios, signals]);
+    })
+    .sort((a, b) => {
+      return Math.abs(b.delta || 0) - Math.abs(a.delta || 0) || b.asOf.localeCompare(a.asOf);
+    }), [fastNews, forex, policies, signals, shippingIndices, taricQuota, tradeRemedy]);
 
-  const filteredObjectives = useMemo(() => {
-    const normalizedQuery = query.trim().toLowerCase();
-    return objectiveItems.filter((item) =>
-      (kindFilter === '全部' || item.kind === kindFilter) &&
-      (priorityFilter === '全部' || item.priority === priorityFilter) &&
-      (!normalizedQuery || item.searchable.includes(normalizedQuery)),
-    );
-  }, [kindFilter, objectiveItems, priorityFilter, query]);
+  const visibleRiskItems = useMemo(() => riskFilter === 'all' ? riskItems : riskItems.filter((item) => item.category === riskFilter), [riskFilter, riskItems]);
+  const riskCategoryCounts = useMemo(() => riskCategoryOrder.reduce<Record<RiskCategory, number>>((counts, category) => {
+    counts[category] = riskItems.filter((item) => item.category === category).length;
+    return counts;
+  }, { remedy: 0, quota: 0, 'market-volatility': 0, 'internal-competition': 0, 'trade-policy': 0, geopolitical: 0 }), [riskItems]);
 
-  const metrics = useMemo(() => {
-    const periodAggregates = scopedAggregates(aggregates);
-    const totalVolume = periodAggregates.reduce((sum, item) => sum + item.volume_t, 0);
-    const totalTarget = periodAggregates.reduce((sum, item) => sum + (item.target_volume_t || 0), 0);
-    const completion = totalTarget ? totalVolume / totalTarget * 100 : 0;
-    const scopedCosts = latestCostScenario(costs);
-    const averageCost = scopedCosts.length ? scopedCosts.reduce((sum, item) => sum + item.value_per_ton, 0) / scopedCosts.length : 0;
-    const activeRiskCount = signals.filter((item) => (item.level === 'critical' || item.level === 'high_attention') && item.review_status !== 'dismissed').length;
-    const pendingPolicyCount = policies.filter((item) => item.verify_status === 'pending').length;
-    const scenarioRates = scenarios.map((item) => item.scenario_rate);
-    return {
-      completion,
-      averageCost,
-      activeRiskCount,
-      pendingPolicyCount,
-      scenarioLow: scenarioRates.length ? Math.min(...scenarioRates) : 0,
-      scenarioHigh: scenarioRates.length ? Math.max(...scenarioRates) : 0,
-      aggregatePeriod: preferredAggregatePeriod(aggregates),
-    };
-  }, [aggregates, costs, policies, scenarios, signals]);
+  useGSAP(() => {
+    if (!riskSectionRef.current) return;
+    const motion = gsap.matchMedia();
+    motion.add('(prefers-reduced-motion: no-preference)', () => {
+      const timeline = gsap.timeline({ defaults: { ease: 'power3.out', overwrite: 'auto' } });
+      timeline
+        .fromTo('.risk-section-heading', { autoAlpha: 0, y: 8 }, { autoAlpha: 1, y: 0, duration: .28 })
+        .fromTo('.risk-index', { autoAlpha: 0, y: 6 }, { autoAlpha: 1, y: 0, duration: .22 }, '-=.12')
+        .fromTo('.risk-lane', { autoAlpha: 0, y: 10 }, { autoAlpha: 1, y: 0, duration: .28, stagger: .045 }, '-=.08');
+      return () => timeline.kill();
+    }, riskSectionRef);
+    return () => motion.revert();
+  }, { scope: riskSectionRef, dependencies: [riskFilter, riskItems.length], revertOnUpdate: true });
 
-  const concernItems = useMemo(() => {
-    const items: Array<{ label: string; value: string; detail: string; tone: string }> = [];
-    if (metrics.completion) items.push({ label: '指标完成', value: `${metrics.completion.toFixed(1)}%`, detail: metrics.completion >= 100 ? '已达到当前聚合目标' : '仍需结合订单节奏判断', tone: metrics.completion >= 100 ? 'good' : 'focus' });
-    if (metrics.averageCost) items.push({ label: '单位成本', value: `${formatNumber(metrics.averageCost)} /t`, detail: '基于最新成本快照均值', tone: 'neutral' });
-    return items;
-  }, [metrics]);
+  useGSAP(() => {
+    if (!riskSectionRef.current) return;
+    const motion = gsap.matchMedia();
+    motion.add('(prefers-reduced-motion: no-preference)', () => {
+      const entries = riskSectionRef.current?.querySelectorAll<HTMLElement>('.risk-entry');
+      if (entries?.length) gsap.fromTo(entries, { autoAlpha: 0, y: 5 }, { autoAlpha: 1, y: 0, duration: .2, stagger: .025, clearProps: 'transform' });
+    }, riskSectionRef);
+    return () => motion.revert();
+  }, { scope: riskSectionRef, dependencies: [riskFilter, expandedRiskId], revertOnUpdate: true });
 
-  const themeKey = useThemeKey();
-  const chartTheme = useMemo(() => chartThemeFromCss(), [themeKey]);
-
-  const processedChartOption = useMemo<echarts.EChartsOption>(() => {
-    const completionByDate = new Map<string, { volume: number; target: number }>();
-    scopedAggregates(aggregates).forEach((item) => {
-      const current = completionByDate.get(item.end_date) || { volume: 0, target: 0 };
-      current.volume += item.volume_t;
-      current.target += item.target_volume_t || 0;
-      completionByDate.set(item.end_date, current);
-    });
-    const rows = [...completionByDate.entries()].sort(([a], [b]) => a.localeCompare(b));
-    const completion = rows.map(([, item]) => {
-      return item.target ? Number((item.volume / item.target * 100).toFixed(1)) : null;
-    });
-    return {
-      color: [chartTheme.blue, chartTheme.orange],
-      grid: { left: 54, right: 18, top: 35, bottom: 38, containLabel: true },
-      tooltip: { trigger: 'axis', formatter: (params: any) => { const row = rows[params[0]?.dataIndex]?.[1]; return `${params[0]?.axisValue}<br/>完成率：${params[0]?.value ?? '无目标'}%<br/>经营量：${row ? formatNumber(row.volume, 0) : '—'} t<br/>目标量：${row ? formatNumber(row.target, 0) : '—'} t<br/>统计周期：${periodChinese[metrics.aggregatePeriod]}`; } },
-      legend: { top: 0, type: 'scroll', textStyle: { color: chartTheme.text, fontSize: 13 } },
-      xAxis: { type: 'category', data: rows.map(([date]) => formatDate(date)), axisLabel: { color: chartTheme.text, fontSize: 13 }, axisLine: { lineStyle: { color: chartTheme.grid } } },
-      yAxis: { type: 'value', name: '完成率 %', max: 120, axisLabel: { color: chartTheme.text, fontSize: 13, formatter: '{value}%' }, splitLine: { lineStyle: { color: chartTheme.grid } } },
-      series: [{ name: '目标完成率', type: 'line', smooth: true, symbolSize: 8, data: completion, itemStyle: { color: chartTheme.blue }, lineStyle: { width: 3, color: chartTheme.blue }, areaStyle: { color: chartTheme.blue, opacity: 0.08 }, label: { show: true, position: 'top', color: chartTheme.text, fontSize: 13, formatter: (params: any) => params.value == null ? '无目标' : `${params.value}%` } }],
-    };
-  }, [aggregates, chartTheme, metrics.aggregatePeriod]);
-
-  const fxSensitivityChartOption = useMemo<echarts.EChartsOption>(() => {
-    const pctValues = [...new Set(scenarios.map((item) => item.scenario_pct))].sort((a, b) => a - b);
-    const pairs = [...new Set(scenarios.map((item) => `${item.base_currency}/${item.quote_currency}`))];
-    return {
-      color: [chartTheme.orange, chartTheme.blue, chartTheme.green, chartTheme.purple],
-      grid: { left: 76, right: 20, top: 48, bottom: 38, containLabel: true },
-      tooltip: { trigger: 'axis', formatter: (params: any) => `${params[0]?.axisValue}% 情景变化<br/>${params.map((item: any) => `${item.seriesName}：${item.value}`).join('<br/>')}` },
-      legend: { top: 0, left: 'center', right: 8, type: 'scroll', textStyle: { color: chartTheme.text, fontSize: 13 } },
-      xAxis: { type: 'category', boundaryGap: false, data: pctValues.map((value) => `${value > 0 ? '+' : ''}${value}%`), axisLabel: { color: chartTheme.text, fontSize: 13, interval: (index: number) => index % 2 === 0, hideOverlap: true }, axisLine: { lineStyle: { color: chartTheme.grid } } },
-      yAxis: { type: 'value', name: '相对基准指数', nameLocation: 'middle', nameGap: 48, nameTextStyle: { color: chartTheme.text, fontSize: 12 }, axisLabel: { color: chartTheme.text, fontSize: 13 }, splitLine: { lineStyle: { color: chartTheme.grid } } },
-      series: pairs.map((pair) => ({ name: pair, type: 'line' as const, smooth: true, symbolSize: 7, data: pctValues.map((pct) => { const item = scenarios.find((scenario) => `${scenario.base_currency}/${scenario.quote_currency}` === pair && scenario.scenario_pct === pct); return item ? Number((item.scenario_rate / item.base_rate * 100).toFixed(2)) : null; }) })),
-    };
-  }, [chartTheme, scenarios]);
-
-  const riskTrendChartOption = useMemo<echarts.EChartsOption>(() => {
-    const activeSignals = signals.filter((signal) => signal.review_status !== 'dismissed');
-    const dates = [...new Set(activeSignals.map((signal) => signal.as_of.slice(0, 10)))].sort();
-    const levels: RiskSignal['level'][] = ['critical', 'high_attention', 'attention', 'normal'];
-    return { grid: { left: 48, right: 18, top: 24, bottom: 34, containLabel: true }, tooltip: { trigger: 'axis' }, legend: { top: 0, textStyle: { color: chartTheme.text, fontSize: 13 } }, xAxis: { type: 'category', data: dates, axisLabel: { color: chartTheme.text, fontSize: 13 }, axisLine: { lineStyle: { color: chartTheme.grid } } }, yAxis: { type: 'value', minInterval: 1, name: '信号数量', nameTextStyle: { color: chartTheme.text, fontSize: 13 }, axisLabel: { color: chartTheme.text, fontSize: 13 }, splitLine: { lineStyle: { color: chartTheme.grid } } }, series: levels.map((level) => ({ name: riskLevelText[level], type: 'line' as const, stack: 'risk', areaStyle: {}, smooth: true, data: dates.map((date) => activeSignals.filter((signal) => signal.as_of.slice(0, 10) === date && signal.level === level).length) })) };
-  }, [chartTheme, signals]);
-
-  const riskScatterOption = useMemo<echarts.EChartsOption>(() => ({
-    grid: { left: 54, right: 18, top: 18, bottom: 36 }, tooltip: { trigger: 'item', formatter: (params: any) => { const signal = signals.filter((item) => item.review_status !== 'dismissed')[params.dataIndex]; return `${params.data?.name}<br/>变化：${params.data?.value?.[0] ?? 0}%<br/>评分：${params.data?.value?.[1] ?? 0}<br/>信号编号：${signal?.signal_id || '—'}<br/>依据：${signal?.evidence_ref?.join('、') || '当前风险快照'}`; } }, xAxis: { type: 'value', name: '相对基线变化 %', axisLabel: { color: chartTheme.text, fontSize: 13 }, splitLine: { lineStyle: { color: chartTheme.grid } } }, yAxis: { type: 'value', name: '风险评分', axisLabel: { color: chartTheme.text, fontSize: 13 }, splitLine: { lineStyle: { color: chartTheme.grid } } }, series: [{ type: 'scatter', symbolSize: 13, data: signals.filter((signal) => signal.review_status !== 'dismissed').map((signal) => ({ name: factorChinese[signal.factor] || humanizeDisplay(signal.factor), value: [signal.delta_pct ?? (signal.baseline ? (signal.value - signal.baseline) / signal.baseline * 100 : 0), signal.score], itemStyle: { color: signal.level === 'critical' ? chartTheme.red : signal.level === 'high_attention' ? chartTheme.orange : chartTheme.blue } })) }],
-  }), [chartTheme, signals]);
-
-  const riskScoreOption = useMemo<echarts.EChartsOption>(() => {
-    const items = signals.filter((signal) => signal.review_status !== 'dismissed').sort((a, b) => b.score - a.score);
-    return {
-      grid: { left: 104, right: 30, top: 18, bottom: 28 },
-      tooltip: { trigger: 'axis', axisPointer: { type: 'shadow' }, formatter: (params: any) => { const signal = items[params[0]?.dataIndex]; return `${factorChinese[signal?.factor] || humanizeDisplay(signal?.factor || '')}<br/>风险评分：${signal?.score ?? '—'}<br/>级别：${riskLevelText[signal?.level] || '—'}<br/>信号编号：${signal?.signal_id || '—'}<br/>规则：${signal?.rule_id || '—'}<br/>依据：${signal?.evidence_ref?.join('、') || '当前风险快照'}`; } },
-      xAxis: { type: 'value', max: 100, name: '风险评分', nameTextStyle: { color: chartTheme.text, fontSize: 13 }, axisLabel: { color: chartTheme.text, fontSize: 13 }, splitLine: { lineStyle: { color: chartTheme.grid } } },
-      yAxis: { type: 'category', inverse: true, data: items.map((signal) => factorChinese[signal.factor] || humanizeDisplay(signal.factor)), axisLabel: { color: chartTheme.text, fontSize: 13 }, axisLine: { lineStyle: { color: chartTheme.grid } } },
-      series: [{ type: 'bar', barWidth: '48%', data: items.map((signal) => ({ value: signal.score, itemStyle: { color: signal.level === 'critical' ? chartTheme.red : signal.level === 'high_attention' ? chartTheme.orange : chartTheme.blue } })), label: { show: true, position: 'right', color: chartTheme.text, fontSize: 13 } }],
-    };
-  }, [chartTheme, signals]);
-
-  const summary = useMemo(() => {
-    if (loading) return '正在整理当前产品线与区域的数据快照…';
-    if (error) return '综合分析数据加载失败，请检查本地数据服务。';
-    if (metrics.activeRiskCount > 0) return `当前识别到 ${metrics.activeRiskCount} 条高优先级风险信号，建议先核对风险依据，再判断订单与市场动作。`;
-    return '当前未发现高优先级风险信号，可结合成本、目标完成率和政策变化推进人工研判。';
-  }, [error, loading, metrics.activeRiskCount]);
-
-  const updateReviewStatus = (signalId: string, reviewStatus: RiskSignal['review_status']) => {
-    setSignals((current) => {
-      const nextSignals = current.map((signal) => signal.signal_id === signalId ? { ...signal, review_status: reviewStatus } : signal);
-      dispatch({ type: 'SET_RISK_SIGNALS', payload: nextSignals });
-      return nextSignals;
-    });
+  const focusRiskCategory = (category: 'all' | RiskCategory) => {
+    setRiskFilter(category);
+    setExpandedRiskId(null);
   };
+
+  useEffect(() => {
+    if (riskFilter === 'all') return;
+    const frame = window.requestAnimationFrame(() => document.getElementById(`risk-lane-${riskFilter}`)?.scrollIntoView({ behavior: 'smooth', block: 'start' }));
+    return () => window.cancelAnimationFrame(frame);
+  }, [riskFilter]);
 
   return (
     <div className="unified-analysis">
-      <section className="analysis-context-bar" aria-label="当前分析范围">
-        <span className="context-section-label">综合分析</span>
-        <span>{state.productLine === 'hot-rolled' ? '热轧卷板' : state.productLine === 'cold-rolled' ? '冷轧卷板' : '硅钢'}</span>
-        <span>{state.region === 'global' ? '全球' : state.region}</span>
-      </section>
-
       {error && <div className="analysis-error">{error}</div>}
 
-      <section className="analysis-section objective-section">
+      <section id="analysis-objective-charts" className="analysis-section objective-section">
         {!loading && <ObjectiveCharts quotes={quotes} aggregates={aggregates} costs={costs} scenarios={scenarios} internalBusiness={internalBusiness} steelExport={steelExport} taricQuota={taricQuota} tradeRemedy={tradeRemedy} advice={analysisAdvice} />}
         {!loading && shippingIndices && <ShippingIndexPanel snapshot={shippingIndices} />}
         {!loading && <div className="analysis-advice-strip" aria-label="客观信息对应建议">{analysisAdvice.slice(0, 4).map((advice) => <DataAdviceCard key={advice.id} advice={advice} compact />)}</div>}
         {!loading && forex && <ForexCharts forex={forex} />}
-        {!loading && <section className={`analysis-search panel-surface objective-search ${searchOpen || query || kindFilter !== '全部' || priorityFilter !== '全部' ? 'is-open' : ''}`} aria-label="搜索客观明细">
-          <div className="search-row">
-            <label className="search-field">
-              <span aria-hidden="true">⌕</span>
-              <input value={query} onFocus={() => setSearchOpen(true)} onChange={(event) => { const nextQuery = event.target.value; setSearchOpen(true); setQuery(nextQuery); setObjectiveDetailsOpen(Boolean(nextQuery) || kindFilter !== '全部' || priorityFilter !== '全部'); }} placeholder="搜索指标、政策、来源、区域或风险关键词" />
-            </label>
-            {(searchOpen || query || kindFilter !== '全部' || priorityFilter !== '全部') && <span className="search-count">匹配 {filteredObjectives.length} 条明细</span>}
-            <button type="button" className="search-toggle" onClick={() => setSearchOpen((current) => !current)} aria-expanded={searchOpen || Boolean(query) || kindFilter !== '全部' || priorityFilter !== '全部'}>{searchOpen || query || kindFilter !== '全部' || priorityFilter !== '全部' ? '收起筛选' : '展开筛选'}</button>
-          </div>
-          {(searchOpen || query || kindFilter !== '全部' || priorityFilter !== '全部') && <div className="filter-row">
-              {(['全部', '行情', '政策', '经营', '成本', '汇率', '风险'] as const).map((kind) => (
-                <button key={kind} className={`filter-chip ${kindFilter === kind ? 'is-active' : ''}`} onClick={() => { setSearchOpen(true); setKindFilter(kind); setObjectiveDetailsOpen(true); }}>{kind}</button>
-              ))}
-              <span className="filter-divider" aria-hidden="true" />
-              {(['全部', 'P0', 'P1', 'P2', 'P3'] as const).map((priority) => (
-                <button key={priority} className={`filter-chip priority-chip priority-${priority.toLowerCase()} ${priorityFilter === priority ? 'is-active' : ''}`} onClick={() => { setSearchOpen(true); setPriorityFilter(priority); setObjectiveDetailsOpen(true); }}>
-                  {priority === '全部' ? '全部优先级' : `${priority} ${priority === 'P0' ? '立即核验' : priority === 'P1' ? '重点关注' : priority === 'P2' ? '常规跟踪' : '辅助信息'}`}
-                </button>
-              ))}
-            </div>}
-        </section>}
-        {loading ? <div className="analysis-empty">正在读取本地数据…</div> : (
-        <section className={`objective-details ${objectiveDetailsOpen ? 'is-open' : ''}`} aria-label="客观信息明细">
-          <div className="objective-grid-meta">
-            <span>客观信息概览 <strong>{filteredObjectives.length}</strong></span>
-            <button type="button" className="objective-detail-toggle" onClick={() => setObjectiveDetailsOpen((current) => !current)} aria-expanded={objectiveDetailsOpen}>{objectiveDetailsOpen ? '收起客观明细' : '展开客观明细'}</button>
-          </div>
-          {objectiveDetailsOpen && <div className="objective-scroll" aria-label="客观信息滚动列表">
-          <div className="objective-detail-label">客观明细数据</div>
-          <div className="objective-table-wrap">
-              <table className="objective-table">
-                <thead><tr><th>优先级</th><th>信息类型</th><th>指标 / 事件</th><th>当前状态</th><th>当前值</th><th>来源 / 日期</th></tr></thead>
-                <tbody>
-                  {filteredObjectives.map((item) => (
-                    <tr key={item.id}>
-                      <td><span className={`priority-badge priority-${item.priority.toLowerCase()}`}>{item.priority}</span></td>
-                      <td><span className={`kind-label kind-${item.kind}`}>{item.kind}</span></td>
-                      <td><div className="objective-table-title"><strong>{item.chineseHint}</strong><small>{humanizeDisplay(item.title)} · {humanizeDisplay(item.detail)}</small></div></td>
-                      <td className="objective-table-status">{humanizeDisplay(item.detail)}</td>
-                      <td className="objective-table-value">{item.value}</td>
-                      <td><div className="objective-table-source"><span>{humanizeDisplay(item.source)}</span><small>{item.date}</small></div></td>
-                    </tr>
-                  ))}
-                </tbody>
-              </table>
-              {!filteredObjectives.length && <div className="analysis-empty">没有匹配的信息</div>}
-          </div>
-          </div>}
-        </section>
-        )}
       </section>
 
-      <section className="analysis-section processed-section">
-        <div className="processed-grid">
-          <div className="processed-card"><span>目标完成率</span><strong>{metrics.completion.toFixed(1)}%</strong><small>内部聚合销量 / 目标销量 · {metrics.aggregatePeriod === 'monthly' ? '月度' : metrics.aggregatePeriod === 'daily' ? '日度' : '周度'}口径</small></div>
-          <div className="processed-card"><span>最新单位成本</span><strong>{metrics.averageCost ? `${formatNumber(metrics.averageCost)} /t` : '—'}</strong><small>最新有效日期的同场景成本均值</small></div>
-          <div className="processed-card"><span>汇率情景区间</span><strong>{metrics.scenarioLow ? `${metrics.scenarioLow.toFixed(2)}—${metrics.scenarioHigh.toFixed(2)}` : '—'}</strong><small>当前本地情景最低 / 最高</small></div>
-          <div className="processed-card"><span>待核验政策</span><strong>{metrics.pendingPolicyCount}</strong><small>需要人工确认的政策事件</small></div>
-        </div>
-        <div className="analysis-chart-grid analysis-chart-grid-two">
-          <AnalysisChart title="经营目标完成率" subtitle="Target progress · InternalAggregate.volume / target" option={processedChartOption} emptyMessage={!aggregates.length ? '当前筛选范围暂无经营数据' : undefined} />
-          <AnalysisChart title="汇率情景敏感度" subtitle="FX sensitivity · 各货币对按基准=100归一化" option={fxSensitivityChartOption} emptyMessage={!scenarios.length ? '当前暂无汇率情景数据' : undefined} />
-        </div>
-      </section>
+      {!loading && internalBusiness && <BusinessOutputAndPolicyTimeline snapshot={internalBusiness} policies={policies} tradeRemedy={tradeRemedy} />}
 
-      <section className="analysis-section concern-section">
-        <div className="concern-grid">{concernItems.map((item) => <div className={`concern-card concern-${item.tone}`} key={item.label}><span>{item.label}</span><strong>{item.value}</strong><small>{item.detail}</small></div>)}</div>
-        {internalBusiness && <InternalBusinessCharts snapshot={internalBusiness} variant="concern" />}
-      </section>
-
-      {internalBusiness && <DestinationPolicyPanel snapshot={internalBusiness} policies={policies} steelExport={steelExport} />}
-
-      <section className="analysis-section conclusion-section">
-        <div className="section-heading"><div><h2>总结与风险信号</h2></div><p>风险信号来自客观数据变化，仍需人工审核确认</p></div>
-        <div className="conclusion-summary"><span className="summary-mark">/</span><p>{summary}</p></div>
-        <div className="signal-list">
-          {signals.filter((signal) => signal.level !== 'normal' && signal.review_status !== 'dismissed').slice(0, 12).map((signal) => (
-            <article className="signal-card" key={signal.signal_id}>
-              <div className="signal-top"><span className={`signal-level signal-${riskLevelClass[signal.level]}`}>{riskLevelText[signal.level]}</span><span className={`review-state review-${signal.review_status}`}>{signal.review_status === 'confirmed' ? '已确认' : signal.review_status === 'dismissed' ? '已忽略' : '待处理'}</span></div>
-              <strong>{factorChinese[signal.factor] || '风险因子'}</strong><span className="signal-cn">{humanizeDisplay(signal.factor)}</span><span>{metricChinese[signal.metric] || '风险指标'} · {displayMetric(signal.metric)}</span>
-              <small>依据：{signal.evidence_ref?.length ? signal.evidence_ref.join('、') : '当前风险快照'}</small>
-              <div className="signal-actions"><button disabled={signal.review_status === 'confirmed'} onClick={() => updateReviewStatus(signal.signal_id, 'confirmed')}>确认</button><button disabled={signal.review_status === 'dismissed'} onClick={() => updateReviewStatus(signal.signal_id, 'dismissed')}>忽略</button></div>
-            </article>
-          ))}
-          {!signals.filter((signal) => signal.level !== 'normal' && signal.review_status !== 'dismissed').length && <div className="analysis-empty">当前没有高优先级风险信号</div>}
+      <section id="risk" ref={riskSectionRef} className="analysis-section risk-section">
+        <div className="risk-section-heading">
+          <div><span className="risk-section-mark" aria-hidden="true" /><div><h2>风险</h2><p>只描述已发生的变化；展开条目查看数据、时间和可核验来源。</p></div></div>
+          <div className="risk-summary"><strong>{riskItems.length}</strong><span>条变化记录</span></div>
         </div>
-        <div className="analysis-chart-grid analysis-chart-grid-two conclusion-chart-grid"><AnalysisChart title="风险驱动散点" subtitle="Risk drivers · 变化幅度 × 风险评分，点击查看证据" option={riskScatterOption} onPointClick={(index) => setSelectedRiskId(signals.filter((signal) => signal.review_status !== 'dismissed')[index]?.signal_id || null)} emptyMessage={!signals.filter((signal) => signal.review_status !== 'dismissed').length ? '当前暂无可展示的风险信号' : undefined} /><AnalysisChart title="风险级别趋势" subtitle="Risk trend · 按日期统计，已忽略信号不纳入" option={riskTrendChartOption} emptyMessage={!signals.filter((signal) => signal.review_status !== 'dismissed').length ? '当前暂无可展示的风险趋势' : undefined} /><AnalysisChart title="风险评分排序" subtitle="Risk score · 依据证据编号可回溯至风险卡片" option={riskScoreOption} emptyMessage={!signals.filter((signal) => signal.review_status !== 'dismissed').length ? '当前暂无可展示的风险排名' : undefined} /></div>
-        {selectedRiskId && <div className="risk-trace-note">已选风险信号：<strong>{selectedRiskId}</strong> · 可在上方风险卡片中查看证据编号与人工审核状态。<button type="button" onClick={() => setSelectedRiskId(null)}>清除选择</button></div>}
+        <nav className="risk-index" aria-label="风险分类索引">
+          {riskCategoryOrder.map((category) => <button type="button" key={category} className={`risk-index-${category} ${riskFilter === category ? 'is-active' : ''}`} onClick={() => focusRiskCategory(riskFilter === category ? 'all' : category)}><i />{riskCategoryMeta[category].shortLabel} <b>{riskCategoryCounts[category]}</b></button>)}
+        </nav>
+        <div className="risk-index-note">按分类查看变化；数据类记录可定位到站内图表，来源类记录仅在链接可核验时提供外部入口。</div>
+        <div className={`risk-lane-grid ${riskFilter !== 'all' ? 'is-filtered' : ''}`}>
+          {riskCategoryOrder.filter((category) => riskFilter === 'all' || category === riskFilter).map((category) => {
+            const categoryItems = visibleRiskItems.filter((item) => item.category === category);
+            return <section id={`risk-lane-${category}`} className={`risk-lane risk-lane-${category}`} key={category} aria-labelledby={`risk-lane-title-${category}`}>
+              <div className="risk-lane-heading"><div><i /><h3 id={`risk-lane-title-${category}`}>{riskCategoryMeta[category].label}</h3></div><span>{categoryItems.length} 项</span></div>
+              <p className="risk-lane-description">{riskCategoryMeta[category].description}</p>
+              <div className="risk-lane-items">
+                {categoryItems.map((item) => {
+                  const expanded = expandedRiskId === item.id;
+                  return <article className={`risk-entry ${expanded ? 'is-expanded' : ''}`} key={item.id}>
+                    <button type="button" className="risk-entry-summary" aria-expanded={expanded} onClick={() => setExpandedRiskId((current) => current === item.id ? null : item.id)}>
+                      <span className="risk-entry-dot" aria-hidden="true" /><div className="risk-entry-main"><strong>{item.title}</strong><span>{item.metric} · {item.changeText}</span></div><div className="risk-entry-change"><b>{item.delta == null ? '有变化' : `${item.delta >= 0 ? '+' : ''}${item.delta.toFixed(1)}%`}</b><small>{item.asOf}</small></div><span className="risk-entry-chevron" aria-hidden="true">{expanded ? '−' : '+'}</span>
+                    </button>
+                    {expanded && <div className="risk-entry-detail">
+                      <div className="risk-detail-grid"><div><small>当前记录</small><strong>{item.value}</strong></div><div><small>基准记录</small><strong>{item.baseline == null ? '—' : formatNumber(item.baseline, 2)}</strong></div><div><small>记录日期</small><strong>{item.asOf}</strong></div><div><small>数据状态</small><strong>{item.freshness || '—'}</strong></div></div>
+                      <p className="risk-detail-assessment">{item.changeText}</p>
+                      <div className="risk-detail-links"><a href={`#${item.targetId}`} onClick={() => setExpandedRiskId(item.id)}>定位分析 ↗</a>{item.source && <a href={item.source.href} target="_blank" rel="noreferrer">{item.source.label} ↗</a>}{item.evidence.length > 0 && <span>可核验证据：{item.evidence.map((evidence) => <a key={evidence.label} href={evidence.href} target="_blank" rel="noreferrer">{evidence.label}</a>)}</span>}</div>
+                    </div>}
+                  </article>;
+                })}
+                {!categoryItems.length && <div className="risk-lane-empty">当前分类暂无待关注信号</div>}
+              </div>
+            </section>;
+          })}
+        </div>
+        {!riskItems.length && <div className="analysis-empty">当前没有需要关注的风险信号</div>}
       </section>
     </div>
   );

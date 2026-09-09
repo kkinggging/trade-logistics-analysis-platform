@@ -1,300 +1,65 @@
-import { useState, useEffect } from 'react';
+import { useEffect, useMemo, useState } from 'react';
 import { dataProvider } from '@/core/data/provider';
-import { ProductCost, FxScenario, TradeTerm } from '@/core/store/types';
-import { CostBreakdown } from './components/CostBreakdown';
-import { ScenarioComparison } from './components/ScenarioComparison';
-import { SensitivityChart } from './components/SensitivityChart';
+import { ForexSnapshot, InternalBusinessSnapshot, MarketQuote, ShippingIndexSnapshot, TaricQuotaSnapshot, TradeRemedySnapshot } from '@/core/store/types';
+import { DEFAULT_COST_PARAMETERS, PRODUCT_DEFINITIONS, estimateSteelExportCost } from '@/core/cost/steelExportCostEstimator';
+import { CbamParameterSnapshot, CostEstimate, CostInput, CostTradeTerm, DestinationRegion, SteelCostProduct } from '@/core/cost/types';
 import './CostCalculator.css';
 
-interface CostInput {
-  productCode: string;
-  spec: string;
-  quantity: number;
-  tradeTerm: TradeTerm;
-  origin: string;
-  destination: string;
-}
+const products: Array<{ value: SteelCostProduct; label: string }> = [
+  { value: 'hot-rolled', label: '热轧' }, { value: 'medium-plate', label: '中厚板' }, { value: 'cold-coated', label: '冷镀' },
+  { value: 'tinplate', label: '镀锡板' }, { value: 'silicon-steel', label: '硅钢' }, { value: 'automotive-plate', label: '汽车板（按基材）' },
+];
+const terms: Array<{ value: CostTradeTerm; label: string }> = [{ value: 'FOB', label: 'FOB' }, { value: 'CFR', label: 'CFR' }, { value: 'CIF', label: 'CIF' }];
+const regions: Array<{ value: DestinationRegion; label: string }> = [{ value: 'EU', label: '欧盟' }, { value: 'UK', label: '英国' }, { value: 'OTHER', label: '其他地区' }];
+const fmt = (v: number | null | undefined, d = 2) => v == null || !Number.isFinite(v) ? '—' : v.toLocaleString('zh-CN', { minimumFractionDigits: d, maximumFractionDigits: d });
+const rangeText = (v: { min: number; max: number }) => `${fmt(v.min)} – ${fmt(v.max)}`;
+const signed = (v: number) => `${v >= 0 ? '+' : ''}${fmt(v)}`;
 
-interface CostResult {
-  baseSteel: number;
-  inlandFreight: number;
-  oceanFreight: number;
-  insurance: number;
-  tariff: number;
-  cbam: number;
-  total: number;
-}
+interface LoadedData { forex: ForexSnapshot | null; shipping: ShippingIndexSnapshot | null; marketQuotes: MarketQuote[]; quota: TaricQuotaSnapshot | null; remedies: TradeRemedySnapshot | null; internalBusiness: InternalBusinessSnapshot | null; cbam: CbamParameterSnapshot | null; }
+const initialInput = (): CostInput => ({ product: 'hot-rolled', automotiveBase: 'hot-rolled', tradeTerm: 'FOB', destinationRegion: 'EU', vesselMode: 'container', shippingIndexCode: 'CCFI', eurUnitPrice: 700, cnyUnitPrice: 5200, eurBaselineRate: 1.15, cnyBaselineRate: 6.72, cargoValueUsdPerT: 700, cbamEmissionMode: 'default', measuredEmissionTco2PerT: 0, thirdCountryPaidCarbonUsdPerT: 0 });
+
+function Field({ label, children, hint }: { label: string; children: React.ReactNode; hint?: string }) { return <label className="cost-field"><span>{label}</span>{children}{hint && <small>{hint}</small>}</label>; }
+function SectionHeading({ title, text }: { title: string; text?: string }) { return <div className="cost-section-heading"><div><h3>{title}</h3>{text && <p>{text}</p>}</div></div>; }
+function Metric({ label, value, detail, tone = '' }: { label: string; value: string; detail: string; tone?: string }) { return <div className={`cost-metric ${tone}`}><span>{label}</span><strong>{value}</strong><small>{detail}</small></div>; }
 
 export function CostCalculator() {
-  const [loading, setLoading] = useState(false);
-  const [error, setError] = useState<string | null>(null);
-
-  const [input, setInput] = useState<CostInput>({
-    productCode: 'HR-Q235B-3.0',
-    spec: '3.0mm x 1250mm',
-    quantity: 100,
-    tradeTerm: 'CFR',
-    origin: 'CN-Shanghai',
-    destination: 'DE-Hamburg'
-  });
-
-  const [productCosts, setProductCosts] = useState<ProductCost[]>([]);
-  const [fxScenarios, setFxScenarios] = useState<FxScenario[]>([]);
-  const [costResult, setCostResult] = useState<CostResult | null>(null);
-  const [selectedScenario, setSelectedScenario] = useState<string>('');
-
-  useEffect(() => {
-    loadData();
-  }, []);
-
-  const loadData = async () => {
-    try {
-      setLoading(true);
-      setError(null);
-
-      const [costs, scenarios] = await Promise.all([
-        dataProvider.getProductCosts(),
-        dataProvider.getFxScenarios()
-      ]);
-
-      setProductCosts(costs);
-      setFxScenarios(scenarios);
-
-      const baseScenario = scenarios.find(s => s.scenario_name === 'Current Rate');
-      if (baseScenario) {
-        setSelectedScenario(baseScenario.scenario_id);
-      }
-    } catch (err) {
-      setError(err instanceof Error ? err.message : '加载数据失败');
-    } finally {
-      setLoading(false);
-    }
-  };
-
-  const calculateCost = () => {
-    const relevantCosts = productCosts.filter(
-      c => c.product_code === input.productCode &&
-           c.trade_term === input.tradeTerm &&
-           c.origin === input.origin &&
-           c.destination === input.destination
-    );
-
-    const getComponent = (code: string): number => {
-      const cost = relevantCosts.find(c => c.component_code === code || (code === 'TARIFF' && c.component_code === 'CUSTOMS_DUTY'));
-      return cost ? cost.value_per_ton : 0;
-    };
-
-    if (relevantCosts.length === 0) {
-      setCostResult(null);
-      setError('没有找到匹配的成本数据，请检查产品代码、贸易条款、起运地和目的地。');
-      return;
-    }
-
-    const baseSteel = getComponent('BASE_STEEL');
-    const inlandFreight = getComponent('INLAND_FREIGHT');
-    const oceanFreight = getComponent('OCEAN_FREIGHT');
-    const insurance = getComponent('INSURANCE');
-    const tariff = getComponent('TARIFF');
-    const cbam = getComponent('CBAM');
-
-    const result: CostResult = {
-      baseSteel: baseSteel * input.quantity,
-      inlandFreight: inlandFreight * input.quantity,
-      oceanFreight: oceanFreight * input.quantity,
-      insurance: insurance * input.quantity,
-      tariff: tariff * input.quantity,
-      cbam: cbam * input.quantity,
-      total: 0
-    };
-
-    result.total = result.baseSteel + result.inlandFreight + result.oceanFreight +
-                   result.insurance + result.tariff + result.cbam;
-
-    setError(null);
-    setCostResult(result);
-  };
-
-  const handleCalculate = () => {
-    if (input.quantity <= 0) {
-      setError('数量必须大于0');
-      return;
-    }
-    calculateCost();
-  };
-
-  if (error && !costResult) {
-    return (
-      <div className="cost-calculator-error">
-        <h3>加载失败</h3>
-        <p>{error}</p>
-        <button onClick={loadData} className="retry-button">
-          重试
-        </button>
-      </div>
-    );
-  }
-
-  return (
-    <div className="cost-calculator">
-      <div className="cost-calculator-header">
-      </div>
-
-      <div className="cost-calculator-content">
-        <div className="input-section">
-          <h3 className="section-title">输入参数</h3>
-
-          <div className="input-grid">
-            <div className="input-group">
-              <label htmlFor="productCode">产品代码</label>
-              <input
-                id="productCode"
-                type="text"
-                value={input.productCode}
-                onChange={(e) => setInput({ ...input, productCode: e.target.value })}
-              />
-            </div>
-
-            <div className="input-group">
-              <label htmlFor="spec">规格</label>
-              <input
-                id="spec"
-                type="text"
-                value={input.spec}
-                onChange={(e) => setInput({ ...input, spec: e.target.value })}
-              />
-            </div>
-
-            <div className="input-group">
-              <label htmlFor="quantity">数量 (吨)</label>
-              <input
-                id="quantity"
-                type="number"
-                min="0"
-                step="0.01"
-                value={input.quantity}
-                onChange={(e) => setInput({ ...input, quantity: parseFloat(e.target.value) || 0 })}
-              />
-            </div>
-
-            <div className="input-group">
-              <label htmlFor="tradeTerm">贸易条款</label>
-              <select
-                id="tradeTerm"
-                value={input.tradeTerm}
-                onChange={(e) => setInput({ ...input, tradeTerm: e.target.value as TradeTerm })}
-              >
-                <option value="FOB">FOB</option>
-                <option value="CFR">CFR</option>
-                <option value="CIF">CIF</option>
-                <option value="DDP">DDP</option>
-              </select>
-            </div>
-
-            <div className="input-group">
-              <label htmlFor="origin">起运地</label>
-              <input
-                id="origin"
-                type="text"
-                value={input.origin}
-                onChange={(e) => setInput({ ...input, origin: e.target.value })}
-              />
-            </div>
-
-            <div className="input-group">
-              <label htmlFor="destination">目的地</label>
-              <input
-                id="destination"
-                type="text"
-                value={input.destination}
-                onChange={(e) => setInput({ ...input, destination: e.target.value })}
-              />
-            </div>
-
-            <div className="input-group">
-              <label htmlFor="fxScenario">汇率情景</label>
-              <select
-                id="fxScenario"
-                value={selectedScenario}
-                onChange={(e) => setSelectedScenario(e.target.value)}
-              >
-                {fxScenarios
-                  .filter(s => s.quote_currency === 'CNY')
-                  .map(s => (
-                    <option key={s.scenario_id} value={s.scenario_id}>
-                      {s.scenario_name} ({s.scenario_rate.toFixed(2)})
-                    </option>
-                  ))}
-              </select>
-            </div>
-
-            <div className="input-group calculate-button-group">
-              <button
-                className="calculate-button"
-                onClick={handleCalculate}
-                disabled={loading}
-              >
-                {loading ? '计算中...' : '计算成本'}
-              </button>
-            </div>
-          </div>
-        </div>
-
-        {costResult && (
-          <>
-            <CostBreakdown
-              costs={[
-                {
-                  component: '基础钢价',
-                  value: costResult.baseSteel,
-                  perTon: costResult.baseSteel / input.quantity,
-                  percentage: costResult.total > 0 ? (costResult.baseSteel / costResult.total) * 100 : 0
-                },
-                {
-                  component: '内陆运费',
-                  value: costResult.inlandFreight,
-                  perTon: costResult.inlandFreight / input.quantity,
-                  percentage: costResult.total > 0 ? (costResult.inlandFreight / costResult.total) * 100 : 0
-                },
-                {
-                  component: '海运费',
-                  value: costResult.oceanFreight,
-                  perTon: costResult.oceanFreight / input.quantity,
-                  percentage: costResult.total > 0 ? (costResult.oceanFreight / costResult.total) * 100 : 0
-                },
-                {
-                  component: '保险费',
-                  value: costResult.insurance,
-                  perTon: costResult.insurance / input.quantity,
-                  percentage: costResult.total > 0 ? (costResult.insurance / costResult.total) * 100 : 0
-                },
-                {
-                  component: '关税',
-                  value: costResult.tariff,
-                  perTon: costResult.tariff / input.quantity,
-                  percentage: costResult.total > 0 ? (costResult.tariff / costResult.total) * 100 : 0
-                },
-                {
-                  component: 'CBAM碳成本',
-                  value: costResult.cbam,
-                  perTon: costResult.cbam / input.quantity,
-                  percentage: costResult.total > 0 ? (costResult.cbam / costResult.total) * 100 : 0
-                }
-              ]}
-              totalCost={costResult.total}
-              quantity={input.quantity}
-            />
-            <ScenarioComparison
-              baselineCost={costResult.total}
-              scenarios={fxScenarios.filter(s => s.quote_currency === 'CNY')}
-            />
-            <SensitivityChart
-              baseCost={costResult.total}
-              fxScenarios={fxScenarios.filter(s => s.quote_currency === 'CNY')}
-            />
-          </>
-        )}
-
-      </div>
+  const [input, setInput] = useState<CostInput>(initialInput); const [data, setData] = useState<LoadedData | null>(null); const [estimate, setEstimate] = useState<CostEstimate | null>(null); const [loading, setLoading] = useState(true); const [calculating, setCalculating] = useState(false); const [error, setError] = useState<string | null>(null);
+  const loadData = async () => { setLoading(true); setError(null); try { const [forex, shipping, marketQuotes, quota, remedies, internalBusiness, cbam] = await Promise.all([dataProvider.getForexSnapshot(), dataProvider.getShippingIndexSnapshot(), dataProvider.getMarketQuotes(), dataProvider.getTaricQuotaSnapshot(), dataProvider.getTradeRemedySnapshot(), dataProvider.getInternalBusinessSnapshot(), dataProvider.getCbamParameters()]); setData({ forex, shipping, marketQuotes, quota, remedies, internalBusiness, cbam }); } catch (e) { setError(e instanceof Error ? e.message : '成本数据加载失败'); } finally { setLoading(false); } };
+  useEffect(() => { void loadData(); }, []);
+  const indexOptions = useMemo(() => Object.values(DEFAULT_COST_PARAMETERS.shipping_mappings).filter((m) => m.vessel_mode === input.vesselMode), [input.vesselMode]);
+  const product = PRODUCT_DEFINITIONS[input.product]; const regionLabel = input.destinationRegion === 'EU' ? '欧盟' : input.destinationRegion === 'UK' ? '英国' : '其他地区'; const internal = data?.internalBusiness?.by_business_region.find((r) => r.label === regionLabel);
+  const setField = <K extends keyof CostInput>(key: K, value: CostInput[K]) => setInput((current) => ({ ...current, [key]: value }));
+  const update = (key: keyof CostInput, value: string) => { const numeric = ['eurUnitPrice', 'cnyUnitPrice', 'eurBaselineRate', 'cnyBaselineRate', 'cargoValueUsdPerT', 'measuredEmissionTco2PerT', 'thirdCountryPaidCarbonUsdPerT'].includes(key); setField(key, numeric ? Number(value) || 0 : value as never); };
+  useEffect(() => { if (!indexOptions.some((m) => m.code === input.shippingIndexCode)) setField('shippingIndexCode', indexOptions[0]?.code || 'CCFI'); }, [indexOptions, input.shippingIndexCode]);
+  const calculate = () => { if (!data) return; if ([input.eurUnitPrice, input.cnyUnitPrice, input.cargoValueUsdPerT].some((v) => v < 0)) { setError('金额输入不能为负数'); return; } setCalculating(true); setError(null); window.setTimeout(() => { setEstimate(estimateSteelExportCost(input, { forex: data.forex, shipping: data.shipping, marketQuotes: data.marketQuotes, cbam: data.cbam, parameters: DEFAULT_COST_PARAMETERS })); setCalculating(false); }, 160); };
+  if (loading) return <div className="cost-state"><div className="cost-state-pulse" /><h2>正在载入成本口径</h2><p>正在核对汇率、航运指数、CBAM参数与风险事件快照。</p></div>;
+  if (error && !data) return <div className="cost-state"><span className="cost-state-icon">!</span><h2>成本数据暂不可用</h2><p>{error}</p><button className="cost-button" onClick={() => void loadData()}>重新加载</button></div>;
+  return <div className="cost-calculator">
+    <header className="cost-hero"><div><span className="cost-kicker">EXPORT COST / USD PER TON</span><h1>钢材出口附加吨成本</h1><p>只估算出口外部附加成本，不计算钢材货值、购销价差、关税配额或贸易救济税率。</p></div><div className="cost-hero-meta"><span>FOB 为默认基准</span><strong>【理论测算值】</strong><small>结果单位：美元 / 吨</small></div></header>
+    <div className="cost-notice"><span className="cost-notice-mark">i</span><p>汇率损益只描述结算环节变动；港杂、保险和航运均为区间估算。配额与贸易救济独立展示，供业务人工复核，不进入公式数值运算。</p></div>
+    <section className="cost-input-panel"><SectionHeading title="测算条件" text="先确定产品、区域与贸易术语，再补充结算和货值参数。" /><div className="cost-form-grid">
+      <Field label="产品品类" hint={product.cnDisplay}><select value={input.product} onChange={(e) => update('product', e.target.value)}>{products.map((p) => <option key={p.value} value={p.value}>{p.label}</option>)}</select></Field>
+      {input.product === 'automotive-plate' && <Field label="汽车板基材" hint="冲压成品零部件不适用"><select value={input.automotiveBase} onChange={(e) => update('automotiveBase', e.target.value)}><option value="hot-rolled">热轧基材 · 7208</option><option value="cold-rolled">冷轧基材 · 7209</option><option value="coated">镀层基材 · 7210</option></select></Field>}
+      <Field label="目的出口区域" hint={internal ? `内部业务覆盖 ${fmt(internal.volume_t, 0)} 吨 · ${internal.share_pct.toFixed(2)}%` : '仅影响 CBAM 是否适用'}><select value={input.destinationRegion} onChange={(e) => update('destinationRegion', e.target.value)}>{regions.map((r) => <option key={r.value} value={r.value}>{r.label}</option>)}</select></Field>
+      <Field label="贸易术语" hint="FOB / CFR / CIF，不提供 DDP"><select value={input.tradeTerm} onChange={(e) => update('tradeTerm', e.target.value)}>{terms.map((t) => <option key={t.value} value={t.value}>{t.label}</option>)}</select></Field>
+      <Field label="运输方式" hint="集装箱或散货船"><select value={input.vesselMode} onChange={(e) => update('vesselMode', e.target.value)}><option value="container">集装箱运输</option><option value="bulk">散货船运输</option></select></Field>
+      <Field label="公开航运指数" hint="用于运费区间推演"><select value={input.shippingIndexCode} onChange={(e) => update('shippingIndexCode', e.target.value)}>{indexOptions.map((m) => <option key={m.code} value={m.code}>{m.label}</option>)}</select></Field>
     </div>
-  );
+    <div className="cost-subsection"><div className="cost-subsection-title">结算与货值输入 <span>用于汇率损益和 CIF 保险基数，不代表钢材成本</span></div><div className="cost-form-grid cost-form-grid-compact"><Field label="欧元签约单价 · EUR/t"><input type="number" min="0" step=".01" value={input.eurUnitPrice} onChange={(e) => update('eurUnitPrice', e.target.value)} /></Field><Field label="人民币签约单价 · CNY/t"><input type="number" min="0" step=".01" value={input.cnyUnitPrice} onChange={(e) => update('cnyUnitPrice', e.target.value)} /></Field><Field label="EURUSD 基准汇率"><input type="number" min=".0001" step=".0001" value={input.eurBaselineRate} onChange={(e) => update('eurBaselineRate', e.target.value)} /></Field><Field label="USDCNY 基准汇率"><input type="number" min=".0001" step=".0001" value={input.cnyBaselineRate} onChange={(e) => update('cnyBaselineRate', e.target.value)} /></Field><Field label="货值基数 · USD/t" hint="仅用于保险经验区间"><input type="number" min="0" step=".01" value={input.cargoValueUsdPerT} onChange={(e) => update('cargoValueUsdPerT', e.target.value)} /></Field></div></div>
+    <div className="cost-subsection"><div className="cost-subsection-title">CBAM 排放口径 <span>欧盟启用；英国 2027 生效预留；其他地区不适用</span></div><div className="cost-form-grid cost-form-grid-compact"><Field label="排放模式"><select value={input.cbamEmissionMode} onChange={(e) => update('cbamEmissionMode', e.target.value)}><option value="default">中国国别默认值 + 惩罚上浮</option><option value="measured">企业实测值</option></select></Field><Field label="实测排放 · tCO₂/t"><input type="number" min="0" step=".001" value={input.measuredEmissionTco2PerT} onChange={(e) => update('measuredEmissionTco2PerT', e.target.value)} disabled={input.cbamEmissionMode !== 'measured'} /></Field><Field label="第三国已缴碳价 · USD/t"><input type="number" min="0" step=".01" value={input.thirdCountryPaidCarbonUsdPerT} onChange={(e) => update('thirdCountryPaidCarbonUsdPerT', e.target.value)} /></Field></div></div>
+    <button className="cost-button cost-button-primary" onClick={calculate} disabled={calculating}>{calculating ? '正在推演…' : '生成附加成本估算'}</button>{error && <p className="cost-inline-error">{error}</p>}</section>
+    {estimate && <Results estimate={estimate} />}
+    <RiskPanel data={data} />
+    <footer className="cost-footer"><span>汇率：{data?.forex?.source.captured_at || '未加载'} · 航运：{data?.shipping?.source.captured_at || '未加载'} · CBAM：{data?.cbam?.source.captured_at || '平台参数'}</span><span>所有输出均为【理论测算值】，不等于真实业务结算金额。</span></footer>
+  </div>;
 }
+
+function Results({ estimate }: { estimate: CostEstimate }) { return <>
+  <section className="cost-summary-panel"><div className="cost-summary-title"><div><span className="cost-kicker">RESULT / {estimate.tradeTerm}</span><h2>{estimate.product.label} · {estimate.cbam.regionLabel}</h2></div><span className="cost-result-badge">【理论测算值】</span></div><div className="cost-metric-grid"><Metric label={`${estimate.tradeTerm} 附加成本区间`} value={`$ ${rangeText(estimate.summary)}`} detail="美元 / 吨 · 不含货值与价差" tone="accent" /><Metric label="航运指数推演区间" value={estimate.shipping.available ? `$ ${rangeText(estimate.shipping.range)}` : '暂不可用'} detail={estimate.shipping.indexLabel} /><Metric label="CBAM 理论碳成本" value={estimate.cbam.applicable ? `$ ${fmt(estimate.cbam.costUsdPerT)}` : '不适用'} detail={estimate.cbam.status} tone={estimate.cbam.costUsdPerT > 0 ? 'warning' : ''} /></div><div className="cost-summary-lines">{estimate.summaryItems.map((item) => <span key={item}>· {item}</span>)}</div></section>
+  <div className="cost-two-column"><section className="cost-detail-panel"><SectionHeading title="分项附加成本" text="区间优先，只有具备明确口径的项目才进入汇总。" /><div className="cost-detail-list"><Detail label="港杂费" value={`$ ${rangeText(estimate.portHandling)}`} note="FOB / CFR / CIF 均计入 · 行业经验" /><Detail label="海运费" value={estimate.shipping.available ? `$ ${rangeText(estimate.shipping.range)}` : '—'} note={`${estimate.tradeTerm === 'FOB' ? 'FOB 仅展示，不计入汇总' : `${estimate.tradeTerm} 计入汇总`} · ${estimate.shipping.note}`} muted={estimate.tradeTerm === 'FOB'} /><Detail label="保险费" value={`$ ${rangeText(estimate.insurance)}`} note={`${estimate.tradeTerm === 'CIF' ? 'CIF 计入汇总' : `${estimate.tradeTerm} 仅展示，不计入汇总`} · 货值百分比`} muted={estimate.tradeTerm !== 'CIF'} /><Detail label="CBAM 碳成本" value={estimate.cbam.applicable ? `$ ${fmt(estimate.cbam.costUsdPerT)}` : '不适用'} note={estimate.cbam.note} /></div><MethodNote text="港杂、保险是行业经验笼统估算区间，非实际报关港杂或合同金额。航运区间由公开指数映射推演，不等于实际订舱或提单运费。" /></section>
+    <section className="cost-detail-panel"><SectionHeading title="汇率结算损益" text="只追踪结算环节带来的每吨美元变动，不作行情预测。" /><div className="fx-scenario-list">{estimate.fx.map((item) => <div className="fx-scenario" key={item.scenario}><div className="fx-scenario-head"><strong>{item.label}</strong><span className={item.deltaUsdPerT >= 0 ? 'fx-positive' : 'fx-negative'}>{signed(item.deltaUsdPerT)} USD/t</span></div><div className="fx-values"><span>当前 {fmt(item.currentRate, 4)}</span><span>基准 {fmt(item.baselineRate, 4)}</span><span>当前折算 $ {fmt(item.currentUsdPerT)}</span></div><small>{item.sourceLabel} · 基准与当前差额</small></div>)}</div><MethodNote text="欧元场景：欧元金额 × EURUSD；人民币场景：人民币金额 ÷ USDCNY。公开中间价仅用于理论测算。" /></section></div>
+    <section className="cost-detail-panel cost-cbam-panel"><SectionHeading title="CBAM 参数与计算轨迹" text="区域和产品组决定 FAA；配额与贸易救济税率不进入该公式。" /><div className="cost-cbam-grid">{[['适用区域', estimate.cbam.regionLabel], ['产品参数组', estimate.cbam.groupLabel], ['排放口径', estimate.cbam.mode === 'measured' ? '企业实测' : '国别默认 + 惩罚'], ['隐含排放', estimate.cbam.emissionUsed == null ? '—' : `${fmt(estimate.cbam.emissionUsed, 3)} tCO₂/t`], ['FAA 基准', estimate.cbam.faa == null ? '—' : `${fmt(estimate.cbam.faa, 3)} tCO₂/t`], ['证书价格折美元', estimate.cbam.certificatePriceUsd == null ? '—' : `$ ${fmt(estimate.cbam.certificatePriceUsd)}`]].map(([label, value]) => <div key={label}><span>{label}</span><strong>{value}</strong></div>)}</div><div className="cost-formula">{estimate.cbam.formula}</div><p className="cost-footnote">{estimate.cbam.note} 碳成本为理论测算结果，不等于企业实际清缴金额。</p></section>
+  </>; }
+function Detail({ label, value, note, muted = false }: { label: string; value: string; note: string; muted?: boolean }) { return <div className={`cost-detail-row ${muted ? 'cost-detail-muted' : ''}`}><div><strong>{label}</strong><small>{note}</small></div><b>{value}</b></div>; }
+function MethodNote({ text }: { text: string }) { return <div className="cost-method-note"><strong>口径说明</strong><p>{text}</p></div>; }
+function RiskPanel({ data }: { data: LoadedData | null }) { return <section className="cost-risk-panel"><div className="cost-risk-header"><SectionHeading title="独立风险事件" text="仅供人工复核，不参与附加成本数值运算。" /><span className="cost-risk-lock">FORMULA EXCLUDED</span></div><div className="cost-risk-grid"><div className="cost-risk-card"><span>欧盟配额</span><strong>{data?.quota?.eu?.summary.remaining_pct == null ? '—' : `${fmt(data.quota.eu.summary.remaining_pct)}%`}</strong><small>{data?.quota?.eu ? `余额 ${fmt(data.quota.eu.summary.balance_t, 0)} t · ${data.quota.eu.as_of}` : '配额快照未加载'}</small></div><div className="cost-risk-card"><span>英国配额</span><strong>{data?.quota?.uk?.summary.remaining_pct == null ? '—' : `${fmt(data.quota.uk.summary.remaining_pct)}%`}</strong><small>{data?.quota?.uk ? `余额 ${fmt(data.quota.uk.summary.balance_t, 0)} t · ${data.quota.uk.as_of}` : '配额快照未加载'}</small></div><div className="cost-risk-card"><span>贸易救济</span><strong>{data?.remedies?.summary.active_case_count ?? '—'} 起</strong><small>{data?.remedies ? `覆盖 ${data.remedies.summary.country_count} 个国家 · ${data.remedies.source.coverage_end}` : '案件快照未加载'}</small></div></div><p className="cost-footnote">配额使用率和贸易救济案件只作为风险事件清单呈现；不得据此自动叠加到 FOB / CFR / CIF 附加成本。</p></section>; }

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+  <key>Label</key>
+  <string>com.shougang.trade-platform-mysteel-fast-news</string>
+  <key>WorkingDirectory</key>
+  <string>/Users/ken/work/贸易分析平台/platform/data-ingestion</string>
+  <key>ProgramArguments</key>
+  <array>
+    <string>/usr/local/bin/node</string>
+    <string>/Users/ken/work/贸易分析平台/platform/data-ingestion/sync-all.mjs</string>
+    <string>--only=mysteel-fast-news</string>
+    <string>--build</string>
+  </array>
+  <key>StartCalendarInterval</key>
+  <array>
+    <dict><key>Hour</key><integer>8</integer><key>Minute</key><integer>10</integer></dict>
+    <dict><key>Hour</key><integer>9</integer><key>Minute</key><integer>0</integer></dict>
+  </array>
+  <key>RunAtLoad</key>
+  <false/>
+  <key>StandardOutPath</key>
+  <string>/Users/ken/work/贸易分析平台/platform/data-ingestion/mysteel-fast-news.launchd.log</string>
+  <key>StandardErrorPath</key>
+  <string>/Users/ken/work/贸易分析平台/platform/data-ingestion/mysteel-fast-news.launchd.error.log</string>
+</dict>
+</plist>

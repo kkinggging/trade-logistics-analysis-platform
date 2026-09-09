@@ -19,7 +19,7 @@
 .app-content {
   overflow-y: auto;
   overflow-x: hidden;
-  padding: 1.5rem clamp(1.25rem, 4vw, 4.5rem) 4rem;
+  padding: 1.25rem clamp(1.25rem, 4vw, 4.5rem) 4rem;
   background: transparent;
   min-width: 0;
   overscroll-behavior: contain;

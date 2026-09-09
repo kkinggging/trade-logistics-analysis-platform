@@ -10,6 +10,7 @@ type SourceDefinition = {
   kind: 'external' | 'internal';
   dependencies: string[];
   note: string;
+  schedule?: string;
 };
 
 const sourceDefinitions: SourceDefinition[] = [
@@ -19,7 +20,8 @@ const sourceDefinitions: SourceDefinition[] = [
   { id: 'taric-quota-dashboard-public', label: 'EU / UK 关税配额看板', kind: 'external', dependencies: ['综合分析 · 配额图表', '销售方案 · 配额核验闸门', '晨报 · 配额摘要'], note: 'EU / UK 配额余额、Code、国家组与历史快照' },
   { id: 'shipping-index-dashboard-public', label: '航运指数数据看板', kind: 'external', dependencies: ['综合分析 · 航运指数图表', '运输方案 · 物流环境参考', '销售方案 · 运费建议'], note: 'CCFI、SCFI、BSI、BDI、Brent、NYMEX' },
   { id: 'trade-remedy-dashboard-public', label: '出口贸易救济案件看板', kind: 'external', dependencies: ['综合分析 · 贸易救济地图', '综合分析 · 出口条件评估', '销售方案 · 合规风险闸门'], note: '反倾销、反补贴、保障措施、HS 税号与案件阶段' },
-  { id: 'mysteel-fast-news', label: '我的钢铁网行业快讯', kind: 'external', dependencies: ['晨报 · 行业快讯'], note: '快讯正文、发布时间、产品归类与原文链接' },
+  { id: 'mysteel-fast-news', label: '我的钢铁网行业快讯', kind: 'external', dependencies: ['贸易晨报 · 行业快讯'], note: '快讯正文、发布时间、产品归类与原文链接', schedule: '每天 08:10、09:00' },
+  { id: 'tide-global-news', label: '潮汐早报 · Kagi 五板块新闻', kind: 'external', dependencies: ['潮汐早报 · 历史上的今天', '潮汐早报 · 世界新闻', '潮汐早报 · 商业新闻', '潮汐早报 · 科学新闻', '潮汐早报 · 运动新闻'], note: 'Kagi News：历史上的今天、世界、商业、科学、运动；每日抓取标题、正文摘要、发布时间、来源链接与图片', schedule: '每天 09:00' },
   { id: 'internal-business-snapshot', label: '公司内部业务数据', kind: 'internal', dependencies: ['综合分析 · 03 业务关注点', '综合分析 · 04 企业出口结构对照', '销售方案 · 经营节奏参考'], note: '2025全年脱敏出口聚合：月度、目的国、区域、产品、渠道与基地结构' },
 ];
 
@@ -38,9 +40,15 @@ function nextScheduledRun(schedule?: string) {
   const now = new Date();
   const parts = new Intl.DateTimeFormat('en-US', { timeZone: 'Asia/Shanghai', year: 'numeric', month: 'numeric', day: 'numeric', hour: 'numeric', minute: 'numeric', hour12: false }).formatToParts(now);
   const value = (name: string) => Number(parts.find((part) => part.type === name)?.value || 0);
-  const todayRun = new Date(Date.UTC(value('year'), value('month') - 1, value('day'), 10, 0));
-  const nextRun = now < todayRun ? todayRun : new Date(todayRun.getTime() + 24 * 60 * 60 * 1000);
-  return schedule?.includes('每天') ? formatTime(nextRun.toISOString()) : '按部署环境调度';
+  const times = [...(schedule || '').matchAll(/(\d{1,2}):(\d{2})/g)].map((match) => ({ hour: Number(match[1]), minute: Number(match[2]) }));
+  if (!schedule?.includes('每天')) return '按部署环境调度';
+  const candidates = (times.length ? times : [{ hour: 18, minute: 0 }]).map(({ hour, minute }) => {
+    // Date.UTC 接收 UTC 小时；Asia/Shanghai 为固定 UTC+8，因此先换算，
+    // 再交给 formatTime 按上海时区显示，避免把 09:00 误显示成 17:00。
+    return new Date(Date.UTC(value('year'), value('month') - 1, value('day'), hour - 8, minute));
+  });
+  const nextRun = candidates.find((candidate) => candidate > now) || new Date(candidates[0].getTime() + 24 * 60 * 60 * 1000);
+  return formatTime(nextRun.toISOString());
 }
 
 function stateLabel(source: DataSyncSourceStatus | undefined, kind: SourceDefinition['kind']) {
@@ -120,7 +128,7 @@ export function DataHealth() {
                 <div className="health-source-facts">
                   <div><span>最后成功</span><strong>{definition.kind === 'internal' ? formatTime(internalBusiness?.source.captured_at) : formatTime(source?.success_at)}</strong></div>
                   <div><span>覆盖范围</span><strong>{definition.kind === 'internal' ? internalBusiness ? `${internalBusiness.source.coverage_start} 至 ${internalBusiness.source.coverage_end} · ${internalBusiness.summary.record_count.toLocaleString('zh-CN')} 条` : '快照未读取' : formatCoverage(source?.coverage_end)}</strong></div>
-                  <div><span>下次计划</span><strong>{definition.kind === 'internal' ? '按内部快照更新' : nextRun}</strong></div>
+                  <div><span>下次计划</span><strong>{definition.kind === 'internal' ? '按内部快照更新' : nextScheduledRun(definition.schedule || status?.schedule)}</strong></div>
                 </div>
                 {source?.error && <div className="health-source-error"><span>最近异常</span>{source.error}</div>}
                 <div className="health-dependencies"><span>影响模块</span><div>{definition.dependencies.map((dependency) => <span key={dependency}>{dependency}</span>)}</div></div>

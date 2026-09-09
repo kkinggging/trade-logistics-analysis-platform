@@ -13,6 +13,7 @@ import { withRetry, writeFileAtomic } from './retry.mjs';
 
 const here = path.dirname(fileURLToPath(import.meta.url));
 const shouldBuild = process.argv.includes('--build');
+const onlySourceId = process.argv.find((argument) => argument.startsWith('--only='))?.slice('--only='.length) || null;
 const dataDir = path.join(here, '..', 'frontend', 'public', 'data');
 const scheduleConfigFile = path.join(here, 'sync-schedule.json');
 const lockFile = path.join(dataDir, '.sync-all.lock');
@@ -24,7 +25,15 @@ const tasks = [
   ['shipping-index-dashboard-public', '航运指数', 'fetch-shipping-index-dashboard.mjs', 'external_shipping_indices.json'],
   ['trade-remedy-dashboard-public', '贸易救济案件', 'fetch-trade-remedy-dashboard.mjs', 'external_trade_remedy.json'],
   ['mysteel-fast-news', '我的钢铁快讯', 'fetch-mysteel-fast-news.mjs', 'external_fast_news.json'],
+  ['tide-global-news', '潮汐早报 · Kagi 五板块新闻', 'fetch-tide-news.mjs', 'external_tide_news.json'],
+  ['hormuz-special', '霍尔木兹专题', 'fetch-hormuz-special.mjs', 'external_hormuz.json'],
 ];
+const selectedSourceIds = onlySourceId ? new Set(onlySourceId.split(',').map((value) => value.trim()).filter(Boolean)) : null;
+const selectedTasks = selectedSourceIds ? tasks.filter(([sourceId]) => selectedSourceIds.has(sourceId)) : tasks;
+if (onlySourceId && !selectedTasks.length) {
+  console.error(`[sync-all] 未找到来源任务：${onlySourceId}`);
+  process.exitCode = 2;
+}
 
 function runOnce(label, script) {
   return new Promise((resolve) => {
@@ -134,8 +143,8 @@ try {
   const prior = JSON.parse(await fs.readFile(path.join(dataDir, 'data_sync_status.json'), 'utf8'));
   priorStatuses = prior.sources || {};
 } catch { priorStatuses = {}; }
-const statuses = {};
-for (const [sourceId, label, , file] of tasks) {
+const statuses = { ...priorStatuses };
+for (const [sourceId, label, , file] of selectedTasks) {
   try {
     const data = JSON.parse(await fs.readFile(path.join(dataDir, file), 'utf8'));
     const priorStatus = priorStatuses[sourceId];
@@ -157,7 +166,7 @@ if (!locked) {
 } else {
   try {
     await persistStatus();
-    for (const [sourceId, label, script, file] of tasks) {
+    for (const [sourceId, label, script, file] of selectedTasks) {
       const code = await run(label, script, scheduleConfig.task_retry);
       failed += code;
       if (code === 0) {

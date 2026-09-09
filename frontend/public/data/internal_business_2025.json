@@ -11,7 +11,10 @@
     "raw_sha256": "19c49cd2fdc92f875478c89a41807e9ecdfc982a0889c95f6ee83ef11eda1c51",
     "raw_record_count": 12799,
     "aggregation_level": "月度/维度聚合，不含客户明细",
-    "customer_names_retained": false
+    "customer_names_retained": false,
+    "prior_year_source_file": "export_data_sg_fake_new.xlsx",
+    "prior_year_coverage_start": "2024-01",
+    "prior_year_coverage_end": "2024-12"
   },
   "summary": {
     "record_count": 12799,
@@ -34,10 +37,11 @@
       "actual_volume_t": 186735.424,
       "record_count": 1278,
       "actual_growth_pct": null,
-      "target_volume_t": 186735.424,
+      "target_volume_t": 150416.732,
       "target_growth_pct": null,
-      "target_gap_t": 0.0,
-      "actual_growth_met": null
+      "target_gap_t": -36318.692,
+      "actual_growth_met": true,
+      "prior_year_volume_t": 160216.297
     },
     {
       "month": "2025-02",
@@ -45,10 +49,11 @@
       "actual_volume_t": 152517.057,
       "record_count": 907,
       "actual_growth_pct": -18.32,
-      "target_volume_t": 188602.778,
-      "target_growth_pct": 1.0,
-      "target_gap_t": 36085.721,
-      "actual_growth_met": false
+      "target_volume_t": 143620.579,
+      "target_growth_pct": null,
+      "target_gap_t": -8896.478,
+      "actual_growth_met": true,
+      "prior_year_volume_t": 133685.876
     },
     {
       "month": "2025-03",
@@ -56,10 +61,11 @@
       "actual_volume_t": 246610.294,
       "record_count": 1545,
       "actual_growth_pct": 61.69,
-      "target_volume_t": 154042.228,
-      "target_growth_pct": 1.0,
-      "target_gap_t": -92568.066,
-      "actual_growth_met": true
+      "target_volume_t": 143722.753,
+      "target_growth_pct": null,
+      "target_gap_t": -102887.541,
+      "actual_growth_met": true,
+      "prior_year_volume_t": 134084.737
     },
     {
       "month": "2025-04",
@@ -67,10 +73,11 @@
       "actual_volume_t": 146799.133,
       "record_count": 883,
       "actual_growth_pct": -40.47,
-      "target_volume_t": 249076.397,
-      "target_growth_pct": 1.0,
-      "target_gap_t": 102277.264,
-      "actual_growth_met": false
+      "target_volume_t": 147682.057,
+      "target_growth_pct": null,
+      "target_gap_t": 882.924,
+      "actual_growth_met": false,
+      "prior_year_volume_t": 149540.831
     },
     {
       "month": "2025-05",
@@ -78,10 +85,11 @@
       "actual_volume_t": 154653.946,
       "record_count": 889,
       "actual_growth_pct": 5.35,
-      "target_volume_t": 148267.124,
-      "target_growth_pct": 1.0,
-      "target_gap_t": -6386.822,
-      "actual_growth_met": true
+      "target_volume_t": 146272.71,
+      "target_growth_pct": null,
+      "target_gap_t": -8381.236,
+      "actual_growth_met": true,
+      "prior_year_volume_t": 144039.108
     },
     {
       "month": "2025-06",
@@ -89,10 +97,11 @@
       "actual_volume_t": 243603.673,
       "record_count": 1464,
       "actual_growth_pct": 57.52,
-      "target_volume_t": 156200.485,
-      "target_growth_pct": 1.0,
-      "target_gap_t": -87403.188,
-      "actual_growth_met": true
+      "target_volume_t": 144319.886,
+      "target_growth_pct": null,
+      "target_gap_t": -99283.787,
+      "actual_growth_met": true,
+      "prior_year_volume_t": 136415.789
     },
     {
       "month": "2025-07",
@@ -100,10 +109,11 @@
       "actual_volume_t": 100829.959,
       "record_count": 777,
       "actual_growth_pct": -58.61,
-      "target_volume_t": 246039.71,
-      "target_growth_pct": 1.0,
-      "target_gap_t": 145209.751,
-      "actual_growth_met": false
+      "target_volume_t": 139521.088,
+      "target_growth_pct": null,
+      "target_gap_t": 38691.129,
+      "actual_growth_met": false,
+      "prior_year_volume_t": 117682.522
     },
     {
       "month": "2025-08",
@@ -111,10 +121,11 @@
       "actual_volume_t": 146218.197,
       "record_count": 897,
       "actual_growth_pct": 45.01,
-      "target_volume_t": 101838.259,
-      "target_growth_pct": 1.0,
-      "target_gap_t": -44379.938,
-      "actual_growth_met": true
+      "target_volume_t": 142937.924,
+      "target_growth_pct": null,
+      "target_gap_t": -3280.273,
+      "actual_growth_met": true,
+      "prior_year_volume_t": 131020.965
     },
     {
       "month": "2025-09",
@@ -122,10 +133,11 @@
       "actual_volume_t": 165338.482,
       "record_count": 1403,
       "actual_growth_pct": 13.08,
-      "target_volume_t": 147680.379,
-      "target_growth_pct": 1.0,
-      "target_gap_t": -17658.103,
-      "actual_growth_met": true
+      "target_volume_t": 152706.445,
+      "target_growth_pct": null,
+      "target_gap_t": -12632.037,
+      "actual_growth_met": true,
+      "prior_year_volume_t": 169154.744
     },
     {
       "month": "2025-10",
@@ -133,10 +145,11 @@
       "actual_volume_t": 139392.474,
       "record_count": 1348,
       "actual_growth_pct": -15.69,
-      "target_volume_t": 166991.867,
-      "target_growth_pct": 1.0,
-      "target_gap_t": 27599.393,
-      "actual_growth_met": false
+      "target_volume_t": 149034.331,
+      "target_growth_pct": null,
+      "target_gap_t": 9641.857,
+      "actual_growth_met": false,
+      "prior_year_volume_t": 154819.762
     },
     {
       "month": "2025-11",
@@ -144,10 +157,11 @@
       "actual_volume_t": 117895.211,
       "record_count": 756,
       "actual_growth_pct": -15.42,
-      "target_volume_t": 140786.399,
-      "target_growth_pct": 1.0,
-      "target_gap_t": 22891.188,
-      "actual_growth_met": false
+      "target_volume_t": 147352.93,
+      "target_growth_pct": null,
+      "target_gap_t": 29457.719,
+      "actual_growth_met": false,
+      "prior_year_volume_t": 148256.00699999998
     },
     {
       "month": "2025-12",
@@ -155,10 +169,11 @@
       "actual_volume_t": 124605.402,
       "record_count": 652,
       "actual_growth_pct": 5.69,
-      "target_volume_t": 119074.163,
-      "target_growth_pct": 1.0,
-      "target_gap_t": -5531.239,
-      "actual_growth_met": true
+      "target_volume_t": 142412.565,
+      "target_growth_pct": null,
+      "target_gap_t": 17807.163,
+      "actual_growth_met": false,
+      "prior_year_volume_t": 128970.094
     }
   ],
   "by_region": [
@@ -1471,9 +1486,29 @@
     ]
   },
   "business_assumptions": {
-    "target_growth_pct": 1.0,
-    "target_definition": "自2025年2月起，以前一月实际出口量×1.01作为月度增长目标；2025年1月仅作实际基线",
+    "target_growth_pct": null,
+    "annual_target_volume_t": 1750000,
+    "target_definition": "以2024年12个月结算量提取季节性权重（25%）并与均衡月度分配（75%）混合，将2025年度目标设为175万吨；目标仅用于计划对比，不修改2025实际出口量。",
+    "target_formula": "目标月量 = 1750000 ×（0.25 × 2024月量/2024全年量 + 0.75/12）",
     "actual_and_target_separated": true,
-    "note": "增长目标线是业务期望，不是对原始实际量的修改"
+    "note": "2025实际出口量来自部门脱敏业务明细；目标基于2024全年结算数据建立，实际与目标严格分列。"
+  },
+  "prior_year_summary": {
+    "year": 2024,
+    "total_volume_t": 1707886.732,
+    "monthly_volume_t": [
+      160216.297,
+      133685.876,
+      134084.737,
+      149540.831,
+      144039.108,
+      136415.789,
+      117682.522,
+      131020.965,
+      169154.744,
+      154819.762,
+      148256.007,
+      128970.094
+    ]
   }
 }

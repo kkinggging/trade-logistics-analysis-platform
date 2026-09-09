@@ -1,0 +1,46 @@
+{
+  "source_id": "tide-global-news",
+  "name": "潮汐早报 · Kagi News 五板块",
+  "schedule": "每天 09:00（Asia/Shanghai）",
+  "timezone": "Asia/Shanghai",
+  "window_hours": 24,
+  "per_category_limit": 8,
+  "categories": [
+    {
+      "id": "onthisday",
+      "label": "历史上的今天",
+      "url": "https://news.kagi.com/onthisday/latest",
+      "rss": "https://news.kagi.com/onthisday.xml"
+    },
+    {
+      "id": "world",
+      "label": "世界",
+      "url": "https://news.kagi.com/world/latest",
+      "rss": "https://news.kagi.com/world.xml"
+    },
+    {
+      "id": "business",
+      "label": "商业",
+      "url": "https://news.kagi.com/business/latest",
+      "rss": "https://news.kagi.com/business.xml"
+    },
+    {
+      "id": "science",
+      "label": "科学",
+      "url": "https://news.kagi.com/science/latest",
+      "rss": "https://news.kagi.com/science.xml"
+    },
+    {
+      "id": "sports",
+      "label": "运动",
+      "url": "https://news.kagi.com/sports/latest",
+      "rss": "https://news.kagi.com/sports.xml"
+    }
+  ],
+  "retry": {
+    "attempts": 2,
+    "timeoutMs": 30000,
+    "baseDelayMs": 2000,
+    "maxDelayMs": 10000
+  }
+}

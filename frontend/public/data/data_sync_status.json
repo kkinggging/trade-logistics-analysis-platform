@@ -91,6 +91,29 @@
         "baseDelayMs": 3000,
         "maxDelayMs": 15000
       }
+    },
+    "tide-global-news": {
+      "source_id": "tide-global-news",
+      "state": "unavailable",
+      "attempted_at": "2026-09-06T17:43:33.879Z",
+      "success_at": null,
+      "snapshot_captured_at": null,
+      "coverage_end": null,
+      "error": "本次抓取失败，当前没有可用历史快照"
+    },
+    "hormuz-special": {
+      "source_id": "hormuz-special",
+      "state": "fresh",
+      "attempted_at": "2026-09-06T17:43:33.879Z",
+      "success_at": "2026-09-06T17:45:09.278Z",
+      "snapshot_captured_at": "2026-09-06T17:45:09.250Z",
+      "coverage_end": "2026-09-06",
+      "retry": {
+        "attempts": 2,
+        "timeoutMs": 180000,
+        "baseDelayMs": 3000,
+        "maxDelayMs": 15000
+      }
     }
   }
 }

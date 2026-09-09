@@ -1,0 +1,42 @@
+{
+  "schema_version": "1.0",
+  "source": {
+    "source_id": "internal-cbam-parameter-snapshot",
+    "name": "欧盟 CBAM / 英国 UK-CBAM 参数快照",
+    "captured_at": "2026-09-07T00:00:00+08:00",
+    "parameter_status": "internal_parameter",
+    "note": "FAA、默认排放因子和惩罚系数是平台参数位；接入官方参数表后替换，不代表企业实际清缴金额。"
+  },
+  "regions": {
+    "EU": {
+      "region": "EU",
+      "label": "欧盟 CBAM",
+      "effective_date": "2026-01-01",
+      "certificate_currency": "EUR",
+      "certificate_price_fallback": 90,
+      "certificate_price_unit": "EUR/tCO2",
+      "third_country_credit_default_usd_per_t": 0,
+      "groups": {
+        "hot_flat": { "label": "热轧扁平材组", "faa_tco2_per_t": 1.328, "default_emission_factor_tco2_per_t": 2.1, "default_penalty_factor": 1.1 },
+        "coated_flat": { "label": "涂层/镀层扁平材组", "faa_tco2_per_t": 1.475, "default_emission_factor_tco2_per_t": 2.25, "default_penalty_factor": 1.1 },
+        "electrical_steel": { "label": "电工钢独立组", "faa_tco2_per_t": 1.55, "default_emission_factor_tco2_per_t": 2.35, "default_penalty_factor": 1.1 }
+      },
+      "note": "碳证书价格优先读取平台 CARBON_EUA 快照；FAA 与排放因子为待官方参数导入的内部配置。"
+    },
+    "UK": {
+      "region": "UK",
+      "label": "英国 UK-CBAM",
+      "effective_date": "2027-01-01",
+      "certificate_currency": "GBP",
+      "certificate_price_fallback": null,
+      "certificate_price_unit": "GBP/tCO2",
+      "third_country_credit_default_usd_per_t": 0,
+      "groups": {
+        "hot_flat": { "label": "热轧扁平材组", "faa_tco2_per_t": 1.328, "default_emission_factor_tco2_per_t": 2.1, "default_penalty_factor": 1.1 },
+        "coated_flat": { "label": "涂层/镀层扁平材组", "faa_tco2_per_t": 1.475, "default_emission_factor_tco2_per_t": 2.25, "default_penalty_factor": 1.1 },
+        "electrical_steel": { "label": "电工钢独立组", "faa_tco2_per_t": 1.55, "default_emission_factor_tco2_per_t": 2.35, "default_penalty_factor": 1.1 }
+      },
+      "note": "英国 CBAM 预计 2027 生效；当前参数仅作接口和计算预留，未计入本期汇总。"
+    }
+  }
+}

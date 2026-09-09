@@ -11,6 +11,8 @@ import {
   FxScenario,
   ShippingOption,
   ShippingIndexSnapshot,
+  TradeRemedySnapshot,
+  TradeRemedyCase,
   InternalBusinessSnapshot,
 } from '@/core/store/types';
 
@@ -27,6 +29,7 @@ export interface StrategyDataInputs {
   fxScenarios?: FxScenario[];
   shippingOptions?: ShippingOption[];
   shippingIndices?: ShippingIndexSnapshot | null;
+  tradeRemedy?: TradeRemedySnapshot | null;
   internalBusiness?: InternalBusinessSnapshot | null;
 }
 
@@ -67,8 +70,9 @@ const latest = (rows: MarketQuote[], predicate: (row: MarketQuote) => boolean) =
   const sorted = [...rows].filter(predicate).sort((a, b) => `${a.date}${a.publish_time}`.localeCompare(`${b.date}${b.publish_time}`));
   return sorted[sorted.length - 1];
 };
-const pct = (value: number | null | undefined) => value == null ? '—' : `${value >= 0 ? '+' : ''}${value.toFixed(1)}%`;
-const tons = (value: number | null | undefined) => value == null ? '—' : `${value.toLocaleString('zh-CN', { maximumFractionDigits: 0 })} 吨`;
+const fixed = (value: number | null | undefined, digits = 1) => value == null || !Number.isFinite(value) ? '—' : value.toFixed(digits);
+const pct = (value: number | null | undefined) => value == null || !Number.isFinite(value) ? '—' : `${value >= 0 ? '+' : ''}${fixed(value, 1)}%`;
+const tons = (value: number | null | undefined) => value == null || !Number.isFinite(value) ? '—' : `${value.toLocaleString('zh-CN', { maximumFractionDigits: 0 })} 吨`;
 const hashText = (value: string | { eu: string; uk: string } | undefined) => {
   if (!value) return null;
   if (typeof value === 'string') return value.slice(0, 12);
@@ -94,7 +98,13 @@ function metaForLocal(input: StrategyDataInputs, source: string, asOf: string[])
 }
 
 function hasDegradedSource(input: StrategyDataInputs) {
-  return Object.values(input.syncStatus?.sources || {}).some((source) => source.state === 'fallback' || source.state === 'unavailable');
+  return !input.syncStatus || Object.values(input.syncStatus.sources || {}).some((source) => source.state === 'fallback' || source.state === 'unavailable');
+}
+
+function isActiveTradeRemedy(caseItem: TradeRemedyCase) {
+  // 与贸易救济抓取适配器及晨报使用同一状态口径：
+  // 只有源站明确标记“终止/撤销”的案件才从当前活动集合排除。
+  return !/终止|撤销/.test(String(caseItem.case_state));
 }
 
 function buildAdvice(input: StrategyDataInputs): DataDrivenAdvice[] {
@@ -111,44 +121,44 @@ function buildAdvice(input: StrategyDataInputs): DataDrivenAdvice[] {
     const eur = input.forex.risk.EUR;
     const cny = input.forex.risk.CNY;
     const selected = eur.score_conservative != null && cny.score_conservative != null && eur.score_conservative >= cny.score_conservative ? 'EUR' : 'CNY';
-    advice.push({ id: 'fx-terms', ruleId: 'FX-TERM-001', category: '汇率', priority: '高', title: '签约币种建议', recommendation: `保守评分下优先把 ${selected} 作为重点报价币种候选；最终签约前按账期回测和客户接受度复核，不自动替代人工决策。`, evidence: [`EUR 相对收益 ${pct(eur.current_relative_yield_pct)}，保守评分 ${eur.score_conservative?.toFixed(2) ?? '—'}`, `CNY 相对收益 ${pct(cny.current_relative_yield_pct)}，保守评分 ${cny.score_conservative?.toFixed(2) ?? '—'}`, `${input.forex.source.coverage_start} 至 ${input.forex.source.coverage_end} 的历史统计`], sourceLabels: ['外汇汇率看板'], asOf: [input.forex.source.coverage_end], evidenceMeta: [evidenceMeta(input, 'forex-dashboard-public', '外汇汇率看板', input.forex.source.captured_at, hashText(input.forex.source.raw_sha256), input.forex.source.coverage_end)] });
+    advice.push({ id: 'fx-terms', ruleId: 'FX-TERM-001', category: '汇率', priority: '高', title: '签约币种建议', recommendation: `保守评分下优先把 ${selected} 作为重点报价币种候选；最终签约前按账期回测和客户接受度复核，不自动替代人工决策。`, evidence: [`EUR 相对收益 ${pct(eur.current_relative_yield_pct)}，保守评分 ${fixed(eur.score_conservative, 2)}`, `CNY 相对收益 ${pct(cny.current_relative_yield_pct)}，保守评分 ${fixed(cny.score_conservative, 2)}`, `${input.forex.source.coverage_start} 至 ${input.forex.source.coverage_end} 的历史统计`], sourceLabels: ['外汇汇率看板'], asOf: [input.forex.source.coverage_end], evidenceMeta: [evidenceMeta(input, 'forex-dashboard-public', '外汇汇率看板', input.forex.source.captured_at, hashText(input.forex.source.raw_sha256), input.forex.source.coverage_end)] });
   }
 
   if (eu) {
     const summary = eu.summary;
     if (summary.remaining_pct != null && (summary.remaining_pct <= 30 || summary.exhausted_count > 0)) {
       const tightest = [...eu.rows].sort((a, b) => ((a.balance_t || 0) / (a.initial_amount_t || 1)) - ((b.balance_t || 0) / (b.initial_amount_t || 1)))[0];
-      advice.push({ id: 'eu-quota', ruleId: 'QUOTA-EU-001', category: '配额', priority: '高', title: 'EU 配额紧张，报价先核配额', recommendation: 'EU 订单报价前先校验对应 Code 的可用余额和临界状态；对余额不足或已耗尽 Code 暂缓承诺免税配额，转人工核验替代路径。', evidence: [`EU 总剩余比例 ${summary.remaining_pct.toFixed(1)}%，已耗尽 ${summary.exhausted_count} 个 Code`, tightest ? `最低余额 Code ${tightest.code}：${tightest.code} 余额 ${tons(tightest.balance_t)}，剩余比例 ${((tightest.balance_t || 0) / (tightest.initial_amount_t || 1) * 100).toFixed(1)}%` : '未找到可比较 Code', `快照日期 ${eu.as_of}`], sourceLabels: ['EU TARIC 关税配额 CSV'], asOf: [eu.as_of], evidenceMeta: [evidenceMeta(input, 'taric-quota-dashboard-public', 'EU TARIC 关税配额 CSV', input.taricQuota?.source.captured_at || null, hashText(input.taricQuota?.source.raw_sha256), eu.as_of)] });
+      advice.push({ id: 'eu-quota', ruleId: 'QUOTA-EU-001', category: '配额', priority: '高', title: 'EU 配额紧张，报价先核配额', recommendation: 'EU 订单报价前先校验对应 Code 的可用余额和临界状态；对余额不足或已耗尽 Code 暂缓承诺免税配额，转人工核验替代路径。', evidence: [`EU 总剩余比例 ${fixed(summary.remaining_pct)}%，已耗尽 ${summary.exhausted_count} 个 Code`, tightest ? `最低余额 Code ${tightest.code}：${tightest.code} 余额 ${tons(tightest.balance_t)}，剩余比例 ${fixed((tightest.balance_t || 0) / (tightest.initial_amount_t || 1) * 100)}%` : '未找到可比较 Code', `快照日期 ${eu.as_of}`], sourceLabels: ['EU TARIC 关税配额 CSV'], asOf: [eu.as_of], evidenceMeta: [evidenceMeta(input, 'taric-quota-dashboard-public', 'EU TARIC 关税配额 CSV', input.taricQuota?.source.captured_at || null, hashText(input.taricQuota?.source.raw_sha256), eu.as_of)] });
     } else {
-      advice.push({ id: 'eu-quota-monitor', ruleId: 'QUOTA-EU-002', category: '配额', priority: '低', title: 'EU 配额保持跟踪', recommendation: '当前总余额尚未触发紧张阈值，报价仍需按具体 Code 和原产地逐单核验。', evidence: [`EU 总剩余比例 ${summary.remaining_pct?.toFixed(1) ?? '—'}%`, `快照日期 ${eu.as_of}`], sourceLabels: ['EU TARIC 关税配额 CSV'], asOf: [eu.as_of], evidenceMeta: [evidenceMeta(input, 'taric-quota-dashboard-public', 'EU TARIC 关税配额 CSV', input.taricQuota?.source.captured_at || null, hashText(input.taricQuota?.source.raw_sha256), eu.as_of)] });
+      advice.push({ id: 'eu-quota-monitor', ruleId: 'QUOTA-EU-002', category: '配额', priority: '低', title: 'EU 配额保持跟踪', recommendation: '当前总余额尚未触发紧张阈值，报价仍需按具体 Code 和原产地逐单核验。', evidence: [`EU 总剩余比例 ${fixed(summary.remaining_pct)}%`, `快照日期 ${eu.as_of}`], sourceLabels: ['EU TARIC 关税配额 CSV'], asOf: [eu.as_of], evidenceMeta: [evidenceMeta(input, 'taric-quota-dashboard-public', 'EU TARIC 关税配额 CSV', input.taricQuota?.source.captured_at || null, hashText(input.taricQuota?.source.raw_sha256), eu.as_of)] });
     }
   }
 
   if (uk) {
     const summary = uk.summary;
-    advice.push({ id: 'uk-quota', ruleId: 'QUOTA-UK-001', category: '配额', priority: summary.remaining_pct != null && summary.remaining_pct < 30 ? '高' : '中', title: 'UK 配额独立核验', recommendation: `UK 当前状态为 ${uk.rows[0]?.status || '未知'}，报价前单独校验订单号、适用 HS 编码和剩余余额；不得用 EU 配额余额替代 UK 口径。`, evidence: [`订单 ${uk.rows[0]?.order_number || '—'}，余额 ${tons(summary.balance_t)}`, `剩余比例 ${summary.remaining_pct?.toFixed(1) ?? '—'}%，适用期 ${uk.rows[0]?.period || '—'}`, `快照日期 ${uk.as_of}`], sourceLabels: ['UK 关税配额 CSV'], asOf: [uk.as_of], evidenceMeta: [evidenceMeta(input, 'taric-quota-dashboard-public', 'UK 关税配额 CSV', input.taricQuota?.source.captured_at || null, hashText(input.taricQuota?.source.raw_sha256), uk.as_of)] });
+    advice.push({ id: 'uk-quota', ruleId: 'QUOTA-UK-001', category: '配额', priority: summary.remaining_pct != null && summary.remaining_pct < 30 ? '高' : '中', title: 'UK 配额独立核验', recommendation: `UK 当前状态为 ${uk.rows[0]?.status || '未知'}，报价前单独校验订单号、适用 HS 编码和剩余余额；不得用 EU 配额余额替代 UK 口径。`, evidence: [`订单 ${uk.rows[0]?.order_number || '—'}，余额 ${tons(summary.balance_t)}`, `剩余比例 ${fixed(summary.remaining_pct)}%，适用期 ${uk.rows[0]?.period || '—'}`, `快照日期 ${uk.as_of}`], sourceLabels: ['UK 关税配额 CSV'], asOf: [uk.as_of], evidenceMeta: [evidenceMeta(input, 'taric-quota-dashboard-public', 'UK 关税配额 CSV', input.taricQuota?.source.captured_at || null, hashText(input.taricQuota?.source.raw_sha256), uk.as_of)] });
   }
 
   if (input.steelExport) {
     const view = input.steelExport.default_view;
     const top = view.partner[0];
     const concentration = input.steelExport.concentration;
-    advice.push({ id: 'export-market', ruleId: 'EXPORT-MARKET-001', category: '市场', priority: '中', title: '贸易伙伴市场配置', recommendation: top ? `优先把 ${top.name || top.label} 作为现有需求验证市场，同时结合伙伴集中度 ${concentration.cr5_pct.toFixed(1)}% 控制单一市场依赖；新增市场需先做客户和合规核验。` : '当前贸易伙伴数据不足，暂不输出市场扩张方向。', evidence: [`覆盖 ${input.steelExport.source.coverage_start} 至 ${input.steelExport.source.coverage_end}`, `贸易伙伴 ${concentration.partner_count} 个，CR5 ${concentration.cr5_pct.toFixed(1)}%`, top ? `累计出口量最高伙伴：${top.name || top.label}，${tons(top.qty_t)}` : '无 Top 伙伴数据'], sourceLabels: ['中国海关钢材出口看板'], asOf: [input.steelExport.source.coverage_end], evidenceMeta: [evidenceMeta(input, 'steel-export-dashboard-public', '中国海关钢材出口看板', input.steelExport.source.captured_at, hashText(input.steelExport.source.raw_sha256), input.steelExport.source.coverage_end)] });
+    advice.push({ id: 'export-market', ruleId: 'EXPORT-MARKET-001', category: '市场', priority: '中', title: '贸易伙伴市场配置', recommendation: top ? `优先把 ${top.name || top.label} 作为现有需求验证市场，同时结合伙伴集中度 ${fixed(concentration.cr5_pct)}% 控制单一市场依赖；新增市场需先做客户和合规核验。` : '当前贸易伙伴数据不足，暂不输出市场扩张方向。', evidence: [`覆盖 ${input.steelExport.source.coverage_start} 至 ${input.steelExport.source.coverage_end}`, `贸易伙伴 ${concentration.partner_count} 个，CR5 ${fixed(concentration.cr5_pct)}%`, top ? `累计出口量最高伙伴：${top.name || top.label}，${tons(top.qty_t)}` : '无 Top 伙伴数据'], sourceLabels: ['中国海关钢材出口看板'], asOf: [input.steelExport.source.coverage_end], evidenceMeta: [evidenceMeta(input, 'steel-export-dashboard-public', '中国海关钢材出口看板', input.steelExport.source.captured_at, hashText(input.steelExport.source.raw_sha256), input.steelExport.source.coverage_end)] });
   }
 
   if (freight?.baseline != null && freight.value > freight.baseline) {
     const change = (freight.value / freight.baseline - 1) * 100;
-    advice.push({ id: 'freight', ruleId: 'FREIGHT-001', category: '物流', priority: change >= 30 ? '高' : '中', title: '运费变化下的发运节奏', recommendation: change >= 30 ? '优先锁定交期刚性的高价值订单，非紧急订单先复核客户交期与替代航线，不直接承诺延迟。' : '运费高于基线，报价中应复核运费有效期并同步运输方案。', evidence: [`${freight.indicator_name} ${freight.value.toFixed(2)} ${freight.unit}`, `较基线 ${pct(change)}`, `数据日期 ${dateOf(freight.date)}`], sourceLabels: [freight.source], asOf: [dateOf(freight.date)], evidenceMeta: [metaForLocal(input, freight.source, [dateOf(freight.date)])] });
+    advice.push({ id: 'freight', ruleId: 'FREIGHT-001', category: '物流', priority: change >= 30 ? '高' : '中', title: '运费变化下的发运节奏', recommendation: change >= 30 ? '优先锁定交期刚性的高价值订单，非紧急订单先复核客户交期与替代航线，不直接承诺延迟。' : '运费高于基线，报价中应复核运费有效期并同步运输方案。', evidence: [`${freight.indicator_name} ${fixed(freight.value, 2)} ${freight.unit}`, `较基线 ${pct(change)}`, `数据日期 ${dateOf(freight.date)}`], sourceLabels: [freight.source], asOf: [dateOf(freight.date)], evidenceMeta: [metaForLocal(input, freight.source, [dateOf(freight.date)])] });
   }
 
   if (shippingIndex?.latest) {
     const change = shippingIndex.latest.changeRatePct;
-    advice.push({ id: 'shipping-index', ruleId: 'SHIPPING-INDEX-001', category: '物流', priority: change != null && Math.abs(change) >= 2 ? '高' : '中', title: '航运指数纳入发运节奏', recommendation: change != null && change >= 2 ? '干散货/船运市场近期走强，报价和交期应缩短运费有效期，并优先核对已筛选路线的舱位与 ETA。' : change != null && change <= -2 ? '航运指数近期回落，可在满足交期的前提下比较替代船期，但仍需以实际舱位和运输方案为准。' : '航运指数变化未形成明显方向，运输方案按实际运费、舱位、ETA 和路线约束核定。', evidence: [`${shippingIndex.label} ${shippingIndex.latest.value.toFixed(2)} ${shippingIndex.unit}`, `最新变化 ${change == null ? '—' : `${change >= 0 ? '+' : ''}${change.toFixed(2)}%`} · ${shippingIndex.latest.date}`, '指数只反映市场环境，不替代具体船期或舱位'], sourceLabels: ['航运指数数据看板'], asOf: [shippingIndex.latest.date], evidenceMeta: [evidenceMeta(input, 'shipping-index-dashboard-public', '航运指数数据看板', input.shippingIndices?.source.captured_at || null, Object.values(input.shippingIndices?.source.raw_sha256 || {})[0] || null, input.shippingIndices?.source.coverage_end || null)] });
+    advice.push({ id: 'shipping-index', ruleId: 'SHIPPING-INDEX-001', category: '物流', priority: change != null && Math.abs(change) >= 2 ? '高' : '中', title: '航运指数纳入发运节奏', recommendation: change != null && change >= 2 ? '干散货/船运市场近期走强，报价和交期应缩短运费有效期，并优先核对已筛选路线的舱位与 ETA。' : change != null && change <= -2 ? '航运指数近期回落，可在满足交期的前提下比较替代船期，但仍需以实际舱位和运输方案为准。' : '航运指数变化未形成明显方向，运输方案按实际运费、舱位、ETA 和路线约束核定。', evidence: [`${shippingIndex.label} ${fixed(shippingIndex.latest.value, 2)} ${shippingIndex.unit}`, `最新变化 ${change == null ? '—' : `${change >= 0 ? '+' : ''}${fixed(change, 2)}%`} · ${shippingIndex.latest.date}`, '指数只反映市场环境，不替代具体船期或舱位'], sourceLabels: ['航运指数数据看板'], asOf: [shippingIndex.latest.date], evidenceMeta: [evidenceMeta(input, 'shipping-index-dashboard-public', '航运指数数据看板', input.shippingIndices?.source.captured_at || null, Object.values(input.shippingIndices?.source.raw_sha256 || {})[0] || null, input.shippingIndices?.source.coverage_end || null)] });
   }
 
   if (steel?.baseline != null) {
     const change = (steel.value / steel.baseline - 1) * 100;
-    advice.push({ id: 'steel-price', ruleId: 'STEEL-PRICE-001', category: '定价', priority: Math.abs(change) >= 8 ? '高' : '中', title: '钢价报价复核', recommendation: change >= 8 ? '对新询盘优先采用短有效期报价，并在成交前复核成本和汇率；不直接套用固定加价比例。' : change <= -8 ? '下跌环境下保留报价弹性，先核实成本底线和客户需求，再决定让价幅度。' : '钢价变化未触发明显阈值，报价按成本、汇率和客户条件综合核定。', evidence: [`${steel.indicator_name} ${steel.value.toFixed(2)} ${steel.unit}`, `较基线 ${pct(change)}`, `数据日期 ${dateOf(steel.date)}`], sourceLabels: [steel.source], asOf: [dateOf(steel.date)], evidenceMeta: [metaForLocal(input, steel.source, [dateOf(steel.date)])] });
+    advice.push({ id: 'steel-price', ruleId: 'STEEL-PRICE-001', category: '定价', priority: Math.abs(change) >= 8 ? '高' : '中', title: '钢价报价复核', recommendation: change >= 8 ? '对新询盘优先采用短有效期报价，并在成交前复核成本和汇率；不直接套用固定加价比例。' : change <= -8 ? '下跌环境下保留报价弹性，先核实成本底线和客户需求，再决定让价幅度。' : '钢价变化未触发明显阈值，报价按成本、汇率和客户条件综合核定。', evidence: [`${steel.indicator_name} ${fixed(steel.value, 2)} ${steel.unit}`, `较基线 ${pct(change)}`, `数据日期 ${dateOf(steel.date)}`], sourceLabels: [steel.source], asOf: [dateOf(steel.date)], evidenceMeta: [metaForLocal(input, steel.source, [dateOf(steel.date)])] });
   }
 
   const latestCosts = input.costs ? [...input.costs].sort((a, b) => a.effective_date.localeCompare(b.effective_date)) : [];
@@ -156,7 +166,7 @@ function buildAdvice(input: StrategyDataInputs): DataDrivenAdvice[] {
     const latestDate = latestCosts[latestCosts.length - 1].effective_date;
     const sameScenario = latestCosts.filter((item) => item.effective_date === latestDate);
     const average = sameScenario.reduce((sum, item) => sum + item.value_per_ton, 0) / sameScenario.length;
-    advice.push({ id: 'cost-floor', ruleId: 'COST-FLOOR-001', category: '定价', priority: '中', title: '报价先锁定成本底线', recommendation: `当前最新成本场景均值为 ${average.toFixed(2)} ${sameScenario[0].currency}/吨；报价需以最新成本分项、贸易术语和目的地复核毛利底线，不直接沿用历史报价。`, evidence: [`最新成本日期 ${latestDate}`, `纳入 ${sameScenario.length} 个成本分项，均值 ${average.toFixed(2)} ${sameScenario[0].currency}/吨`, `场景 ${sameScenario[0].origin} → ${sameScenario[0].destination} · ${sameScenario[0].trade_term}`], sourceLabels: [...new Set(sameScenario.map((item) => item.source))], asOf: [latestDate], evidenceMeta: [metaForLocal(input, '产品成本快照', [latestDate])] });
+    advice.push({ id: 'cost-floor', ruleId: 'COST-FLOOR-001', category: '定价', priority: '中', title: '报价先锁定成本底线', recommendation: `当前最新成本场景均值为 ${fixed(average, 2)} ${sameScenario[0].currency}/吨；报价需以最新成本分项、贸易术语和目的地复核毛利底线，不直接沿用历史报价。`, evidence: [`最新成本日期 ${latestDate}`, `纳入 ${sameScenario.length} 个成本分项，均值 ${fixed(average, 2)} ${sameScenario[0].currency}/吨`, `场景 ${sameScenario[0].origin} → ${sameScenario[0].destination} · ${sameScenario[0].trade_term}`], sourceLabels: [...new Set(sameScenario.map((item) => item.source))], asOf: [latestDate], evidenceMeta: [metaForLocal(input, '产品成本快照', [latestDate])] });
   }
 
   const shipping = input.shippingOptions || [];
@@ -176,10 +186,21 @@ function buildAdvice(input: StrategyDataInputs): DataDrivenAdvice[] {
     advice.push({ id: 'policy-gate', ruleId: 'POLICY-GATE-001', category: '风险', priority: recentPolicies.some((row) => row.severity >= 4) ? '中' : '低', title: '政策事件纳入报价审查', recommendation: '近 30 天政策事件需要逐项确认适用产品、原产地和生效日期，再决定报价与交付承诺。', evidence: recentPolicies.slice(0, 3).map((row) => `${row.title} · ${row.country_region} · ${row.publish_date}`), sourceLabels: [...new Set(recentPolicies.map((row) => row.issuer))], asOf: policyDates, evidenceMeta: [metaForLocal(input, '政策事件', policyDates)] });
   }
 
+  if (input.tradeRemedy?.cases?.length) {
+    const activeCases = input.tradeRemedy.cases.filter(isActiveTradeRemedy);
+    const internalDestinations = input.internalBusiness?.by_destination || [];
+    const linked = activeCases.filter((item) => internalDestinations.some((destination) => destination.label === item.country || destination.label.includes(item.country) || item.country.includes(destination.label)));
+    const lead = (linked.length ? linked : activeCases).sort((a, b) => (b.latest_stage_date || '').localeCompare(a.latest_stage_date || ''))[0];
+    if (lead) {
+      const linkedText = linked.length ? `，其中 ${linked.length} 项与内部目的国聚合存在交集` : '';
+      advice.push({ id: 'trade-remedy-gate', ruleId: 'TRADE-REMEDY-GATE-001', category: '风险', priority: linked.length ? '高' : '中', title: '贸易救济先行核验', recommendation: `${lead.country} 的${lead.case_type}事项“${lead.case_name}”处于${lead.latest_stage || lead.case_state}阶段${linkedText}；相关产品报价前先核对 HS 编码、适用范围、税率/措施和应诉期限，未完成人工合规确认前不直接承诺常规出口条件。`, evidence: [`案件总量 ${input.tradeRemedy.summary.total_cases} 项，当前活动案件 ${input.tradeRemedy.summary.active_case_count} 项`, `主导案件：${lead.case_name} · ${lead.latest_stage || lead.case_state} · ${lead.latest_stage_date || lead.last_updated || '日期待补'}`, linked.length ? `内部关联目的国：${[...new Set(linked.map((item) => item.country))].slice(0, 5).join('、')}` : '暂未匹配内部目的国聚合'], sourceLabels: [input.tradeRemedy.source.name], asOf: [input.tradeRemedy.source.coverage_end || lead.latest_stage_date || ''], evidenceMeta: [evidenceMeta(input, 'trade-remedy-dashboard-public', input.tradeRemedy.source.name, input.tradeRemedy.source.captured_at, input.tradeRemedy.source.raw_sha256, input.tradeRemedy.source.coverage_end)] });
+    }
+  }
+
   if (input.aggregates.length) {
     const volume = input.aggregates.reduce((sum, row) => sum + row.volume_t, 0); const target = input.aggregates.reduce((sum, row) => sum + (row.target_volume_t || 0), 0); const completion = target ? volume / target * 100 : null;
     const aggregateDates = [...new Set(input.aggregates.map((row) => dateOf(row.end_date)))].slice(-3);
-    advice.push({ id: 'target', ruleId: 'TARGET-001', category: '经营', priority: completion != null && completion < 80 ? '中' : '低', title: '经营目标与销售节奏', recommendation: completion != null && completion < 80 ? '当前经营目标完成率偏低，销售方案应优先补齐目标缺口，并拆分到产品线、区域和客户，而不是只扩大报价量。' : '经营目标完成情况未形成明显缺口，销售动作按客户和利润条件筛选。', evidence: [`统计销量 ${tons(volume)}，目标 ${tons(target)}`, `目标完成率 ${completion?.toFixed(1) ?? '—'}%`], sourceLabels: ['内部经营聚合'], asOf: aggregateDates, evidenceMeta: [metaForLocal(input, '内部经营聚合', aggregateDates)] });
+    advice.push({ id: 'target', ruleId: 'TARGET-001', category: '经营', priority: completion != null && completion < 80 ? '中' : '低', title: '经营目标与销售节奏', recommendation: completion != null && completion < 80 ? '当前经营目标完成率偏低，销售方案应优先补齐目标缺口，并拆分到产品线、区域和客户，而不是只扩大报价量。' : '经营目标完成情况未形成明显缺口，销售动作按客户和利润条件筛选。', evidence: [`统计销量 ${tons(volume)}，目标 ${tons(target)}`, `目标完成率 ${fixed(completion)}%`], sourceLabels: ['内部经营聚合'], asOf: aggregateDates, evidenceMeta: [metaForLocal(input, '内部经营聚合', aggregateDates)] });
   }
 
   if (input.internalBusiness) {
@@ -196,13 +217,13 @@ function buildAdvice(input: StrategyDataInputs): DataDrivenAdvice[] {
       priority: latestTargetMiss ? '高' : '中',
       title: '内部出口节奏与市场结构',
       recommendation: latestTargetMiss
-        ? `最近统计月 ${latestMonth.label} 的实际出口量未达到“较上月增长 ${business.business_assumptions.target_growth_pct.toFixed(1)}%”的业务目标，缺口约 ${tons(targetGap)}；销售动作应优先核对可补量的产品与目的国，不将目标值当作实际值。`
+        ? `最近统计月 ${latestMonth.label} 的实际出口量未达到“较上月增长 ${fixed(business.business_assumptions.target_growth_pct)}%”的业务目标，缺口约 ${tons(targetGap)}；销售动作应优先核对可补量的产品与目的国，不将目标值当作实际值。`
         : `最近统计月 ${latestMonth?.label || '—'} 已达到月度增长目标；可优先围绕 ${topDestination?.label || '主要目的国'} 和 ${topProduct?.label || '主要产品'} 复核后续订单机会，同时保留人工核验。`,
       evidence: [
         `2025年实际出口量 ${tons(business.summary.total_volume_t)}，覆盖 ${business.source.coverage_start} 至 ${business.source.coverage_end}`,
         latestMonth ? `${latestMonth.month} 实际 ${tons(latestMonth.actual_volume_t)} · 目标 ${tons(latestMonth.target_volume_t)} · 实际环比 ${pct(latestMonth.actual_growth_pct)}` : '月度数据不可用',
-        topDestination ? `目的国 Top1：${topDestination.label}，${tons(topDestination.volume_t)}（${topDestination.share_pct.toFixed(1)}%）` : '目的国结构不可用',
-        topProduct ? `产品 Top1：${topProduct.label}，${tons(topProduct.volume_t)}（${topProduct.share_pct.toFixed(1)}%）` : '产品结构不可用',
+        topDestination ? `目的国 Top1：${topDestination.label}，${tons(topDestination.volume_t)}（${fixed(topDestination.share_pct)}%）` : '目的国结构不可用',
+        topProduct ? `产品 Top1：${topProduct.label}，${tons(topProduct.volume_t)}（${fixed(topProduct.share_pct)}%）` : '产品结构不可用',
       ],
       sourceLabels: [business.source.name],
       asOf: [business.source.coverage_end],
@@ -232,6 +253,7 @@ export function buildDataDrivenSalesPlan(input: StrategyDataInputs): DataDrivenS
     !input.steelExport && '海关出口伙伴数据',
     !input.taricQuota && 'EU/UK 配额数据',
     !input.shippingIndices && '航运指数数据',
+    !input.tradeRemedy && '贸易救济案件数据',
   ].filter(Boolean) as string[];
   if (missingAdvanced.length) guardrails.unshift(`进阶数据未齐全：缺少 ${missingAdvanced.join('、')}；不得将当前结果视为完整销售方案。`);
   const isPartial = hasFallback || missingAdvanced.length > 0;

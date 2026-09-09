@@ -1,0 +1,6 @@
+{
+  "version": "1.0",
+  "labels": { "fresh": "已更新", "fallback": "沿用上次成功快照", "unavailable": "当前不可用", "local": "内部快照" },
+  "periods": { "daily": "日环比", "weekly": "周环比", "monthly": "月环比", "dekadal": "旬环比" },
+  "products": { "hot_rolled": "热轧", "cold_rolled": "冷轧", "coated": "冷轧镀层", "silicon_steel": "硅钢" }
+}

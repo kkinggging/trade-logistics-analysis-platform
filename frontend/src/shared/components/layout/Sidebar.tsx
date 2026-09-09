@@ -9,7 +9,9 @@ interface NavItem {
 const navItems: NavItem[] = [
   { path: '/', label: '晨报' },
   { path: '/analysis', label: '综合分析' },
+  { path: '/globe', label: '3D地球' },
   { path: '/data-health', label: '数据健康' },
+  { path: '/template-library', label: '模板库' },
   { path: '/cost-calculator', label: '成本计算器' },
   { path: '/shipping', label: '运输方案' },
   { path: '/strategy', label: '销售方案' },

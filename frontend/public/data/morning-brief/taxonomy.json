@@ -1,0 +1,5 @@
+{
+  "version": "1.0",
+  "product_lines": { "hot-rolled": ["热轧", "热卷", "热轧板卷"], "cold-rolled": ["冷轧", "冷卷", "镀锌", "镀层", "锌铝镁"], "silicon-steel": ["硅钢", "电工钢", "取向钢"] },
+  "data_roles": { "fact": "事实数据", "processed": "处理后指标", "attention": "业务关注", "risk": "风险信号" }
+}

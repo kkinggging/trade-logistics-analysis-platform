@@ -7,6 +7,14 @@
   gap: var(--space-4);
 }
 
+.route-loading {
+  display: grid;
+  min-height: 52vh;
+  place-items: center;
+  color: var(--text-secondary);
+  font-size: 1rem;
+}
+
 .placeholder-page h2 {
   color: var(--text-primary);
   font-size: var(--text-2xl);

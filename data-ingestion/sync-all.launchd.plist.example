@@ -13,10 +13,9 @@
     <string>--build</string>
   </array>
   <key>StartCalendarInterval</key>
-  <dict>
-    <key>Hour</key><integer>18</integer>
-    <key>Minute</key><integer>0</integer>
-  </dict>
+  <array>
+    <dict><key>Hour</key><integer>18</integer><key>Minute</key><integer>0</integer></dict>
+  </array>
   <key>RunAtLoad</key>
   <false/>
   <key>StandardOutPath</key>

@@ -1,0 +1,10 @@
+{
+  "version": "1.0",
+  "rules": [
+    { "id": "spread-direction", "fact": "domestic_overseas_spread", "output": "结论", "requires": ["共同观察日的中国热轧 FOB、欧洲热轧 CIF、EURUSD"] },
+    { "id": "metric-change", "fact": "latest_metric_change", "output": "精华数据", "requires": ["指标值、上一观测值、频率"] },
+    { "id": "remedy-gate", "fact": "active_trade_remedy", "output": "风险", "requires": ["案件状态、产品、国家、HS 或内部目的国匹配"] },
+    { "id": "quota-gate", "fact": "quota_remaining", "output": "风险", "requires": ["具体 Code、原产地、可用余额和快照日期"] },
+    { "id": "source-degradation", "fact": "sync_status", "output": "状态", "requires": ["fresh / fallback / unavailable"] }
+  ]
+}

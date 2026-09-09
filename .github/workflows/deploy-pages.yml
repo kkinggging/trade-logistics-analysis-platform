@@ -41,7 +41,7 @@ jobs:
         working-directory: frontend
         run: npm ci
 
-      - name: Sync external data snapshots
+      - name: Sync external data snapshots (full run)
         id: sync
         continue-on-error: true
         run: node data-ingestion/sync-all.mjs

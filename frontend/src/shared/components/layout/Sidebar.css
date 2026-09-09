@@ -2,7 +2,7 @@
   display: flex;
   align-items: stretch;
   width: 100%;
-  min-height: 64px;
+  min-height: 52px;
   background: rgba(11, 12, 16, 0.86);
   border-bottom: 1px solid var(--border-subtle);
   position: relative;
@@ -81,7 +81,7 @@
   align-items: center;
   gap: 0.45rem;
   flex: 0 0 auto;
-  min-height: 64px;
+  min-height: 52px;
   padding: 0.35rem 0.6rem;
   border: 0;
   border-bottom: 2px solid transparent;
@@ -170,7 +170,7 @@
 
 /* Text-only index: keeps the complete tool set visible on one editorial rail. */
 .sidebar {
-  gap: clamp(0.75rem, 1.7vw, 1.75rem);
+  gap: clamp(0.65rem, 1.4vw, 1.5rem);
 }
 
 .sidebar-header {
@@ -220,7 +220,7 @@
 
 @media (max-width: 800px) {
   .sidebar {
-    min-height: 62px;
+    min-height: 52px;
   }
 
   .sidebar-header {
@@ -232,7 +232,7 @@
   }
 
   .nav-item {
-    min-height: 62px;
+    min-height: 52px;
     font-size: var(--text-sm);
   }
 

@@ -2,6 +2,7 @@ import {
   MarketQuote,
   InternalAggregate,
   InternalBusinessSnapshot,
+  InternalBusinessCustomerSnapshot,
   ProductCost,
   FxScenario,
   PolicyEvent,
@@ -15,12 +16,15 @@ import {
   ShippingIndexSnapshot,
   TradeRemedySnapshot,
   FastNewsSnapshot,
+  TideNewsSnapshot,
 } from '@/core/store/types';
+import { CbamParameterSnapshot } from '@/core/cost/types';
 
 export interface DataProvider {
   getMarketQuotes(params?: QueryParams): Promise<MarketQuote[]>;
   getInternalAggregates(params?: QueryParams): Promise<InternalAggregate[]>;
   getInternalBusinessSnapshot(): Promise<InternalBusinessSnapshot | null>;
+  getInternalBusinessCustomerSnapshot(): Promise<InternalBusinessCustomerSnapshot | null>;
   getProductCosts(params?: QueryParams): Promise<ProductCost[]>;
   getFxScenarios(): Promise<FxScenario[]>;
   getPolicyEvents(params?: QueryParams): Promise<PolicyEvent[]>;
@@ -33,6 +37,7 @@ export interface DataProvider {
   getShippingIndexSnapshot(): Promise<ShippingIndexSnapshot | null>;
   getTradeRemedySnapshot(): Promise<TradeRemedySnapshot | null>;
   getFastNewsSnapshot(): Promise<FastNewsSnapshot | null>;
+  getCbamParameters(): Promise<CbamParameterSnapshot | null>;
 }
 
 export class StaticDataProvider implements DataProvider {
@@ -162,6 +167,12 @@ export class StaticDataProvider implements DataProvider {
     return snapshot;
   }
 
+  async getInternalBusinessCustomerSnapshot(): Promise<InternalBusinessCustomerSnapshot | null> {
+    const snapshot = await this.fetchOptionalJson<InternalBusinessCustomerSnapshot>('internal_business_customers_2025.json');
+    if (!snapshot || snapshot.schema_version !== '1.0.0' || !snapshot.source || snapshot.source.selected_year !== 2025 || !snapshot.source.customer_names_retained || !snapshot.by_destination) return null;
+    return snapshot;
+  }
+
   async getProductCosts(params?: QueryParams): Promise<ProductCost[]> {
     const data = await this.fetchJson<ProductCost[]>('product_costs.json');
     return this.filterByParams(data, params);
@@ -214,6 +225,14 @@ export class StaticDataProvider implements DataProvider {
 
   async getFastNewsSnapshot(): Promise<FastNewsSnapshot | null> {
     return this.fetchOptionalJson<FastNewsSnapshot>('external_fast_news.json');
+  }
+
+  async getCbamParameters(): Promise<CbamParameterSnapshot | null> {
+    return this.fetchOptionalJson<CbamParameterSnapshot>('cbam_parameters.json');
+  }
+
+  async getTideNewsSnapshot(): Promise<TideNewsSnapshot | null> {
+    return this.fetchOptionalJson<TideNewsSnapshot>('external_tide_news.json');
   }
 }
 

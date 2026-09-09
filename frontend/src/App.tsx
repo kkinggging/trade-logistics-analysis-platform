@@ -1,3 +1,4 @@
+import { lazy, Suspense } from 'react';
 import { HashRouter, Routes, Route } from 'react-router-dom';
 import { AppLayout } from './shared/components/layout';
 import { CostCalculator } from './features/cost-calculator';
@@ -6,6 +7,8 @@ import { Shipping } from './features/shipping';
 import { Marketing } from './features/marketing';
 import { UnifiedAnalysis } from './features/analysis';
 import { DataHealth } from './features/data-health';
+import { TemplateLibrary } from './features/template-library';
+const GlobeShowcase = lazy(() => import('./features/globe').then((module) => ({ default: module.GlobeShowcase })));
 import './App.css';
 
 function App() {
@@ -16,6 +19,8 @@ function App() {
           <Route path="/" element={<MorningBrief />} />
           <Route path="/analysis" element={<UnifiedAnalysis />} />
           <Route path="/data-health" element={<DataHealth />} />
+          <Route path="/template-library" element={<TemplateLibrary />} />
+          <Route path="/globe" element={<Suspense fallback={<div className="route-loading" role="status">正在载入 3D 地球模块…</div>}><GlobeShowcase /></Suspense>} />
           {/* Backward-compatible aliases for the former three workspaces. */}
           <Route path="/dashboard" element={<UnifiedAnalysis />} />
           <Route path="/cost-calculator" element={<CostCalculator />} />

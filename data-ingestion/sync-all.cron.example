@@ -1,4 +1,6 @@
 # 安装到部署机的受控调度器，不要直接在代码仓库中执行。
-# 每天 18:00（Asia/Shanghai）运行；日志和告警由部署环境接管。
+# 全量同步每天 18:00；我的钢铁网快讯在 08:10、09:00 单独同步；日志和告警由部署环境接管。
 CRON_TZ=Asia/Shanghai
 0 18 * * * cd /Users/ken/work/贸易分析平台/platform/data-ingestion && /usr/local/bin/node sync-all.mjs --build >> /Users/ken/work/贸易分析平台/platform/data-ingestion/sync-all.log 2>&1
+10 8 * * * cd /Users/ken/work/贸易分析平台/platform/data-ingestion && /usr/local/bin/node sync-all.mjs --only=mysteel-fast-news --build >> /Users/ken/work/贸易分析平台/platform/data-ingestion/mysteel-fast-news.log 2>&1
+0 9 * * * cd /Users/ken/work/贸易分析平台/platform/data-ingestion && /usr/local/bin/node sync-all.mjs --only=mysteel-fast-news,tide-global-news,hormuz-special --build >> /Users/ken/work/贸易分析平台/platform/data-ingestion/morning-news.log 2>&1

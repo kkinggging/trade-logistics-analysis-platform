@@ -1,0 +1,8 @@
+{
+  "version": "1.0",
+  "note": "阈值用于提示人工复核，不代表自动决策规则。",
+  "spread_usd_per_ton": { "direction_change": 1 },
+  "quota_remaining_pct": { "tight": 30 },
+  "risk": { "active_levels": ["critical", "high_attention", "attention"] },
+  "news": { "max_items": 5, "visible_items": 3 }
+}

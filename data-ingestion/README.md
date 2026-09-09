@@ -157,9 +157,9 @@ node fetch-steel-dashboard.mjs
 
 输出包括生成时间、抓取时间、覆盖区间、来源、单位、频率、`fetch_mode`、原始响应 SHA-256 和转换后的 `MarketQuote` 记录。失败时不会覆盖最近一次成功快照；写入采用临时文件校验后原子替换。
 
-## 当前同步状态与每日 18:00 调度
+## 当前同步状态与分时调度
 
-当前仓库已经具备“抓取—校验—处理—生成结构化快照—前端读取”的适配器和统一入口。GitHub Pages 工作流已提供每天北京时间 18:00 的 GitHub Actions 定时入口，会在可联网的 Actions runner 上尝试同步并提交新快照；如果不使用该工作流，代码仓库也不会自行安装 cron/launchd，`external_*.json` 会停留在最近一次成功生成的内容。GitHub Actions 的定时触发由平台调度，实际启动时间可能有延迟，不应视为严格准点。
+当前仓库已经具备“抓取—校验—处理—生成结构化快照—前端读取”的适配器和统一入口。GitHub Pages 工作流每天北京时间 18:00 做全量同步；独立的 MySteel 工作流每天北京时间 08:10、09:00 单独同步贸易晨报快讯；潮汐早报的 Kagi News 五板块（历史上的今天、世界、商业、科学、运动）与霍尔木兹专题每天北京时间 09:00 单独同步并发布。三类工作流都在可联网的 Actions runner 上运行；如果不使用这些工作流，代码仓库也不会自行安装 cron/launchd，`external_*.json` 会停留在最近一次成功生成的内容。GitHub Actions 的定时触发由平台调度，实际启动时间可能有延迟，不应视为严格准点。
 
 快照不是截图：它是结构化 JSON，包含源站原始数据哈希、源站生成时间（如有）、本地抓取时间、覆盖日期、标准化字段、去重结果、质量告警和面向图表的计算指标。前端读取的是这份数据，不会在浏览器中直接抓取外站。
 
@@ -176,7 +176,7 @@ node sync-all.mjs
 
 如果平台通过构建后的 `offline-demo` 提供服务，使用 `node sync-all.mjs --build`：同步成功后会重新生成成品包，避免只更新 `frontend/public/data` 而正在运行的静态成品仍读取旧文件。
 
-入口依次调用四个适配器：钢材市场、海关出口、外汇、EU/UK 关税配额。任一来源失败时，该来源不会覆盖最近成功文件，并返回非零状态供告警系统发现；其他来源仍可继续更新。
+入口依次调用钢材市场、海关出口、外汇、EU/UK 关税配额、航运指数、贸易救济、MySteel 贸易晨报快讯、Kagi News 五板块和霍尔木兹专题适配器。任一来源失败时，该来源不会覆盖最近成功文件，并返回非零状态供告警系统发现；其他来源仍可继续更新。Kagi 新闻优先读取各板块公开 RSS，再访问 Kagi 详情页补齐正文、发布时间、来源链接与图片；单条详情页失败时保留 RSS 摘要，五个板块均无法验证时保留上一份完整潮汐快照，不会把旧新闻冒充当日新数据。
 
 ## 配额全量层与完整性仲裁
 
@@ -199,7 +199,7 @@ node data-ingestion/audit-taric-quota-completeness.mjs
 
 验收至少要求 raw = accepted + rejected、accepted 与落盘 `accepted_rows` 一致、deduped 与 `normalized_rows` 一致、latest 为最新日期全部记录，并且印度、土耳其、配额 Code `099835` / `099840` 和 UK 国家组 `1100` 均可追溯到源行。
 
-生产调度示例见 [`sync-all.cron.example`](./sync-all.cron.example) 和 macOS 的 [`sync-all.launchd.plist.example`](./sync-all.launchd.plist.example)。GitHub Actions 方案不需要在本机安装调度器；如果改用自有服务器或 Mac，则这些文件只是配置模板，仍需部署人员安装并配置日志、失败告警和权限。cron 示例使用 `CRON_TZ=Asia/Shanghai`；launchd 使用机器本地时区，若机器不是中国标准时间，应在部署环境将时区设为 `Asia/Shanghai` 或改用具备时区字段的调度器。
+生产调度示例见 [`sync-all.cron.example`](./sync-all.cron.example)、全量 macOS 配置 [`sync-all.launchd.plist.example`](./sync-all.launchd.plist.example) 和 MySteel 专用配置 [`mysteel-fast-news.launchd.plist.example`](./mysteel-fast-news.launchd.plist.example)。GitHub Actions 方案不需要在本机安装调度器；如果改用自有服务器或 Mac，则这些文件只是配置模板，仍需部署人员安装并配置日志、失败告警和权限。cron 示例使用 `CRON_TZ=Asia/Shanghai`；launchd 使用机器本地时区，若机器不是中国标准时间，应在部署环境将时区设为 `Asia/Shanghai` 或改用具备时区字段的调度器。
 
 由部署环境的受控调度器调用：
 
