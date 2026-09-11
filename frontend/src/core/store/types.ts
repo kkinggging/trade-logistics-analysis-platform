@@ -208,6 +208,9 @@ export interface DataSyncSourceStatus {
   snapshot_captured_at: string | null;
   coverage_end: string | null;
   error?: string;
+  quality_state?: 'complete' | 'partial';
+  quality_warnings?: string[];
+  history_status?: 'available' | 'unavailable' | 'blocked' | 'fallback';
 }
 export interface DataSyncStatus {
   schema_version: string;
@@ -525,9 +528,14 @@ export interface FastNewsSnapshot {
 export interface TideNewsItem {
   id: string;
   title: string;
+  title_zh?: string | null;
   summary: string;
+  summary_zh?: string | null;
   content: string;
+  content_zh?: string | null;
+  translation_status?: 'source' | 'translated' | 'unavailable';
   image_url: string | null;
+  image_source_url?: string | null;
   image_alt: string | null;
   location: string | null;
   category: 'world' | 'business' | 'science' | 'sports' | 'onthisday';
@@ -538,6 +546,65 @@ export interface TideNewsItem {
   published_at: string;
   published_at_ms: number;
   author: string | null;
+}
+
+export interface TideHistoryLink {
+  id: string;
+  label: string;
+  detail: string;
+  detail_zh?: string | null;
+  image_url: string | null;
+  image_source_url?: string | null;
+  image_alt: string | null;
+  url: string | null;
+}
+
+export interface TideHistoryEvent {
+  id: string;
+  year: string;
+  title: string;
+  title_zh?: string | null;
+  detail: string;
+  detail_zh?: string | null;
+  image_url: string | null;
+  image_source_url?: string | null;
+  image_alt: string | null;
+  url: string | null;
+  links?: TideHistoryLink[];
+}
+
+export interface TideHistoryPerson {
+  id: string;
+  year: string;
+  name: string;
+  name_zh?: string | null;
+  detail: string;
+  detail_zh?: string | null;
+  image_url: string | null;
+  image_source_url?: string | null;
+  image_alt: string | null;
+  url: string | null;
+}
+
+export interface TideHistoryData {
+  source_url: string;
+  captured_at?: string;
+  events: TideHistoryEvent[];
+  people: TideHistoryPerson[];
+}
+
+export interface TideNewsSourceStatus {
+  id: string;
+  name: string;
+  url: string;
+  item_count: number;
+  errors: string[];
+  captured_at: string | null;
+  fetch_mode?: string;
+  used_fallback?: boolean;
+  history_event_count?: number;
+  history_person_count?: number;
+  history_image_count?: number;
 }
 
 export interface TideNewsSnapshot {
@@ -556,9 +623,22 @@ export interface TideNewsSnapshot {
     source_count: number;
     categories: string[];
   };
-  sources: Array<{ id: string; name: string; url: string; item_count: number; errors: string[]; captured_at: string | null; fetch_mode?: string; used_fallback?: boolean }>;
+  sources: TideNewsSourceStatus[];
   sections: { onthisday: TideNewsItem[]; world: TideNewsItem[]; business: TideNewsItem[]; science: TideNewsItem[]; sports: TideNewsItem[] };
-  quality: { source_count: number; successful_source_count: number; item_count: number; image_count: number; full_content_count: number; warnings: string[] };
+  history?: TideHistoryData;
+  quality: {
+    source_count: number;
+    successful_source_count: number;
+    item_count: number;
+    image_count: number;
+    full_content_count: number;
+    translated_count?: number;
+    history_event_count?: number;
+    history_person_count?: number;
+    history_image_count?: number;
+    history_status?: 'available' | 'unavailable' | 'blocked' | 'fallback';
+    warnings: string[];
+  };
 }
 
 // ============ 策略卡片 ============

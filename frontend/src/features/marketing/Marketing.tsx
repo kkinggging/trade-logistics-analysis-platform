@@ -1,4 +1,6 @@
-import { useState } from 'react';
+import { useEffect, useMemo, useRef, useState } from 'react';
+import { useGSAP } from '@gsap/react';
+import gsap from 'gsap';
 import { useAppContext } from '@/core/store/context';
 import { ProductLine } from '@/core/store/types';
 import {
@@ -11,6 +13,8 @@ import {
 import { loadStrategyData } from '@/core/strategy/data';
 import { DataStatus, SourceEvidence } from '@/shared/components/data/DataStatus';
 import './Marketing.css';
+import { buildCustomerDecisions, buildMarketDecisions, MarketDecision } from '@/core/strategy/customerStrategy';
+gsap.registerPlugin(useGSAP);
 
 type StrategyType = 'market_expansion' | 'pricing_adjustment' | 'timing_optimization' | 'risk_mitigation' | 'inventory_optimization';
 type TargetRegion = 'global' | 'europe' | 'asia' | 'americas' | 'specific';
@@ -139,6 +143,33 @@ export function Marketing() {
   const [feedbackMode, setFeedbackMode] = useState<string | null>(null);
   const [salesPlan, setSalesPlan] = useState<DataDrivenSalesPlan | null>(null);
   const [syncStatus, setSyncStatus] = useState<Awaited<ReturnType<typeof loadStrategyData>>['syncStatus']>(null);
+  const [viewMode, setViewMode] = useState<'market' | 'customer'>('market');
+  const [decisionData, setDecisionData] = useState<Awaited<ReturnType<typeof loadStrategyData>> | null>(null);
+  const [expandedDecision, setExpandedDecision] = useState<string | null>(null);
+  const [marketFilter, setMarketFilter] = useState<'全部' | MarketDecision['tag']>('全部');
+  const decisionRef = useRef<HTMLElement | null>(null);
+
+  async function loadDecisionData() {
+    try {
+      const data = await loadStrategyData({ productLine: state.productLine, region: state.region, dateRange: state.dateRange });
+      setDecisionData(data); setSyncStatus(data.syncStatus);
+    } catch (err) { setError(err instanceof Error ? err.message : '销售决策数据加载失败'); }
+  }
+
+  useEffect(() => { void loadDecisionData(); }, [state.productLine, state.region, state.dateRange]);
+
+  const customerDecisions = useMemo(() => decisionData ? buildCustomerDecisions(decisionData.internalCustomers || null, decisionData.internalBusiness || null) : [], [decisionData]);
+  const marketDecisions = useMemo(() => decisionData ? buildMarketDecisions(decisionData.internalBusiness || null, decisionData.steelExport || null, decisionData.internalCustomers || null, decisionData.tradeRemedy || null, decisionData.taricQuota || null) : [], [decisionData]);
+  const visibleMarkets = useMemo(() => marketDecisions.filter((item) => marketFilter === '全部' || item.tag === marketFilter).slice(0, 18), [marketDecisions, marketFilter]);
+  useGSAP(() => {
+    const cards = decisionRef.current?.querySelectorAll('.decision-card');
+    if (!cards?.length) return;
+    const mm = gsap.matchMedia();
+    mm.add('(prefers-reduced-motion: no-preference)', () => {
+      gsap.fromTo(cards, { autoAlpha: 0, y: 8 }, { autoAlpha: 1, y: 0, duration: .32, stagger: .035, ease: 'power2.out', clearProps: 'transform' });
+    });
+    return () => mm.revert();
+  }, { scope: decisionRef, dependencies: [viewMode, marketFilter, visibleMarkets.length, customerDecisions.length], revertOnUpdate: true });
 
   async function generateStrategies() {
     try {
@@ -146,6 +177,7 @@ export function Marketing() {
       setError(null);
 
       const data = await loadStrategyData({ productLine: state.productLine, region: state.region, dateRange: state.dateRange });
+      setDecisionData(data);
       const plan = buildDataDrivenSalesPlan(data);
       setSyncStatus(data.syncStatus);
       const planWithState = { ...plan, dataState: effectivePlanState(plan, data.syncStatus) };
@@ -239,7 +271,41 @@ export function Marketing() {
   return (
     <div className="marketing-strategy">
       <div className="strategy-header">
+        <div><p className="decision-kicker">SALES DECISION / 销售决策</p><h1>销售方案</h1><p className="decision-subtitle">先判断市场，再判断客户；只展示当前数据可以支持的动作。</p></div>
+        <div className="decision-mode-switch" role="tablist" aria-label="销售方案模式">
+          <button className={viewMode === 'market' ? 'is-active' : ''} onClick={() => setViewMode('market')} role="tab" aria-selected={viewMode === 'market'}>市场判断</button>
+          <button className={viewMode === 'customer' ? 'is-active' : ''} onClick={() => setViewMode('customer')} role="tab" aria-selected={viewMode === 'customer'}>客户判断</button>
+        </div>
       </div>
+
+      <section ref={decisionRef} className="decision-shell" aria-live="polite">
+        <div className="decision-metrics">
+          <div><span>可评估目的国</span><strong>{marketDecisions.length || '—'}</strong></div>
+          <div><span>我方内部出口</span><strong>{decisionData?.internalBusiness ? `${Math.round(decisionData.internalBusiness.summary.total_volume_t / 10000)} 万吨` : '—'}</strong></div>
+          <div><span>客户候选</span><strong>{customerDecisions.length || '—'}</strong></div>
+          <div><span>客户正式评级</span><strong className="metric-muted">待补字段</strong></div>
+        </div>
+        {viewMode === 'market' ? <>
+          <div className="decision-toolbar"><div><p className="section-eyebrow">MARKET MAP / 市场地图</p><h2>目的国市场判断</h2></div><div className="decision-filters">{(['全部', '成熟核心市场', '潜力拓展市场', '战略客户市场', '风险监控市场'] as const).map((tag) => <button key={tag} className={marketFilter === tag ? 'is-active' : ''} onClick={() => setMarketFilter(tag)}>{tag}</button>)}</div></div>
+          <div className="decision-grid">{visibleMarkets.map((item) => <article className="decision-card" key={item.country}>
+            <div className="decision-card-head"><div><span className="decision-rank">{String(visibleMarkets.indexOf(item) + 1).padStart(2, '0')}</span><h3>{item.country}</h3></div><span className={`decision-tag decision-tag-${item.tag === '风险监控市场' ? 'risk' : item.tag === '成熟核心市场' ? 'core' : item.tag === '战略客户市场' ? 'strategic' : 'growth'}`}>{item.tag}</span></div>
+            <p className="decision-rationale">{item.rationale}</p>
+            <div className="decision-bars"><div><span>我方内部出口 <b>{Math.round(item.internalVolumeT).toLocaleString()} 吨</b></span><i><em style={{ width: `${Math.min(100, item.internalSharePct * 4)}%` }} /></i></div><div><span>全国海关出口 <b>{item.marketVolumeT ? `${Math.round(item.marketVolumeT).toLocaleString()} 吨` : '—'}</b></span><i><em className="bar-external" style={{ width: `${Math.min(100, item.marketVolumeT / Math.max(...marketDecisions.map((v) => v.marketVolumeT), 1) * 100)}%` }} /></i></div></div>
+            <div className="decision-meta"><span>{item.customerCount ? `${item.customerCount} 个客户候选` : '客户数量待核验'}</span>{item.policyFlags.length ? <span className="decision-alert">政策：{item.policyFlags.join('、')}</span> : <span>政策未命中</span>}</div>
+          </article>)}</div>
+          <p className="decision-footnote">口径：内部业务为 2025 年全年；海关为当前快照，二者仅并列比较，不直接相加。政策标签仅作销售前置核验，不代表已完成法律判断。</p>
+        </> : <>
+          <div className="decision-toolbar"><div><p className="section-eyebrow">CUSTOMER PRIORITY / 客户优先级</p><h2>客户候选排序</h2></div><span className="decision-note">正式评分需要补齐合作年限、订单连续性、客户类型、行业标杆字段</span></div>
+          <div className="decision-grid customer-grid">{customerDecisions.slice(0, 18).map((item) => <article className="decision-card" key={item.country}>
+            <div className="decision-card-head"><div><span className="decision-rank">{String(customerDecisions.indexOf(item) + 1).padStart(2, '0')}</span><h3>{item.country}</h3></div><span className="decision-tier">待补证据</span></div>
+            <div className="customer-score"><strong>{item.score}</strong><span>/ 可观测 30 分<br />规模项</span></div>
+            <div className="customer-profile"><span>近一年交易量 <b>{Math.round(item.volumeT).toLocaleString()} 吨</b></span><span>客户候选数 <b>{item.customerCount}</b></span><span>客户类型 <b>{item.typeLabel}</b></span></div>
+            <button className="decision-expand" aria-expanded={expandedDecision === item.country} onClick={() => setExpandedDecision(expandedDecision === item.country ? null : item.country)}>{expandedDecision === item.country ? '收起评分依据' : '查看评分依据'}</button>
+            {expandedDecision === item.country && <div className="decision-detail"><p>权重：业务持续性 30 · 交易规模 30 · 客户类型价值 25 · 战略影响力 15</p><p>已确认：交易规模 {item.scale}/30。缺失：{item.dataGaps.join('、')}。</p><ul>{item.evidence.map((fact) => <li key={fact}>{fact}</li>)}</ul></div>}
+          </article>)}</div>
+          <p className="decision-footnote">当前客户快照为目的国/客户 Top 5 聚合，客户名称已脱敏；“待补证据”不是低评级，补齐字段后再生成正式 S/A/B/C。</p>
+        </>}
+      </section>
 
       <div className="strategy-input-section">
         <h2>策略参数</h2>

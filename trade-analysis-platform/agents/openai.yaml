@@ -1,0 +1,8 @@
+interface:
+  display_name: "贸易分析平台开发规范"
+  short_description: "延续平台架构、数据契约与视觉风格的项目开发规范"
+  brand_color: "#17657C"
+  default_prompt: "使用 $trade-analysis-platform 按照本项目架构、数据契约、视觉规范和验收流程继续开发。"
+
+policy:
+  allow_implicit_invocation: true

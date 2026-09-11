@@ -64,6 +64,14 @@ function stateClass(source: DataSyncSourceStatus | undefined, kind: SourceDefini
   return source?.state ? `is-${source.state}` : 'is-unknown';
 }
 
+function qualityLabel(source: DataSyncSourceStatus | undefined) {
+  if (source?.quality_state === 'partial') {
+    return source.history_status === 'unavailable' ? '快照已更新 · 历史页未完成' : '快照已更新 · 部分字段待核验';
+  }
+  if (source?.quality_state === 'complete') return '快照与质量检查通过';
+  return '';
+}
+
 export function DataHealth() {
   const [status, setStatus] = useState<DataSyncStatus | null>(null);
   const [internalBusiness, setInternalBusiness] = useState<InternalBusinessSnapshot | null>(null);
@@ -130,7 +138,9 @@ export function DataHealth() {
                   <div><span>覆盖范围</span><strong>{definition.kind === 'internal' ? internalBusiness ? `${internalBusiness.source.coverage_start} 至 ${internalBusiness.source.coverage_end} · ${internalBusiness.summary.record_count.toLocaleString('zh-CN')} 条` : '快照未读取' : formatCoverage(source?.coverage_end)}</strong></div>
                   <div><span>下次计划</span><strong>{definition.kind === 'internal' ? '按内部快照更新' : nextScheduledRun(definition.schedule || status?.schedule)}</strong></div>
                 </div>
+                {qualityLabel(source) && <div className="health-source-quality"><span>{qualityLabel(source)}</span>{source?.history_status === 'unavailable' && <small>普通新闻可用不等于历史人物/事件可用</small>}</div>}
                 {source?.error && <div className="health-source-error"><span>最近异常</span>{source.error}</div>}
+                {source?.quality_warnings?.length ? <details className="health-source-warnings"><summary>查看 {source.quality_warnings.length} 条质量提示</summary><ul>{source.quality_warnings.slice(0, 4).map((warning) => <li key={warning}>{warning}</li>)}</ul></details> : null}
                 <div className="health-dependencies"><span>影响模块</span><div>{definition.dependencies.map((dependency) => <span key={dependency}>{dependency}</span>)}</div></div>
               </article>
             );

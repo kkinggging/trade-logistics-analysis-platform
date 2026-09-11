@@ -38,6 +38,9 @@ jobs:
 
       - name: Sync scheduled morning news snapshots
         continue-on-error: true
+        env:
+          TIDE_TRANSLATE_ENDPOINT: ${{ secrets.TIDE_TRANSLATE_ENDPOINT }}
+          TIDE_TRANSLATE_API_KEY: ${{ secrets.TIDE_TRANSLATE_API_KEY }}
         run: node data-ingestion/sync-all.mjs ${{ github.event.schedule == '0 1 * * *' && '--only=mysteel-fast-news,tide-global-news' || '--only=mysteel-fast-news' }}
 
       - name: Commit updated news snapshot

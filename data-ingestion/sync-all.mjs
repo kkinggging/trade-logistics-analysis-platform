@@ -171,7 +171,20 @@ if (!locked) {
       if (code === 0) {
         try {
           const data = JSON.parse(await fs.readFile(path.join(dataDir, file), 'utf8'));
-          statuses[sourceId] = { source_id: sourceId, state: 'fresh', attempted_at: attemptedAt, success_at: new Date().toISOString(), snapshot_captured_at: data.source?.captured_at || null, coverage_end: data.source?.coverage_end || null, retry: scheduleConfig.task_retry };
+          const qualityWarnings = Array.isArray(data.quality?.warnings) ? data.quality.warnings : [];
+          const qualityState = qualityWarnings.length ? 'partial' : 'complete';
+          statuses[sourceId] = {
+            source_id: sourceId,
+            state: 'fresh',
+            quality_state: qualityState,
+            quality_warnings: qualityWarnings,
+            history_status: data.quality?.history_status,
+            attempted_at: attemptedAt,
+            success_at: new Date().toISOString(),
+            snapshot_captured_at: data.source?.captured_at || null,
+            coverage_end: data.source?.coverage_end || null,
+            retry: scheduleConfig.task_retry,
+          };
         } catch (error) {
           failed += 1;
           statuses[sourceId] = { ...statuses[sourceId], state: 'fallback', error: `抓取成功但快照不可读：${error instanceof Error ? error.message : String(error)}` };

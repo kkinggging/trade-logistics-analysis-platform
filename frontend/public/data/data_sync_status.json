@@ -106,7 +106,13 @@
         "timeoutMs": 180000,
         "baseDelayMs": 3000,
         "maxDelayMs": 15000
-      }
+      },
+      "quality_state": "partial",
+      "quality_warnings": [
+        "历史上的今天：未取得可验证的人物/事件结构化数据，已移除 RSS 占位摘要",
+        "历史页与普通新闻分开验收"
+      ],
+      "history_status": "unavailable"
     },
     "hormuz-special": {
       "source_id": "hormuz-special",

@@ -5,6 +5,12 @@
   "timezone": "Asia/Shanghai",
   "window_hours": 24,
   "per_category_limit": 8,
+  "translation": {
+    "enabled": true,
+    "endpoint_env": "TIDE_TRANSLATE_ENDPOINT",
+    "api_key_env": "TIDE_TRANSLATE_API_KEY",
+    "note": "优先使用源站中文字段；如未提供，调用部署环境配置的翻译端点。未配置端点时保留原文并标记 unavailable。"
+  },
   "categories": [
     {
       "id": "onthisday",

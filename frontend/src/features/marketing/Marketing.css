@@ -6,6 +6,60 @@
   margin: 0 auto;
 }
 
+/* 新版销售决策视图取代旧的泛化策略长列表；旧逻辑保留在代码中，便于后续迁移与回溯。 */
+.marketing-strategy > .strategy-input-section,
+.marketing-strategy > .sales-plan-panel,
+.marketing-strategy > .strategies-section { display: none; }
+
+.decision-kicker { margin: 0 0 .35rem; color: var(--accent-primary); font: 700 .68rem/1.2 var(--font-mono, monospace); letter-spacing: .13em; }
+.decision-subtitle { margin: .35rem 0 0; color: var(--text-secondary); font-size: .9rem; }
+.decision-mode-switch, .decision-filters { display: flex; gap: .35rem; flex-wrap: wrap; }
+.decision-mode-switch button, .decision-filters button { border: 1px solid var(--border-subtle); border-radius: 999px; padding: .55rem .8rem; color: var(--text-secondary); background: var(--surface-2); cursor: pointer; transition: transform .18s ease, color .18s ease, background .18s ease, border-color .18s ease; }
+.decision-mode-switch button:hover, .decision-filters button:hover { transform: translateY(-1px); color: var(--text-primary); }
+.decision-mode-switch button.is-active, .decision-filters button.is-active { color: var(--surface-0); background: var(--accent-primary); border-color: var(--accent-primary); }
+.decision-shell { max-width: 1180px; padding: 1.1rem; background: linear-gradient(135deg, color-mix(in srgb, var(--surface-2) 96%, var(--accent-primary)), var(--surface-2)); border: 1px solid var(--border-subtle); border-radius: 1.05rem; }
+.decision-metrics { display: grid; grid-template-columns: repeat(4, 1fr); gap: .65rem; margin-bottom: 1rem; }
+.decision-metrics > div { padding: .75rem; background: var(--surface-1); border: 1px solid var(--border-subtle); border-radius: .7rem; }
+.decision-metrics span, .decision-metrics strong { display: block; }
+.decision-metrics span { color: var(--text-tertiary); font-size: .7rem; }
+.decision-metrics strong { margin-top: .25rem; color: var(--text-primary); font: 700 1.2rem var(--font-mono, monospace); }
+.metric-muted { color: var(--accent-warning) !important; font-size: .82rem !important; }
+.decision-toolbar { display: flex; align-items: flex-end; justify-content: space-between; gap: 1rem; margin: .5rem 0 .85rem; }
+.decision-toolbar h2 { margin: 0; color: var(--text-primary); font-size: 1.2rem; }
+.decision-note { color: var(--accent-warning); font-size: .72rem; }
+.decision-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: .7rem; }
+.decision-card { min-width: 0; padding: .9rem; background: var(--surface-1); border: 1px solid var(--border-subtle); border-radius: .8rem; transition: transform .18s ease, border-color .18s ease, box-shadow .18s ease; }
+.decision-card:hover { transform: translateY(-2px); border-color: var(--border-default); box-shadow: var(--shadow-md); }
+.decision-card-head, .decision-card-head > div { display: flex; align-items: flex-start; justify-content: space-between; gap: .5rem; }
+.decision-card-head h3 { display: inline; margin: 0; color: var(--text-primary); font-size: 1rem; }
+.decision-rank { display: inline-block; margin-right: .42rem; color: var(--accent-primary); font: 700 .75rem var(--font-mono, monospace); }
+.decision-tag, .decision-tier { padding: .26rem .45rem; border-radius: 999px; font-size: .64rem; font-weight: 700; white-space: nowrap; }
+.decision-tag-core { color: var(--accent-secondary); background: color-mix(in srgb, var(--accent-secondary) 13%, transparent); }
+.decision-tag-growth { color: var(--accent-primary); background: color-mix(in srgb, var(--accent-primary) 13%, transparent); }
+.decision-tag-strategic { color: #c084fc; background: color-mix(in srgb, #c084fc 13%, transparent); }
+.decision-tag-risk { color: var(--accent-danger); background: color-mix(in srgb, var(--accent-danger) 13%, transparent); }
+.decision-tier { color: var(--accent-warning); background: color-mix(in srgb, var(--accent-warning) 13%, transparent); }
+.decision-rationale { min-height: 2.5rem; margin: .7rem 0; color: var(--text-secondary); font-size: .73rem; line-height: 1.5; }
+.decision-bars { display: flex; flex-direction: column; gap: .55rem; }
+.decision-bars span, .customer-profile span { display: flex; justify-content: space-between; gap: .4rem; color: var(--text-tertiary); font-size: .68rem; }
+.decision-bars b, .customer-profile b { color: var(--text-primary); font-family: var(--font-mono, monospace); }
+.decision-bars i { display: block; height: .3rem; margin-top: .25rem; overflow: hidden; background: var(--surface-3); border-radius: 999px; }
+.decision-bars em { display: block; height: 100%; background: var(--accent-secondary); border-radius: inherit; }
+.decision-bars .bar-external { background: var(--accent-primary); }
+.decision-meta { display: flex; flex-wrap: wrap; justify-content: space-between; gap: .35rem; margin-top: .7rem; color: var(--text-tertiary); font-size: .66rem; }
+.decision-alert { color: var(--accent-warning); }
+.decision-footnote { margin: .85rem 0 0; color: var(--text-tertiary); font-size: .68rem; line-height: 1.5; }
+.customer-score { display: flex; align-items: center; gap: .6rem; margin: .85rem 0; }
+.customer-score strong { color: var(--accent-primary); font: 700 2rem/1 var(--font-mono, monospace); }
+.customer-score span { color: var(--text-tertiary); font-size: .68rem; line-height: 1.35; }
+.customer-profile { display: flex; flex-direction: column; gap: .45rem; padding: .65rem; background: var(--surface-2); border-radius: .6rem; }
+.decision-expand { margin-top: .7rem; padding: 0; color: var(--accent-primary); background: transparent; border: 0; cursor: pointer; font-size: .7rem; }
+.decision-detail { margin-top: .65rem; padding-top: .65rem; border-top: 1px solid var(--border-subtle); color: var(--text-secondary); font-size: .7rem; line-height: 1.5; }
+.decision-detail p { margin: .25rem 0; }.decision-detail ul { margin: .35rem 0 0; padding-left: 1rem; }
+@media (max-width: 900px) { .decision-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 620px) { .strategy-header, .decision-toolbar { align-items: flex-start; flex-direction: column; } .decision-metrics { grid-template-columns: repeat(2, 1fr); } .decision-grid { grid-template-columns: 1fr; } }
+@media (prefers-reduced-motion: reduce) { .decision-card, .decision-mode-switch button, .decision-filters button { transition: none; } }
+
 .strategy-header h1 {
   color: var(--text-primary);
   font-size: var(--text-3xl);

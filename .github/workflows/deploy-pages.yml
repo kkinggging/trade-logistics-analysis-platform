@@ -44,6 +44,9 @@ jobs:
       - name: Sync external data snapshots (full run)
         id: sync
         continue-on-error: true
+        env:
+          TIDE_TRANSLATE_ENDPOINT: ${{ secrets.TIDE_TRANSLATE_ENDPOINT }}
+          TIDE_TRANSLATE_API_KEY: ${{ secrets.TIDE_TRANSLATE_API_KEY }}
         run: node data-ingestion/sync-all.mjs
 
       - name: Commit updated snapshots

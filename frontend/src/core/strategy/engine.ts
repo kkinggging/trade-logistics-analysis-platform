@@ -14,6 +14,7 @@ import {
   TradeRemedySnapshot,
   TradeRemedyCase,
   InternalBusinessSnapshot,
+  InternalBusinessCustomerSnapshot,
 } from '@/core/store/types';
 
 export interface StrategyDataInputs {
@@ -31,6 +32,7 @@ export interface StrategyDataInputs {
   shippingIndices?: ShippingIndexSnapshot | null;
   tradeRemedy?: TradeRemedySnapshot | null;
   internalBusiness?: InternalBusinessSnapshot | null;
+  internalCustomers?: InternalBusinessCustomerSnapshot | null;
 }
 
 export interface AdviceEvidenceMeta {
