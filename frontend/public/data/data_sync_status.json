@@ -1,16 +1,16 @@
 {
   "schema_version": "1.1",
-  "generated_at": "2026-09-10T14:08:29.893Z",
+  "generated_at": "2026-09-11T14:07:58.053Z",
   "schedule": "每天 18:00（Asia/Shanghai）",
   "scheduler": "cron 或 launchd（由部署环境安装；本仓库不自动启动后台服务）",
   "sources": {
     "steel-dashboard-public": {
       "source_id": "steel-dashboard-public",
       "state": "fresh",
-      "attempted_at": "2026-09-10T14:06:10.712Z",
-      "success_at": "2026-09-10T14:06:12.904Z",
-      "snapshot_captured_at": "2026-09-10T14:06:12.850Z",
-      "coverage_end": "2026-09-08",
+      "attempted_at": "2026-09-11T14:05:36.433Z",
+      "success_at": "2026-09-11T14:05:38.699Z",
+      "snapshot_captured_at": "2026-09-11T14:05:38.645Z",
+      "coverage_end": "2026-09-11",
       "retry": {
         "attempts": 2,
         "timeoutMs": 180000,
@@ -21,9 +21,9 @@
     "steel-export-dashboard-public": {
       "source_id": "steel-export-dashboard-public",
       "state": "fresh",
-      "attempted_at": "2026-09-10T14:06:10.712Z",
-      "success_at": "2026-09-10T14:06:30.168Z",
-      "snapshot_captured_at": "2026-09-10T14:06:30.083Z",
+      "attempted_at": "2026-09-11T14:05:36.433Z",
+      "success_at": "2026-09-11T14:05:57.776Z",
+      "snapshot_captured_at": "2026-09-11T14:05:57.691Z",
       "coverage_end": "2026-07",
       "retry": {
         "attempts": 2,
@@ -35,10 +35,10 @@
     "forex-dashboard-public": {
       "source_id": "forex-dashboard-public",
       "state": "fresh",
-      "attempted_at": "2026-09-10T14:06:10.712Z",
-      "success_at": "2026-09-10T14:06:33.758Z",
-      "snapshot_captured_at": "2026-09-10T14:06:33.740Z",
-      "coverage_end": "2026-09-08",
+      "attempted_at": "2026-09-11T14:05:36.433Z",
+      "success_at": "2026-09-11T14:06:00.739Z",
+      "snapshot_captured_at": "2026-09-11T14:06:00.721Z",
+      "coverage_end": "2026-09-10",
       "retry": {
         "attempts": 2,
         "timeoutMs": 180000,
@@ -49,9 +49,9 @@
     "taric-quota-dashboard-public": {
       "source_id": "taric-quota-dashboard-public",
       "state": "fresh",
-      "attempted_at": "2026-09-10T14:06:10.712Z",
-      "success_at": "2026-09-10T14:06:40.242Z",
-      "snapshot_captured_at": "2026-09-10T14:06:33.789Z",
+      "attempted_at": "2026-09-11T14:05:36.433Z",
+      "success_at": "2026-09-11T14:06:06.094Z",
+      "snapshot_captured_at": "2026-09-11T14:06:00.771Z",
       "coverage_end": "2026-09-09",
       "retry": {
         "attempts": 2,
@@ -63,7 +63,7 @@
     "shipping-index-dashboard-public": {
       "source_id": "shipping-index-dashboard-public",
       "state": "fallback",
-      "attempted_at": "2026-09-10T14:06:10.712Z",
+      "attempted_at": "2026-09-11T14:05:36.433Z",
       "success_at": "2026-09-08T14:12:07.358Z",
       "snapshot_captured_at": "2026-09-08T14:12:07.286Z",
       "coverage_end": "2026-09-07",
@@ -72,7 +72,7 @@
     "trade-remedy-dashboard-public": {
       "source_id": "trade-remedy-dashboard-public",
       "state": "fallback",
-      "attempted_at": "2026-09-10T14:06:10.712Z",
+      "attempted_at": "2026-09-11T14:05:36.433Z",
       "success_at": "2026-09-08T14:12:13.320Z",
       "snapshot_captured_at": "2026-09-08T14:12:13.237Z",
       "coverage_end": "2026-09-04",
@@ -81,10 +81,10 @@
     "mysteel-fast-news": {
       "source_id": "mysteel-fast-news",
       "state": "fresh",
-      "attempted_at": "2026-09-10T14:06:10.712Z",
-      "success_at": "2026-09-10T14:08:29.893Z",
-      "snapshot_captured_at": "2026-09-10T14:08:29.782Z",
-      "coverage_end": "2026-09-10",
+      "attempted_at": "2026-09-11T14:05:36.433Z",
+      "success_at": "2026-09-11T14:07:58.052Z",
+      "snapshot_captured_at": "2026-09-11T14:07:57.930Z",
+      "coverage_end": "2026-09-11",
       "retry": {
         "attempts": 2,
         "timeoutMs": 180000,
