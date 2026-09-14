@@ -1,17 +1,17 @@
 {
   "schema_version": "1.1",
-  "generated_at": "2026-09-13T14:07:27.447Z",
-  "schedule": "每天 18:00（Asia/Shanghai）",
-  "generated_at": "2026-09-09T06:01:05.073Z",
+  "generated_at": "2026-09-14T06:24:53.990Z",
   "schedule": "全量每天 18:00；我的钢铁网快讯每天 08:10、09:00；潮汐早报与霍尔木兹专题每天 09:00（Asia/Shanghai）",
   "scheduler": "cron 或 launchd（由部署环境安装；本仓库不自动启动后台服务）",
   "sources": {
     "steel-dashboard-public": {
       "source_id": "steel-dashboard-public",
       "state": "fresh",
-      "attempted_at": "2026-09-13T14:06:16.631Z",
-      "success_at": "2026-09-13T14:06:19.090Z",
-      "snapshot_captured_at": "2026-09-13T14:06:19.039Z",
+      "quality_state": "complete",
+      "quality_warnings": [],
+      "attempted_at": "2026-09-14T06:23:10.248Z",
+      "success_at": "2026-09-14T06:23:13.537Z",
+      "snapshot_captured_at": "2026-09-14T06:23:13.497Z",
       "coverage_end": "2026-09-11",
       "retry": {
         "attempts": 2,
@@ -23,9 +23,11 @@
     "steel-export-dashboard-public": {
       "source_id": "steel-export-dashboard-public",
       "state": "fresh",
-      "attempted_at": "2026-09-13T14:06:16.631Z",
-      "success_at": "2026-09-13T14:06:43.135Z",
-      "snapshot_captured_at": "2026-09-13T14:06:43.052Z",
+      "quality_state": "complete",
+      "quality_warnings": [],
+      "attempted_at": "2026-09-14T06:23:10.248Z",
+      "success_at": "2026-09-14T06:23:54.489Z",
+      "snapshot_captured_at": "2026-09-14T06:23:54.420Z",
       "coverage_end": "2026-07",
       "retry": {
         "attempts": 2,
@@ -37,9 +39,11 @@
     "forex-dashboard-public": {
       "source_id": "forex-dashboard-public",
       "state": "fresh",
-      "attempted_at": "2026-09-13T14:06:16.631Z",
-      "success_at": "2026-09-13T14:06:47.136Z",
-      "snapshot_captured_at": "2026-09-13T14:06:47.119Z",
+      "quality_state": "complete",
+      "quality_warnings": [],
+      "attempted_at": "2026-09-14T06:23:10.248Z",
+      "success_at": "2026-09-14T06:23:57.812Z",
+      "snapshot_captured_at": "2026-09-14T06:23:57.799Z",
       "coverage_end": "2026-09-11",
       "retry": {
         "attempts": 2,
@@ -51,9 +55,11 @@
     "taric-quota-dashboard-public": {
       "source_id": "taric-quota-dashboard-public",
       "state": "fresh",
-      "attempted_at": "2026-09-13T14:06:16.631Z",
-      "success_at": "2026-09-13T14:06:54.285Z",
-      "snapshot_captured_at": "2026-09-13T14:06:47.168Z",
+      "quality_state": "complete",
+      "quality_warnings": [],
+      "attempted_at": "2026-09-14T06:23:10.248Z",
+      "success_at": "2026-09-14T06:24:03.381Z",
+      "snapshot_captured_at": "2026-09-14T06:23:57.838Z",
       "coverage_end": "2026-09-09",
       "retry": {
         "attempts": 2,
@@ -65,7 +71,7 @@
     "shipping-index-dashboard-public": {
       "source_id": "shipping-index-dashboard-public",
       "state": "fallback",
-      "attempted_at": "2026-09-13T14:06:16.631Z",
+      "attempted_at": "2026-09-14T06:23:10.248Z",
       "success_at": "2026-09-08T14:12:07.358Z",
       "snapshot_captured_at": "2026-09-08T14:12:07.286Z",
       "coverage_end": "2026-09-07",
@@ -74,7 +80,7 @@
     "trade-remedy-dashboard-public": {
       "source_id": "trade-remedy-dashboard-public",
       "state": "fallback",
-      "attempted_at": "2026-09-13T14:06:16.631Z",
+      "attempted_at": "2026-09-14T06:23:10.248Z",
       "success_at": "2026-09-08T14:12:13.320Z",
       "snapshot_captured_at": "2026-09-08T14:12:13.237Z",
       "coverage_end": "2026-09-04",
@@ -83,10 +89,14 @@
     "mysteel-fast-news": {
       "source_id": "mysteel-fast-news",
       "state": "fresh",
-      "attempted_at": "2026-09-13T14:06:16.631Z",
-      "success_at": "2026-09-13T14:07:27.447Z",
-      "snapshot_captured_at": "2026-09-13T14:07:27.432Z",
-      "coverage_end": "2026-09-13",
+      "quality_state": "partial",
+      "quality_warnings": [
+        "API 报告总量超过本次分页采集量；快照仅覆盖目标日期窗口，需按分类/地区拆分请求补全。"
+      ],
+      "attempted_at": "2026-09-14T06:23:10.248Z",
+      "success_at": "2026-09-14T06:24:46.839Z",
+      "snapshot_captured_at": "2026-09-14T06:24:46.708Z",
+      "coverage_end": "2026-09-14",
       "retry": {
         "attempts": 2,
         "timeoutMs": 180000,
@@ -97,22 +107,22 @@
     "tide-global-news": {
       "source_id": "tide-global-news",
       "state": "fresh",
-      "attempted_at": "2026-09-09T06:00:59.940Z",
-      "success_at": "2026-09-09T06:01:05.073Z",
-      "snapshot_captured_at": "2026-09-09T06:00:59.972Z",
-      "coverage_end": "2026-09-08T12:01:25.000Z",
+      "quality_state": "partial",
+      "quality_warnings": [
+        "历史上的今天：历史人物/事件结构化数据为空；RSS 仅返回批次占位入口；RSS 未解析出有效新闻；HTML 未解析出历史人物/事件结构化数据；HTML 未解析出有效新闻",
+        "历史上的今天：未取得可验证的人物/事件结构化数据，未虚构内容；请检查 Kagi 历史批次页访问与解析状态"
+      ],
+      "history_status": "unavailable",
+      "attempted_at": "2026-09-14T06:23:10.248Z",
+      "success_at": "2026-09-14T06:24:53.990Z",
+      "snapshot_captured_at": "2026-09-14T06:24:46.869Z",
+      "coverage_end": "2026-09-13T06:55:39.000Z",
       "retry": {
         "attempts": 2,
         "timeoutMs": 180000,
         "baseDelayMs": 3000,
         "maxDelayMs": 15000
-      },
-      "quality_state": "partial",
-      "quality_warnings": [
-        "历史上的今天：未取得可验证的人物/事件结构化数据，已移除 RSS 占位摘要",
-        "历史页与普通新闻分开验收"
-      ],
-      "history_status": "unavailable"
+      }
     },
     "hormuz-special": {
       "source_id": "hormuz-special",
