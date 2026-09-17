@@ -6,10 +6,10 @@
     "dashboard_url": "https://www.mysteel.com/fastcomment/#/",
     "api_url": "https://openapi.mysteel.com/without_sign/newsflash/flashnews/query_by_tags.htm",
     "taxonomy_url": "https://a.mysteelcdn.com/common/publish/newsflash/newsflash_column.json",
-    "captured_at": "2026-09-17T04:47:11.519Z",
+    "captured_at": "2026-09-17T06:00:27.545Z",
     "coverage_start": "2026-09-17",
     "coverage_end": "2026-09-17",
-    "latest_published_at": "2026-09-17T04:36:51.122Z",
+    "latest_published_at": "2026-09-17T05:58:29.873Z",
     "timezone": "Asia/Shanghai",
     "fetch_mode": "api",
     "request_params": {
@@ -23,42 +23,42 @@
         ]
       ]
     },
-    "raw_sha256": "15d1ac6a86ad5a3cae300c5ac6ae6fcef9d53b783d583d6e6c1927471fd42573",
+    "raw_sha256": "dfc267decfe57d71909cc86489865d5956fc29f5d92b09e8ad0066709d64f218",
     "taxonomy_sha256": "c98f5bfdacde3401c98ea8f43bac3ca63d35b569f6aad3e1fff2f39b58a0dbf3",
     "response_sha256": [
-      "cbc0a2ec4dac8853ed2ae0bf18b9d52012bac14cf39f3714c2e7e80bb0b93f55",
-      "94e9599ddeea5df7f7667c4686cb91eb8bf0f47237c915a50511aa865f7b061d",
-      "78895bc0aa65d65fed08094dd0b7fd533497288da7ce20ca33d06be6d3a5e316",
-      "f46f753be47724a7f4c992ca6cc59b4f894c429c06a3826bb8d6ed704693aece",
-      "ed9ba4367430ab95f59bf943a0746e179f9db430581489056575e45891aa735b",
-      "9e23585c3d43785c897d46e691f44add2d6d400c837cc84fe78e9c8955d1bf90",
-      "4a77237e29223e870014f737f433e032c8ce5206bfd1569450661e1b9e0e9310",
-      "1a617701fa0780ba6bf47416e95c5dd9102b5c2d5d842b8da5321c4b2959dc60",
-      "8f5eb813b71d67484602e7bded33fa4a87f81f5a91954fbf6a47cf3cc57b28f8",
-      "f440bc530dfbd51ee87d414dc9e83a90e916f9e55aceec8c3e4b5748449e1ed3",
-      "0c2029a7c4a7f6a92eb02ea6aa869444eeaf259bdaa7cd9aaa7b94221173f81a",
-      "1dd0b3366ca9883eddb26fa42cae4d375733d26e24238e3d2e3f3ed40cd784ad",
-      "17671d1db61c20d0d58c6dfb8c542f2c33cae2201c5df9e85859d059ead45ee6",
-      "e5cbac583fa8d1a755cc122a66525bed80d5123523ba2fae6d31fafda2e90fa7",
-      "059dd0d06d03a6920a91e916acfefd3c41572f1fec69c776fed49797684232ac",
-      "6b60f4dd56a569490a4b3b3d10531a5782db5e5e5f28fbd67eed33f512bec0e0",
-      "39c04a3a2a4fe475b2d49976e5ed7516957ee8222c7c238d87d6427d4a2a688e",
-      "e3ae8a2969bbb1db9d83c4797de65377bd3e7140c23fe4105283827a0ac536d5",
-      "8c11151519bdce996dc08715e61762b8b72fe6f22c22ee3554295a37b22c49f4",
-      "04445a513777a262916a026099c6a2b1187f8cafc24011cbda302ee680b0e596",
-      "2d0a465d4693f6413deba50c1190d6ba8db09348f6555aa19ef3cfde7de2dd48",
-      "b0070337ab556c50ace8d965b193ffa46f5f4c51a5ee2e208c867c834e5b3d66",
-      "c5cff00e4083d3518582ee39039fb02344f363a3fde53e5b4bf816e215c8dd3c",
-      "578751c0b3a0aeb38cc202a511a98c208d995d154f8017fcd2e1fd21c8fd4359",
-      "8c3569a863195df5839da291c51318fb3c349da45159831cb5e4f8e62f8c0e5b",
-      "09e14ec57704b23c37a98ad248cbcc5a93202aee196858c4758d2d62b163cd5e"
+      "983616192e503b70ab50ec484221f49f839edd05e6953af41533fbcfa4e28233",
+      "5d864903ffb2715c3ec9388f5f4d5366f08b689ef327007095357253d6f89fc0",
+      "84c1159508f6177c6788659fb9ded14462d11e2789b972af6226525e60bc2aa3",
+      "a110693b0bca1f20c8a4687fd41d16fb520e01f8b52aa7ea9e7e579bb7bc47fb",
+      "96155d9b988019212eeb73825abe3a7968d4dfbeb32c2adcc649d43eb6a8e8f2",
+      "105a76a7faa91e4741665268df4656668c716f0302c11a2d74bcd4b9c73c7144",
+      "65f42333dcd2200e0676eb2e9a87c1faa90b97127d688241e4c9e66204f0e672",
+      "66ef2cc58534ff1dbe9da71a58288b566db8c84f145dbf96161aa085148912b0",
+      "94c2d268db096db48ee9dacf2f37da02de955712e05b361c1eb24a0866073a2f",
+      "0166f3d7459ce644033baaaed54756b7b3f732c7eb7aad0cc65483897db462cc",
+      "8216955c1282a38753f80859ffeb67bb4d0fb9df2ccd7e67155d9973f24d6b26",
+      "be2d31b2ba7edcd2637a305fbb3440dacc7530dbb5736304ad2c59a182e7bc80",
+      "2a4723cfc5e540d6339022fd1469ae7da3d144def9e858f505f21c9ad5a5b19b",
+      "196537caf55d75b961cafda82839a09dab350ce48ab2d20dfd897fb885dceda2",
+      "d623a8eae955051311ebe7a6eefd8bdaa17e37c6efe76c5deffd528609473545",
+      "bd7c9fbe4f97f48713d68b3f92056e63355d30ba3b65978bbbfbeba63a3c8d0f",
+      "02325d9016bbe62d2055d5972f20b78c011d7ae2225466adff2484def96e3b27",
+      "17e6f20c211fd9db8cb9e45f29f1baa321326b9156faeadfabd8380e4f1abc8a",
+      "047518db46f9ef2936439b9d98bcbff34b92d94dcee6f8eac50ca90a2c799eeb",
+      "32d40b759938f5d5d043f7f0c55a684ca6549f81d6b84509cae0b9f7f53256b5",
+      "66a36d886c2341c9bbba3b4c6ae8cf261d8a04e716fee4be46c05fe8205a34ca",
+      "61d6eb6f71464d4615f0ef0f7b22137ad86e6d0932ddd92991de6c30de6e22f1",
+      "7728459a23c1423d466f9b115844bd9dc6addaa9a475720ee0aecbd830e08e46",
+      "cab83f457f991518acf0697924203a7ea7ff7addf239e741183b7492e8c9bc4c",
+      "3afa3c2aced0881848214a1bf1f6a102afe23e4a855e76fd24cfa2c9899a0758",
+      "635143e4d17af80f6a7b3426b3e9908a2a96f98536f571bc633da44c67beb9be"
     ],
     "page_count": 26,
     "reported_total": 10000,
     "truncation_detected": true,
     "watermark": {
-      "publisher_time_ms": 1789619811122,
-      "id": "4870690"
+      "publisher_time_ms": 1789624709873,
+      "id": "4870720"
     },
     "retry": {
       "attempts": 3,
@@ -68,6 +68,1468 @@
     }
   },
   "items": [
+    {
+      "news_id": "4870720",
+      "published_at": "2026-09-17T05:58:29.873Z",
+      "published_at_ms": 1789624709873,
+      "timezone": "Asia/Shanghai",
+      "content_text": "9月17日午后沈阳市场镀锌管价格稳，4寸*3.75mm唐山正元报4020，吉林华岐报3980，迁安正大报4020,过磅含税。（元/吨）",
+      "content_html": "9月17日午后沈阳市场镀锌管价格稳，4寸*3.75mm唐山正元报4020，吉林华岐报3980，迁安正大报4020,过磅含税。（元/吨）",
+      "raw_content": "9月17日午后沈阳市场镀锌管价格稳，4寸*3.75mm唐山正元报4020，吉林华岐报3980，迁安正大报4020,过磅含税。（元/吨）",
+      "category": {
+        "id": 2,
+        "name": "2"
+      },
+      "section": {
+        "id": 7,
+        "name": "7"
+      },
+      "products": [
+        {
+          "id": "01010905",
+          "name": "镀锌管",
+          "source": "relationBreed"
+        }
+      ],
+      "regions": [
+        {
+          "id": "01050101",
+          "name": "沈阳"
+        }
+      ],
+      "source_name": null,
+      "source_url": null,
+      "in_article_url": null,
+      "out_article_url": null,
+      "in_article_title": null,
+      "out_article_title": null,
+      "source_link_status": "no_link",
+      "data_source": 2,
+      "publisher_id": 225338,
+      "relation_id": 7624151,
+      "ai_flag": 0,
+      "platform_product_line": null,
+      "mapping_status": "ambiguous",
+      "quality_flags": [
+        "source_link_missing"
+      ]
+    },
+    {
+      "news_id": "4870721",
+      "published_at": "2026-09-17T05:58:00.000Z",
+      "published_at_ms": 1789624680000,
+      "timezone": "Asia/Shanghai",
+      "content_text": "H200 SXM整机价格短期加速上行。周二客户询价SXM整机报561万元/台，今日市场报价已升至580万元/台，两日上涨19万元。昨晚9点，一批H200 2T深圳现货SXM完成交易，数量128台，现款现货，成交价603万元/台，较今日市场报价溢价约23万元，现货抢货特征明显。 Mysteel分析，本轮上涨主因供给端约束。H200对华出口虽已获许可，但进口审批仍严，实际流通货源有限，库存难以有效转化为现货，深圳等口岸现货稀缺性溢价上升。需求端询价活跃，买方对9月交付及现货资源接受度提高，推动报价重心快速上移。租金端调整暂滞后于买断价，若整机价格持续运行于580万元以上，后续租金补涨压力将逐步显现。 短期看，H200 SXM现货流通量有限，报价或维持偏强。需关注9月下旬新货源释放及进口审批节奏。",
+      "content_html": "H200 SXM整机价格短期加速上行。周二客户询价SXM整机报561万元/台，今日市场报价已升至580万元/台，两日上涨19万元。昨晚9点，一批H200 2T深圳现货SXM完成交易，数量128台，现款现货，成交价603万元/台，较今日市场报价溢价约23万元，现货抢货特征明显。\r\n\r\nMysteel分析，本轮上涨主因供给端约束。H200对华出口虽已获许可，但进口审批仍严，实际流通货源有限，库存难以有效转化为现货，深圳等口岸现货稀缺性溢价上升。需求端询价活跃，买方对9月交付及现货资源接受度提高，推动报价重心快速上移。租金端调整暂滞后于买断价，若整机价格持续运行于580万元以上，后续租金补涨压力将逐步显现。\r\n\r\n短期看，H200 SXM现货流通量有限，报价或维持偏强。需关注9月下旬新货源释放及进口审批节奏。",
+      "raw_content": "H200 SXM整机价格短期加速上行。周二客户询价SXM整机报561万元/台，今日市场报价已升至580万元/台，两日上涨19万元。昨晚9点，一批H200 2T深圳现货SXM完成交易，数量128台，现款现货，成交价603万元/台，较今日市场报价溢价约23万元，现货抢货特征明显。\r\n\r\nMysteel分析，本轮上涨主因供给端约束。H200对华出口虽已获许可，但进口审批仍严，实际流通货源有限，库存难以有效转化为现货，深圳等口岸现货稀缺性溢价上升。需求端询价活跃，买方对9月交付及现货资源接受度提高，推动报价重心快速上移。租金端调整暂滞后于买断价，若整机价格持续运行于580万元以上，后续租金补涨压力将逐步显现。\r\n\r\n短期看，H200 SXM现货流通量有限，报价或维持偏强。需关注9月下旬新货源释放及进口审批节奏。",
+      "category": {
+        "id": 18,
+        "name": "18"
+      },
+      "section": {
+        "id": 7,
+        "name": "7"
+      },
+      "products": [],
+      "regions": [],
+      "source_name": "我的钢铁网(Mysteel)",
+      "source_url": "http://suanli.mysteel.com/a/26091713/D436DF91D60FDD9B.html",
+      "in_article_url": "http://suanli.mysteel.com/a/26091713/D436DF91D60FDD9B.html",
+      "out_article_url": null,
+      "in_article_title": "Mysteel算力：H200 SXM整机报价两日涨至580万，128台深圳现货603万成交",
+      "out_article_title": null,
+      "source_link_status": "article_link",
+      "data_source": 1,
+      "publisher_id": 216369,
+      "relation_id": 45899333,
+      "ai_flag": 0,
+      "platform_product_line": null,
+      "mapping_status": "unmapped",
+      "quality_flags": []
+    },
+    {
+      "news_id": "4870719",
+      "published_at": "2026-09-17T05:57:00.000Z",
+      "published_at_ms": 1789624620000,
+      "timezone": "Asia/Shanghai",
+      "content_text": "农业农村部近日印发《全国种植业发展“十五五”规划》。规划提出，要增强粮食等重要农产品供给保障能力，深入推进种植业绿色转型，发挥农业新质生产力引领作用，增强农业防灾减灾救灾能力。到2030年，我国粮食综合生产能力将达1.45万亿斤左右，粮食综合生产能力稳步提升，守牢谷物基本自给、口粮绝对安全底线。",
+      "content_html": "农业农村部近日印发《全国种植业发展“十五五”规划》。规划提出，要增强粮食等重要农产品供给保障能力，深入推进种植业绿色转型，发挥农业新质生产力引领作用，增强农业防灾减灾救灾能力。到2030年，我国粮食综合生产能力将达1.45万亿斤左右，粮食综合生产能力稳步提升，守牢谷物基本自给、口粮绝对安全底线。",
+      "raw_content": "农业农村部近日印发《全国种植业发展“十五五”规划》。规划提出，要增强粮食等重要农产品供给保障能力，深入推进种植业绿色转型，发挥农业新质生产力引领作用，增强农业防灾减灾救灾能力。到2030年，我国粮食综合生产能力将达1.45万亿斤左右，粮食综合生产能力稳步提升，守牢谷物基本自给、口粮绝对安全底线。",
+      "category": {
+        "id": 1,
+        "name": "1"
+      },
+      "section": {
+        "id": 8,
+        "name": "8"
+      },
+      "products": [
+        {
+          "id": "粮食",
+          "name": "粮食",
+          "source": "breedTag"
+        }
+      ],
+      "regions": [],
+      "source_name": "财联社",
+      "source_url": "http://news.mysteel.com/a/26091713/D191E6367FB07892.html",
+      "in_article_url": "http://news.mysteel.com/a/26091713/D191E6367FB07892.html",
+      "out_article_url": null,
+      "in_article_title": "农业农村部：到2030年，我国粮食综合生产能力将达1.45万亿斤左右",
+      "out_article_title": null,
+      "source_link_status": "article_link",
+      "data_source": 1,
+      "publisher_id": 216058,
+      "relation_id": 45899321,
+      "ai_flag": 0,
+      "platform_product_line": null,
+      "mapping_status": "ambiguous",
+      "quality_flags": []
+    },
+    {
+      "news_id": "4870718",
+      "published_at": "2026-09-17T05:56:46.645Z",
+      "published_at_ms": 1789624606645,
+      "timezone": "Asia/Shanghai",
+      "content_text": "9月17日唐山建筑钢材市场价格盘中稳，现三级大螺纹3110，三级小螺纹3230，盘螺3380。（元/吨）",
+      "content_html": "9月17日唐山建筑钢材市场价格盘中稳，现三级大螺纹3110，三级小螺纹3230，盘螺3380。（元/吨）",
+      "raw_content": "9月17日唐山建筑钢材市场价格盘中稳，现三级大螺纹3110，三级小螺纹3230，盘螺3380。（元/吨）",
+      "category": {
+        "id": 2,
+        "name": "2"
+      },
+      "section": {
+        "id": 7,
+        "name": "7"
+      },
+      "products": [
+        {
+          "id": "010101",
+          "name": "建筑钢材",
+          "source": "relationBreed"
+        },
+        {
+          "id": "螺纹钢",
+          "name": "螺纹钢",
+          "source": "breedTag"
+        },
+        {
+          "id": "盘螺",
+          "name": "盘螺",
+          "source": "breedTag"
+        }
+      ],
+      "regions": [
+        {
+          "id": "010403",
+          "name": "河北"
+        }
+      ],
+      "source_name": null,
+      "source_url": null,
+      "in_article_url": null,
+      "out_article_url": null,
+      "in_article_title": null,
+      "out_article_title": null,
+      "source_link_status": "no_link",
+      "data_source": 2,
+      "publisher_id": 210008,
+      "relation_id": 7624150,
+      "ai_flag": 0,
+      "platform_product_line": null,
+      "mapping_status": "ambiguous",
+      "quality_flags": [
+        "source_link_missing"
+      ]
+    },
+    {
+      "news_id": "4870717",
+      "published_at": "2026-09-17T05:56:24.475Z",
+      "published_at_ms": 1789624584475,
+      "timezone": "Asia/Shanghai",
+      "content_text": "9月17日秦皇岛建筑钢材价格格盘中稳，抗震三大3210，φ12三级3330，抗震盘3480左右。（元/吨）",
+      "content_html": "9月17日秦皇岛建筑钢材价格格盘中稳，抗震三大3210，φ12三级3330，抗震盘3480左右。（元/吨）",
+      "raw_content": "9月17日秦皇岛建筑钢材价格格盘中稳，抗震三大3210，φ12三级3330，抗震盘3480左右。（元/吨）",
+      "category": {
+        "id": 2,
+        "name": "2"
+      },
+      "section": {
+        "id": 7,
+        "name": "7"
+      },
+      "products": [
+        {
+          "id": "010101",
+          "name": "建筑钢材",
+          "source": "relationBreed"
+        }
+      ],
+      "regions": [
+        {
+          "id": "01040303",
+          "name": "秦皇岛"
+        }
+      ],
+      "source_name": null,
+      "source_url": null,
+      "in_article_url": null,
+      "out_article_url": null,
+      "in_article_title": null,
+      "out_article_title": null,
+      "source_link_status": "no_link",
+      "data_source": 2,
+      "publisher_id": 210008,
+      "relation_id": 7624149,
+      "ai_flag": 0,
+      "platform_product_line": null,
+      "mapping_status": "ambiguous",
+      "quality_flags": [
+        "source_link_missing"
+      ]
+    },
+    {
+      "news_id": "4870716",
+      "published_at": "2026-09-17T05:55:00.000Z",
+      "published_at_ms": 1789624500000,
+      "timezone": "Asia/Shanghai",
+      "content_text": "9月17日，华为在全联接大会2026推出OceanStor M900 AI记忆存储。该产品基于灵衢打造，面向Agent推理系统提出多层KV缓存架构，支持“一跳直连”的L3.5层PB级KV缓存集群。M900采用混合介质及优化Retention算法，将SSD读写寿命提升16倍，从底层保障KV命中率和长稳可靠性。",
+      "content_html": "9月17日，华为在全联接大会2026推出OceanStor M900 AI记忆存储。该产品基于灵衢打造，面向Agent推理系统提出多层KV缓存架构，支持“一跳直连”的L3.5层PB级KV缓存集群。M900采用混合介质及优化Retention算法，将SSD读写寿命提升16倍，从底层保障KV命中率和长稳可靠性。",
+      "raw_content": "9月17日，华为在全联接大会2026推出OceanStor M900 AI记忆存储。该产品基于灵衢打造，面向Agent推理系统提出多层KV缓存架构，支持“一跳直连”的L3.5层PB级KV缓存集群。M900采用混合介质及优化Retention算法，将SSD读写寿命提升16倍，从底层保障KV命中率和长稳可靠性。",
+      "category": {
+        "id": 18,
+        "name": "18"
+      },
+      "section": {
+        "id": 8,
+        "name": "8"
+      },
+      "products": [
+        {
+          "id": "PB块",
+          "name": "PB块",
+          "source": "breedTag"
+        }
+      ],
+      "regions": [],
+      "source_name": "财联社",
+      "source_url": "http://news.mysteel.com/a/26091713/5CED82EEEBA33546.html",
+      "in_article_url": "http://news.mysteel.com/a/26091713/5CED82EEEBA33546.html",
+      "out_article_url": null,
+      "in_article_title": "华为推出OceanStor M900 AI记忆存储",
+      "out_article_title": null,
+      "source_link_status": "article_link",
+      "data_source": 1,
+      "publisher_id": 216059,
+      "relation_id": 45899290,
+      "ai_flag": 0,
+      "platform_product_line": null,
+      "mapping_status": "ambiguous",
+      "quality_flags": []
+    },
+    {
+      "news_id": "4870715",
+      "published_at": "2026-09-17T05:54:00.000Z",
+      "published_at_ms": 1789624440000,
+      "timezone": "Asia/Shanghai",
+      "content_text": "Mysteel数据：华东地区样本调坯轧钢企业48条轧线本周产量11.78万吨，周环比增加0.26万吨；产能利用率20.41%，周环比增加0.46%；厂内成品库存8.34万吨，周环比增加0.7万吨。",
+      "content_html": "Mysteel数据：华东地区样本调坯轧钢企业48条轧线本周产量11.78万吨，周环比增加0.26万吨；产能利用率20.41%，周环比增加0.46%；厂内成品库存8.34万吨，周环比增加0.7万吨。",
+      "raw_content": "Mysteel数据：华东地区样本调坯轧钢企业48条轧线本周产量11.78万吨，周环比增加0.26万吨；产能利用率20.41%，周环比增加0.46%；厂内成品库存8.34万吨，周环比增加0.7万吨。",
+      "category": {
+        "id": 2,
+        "name": "2"
+      },
+      "section": {
+        "id": 4,
+        "name": "4"
+      },
+      "products": [
+        {
+          "id": "0307",
+          "name": "钢坯",
+          "source": "relationBreed"
+        }
+      ],
+      "regions": [
+        {
+          "id": "0101",
+          "name": "华东"
+        }
+      ],
+      "source_name": "我的钢铁网(Mysteel)",
+      "source_url": "http://gangpi.mysteel.com/a/26091713/178567BD5E8A4784.html",
+      "in_article_url": "http://gangpi.mysteel.com/a/26091713/178567BD5E8A4784.html",
+      "out_article_url": null,
+      "in_article_title": "Mysteel数据：华东地区调坯轧钢企业生产情况（2026.9.10-2026.9.17）",
+      "out_article_title": null,
+      "source_link_status": "article_link",
+      "data_source": 1,
+      "publisher_id": 210060,
+      "relation_id": 45899274,
+      "ai_flag": 0,
+      "platform_product_line": null,
+      "mapping_status": "ambiguous",
+      "quality_flags": []
+    },
+    {
+      "news_id": "4870714",
+      "published_at": "2026-09-17T05:53:44.154Z",
+      "published_at_ms": 1789624424154,
+      "timezone": "Asia/Shanghai",
+      "content_text": "Mysteel 快讯：据调研，9月11日-9月17日苏州螺纹钢社库环比下降6.54%，盘螺社库环比上升74.42%，建筑钢材总库存环比下降2.06%。",
+      "content_html": "Mysteel 快讯：据调研，9月11日-9月17日苏州螺纹钢社库环比下降6.54%，盘螺社库环比上升74.42%，建筑钢材总库存环比下降2.06%。",
+      "raw_content": "Mysteel 快讯：据调研，9月11日-9月17日苏州螺纹钢社库环比下降6.54%，盘螺社库环比上升74.42%，建筑钢材总库存环比下降2.06%。",
+      "category": {
+        "id": 2,
+        "name": "2"
+      },
+      "section": {
+        "id": 4,
+        "name": "4"
+      },
+      "products": [
+        {
+          "id": "010101",
+          "name": "建筑钢材",
+          "source": "relationBreed"
+        },
+        {
+          "id": "螺纹钢",
+          "name": "螺纹钢",
+          "source": "breedTag"
+        },
+        {
+          "id": "盘螺",
+          "name": "盘螺",
+          "source": "breedTag"
+        }
+      ],
+      "regions": [],
+      "source_name": null,
+      "source_url": null,
+      "in_article_url": null,
+      "out_article_url": null,
+      "in_article_title": null,
+      "out_article_title": null,
+      "source_link_status": "no_link",
+      "data_source": 0,
+      "publisher_id": 226948,
+      "relation_id": 0,
+      "ai_flag": 0,
+      "platform_product_line": null,
+      "mapping_status": "ambiguous",
+      "quality_flags": [
+        "source_link_missing"
+      ]
+    },
+    {
+      "news_id": "4870713",
+      "published_at": "2026-09-17T05:52:55.694Z",
+      "published_at_ms": 1789624375694,
+      "timezone": "Asia/Shanghai",
+      "content_text": "Mysteel 快讯：据调研，9月11日-9月17日盐城螺纹钢社库环比上升 9.63%，盘螺社库环比持平，建筑钢材总库存环比上升 6.67%。",
+      "content_html": "Mysteel 快讯：据调研，9月11日-9月17日盐城螺纹钢社库环比上升 9.63%，盘螺社库环比持平，建筑钢材总库存环比上升 6.67%。",
+      "raw_content": "Mysteel 快讯：据调研，9月11日-9月17日盐城螺纹钢社库环比上升 9.63%，盘螺社库环比持平，建筑钢材总库存环比上升 6.67%。",
+      "category": {
+        "id": 2,
+        "name": "2"
+      },
+      "section": {
+        "id": 4,
+        "name": "4"
+      },
+      "products": [
+        {
+          "id": "010101",
+          "name": "建筑钢材",
+          "source": "relationBreed"
+        },
+        {
+          "id": "螺纹钢",
+          "name": "螺纹钢",
+          "source": "breedTag"
+        },
+        {
+          "id": "盘螺",
+          "name": "盘螺",
+          "source": "breedTag"
+        }
+      ],
+      "regions": [],
+      "source_name": null,
+      "source_url": null,
+      "in_article_url": null,
+      "out_article_url": null,
+      "in_article_title": null,
+      "out_article_title": null,
+      "source_link_status": "no_link",
+      "data_source": 0,
+      "publisher_id": 226948,
+      "relation_id": 0,
+      "ai_flag": 0,
+      "platform_product_line": null,
+      "mapping_status": "ambiguous",
+      "quality_flags": [
+        "source_link_missing"
+      ]
+    },
+    {
+      "news_id": "4870712",
+      "published_at": "2026-09-17T05:50:00.000Z",
+      "published_at_ms": 1789624200000,
+      "timezone": "Asia/Shanghai",
+      "content_text": "9月17日，中国一汽旗下旗新动力、中汽新能分别与零跑汽车签署协议。零跑拟作为战略投资者参与旗新动力A轮融资，深化混动发动机、电驱动系统等动力总成协同。同时，双方将联合攻关固态电池、钠离子电池等前瞻技术，推进标准化电芯落地及电池回收合作。",
+      "content_html": "9月17日，中国一汽旗下旗新动力、中汽新能分别与零跑汽车签署协议。零跑拟作为战略投资者参与旗新动力A轮融资，深化混动发动机、电驱动系统等动力总成协同。同时，双方将联合攻关固态电池、钠离子电池等前瞻技术，推进标准化电芯落地及电池回收合作。",
+      "raw_content": "9月17日，中国一汽旗下旗新动力、中汽新能分别与零跑汽车签署协议。零跑拟作为战略投资者参与旗新动力A轮融资，深化混动发动机、电驱动系统等动力总成协同。同时，双方将联合攻关固态电池、钠离子电池等前瞻技术，推进标准化电芯落地及电池回收合作。",
+      "category": {
+        "id": 18,
+        "name": "18"
+      },
+      "section": {
+        "id": 8,
+        "name": "8"
+      },
+      "products": [
+        {
+          "id": "再生金属",
+          "name": "再生金属",
+          "source": "breedTag"
+        },
+        {
+          "id": "锂电池回收",
+          "name": "锂电池回收",
+          "source": "breedTag"
+        },
+        {
+          "id": "钠离子电池",
+          "name": "钠离子电池",
+          "source": "breedTag"
+        }
+      ],
+      "regions": [],
+      "source_name": "中国一汽",
+      "source_url": "http://news.mysteel.com/a/26091713/23B91DAE2482B76F.html",
+      "in_article_url": "http://news.mysteel.com/a/26091713/23B91DAE2482B76F.html",
+      "out_article_url": null,
+      "in_article_title": "零跑汽车拟参与中国一汽旗下旗新动力A轮融资",
+      "out_article_title": null,
+      "source_link_status": "article_link",
+      "data_source": 1,
+      "publisher_id": 216059,
+      "relation_id": 45899211,
+      "ai_flag": 0,
+      "platform_product_line": null,
+      "mapping_status": "ambiguous",
+      "quality_flags": []
+    },
+    {
+      "news_id": "4870711",
+      "published_at": "2026-09-17T05:49:00.000Z",
+      "published_at_ms": 1789624140000,
+      "timezone": "Asia/Shanghai",
+      "content_text": "【不锈钢-钢厂盘价】9月17日东方特钢不锈钢盘价，热轧卷(4-8mm)304价格13550，平；316L价格28400，平。（单位：元/吨）",
+      "content_html": "【不锈钢-钢厂盘价】9月17日东方特钢不锈钢盘价，热轧卷(4-8mm)304价格13550，平；316L价格28400，平。（单位：元/吨）",
+      "raw_content": "【不锈钢-钢厂盘价】9月17日东方特钢不锈钢盘价，热轧卷(4-8mm)304价格13550，平；316L价格28400，平。（单位：元/吨）",
+      "category": {
+        "id": 11,
+        "name": "11"
+      },
+      "section": {
+        "id": 7,
+        "name": "7"
+      },
+      "products": [
+        {
+          "id": "010216",
+          "name": "不锈钢",
+          "source": "relationBreed"
+        },
+        {
+          "id": "不锈钢热轧卷",
+          "name": "不锈钢热轧卷",
+          "source": "breedTag"
+        }
+      ],
+      "regions": [
+        {
+          "id": "01",
+          "name": "国内"
+        }
+      ],
+      "source_name": "我的钢铁网(Mysteel)",
+      "source_url": "http://bxg.mysteel.com/a/26091713/760669990FC227BE.html",
+      "in_article_url": "http://bxg.mysteel.com/a/26091713/760669990FC227BE.html",
+      "out_article_url": null,
+      "in_article_title": "东方特钢日盘价（2026.9.17）",
+      "out_article_title": null,
+      "source_link_status": "article_link",
+      "data_source": 1,
+      "publisher_id": 227195,
+      "relation_id": 45899183,
+      "ai_flag": 0,
+      "platform_product_line": "hot-rolled",
+      "mapping_status": "mapped",
+      "quality_flags": []
+    },
+    {
+      "news_id": "4870710",
+      "published_at": "2026-09-17T05:48:38.426Z",
+      "published_at_ms": 1789624118426,
+      "timezone": "Asia/Shanghai",
+      "content_text": "9月17日邯郸建筑钢材价格盘中稳，φ18三级3160，φ12三级3280，抗震盘3340。（元/吨）",
+      "content_html": "9月17日邯郸建筑钢材价格盘中稳，φ18三级3160，φ12三级3280，抗震盘3340。（元/吨）",
+      "raw_content": "9月17日邯郸建筑钢材价格盘中稳，φ18三级3160，φ12三级3280，抗震盘3340。（元/吨）",
+      "category": {
+        "id": 2,
+        "name": "2"
+      },
+      "section": {
+        "id": 7,
+        "name": "7"
+      },
+      "products": [
+        {
+          "id": "010101",
+          "name": "建筑钢材",
+          "source": "relationBreed"
+        }
+      ],
+      "regions": [
+        {
+          "id": "010403",
+          "name": "河北"
+        }
+      ],
+      "source_name": null,
+      "source_url": null,
+      "in_article_url": null,
+      "out_article_url": null,
+      "in_article_title": null,
+      "out_article_title": null,
+      "source_link_status": "no_link",
+      "data_source": 2,
+      "publisher_id": 220278,
+      "relation_id": 7624148,
+      "ai_flag": 0,
+      "platform_product_line": null,
+      "mapping_status": "ambiguous",
+      "quality_flags": [
+        "source_link_missing"
+      ]
+    },
+    {
+      "news_id": "4870709",
+      "published_at": "2026-09-17T05:47:00.000Z",
+      "published_at_ms": 1789624020000,
+      "timezone": "Asia/Shanghai",
+      "content_text": "中共中央总书记、国家主席、中央军委主席习近平近日就发展先进制造业作出重要指示指出，党的十八大以来，我国先进制造业不断发展壮大，创新力、竞争力、综合实力显著增强，制造强国建设迈出坚实步伐。习近平强调，新征程上，要以新时代中国特色社会主义思想为指导，完整准确全面贯彻新发展理念，统筹高质量发展和高水平安全，坚持智能化、绿色化、融合化方向，持续做大做强先进制造业，提升产业链自主可控水平，加快构建以先进制造业为骨干的现代化产业体系，巩固壮大实体经济根基，为推进中国式现代化提供有力支撑。",
+      "content_html": "中共中央总书记、国家主席、中央军委主席习近平近日就发展先进制造业作出重要指示指出，党的十八大以来，我国先进制造业不断发展壮大，创新力、竞争力、综合实力显著增强，制造强国建设迈出坚实步伐。习近平强调，新征程上，要以新时代中国特色社会主义思想为指导，完整准确全面贯彻新发展理念，统筹高质量发展和高水平安全，坚持智能化、绿色化、融合化方向，持续做大做强先进制造业，提升产业链自主可控水平，加快构建以先进制造业为骨干的现代化产业体系，巩固壮大实体经济根基，为推进中国式现代化提供有力支撑。",
+      "raw_content": "中共中央总书记、国家主席、中央军委主席习近平近日就发展先进制造业作出重要指示指出，党的十八大以来，我国先进制造业不断发展壮大，创新力、竞争力、综合实力显著增强，制造强国建设迈出坚实步伐。习近平强调，新征程上，要以新时代中国特色社会主义思想为指导，完整准确全面贯彻新发展理念，统筹高质量发展和高水平安全，坚持智能化、绿色化、融合化方向，持续做大做强先进制造业，提升产业链自主可控水平，加快构建以先进制造业为骨干的现代化产业体系，巩固壮大实体经济根基，为推进中国式现代化提供有力支撑。",
+      "category": {
+        "id": 1,
+        "name": "1"
+      },
+      "section": {
+        "id": 8,
+        "name": "8"
+      },
+      "products": [],
+      "regions": [],
+      "source_name": "财联社",
+      "source_url": "http://news.mysteel.com/a/26091713/F746F8FC491AD02D.html",
+      "in_article_url": "http://news.mysteel.com/a/26091713/F746F8FC491AD02D.html",
+      "out_article_url": null,
+      "in_article_title": "习近平就发展先进制造业作出重要指示",
+      "out_article_title": null,
+      "source_link_status": "article_link",
+      "data_source": 1,
+      "publisher_id": 216058,
+      "relation_id": 45899147,
+      "ai_flag": 0,
+      "platform_product_line": null,
+      "mapping_status": "unmapped",
+      "quality_flags": []
+    },
+    {
+      "news_id": "4870707",
+      "published_at": "2026-09-17T05:45:13.823Z",
+      "published_at_ms": 1789623913823,
+      "timezone": "Asia/Shanghai",
+      "content_text": "9月17日东北地区20家样本钢厂废钢到货1.18万吨，较上一工作日增加0.03万吨，环比增加2.61%。",
+      "content_html": "9月17日东北地区20家样本钢厂废钢到货1.18万吨，较上一工作日增加0.03万吨，环比增加2.61%。",
+      "raw_content": "9月17日东北地区20家样本钢厂废钢到货1.18万吨，较上一工作日增加0.03万吨，环比增加2.61%。",
+      "category": {
+        "id": 2,
+        "name": "2"
+      },
+      "section": {
+        "id": 4,
+        "name": "4"
+      },
+      "products": [
+        {
+          "id": "0306",
+          "name": "废钢",
+          "source": "relationBreed"
+        },
+        {
+          "id": "再生金属",
+          "name": "再生金属",
+          "source": "breedTag"
+        }
+      ],
+      "regions": [
+        {
+          "id": "0105",
+          "name": "东北"
+        }
+      ],
+      "source_name": null,
+      "source_url": null,
+      "in_article_url": null,
+      "out_article_url": null,
+      "in_article_title": null,
+      "out_article_title": null,
+      "source_link_status": "no_link",
+      "data_source": 2,
+      "publisher_id": 223887,
+      "relation_id": 7624147,
+      "ai_flag": 0,
+      "platform_product_line": null,
+      "mapping_status": "ambiguous",
+      "quality_flags": [
+        "source_link_missing"
+      ]
+    },
+    {
+      "news_id": "4870706",
+      "published_at": "2026-09-17T05:45:13.585Z",
+      "published_at_ms": 1789623913585,
+      "timezone": "Asia/Shanghai",
+      "content_text": "【不锈钢内贸到港及在途海漂库存】Mysteel调研，截止2026年9月17日，内贸不锈钢在途海漂量较上期减少22615吨，周环比下降29.7%。分发货港口来看，发自福建港口较上期减少13905吨，发自江苏港口较上期减少8710吨，本轮福建、江苏两大主要发货港口均有降量。 9月10日-9月17日内贸不锈钢卸货到港量较上期减少7677吨，周环比降幅10.68%，本周内贸海运到货量小幅下降。分区域来看：佛山到货减量明显，较上期减少16459吨；靖江到货量微降，环比减少2012吨；无锡到货出现增量，较上期增加10794吨，区域到货分化显著。（江苏钢厂发货无锡、靖江多采用小船或汽运，不在监测范围内）",
+      "content_html": "【不锈钢内贸到港及在途海漂库存】Mysteel调研，截止2026年9月17日，内贸不锈钢在途海漂量较上期减少22615吨，周环比下降29.7%。分发货港口来看，发自福建港口较上期减少13905吨，发自江苏港口较上期减少8710吨，本轮福建、江苏两大主要发货港口均有降量。<span style=\"text-align: justify;\">9月10日-9月17日内贸不锈钢卸货到港量较上期减少7677吨，周环比降幅10.68%，本周内贸海运到货量小幅下降。分区域来看：佛山到货减量明显，较上期减少16459吨；靖江到货量微降，环比减少2012吨；无锡到货出现增量，较上期增加10794吨，区域到货分化显著。（江苏钢厂发货无锡、靖江多采用小船或汽运，不在监测范围内）</span>",
+      "raw_content": "【不锈钢内贸到港及在途海漂库存】Mysteel调研，截止2026年9月17日，内贸不锈钢在途海漂量较上期减少22615吨，周环比下降29.7%。分发货港口来看，发自福建港口较上期减少13905吨，发自江苏港口较上期减少8710吨，本轮福建、江苏两大主要发货港口均有降量。<span style=\"text-align: justify;\">9月10日-9月17日内贸不锈钢卸货到港量较上期减少7677吨，周环比降幅10.68%，本周内贸海运到货量小幅下降。分区域来看：佛山到货减量明显，较上期减少16459吨；靖江到货量微降，环比减少2012吨；无锡到货出现增量，较上期增加10794吨，区域到货分化显著。（江苏钢厂发货无锡、靖江多采用小船或汽运，不在监测范围内）</span>",
+      "category": {
+        "id": 11,
+        "name": "11"
+      },
+      "section": {
+        "id": 4,
+        "name": "4"
+      },
+      "products": [
+        {
+          "id": "010216",
+          "name": "不锈钢",
+          "source": "relationBreed"
+        }
+      ],
+      "regions": [],
+      "source_name": null,
+      "source_url": null,
+      "in_article_url": null,
+      "out_article_url": null,
+      "in_article_title": null,
+      "out_article_title": null,
+      "source_link_status": "no_link",
+      "data_source": 0,
+      "publisher_id": 225563,
+      "relation_id": 0,
+      "ai_flag": 0,
+      "platform_product_line": null,
+      "mapping_status": "ambiguous",
+      "quality_flags": [
+        "source_link_missing"
+      ]
+    },
+    {
+      "news_id": "4870708",
+      "published_at": "2026-09-17T05:45:00.000Z",
+      "published_at_ms": 1789623900000,
+      "timezone": "Asia/Shanghai",
+      "content_text": "9月17日，一线城市新房周成交同比增28.18%。二手房方面，四大城市日成交1979套，上海、北京分别环比涨8.5%、8.95%，深圳、杭州小幅下滑。数据显示市场热度回升，上海二手房表现尤为强劲。",
+      "content_html": "9月17日，一线城市新房周成交同比增28.18%。二手房方面，四大城市日成交1979套，上海、北京分别环比涨8.5%、8.95%，深圳、杭州小幅下滑。数据显示市场热度回升，上海二手房表现尤为强劲。",
+      "raw_content": "9月17日，一线城市新房周成交同比增28.18%。二手房方面，四大城市日成交1979套，上海、北京分别环比涨8.5%、8.95%，深圳、杭州小幅下滑。数据显示市场热度回升，上海二手房表现尤为强劲。",
+      "category": {
+        "id": 6,
+        "name": "6"
+      },
+      "section": {
+        "id": 7,
+        "name": "7"
+      },
+      "products": [
+        {
+          "id": "1001",
+          "name": "水泥",
+          "source": "relationBreed"
+        },
+        {
+          "id": "1002",
+          "name": "混凝土",
+          "source": "relationBreed"
+        },
+        {
+          "id": "1006",
+          "name": "砂石",
+          "source": "relationBreed"
+        },
+        {
+          "id": "12",
+          "name": "木材",
+          "source": "relationBreed"
+        }
+      ],
+      "regions": [
+        {
+          "id": "01",
+          "name": "国内"
+        },
+        {
+          "id": "0101",
+          "name": "华东"
+        }
+      ],
+      "source_name": "百年建筑网",
+      "source_url": "http://www.100njz.com/a/26091713/E527F86F3BF2E403.html",
+      "in_article_url": "http://www.100njz.com/a/26091713/E527F86F3BF2E403.html",
+      "out_article_url": null,
+      "in_article_title": "房地产成交日报：一线城市新房同比增28%，上海二手房增36%（20260917）",
+      "out_article_title": null,
+      "source_link_status": "article_link",
+      "data_source": 1,
+      "publisher_id": 221065,
+      "relation_id": 45899111,
+      "ai_flag": 0,
+      "platform_product_line": null,
+      "mapping_status": "ambiguous",
+      "quality_flags": []
+    },
+    {
+      "news_id": "4870705",
+      "published_at": "2026-09-17T05:44:00.000Z",
+      "published_at_ms": 1789623840000,
+      "timezone": "Asia/Shanghai",
+      "content_text": "美光科技CEO桑杰・梅赫罗特拉表示，美光位于印度萨南德的芯片封装测试工厂已于今年早些时候投产。该基地预计明年将实现数亿颗存储芯片的封装与测试产能。",
+      "content_html": "美光科技CEO桑杰・梅赫罗特拉表示，美光位于印度萨南德的芯片封装测试工厂已于今年早些时候投产。该基地预计明年将实现数亿颗存储芯片的封装与测试产能。",
+      "raw_content": "美光科技CEO桑杰・梅赫罗特拉表示，美光位于印度萨南德的芯片封装测试工厂已于今年早些时候投产。该基地预计明年将实现数亿颗存储芯片的封装与测试产能。",
+      "category": {
+        "id": 18,
+        "name": "18"
+      },
+      "section": {
+        "id": 8,
+        "name": "8"
+      },
+      "products": [],
+      "regions": [],
+      "source_name": "财联社",
+      "source_url": "http://news.mysteel.com/a/26091713/AF36CFD28B8A81A0.html",
+      "in_article_url": "http://news.mysteel.com/a/26091713/AF36CFD28B8A81A0.html",
+      "out_article_url": null,
+      "in_article_title": "美光萨南德工厂：预计明年实现数亿颗存储芯片的封装、测试产能",
+      "out_article_title": null,
+      "source_link_status": "article_link",
+      "data_source": 1,
+      "publisher_id": 216059,
+      "relation_id": 45899081,
+      "ai_flag": 0,
+      "platform_product_line": null,
+      "mapping_status": "unmapped",
+      "quality_flags": []
+    },
+    {
+      "news_id": "4870704",
+      "published_at": "2026-09-17T05:44:00.000Z",
+      "published_at_ms": 1789623840000,
+      "timezone": "Asia/Shanghai",
+      "content_text": "17日成都钢饭碗再生资源有限公司一（龙泉驿经开区令狐精品铸造炉料基地，专收精品料，专供铸造厂）长期专业大量高价收购，冷轧料，热轧料，酸洗料，10个厚以下钢板边角料，新冲豆，新钢件料头，新齿轮料头，新弹簧料头，新钢板料头，新角钢料头，新工字钢料头，不带票也可以，带13%增值税发票更好，现金结算。地址：成都市龙泉驿经开区城柏路951号，联系电话13980808378（令狐）",
+      "content_html": "17日成都钢饭碗再生资源有限公司一（龙泉驿经开区令狐精品铸造炉料基地，专收精品料，专供铸造厂）长期专业大量高价收购，冷轧料，热轧料，酸洗料，10个厚以下钢板边角料，新冲豆，新钢件料头，新齿轮料头，新弹簧料头，新钢板料头，新角钢料头，新工字钢料头，不带票也可以，带13%增值税发票更好，现金结算。地址：成都市龙泉驿经开区城柏路951号，联系电话13980808378（令狐）",
+      "raw_content": "17日成都钢饭碗再生资源有限公司一（龙泉驿经开区令狐精品铸造炉料基地，专收精品料，专供铸造厂）长期专业大量高价收购，冷轧料，热轧料，酸洗料，10个厚以下钢板边角料，新冲豆，新钢件料头，新齿轮料头，新弹簧料头，新钢板料头，新角钢料头，新工字钢料头，不带票也可以，带13%增值税发票更好，现金结算。地址：成都市龙泉驿经开区城柏路951号，联系电话13980808378（令狐）",
+      "category": {
+        "id": 2,
+        "name": "2"
+      },
+      "section": {
+        "id": 7,
+        "name": "7"
+      },
+      "products": [
+        {
+          "id": "03061402",
+          "name": "其它废料",
+          "source": "relationBreed"
+        },
+        {
+          "id": "冷轧料",
+          "name": "冷轧料",
+          "source": "breedTag"
+        },
+        {
+          "id": "角钢",
+          "name": "角钢",
+          "source": "breedTag"
+        },
+        {
+          "id": "冲子",
+          "name": "冲子",
+          "source": "breedTag"
+        },
+        {
+          "id": "热轧板卷",
+          "name": "热轧板卷",
+          "source": "breedTag"
+        }
+      ],
+      "regions": [
+        {
+          "id": "0106",
+          "name": "西南"
+        },
+        {
+          "id": "010601",
+          "name": "重庆"
+        },
+        {
+          "id": "010602",
+          "name": "四川"
+        }
+      ],
+      "source_name": "我的钢铁网(Mysteel)",
+      "source_url": "http://feigang.mysteel.com/a/26091713/DB29E3AFAB52A95B.html",
+      "in_article_url": "http://feigang.mysteel.com/a/26091713/DB29E3AFAB52A95B.html",
+      "out_article_url": null,
+      "in_article_title": "17日成都钢饭碗再生资源有限公司废钢采购价格调整信息",
+      "out_article_title": null,
+      "source_link_status": "article_link",
+      "data_source": 1,
+      "publisher_id": 219066,
+      "relation_id": 45899074,
+      "ai_flag": 0,
+      "platform_product_line": "hot-rolled",
+      "mapping_status": "mapped",
+      "quality_flags": []
+    },
+    {
+      "news_id": "4870703",
+      "published_at": "2026-09-17T05:44:00.000Z",
+      "published_at_ms": 1789623840000,
+      "timezone": "Asia/Shanghai",
+      "content_text": "17日重庆汇集再生资源有限公司主营报废车下户拆解和各类废钢生产加工。本公司长期大量采购：报废车、冷热轧轻料、冲压边料、冲子、模具钢、机械生铁、钢筋节、钢筋网子、彩钢瓦、门市料和各品类拆厂废钢。财富热线：15123338100鲍经理、17830982958鄢经理",
+      "content_html": "17日重庆汇集再生资源有限公司主营报废车下户拆解和各类废钢生产加工。本公司长期大量采购：报废车、冷热轧轻料、冲压边料、冲子、模具钢、机械生铁、钢筋节、钢筋网子、彩钢瓦、门市料和各品类拆厂废钢。财富热线：15123338100鲍经理、17830982958鄢经理",
+      "raw_content": "17日重庆汇集再生资源有限公司主营报废车下户拆解和各类废钢生产加工。本公司长期大量采购：报废车、冷热轧轻料、冲压边料、冲子、模具钢、机械生铁、钢筋节、钢筋网子、彩钢瓦、门市料和各品类拆厂废钢。财富热线：15123338100鲍经理、17830982958鄢经理",
+      "category": {
+        "id": 2,
+        "name": "2"
+      },
+      "section": {
+        "id": 7,
+        "name": "7"
+      },
+      "products": [
+        {
+          "id": "03061402",
+          "name": "其它废料",
+          "source": "relationBreed"
+        },
+        {
+          "id": "机械生铁",
+          "name": "机械生铁",
+          "source": "breedTag"
+        },
+        {
+          "id": "冲子",
+          "name": "冲子",
+          "source": "breedTag"
+        },
+        {
+          "id": "彩钢瓦",
+          "name": "彩钢瓦",
+          "source": "breedTag"
+        },
+        {
+          "id": "再生金属",
+          "name": "再生金属",
+          "source": "breedTag"
+        }
+      ],
+      "regions": [
+        {
+          "id": "010601",
+          "name": "重庆"
+        }
+      ],
+      "source_name": "我的钢铁网(Mysteel)",
+      "source_url": "http://feigang.mysteel.com/a/26091713/6BAF276A7D2CA60A.html",
+      "in_article_url": "http://feigang.mysteel.com/a/26091713/6BAF276A7D2CA60A.html",
+      "out_article_url": null,
+      "in_article_title": "17日重庆汇集再生资源有限公司废钢采购价格调整信息",
+      "out_article_title": null,
+      "source_link_status": "article_link",
+      "data_source": 1,
+      "publisher_id": 201244,
+      "relation_id": 45899073,
+      "ai_flag": 0,
+      "platform_product_line": null,
+      "mapping_status": "ambiguous",
+      "quality_flags": []
+    },
+    {
+      "news_id": "4870702",
+      "published_at": "2026-09-17T05:44:00.000Z",
+      "published_at_ms": 1789623840000,
+      "timezone": "Asia/Shanghai",
+      "content_text": "世界气象组织17日发布《全球水资源状况报告》指出，2025年全球河流遭遇了35年来最干旱的年份之一。陆地水储量延续近十年来的下降趋势，全球主要冰川区连续第四年出现冰量损失。报告警告，全球水循环正变得更加异常和难以预测，水资源安全面临长期风险。报告显示，2025年全球约36%的流域面积河流径流量低于正常水平。过去连续7年，处于“正常”状态的河流流域仅占34%至38%，明显低于1991年至2020年间46%的平均水平。",
+      "content_html": "世界气象组织17日发布《全球水资源状况报告》指出，2025年全球河流遭遇了35年来最干旱的年份之一。陆地水储量延续近十年来的下降趋势，全球主要冰川区连续第四年出现冰量损失。报告警告，全球水循环正变得更加异常和难以预测，水资源安全面临长期风险。报告显示，2025年全球约36%的流域面积河流径流量低于正常水平。过去连续7年，处于“正常”状态的河流流域仅占34%至38%，明显低于1991年至2020年间46%的平均水平。",
+      "raw_content": "世界气象组织17日发布《全球水资源状况报告》指出，2025年全球河流遭遇了35年来最干旱的年份之一。陆地水储量延续近十年来的下降趋势，全球主要冰川区连续第四年出现冰量损失。报告警告，全球水循环正变得更加异常和难以预测，水资源安全面临长期风险。报告显示，2025年全球约36%的流域面积河流径流量低于正常水平。过去连续7年，处于“正常”状态的河流流域仅占34%至38%，明显低于1991年至2020年间46%的平均水平。",
+      "category": {
+        "id": 1,
+        "name": "1"
+      },
+      "section": {
+        "id": 8,
+        "name": "8"
+      },
+      "products": [],
+      "regions": [],
+      "source_name": "财联社",
+      "source_url": "http://news.mysteel.com/a/26091713/8220BF64A6D453A2.html",
+      "in_article_url": "http://news.mysteel.com/a/26091713/8220BF64A6D453A2.html",
+      "out_article_url": null,
+      "in_article_title": "世界气象组织：全球水循环日趋异常",
+      "out_article_title": null,
+      "source_link_status": "article_link",
+      "data_source": 1,
+      "publisher_id": 216058,
+      "relation_id": 45899061,
+      "ai_flag": 0,
+      "platform_product_line": null,
+      "mapping_status": "unmapped",
+      "quality_flags": []
+    },
+    {
+      "news_id": "4870701",
+      "published_at": "2026-09-17T05:42:00.000Z",
+      "published_at_ms": 1789623720000,
+      "timezone": "Asia/Shanghai",
+      "content_text": "今起三天（9月17日至19日）中东部大部气温持续偏高，最高气温维持在30℃左右，午后暑热持续在线。但北方昼夜温差较大，部分地区将超15℃，一日如过两季。周末，西北地区东部、华北北部、东北等地将受到冷空气影响，气温出现波动。不过冷空气影响范围有限，南方热意将延续至月底。",
+      "content_html": "今起三天（9月17日至19日）中东部大部气温持续偏高，最高气温维持在30℃左右，午后暑热持续在线。但北方昼夜温差较大，部分地区将超15℃，一日如过两季。周末，西北地区东部、华北北部、东北等地将受到冷空气影响，气温出现波动。不过冷空气影响范围有限，南方热意将延续至月底。",
+      "raw_content": "今起三天（9月17日至19日）中东部大部气温持续偏高，最高气温维持在30℃左右，午后暑热持续在线。但北方昼夜温差较大，部分地区将超15℃，一日如过两季。周末，西北地区东部、华北北部、东北等地将受到冷空气影响，气温出现波动。不过冷空气影响范围有限，南方热意将延续至月底。",
+      "category": {
+        "id": 1,
+        "name": "1"
+      },
+      "section": {
+        "id": 8,
+        "name": "8"
+      },
+      "products": [],
+      "regions": [],
+      "source_name": "财联社",
+      "source_url": "http://news.mysteel.com/a/26091713/C5438355A4F8B5F3.html",
+      "in_article_url": "http://news.mysteel.com/a/26091713/C5438355A4F8B5F3.html",
+      "out_article_url": null,
+      "in_article_title": "周末冷空气上线，北方多地降温10℃",
+      "out_article_title": null,
+      "source_link_status": "article_link",
+      "data_source": 1,
+      "publisher_id": 216058,
+      "relation_id": 45899024,
+      "ai_flag": 0,
+      "platform_product_line": null,
+      "mapping_status": "unmapped",
+      "quality_flags": []
+    },
+    {
+      "news_id": "4870700",
+      "published_at": "2026-09-17T05:42:00.000Z",
+      "published_at_ms": 1789623720000,
+      "timezone": "Asia/Shanghai",
+      "content_text": "据Mysteel了解，瓦卢瑞克获Subsea7合同，为巴西国家石油公司Sepia 2项目供应130公里无缝输油管及隔热涂层。产品含超1.5万吨抗硫管线管，将在巴西本地工厂生产，服务于桑托斯盆地2170米深水开发。",
+      "content_html": "据Mysteel了解，瓦卢瑞克获Subsea7合同，为巴西国家石油公司Sepia 2项目供应130公里无缝输油管及隔热涂层。产品含超1.5万吨抗硫管线管，将在巴西本地工厂生产，服务于桑托斯盆地2170米深水开发。",
+      "raw_content": "据Mysteel了解，瓦卢瑞克获Subsea7合同，为巴西国家石油公司Sepia 2项目供应130公里无缝输油管及隔热涂层。产品含超1.5万吨抗硫管线管，将在巴西本地工厂生产，服务于桑托斯盆地2170米深水开发。",
+      "category": {
+        "id": 2,
+        "name": "2"
+      },
+      "section": {
+        "id": 8,
+        "name": "8"
+      },
+      "products": [
+        {
+          "id": "01",
+          "name": "钢铁",
+          "source": "relationBreed"
+        }
+      ],
+      "regions": [
+        {
+          "id": "02",
+          "name": "国外"
+        }
+      ],
+      "source_name": "我的钢铁网(Mysteel)",
+      "source_url": "http://export.mysteel.com/a/26091713/C8A52F745C3D75C3.html",
+      "in_article_url": "http://export.mysteel.com/a/26091713/C8A52F745C3D75C3.html",
+      "out_article_url": null,
+      "in_article_title": "国际钢讯：瓦卢瑞克赢得巴西国家石油公司在巴西的项目无缝钢管合同",
+      "out_article_title": null,
+      "source_link_status": "article_link",
+      "data_source": 1,
+      "publisher_id": 227933,
+      "relation_id": 45899021,
+      "ai_flag": 0,
+      "platform_product_line": null,
+      "mapping_status": "ambiguous",
+      "quality_flags": []
+    },
+    {
+      "news_id": "4870699",
+      "published_at": "2026-09-17T05:42:00.000Z",
+      "published_at_ms": 1789623720000,
+      "timezone": "Asia/Shanghai",
+      "content_text": "17日重庆鱼嘴场地：收货，补库、补库、补库大量现金高价求购纯低锰冷板，冷热轧镀锌酸洗料混料，带票加价！联系人蔡蔡，电话13883888090、13368323353欢迎打扰。",
+      "content_html": "17日重庆鱼嘴场地：收货，补库、补库、补库大量现金高价求购纯低锰冷板，冷热轧镀锌酸洗料混料，带票加价！联系人蔡蔡，电话13883888090、13368323353欢迎打扰。",
+      "raw_content": "17日重庆鱼嘴场地：收货，补库、补库、补库大量现金高价求购纯低锰冷板，冷热轧镀锌酸洗料混料，带票加价！联系人蔡蔡，电话13883888090、13368323353欢迎打扰。",
+      "category": {
+        "id": 2,
+        "name": "2"
+      },
+      "section": {
+        "id": 7,
+        "name": "7"
+      },
+      "products": [
+        {
+          "id": "03061402",
+          "name": "其它废料",
+          "source": "relationBreed"
+        },
+        {
+          "id": "镀锌",
+          "name": "镀锌",
+          "source": "breedTag"
+        },
+        {
+          "id": "热轧板卷",
+          "name": "热轧板卷",
+          "source": "breedTag"
+        }
+      ],
+      "regions": [
+        {
+          "id": "010601",
+          "name": "重庆"
+        }
+      ],
+      "source_name": "我的钢铁网(Mysteel)",
+      "source_url": "http://feigang.mysteel.com/a/26091713/C1B10B95067041CE.html",
+      "in_article_url": "http://feigang.mysteel.com/a/26091713/C1B10B95067041CE.html",
+      "out_article_url": null,
+      "in_article_title": "17日重庆绿拓鱼嘴料场废钢采购价格调整信息",
+      "out_article_title": null,
+      "source_link_status": "article_link",
+      "data_source": 1,
+      "publisher_id": 201244,
+      "relation_id": 45899017,
+      "ai_flag": 0,
+      "platform_product_line": "hot-rolled",
+      "mapping_status": "mapped",
+      "quality_flags": []
+    },
+    {
+      "news_id": "4870698",
+      "published_at": "2026-09-17T05:40:00.000Z",
+      "published_at_ms": 1789623600000,
+      "timezone": "Asia/Shanghai",
+      "content_text": "据木联调研，本周（2026/9/11-9/17），新西兰12港原木离港发运共计10船41万方。",
+      "content_html": "据木联调研，本周（2026/9/11-9/17），新西兰12港原木离港发运共计10船41万方。",
+      "raw_content": "据木联调研，本周（2026/9/11-9/17），新西兰12港原木离港发运共计10船41万方。",
+      "category": {
+        "id": 6,
+        "name": "6"
+      },
+      "section": {
+        "id": 8,
+        "name": "8"
+      },
+      "products": [
+        {
+          "id": "1201",
+          "name": "原木",
+          "source": "relationBreed"
+        },
+        {
+          "id": "1202",
+          "name": "木方",
+          "source": "relationBreed"
+        },
+        {
+          "id": "1203",
+          "name": "木模板",
+          "source": "relationBreed"
+        }
+      ],
+      "regions": [],
+      "source_name": "木联数据",
+      "source_url": "http://wood.100njz.com/a/26091711/AC88413F98D87653.html",
+      "in_article_url": "http://wood.100njz.com/a/26091711/AC88413F98D87653.html",
+      "out_article_url": null,
+      "in_article_title": "木联数据：新西兰12港原木发运离港周度统计（20260917）",
+      "out_article_title": null,
+      "source_link_status": "article_link",
+      "data_source": 1,
+      "publisher_id": 226773,
+      "relation_id": 45898348,
+      "ai_flag": 0,
+      "platform_product_line": null,
+      "mapping_status": "ambiguous",
+      "quality_flags": []
+    },
+    {
+      "news_id": "4870697",
+      "published_at": "2026-09-17T05:36:00.000Z",
+      "published_at_ms": 1789623360000,
+      "timezone": "Asia/Shanghai",
+      "content_text": "据大连商品交易所披露，2026年9月17日，原木期货交割合约LG2609滚动交割卖方举牌3手，为中林青港供应链有限公司（车板）。",
+      "content_html": "据大连商品交易所披露，2026年9月17日，原木期货交割合约LG2609滚动交割卖方举牌3手，为中林青港供应链有限公司（车板）。",
+      "raw_content": "据大连商品交易所披露，2026年9月17日，原木期货交割合约LG2609滚动交割卖方举牌3手，为中林青港供应链有限公司（车板）。",
+      "category": {
+        "id": 6,
+        "name": "6"
+      },
+      "section": {
+        "id": 6,
+        "name": "6"
+      },
+      "products": [
+        {
+          "id": "1201",
+          "name": "原木",
+          "source": "relationBreed"
+        },
+        {
+          "id": "1202",
+          "name": "木方",
+          "source": "relationBreed"
+        },
+        {
+          "id": "1203",
+          "name": "木模板",
+          "source": "relationBreed"
+        },
+        {
+          "id": "木材",
+          "name": "木材",
+          "source": "breedTag"
+        }
+      ],
+      "regions": [],
+      "source_name": "木联数据",
+      "source_url": "http://wood.100njz.com/a/26091713/64203ACD9C48BB76.html",
+      "in_article_url": "http://wood.100njz.com/a/26091713/64203ACD9C48BB76.html",
+      "out_article_url": null,
+      "in_article_title": "交割日报：原木LG2609滚动交割卖方举牌3手，累计举牌28手（20260917）",
+      "out_article_title": null,
+      "source_link_status": "article_link",
+      "data_source": 1,
+      "publisher_id": 227708,
+      "relation_id": 45898878,
+      "ai_flag": 0,
+      "platform_product_line": null,
+      "mapping_status": "ambiguous",
+      "quality_flags": []
+    },
+    {
+      "news_id": "4870696",
+      "published_at": "2026-09-17T05:35:49.298Z",
+      "published_at_ms": 1789623349298,
+      "timezone": "Asia/Shanghai",
+      "content_text": "9月17日宝武新钢建筑钢材工程价格涨10。抗震螺纹钢3140，线材3480，盘螺3480。（元/吨）",
+      "content_html": "9月17日宝武新钢建筑钢材工程价格涨10。抗震螺纹钢3140，线材3480，盘螺3480。（元/吨）",
+      "raw_content": "9月17日宝武新钢建筑钢材工程价格涨10。抗震螺纹钢3140，线材3480，盘螺3480。（元/吨）",
+      "category": {
+        "id": 2,
+        "name": "2"
+      },
+      "section": {
+        "id": 7,
+        "name": "7"
+      },
+      "products": [
+        {
+          "id": "010101",
+          "name": "建筑钢材",
+          "source": "relationBreed"
+        },
+        {
+          "id": "螺纹钢",
+          "name": "螺纹钢",
+          "source": "breedTag"
+        },
+        {
+          "id": "盘螺",
+          "name": "盘螺",
+          "source": "breedTag"
+        },
+        {
+          "id": "线材",
+          "name": "线材",
+          "source": "breedTag"
+        }
+      ],
+      "regions": [],
+      "source_name": null,
+      "source_url": null,
+      "in_article_url": null,
+      "out_article_url": null,
+      "in_article_title": null,
+      "out_article_title": null,
+      "source_link_status": "no_link",
+      "data_source": 2,
+      "publisher_id": 225817,
+      "relation_id": 7624146,
+      "ai_flag": 0,
+      "platform_product_line": null,
+      "mapping_status": "ambiguous",
+      "quality_flags": [
+        "source_link_missing"
+      ]
+    },
+    {
+      "news_id": "4870695",
+      "published_at": "2026-09-17T05:33:00.000Z",
+      "published_at_ms": 1789623180000,
+      "timezone": "Asia/Shanghai",
+      "content_text": "9月16日，江苏省政府办公厅印发《关于加力支持工业企业技术改造的若干措施》。重点支持钢铁、石化化工、水泥、平板玻璃等行业实施节能降碳减污技术改造，优先支持改造后能效碳效达到标杆水平、资源循环利用成效突出的项目",
+      "content_html": "9月16日，江苏省政府办公厅印发《关于加力支持工业企业技术改造的若干措施》。重点支持钢铁、石化化工、水泥、平板玻璃等行业实施节能降碳减污技术改造，优先支持改造后能效碳效达到标杆水平、资源循环利用成效突出的项目",
+      "raw_content": "9月16日，江苏省政府办公厅印发《关于加力支持工业企业技术改造的若干措施》。重点支持钢铁、石化化工、水泥、平板玻璃等行业实施节能降碳减污技术改造，优先支持改造后能效碳效达到标杆水平、资源循环利用成效突出的项目",
+      "category": {
+        "id": 2,
+        "name": "2"
+      },
+      "section": {
+        "id": 8,
+        "name": "8"
+      },
+      "products": [
+        {
+          "id": "水泥",
+          "name": "水泥",
+          "source": "breedTag"
+        },
+        {
+          "id": "黑色金属",
+          "name": "黑色金属",
+          "source": "breedTag"
+        }
+      ],
+      "regions": [],
+      "source_name": "江苏省人民政府网",
+      "source_url": "http://news.mysteel.com/a/26091713/E08A28F21E5C945D.html",
+      "in_article_url": "http://news.mysteel.com/a/26091713/E08A28F21E5C945D.html",
+      "out_article_url": null,
+      "in_article_title": "江苏：重点支持钢铁等行业实施节能降碳减污技术改造",
+      "out_article_title": null,
+      "source_link_status": "article_link",
+      "data_source": 1,
+      "publisher_id": 207700,
+      "relation_id": 45898823,
+      "ai_flag": 0,
+      "platform_product_line": null,
+      "mapping_status": "ambiguous",
+      "quality_flags": []
+    },
+    {
+      "news_id": "4870694",
+      "published_at": "2026-09-17T05:32:52.614Z",
+      "published_at_ms": 1789623172614,
+      "timezone": "Asia/Shanghai",
+      "content_text": "9月17日午后大邱庄市场方矩管价格稳，50*50*3.5mm天津友发报3400，唐山华岐报3390，100*100*7.75mm唐山顺捷报3660，过磅含税。(元/吨)",
+      "content_html": "9月17日午后大邱庄市场方矩管价格稳，50*50*3.5mm天津友发报3400，唐山华岐报3390，100*100*7.75mm唐山顺捷报3660，过磅含税。(元/吨)",
+      "raw_content": "9月17日午后大邱庄市场方矩管价格稳，50*50*3.5mm天津友发报3400，唐山华岐报3390，100*100*7.75mm唐山顺捷报3660，过磅含税。(元/吨)",
+      "category": {
+        "id": 2,
+        "name": "2"
+      },
+      "section": {
+        "id": 7,
+        "name": "7"
+      },
+      "products": [
+        {
+          "id": "01010904",
+          "name": "方矩管",
+          "source": "relationBreed"
+        }
+      ],
+      "regions": [
+        {
+          "id": "01040201",
+          "name": "大邱庄"
+        }
+      ],
+      "source_name": null,
+      "source_url": null,
+      "in_article_url": null,
+      "out_article_url": null,
+      "in_article_title": null,
+      "out_article_title": null,
+      "source_link_status": "no_link",
+      "data_source": 2,
+      "publisher_id": 213169,
+      "relation_id": 7624145,
+      "ai_flag": 0,
+      "platform_product_line": null,
+      "mapping_status": "ambiguous",
+      "quality_flags": [
+        "source_link_missing"
+      ]
+    },
+    {
+      "news_id": "4870693",
+      "published_at": "2026-09-17T05:32:37.864Z",
+      "published_at_ms": 1789623157864,
+      "timezone": "Asia/Shanghai",
+      "content_text": "9月17日午后天津市场镀锌管价格稳，4寸*3.75mm新国标镀锌管天津友发报4070，唐山华岐报3980，迁安正大4020，过磅含税。（元/吨）",
+      "content_html": "9月17日午后天津市场镀锌管价格稳，4寸*3.75mm新国标镀锌管天津友发报4070，唐山华岐报3980，迁安正大4020，过磅含税。（元/吨）",
+      "raw_content": "9月17日午后天津市场镀锌管价格稳，4寸*3.75mm新国标镀锌管天津友发报4070，唐山华岐报3980，迁安正大4020，过磅含税。（元/吨）",
+      "category": {
+        "id": 2,
+        "name": "2"
+      },
+      "section": {
+        "id": 7,
+        "name": "7"
+      },
+      "products": [
+        {
+          "id": "010109",
+          "name": "钢管",
+          "source": "relationBreed"
+        },
+        {
+          "id": "镀锌管",
+          "name": "镀锌管",
+          "source": "breedTag"
+        }
+      ],
+      "regions": [
+        {
+          "id": "010402",
+          "name": "天津"
+        }
+      ],
+      "source_name": null,
+      "source_url": null,
+      "in_article_url": null,
+      "out_article_url": null,
+      "in_article_title": null,
+      "out_article_title": null,
+      "source_link_status": "no_link",
+      "data_source": 2,
+      "publisher_id": 213169,
+      "relation_id": 7624144,
+      "ai_flag": 0,
+      "platform_product_line": null,
+      "mapping_status": "ambiguous",
+      "quality_flags": [
+        "source_link_missing"
+      ]
+    },
+    {
+      "news_id": "4870692",
+      "published_at": "2026-09-17T05:31:43.892Z",
+      "published_at_ms": 1789623103892,
+      "timezone": "Asia/Shanghai",
+      "content_text": "9月17日午后太原市场镀锌管价格稳，4寸*3.75mm山西正大报4090，邯郸友发报4110，唐山华岐报4040，过磅含税。（元/吨）",
+      "content_html": "9月17日午后太原市场镀锌管价格稳，4寸*3.75mm山西正大报4090，邯郸友发报4110，唐山华岐报4040，过磅含税。（元/吨）",
+      "raw_content": "9月17日午后太原市场镀锌管价格稳，4寸*3.75mm山西正大报4090，邯郸友发报4110，唐山华岐报4040，过磅含税。（元/吨）",
+      "category": {
+        "id": 2,
+        "name": "2"
+      },
+      "section": {
+        "id": 7,
+        "name": "7"
+      },
+      "products": [
+        {
+          "id": "01010905",
+          "name": "镀锌管",
+          "source": "relationBreed"
+        }
+      ],
+      "regions": [
+        {
+          "id": "01040401",
+          "name": "太原"
+        }
+      ],
+      "source_name": null,
+      "source_url": null,
+      "in_article_url": null,
+      "out_article_url": null,
+      "in_article_title": null,
+      "out_article_title": null,
+      "source_link_status": "no_link",
+      "data_source": 2,
+      "publisher_id": 213169,
+      "relation_id": 7624143,
+      "ai_flag": 0,
+      "platform_product_line": null,
+      "mapping_status": "ambiguous",
+      "quality_flags": [
+        "source_link_missing"
+      ]
+    },
+    {
+      "news_id": "4870691",
+      "published_at": "2026-09-17T05:31:21.644Z",
+      "published_at_ms": 1789623081644,
+      "timezone": "Asia/Shanghai",
+      "content_text": "9月17日午后天津市场焊管价格稳，4寸*3.75mm焊管天津友发报3420，迁安正大报3430，衡水华岐报3430，过磅含税。（元/吨）",
+      "content_html": "9月17日午后天津市场焊管价格稳，4寸*3.75mm焊管天津友发报3420，迁安正大报3430，衡水华岐报3430，过磅含税。（元/吨）",
+      "raw_content": "9月17日午后天津市场焊管价格稳，4寸*3.75mm焊管天津友发报3420，迁安正大报3430，衡水华岐报3430，过磅含税。（元/吨）",
+      "category": {
+        "id": 2,
+        "name": "2"
+      },
+      "section": {
+        "id": 7,
+        "name": "7"
+      },
+      "products": [
+        {
+          "id": "01010903",
+          "name": "焊管",
+          "source": "relationBreed"
+        }
+      ],
+      "regions": [
+        {
+          "id": "010402",
+          "name": "天津"
+        }
+      ],
+      "source_name": null,
+      "source_url": null,
+      "in_article_url": null,
+      "out_article_url": null,
+      "in_article_title": null,
+      "out_article_title": null,
+      "source_link_status": "no_link",
+      "data_source": 2,
+      "publisher_id": 213169,
+      "relation_id": 7624142,
+      "ai_flag": 0,
+      "platform_product_line": null,
+      "mapping_status": "ambiguous",
+      "quality_flags": [
+        "source_link_missing"
+      ]
+    },
     {
       "news_id": "4870690",
       "published_at": "2026-09-17T04:36:51.122Z",
@@ -18453,11 +19915,6 @@
           "source": "relationBreed"
         },
         {
-          "id": "01020103",
-          "name": "低合金圆钢",
-          "source": "relationBreed"
-        },
-        {
           "id": "010202",
           "name": "管坯钢",
           "source": "relationBreed"
@@ -18470,6 +19927,11 @@
         {
           "id": "010203",
           "name": "工业普圆",
+          "source": "relationBreed"
+        },
+        {
+          "id": "01020103",
+          "name": "低合金圆钢",
           "source": "relationBreed"
         },
         {
@@ -130585,16 +132047,16 @@
           "name": "宜春"
         },
         {
+          "id": "01010609",
+          "name": "丰城"
+        },
+        {
           "id": "01010610",
           "name": "鹰潭"
         },
         {
           "id": "01010611",
           "name": "景德镇"
-        },
-        {
-          "id": "01010609",
-          "name": "丰城"
         }
       ],
       "source_name": "我的钢铁网(Mysteel)",
@@ -132475,12 +133937,12 @@
   ],
   "quality": {
     "raw_count": 2600,
-    "accepted_count": 2555,
-    "rejected_count": 45,
+    "accepted_count": 2586,
+    "rejected_count": 14,
     "deduped_count": 0,
-    "missing_source_link_count": 2028,
-    "missing_product_count": 44,
-    "malformed_content_count": 45,
+    "missing_source_link_count": 2041,
+    "missing_product_count": 49,
+    "malformed_content_count": 14,
     "duplicate_group_count": 0,
     "warnings": [
       "API 报告总量超过本次分页采集量；快照仅覆盖目标日期窗口，需按分类/地区拆分请求补全。"
