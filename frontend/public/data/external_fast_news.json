@@ -6,10 +6,10 @@
     "dashboard_url": "https://www.mysteel.com/fastcomment/#/",
     "api_url": "https://openapi.mysteel.com/without_sign/newsflash/flashnews/query_by_tags.htm",
     "taxonomy_url": "https://a.mysteelcdn.com/common/publish/newsflash/newsflash_column.json",
-    "captured_at": "2026-09-18T04:35:06.412Z",
+    "captured_at": "2026-09-18T05:46:39.909Z",
     "coverage_start": "2026-09-18",
     "coverage_end": "2026-09-18",
-    "latest_published_at": "2026-09-18T04:22:00.320Z",
+    "latest_published_at": "2026-09-18T05:45:00.000Z",
     "timezone": "Asia/Shanghai",
     "fetch_mode": "api",
     "request_params": {
@@ -23,42 +23,42 @@
         ]
       ]
     },
-    "raw_sha256": "0d30902a07fb4ea1165684ca9b98c3e5979915d4180c5a33db943d648722d8ba",
+    "raw_sha256": "0fad58b5e924ad5b472aff0daa0436607c996f32ea5a33c54e9432d1eb2881e6",
     "taxonomy_sha256": "c98f5bfdacde3401c98ea8f43bac3ca63d35b569f6aad3e1fff2f39b58a0dbf3",
     "response_sha256": [
-      "5df9960e4d08e2fee3a7e65125794f1020849fa88bfc1a7b8eb2321119f9c1b6",
-      "72eb0f1719b62a1c3e28114e7e5b5fa95a00234486714940cbd597220f3fcfba",
-      "bfcc3fce5b831cde6df5d7dea7e089ff52cfc95de1de41e44723e5bbb0547f48",
-      "86d6824c180ed7db1ddacebfa8518816fbba9b1e14380a6def4f4572ed655ad5",
-      "0974f3795569e76a082ffc3825896bcfcd52b9b74b8486a41b5b8497afd51dff",
-      "564b64b16e800c378cf1437317b2800fefdba8006051f52368f6ab490f4c0f2b",
-      "9245d3859d67264f8e2855964bab8a09d2901c7cb9bdcca6c51134378b53c291",
-      "af39077648183017192115ba13ed4aa1c2dfc8786ae785ece0bcd9ce3b9981d1",
-      "c7f37111263bce1679984426465e267dc0bcc9cace148b3fca97976cff74cde9",
-      "c55f978017365e41953ff3113044962bbdf72c304b5d4af46de48216c3acd11e",
-      "5a4482c9441a730a8acdb263d89b312232f102d861dd8c0699477d836ed2a5cb",
-      "fb5c60a5e8e830eeecd57d799488495616200c566e82638b84027308e4de352b",
-      "8c728f33b066098f6fd1c74e697e7d08129ec840ae3f011e1f967297a3027594",
-      "fe95393be464dbd7d92805b95e7bcf38be5673588b0bab1be955eaefa5595e4d",
-      "0584b3cecaebcad63226a61ce727785c56bc4f96b18d3a7eec4499741a22943c",
-      "ea8d402897c07fb501f0a6ae0c852b5d92176b389430155ab0319669d1b49789",
-      "d5f11393cb8d339adb2edcb149cc37e78e6ac90c13a6a258adf187c8f8cdab0f",
-      "7af8e2b6edccae57b68d348c45d833bb5837623ac556ca3a24878b7183f35c73",
-      "e423390dbaf0e8797e89e34902956c2a0578108efc381ef27e5597e0acef4882",
-      "b008c99ff43927d08581a854d2ba9c9857abc9d9ed8c9b5821416a9b84750754",
-      "a3348d6be790520c3edf4d744e44b9c2f60a51fbb0d47791b00989a81ec6bc2b",
-      "bab29df71bd58b015e7ee284f1a98220315742cb1c83c74984d1dcf5d4cc14d9",
-      "a3dc8cc0dc45bc9411e4f5e3e49251afe4db744cd1e5563750dbf9b2f66601df",
-      "ca89da75ad317aac0acf3df62e707022121671d7ab7c09f48ab101bd0fcf53d0",
-      "e71ad6e241c620ed4480d30da0ed585cbb3d55d1dbb2941829891d83f02cd302",
-      "ac742e00009144d46c676c0536841941153fc40a4d38c5a5b112ec2bfd5e9e80"
+      "07d5de01855fc4206eda86390a15ef4e6071034678c34c2f894f19256d461d70",
+      "0e03b451c235f897f88964a1551bfba214264053beec00b57ca37d1cc30ae55d",
+      "431508e2032081a8e2c228da069870b67eb4fa3f0395d64ebc24932fe7d8aa06",
+      "edfb03a01ed0388bf8f5d8d6f987eaa1ae0f090823e7fbd675b673e2f8257694",
+      "56fdc9397049a1a98e5741dd51d3961ea62c0209c1112b2d2bbdbd1495546450",
+      "40e1b13aaf53ecdd80109195ef55a88ae384184972676baf3343fdc710ddcd12",
+      "1b55bcfba47e6dd897cdaff536c462cdcba613757181e14313e5eaead7266209",
+      "f74cbc9ccf5955d141d45089ac6f95960d063903cd34c951cda229be464721ce",
+      "a0391501984af1af0f48e8d2b097b09016e035aaf210cc5b53da67aae046c385",
+      "a155497cf3327b0f6340e22c9fa01f9e854c54556089c364f77515ee461f1a75",
+      "32e5155f9dd3aa434843d7649d948dc35ab64533b780c2c7abd275b1f3737842",
+      "3ccb8547d8e7b39c4bf664a0d06ace9d960916f19628e862725b0dab024bccd1",
+      "f3ac2e60191a4d1d4ca0324356ff37f365f0146d98610b231567734ca803defe",
+      "a965292c6fbc0a8e863389258592aefb871b550971dcc46a30b36ee070c074ab",
+      "34be5e35c85a992dd2cf11a80d9d9edfb38955ee235a14bfc969c08294745cb3",
+      "18a3026919e08bfaee17ca05729bf67aab6dd12bf3bdeb4a87dfbdd6cf9bf704",
+      "9ddbe70d0d72ec8b3e547ba2529d394df755cbc5f0dec84163de9e8ee0584e55",
+      "36ae4c13487c6b583ecd27be5da8165c376b9337b1ff353c549c62a8b2c5707c",
+      "1c2ce0b238b0820af0972649ebd47914f81ba282d129aec1427c4b5fbc8dbe08",
+      "f322478c3971ac319d1abdf7163a5b3c24c605a4a4103354e041d31d86b20de7",
+      "6aa0d9412c481b6e1943e8947d1e99044b9587d5a42aac40506e2fa58b84b901",
+      "ac76a49ce5f9ac8bc7d1cf3ca94f5a3eba362d2212b410589db2de5d2ebd8e52",
+      "9bf66836de1c3d9488d80bd648b7ea1a39ef4804345c79acc18dadca4bcfca07",
+      "9e7dd8ae9ae6b14de13041220f317e7169b1a24cbbd6be3f098dd719a69e513f",
+      "a289f8abe4d0024caf4ce5ae5da3954ce41a7de47928135dc81167d0ba1b2c5d",
+      "bb5d1aa0e1bbedbadc4a1aa0ba3f93af7afb686f8e4340e4a2c8df1741262b45"
     ],
     "page_count": 26,
     "reported_total": 10000,
     "truncation_detected": true,
     "watermark": {
-      "publisher_time_ms": 1789705320320,
-      "id": "4873680"
+      "publisher_time_ms": 1789710300000,
+      "id": "4873698"
     },
     "retry": {
       "attempts": 3,
@@ -68,6 +68,964 @@
     }
   },
   "items": [
+    {
+      "news_id": "4873698",
+      "published_at": "2026-09-18T05:45:00.000Z",
+      "published_at_ms": 1789710300000,
+      "timezone": "Asia/Shanghai",
+      "content_text": "9月18日11:10，天津君诚管道调价：热镀锌圆管、衬塑管、焊管、燃气管、方矩管及光伏支架等，较9月14日价格下调30元/吨；无缝管、涂塑管、护栏板、抗震支架等执行既往特定日期价格政策。",
+      "content_html": "9月18日11:10，天津君诚管道调价：热镀锌圆管、衬塑管、焊管、燃气管、方矩管及光伏支架等，较9月14日价格下调30元/吨；无缝管、涂塑管、护栏板、抗震支架等执行既往特定日期价格政策。",
+      "raw_content": "9月18日11:10，天津君诚管道调价：热镀锌圆管、衬塑管、焊管、燃气管、方矩管及光伏支架等，较9月14日价格下调30元/吨；无缝管、涂塑管、护栏板、抗震支架等执行既往特定日期价格政策。",
+      "category": {
+        "id": 2,
+        "name": "2"
+      },
+      "section": {
+        "id": 9,
+        "name": "9"
+      },
+      "products": [
+        {
+          "id": "010109",
+          "name": "钢管",
+          "source": "relationBreed"
+        },
+        {
+          "id": "燃气管",
+          "name": "燃气管",
+          "source": "breedTag"
+        },
+        {
+          "id": "光伏支架",
+          "name": "光伏支架",
+          "source": "breedTag"
+        },
+        {
+          "id": "无缝管",
+          "name": "无缝管",
+          "source": "breedTag"
+        },
+        {
+          "id": "方矩管",
+          "name": "方矩管",
+          "source": "breedTag"
+        },
+        {
+          "id": "涂塑管",
+          "name": "涂塑管",
+          "source": "breedTag"
+        },
+        {
+          "id": "衬塑复合钢管",
+          "name": "衬塑复合钢管",
+          "source": "breedTag"
+        }
+      ],
+      "regions": [
+        {
+          "id": "01",
+          "name": "国内"
+        }
+      ],
+      "source_name": "我的钢铁网(Mysteel)",
+      "source_url": "http://factory.mysteel.com/a/26091813/876F53C9EAC4EDF5.html",
+      "in_article_url": "http://factory.mysteel.com/a/26091813/876F53C9EAC4EDF5.html",
+      "out_article_url": null,
+      "in_article_title": "9月18日天津君诚管道实业集团有限公司价格调整通知",
+      "out_article_title": null,
+      "source_link_status": "article_link",
+      "data_source": 1,
+      "publisher_id": 205678,
+      "relation_id": 45910262,
+      "ai_flag": 0,
+      "platform_product_line": null,
+      "mapping_status": "ambiguous",
+      "quality_flags": []
+    },
+    {
+      "news_id": "4873697",
+      "published_at": "2026-09-18T05:44:00.000Z",
+      "published_at_ms": 1789710240000,
+      "timezone": "Asia/Shanghai",
+      "content_text": "鞍钢发布2026年9月热轧酸洗带钢价格，基准价4750元/吨（不含税）。以Q/ASB 208标准SPHC、厚3.0mm、宽≥1000mm为基。宽度<1000mm加价200元；厚度>3.5mm减30元，其他规格按表调整；FB表面加价130元。",
+      "content_html": "鞍钢发布2026年9月热轧酸洗带钢价格，基准价4750元/吨（不含税）。以Q/ASB 208标准SPHC、厚3.0mm、宽≥1000mm为基。宽度&lt;1000mm加价200元；厚度>3.5mm减30元，其他规格按表调整；FB表面加价130元。",
+      "raw_content": "鞍钢发布2026年9月热轧酸洗带钢价格，基准价4750元/吨（不含税）。以Q/ASB 208标准SPHC、厚3.0mm、宽≥1000mm为基。宽度&lt;1000mm加价200元；厚度>3.5mm减30元，其他规格按表调整；FB表面加价130元。",
+      "category": {
+        "id": 2,
+        "name": "2"
+      },
+      "section": {
+        "id": 9,
+        "name": "9"
+      },
+      "products": [
+        {
+          "id": "01010304",
+          "name": "热轧酸洗卷",
+          "source": "relationBreed"
+        },
+        {
+          "id": "带钢",
+          "name": "带钢",
+          "source": "breedTag"
+        },
+        {
+          "id": "热轧板卷",
+          "name": "热轧板卷",
+          "source": "breedTag"
+        }
+      ],
+      "regions": [
+        {
+          "id": "0105",
+          "name": "东北"
+        },
+        {
+          "id": "010501",
+          "name": "辽宁"
+        }
+      ],
+      "source_name": "鞍钢股份",
+      "source_url": "http://factory.mysteel.com/a/26091813/6AA1936AC1D2C400.html",
+      "in_article_url": "http://factory.mysteel.com/a/26091813/6AA1936AC1D2C400.html",
+      "out_article_url": null,
+      "in_article_title": "鞍钢2026年9月份热轧酸洗带钢价格表及政策",
+      "out_article_title": null,
+      "source_link_status": "article_link",
+      "data_source": 1,
+      "publisher_id": 200428,
+      "relation_id": 45910255,
+      "ai_flag": 0,
+      "platform_product_line": "hot-rolled",
+      "mapping_status": "mapped",
+      "quality_flags": []
+    },
+    {
+      "news_id": "4873696",
+      "published_at": "2026-09-18T05:44:00.000Z",
+      "published_at_ms": 1789710240000,
+      "timezone": "Asia/Shanghai",
+      "content_text": "江西赣州市应急指挥部发布通知：鉴于赣州市上犹县五指峰乡高峰村部附近发生地质灾害险情，根据《赣州市突发地质灾害应急预案》规定，决定于9月18日8时起启动市级突发地质灾害四级应急响应。受近期强降雨影响，9月18日凌晨，上犹县五指峰乡高峰村发生泥石流险情，造成4栋空置房屋倒塌，村内部分交通受阻，通信畅通，无人员伤亡和失联被困。",
+      "content_html": "江西赣州市应急指挥部发布通知：鉴于赣州市上犹县五指峰乡高峰村部附近发生地质灾害险情，根据《赣州市突发地质灾害应急预案》规定，决定于9月18日8时起启动市级突发地质灾害四级应急响应。受近期强降雨影响，9月18日凌晨，上犹县五指峰乡高峰村发生泥石流险情，造成4栋空置房屋倒塌，村内部分交通受阻，通信畅通，无人员伤亡和失联被困。",
+      "raw_content": "江西赣州市应急指挥部发布通知：鉴于赣州市上犹县五指峰乡高峰村部附近发生地质灾害险情，根据《赣州市突发地质灾害应急预案》规定，决定于9月18日8时起启动市级突发地质灾害四级应急响应。受近期强降雨影响，9月18日凌晨，上犹县五指峰乡高峰村发生泥石流险情，造成4栋空置房屋倒塌，村内部分交通受阻，通信畅通，无人员伤亡和失联被困。",
+      "category": {
+        "id": 1,
+        "name": "1"
+      },
+      "section": {
+        "id": 8,
+        "name": "8"
+      },
+      "products": [],
+      "regions": [],
+      "source_name": "财联社",
+      "source_url": "http://news.mysteel.com/a/26091813/EA2E28C37C8B71EB.html",
+      "in_article_url": "http://news.mysteel.com/a/26091813/EA2E28C37C8B71EB.html",
+      "out_article_url": null,
+      "in_article_title": "江西赣州启动突发地质灾害四级应急响应",
+      "out_article_title": null,
+      "source_link_status": "article_link",
+      "data_source": 1,
+      "publisher_id": 216058,
+      "relation_id": 45910248,
+      "ai_flag": 0,
+      "platform_product_line": null,
+      "mapping_status": "unmapped",
+      "quality_flags": []
+    },
+    {
+      "news_id": "4873695",
+      "published_at": "2026-09-18T05:44:00.000Z",
+      "published_at_ms": 1789710240000,
+      "timezone": "Asia/Shanghai",
+      "content_text": "据大连商品交易所披露，2026年9月18日，原木期货交割合约LG2609滚动交割无卖方举牌。",
+      "content_html": "据大连商品交易所披露，2026年9月18日，原木期货交割合约LG2609滚动交割无卖方举牌。",
+      "raw_content": "据大连商品交易所披露，2026年9月18日，原木期货交割合约LG2609滚动交割无卖方举牌。",
+      "category": {
+        "id": 6,
+        "name": "6"
+      },
+      "section": {
+        "id": 6,
+        "name": "6"
+      },
+      "products": [
+        {
+          "id": "1201",
+          "name": "原木",
+          "source": "relationBreed"
+        },
+        {
+          "id": "1202",
+          "name": "木方",
+          "source": "relationBreed"
+        },
+        {
+          "id": "1203",
+          "name": "木模板",
+          "source": "relationBreed"
+        },
+        {
+          "id": "木材",
+          "name": "木材",
+          "source": "breedTag"
+        }
+      ],
+      "regions": [],
+      "source_name": "木联数据",
+      "source_url": "http://wood.100njz.com/a/26091813/6799C3A6E8B30DD9.html",
+      "in_article_url": "http://wood.100njz.com/a/26091813/6799C3A6E8B30DD9.html",
+      "out_article_url": null,
+      "in_article_title": "交割日报：原木LG2609滚动交割无卖方举牌，累计举牌28手（20260918）",
+      "out_article_title": null,
+      "source_link_status": "article_link",
+      "data_source": 1,
+      "publisher_id": 227708,
+      "relation_id": 45910243,
+      "ai_flag": 0,
+      "platform_product_line": null,
+      "mapping_status": "ambiguous",
+      "quality_flags": []
+    },
+    {
+      "news_id": "4873694",
+      "published_at": "2026-09-18T05:44:00.000Z",
+      "published_at_ms": 1789710240000,
+      "timezone": "Asia/Shanghai",
+      "content_text": "鞍钢发布2026年9月热轧带钢价格，Q235B基价4600元/吨。宽1000-1699mm无加价，超宽或窄幅最高加150元；薄规格最高加730元。平整卷加50元，EPS系列加300元，其余品名大多无加价。",
+      "content_html": "鞍钢发布2026年9月热轧带钢价格，Q235B基价4600元/吨。宽1000-1699mm无加价，超宽或窄幅最高加150元；薄规格最高加730元。平整卷加50元，EPS系列加300元，其余品名大多无加价。",
+      "raw_content": "鞍钢发布2026年9月热轧带钢价格，Q235B基价4600元/吨。宽1000-1699mm无加价，超宽或窄幅最高加150元；薄规格最高加730元。平整卷加50元，EPS系列加300元，其余品名大多无加价。",
+      "category": {
+        "id": 2,
+        "name": "2"
+      },
+      "section": {
+        "id": 9,
+        "name": "9"
+      },
+      "products": [
+        {
+          "id": "010103",
+          "name": "热轧",
+          "source": "relationBreed"
+        },
+        {
+          "id": "EPS",
+          "name": "EPS",
+          "source": "breedTag"
+        },
+        {
+          "id": "热轧带钢",
+          "name": "热轧带钢",
+          "source": "breedTag"
+        }
+      ],
+      "regions": [
+        {
+          "id": "0105",
+          "name": "东北"
+        },
+        {
+          "id": "010501",
+          "name": "辽宁"
+        }
+      ],
+      "source_name": "鞍钢股份",
+      "source_url": "http://factory.mysteel.com/a/26091813/A0807BD25222439B.html",
+      "in_article_url": "http://factory.mysteel.com/a/26091813/A0807BD25222439B.html",
+      "out_article_url": null,
+      "in_article_title": "鞍钢2026年9月份热轧带钢价格表及政策",
+      "out_article_title": null,
+      "source_link_status": "article_link",
+      "data_source": 1,
+      "publisher_id": 200428,
+      "relation_id": 45910236,
+      "ai_flag": 0,
+      "platform_product_line": "hot-rolled",
+      "mapping_status": "mapped",
+      "quality_flags": []
+    },
+    {
+      "news_id": "4873693",
+      "published_at": "2026-09-18T05:43:00.000Z",
+      "published_at_ms": 1789710180000,
+      "timezone": "Asia/Shanghai",
+      "content_text": "据Mysteel了解，欧盟统计局数据显示，2026年7月欧元区工业产出环比微降0.1%，同比持平；欧盟27国环比降0.3%，同比增0.3%。卢森堡、克罗地亚环比领涨，丹麦跌幅最大。荷兰、克罗地亚同比增幅居前，保加利亚、罗马尼亚降幅显著。",
+      "content_html": "据Mysteel了解，欧盟统计局数据显示，2026年7月欧元区工业产出环比微降0.1%，同比持平；欧盟27国环比降0.3%，同比增0.3%。卢森堡、克罗地亚环比领涨，丹麦跌幅最大。荷兰、克罗地亚同比增幅居前，保加利亚、罗马尼亚降幅显著。",
+      "raw_content": "据Mysteel了解，欧盟统计局数据显示，2026年7月欧元区工业产出环比微降0.1%，同比持平；欧盟27国环比降0.3%，同比增0.3%。卢森堡、克罗地亚环比领涨，丹麦跌幅最大。荷兰、克罗地亚同比增幅居前，保加利亚、罗马尼亚降幅显著。",
+      "category": {
+        "id": 2,
+        "name": "2"
+      },
+      "section": {
+        "id": 8,
+        "name": "8"
+      },
+      "products": [
+        {
+          "id": "01",
+          "name": "钢铁",
+          "source": "relationBreed"
+        }
+      ],
+      "regions": [
+        {
+          "id": "02",
+          "name": "国外"
+        }
+      ],
+      "source_name": "我的钢铁网(Mysteel)",
+      "source_url": "http://export.mysteel.com/a/26091813/434C977302AC4527.html",
+      "in_article_url": "http://export.mysteel.com/a/26091813/434C977302AC4527.html",
+      "out_article_url": null,
+      "in_article_title": "国际钢讯：2026年7月，欧元区工业产出较6月下降0.1%",
+      "out_article_title": null,
+      "source_link_status": "article_link",
+      "data_source": 1,
+      "publisher_id": 227933,
+      "relation_id": 45910235,
+      "ai_flag": 0,
+      "platform_product_line": null,
+      "mapping_status": "ambiguous",
+      "quality_flags": []
+    },
+    {
+      "news_id": "4873692",
+      "published_at": "2026-09-18T05:42:39.549Z",
+      "published_at_ms": 1789710159549,
+      "timezone": "Asia/Shanghai",
+      "content_text": "9月18日，现货白银日内涨幅扩大至2%，报66.56美元/盎司。",
+      "content_html": "9月18日，现货白银日内涨幅扩大至2%，报66.56美元/盎司。",
+      "raw_content": "9月18日，现货白银日内涨幅扩大至2%，报66.56美元/盎司。",
+      "category": {
+        "id": 15,
+        "name": "15"
+      },
+      "section": {
+        "id": 8,
+        "name": "8"
+      },
+      "products": [
+        {
+          "id": "白银",
+          "name": "白银",
+          "source": "breedTag"
+        }
+      ],
+      "regions": [],
+      "source_name": null,
+      "source_url": null,
+      "in_article_url": null,
+      "out_article_url": null,
+      "in_article_title": null,
+      "out_article_title": null,
+      "source_link_status": "no_link",
+      "data_source": 0,
+      "publisher_id": 223223,
+      "relation_id": 0,
+      "ai_flag": 0,
+      "platform_product_line": null,
+      "mapping_status": "ambiguous",
+      "quality_flags": [
+        "source_link_missing"
+      ]
+    },
+    {
+      "news_id": "4873691",
+      "published_at": "2026-09-18T05:42:19.681Z",
+      "published_at_ms": 1789710139681,
+      "timezone": "Asia/Shanghai",
+      "content_text": "9月18日，纽约期银日内涨1.38%突破67美元/盎司。",
+      "content_html": "9月18日，纽约期银日内涨1.38%突破67美元/盎司。",
+      "raw_content": "9月18日，纽约期银日内涨1.38%突破67美元/盎司。",
+      "category": {
+        "id": 15,
+        "name": "15"
+      },
+      "section": {
+        "id": 8,
+        "name": "8"
+      },
+      "products": [],
+      "regions": [],
+      "source_name": null,
+      "source_url": null,
+      "in_article_url": null,
+      "out_article_url": null,
+      "in_article_title": null,
+      "out_article_title": null,
+      "source_link_status": "no_link",
+      "data_source": 0,
+      "publisher_id": 223223,
+      "relation_id": 0,
+      "ai_flag": 0,
+      "platform_product_line": null,
+      "mapping_status": "unmapped",
+      "quality_flags": [
+        "source_link_missing"
+      ]
+    },
+    {
+      "news_id": "4873690",
+      "published_at": "2026-09-18T05:41:53.940Z",
+      "published_at_ms": 1789710113940,
+      "timezone": "Asia/Shanghai",
+      "content_text": "9月18日【调价】内蒙古通辽泰鼎废电瓶价格：电动混装8800、大干8750、汽车(>80)9350、汽车(<=80) 9500、高板9400、电轿9000、AGM 8850、2.5公斤8250、摩托8200、电子秤5350。（单位：元/吨）（2026年9月25日前卸车加100元/吨，否则取消上浮）",
+      "content_html": "9月18日【调价】内蒙古通辽泰鼎废电瓶价格：电动混装8800、大干8750、汽车(>80)9350、汽车(<=80) 9500、高板9400、电轿9000、AGM 8850、2.5公斤8250、摩托8200、电子秤5350。（单位：元/吨）（2026年9月25日前卸车加100元/吨，否则取消上浮）",
+      "raw_content": "9月18日【调价】内蒙古通辽泰鼎废电瓶价格：电动混装8800、大干8750、汽车(>80)9350、汽车(<=80) 9500、高板9400、电轿9000、AGM 8850、2.5公斤8250、摩托8200、电子秤5350。（单位：元/吨）（2026年9月25日前卸车加100元/吨，否则取消上浮）",
+      "category": {
+        "id": 4,
+        "name": "4"
+      },
+      "section": {
+        "id": 7,
+        "name": "7"
+      },
+      "products": [
+        {
+          "id": "020308",
+          "name": "2#铅",
+          "source": "relationBreed"
+        },
+        {
+          "id": "废电瓶",
+          "name": "废电瓶",
+          "source": "breedTag"
+        },
+        {
+          "id": "废旧铅酸蓄电池",
+          "name": "废旧铅酸蓄电池",
+          "source": "breedTag"
+        },
+        {
+          "id": "再生金属",
+          "name": "再生金属",
+          "source": "breedTag"
+        }
+      ],
+      "regions": [
+        {
+          "id": "01010713",
+          "name": "阜阳"
+        }
+      ],
+      "source_name": null,
+      "source_url": null,
+      "in_article_url": null,
+      "out_article_url": null,
+      "in_article_title": null,
+      "out_article_title": null,
+      "source_link_status": "no_link",
+      "data_source": 2,
+      "publisher_id": 228187,
+      "relation_id": 7627310,
+      "ai_flag": 0,
+      "platform_product_line": null,
+      "mapping_status": "ambiguous",
+      "quality_flags": [
+        "source_link_missing"
+      ]
+    },
+    {
+      "news_id": "4873689",
+      "published_at": "2026-09-18T05:40:44.991Z",
+      "published_at_ms": 1789710044991,
+      "timezone": "Asia/Shanghai",
+      "content_text": "9月18日【调价】内蒙古赤峰金帆废电瓶价格：电动9100、电信8850、大白9450、黑皮80A以下9650、120叉车管式9550、电轿9100、AGM 8950、摩托车8100、电子秤5400。（单位：元/吨）",
+      "content_html": "9月18日【调价】内蒙古赤峰金帆废电瓶价格：电动9100、电信8850、大白9450、黑皮80A以下9650、120叉车管式9550、电轿9100、AGM 8950、摩托车8100、电子秤5400。（单位：元/吨）",
+      "raw_content": "9月18日【调价】内蒙古赤峰金帆废电瓶价格：电动9100、电信8850、大白9450、黑皮80A以下9650、120叉车管式9550、电轿9100、AGM 8950、摩托车8100、电子秤5400。（单位：元/吨）",
+      "category": {
+        "id": 4,
+        "name": "4"
+      },
+      "section": {
+        "id": 7,
+        "name": "7"
+      },
+      "products": [
+        {
+          "id": "020308",
+          "name": "2#铅",
+          "source": "relationBreed"
+        },
+        {
+          "id": "废电瓶",
+          "name": "废电瓶",
+          "source": "breedTag"
+        },
+        {
+          "id": "废旧铅酸蓄电池",
+          "name": "废旧铅酸蓄电池",
+          "source": "breedTag"
+        },
+        {
+          "id": "再生金属",
+          "name": "再生金属",
+          "source": "breedTag"
+        }
+      ],
+      "regions": [
+        {
+          "id": "01010713",
+          "name": "阜阳"
+        }
+      ],
+      "source_name": null,
+      "source_url": null,
+      "in_article_url": null,
+      "out_article_url": null,
+      "in_article_title": null,
+      "out_article_title": null,
+      "source_link_status": "no_link",
+      "data_source": 2,
+      "publisher_id": 228187,
+      "relation_id": 7627309,
+      "ai_flag": 0,
+      "platform_product_line": null,
+      "mapping_status": "ambiguous",
+      "quality_flags": [
+        "source_link_missing"
+      ]
+    },
+    {
+      "news_id": "4873688",
+      "published_at": "2026-09-18T05:40:00.000Z",
+      "published_at_ms": 1789710000000,
+      "timezone": "Asia/Shanghai",
+      "content_text": "韩国总统李在明9月18日就向霍尔木兹海峡部署军事力量的问题表态称，韩国不会以任何形式派兵或者投送军事资产，这是韩国一直坚守的原则，今后也不会改变这一原则。",
+      "content_html": "韩国总统李在明9月18日就向霍尔木兹海峡部署军事力量的问题表态称，韩国不会以任何形式派兵或者投送军事资产，这是韩国一直坚守的原则，今后也不会改变这一原则。",
+      "raw_content": "韩国总统李在明9月18日就向霍尔木兹海峡部署军事力量的问题表态称，韩国不会以任何形式派兵或者投送军事资产，这是韩国一直坚守的原则，今后也不会改变这一原则。",
+      "category": {
+        "id": 1,
+        "name": "1"
+      },
+      "section": {
+        "id": 8,
+        "name": "8"
+      },
+      "products": [],
+      "regions": [],
+      "source_name": "财联社",
+      "source_url": "http://news.mysteel.com/a/26091813/D00FDA82F352EB63.html",
+      "in_article_url": "http://news.mysteel.com/a/26091813/D00FDA82F352EB63.html",
+      "out_article_url": null,
+      "in_article_title": "李在明：韩国不会向霍尔木兹海峡部署军事力量",
+      "out_article_title": null,
+      "source_link_status": "article_link",
+      "data_source": 1,
+      "publisher_id": 216058,
+      "relation_id": 45910175,
+      "ai_flag": 0,
+      "platform_product_line": null,
+      "mapping_status": "unmapped",
+      "quality_flags": []
+    },
+    {
+      "news_id": "4873687",
+      "published_at": "2026-09-18T05:39:38.296Z",
+      "published_at_ms": 1789709978296,
+      "timezone": "Asia/Shanghai",
+      "content_text": "9月18日【调价】河北雄泰废电瓶价格：电动8920、电轿9120、电信8720、AGM9020、摩托8020、大白9320、黑壳9570、牵引/管式9470。（单位：元/吨）（五天之内送到 按照净重每吨加150元结算）",
+      "content_html": "9月18日【调价】河北雄泰废电瓶价格：电动8920、电轿9120、电信8720、AGM9020、摩托8020、大白9320、黑壳9570、牵引/管式9470。（单位：元/吨）（五天之内送到 按照净重每吨加150元结算）",
+      "raw_content": "9月18日【调价】河北雄泰废电瓶价格：电动8920、电轿9120、电信8720、AGM9020、摩托8020、大白9320、黑壳9570、牵引/管式9470。（单位：元/吨）（五天之内送到 按照净重每吨加150元结算）",
+      "category": {
+        "id": 4,
+        "name": "4"
+      },
+      "section": {
+        "id": 7,
+        "name": "7"
+      },
+      "products": [
+        {
+          "id": "020308",
+          "name": "2#铅",
+          "source": "relationBreed"
+        },
+        {
+          "id": "废电瓶",
+          "name": "废电瓶",
+          "source": "breedTag"
+        },
+        {
+          "id": "废旧铅酸蓄电池",
+          "name": "废旧铅酸蓄电池",
+          "source": "breedTag"
+        },
+        {
+          "id": "再生金属",
+          "name": "再生金属",
+          "source": "breedTag"
+        }
+      ],
+      "regions": [
+        {
+          "id": "01010713",
+          "name": "阜阳"
+        }
+      ],
+      "source_name": null,
+      "source_url": null,
+      "in_article_url": null,
+      "out_article_url": null,
+      "in_article_title": null,
+      "out_article_title": null,
+      "source_link_status": "no_link",
+      "data_source": 2,
+      "publisher_id": 228187,
+      "relation_id": 7627308,
+      "ai_flag": 0,
+      "platform_product_line": null,
+      "mapping_status": "ambiguous",
+      "quality_flags": [
+        "source_link_missing"
+      ]
+    },
+    {
+      "news_id": "4873686",
+      "published_at": "2026-09-18T05:38:52.397Z",
+      "published_at_ms": 1789709932397,
+      "timezone": "Asia/Shanghai",
+      "content_text": "9月18日吕梁建龙冷镦钢出厂价格稳：35KФ12报价3385。(单位：元/吨)",
+      "content_html": "9月18日吕梁建龙冷镦钢出厂价格稳：35KФ12报价3385。(单位：元/吨)",
+      "raw_content": "9月18日吕梁建龙冷镦钢出厂价格稳：35KФ12报价3385。(单位：元/吨)",
+      "category": {
+        "id": 2,
+        "name": "2"
+      },
+      "section": {
+        "id": 7,
+        "name": "7"
+      },
+      "products": [
+        {
+          "id": "010218",
+          "name": "工业线材",
+          "source": "relationBreed"
+        },
+        {
+          "id": "冷镦钢",
+          "name": "冷镦钢",
+          "source": "breedTag"
+        }
+      ],
+      "regions": [
+        {
+          "id": "010404",
+          "name": "山西"
+        },
+        {
+          "id": "010403",
+          "name": "河北"
+        }
+      ],
+      "source_name": null,
+      "source_url": null,
+      "in_article_url": null,
+      "out_article_url": null,
+      "in_article_title": null,
+      "out_article_title": null,
+      "source_link_status": "no_link",
+      "data_source": 2,
+      "publisher_id": 228233,
+      "relation_id": 7627307,
+      "ai_flag": 0,
+      "platform_product_line": null,
+      "mapping_status": "ambiguous",
+      "quality_flags": [
+        "source_link_missing"
+      ]
+    },
+    {
+      "news_id": "4873685",
+      "published_at": "2026-09-18T05:38:04.723Z",
+      "published_at_ms": 1789709884723,
+      "timezone": "Asia/Shanghai",
+      "content_text": "9月18日【修正】河南豫光金铅废电瓶价格：电动9550、白壳9650、牵引9820、免维护8510、免维护「立式」9050、电轿「含AGM」9550、摩托车8200、电子秤5630、黑皮9820、黑胶木4730、废矿灯3250（不带灯头，不带线）。（单位：元/吨）（含3%增值税）",
+      "content_html": "9月18日【修正】河南豫光金铅废电瓶价格：电动9550、白壳9650、牵引9820、免维护8510、免维护「立式」9050、电轿「含AGM」9550、摩托车8200、电子秤5630、黑皮9820、黑胶木4730、废矿灯3250（不带灯头，不带线）。（单位：元/吨）（含3%增值税）",
+      "raw_content": "9月18日【修正】河南豫光金铅废电瓶价格：电动9550、白壳9650、牵引9820、免维护8510、免维护「立式」9050、电轿「含AGM」9550、摩托车8200、电子秤5630、黑皮9820、黑胶木4730、废矿灯3250（不带灯头，不带线）。（单位：元/吨）（含3%增值税）",
+      "category": {
+        "id": 4,
+        "name": "4"
+      },
+      "section": {
+        "id": 7,
+        "name": "7"
+      },
+      "products": [
+        {
+          "id": "020308",
+          "name": "2#铅",
+          "source": "relationBreed"
+        },
+        {
+          "id": "废电瓶",
+          "name": "废电瓶",
+          "source": "breedTag"
+        },
+        {
+          "id": "废旧铅酸蓄电池",
+          "name": "废旧铅酸蓄电池",
+          "source": "breedTag"
+        },
+        {
+          "id": "再生金属",
+          "name": "再生金属",
+          "source": "breedTag"
+        }
+      ],
+      "regions": [
+        {
+          "id": "01010713",
+          "name": "阜阳"
+        }
+      ],
+      "source_name": null,
+      "source_url": null,
+      "in_article_url": null,
+      "out_article_url": null,
+      "in_article_title": null,
+      "out_article_title": null,
+      "source_link_status": "no_link",
+      "data_source": 2,
+      "publisher_id": 228187,
+      "relation_id": 7627306,
+      "ai_flag": 0,
+      "platform_product_line": null,
+      "mapping_status": "ambiguous",
+      "quality_flags": [
+        "source_link_missing"
+      ]
+    },
+    {
+      "news_id": "4873684",
+      "published_at": "2026-09-18T05:37:00.000Z",
+      "published_at_ms": 1789709820000,
+      "timezone": "Asia/Shanghai",
+      "content_text": "智谱于9月18日正式推出GLM-5.3-FlashX，最高推理速度达200tokens/s。",
+      "content_html": "智谱于9月18日正式推出GLM-5.3-FlashX，最高推理速度达200tokens/s。",
+      "raw_content": "智谱于9月18日正式推出GLM-5.3-FlashX，最高推理速度达200tokens/s。",
+      "category": {
+        "id": 18,
+        "name": "18"
+      },
+      "section": {
+        "id": 8,
+        "name": "8"
+      },
+      "products": [],
+      "regions": [],
+      "source_name": "我的钢铁网(Mysteel)",
+      "source_url": "http://news.mysteel.com/a/26091813/5BF0DAA14A142845.html",
+      "in_article_url": "http://news.mysteel.com/a/26091813/5BF0DAA14A142845.html",
+      "out_article_url": null,
+      "in_article_title": "智谱推出GLM-5.3-FlashX",
+      "out_article_title": null,
+      "source_link_status": "article_link",
+      "data_source": 1,
+      "publisher_id": 216059,
+      "relation_id": 45910120,
+      "ai_flag": 0,
+      "platform_product_line": null,
+      "mapping_status": "unmapped",
+      "quality_flags": []
+    },
+    {
+      "news_id": "4873683",
+      "published_at": "2026-09-18T05:36:00.000Z",
+      "published_at_ms": 1789709760000,
+      "timezone": "Asia/Shanghai",
+      "content_text": "【不锈钢型钢-调价-青山】9月18日青山不锈钢型钢9月价格，不锈钢302角钢40*4型号14000，平；不锈钢304角钢40*4型号14300，平；不锈钢316L角钢40*4型号29400，平。不锈钢302槽钢5#型号14000，平；不锈钢304槽钢5#型号14300，平；不锈钢316L槽钢5#型号29400，平。青山不锈钢型钢10月价格，不锈钢302角钢40*4型号13950，涨50；不锈钢304角钢40*4型号14250，涨50；不锈钢316L角钢40*4型号29300，平。不锈钢302槽钢5#型号13950，涨50；不锈钢304槽钢5#型号14250，涨50；不锈钢316L槽钢5#型号29300，平。青山公布不锈钢型钢11月价格，不锈钢302角钢40*4型号13900；不锈钢304角钢40*4型号14200；不锈钢316L角钢40*4型号29300。不锈钢302槽钢5#型号13900；不锈钢304槽钢5#型号14200；不锈钢316L槽钢5#型号29300。（单位：元/吨）",
+      "content_html": "【不锈钢型钢-调价-青山】9月18日青山不锈钢型钢9月价格，不锈钢302角钢40*4型号14000，平；不锈钢304角钢40*4型号14300，平；不锈钢316L角钢40*4型号29400，平。不锈钢302槽钢5#型号14000，平；不锈钢304槽钢5#型号14300，平；不锈钢316L槽钢5#型号29400，平。青山不锈钢型钢10月价格，不锈钢302角钢40*4型号13950，涨50；不锈钢304角钢40*4型号14250，涨50；不锈钢316L角钢40*4型号29300，平。不锈钢302槽钢5#型号13950，涨50；不锈钢304槽钢5#型号14250，涨50；不锈钢316L槽钢5#型号29300，平。青山公布不锈钢型钢11月价格，不锈钢302角钢40*4型号13900；不锈钢304角钢40*4型号14200；不锈钢316L角钢40*4型号29300。不锈钢302槽钢5#型号13900；不锈钢304槽钢5#型号14200；不锈钢316L槽钢5#型号29300。（单位：元/吨）",
+      "raw_content": "【不锈钢型钢-调价-青山】9月18日青山不锈钢型钢9月价格，不锈钢302角钢40*4型号14000，平；不锈钢304角钢40*4型号14300，平；不锈钢316L角钢40*4型号29400，平。不锈钢302槽钢5#型号14000，平；不锈钢304槽钢5#型号14300，平；不锈钢316L槽钢5#型号29400，平。青山不锈钢型钢10月价格，不锈钢302角钢40*4型号13950，涨50；不锈钢304角钢40*4型号14250，涨50；不锈钢316L角钢40*4型号29300，平。不锈钢302槽钢5#型号13950，涨50；不锈钢304槽钢5#型号14250，涨50；不锈钢316L槽钢5#型号29300，平。青山公布不锈钢型钢11月价格，不锈钢302角钢40*4型号13900；不锈钢304角钢40*4型号14200；不锈钢316L角钢40*4型号29300。不锈钢302槽钢5#型号13900；不锈钢304槽钢5#型号14200；不锈钢316L槽钢5#型号29300。（单位：元/吨）",
+      "category": {
+        "id": 11,
+        "name": "11"
+      },
+      "section": {
+        "id": 9,
+        "name": "9"
+      },
+      "products": [
+        {
+          "id": "01021603",
+          "name": "不锈型材",
+          "source": "relationBreed"
+        },
+        {
+          "id": "不锈钢型材",
+          "name": "不锈钢型材",
+          "source": "breedTag"
+        },
+        {
+          "id": "槽钢",
+          "name": "槽钢",
+          "source": "breedTag"
+        },
+        {
+          "id": "角钢",
+          "name": "角钢",
+          "source": "breedTag"
+        }
+      ],
+      "regions": [],
+      "source_name": "我的钢铁网(Mysteel)",
+      "source_url": "http://bxg.mysteel.com/a/26091813/D1DC4190A7F30EE6.html",
+      "in_article_url": "http://bxg.mysteel.com/a/26091813/D1DC4190A7F30EE6.html",
+      "out_article_url": null,
+      "in_article_title": "9月18日青山不锈钢型钢销售价格",
+      "out_article_title": null,
+      "source_link_status": "article_link",
+      "data_source": 1,
+      "publisher_id": 227279,
+      "relation_id": 45910086,
+      "ai_flag": 0,
+      "platform_product_line": null,
+      "mapping_status": "ambiguous",
+      "quality_flags": []
+    },
+    {
+      "news_id": "4873682",
+      "published_at": "2026-09-18T05:32:00.000Z",
+      "published_at_ms": 1789709520000,
+      "timezone": "Asia/Shanghai",
+      "content_text": "针对网传“公司21700—2.6Ah全极耳磷酸铁锂电池存在原材料供货问题”的传闻，蔚蓝锂芯于9月18日回应称不属实。公司表示，目前代工的BBU电芯产品已实现量产，直供业务拓展正常推进。",
+      "content_html": "针对网传“公司21700—2.6Ah全极耳磷酸铁锂电池存在原材料供货问题”的传闻，蔚蓝锂芯于9月18日回应称不属实。公司表示，目前代工的BBU电芯产品已实现量产，直供业务拓展正常推进。",
+      "raw_content": "针对网传“公司21700—2.6Ah全极耳磷酸铁锂电池存在原材料供货问题”的传闻，蔚蓝锂芯于9月18日回应称不属实。公司表示，目前代工的BBU电芯产品已实现量产，直供业务拓展正常推进。",
+      "category": {
+        "id": 14,
+        "name": "14"
+      },
+      "section": {
+        "id": 8,
+        "name": "8"
+      },
+      "products": [
+        {
+          "id": "1102",
+          "name": "锂",
+          "source": "relationBreed"
+        },
+        {
+          "id": "1105",
+          "name": "锂电正极",
+          "source": "relationBreed"
+        },
+        {
+          "id": "磷酸铁锂",
+          "name": "磷酸铁锂",
+          "source": "breedTag"
+        }
+      ],
+      "regions": [],
+      "source_name": "财联社",
+      "source_url": "http://xny.mysteel.com/a/26091813/0B5FD66DF50EDBEF.html",
+      "in_article_url": "http://xny.mysteel.com/a/26091813/0B5FD66DF50EDBEF.html",
+      "out_article_url": null,
+      "in_article_title": "网传相关全极耳磷酸铁锂电池存在原材料供货问题？蔚蓝锂芯：不属实",
+      "out_article_title": null,
+      "source_link_status": "article_link",
+      "data_source": 1,
+      "publisher_id": 221060,
+      "relation_id": 45910012,
+      "ai_flag": 0,
+      "platform_product_line": null,
+      "mapping_status": "ambiguous",
+      "quality_flags": []
+    },
+    {
+      "news_id": "4873681",
+      "published_at": "2026-09-18T04:36:10.083Z",
+      "published_at_ms": 1789706170083,
+      "timezone": "Asia/Shanghai",
+      "content_text": "山钢日照废钢询单 9‑18‑1，报量截止 13：00 前（过时不报）： 钢板料 ≥6mm 2240 钢板料 ≥4mm 2231 船板料压块≥4mm 2197 钢筋压块 ≥5mm 2231 统废 ≥6mm 2205 破碎料 1≥1.3 2154 破碎料 1≥0.8 2069 钢板料压块≥2mm 2240 钢板料压块≥1mm 2223 马蹄铁 II ≥2mm 2214 船板料 II ≥4mm 2197 刨花散料 出水率≥94%, ≤500mm ；2052 注：发货时严格控制质量，坚决杜绝掺假、作弊等行为的出现！车辆严格遵守规章制度，一经发现造成所有的损失由供方负全责！ 联系方式： 夏总13587962081 小夏13861728357 小姜13347901822",
+      "content_html": "山钢日照废钢询单 9‑18‑1，报量截止 13：00 前（过时不报）：\n\n钢板料 ≥6mm 2240\n\n钢板料 ≥4mm 2231\n\n船板料压块≥4mm 2197\n\n钢筋压块 ≥5mm 2231\n\n统废 ≥6mm 2205\n\n破碎料 1≥1.3 2154\n\n破碎料 1≥0.8 2069\n\n钢板料压块≥2mm 2240\n\n钢板料压块≥1mm 2223\n\n马蹄铁 II ≥2mm 2214\n\n船板料 II ≥4mm 2197\n\n刨花散料 出水率≥94%, ≤500mm ；2052\n\n注：发货时严格控制质量，坚决杜绝掺假、作弊等行为的出现！车辆严格遵守规章制度，一经发现造成所有的损失由供方负全责！\n\n\n\n\n联系方式：\n\n夏总13587962081    \n\n小夏13861728357    \n\n小姜13347901822",
+      "raw_content": "山钢日照废钢询单 9‑18‑1，报量截止 13：00 前（过时不报）：\n\n钢板料 ≥6mm 2240\n\n钢板料 ≥4mm 2231\n\n船板料压块≥4mm 2197\n\n钢筋压块 ≥5mm 2231\n\n统废 ≥6mm 2205\n\n破碎料 1≥1.3 2154\n\n破碎料 1≥0.8 2069\n\n钢板料压块≥2mm 2240\n\n钢板料压块≥1mm 2223\n\n马蹄铁 II ≥2mm 2214\n\n船板料 II ≥4mm 2197\n\n刨花散料 出水率≥94%, ≤500mm ；2052\n\n注：发货时严格控制质量，坚决杜绝掺假、作弊等行为的出现！车辆严格遵守规章制度，一经发现造成所有的损失由供方负全责！\n\n\n\n\n联系方式：\n\n夏总13587962081    \n\n小夏13861728357    \n\n小姜13347901822",
+      "category": {
+        "id": 2,
+        "name": "2"
+      },
+      "section": {
+        "id": 7,
+        "name": "7"
+      },
+      "products": [
+        {
+          "id": "03061402",
+          "name": "其它废料",
+          "source": "relationBreed"
+        },
+        {
+          "id": "钢板料",
+          "name": "钢板料",
+          "source": "breedTag"
+        },
+        {
+          "id": "钢筋压块",
+          "name": "钢筋压块",
+          "source": "breedTag"
+        },
+        {
+          "id": "破碎料",
+          "name": "破碎料",
+          "source": "breedTag"
+        },
+        {
+          "id": "废钢刨花",
+          "name": "废钢刨花",
+          "source": "breedTag"
+        },
+        {
+          "id": "再生金属",
+          "name": "再生金属",
+          "source": "breedTag"
+        }
+      ],
+      "regions": [
+        {
+          "id": "010102",
+          "name": "山东"
+        },
+        {
+          "id": "01010211",
+          "name": "日照"
+        },
+        {
+          "id": "01010212",
+          "name": "临沂"
+        },
+        {
+          "id": "010103",
+          "name": "江苏"
+        },
+        {
+          "id": "01010301",
+          "name": "无锡"
+        },
+        {
+          "id": "0101030101",
+          "name": "江阴"
+        },
+        {
+          "id": "0101030103",
+          "name": "宜兴"
+        }
+      ],
+      "source_name": "我的钢铁网",
+      "source_url": "https://feigang.mysteel.com/a/26091812/441FBD3D893B2EA0.html",
+      "in_article_url": "https://feigang.mysteel.com/a/26091812/441FBD3D893B2EA0.html",
+      "out_article_url": null,
+      "in_article_title": "18日无锡夏港码头（日照山钢）废钢采购价格调整信息",
+      "out_article_title": null,
+      "source_link_status": "article_link",
+      "data_source": 1,
+      "publisher_id": 224979,
+      "relation_id": 45909941,
+      "ai_flag": 0,
+      "platform_product_line": null,
+      "mapping_status": "ambiguous",
+      "quality_flags": []
+    },
     {
       "news_id": "4873680",
       "published_at": "2026-09-18T04:22:00.320Z",
@@ -51246,11 +52204,6 @@
       },
       "products": [
         {
-          "id": "020101",
-          "name": "电解铜",
-          "source": "relationBreed"
-        },
-        {
           "id": "020103",
           "name": "铜合金",
           "source": "relationBreed"
@@ -51258,6 +52211,11 @@
         {
           "id": "020104",
           "name": "铜精矿",
+          "source": "relationBreed"
+        },
+        {
+          "id": "020105",
+          "name": "废铜",
           "source": "relationBreed"
         },
         {
@@ -51291,8 +52249,8 @@
           "source": "relationBreed"
         },
         {
-          "id": "020105",
-          "name": "废铜",
+          "id": "020101",
+          "name": "电解铜",
           "source": "relationBreed"
         },
         {
@@ -75815,8 +76773,23 @@
         "id": 6,
         "name": "6"
       },
-      "products": [],
-      "regions": [],
+      "products": [
+        {
+          "id": "010101",
+          "name": "建筑钢材",
+          "source": "relationBreed"
+        }
+      ],
+      "regions": [
+        {
+          "id": "010401",
+          "name": "北京"
+        },
+        {
+          "id": "010402",
+          "name": "天津"
+        }
+      ],
       "source_name": "我的钢铁网(Mysteel)",
       "source_url": "http://gc.mysteel.com/a/26091810/7FCA06C7A2E74EAC.html",
       "in_article_url": "http://gc.mysteel.com/a/26091810/7FCA06C7A2E74EAC.html",
@@ -75829,7 +76802,7 @@
       "relation_id": 45906079,
       "ai_flag": 0,
       "platform_product_line": null,
-      "mapping_status": "unmapped",
+      "mapping_status": "ambiguous",
       "quality_flags": []
     },
     {
@@ -131254,12 +132227,12 @@
   ],
   "quality": {
     "raw_count": 2600,
-    "accepted_count": 2526,
-    "rejected_count": 74,
+    "accepted_count": 2544,
+    "rejected_count": 56,
     "deduped_count": 0,
-    "missing_source_link_count": 2041,
-    "missing_product_count": 56,
-    "malformed_content_count": 74,
+    "missing_source_link_count": 2048,
+    "missing_product_count": 59,
+    "malformed_content_count": 56,
     "duplicate_group_count": 0,
     "warnings": [
       "API 报告总量超过本次分页采集量；快照仅覆盖目标日期窗口，需按分类/地区拆分请求补全。"
