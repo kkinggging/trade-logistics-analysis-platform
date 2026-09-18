@@ -1,6 +1,6 @@
 {
   "schema_version": "1.1",
-  "generated_at": "2026-09-18T05:46:43.734Z",
+  "generated_at": "2026-09-18T14:09:37.823Z",
   "schedule": "全量每天 18:00；我的钢铁网快讯每天 08:10、09:00；潮汐早报与霍尔木兹专题每天 09:00（Asia/Shanghai）",
   "scheduler": "cron 或 launchd（由部署环境安装；本仓库不自动启动后台服务）",
   "sources": {
@@ -9,10 +9,10 @@
       "state": "fresh",
       "quality_state": "complete",
       "quality_warnings": [],
-      "attempted_at": "2026-09-17T14:43:32.782Z",
-      "success_at": "2026-09-17T14:43:36.575Z",
-      "snapshot_captured_at": "2026-09-17T14:43:36.527Z",
-      "coverage_end": "2026-09-11",
+      "attempted_at": "2026-09-18T14:08:17.692Z",
+      "success_at": "2026-09-18T14:08:21.236Z",
+      "snapshot_captured_at": "2026-09-18T14:08:21.204Z",
+      "coverage_end": "2026-09-18",
       "retry": {
         "attempts": 2,
         "timeoutMs": 180000,
@@ -25,9 +25,9 @@
       "state": "fresh",
       "quality_state": "complete",
       "quality_warnings": [],
-      "attempted_at": "2026-09-17T14:43:32.782Z",
-      "success_at": "2026-09-17T14:43:59.641Z",
-      "snapshot_captured_at": "2026-09-17T14:43:59.559Z",
+      "attempted_at": "2026-09-18T14:08:17.692Z",
+      "success_at": "2026-09-18T14:08:34.131Z",
+      "snapshot_captured_at": "2026-09-18T14:08:34.071Z",
       "coverage_end": "2026-07",
       "retry": {
         "attempts": 2,
@@ -41,10 +41,10 @@
       "state": "fresh",
       "quality_state": "complete",
       "quality_warnings": [],
-      "attempted_at": "2026-09-17T14:43:32.782Z",
-      "success_at": "2026-09-17T14:44:04.583Z",
-      "snapshot_captured_at": "2026-09-17T14:44:04.565Z",
-      "coverage_end": "2026-09-15",
+      "attempted_at": "2026-09-18T14:08:17.692Z",
+      "success_at": "2026-09-18T14:08:37.179Z",
+      "snapshot_captured_at": "2026-09-18T14:08:37.165Z",
+      "coverage_end": "2026-09-17",
       "retry": {
         "attempts": 2,
         "timeoutMs": 180000,
@@ -57,9 +57,9 @@
       "state": "fresh",
       "quality_state": "complete",
       "quality_warnings": [],
-      "attempted_at": "2026-09-17T14:43:32.782Z",
-      "success_at": "2026-09-17T14:44:11.409Z",
-      "snapshot_captured_at": "2026-09-17T14:44:04.613Z",
+      "attempted_at": "2026-09-18T14:08:17.692Z",
+      "success_at": "2026-09-18T14:08:43.755Z",
+      "snapshot_captured_at": "2026-09-18T14:08:37.200Z",
       "coverage_end": "2026-09-09",
       "retry": {
         "attempts": 2,
@@ -71,7 +71,7 @@
     "shipping-index-dashboard-public": {
       "source_id": "shipping-index-dashboard-public",
       "state": "fallback",
-      "attempted_at": "2026-09-17T14:43:32.782Z",
+      "attempted_at": "2026-09-18T14:08:17.692Z",
       "success_at": "2026-09-08T14:12:07.358Z",
       "snapshot_captured_at": "2026-09-08T14:12:07.286Z",
       "coverage_end": "2026-09-07",
@@ -80,7 +80,7 @@
     "trade-remedy-dashboard-public": {
       "source_id": "trade-remedy-dashboard-public",
       "state": "fallback",
-      "attempted_at": "2026-09-17T14:43:32.782Z",
+      "attempted_at": "2026-09-18T14:08:17.692Z",
       "success_at": "2026-09-08T14:12:13.320Z",
       "snapshot_captured_at": "2026-09-08T14:12:13.237Z",
       "coverage_end": "2026-09-04",
@@ -93,9 +93,9 @@
       "quality_warnings": [
         "API 报告总量超过本次分页采集量；快照仅覆盖目标日期窗口，需按分类/地区拆分请求补全。"
       ],
-      "attempted_at": "2026-09-18T05:46:21.119Z",
-      "success_at": "2026-09-18T05:46:39.995Z",
-      "snapshot_captured_at": "2026-09-18T05:46:39.909Z",
+      "attempted_at": "2026-09-18T14:08:17.692Z",
+      "success_at": "2026-09-18T14:09:32.885Z",
+      "snapshot_captured_at": "2026-09-18T14:09:32.800Z",
       "coverage_end": "2026-09-18",
       "retry": {
         "attempts": 2,
@@ -113,10 +113,10 @@
         "历史上的今天：未取得可验证的人物/事件结构化数据，未虚构内容；请检查 Kagi 历史批次页访问与解析状态"
       ],
       "history_status": "unavailable",
-      "attempted_at": "2026-09-18T05:46:21.119Z",
-      "success_at": "2026-09-18T05:46:43.734Z",
-      "snapshot_captured_at": "2026-09-18T05:46:40.031Z",
-      "coverage_end": "2026-09-17T06:38:43.000Z",
+      "attempted_at": "2026-09-18T14:08:17.692Z",
+      "success_at": "2026-09-18T14:09:37.823Z",
+      "snapshot_captured_at": "2026-09-18T14:09:32.912Z",
+      "coverage_end": "2026-09-18T06:40:50.000Z",
       "retry": {
         "attempts": 2,
         "timeoutMs": 180000,
