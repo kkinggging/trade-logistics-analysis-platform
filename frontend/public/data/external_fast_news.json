@@ -6,10 +6,10 @@
     "dashboard_url": "https://www.mysteel.com/fastcomment/#/",
     "api_url": "https://openapi.mysteel.com/without_sign/newsflash/flashnews/query_by_tags.htm",
     "taxonomy_url": "https://a.mysteelcdn.com/common/publish/newsflash/newsflash_column.json",
-    "captured_at": "2026-09-19T05:41:19.761Z",
+    "captured_at": "2026-09-19T13:44:01.868Z",
     "coverage_start": "2026-09-19",
     "coverage_end": "2026-09-19",
-    "latest_published_at": "2026-09-19T05:33:07.362Z",
+    "latest_published_at": "2026-09-19T12:33:42.301Z",
     "timezone": "Asia/Shanghai",
     "fetch_mode": "api",
     "request_params": {
@@ -23,17 +23,17 @@
         ]
       ]
     },
-    "raw_sha256": "b425ed65e857ad4453c2402ef669785b284236930cd1da8058ba10c98bc30a39",
+    "raw_sha256": "62b0885650c99818ce5a147417d063a88e90ab476c66867bde1d85fae97fa0e0",
     "taxonomy_sha256": "c98f5bfdacde3401c98ea8f43bac3ca63d35b569f6aad3e1fff2f39b58a0dbf3",
     "response_sha256": [
-      "cf00ca45c4f86c8e0502f71b570d36be6527ae01886d75a503fb3b0747148a5d"
+      "06f465da13ec3fd536c8a816b93e474d9d5fd15e7c6c939e9c58c51495e33d75"
     ],
     "page_count": 1,
     "reported_total": 10000,
     "truncation_detected": true,
     "watermark": {
-      "publisher_time_ms": 1789795987362,
-      "id": "4874254"
+      "publisher_time_ms": 1789821222301,
+      "id": "4874259"
     },
     "retry": {
       "attempts": 3,
@@ -43,6 +43,286 @@
     }
   },
   "items": [
+    {
+      "news_id": "4874259",
+      "published_at": "2026-09-19T12:33:42.301Z",
+      "published_at_ms": 1789821222301,
+      "timezone": "Asia/Shanghai",
+      "content_text": "Mysteel煤焦：9月19日唐山九江喷吹煤采购招标，无烟喷吹1580元/吨，较上期降20元/吨；烟煤1090元/吨，较上期持平。以上价格均为到厂价现金含税。",
+      "content_html": "Mysteel煤焦：9月19日唐山九江喷吹煤采购招标，无烟喷吹1580元/吨，较上期降20元/吨；烟煤1090元/吨，较上期持平。以上价格均为到厂价现金含税。",
+      "raw_content": "Mysteel煤焦：9月19日唐山九江喷吹煤采购招标，无烟喷吹1580元/吨，较上期降20元/吨；烟煤1090元/吨，较上期持平。以上价格均为到厂价现金含税。",
+      "category": {
+        "id": 12,
+        "name": "12"
+      },
+      "section": {
+        "id": 7,
+        "name": "7"
+      },
+      "products": [
+        {
+          "id": "050202",
+          "name": "炼焦煤",
+          "source": "relationBreed"
+        },
+        {
+          "id": "无烟喷吹煤",
+          "name": "无烟喷吹煤",
+          "source": "breedTag"
+        }
+      ],
+      "regions": [
+        {
+          "id": "01040302",
+          "name": "唐山"
+        }
+      ],
+      "source_name": null,
+      "source_url": null,
+      "in_article_url": null,
+      "out_article_url": null,
+      "in_article_title": null,
+      "out_article_title": null,
+      "source_link_status": "no_link",
+      "data_source": 2,
+      "publisher_id": 222387,
+      "relation_id": 7627720,
+      "ai_flag": 0,
+      "platform_product_line": null,
+      "mapping_status": "ambiguous",
+      "quality_flags": [
+        "source_link_missing"
+      ]
+    },
+    {
+      "news_id": "4874258",
+      "published_at": "2026-09-19T09:26:07.948Z",
+      "published_at_ms": 1789809967948,
+      "timezone": "Asia/Shanghai",
+      "content_text": "9月19日蒙古国煤炭短盘运费价格指数报82.0元/吨，较上一通关日持平，9月份均价82.0元/吨。",
+      "content_html": "9月19日蒙古国煤炭短盘运费价格指数报82.0元/吨，较上一通关日持平，9月份均价82.0元/吨。",
+      "raw_content": "9月19日蒙古国煤炭短盘运费价格指数报82.0元/吨，较上一通关日持平，9月份均价82.0元/吨。",
+      "category": {
+        "id": 12,
+        "name": "12"
+      },
+      "section": {
+        "id": 7,
+        "name": "7"
+      },
+      "products": [
+        {
+          "id": "0502",
+          "name": "煤炭",
+          "source": "relationBreed"
+        }
+      ],
+      "regions": [
+        {
+          "id": "02",
+          "name": "国外"
+        }
+      ],
+      "source_name": null,
+      "source_url": null,
+      "in_article_url": null,
+      "out_article_url": null,
+      "in_article_title": null,
+      "out_article_title": null,
+      "source_link_status": "no_link",
+      "data_source": 2,
+      "publisher_id": 221633,
+      "relation_id": 7627719,
+      "ai_flag": 0,
+      "platform_product_line": null,
+      "mapping_status": "ambiguous",
+      "quality_flags": [
+        "source_link_missing"
+      ]
+    },
+    {
+      "news_id": "4874257",
+      "published_at": "2026-09-19T08:43:13.098Z",
+      "published_at_ms": 1789807393098,
+      "timezone": "Asia/Shanghai",
+      "content_text": "9月19日唐山迁安普方坯资源出厂含税稳，报3000。（元/吨）",
+      "content_html": "9月19日唐山迁安普方坯资源出厂含税稳，报3000。（元/吨）",
+      "raw_content": "9月19日唐山迁安普方坯资源出厂含税稳，报3000。（元/吨）",
+      "category": {
+        "id": 2,
+        "name": "2"
+      },
+      "section": {
+        "id": 7,
+        "name": "7"
+      },
+      "products": [
+        {
+          "id": "0307",
+          "name": "钢坯",
+          "source": "relationBreed"
+        },
+        {
+          "id": "方坯",
+          "name": "方坯",
+          "source": "breedTag"
+        }
+      ],
+      "regions": [
+        {
+          "id": "010403",
+          "name": "河北"
+        }
+      ],
+      "source_name": null,
+      "source_url": null,
+      "in_article_url": null,
+      "out_article_url": null,
+      "in_article_title": null,
+      "out_article_title": null,
+      "source_link_status": "no_link",
+      "data_source": 2,
+      "publisher_id": 210042,
+      "relation_id": 7627718,
+      "ai_flag": 0,
+      "platform_product_line": null,
+      "mapping_status": "ambiguous",
+      "quality_flags": [
+        "source_link_missing"
+      ]
+    },
+    {
+      "news_id": "4874256",
+      "published_at": "2026-09-19T08:17:04.367Z",
+      "published_at_ms": 1789805824367,
+      "timezone": "Asia/Shanghai",
+      "content_text": "9月19日秦皇岛宏兴明日废钢执行价格：模具钢2300钢板料2250-2300优重一2260优重二2240重A2220重B2180重C2140面包生铁2050马蹄铁2200-2260矽钢片-2200钢筋切粒2240-2300花铁压块2230-2260钢筋压块2240大钢刨2080-2100小钢刨2010-2030普销一级1930-1950普销二级1850-1900不含税。",
+      "content_html": "9月19日秦皇岛宏兴明日废钢执行价格：模具钢2300钢板料2250-2300优重一2260优重二2240重A2220重B2180重C2140面包生铁2050马蹄铁2200-2260矽钢片-2200钢筋切粒2240-2300花铁压块2230-2260钢筋压块2240大钢刨2080-2100小钢刨2010-2030普销一级1930-1950普销二级1850-1900不含税。",
+      "raw_content": "9月19日秦皇岛宏兴明日废钢执行价格：模具钢2300钢板料2250-2300优重一2260优重二2240重A2220重B2180重C2140面包生铁2050马蹄铁2200-2260矽钢片-2200钢筋切粒2240-2300花铁压块2230-2260钢筋压块2240大钢刨2080-2100小钢刨2010-2030普销一级1930-1950普销二级1850-1900不含税。",
+      "category": {
+        "id": 2,
+        "name": "2"
+      },
+      "section": {
+        "id": 9,
+        "name": "9"
+      },
+      "products": [
+        {
+          "id": "0306",
+          "name": "废钢",
+          "source": "relationBreed"
+        },
+        {
+          "id": "钢板料",
+          "name": "钢板料",
+          "source": "breedTag"
+        },
+        {
+          "id": "钢筋压块",
+          "name": "钢筋压块",
+          "source": "breedTag"
+        },
+        {
+          "id": "冲花料",
+          "name": "冲花料",
+          "source": "breedTag"
+        },
+        {
+          "id": "钢筋切粒",
+          "name": "钢筋切粒",
+          "source": "breedTag"
+        },
+        {
+          "id": "重废Ⅰ类",
+          "name": "重废Ⅰ类",
+          "source": "breedTag"
+        },
+        {
+          "id": "重废Ⅱ类",
+          "name": "重废Ⅱ类",
+          "source": "breedTag"
+        },
+        {
+          "id": "再生金属",
+          "name": "再生金属",
+          "source": "breedTag"
+        }
+      ],
+      "regions": [
+        {
+          "id": "01040303",
+          "name": "秦皇岛"
+        }
+      ],
+      "source_name": null,
+      "source_url": null,
+      "in_article_url": null,
+      "out_article_url": null,
+      "in_article_title": null,
+      "out_article_title": null,
+      "source_link_status": "no_link",
+      "data_source": 2,
+      "publisher_id": 220408,
+      "relation_id": 7627717,
+      "ai_flag": 0,
+      "platform_product_line": null,
+      "mapping_status": "ambiguous",
+      "quality_flags": [
+        "source_link_missing"
+      ]
+    },
+    {
+      "news_id": "4874255",
+      "published_at": "2026-09-19T07:57:26.653Z",
+      "published_at_ms": 1789804646653,
+      "timezone": "Asia/Shanghai",
+      "content_text": "9月19日唐山迁安松汀钢铁普方坯资源稳，执行3000含税出厂。（元/吨）",
+      "content_html": "9月19日唐山迁安松汀钢铁普方坯资源稳，执行3000含税出厂。（元/吨）",
+      "raw_content": "9月19日唐山迁安松汀钢铁普方坯资源稳，执行3000含税出厂。（元/吨）",
+      "category": {
+        "id": 2,
+        "name": "2"
+      },
+      "section": {
+        "id": 7,
+        "name": "7"
+      },
+      "products": [
+        {
+          "id": "0307",
+          "name": "钢坯",
+          "source": "relationBreed"
+        },
+        {
+          "id": "方坯",
+          "name": "方坯",
+          "source": "breedTag"
+        }
+      ],
+      "regions": [
+        {
+          "id": "010403",
+          "name": "河北"
+        }
+      ],
+      "source_name": null,
+      "source_url": null,
+      "in_article_url": null,
+      "out_article_url": null,
+      "in_article_title": null,
+      "out_article_title": null,
+      "source_link_status": "no_link",
+      "data_source": 2,
+      "publisher_id": 210042,
+      "relation_id": 7627716,
+      "ai_flag": 0,
+      "platform_product_line": null,
+      "mapping_status": "ambiguous",
+      "quality_flags": [
+        "source_link_missing"
+      ]
+    },
     {
       "news_id": "4874254",
       "published_at": "2026-09-19T05:33:07.362Z",
@@ -1472,12 +1752,12 @@
   ],
   "quality": {
     "raw_count": 100,
-    "accepted_count": 25,
-    "rejected_count": 75,
+    "accepted_count": 30,
+    "rejected_count": 70,
     "deduped_count": 0,
-    "missing_source_link_count": 17,
+    "missing_source_link_count": 22,
     "missing_product_count": 3,
-    "malformed_content_count": 75,
+    "malformed_content_count": 70,
     "duplicate_group_count": 0,
     "warnings": [
       "API 报告总量超过本次分页采集量；快照仅覆盖目标日期窗口，需按分类/地区拆分请求补全。"
