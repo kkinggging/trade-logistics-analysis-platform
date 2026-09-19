@@ -6,10 +6,10 @@
     "dashboard_url": "https://www.mysteel.com/fastcomment/#/",
     "api_url": "https://openapi.mysteel.com/without_sign/newsflash/flashnews/query_by_tags.htm",
     "taxonomy_url": "https://a.mysteelcdn.com/common/publish/newsflash/newsflash_column.json",
-    "captured_at": "2026-09-19T04:31:14.481Z",
+    "captured_at": "2026-09-19T05:41:19.761Z",
     "coverage_start": "2026-09-19",
     "coverage_end": "2026-09-19",
-    "latest_published_at": "2026-09-19T04:13:10.919Z",
+    "latest_published_at": "2026-09-19T05:33:07.362Z",
     "timezone": "Asia/Shanghai",
     "fetch_mode": "api",
     "request_params": {
@@ -23,17 +23,17 @@
         ]
       ]
     },
-    "raw_sha256": "09777d767e637c39dc51d1343766fc76801d50582bf5f0abbdb0e0f96882f0e0",
+    "raw_sha256": "b425ed65e857ad4453c2402ef669785b284236930cd1da8058ba10c98bc30a39",
     "taxonomy_sha256": "c98f5bfdacde3401c98ea8f43bac3ca63d35b569f6aad3e1fff2f39b58a0dbf3",
     "response_sha256": [
-      "00dc59ebdb09334156d40fb6f9ccec4564b857aec2b778e6721a5e576c83303c"
+      "cf00ca45c4f86c8e0502f71b570d36be6527ae01886d75a503fb3b0747148a5d"
     ],
     "page_count": 1,
     "reported_total": 10000,
     "truncation_detected": true,
     "watermark": {
-      "publisher_time_ms": 1789791190919,
-      "id": "4874252"
+      "publisher_time_ms": 1789795987362,
+      "id": "4874254"
     },
     "retry": {
       "attempts": 3,
@@ -43,6 +43,119 @@
     }
   },
   "items": [
+    {
+      "news_id": "4874254",
+      "published_at": "2026-09-19T05:33:07.362Z",
+      "published_at_ms": 1789795987362,
+      "timezone": "Asia/Shanghai",
+      "content_text": "9月19日唐山天柱废钢降10执行价格：精品、火车轮、钢坯头2424元/吨，钢筋切段2371，轧制废料、特级2396，优质、轧辊2364，重A2348，重B2307，重C2270，冲豆2411，不含税。",
+      "content_html": "9月19日唐山天柱废钢降10执行价格：精品、火车轮、钢坯头2424元/吨，钢筋切段2371，轧制废料、特级2396，优质、轧辊2364，重A2348，重B2307，重C2270，冲豆2411，不含税。",
+      "raw_content": "9月19日唐山天柱废钢降10执行价格：精品、火车轮、钢坯头2424元/吨，钢筋切段2371，轧制废料、特级2396，优质、轧辊2364，重A2348，重B2307，重C2270，冲豆2411，不含税。",
+      "category": {
+        "id": 2,
+        "name": "2"
+      },
+      "section": {
+        "id": 9,
+        "name": "9"
+      },
+      "products": [
+        {
+          "id": "0306",
+          "name": "废钢",
+          "source": "relationBreed"
+        },
+        {
+          "id": "冲子",
+          "name": "冲子",
+          "source": "breedTag"
+        },
+        {
+          "id": "再生金属",
+          "name": "再生金属",
+          "source": "breedTag"
+        }
+      ],
+      "regions": [
+        {
+          "id": "01040302",
+          "name": "唐山"
+        }
+      ],
+      "source_name": null,
+      "source_url": null,
+      "in_article_url": null,
+      "out_article_url": null,
+      "in_article_title": null,
+      "out_article_title": null,
+      "source_link_status": "no_link",
+      "data_source": 2,
+      "publisher_id": 220408,
+      "relation_id": 7627715,
+      "ai_flag": 0,
+      "platform_product_line": null,
+      "mapping_status": "ambiguous",
+      "quality_flags": [
+        "source_link_missing"
+      ]
+    },
+    {
+      "news_id": "4874253",
+      "published_at": "2026-09-19T05:31:00.000Z",
+      "published_at_ms": 1789795860000,
+      "timezone": "Asia/Shanghai",
+      "content_text": "9月18日，英标认证机构CARES中国区会议在广州召开。上海钢联受邀出席，首席分析师汪建华分享2026年中国钢材出口现状及展望。会议聚焦钢铁绿色可持续发展与认证体系，深化行业交流，为未来合作奠定基础。",
+      "content_html": "9月18日，英标认证机构CARES中国区会议在广州召开。上海钢联受邀出席，首席分析师汪建华分享2026年中国钢材出口现状及展望。会议聚焦钢铁绿色可持续发展与认证体系，深化行业交流，为未来合作奠定基础。",
+      "raw_content": "9月18日，英标认证机构CARES中国区会议在广州召开。上海钢联受邀出席，首席分析师汪建华分享2026年中国钢材出口现状及展望。会议聚焦钢铁绿色可持续发展与认证体系，深化行业交流，为未来合作奠定基础。",
+      "category": {
+        "id": 2,
+        "name": "2"
+      },
+      "section": {
+        "id": 8,
+        "name": "8"
+      },
+      "products": [
+        {
+          "id": "010101",
+          "name": "建筑钢材",
+          "source": "relationBreed"
+        },
+        {
+          "id": "钢材",
+          "name": "钢材",
+          "source": "breedTag"
+        }
+      ],
+      "regions": [
+        {
+          "id": "02",
+          "name": "国外"
+        },
+        {
+          "id": "0218",
+          "name": "亚洲"
+        },
+        {
+          "id": "0219",
+          "name": "欧洲"
+        }
+      ],
+      "source_name": "我的钢铁网(Mysteel)",
+      "source_url": "http://gc.mysteel.com/a/26091913/B77A61D9C2FA2CEB.html",
+      "in_article_url": "http://gc.mysteel.com/a/26091913/B77A61D9C2FA2CEB.html",
+      "out_article_url": null,
+      "in_article_title": "上海钢联受邀出席英标认证机构CARES中国区会议",
+      "out_article_title": null,
+      "source_link_status": "article_link",
+      "data_source": 1,
+      "publisher_id": 228015,
+      "relation_id": 45913760,
+      "ai_flag": 0,
+      "platform_product_line": null,
+      "mapping_status": "ambiguous",
+      "quality_flags": []
+    },
     {
       "news_id": "4874252",
       "published_at": "2026-09-19T04:13:10.919Z",
@@ -1359,12 +1472,12 @@
   ],
   "quality": {
     "raw_count": 100,
-    "accepted_count": 23,
-    "rejected_count": 77,
+    "accepted_count": 25,
+    "rejected_count": 75,
     "deduped_count": 0,
-    "missing_source_link_count": 16,
+    "missing_source_link_count": 17,
     "missing_product_count": 3,
-    "malformed_content_count": 77,
+    "malformed_content_count": 75,
     "duplicate_group_count": 0,
     "warnings": [
       "API 报告总量超过本次分页采集量；快照仅覆盖目标日期窗口，需按分类/地区拆分请求补全。"
