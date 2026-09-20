@@ -6,10 +6,10 @@
     "dashboard_url": "https://www.mysteel.com/fastcomment/#/",
     "api_url": "https://openapi.mysteel.com/without_sign/newsflash/flashnews/query_by_tags.htm",
     "taxonomy_url": "https://a.mysteelcdn.com/common/publish/newsflash/newsflash_column.json",
-    "captured_at": "2026-09-20T04:48:06.529Z",
+    "captured_at": "2026-09-20T06:00:20.158Z",
     "coverage_start": "2026-09-20",
     "coverage_end": "2026-09-20",
-    "latest_published_at": "2026-09-20T04:10:00.000Z",
+    "latest_published_at": "2026-09-20T05:59:37.685Z",
     "timezone": "Asia/Shanghai",
     "fetch_mode": "api",
     "request_params": {
@@ -23,40 +23,41 @@
         ]
       ]
     },
-    "raw_sha256": "1eb1c6f1d854b29a056367e426aaea1776afb55a2f1daaed4db5b6721ee6e3d5",
+    "raw_sha256": "a03a6cc064cc8b1bdf91f9f2d75f23db4f19cb9ef64dbab453d6fc8c345f0703",
     "taxonomy_sha256": "c98f5bfdacde3401c98ea8f43bac3ca63d35b569f6aad3e1fff2f39b58a0dbf3",
     "response_sha256": [
-      "4d6e0ae2b85a985b2ece657f4648b7e9d4523b67c6499e90e9712dbad31d13dd",
-      "7ff2926ddd0db32c0f55248ff3499732ecca7e73e439b582b038726499861a8a",
-      "d47b993493dc61d4896cb100e40cfb64e33ab4030d6af187f76b76ef95c23b4b",
-      "124482b87a711fab45448b8c30009067eb318a97eda7bac5e972ab5307820e64",
-      "7442d514f616b2fe42eab3d344097fbc58d8873ac87564d926fd61543b3a35aa",
-      "006aea1fddddcee825482889f4cd4dd748cd258244ec1bd603a42c19ec1f1046",
-      "6799250ba6e3d0cfa76080fa968d342cd46ff2204262cd61c288ad27dfa98300",
-      "3168bf1c6a4866cb6f9deedb0c48186246abb9ff39e0e19f1df1b324d8d1720f",
-      "25a9b7237d771383ab5306fcd7f0aadb53cacc73f6093bd9502e6a389f4bd007",
-      "3389fd436593d5ef13b12a59fd8e7892e27993704e6230e2a4b07d9e0f0fc7a2",
-      "b1063b64e67ce1f03023e4c815edbee56e26471eac9de1c979513ab1a77eeefa",
-      "5c0503ddd901571dfbc244658ce96fe79f73c884262eedaf95b1e1976f4aa708",
-      "2e4854780d9da642288ab0a4dad7beb5295ac54651987f3149b5083449d64a1b",
-      "5d9efcaf21d5baa92c886fa07913d0f1a122dffa6bb58aae82c087d51863e980",
-      "13120cb974d688a38dd807a46d8df690aac1d36f1de9e7010375bd98efa20ad4",
-      "ef19021932c1f8b95b7ed8bd6bc3e9fdbdb8252ce28ca1cd7737dd5d9c047545",
-      "bfbdbd1bcd3d3f132a43622e25ab1107612f108815c9ed47e33185faa24d27a5",
-      "1767a6444765c6b8c2aa77ba37fe791e237471f1bda40a7c9c5a251c22d843fa",
-      "d4ced905a006f792c56a8ffc2c958574b0ed28d45eb16fc47436959c12bf2c9d",
-      "9f8ad6577a1f5decf4c530eda8bb47cb9782e8d7e3d73e05275552ffd9a9332e",
-      "1474285ce64ff9a92d200deed26b67a0f064d710577845d28969e3d3568744ef",
-      "4d6d10df6075f2350b6213b86ae78222d6fc7068f4be4367b1874bd65ad5fe18",
-      "4f0c8c04e3c55a8c559bb700a6f84d7d946234781944ad129bc95deaa9fad170",
-      "ae5027f5b2c8dd30bcd7aa62836cdbe8e71daaab2882cde5376562fd90f206be"
+      "06dfd9d8fdfc32e0147b6b943e1382844b4fdaa2c361667a71bf2a2b02554101",
+      "ee975ea779dbfdb900cc83a6b1df19fc0114f3da12c6d7c4a83b5b76269d63e4",
+      "ab6acc9190565cdc4eeee3cf6128441687985d0c5f469767753aab1d64502c47",
+      "8fa518f6a32d6f6e81c1aa5012c2ea5d07e3a77f02e7078a90f470bdc37d5d53",
+      "cbd2d44042dc4e2c32c47f8bcc6622553bdbcaba103d0f210fdff1e8e4f94b95",
+      "e920e5ebca56144acfef893089be36de8d6525a1d8d0c68f4eadb1259df58ae2",
+      "8f6c4e711365ab7ea381fefffcc00756f332a2ee1e654c744c7773cb2ceac45d",
+      "21bde320a9ce03553c921d8fe26c14740a812a608612dce081a50702f26ef6a2",
+      "9b194a2d277ee9aa106aa9fea455d06cd848efb0ae10f76b7591cf069f0d60f5",
+      "01e0595edaadbc7615394e2952e8c6f1937727988c2c572159e2e19b1539bbfd",
+      "4dc9dedfa78a4e846813530f3807cb78558d806747e576a607d0698e4d889c44",
+      "ba91a51e9738fbab241607d13c4e64116ddf05a9829b3ad0554085613cdf74a1",
+      "011f763d5f9d3dfbfb69a3c9d8c1ec759122f103ee1a02c777f41355bfb8c738",
+      "a9781675752d59b72f41342d624afbd3e833a81611eaae8e844d6c610d550fb2",
+      "3d29f8e041bdb15b6242895e30eb0f3c89ca50f0962790831872539043746708",
+      "47126e661ec3179e2e7771e0a288e73bc286ec60ac524609212bfc7e361a0ff3",
+      "3d1eb2526da0e15cde05f3d27ab473f42ccb40a558ef9b236b2f57a300839dfd",
+      "27996b23d12598e6b9238e8c91a43f13967c8d1d8be4d91a4e339288146e0f5f",
+      "453041f71f853d29e1198015acfa18c6d94bbb4b5c4aef6b803e2504b8ea2578",
+      "c0d810d49c2f91981100466cbf13cf1d01f8f2482c54f682227d3177476f6b95",
+      "4ded1d1cd112e91be02abbb47ca177ec75405ce4894d2a454eafac3bf302ab2c",
+      "4d4dc11364033d7430e74e34ae16fb9f536a07b9a1da1f6db229fbb52750046a",
+      "f3198f9bc46cd246df792567ca436dc2ac5a2e7a0a4509f97b51cbe0f9789f63",
+      "4a5fa5d6d2db8cc8f6fe9b60e72a96e15ddb77bdc3334c94e94fdde0924449ff",
+      "d42cb4aa37fa36f7259dfe1dc01506bebef8bd27c60721e3bfbf517f1b167c5f"
     ],
-    "page_count": 24,
+    "page_count": 25,
     "reported_total": 10000,
     "truncation_detected": true,
     "watermark": {
-      "publisher_time_ms": 1789877400000,
-      "id": "4876642"
+      "publisher_time_ms": 1789883977685,
+      "id": "4876697"
     },
     "retry": {
       "attempts": 3,
@@ -66,6 +67,2134 @@
     }
   },
   "items": [
+    {
+      "news_id": "4876697",
+      "published_at": "2026-09-20T05:59:37.685Z",
+      "published_at_ms": 1789883977685,
+      "timezone": "Asia/Shanghai",
+      "content_text": "据海关数据显示，2026年8月中国海绵钛出口量708.40吨，环比增23.75%，同比增32.15%，出口金额476.63万美元，环比增23.38%，同比增34.18%。1-8月中国海绵钛出口总量5131.63吨，同比增11.75%，出口总金额3464.53万美元，同比增10.00%。",
+      "content_html": "据海关数据显示，2026年8月中国海绵钛出口量708.40吨，环比增23.75%，同比增32.15%，出口金额476.63万美元，环比增23.38%，同比增34.18%。1-8月中国海绵钛出口总量5131.63吨，同比增11.75%，出口总金额3464.53万美元，同比增10.00%。",
+      "raw_content": "据海关数据显示，2026年8月中国海绵钛出口量708.40吨，环比增23.75%，同比增32.15%，出口金额476.63万美元，环比增23.38%，同比增34.18%。1-8月中国海绵钛出口总量5131.63吨，同比增11.75%，出口总金额3464.53万美元，同比增10.00%。",
+      "category": {
+        "id": 2,
+        "name": "2"
+      },
+      "section": {
+        "id": 8,
+        "name": "8"
+      },
+      "products": [
+        {
+          "id": "海绵钛",
+          "name": "海绵钛",
+          "source": "breedTag"
+        }
+      ],
+      "regions": [],
+      "source_name": null,
+      "source_url": null,
+      "in_article_url": null,
+      "out_article_url": null,
+      "in_article_title": null,
+      "out_article_title": null,
+      "source_link_status": "no_link",
+      "data_source": 6,
+      "publisher_id": 222580,
+      "relation_id": 324841,
+      "ai_flag": 1,
+      "platform_product_line": null,
+      "mapping_status": "ambiguous",
+      "quality_flags": [
+        "source_link_missing"
+      ]
+    },
+    {
+      "news_id": "4876696",
+      "published_at": "2026-09-20T05:59:36.111Z",
+      "published_at_ms": 1789883976111,
+      "timezone": "Asia/Shanghai",
+      "content_text": "据海关数据显示，2026年8月维生素B6及其衍生物出口量648.401吨，环比减18.48%，同比增11.61%，出口金额12111089美元，环比减15.91%，同比增减9.52%。1-8月维生素B6及其衍生物出口总量6709.715吨，同比增22.26%，出口总金额116363293美元，同比减12.10%。",
+      "content_html": "据海关数据显示，2026年8月维生素B6及其衍生物出口量648.401吨，环比减18.48%，同比增11.61%，出口金额12111089美元，环比减15.91%，同比增减9.52%。1-8月维生素B6及其衍生物出口总量6709.715吨，同比增22.26%，出口总金额116363293美元，同比减12.10%。",
+      "raw_content": "据海关数据显示，2026年8月维生素B6及其衍生物出口量648.401吨，环比减18.48%，同比增11.61%，出口金额12111089美元，环比减15.91%，同比增减9.52%。1-8月维生素B6及其衍生物出口总量6709.715吨，同比增22.26%，出口总金额116363293美元，同比减12.10%。",
+      "category": {
+        "id": 5,
+        "name": "5"
+      },
+      "section": {
+        "id": 8,
+        "name": "8"
+      },
+      "products": [
+        {
+          "id": "维生素B6",
+          "name": "维生素B6",
+          "source": "breedTag"
+        }
+      ],
+      "regions": [],
+      "source_name": null,
+      "source_url": null,
+      "in_article_url": null,
+      "out_article_url": null,
+      "in_article_title": null,
+      "out_article_title": null,
+      "source_link_status": "no_link",
+      "data_source": 6,
+      "publisher_id": 224437,
+      "relation_id": 324679,
+      "ai_flag": 1,
+      "platform_product_line": null,
+      "mapping_status": "ambiguous",
+      "quality_flags": [
+        "source_link_missing"
+      ]
+    },
+    {
+      "news_id": "4876695",
+      "published_at": "2026-09-20T05:59:33.565Z",
+      "published_at_ms": 1789883973565,
+      "timezone": "Asia/Shanghai",
+      "content_text": "据海关数据显示，2026年8月维生素B1及其衍生物出口量756.646吨，环比减23.18%，同比增25.35%，出口金额24742146美元，环比减20.30%，同比增32.95%。1-8月维生素B1及其衍生物出口总量6888.428吨，同比增22.73%，出口总金额214419056美元，同比增27.61%。",
+      "content_html": "据海关数据显示，2026年8月维生素B1及其衍生物出口量756.646吨，环比减23.18%，同比增25.35%，出口金额24742146美元，环比减20.30%，同比增32.95%。1-8月维生素B1及其衍生物出口总量6888.428吨，同比增22.73%，出口总金额214419056美元，同比增27.61%。",
+      "raw_content": "据海关数据显示，2026年8月维生素B1及其衍生物出口量756.646吨，环比减23.18%，同比增25.35%，出口金额24742146美元，环比减20.30%，同比增32.95%。1-8月维生素B1及其衍生物出口总量6888.428吨，同比增22.73%，出口总金额214419056美元，同比增27.61%。",
+      "category": {
+        "id": 5,
+        "name": "5"
+      },
+      "section": {
+        "id": 8,
+        "name": "8"
+      },
+      "products": [
+        {
+          "id": "维生素B1",
+          "name": "维生素B1",
+          "source": "breedTag"
+        }
+      ],
+      "regions": [],
+      "source_name": null,
+      "source_url": null,
+      "in_article_url": null,
+      "out_article_url": null,
+      "in_article_title": null,
+      "out_article_title": null,
+      "source_link_status": "no_link",
+      "data_source": 6,
+      "publisher_id": 224437,
+      "relation_id": 324689,
+      "ai_flag": 1,
+      "platform_product_line": null,
+      "mapping_status": "ambiguous",
+      "quality_flags": [
+        "source_link_missing"
+      ]
+    },
+    {
+      "news_id": "4876694",
+      "published_at": "2026-09-20T05:59:31.471Z",
+      "published_at_ms": 1789883971471,
+      "timezone": "Asia/Shanghai",
+      "content_text": "据海关数据显示，2026年8月维生素C及其衍生物出口量15913.515吨，环比减1.66%，同比减0.69%，出口金额41891794美元，环比减2.96%，同比减2.16%。1-8月维生素C及其衍生物出口总量144885.635吨，同比减5.16%，出口总金额371666895美元，同比减18.38%。",
+      "content_html": "据海关数据显示，2026年8月维生素C及其衍生物出口量15913.515吨，环比减1.66%，同比减0.69%，出口金额41891794美元，环比减2.96%，同比减2.16%。1-8月维生素C及其衍生物出口总量144885.635吨，同比减5.16%，出口总金额371666895美元，同比减18.38%。",
+      "raw_content": "据海关数据显示，2026年8月维生素C及其衍生物出口量15913.515吨，环比减1.66%，同比减0.69%，出口金额41891794美元，环比减2.96%，同比减2.16%。1-8月维生素C及其衍生物出口总量144885.635吨，同比减5.16%，出口总金额371666895美元，同比减18.38%。",
+      "category": {
+        "id": 5,
+        "name": "5"
+      },
+      "section": {
+        "id": 8,
+        "name": "8"
+      },
+      "products": [
+        {
+          "id": "维生素C",
+          "name": "维生素C",
+          "source": "breedTag"
+        }
+      ],
+      "regions": [],
+      "source_name": null,
+      "source_url": null,
+      "in_article_url": null,
+      "out_article_url": null,
+      "in_article_title": null,
+      "out_article_title": null,
+      "source_link_status": "no_link",
+      "data_source": 6,
+      "publisher_id": 224437,
+      "relation_id": 324693,
+      "ai_flag": 1,
+      "platform_product_line": null,
+      "mapping_status": "ambiguous",
+      "quality_flags": [
+        "source_link_missing"
+      ]
+    },
+    {
+      "news_id": "4876693",
+      "published_at": "2026-09-20T05:59:29.162Z",
+      "published_at_ms": 1789883969162,
+      "timezone": "Asia/Shanghai",
+      "content_text": "据海关数据显示，2026年8月维生素A及其衍生物出口量464.584吨，环比减7.00%，同比减24.56%，出口金额12937953美元，环比减1.21%，同比减13.57%。1-8月维生素A及其衍生物出口总量5548.058吨，同比增37.22%，出口总金额7231251美元，同比减35.33%。",
+      "content_html": "据海关数据显示，2026年8月维生素A及其衍生物出口量464.584吨，环比减7.00%，同比减24.56%，出口金额12937953美元，环比减1.21%，同比减13.57%。1-8月维生素A及其衍生物出口总量5548.058吨，同比增37.22%，出口总金额7231251美元，同比减35.33%。",
+      "raw_content": "据海关数据显示，2026年8月维生素A及其衍生物出口量464.584吨，环比减7.00%，同比减24.56%，出口金额12937953美元，环比减1.21%，同比减13.57%。1-8月维生素A及其衍生物出口总量5548.058吨，同比增37.22%，出口总金额7231251美元，同比减35.33%。",
+      "category": {
+        "id": 5,
+        "name": "5"
+      },
+      "section": {
+        "id": 8,
+        "name": "8"
+      },
+      "products": [
+        {
+          "id": "维生素A",
+          "name": "维生素A",
+          "source": "breedTag"
+        }
+      ],
+      "regions": [],
+      "source_name": null,
+      "source_url": null,
+      "in_article_url": null,
+      "out_article_url": null,
+      "in_article_title": null,
+      "out_article_title": null,
+      "source_link_status": "no_link",
+      "data_source": 6,
+      "publisher_id": 224437,
+      "relation_id": 324695,
+      "ai_flag": 1,
+      "platform_product_line": null,
+      "mapping_status": "ambiguous",
+      "quality_flags": [
+        "source_link_missing"
+      ]
+    },
+    {
+      "news_id": "4876692",
+      "published_at": "2026-09-20T05:59:26.955Z",
+      "published_at_ms": 1789883966955,
+      "timezone": "Asia/Shanghai",
+      "content_text": "据海关数据显示，2026年8月中国鱼粉进口量119767.841吨，环比增0.45%，同比减45.17%，进口金额284630145美元，环比增12.89%，同比减10.57%。1-8月鱼粉进口总量1013795.01吨，同比减28.74%，进口总金额1977654964美元，同比增0.07%。",
+      "content_html": "据海关数据显示，2026年8月中国鱼粉进口量119767.841吨，环比增0.45%，同比减45.17%，进口金额284630145美元，环比增12.89%，同比减10.57%。1-8月鱼粉进口总量1013795.01吨，同比减28.74%，进口总金额1977654964美元，同比增0.07%。",
+      "raw_content": "据海关数据显示，2026年8月中国鱼粉进口量119767.841吨，环比增0.45%，同比减45.17%，进口金额284630145美元，环比增12.89%，同比减10.57%。1-8月鱼粉进口总量1013795.01吨，同比减28.74%，进口总金额1977654964美元，同比增0.07%。",
+      "category": {
+        "id": 5,
+        "name": "5"
+      },
+      "section": {
+        "id": 8,
+        "name": "8"
+      },
+      "products": [
+        {
+          "id": "鱼粉",
+          "name": "鱼粉",
+          "source": "breedTag"
+        }
+      ],
+      "regions": [],
+      "source_name": null,
+      "source_url": null,
+      "in_article_url": null,
+      "out_article_url": null,
+      "in_article_title": null,
+      "out_article_title": null,
+      "source_link_status": "no_link",
+      "data_source": 6,
+      "publisher_id": 224437,
+      "relation_id": 324702,
+      "ai_flag": 1,
+      "platform_product_line": null,
+      "mapping_status": "ambiguous",
+      "quality_flags": [
+        "source_link_missing"
+      ]
+    },
+    {
+      "news_id": "4876691",
+      "published_at": "2026-09-20T05:59:24.653Z",
+      "published_at_ms": 1789883964653,
+      "timezone": "Asia/Shanghai",
+      "content_text": "据海关数据显示，2026年8月低蛋白乳清粉进口量49892.789吨，环比增加4.73%，同比减24.28%，进口金额81821211美元，环比减2.58%，同比增1.43%。1-8月低蛋白乳清粉进口总量417634.941吨，同比减9.72%，进口总金额615852596美元，同比增8.03%。",
+      "content_html": "据海关数据显示，2026年8月低蛋白乳清粉进口量49892.789吨，环比增加4.73%，同比减24.28%，进口金额81821211美元，环比减2.58%，同比增1.43%。1-8月低蛋白乳清粉进口总量417634.941吨，同比减9.72%，进口总金额615852596美元，同比增8.03%。",
+      "raw_content": "据海关数据显示，2026年8月低蛋白乳清粉进口量49892.789吨，环比增加4.73%，同比减24.28%，进口金额81821211美元，环比减2.58%，同比增1.43%。1-8月低蛋白乳清粉进口总量417634.941吨，同比减9.72%，进口总金额615852596美元，同比增8.03%。",
+      "category": {
+        "id": 5,
+        "name": "5"
+      },
+      "section": {
+        "id": 8,
+        "name": "8"
+      },
+      "products": [
+        {
+          "id": "乳清粉",
+          "name": "乳清粉",
+          "source": "breedTag"
+        }
+      ],
+      "regions": [],
+      "source_name": null,
+      "source_url": null,
+      "in_article_url": null,
+      "out_article_url": null,
+      "in_article_title": null,
+      "out_article_title": null,
+      "source_link_status": "no_link",
+      "data_source": 6,
+      "publisher_id": 224437,
+      "relation_id": 324724,
+      "ai_flag": 1,
+      "platform_product_line": null,
+      "mapping_status": "ambiguous",
+      "quality_flags": [
+        "source_link_missing"
+      ]
+    },
+    {
+      "news_id": "4876690",
+      "published_at": "2026-09-20T05:59:22.402Z",
+      "published_at_ms": 1789883962402,
+      "timezone": "Asia/Shanghai",
+      "content_text": "据海关数据显示，2026年8月维生素D或DL-泛酸（维生素B3或B5）及其衍生物出口量1688.84吨，环比减5.65%，同比增9.09%，出口金额11004598美元，环比减10.84%，同比增增12.71%。1-8月维生素D或DL-泛酸（维生素B3或B5）及其衍生物出口总量16983.413吨，同比增11.65%，出口总金额109906233美元，同比增7.08%。",
+      "content_html": "据海关数据显示，2026年8月维生素D或DL-泛酸（维生素B3或B5）及其衍生物出口量1688.84吨，环比减5.65%，同比增9.09%，出口金额11004598美元，环比减10.84%，同比增增12.71%。1-8月维生素D或DL-泛酸（维生素B3或B5）及其衍生物出口总量16983.413吨，同比增11.65%，出口总金额109906233美元，同比增7.08%。",
+      "raw_content": "据海关数据显示，2026年8月维生素D或DL-泛酸（维生素B3或B5）及其衍生物出口量1688.84吨，环比减5.65%，同比增9.09%，出口金额11004598美元，环比减10.84%，同比增增12.71%。1-8月维生素D或DL-泛酸（维生素B3或B5）及其衍生物出口总量16983.413吨，同比增11.65%，出口总金额109906233美元，同比增7.08%。",
+      "category": {
+        "id": 5,
+        "name": "5"
+      },
+      "section": {
+        "id": 8,
+        "name": "8"
+      },
+      "products": [
+        {
+          "id": "维生素D",
+          "name": "维生素D",
+          "source": "breedTag"
+        },
+        {
+          "id": "维生素B3",
+          "name": "维生素B3",
+          "source": "breedTag"
+        }
+      ],
+      "regions": [],
+      "source_name": null,
+      "source_url": null,
+      "in_article_url": null,
+      "out_article_url": null,
+      "in_article_title": null,
+      "out_article_title": null,
+      "source_link_status": "no_link",
+      "data_source": 6,
+      "publisher_id": 224437,
+      "relation_id": 324731,
+      "ai_flag": 1,
+      "platform_product_line": null,
+      "mapping_status": "ambiguous",
+      "quality_flags": [
+        "source_link_missing"
+      ]
+    },
+    {
+      "news_id": "4876689",
+      "published_at": "2026-09-20T05:59:20.114Z",
+      "published_at_ms": 1789883960114,
+      "timezone": "Asia/Shanghai",
+      "content_text": "据海关数据显示，2026年8月维生素E及其衍生物出口量9023.925吨，环比减6.17%，同比减17.40%，出口金额91202397美元，环比减10.51%，同比减28.15%。1-8月维生素E及其衍生物出口总量88792.039吨，同比增33.37%，出口总金额768116863美元，同比减26.54%。",
+      "content_html": "据海关数据显示，2026年8月维生素E及其衍生物出口量9023.925吨，环比减6.17%，同比减17.40%，出口金额91202397美元，环比减10.51%，同比减28.15%。1-8月维生素E及其衍生物出口总量88792.039吨，同比增33.37%，出口总金额768116863美元，同比减26.54%。",
+      "raw_content": "据海关数据显示，2026年8月维生素E及其衍生物出口量9023.925吨，环比减6.17%，同比减17.40%，出口金额91202397美元，环比减10.51%，同比减28.15%。1-8月维生素E及其衍生物出口总量88792.039吨，同比增33.37%，出口总金额768116863美元，同比减26.54%。",
+      "category": {
+        "id": 5,
+        "name": "5"
+      },
+      "section": {
+        "id": 8,
+        "name": "8"
+      },
+      "products": [
+        {
+          "id": "维生素E",
+          "name": "维生素E",
+          "source": "breedTag"
+        }
+      ],
+      "regions": [],
+      "source_name": null,
+      "source_url": null,
+      "in_article_url": null,
+      "out_article_url": null,
+      "in_article_title": null,
+      "out_article_title": null,
+      "source_link_status": "no_link",
+      "data_source": 6,
+      "publisher_id": 224437,
+      "relation_id": 324735,
+      "ai_flag": 1,
+      "platform_product_line": null,
+      "mapping_status": "ambiguous",
+      "quality_flags": [
+        "source_link_missing"
+      ]
+    },
+    {
+      "news_id": "4876688",
+      "published_at": "2026-09-20T05:59:17.756Z",
+      "published_at_ms": 1789883957756,
+      "timezone": "Asia/Shanghai",
+      "content_text": "据海关数据显示，2026年8月饲料级正磷酸氢钙出口量17241.69吨，环比增1.08%，同比减28.07%，出口金额12328233美元，环比增0.62%，同比增7.57%。1-8月饲料级正磷酸氢钙出口总量155361.38吨，同比减8.65%，出口总金额104171470美元，同比增31.17%。",
+      "content_html": "据海关数据显示，2026年8月饲料级正磷酸氢钙出口量17241.69吨，环比增1.08%，同比减28.07%，出口金额12328233美元，环比增0.62%，同比增7.57%。1-8月饲料级正磷酸氢钙出口总量155361.38吨，同比减8.65%，出口总金额104171470美元，同比增31.17%。",
+      "raw_content": "据海关数据显示，2026年8月饲料级正磷酸氢钙出口量17241.69吨，环比增1.08%，同比减28.07%，出口金额12328233美元，环比增0.62%，同比增7.57%。1-8月饲料级正磷酸氢钙出口总量155361.38吨，同比减8.65%，出口总金额104171470美元，同比增31.17%。",
+      "category": {
+        "id": 5,
+        "name": "5"
+      },
+      "section": {
+        "id": 8,
+        "name": "8"
+      },
+      "products": [
+        {
+          "id": "磷酸氢钙",
+          "name": "磷酸氢钙",
+          "source": "breedTag"
+        }
+      ],
+      "regions": [],
+      "source_name": null,
+      "source_url": null,
+      "in_article_url": null,
+      "out_article_url": null,
+      "in_article_title": null,
+      "out_article_title": null,
+      "source_link_status": "no_link",
+      "data_source": 6,
+      "publisher_id": 224437,
+      "relation_id": 324797,
+      "ai_flag": 1,
+      "platform_product_line": null,
+      "mapping_status": "ambiguous",
+      "quality_flags": [
+        "source_link_missing"
+      ]
+    },
+    {
+      "news_id": "4876687",
+      "published_at": "2026-09-20T05:59:14.693Z",
+      "published_at_ms": 1789883954693,
+      "timezone": "Asia/Shanghai",
+      "content_text": "据海关数据显示，2026年8月中国鸡肉粉进口量24964.461吨，环比减28.97%，同比增60.16%，进口金额2315.37万美元，环比减25.87%，同比增47.89%。1-8月鸡肉粉进口总量176421.505吨，同比增47.89%，进口总金额15026.26万美元，同比增49.64%。",
+      "content_html": "据海关数据显示，2026年8月中国鸡肉粉进口量24964.461吨，环比减28.97%，同比增60.16%，进口金额2315.37万美元，环比减25.87%，同比增47.89%。1-8月鸡肉粉进口总量176421.505吨，同比增47.89%，进口总金额15026.26万美元，同比增49.64%。",
+      "raw_content": "据海关数据显示，2026年8月中国鸡肉粉进口量24964.461吨，环比减28.97%，同比增60.16%，进口金额2315.37万美元，环比减25.87%，同比增47.89%。1-8月鸡肉粉进口总量176421.505吨，同比增47.89%，进口总金额15026.26万美元，同比增49.64%。",
+      "category": {
+        "id": 5,
+        "name": "5"
+      },
+      "section": {
+        "id": 8,
+        "name": "8"
+      },
+      "products": [
+        {
+          "id": "鸡肉粉",
+          "name": "鸡肉粉",
+          "source": "breedTag"
+        }
+      ],
+      "regions": [],
+      "source_name": null,
+      "source_url": null,
+      "in_article_url": null,
+      "out_article_url": null,
+      "in_article_title": null,
+      "out_article_title": null,
+      "source_link_status": "no_link",
+      "data_source": 6,
+      "publisher_id": 224437,
+      "relation_id": 324835,
+      "ai_flag": 1,
+      "platform_product_line": null,
+      "mapping_status": "ambiguous",
+      "quality_flags": [
+        "source_link_missing"
+      ]
+    },
+    {
+      "news_id": "4876686",
+      "published_at": "2026-09-20T05:58:00.000Z",
+      "published_at_ms": 1789883880000,
+      "timezone": "Asia/Shanghai",
+      "content_text": "萍乡萍钢安源钢铁有限公司发布制氧厂安源片400立方氮气球罐修理项目招标公告。项目位于萍乡经开区，工期10天，范围包括焊缝缺陷清除、修补、无损检测及热处理等。要求投标人具备A3球罐及以上资质，成立五年以上，并有2023年以来的相关业绩。报名截止2026年9月28日，招标时间10月12日。需缴纳服务费200元及投标保证金0.5万元。",
+      "content_html": "萍乡萍钢安源钢铁有限公司发布制氧厂安源片400立方氮气球罐修理项目招标公告。项目位于萍乡经开区，工期10天，范围包括焊缝缺陷清除、修补、无损检测及热处理等。要求投标人具备A3球罐及以上资质，成立五年以上，并有2023年以来的相关业绩。报名截止2026年9月28日，招标时间10月12日。需缴纳服务费200元及投标保证金0.5万元。",
+      "raw_content": "萍乡萍钢安源钢铁有限公司发布制氧厂安源片400立方氮气球罐修理项目招标公告。项目位于萍乡经开区，工期10天，范围包括焊缝缺陷清除、修补、无损检测及热处理等。要求投标人具备A3球罐及以上资质，成立五年以上，并有2023年以来的相关业绩。报名截止2026年9月28日，招标时间10月12日。需缴纳服务费200元及投标保证金0.5万元。",
+      "category": {
+        "id": 2,
+        "name": "2"
+      },
+      "section": {
+        "id": 8,
+        "name": "8"
+      },
+      "products": [
+        {
+          "id": "氮气",
+          "name": "氮气",
+          "source": "breedTag"
+        }
+      ],
+      "regions": [],
+      "source_name": "我的钢铁网(Mysteel)",
+      "source_url": "http://gc.mysteel.com/a/26092013/AE62A3E4C7D47371.html",
+      "in_article_url": "http://gc.mysteel.com/a/26092013/AE62A3E4C7D47371.html",
+      "out_article_url": null,
+      "in_article_title": "萍乡萍钢安源钢铁有限公司 制氧厂安源片400立方氮气球罐修理项目招标公告",
+      "out_article_title": null,
+      "source_link_status": "article_link",
+      "data_source": 1,
+      "publisher_id": 206707,
+      "relation_id": 45921430,
+      "ai_flag": 0,
+      "platform_product_line": null,
+      "mapping_status": "ambiguous",
+      "quality_flags": []
+    },
+    {
+      "news_id": "4876684",
+      "published_at": "2026-09-20T05:55:25.631Z",
+      "published_at_ms": 1789883725631,
+      "timezone": "Asia/Shanghai",
+      "content_text": "9月20日承德建筑钢材市场价格盘中稳，河钢抗震三大3140、三小3340、盘螺3430。（元/吨）",
+      "content_html": "9月20日承德建筑钢材市场价格盘中稳，河钢抗震三大3140、三小3340、盘螺3430。（元/吨）",
+      "raw_content": "9月20日承德建筑钢材市场价格盘中稳，河钢抗震三大3140、三小3340、盘螺3430。（元/吨）",
+      "category": {
+        "id": 2,
+        "name": "2"
+      },
+      "section": {
+        "id": 7,
+        "name": "7"
+      },
+      "products": [
+        {
+          "id": "010101",
+          "name": "建筑钢材",
+          "source": "relationBreed"
+        },
+        {
+          "id": "盘螺",
+          "name": "盘螺",
+          "source": "breedTag"
+        }
+      ],
+      "regions": [
+        {
+          "id": "01040308",
+          "name": "承德"
+        }
+      ],
+      "source_name": null,
+      "source_url": null,
+      "in_article_url": null,
+      "out_article_url": null,
+      "in_article_title": null,
+      "out_article_title": null,
+      "source_link_status": "no_link",
+      "data_source": 2,
+      "publisher_id": 220278,
+      "relation_id": 7630304,
+      "ai_flag": 0,
+      "platform_product_line": null,
+      "mapping_status": "ambiguous",
+      "quality_flags": [
+        "source_link_missing"
+      ]
+    },
+    {
+      "news_id": "4876685",
+      "published_at": "2026-09-20T05:55:00.000Z",
+      "published_at_ms": 1789883700000,
+      "timezone": "Asia/Shanghai",
+      "content_text": "据河南能源监管办，截至8月底，河南全省装机容量17717万千瓦，同比增加1593万千瓦。其中水电、风电、太阳能及储能装机均增加，火电减少；全省机组平均利用小时数1543小时，同比减少243小时。8月全省发电量369.69亿千瓦时，同比减少13.10%；年累计发电量2613.51亿千瓦时，同比减少5.20%。8月全社会用电量455.13亿千瓦时，同比减少7.95%；年累计用电量3121.19亿千瓦时，同比减少1.26%。",
+      "content_html": "据河南能源监管办，截至8月底，河南全省装机容量17717万千瓦，同比增加1593万千瓦。其中水电、风电、太阳能及储能装机均增加，火电减少；全省机组平均利用小时数1543小时，同比减少243小时。8月全省发电量369.69亿千瓦时，同比减少13.10%；年累计发电量2613.51亿千瓦时，同比减少5.20%。8月全社会用电量455.13亿千瓦时，同比减少7.95%；年累计用电量3121.19亿千瓦时，同比减少1.26%。",
+      "raw_content": "据河南能源监管办，截至8月底，河南全省装机容量17717万千瓦，同比增加1593万千瓦。其中水电、风电、太阳能及储能装机均增加，火电减少；全省机组平均利用小时数1543小时，同比减少243小时。8月全省发电量369.69亿千瓦时，同比减少13.10%；年累计发电量2613.51亿千瓦时，同比减少5.20%。8月全社会用电量455.13亿千瓦时，同比减少7.95%；年累计用电量3121.19亿千瓦时，同比减少1.26%。",
+      "category": {
+        "id": 18,
+        "name": "18"
+      },
+      "section": {
+        "id": 8,
+        "name": "8"
+      },
+      "products": [],
+      "regions": [],
+      "source_name": "国家能源局河南监管办",
+      "source_url": "http://news.mysteel.com/a/26092013/CE4EEFECD74DC142.html",
+      "in_article_url": "http://news.mysteel.com/a/26092013/CE4EEFECD74DC142.html",
+      "out_article_url": null,
+      "in_article_title": "河南省2026年8月份电力供需情况通报",
+      "out_article_title": null,
+      "source_link_status": "article_link",
+      "data_source": 1,
+      "publisher_id": 216059,
+      "relation_id": 45921383,
+      "ai_flag": 0,
+      "platform_product_line": null,
+      "mapping_status": "unmapped",
+      "quality_flags": []
+    },
+    {
+      "news_id": "4876683",
+      "published_at": "2026-09-20T05:54:10.773Z",
+      "published_at_ms": 1789883650773,
+      "timezone": "Asia/Shanghai",
+      "content_text": "据海关数据显示，2026年8月其他锻轧钛及钛制品进口量48.922吨，环比上月提升14.55%（2026年7月进口锻轧钛及钛制品42.707吨），同比去年提升1.01%（2025年8月进口锻轧钛及钛制品48.431吨）；2026年8月锻轧钛及钛制品出口量为385.429吨，环比上月提升20.95%（2026年7月出口锻轧钛及钛制品318.661吨），同比去年减少7.77%（2025年8月锻轧钛及钛制品出口417.881吨）。",
+      "content_html": "<p>据海关数据显示，2026年8月其他锻轧钛及钛制品进口量48.922吨，环比上月提升14.55%（2026年7月进口锻轧钛及钛制品42.707吨），同比去年提升1.01%（2025年8月进口锻轧钛及钛制品48.431吨）；2026年8月锻轧钛及钛制品出口量为385.429吨，环比上月提升20.95%（2026年7月出口锻轧钛及钛制品318.661吨），同比去年减少7.77%（2025年8月锻轧钛及钛制品出口417.881吨）。</p>",
+      "raw_content": "<p>据海关数据显示，2026年8月其他锻轧钛及钛制品进口量48.922吨，环比上月提升14.55%（2026年7月进口锻轧钛及钛制品42.707吨），同比去年提升1.01%（2025年8月进口锻轧钛及钛制品48.431吨）；2026年8月锻轧钛及钛制品出口量为385.429吨，环比上月提升20.95%（2026年7月出口锻轧钛及钛制品318.661吨），同比去年减少7.77%（2025年8月锻轧钛及钛制品出口417.881吨）。</p>",
+      "category": {
+        "id": 2,
+        "name": "2"
+      },
+      "section": {
+        "id": 4,
+        "name": "4"
+      },
+      "products": [
+        {
+          "id": "0303",
+          "name": "铁合金",
+          "source": "relationBreed"
+        },
+        {
+          "id": "030307",
+          "name": "钛系",
+          "source": "relationBreed"
+        },
+        {
+          "id": "03030702",
+          "name": "钛铁",
+          "source": "relationBreed"
+        }
+      ],
+      "regions": [],
+      "source_name": null,
+      "source_url": null,
+      "in_article_url": null,
+      "out_article_url": null,
+      "in_article_title": null,
+      "out_article_title": null,
+      "source_link_status": "no_link",
+      "data_source": 0,
+      "publisher_id": 222580,
+      "relation_id": 0,
+      "ai_flag": 0,
+      "platform_product_line": null,
+      "mapping_status": "ambiguous",
+      "quality_flags": [
+        "source_link_missing"
+      ]
+    },
+    {
+      "news_id": "4876682",
+      "published_at": "2026-09-20T05:53:59.442Z",
+      "published_at_ms": 1789883639442,
+      "timezone": "Asia/Shanghai",
+      "content_text": "据海关数据显示，2026年8月钛白粉进口量5403.371吨，环比上月减少0.51%（2026年7月进口钛白粉5431.119吨），同比去年提升57.48%（2025年8月进口钛白粉3431.182吨）；2026年8月钛白粉出口量为144094.777吨，环比上月减少0.21%（2026年7月出口钛白粉144392.239吨），同比去年增加3.86%（2025年8月钛白粉出口138736.239吨）。",
+      "content_html": "<p>据海关数据显示，2026年8月钛白粉进口量5403.371吨，环比上月减少0.51%（2026年7月进口钛白粉5431.119吨），同比去年提升57.48%（2025年8月进口钛白粉3431.182吨）；2026年8月钛白粉出口量为144094.777吨，环比上月减少0.21%（2026年7月出口钛白粉144392.239吨），同比去年增加3.86%（2025年8月钛白粉出口138736.239吨）。</p>",
+      "raw_content": "<p>据海关数据显示，2026年8月钛白粉进口量5403.371吨，环比上月减少0.51%（2026年7月进口钛白粉5431.119吨），同比去年提升57.48%（2025年8月进口钛白粉3431.182吨）；2026年8月钛白粉出口量为144094.777吨，环比上月减少0.21%（2026年7月出口钛白粉144392.239吨），同比去年增加3.86%（2025年8月钛白粉出口138736.239吨）。</p>",
+      "category": {
+        "id": 2,
+        "name": "2"
+      },
+      "section": {
+        "id": 4,
+        "name": "4"
+      },
+      "products": [
+        {
+          "id": "0303",
+          "name": "铁合金",
+          "source": "relationBreed"
+        },
+        {
+          "id": "030307",
+          "name": "钛系",
+          "source": "relationBreed"
+        },
+        {
+          "id": "03030702",
+          "name": "钛铁",
+          "source": "relationBreed"
+        },
+        {
+          "id": "钛白粉",
+          "name": "钛白粉",
+          "source": "breedTag"
+        }
+      ],
+      "regions": [],
+      "source_name": null,
+      "source_url": null,
+      "in_article_url": null,
+      "out_article_url": null,
+      "in_article_title": null,
+      "out_article_title": null,
+      "source_link_status": "no_link",
+      "data_source": 0,
+      "publisher_id": 222580,
+      "relation_id": 0,
+      "ai_flag": 0,
+      "platform_product_line": null,
+      "mapping_status": "ambiguous",
+      "quality_flags": [
+        "source_link_missing"
+      ]
+    },
+    {
+      "news_id": "4876681",
+      "published_at": "2026-09-20T05:53:54.571Z",
+      "published_at_ms": 1789883634571,
+      "timezone": "Asia/Shanghai",
+      "content_text": "9月20日张家口建筑钢材市场价格盘中稳，抗震三大3190，φ12三级3390，抗震盘3490左右。（元/吨）",
+      "content_html": "9月20日张家口建筑钢材市场价格盘中稳，抗震三大3190，φ12三级3390，抗震盘3490左右。（元/吨）",
+      "raw_content": "9月20日张家口建筑钢材市场价格盘中稳，抗震三大3190，φ12三级3390，抗震盘3490左右。（元/吨）",
+      "category": {
+        "id": 2,
+        "name": "2"
+      },
+      "section": {
+        "id": 7,
+        "name": "7"
+      },
+      "products": [
+        {
+          "id": "010101",
+          "name": "建筑钢材",
+          "source": "relationBreed"
+        }
+      ],
+      "regions": [
+        {
+          "id": "01040307",
+          "name": "张家口"
+        }
+      ],
+      "source_name": null,
+      "source_url": null,
+      "in_article_url": null,
+      "out_article_url": null,
+      "in_article_title": null,
+      "out_article_title": null,
+      "source_link_status": "no_link",
+      "data_source": 2,
+      "publisher_id": 220278,
+      "relation_id": 7630303,
+      "ai_flag": 0,
+      "platform_product_line": null,
+      "mapping_status": "ambiguous",
+      "quality_flags": [
+        "source_link_missing"
+      ]
+    },
+    {
+      "news_id": "4876680",
+      "published_at": "2026-09-20T05:53:49.191Z",
+      "published_at_ms": 1789883629191,
+      "timezone": "Asia/Shanghai",
+      "content_text": "据海关数据显示，2026年8月钛废料及碎料出口量为340.741吨，环比上月减少36.69%（2026年7月出口钛废料及碎料538.17吨），同比去年减少38.59%（2025年8月钛废料及碎料出口554.881吨）。",
+      "content_html": "<p>据海关数据显示，2026年8月钛废料及碎料出口量为340.741吨，环比上月减少36.69%（2026年7月出口钛废料及碎料538.17吨），同比去年减少38.59%（2025年8月钛废料及碎料出口554.881吨）。</p>",
+      "raw_content": "<p>据海关数据显示，2026年8月钛废料及碎料出口量为340.741吨，环比上月减少36.69%（2026年7月出口钛废料及碎料538.17吨），同比去年减少38.59%（2025年8月钛废料及碎料出口554.881吨）。</p>",
+      "category": {
+        "id": 2,
+        "name": "2"
+      },
+      "section": {
+        "id": 4,
+        "name": "4"
+      },
+      "products": [
+        {
+          "id": "0303",
+          "name": "铁合金",
+          "source": "relationBreed"
+        },
+        {
+          "id": "030307",
+          "name": "钛系",
+          "source": "relationBreed"
+        },
+        {
+          "id": "03030702",
+          "name": "钛铁",
+          "source": "relationBreed"
+        }
+      ],
+      "regions": [],
+      "source_name": null,
+      "source_url": null,
+      "in_article_url": null,
+      "out_article_url": null,
+      "in_article_title": null,
+      "out_article_title": null,
+      "source_link_status": "no_link",
+      "data_source": 0,
+      "publisher_id": 222580,
+      "relation_id": 0,
+      "ai_flag": 0,
+      "platform_product_line": null,
+      "mapping_status": "ambiguous",
+      "quality_flags": [
+        "source_link_missing"
+      ]
+    },
+    {
+      "news_id": "4876679",
+      "published_at": "2026-09-20T05:53:35.538Z",
+      "published_at_ms": 1789883615538,
+      "timezone": "Asia/Shanghai",
+      "content_text": "据海关数据显示，2026年8月钛管进口量6.451吨，环比上月提升98.43%（2026年7月进口钛管3.251吨），同比去年提升412.39%（2025年8月进口钛管1.259吨）；2026年8月钛管出口量为578.955吨，环比上月提升83.91%（2026年7月出口钛管314.795吨），同比去年增加34.78%（2025年8月钛管出口429.551吨）。",
+      "content_html": "<p>据海关数据显示，2026年8月钛管进口量6.451吨，环比上月提升98.43%（2026年7月进口钛管3.251吨），同比去年提升412.39%（2025年8月进口钛管1.259吨）；2026年8月钛管出口量为578.955吨，环比上月提升83.91%（2026年7月出口钛管314.795吨），同比去年增加34.78%（2025年8月钛管出口429.551吨）。</p>",
+      "raw_content": "<p>据海关数据显示，2026年8月钛管进口量6.451吨，环比上月提升98.43%（2026年7月进口钛管3.251吨），同比去年提升412.39%（2025年8月进口钛管1.259吨）；2026年8月钛管出口量为578.955吨，环比上月提升83.91%（2026年7月出口钛管314.795吨），同比去年增加34.78%（2025年8月钛管出口429.551吨）。</p>",
+      "category": {
+        "id": 2,
+        "name": "2"
+      },
+      "section": {
+        "id": 4,
+        "name": "4"
+      },
+      "products": [
+        {
+          "id": "0303",
+          "name": "铁合金",
+          "source": "relationBreed"
+        },
+        {
+          "id": "030307",
+          "name": "钛系",
+          "source": "relationBreed"
+        },
+        {
+          "id": "钛管",
+          "name": "钛管",
+          "source": "breedTag"
+        }
+      ],
+      "regions": [],
+      "source_name": null,
+      "source_url": null,
+      "in_article_url": null,
+      "out_article_url": null,
+      "in_article_title": null,
+      "out_article_title": null,
+      "source_link_status": "no_link",
+      "data_source": 0,
+      "publisher_id": 222580,
+      "relation_id": 0,
+      "ai_flag": 0,
+      "platform_product_line": null,
+      "mapping_status": "ambiguous",
+      "quality_flags": [
+        "source_link_missing"
+      ]
+    },
+    {
+      "news_id": "4876678",
+      "published_at": "2026-09-20T05:53:33.596Z",
+      "published_at_ms": 1789883613596,
+      "timezone": "Asia/Shanghai",
+      "content_text": "9月20日宣化建筑钢材价格盘中稳，φ18抗震3170，φ12三级3370，抗震盘3470左右。（元/吨）",
+      "content_html": "9月20日宣化建筑钢材价格盘中稳，φ18抗震3170，φ12三级3370，抗震盘3470左右。（元/吨）",
+      "raw_content": "9月20日宣化建筑钢材价格盘中稳，φ18抗震3170，φ12三级3370，抗震盘3470左右。（元/吨）",
+      "category": {
+        "id": 2,
+        "name": "2"
+      },
+      "section": {
+        "id": 7,
+        "name": "7"
+      },
+      "products": [
+        {
+          "id": "010101",
+          "name": "建筑钢材",
+          "source": "relationBreed"
+        }
+      ],
+      "regions": [
+        {
+          "id": "0104030702",
+          "name": "宣化"
+        }
+      ],
+      "source_name": null,
+      "source_url": null,
+      "in_article_url": null,
+      "out_article_url": null,
+      "in_article_title": null,
+      "out_article_title": null,
+      "source_link_status": "no_link",
+      "data_source": 2,
+      "publisher_id": 220278,
+      "relation_id": 7630302,
+      "ai_flag": 0,
+      "platform_product_line": null,
+      "mapping_status": "ambiguous",
+      "quality_flags": [
+        "source_link_missing"
+      ]
+    },
+    {
+      "news_id": "4876677",
+      "published_at": "2026-09-20T05:53:25.205Z",
+      "published_at_ms": 1789883605205,
+      "timezone": "Asia/Shanghai",
+      "content_text": "据海关数据显示，2026年8月厚度>0.8mm的钛板、片、带进口量74.304吨，环比上月减少9.23%（2026年7月进口厚度>0.8mm的钛板、片、带81.857吨），同比去年减少39.11%（2025年8月进口厚度>0.8mm的钛板、片、带122.027吨）；2026年8月厚度>0.8mm的钛板、片、带出口量为791.341吨，环比上月提升18.95%（2026年7月出口厚度>0.8mm的钛板、片、带665.252吨），同比去年提升31.71%（2025年8月厚度>0.8mm的钛板、片、带出口600.825吨）。",
+      "content_html": "据海关数据显示，2026年8月厚度&gt;0.8mm的钛板、片、带进口量74.304吨，环比上月减少9.23%（2026年7月进口厚度&gt;0.8mm的钛板、片、带81.857吨），同比去年减少39.11%（2025年8月进口厚度&gt;0.8mm的钛板、片、带122.027吨）；2026年8月厚度&gt;0.8mm的钛板、片、带出口量为791.341吨，环比上月提升18.95%（2026年7月出口厚度&gt;0.8mm的钛板、片、带665.252吨），同比去年提升31.71%（2025年8月厚度&gt;0.8mm的钛板、片、带出口600.825吨）。",
+      "raw_content": "据海关数据显示，2026年8月厚度&gt;0.8mm的钛板、片、带进口量74.304吨，环比上月减少9.23%（2026年7月进口厚度&gt;0.8mm的钛板、片、带81.857吨），同比去年减少39.11%（2025年8月进口厚度&gt;0.8mm的钛板、片、带122.027吨）；2026年8月厚度&gt;0.8mm的钛板、片、带出口量为791.341吨，环比上月提升18.95%（2026年7月出口厚度&gt;0.8mm的钛板、片、带665.252吨），同比去年提升31.71%（2025年8月厚度&gt;0.8mm的钛板、片、带出口600.825吨）。",
+      "category": {
+        "id": 2,
+        "name": "2"
+      },
+      "section": {
+        "id": 4,
+        "name": "4"
+      },
+      "products": [
+        {
+          "id": "0303",
+          "name": "铁合金",
+          "source": "relationBreed"
+        },
+        {
+          "id": "030307",
+          "name": "钛系",
+          "source": "relationBreed"
+        },
+        {
+          "id": "钛板",
+          "name": "钛板",
+          "source": "breedTag"
+        }
+      ],
+      "regions": [],
+      "source_name": null,
+      "source_url": null,
+      "in_article_url": null,
+      "out_article_url": null,
+      "in_article_title": null,
+      "out_article_title": null,
+      "source_link_status": "no_link",
+      "data_source": 0,
+      "publisher_id": 222580,
+      "relation_id": 0,
+      "ai_flag": 0,
+      "platform_product_line": null,
+      "mapping_status": "ambiguous",
+      "quality_flags": [
+        "source_link_missing"
+      ]
+    },
+    {
+      "news_id": "4876676",
+      "published_at": "2026-09-20T05:53:14.869Z",
+      "published_at_ms": 1789883594869,
+      "timezone": "Asia/Shanghai",
+      "content_text": "据海关数据显示，2026年8月厚度≤0.8mm的钛板、片、带、箔进口量91.084吨，环比上月减少44.22%（2026年7月进口厚度≤0.8mm的钛板、片、带、箔163.304吨），同比去年减少48.52%（2025年8月进口厚度≤0.8mm的钛板、片、带、箔176.932吨）；2026年8月厚度≤0.8mm的钛板、片、带、箔出口量为324.504吨，环比上月提升7.8%（2026年7月出口厚度≤0.8mm的钛板、片、带、箔301.028吨），同比去年增加172.95%（2025年8月厚度≤0.8mm的钛板、片、带、箔出口118.886吨）。",
+      "content_html": "<p>据海关数据显示，2026年8月厚度≤0.8mm的钛板、片、带、箔进口量91.084吨，环比上月减少44.22%（2026年7月进口厚度≤0.8mm的钛板、片、带、箔163.304吨），同比去年减少48.52%（2025年8月进口厚度≤0.8mm的钛板、片、带、箔176.932吨）；2026年8月厚度≤0.8mm的钛板、片、带、箔出口量为324.504吨，环比上月提升7.8%（2026年7月出口厚度≤0.8mm的钛板、片、带、箔301.028吨），同比去年增加172.95%（2025年8月厚度≤0.8mm的钛板、片、带、箔出口118.886吨）。</p>",
+      "raw_content": "<p>据海关数据显示，2026年8月厚度≤0.8mm的钛板、片、带、箔进口量91.084吨，环比上月减少44.22%（2026年7月进口厚度≤0.8mm的钛板、片、带、箔163.304吨），同比去年减少48.52%（2025年8月进口厚度≤0.8mm的钛板、片、带、箔176.932吨）；2026年8月厚度≤0.8mm的钛板、片、带、箔出口量为324.504吨，环比上月提升7.8%（2026年7月出口厚度≤0.8mm的钛板、片、带、箔301.028吨），同比去年增加172.95%（2025年8月厚度≤0.8mm的钛板、片、带、箔出口118.886吨）。</p>",
+      "category": {
+        "id": 2,
+        "name": "2"
+      },
+      "section": {
+        "id": 4,
+        "name": "4"
+      },
+      "products": [
+        {
+          "id": "0303",
+          "name": "铁合金",
+          "source": "relationBreed"
+        },
+        {
+          "id": "030307",
+          "name": "钛系",
+          "source": "relationBreed"
+        },
+        {
+          "id": "钛板",
+          "name": "钛板",
+          "source": "breedTag"
+        }
+      ],
+      "regions": [],
+      "source_name": null,
+      "source_url": null,
+      "in_article_url": null,
+      "out_article_url": null,
+      "in_article_title": null,
+      "out_article_title": null,
+      "source_link_status": "no_link",
+      "data_source": 0,
+      "publisher_id": 222580,
+      "relation_id": 0,
+      "ai_flag": 0,
+      "platform_product_line": null,
+      "mapping_status": "ambiguous",
+      "quality_flags": [
+        "source_link_missing"
+      ]
+    },
+    {
+      "news_id": "4876675",
+      "published_at": "2026-09-20T05:53:04.852Z",
+      "published_at_ms": 1789883584852,
+      "timezone": "Asia/Shanghai",
+      "content_text": "据海关数据显示，2026年8月钛丝进口量145.025吨，环比上月减少5.15%（2026年7月进口钛丝152.902吨），同比去年提升1107.03%（2025年8月进口钛丝12.015吨）；2026年8月钛丝出口量为121.437吨，环比上月提升4.3%（2026年7月出口钛丝116.429吨），同比去年提升59.12%（2025年8月钛丝出口76.319吨）。",
+      "content_html": "<p>据海关数据显示，2026年8月钛丝进口量145.025吨，环比上月减少5.15%（2026年7月进口钛丝152.902吨），同比去年提升1107.03%（2025年8月进口钛丝12.015吨）；2026年8月钛丝出口量为121.437吨，环比上月提升4.3%（2026年7月出口钛丝116.429吨），同比去年提升59.12%（2025年8月钛丝出口76.319吨）。</p>",
+      "raw_content": "<p>据海关数据显示，2026年8月钛丝进口量145.025吨，环比上月减少5.15%（2026年7月进口钛丝152.902吨），同比去年提升1107.03%（2025年8月进口钛丝12.015吨）；2026年8月钛丝出口量为121.437吨，环比上月提升4.3%（2026年7月出口钛丝116.429吨），同比去年提升59.12%（2025年8月钛丝出口76.319吨）。</p>",
+      "category": {
+        "id": 2,
+        "name": "2"
+      },
+      "section": {
+        "id": 4,
+        "name": "4"
+      },
+      "products": [
+        {
+          "id": "0303",
+          "name": "铁合金",
+          "source": "relationBreed"
+        },
+        {
+          "id": "030307",
+          "name": "钛系",
+          "source": "relationBreed"
+        },
+        {
+          "id": "03030702",
+          "name": "钛铁",
+          "source": "relationBreed"
+        },
+        {
+          "id": "钛丝",
+          "name": "钛丝",
+          "source": "breedTag"
+        }
+      ],
+      "regions": [],
+      "source_name": null,
+      "source_url": null,
+      "in_article_url": null,
+      "out_article_url": null,
+      "in_article_title": null,
+      "out_article_title": null,
+      "source_link_status": "no_link",
+      "data_source": 0,
+      "publisher_id": 222580,
+      "relation_id": 0,
+      "ai_flag": 0,
+      "platform_product_line": null,
+      "mapping_status": "ambiguous",
+      "quality_flags": [
+        "source_link_missing"
+      ]
+    },
+    {
+      "news_id": "4876674",
+      "published_at": "2026-09-20T05:52:54.237Z",
+      "published_at_ms": 1789883574237,
+      "timezone": "Asia/Shanghai",
+      "content_text": "据海关数据显示，2026年8月钛条、杆、型材及异型材进口量115.419吨，环比上月提升7.05%（2026年7月进口钛条、杆、型材及异型材107.818吨），同比去年提升17.29%（2025年8月进口钛条、杆、型材及异型材98.407吨）；2026年8月钛条、杆、型材及异型材出口量为963.977吨，环比上月提升13.81%（2026年7月出口钛条、杆、型材及异型材847.037吨），同比去年提升41.73%（2025年8月钛条、杆、型材及异型材出口680.145吨）。",
+      "content_html": "<p>据海关数据显示，2026年8月钛条、杆、型材及异型材进口量115.419吨，环比上月提升7.05%（2026年7月进口钛条、杆、型材及异型材107.818吨），同比去年提升17.29%（2025年8月进口钛条、杆、型材及异型材98.407吨）；2026年8月钛条、杆、型材及异型材出口量为963.977吨，环比上月提升13.81%（2026年7月出口钛条、杆、型材及异型材847.037吨），同比去年提升41.73%（2025年8月钛条、杆、型材及异型材出口680.145吨）。</p>",
+      "raw_content": "<p>据海关数据显示，2026年8月钛条、杆、型材及异型材进口量115.419吨，环比上月提升7.05%（2026年7月进口钛条、杆、型材及异型材107.818吨），同比去年提升17.29%（2025年8月进口钛条、杆、型材及异型材98.407吨）；2026年8月钛条、杆、型材及异型材出口量为963.977吨，环比上月提升13.81%（2026年7月出口钛条、杆、型材及异型材847.037吨），同比去年提升41.73%（2025年8月钛条、杆、型材及异型材出口680.145吨）。</p>",
+      "category": {
+        "id": 2,
+        "name": "2"
+      },
+      "section": {
+        "id": 4,
+        "name": "4"
+      },
+      "products": [
+        {
+          "id": "0303",
+          "name": "铁合金",
+          "source": "relationBreed"
+        },
+        {
+          "id": "030307",
+          "name": "钛系",
+          "source": "relationBreed"
+        },
+        {
+          "id": "型钢",
+          "name": "型钢",
+          "source": "breedTag"
+        }
+      ],
+      "regions": [],
+      "source_name": null,
+      "source_url": null,
+      "in_article_url": null,
+      "out_article_url": null,
+      "in_article_title": null,
+      "out_article_title": null,
+      "source_link_status": "no_link",
+      "data_source": 0,
+      "publisher_id": 222580,
+      "relation_id": 0,
+      "ai_flag": 0,
+      "platform_product_line": null,
+      "mapping_status": "ambiguous",
+      "quality_flags": [
+        "source_link_missing"
+      ]
+    },
+    {
+      "news_id": "4876673",
+      "published_at": "2026-09-20T05:52:44.130Z",
+      "published_at_ms": 1789883564130,
+      "timezone": "Asia/Shanghai",
+      "content_text": "据海关数据显示，2026年8月海绵钛出口量为708.396吨，环比上月提升23.75%（2026年7月出口海绵钛572.423吨），同比去年提升32.15%（2025年8月海绵钛出口536.036吨）。",
+      "content_html": "<p>据海关数据显示，2026年8月海绵钛出口量为708.396吨，环比上月提升23.75%（2026年7月出口海绵钛572.423吨），同比去年提升32.15%（2025年8月海绵钛出口536.036吨）。</p>",
+      "raw_content": "<p>据海关数据显示，2026年8月海绵钛出口量为708.396吨，环比上月提升23.75%（2026年7月出口海绵钛572.423吨），同比去年提升32.15%（2025年8月海绵钛出口536.036吨）。</p>",
+      "category": {
+        "id": 2,
+        "name": "2"
+      },
+      "section": {
+        "id": 4,
+        "name": "4"
+      },
+      "products": [
+        {
+          "id": "0303",
+          "name": "铁合金",
+          "source": "relationBreed"
+        },
+        {
+          "id": "030307",
+          "name": "钛系",
+          "source": "relationBreed"
+        },
+        {
+          "id": "海绵钛",
+          "name": "海绵钛",
+          "source": "breedTag"
+        }
+      ],
+      "regions": [],
+      "source_name": null,
+      "source_url": null,
+      "in_article_url": null,
+      "out_article_url": null,
+      "in_article_title": null,
+      "out_article_title": null,
+      "source_link_status": "no_link",
+      "data_source": 0,
+      "publisher_id": 222580,
+      "relation_id": 0,
+      "ai_flag": 0,
+      "platform_product_line": null,
+      "mapping_status": "ambiguous",
+      "quality_flags": [
+        "source_link_missing"
+      ]
+    },
+    {
+      "news_id": "4876672",
+      "published_at": "2026-09-20T05:52:32.183Z",
+      "published_at_ms": 1789883552183,
+      "timezone": "Asia/Shanghai",
+      "content_text": "据海关数据显示，2026年8月钛矿及其精矿进口量579634.288吨，环比上月提升67.13%（2026年7月进口钛矿及其精矿346809.808吨），同比去年提升40.13%（2025年8月进口钛矿及其精矿413632.416吨）；2026年8月钛矿及其精矿出口量为4686.205吨，环比上月提升43.09%（2026年7月出口钛矿及其精矿3275.022吨），同比去年减少82.12%（2025年8月出口钛矿及其精矿26206.71 吨）。",
+      "content_html": "<p>据海关数据显示，2026年8月钛矿及其精矿进口量579634.288吨，环比上月提升67.13%（2026年7月进口钛矿及其精矿346809.808吨），同比去年提升40.13%（2025年8月进口钛矿及其精矿413632.416吨）；2026年8月钛矿及其精矿出口量为4686.205吨，环比上月提升43.09%（2026年7月出口钛矿及其精矿3275.022吨），同比去年减少82.12%（2025年8月出口钛矿及其精矿26206.71</p><p>吨）。</p>",
+      "raw_content": "<p>据海关数据显示，2026年8月钛矿及其精矿进口量579634.288吨，环比上月提升67.13%（2026年7月进口钛矿及其精矿346809.808吨），同比去年提升40.13%（2025年8月进口钛矿及其精矿413632.416吨）；2026年8月钛矿及其精矿出口量为4686.205吨，环比上月提升43.09%（2026年7月出口钛矿及其精矿3275.022吨），同比去年减少82.12%（2025年8月出口钛矿及其精矿26206.71</p><p>吨）。</p>",
+      "category": {
+        "id": 2,
+        "name": "2"
+      },
+      "section": {
+        "id": 4,
+        "name": "4"
+      },
+      "products": [
+        {
+          "id": "0303",
+          "name": "铁合金",
+          "source": "relationBreed"
+        },
+        {
+          "id": "030307",
+          "name": "钛系",
+          "source": "relationBreed"
+        }
+      ],
+      "regions": [],
+      "source_name": null,
+      "source_url": null,
+      "in_article_url": null,
+      "out_article_url": null,
+      "in_article_title": null,
+      "out_article_title": null,
+      "source_link_status": "no_link",
+      "data_source": 0,
+      "publisher_id": 222580,
+      "relation_id": 0,
+      "ai_flag": 0,
+      "platform_product_line": null,
+      "mapping_status": "ambiguous",
+      "quality_flags": [
+        "source_link_missing"
+      ]
+    },
+    {
+      "news_id": "4876671",
+      "published_at": "2026-09-20T05:52:17.824Z",
+      "published_at_ms": 1789883537824,
+      "timezone": "Asia/Shanghai",
+      "content_text": "据海关数据显示，2026年8月钛铁及硅钛铁进口量1174.135吨，环比上月减少6.53%（2026年7月进口钛铁及硅钛铁1256.203吨），同比去年增加26.13%（2025年8月进口钛铁及硅钛铁930.9吨）。2026年8月钛铁及硅钛铁出口量为302.21吨，环比上月提升251.82%（2026年7月出口钛铁及硅钛铁85.895吨），同比去年减少48.95%（2025年8月出口钛铁及硅钛铁592.03吨）。",
+      "content_html": "<p>据海关数据显示，2026年8月钛铁及硅钛铁进口量1174.135吨，环比上月减少6.53%（2026年7月进口钛铁及硅钛铁1256.203吨），同比去年增加26.13%（2025年8月进口钛铁及硅钛铁930.9吨）。2026年8月钛铁及硅钛铁出口量为302.21吨，环比上月提升251.82%（2026年7月出口钛铁及硅钛铁85.895吨），同比去年减少48.95%（2025年8月出口钛铁及硅钛铁592.03吨）。</p>",
+      "raw_content": "<p>据海关数据显示，2026年8月钛铁及硅钛铁进口量1174.135吨，环比上月减少6.53%（2026年7月进口钛铁及硅钛铁1256.203吨），同比去年增加26.13%（2025年8月进口钛铁及硅钛铁930.9吨）。2026年8月钛铁及硅钛铁出口量为302.21吨，环比上月提升251.82%（2026年7月出口钛铁及硅钛铁85.895吨），同比去年减少48.95%（2025年8月出口钛铁及硅钛铁592.03吨）。</p>",
+      "category": {
+        "id": 2,
+        "name": "2"
+      },
+      "section": {
+        "id": 4,
+        "name": "4"
+      },
+      "products": [
+        {
+          "id": "0303",
+          "name": "铁合金",
+          "source": "relationBreed"
+        },
+        {
+          "id": "030307",
+          "name": "钛系",
+          "source": "relationBreed"
+        },
+        {
+          "id": "钛铁",
+          "name": "钛铁",
+          "source": "breedTag"
+        }
+      ],
+      "regions": [],
+      "source_name": null,
+      "source_url": null,
+      "in_article_url": null,
+      "out_article_url": null,
+      "in_article_title": null,
+      "out_article_title": null,
+      "source_link_status": "no_link",
+      "data_source": 0,
+      "publisher_id": 222580,
+      "relation_id": 0,
+      "ai_flag": 0,
+      "platform_product_line": null,
+      "mapping_status": "ambiguous",
+      "quality_flags": [
+        "source_link_missing"
+      ]
+    },
+    {
+      "news_id": "4876670",
+      "published_at": "2026-09-20T05:51:09.274Z",
+      "published_at_ms": 1789883469274,
+      "timezone": "Asia/Shanghai",
+      "content_text": "9月20日唐山建筑钢材市场价格盘中稳，现三级大螺纹3100，三级小螺纹3220，盘螺3380。（元/吨）",
+      "content_html": "9月20日唐山建筑钢材市场价格盘中稳，现三级大螺纹3100，三级小螺纹3220，盘螺3380。（元/吨）",
+      "raw_content": "9月20日唐山建筑钢材市场价格盘中稳，现三级大螺纹3100，三级小螺纹3220，盘螺3380。（元/吨）",
+      "category": {
+        "id": 2,
+        "name": "2"
+      },
+      "section": {
+        "id": 7,
+        "name": "7"
+      },
+      "products": [
+        {
+          "id": "010101",
+          "name": "建筑钢材",
+          "source": "relationBreed"
+        },
+        {
+          "id": "螺纹钢",
+          "name": "螺纹钢",
+          "source": "breedTag"
+        },
+        {
+          "id": "盘螺",
+          "name": "盘螺",
+          "source": "breedTag"
+        }
+      ],
+      "regions": [
+        {
+          "id": "010403",
+          "name": "河北"
+        }
+      ],
+      "source_name": null,
+      "source_url": null,
+      "in_article_url": null,
+      "out_article_url": null,
+      "in_article_title": null,
+      "out_article_title": null,
+      "source_link_status": "no_link",
+      "data_source": 2,
+      "publisher_id": 210008,
+      "relation_id": 7630299,
+      "ai_flag": 0,
+      "platform_product_line": null,
+      "mapping_status": "ambiguous",
+      "quality_flags": [
+        "source_link_missing"
+      ]
+    },
+    {
+      "news_id": "4876669",
+      "published_at": "2026-09-20T05:50:49.937Z",
+      "published_at_ms": 1789883449937,
+      "timezone": "Asia/Shanghai",
+      "content_text": "9月20日秦皇岛建筑钢材价格盘中稳，抗震三大3200，φ12三级3320，抗震盘3480左右。（元/吨）",
+      "content_html": "9月20日秦皇岛建筑钢材价格盘中稳，抗震三大3200，φ12三级3320，抗震盘3480左右。（元/吨）",
+      "raw_content": "9月20日秦皇岛建筑钢材价格盘中稳，抗震三大3200，φ12三级3320，抗震盘3480左右。（元/吨）",
+      "category": {
+        "id": 2,
+        "name": "2"
+      },
+      "section": {
+        "id": 7,
+        "name": "7"
+      },
+      "products": [
+        {
+          "id": "010101",
+          "name": "建筑钢材",
+          "source": "relationBreed"
+        }
+      ],
+      "regions": [
+        {
+          "id": "01040303",
+          "name": "秦皇岛"
+        }
+      ],
+      "source_name": null,
+      "source_url": null,
+      "in_article_url": null,
+      "out_article_url": null,
+      "in_article_title": null,
+      "out_article_title": null,
+      "source_link_status": "no_link",
+      "data_source": 2,
+      "publisher_id": 210008,
+      "relation_id": 7630298,
+      "ai_flag": 0,
+      "platform_product_line": null,
+      "mapping_status": "ambiguous",
+      "quality_flags": [
+        "source_link_missing"
+      ]
+    },
+    {
+      "news_id": "4876668",
+      "published_at": "2026-09-20T05:50:00.000Z",
+      "published_at_ms": 1789883400000,
+      "timezone": "Asia/Shanghai",
+      "content_text": "2026年9月20日，台州晴， 中天抗震螺纹价格3180元/吨，富鑫抗震螺纹价格3100元/吨。周五六台州中天库存3.28万吨，出库2171吨。台州大麦屿中天库存2.39万吨，出库934吨。",
+      "content_html": "2026年9月20日，台州晴， 中天抗震螺纹价格3180元/吨，富鑫抗震螺纹价格3100元/吨。周五六台州中天库存3.28万吨，出库2171吨。台州大麦屿中天库存2.39万吨，出库934吨。",
+      "raw_content": "2026年9月20日，台州晴， 中天抗震螺纹价格3180元/吨，富鑫抗震螺纹价格3100元/吨。周五六台州中天库存3.28万吨，出库2171吨。台州大麦屿中天库存2.39万吨，出库934吨。",
+      "category": {
+        "id": 2,
+        "name": "2"
+      },
+      "section": {
+        "id": 4,
+        "name": "4"
+      },
+      "products": [
+        {
+          "id": "01010101",
+          "name": "螺纹钢",
+          "source": "relationBreed"
+        },
+        {
+          "id": "01010102",
+          "name": "线材",
+          "source": "relationBreed"
+        },
+        {
+          "id": "01010103",
+          "name": "盘螺",
+          "source": "relationBreed"
+        },
+        {
+          "id": "饲用大麦",
+          "name": "饲用大麦",
+          "source": "breedTag"
+        },
+        {
+          "id": "大麦",
+          "name": "大麦",
+          "source": "breedTag"
+        }
+      ],
+      "regions": [
+        {
+          "id": "01010406",
+          "name": "台州"
+        }
+      ],
+      "source_name": "我的钢铁网(Mysteel)",
+      "source_url": "http://gc.mysteel.com/a/26092013/81DE440E811B9A27.html",
+      "in_article_url": "http://gc.mysteel.com/a/26092013/81DE440E811B9A27.html",
+      "out_article_url": null,
+      "in_article_title": "Mysteel快讯：9月18日台州建筑钢材出库情况",
+      "out_article_title": null,
+      "source_link_status": "article_link",
+      "data_source": 1,
+      "publisher_id": 207772,
+      "relation_id": 45921323,
+      "ai_flag": 0,
+      "platform_product_line": null,
+      "mapping_status": "ambiguous",
+      "quality_flags": []
+    },
+    {
+      "news_id": "4876667",
+      "published_at": "2026-09-20T05:46:00.589Z",
+      "published_at_ms": 1789883160589,
+      "timezone": "Asia/Shanghai",
+      "content_text": "据澎湃新闻，9月20日，2026世界制造业大会在安徽合肥开幕。工业和信息化部副部长辛国斌在开幕式致辞中表示，工业和信息化部将以新一代智能制造为主攻方向，不断提升制造业创新力、竞争力、综合实力，塑造中国制造新优势。",
+      "content_html": "据澎湃新闻，9月20日，2026世界制造业大会在安徽合肥开幕。工业和信息化部副部长辛国斌在开幕式致辞中表示，工业和信息化部将以新一代智能制造为主攻方向，不断提升制造业创新力、竞争力、综合实力，塑造中国制造新优势。",
+      "raw_content": "据澎湃新闻，9月20日，2026世界制造业大会在安徽合肥开幕。工业和信息化部副部长辛国斌在开幕式致辞中表示，工业和信息化部将以新一代智能制造为主攻方向，不断提升制造业创新力、竞争力、综合实力，塑造中国制造新优势。",
+      "category": {
+        "id": 16,
+        "name": "16"
+      },
+      "section": {
+        "id": 8,
+        "name": "8"
+      },
+      "products": [],
+      "regions": [],
+      "source_name": null,
+      "source_url": null,
+      "in_article_url": null,
+      "out_article_url": null,
+      "in_article_title": null,
+      "out_article_title": null,
+      "source_link_status": "no_link",
+      "data_source": 0,
+      "publisher_id": 222846,
+      "relation_id": 0,
+      "ai_flag": 0,
+      "platform_product_line": null,
+      "mapping_status": "unmapped",
+      "quality_flags": [
+        "source_link_missing"
+      ]
+    },
+    {
+      "news_id": "4876666",
+      "published_at": "2026-09-20T05:44:37.589Z",
+      "published_at_ms": 1789883077589,
+      "timezone": "Asia/Shanghai",
+      "content_text": "9月20日，六安市场散装P.O42.5水泥价格报370-390元/吨，平。",
+      "content_html": "<p>9月20日，六安市场散装P.O42.5水泥价格报370-390元/吨，平。</p>",
+      "raw_content": "<p>9月20日，六安市场散装P.O42.5水泥价格报370-390元/吨，平。</p>",
+      "category": {
+        "id": 6,
+        "name": "6"
+      },
+      "section": {
+        "id": 7,
+        "name": "7"
+      },
+      "products": [
+        {
+          "id": "1001",
+          "name": "水泥",
+          "source": "relationBreed"
+        }
+      ],
+      "regions": [],
+      "source_name": null,
+      "source_url": null,
+      "in_article_url": null,
+      "out_article_url": null,
+      "in_article_title": null,
+      "out_article_title": null,
+      "source_link_status": "no_link",
+      "data_source": 0,
+      "publisher_id": 223924,
+      "relation_id": 0,
+      "ai_flag": 0,
+      "platform_product_line": null,
+      "mapping_status": "ambiguous",
+      "quality_flags": [
+        "source_link_missing"
+      ]
+    },
+    {
+      "news_id": "4876665",
+      "published_at": "2026-09-20T05:44:28.584Z",
+      "published_at_ms": 1789883068584,
+      "timezone": "Asia/Shanghai",
+      "content_text": "9月20日，宣城市场散装P.O42.5水泥价格报320-340元/吨，平。",
+      "content_html": "<p>9月20日，宣城市场散装P.O42.5水泥价格报320-340元/吨，平。</p>",
+      "raw_content": "<p>9月20日，宣城市场散装P.O42.5水泥价格报320-340元/吨，平。</p>",
+      "category": {
+        "id": 6,
+        "name": "6"
+      },
+      "section": {
+        "id": 8,
+        "name": "8"
+      },
+      "products": [
+        {
+          "id": "1001",
+          "name": "水泥",
+          "source": "relationBreed"
+        }
+      ],
+      "regions": [],
+      "source_name": null,
+      "source_url": null,
+      "in_article_url": null,
+      "out_article_url": null,
+      "in_article_title": null,
+      "out_article_title": null,
+      "source_link_status": "no_link",
+      "data_source": 0,
+      "publisher_id": 223924,
+      "relation_id": 0,
+      "ai_flag": 0,
+      "platform_product_line": null,
+      "mapping_status": "ambiguous",
+      "quality_flags": [
+        "source_link_missing"
+      ]
+    },
+    {
+      "news_id": "4876664",
+      "published_at": "2026-09-20T05:44:18.080Z",
+      "published_at_ms": 1789883058080,
+      "timezone": "Asia/Shanghai",
+      "content_text": "9月20日，阜阳主流品牌S95矿渣粉报230-240元/吨，平。",
+      "content_html": "<p>9月20日，阜阳主流品牌S95矿渣粉报230-240元/吨，平。</p>",
+      "raw_content": "<p>9月20日，阜阳主流品牌S95矿渣粉报230-240元/吨，平。</p>",
+      "category": {
+        "id": 6,
+        "name": "6"
+      },
+      "section": {
+        "id": 8,
+        "name": "8"
+      },
+      "products": [
+        {
+          "id": "1009",
+          "name": "矿渣粉",
+          "source": "relationBreed"
+        },
+        {
+          "id": "S95矿渣粉",
+          "name": "S95矿渣粉",
+          "source": "breedTag"
+        }
+      ],
+      "regions": [],
+      "source_name": null,
+      "source_url": null,
+      "in_article_url": null,
+      "out_article_url": null,
+      "in_article_title": null,
+      "out_article_title": null,
+      "source_link_status": "no_link",
+      "data_source": 0,
+      "publisher_id": 223924,
+      "relation_id": 0,
+      "ai_flag": 0,
+      "platform_product_line": null,
+      "mapping_status": "ambiguous",
+      "quality_flags": [
+        "source_link_missing"
+      ]
+    },
+    {
+      "news_id": "4876662",
+      "published_at": "2026-09-20T05:44:08.631Z",
+      "published_at_ms": 1789883048631,
+      "timezone": "Asia/Shanghai",
+      "content_text": "9月20日，合肥主流品牌S95矿渣粉报210-220元/吨，平。",
+      "content_html": "<p>9月20日，合肥主流品牌S95矿渣粉报210-220元/吨，平。</p>",
+      "raw_content": "<p>9月20日，合肥主流品牌S95矿渣粉报210-220元/吨，平。</p>",
+      "category": {
+        "id": 6,
+        "name": "6"
+      },
+      "section": {
+        "id": 7,
+        "name": "7"
+      },
+      "products": [
+        {
+          "id": "1009",
+          "name": "矿渣粉",
+          "source": "relationBreed"
+        },
+        {
+          "id": "S95矿渣粉",
+          "name": "S95矿渣粉",
+          "source": "breedTag"
+        }
+      ],
+      "regions": [],
+      "source_name": null,
+      "source_url": null,
+      "in_article_url": null,
+      "out_article_url": null,
+      "in_article_title": null,
+      "out_article_title": null,
+      "source_link_status": "no_link",
+      "data_source": 0,
+      "publisher_id": 223924,
+      "relation_id": 0,
+      "ai_flag": 0,
+      "platform_product_line": null,
+      "mapping_status": "ambiguous",
+      "quality_flags": [
+        "source_link_missing"
+      ]
+    },
+    {
+      "news_id": "4876661",
+      "published_at": "2026-09-20T05:43:57.814Z",
+      "published_at_ms": 1789883037814,
+      "timezone": "Asia/Shanghai",
+      "content_text": "9月20日，芜湖主流品牌S95矿渣粉报200-210元/吨，平。",
+      "content_html": "<p>9月20日，芜湖主流品牌S95矿渣粉报200-210元/吨，平。</p>",
+      "raw_content": "<p>9月20日，芜湖主流品牌S95矿渣粉报200-210元/吨，平。</p>",
+      "category": {
+        "id": 6,
+        "name": "6"
+      },
+      "section": {
+        "id": 7,
+        "name": "7"
+      },
+      "products": [
+        {
+          "id": "1009",
+          "name": "矿渣粉",
+          "source": "relationBreed"
+        },
+        {
+          "id": "S95矿渣粉",
+          "name": "S95矿渣粉",
+          "source": "breedTag"
+        }
+      ],
+      "regions": [],
+      "source_name": null,
+      "source_url": null,
+      "in_article_url": null,
+      "out_article_url": null,
+      "in_article_title": null,
+      "out_article_title": null,
+      "source_link_status": "no_link",
+      "data_source": 0,
+      "publisher_id": 223924,
+      "relation_id": 0,
+      "ai_flag": 0,
+      "platform_product_line": null,
+      "mapping_status": "ambiguous",
+      "quality_flags": [
+        "source_link_missing"
+      ]
+    },
+    {
+      "news_id": "4876660",
+      "published_at": "2026-09-20T05:43:48.463Z",
+      "published_at_ms": 1789883028463,
+      "timezone": "Asia/Shanghai",
+      "content_text": "9月20日，芜湖主流品牌C30混凝土报300-320元/方，平。",
+      "content_html": "<p>9月20日，芜湖主流品牌C30混凝土报300-320元/方，平。</p>",
+      "raw_content": "<p>9月20日，芜湖主流品牌C30混凝土报300-320元/方，平。</p>",
+      "category": {
+        "id": 6,
+        "name": "6"
+      },
+      "section": {
+        "id": 7,
+        "name": "7"
+      },
+      "products": [
+        {
+          "id": "1002",
+          "name": "混凝土",
+          "source": "relationBreed"
+        },
+        {
+          "id": "C30混凝土",
+          "name": "C30混凝土",
+          "source": "breedTag"
+        }
+      ],
+      "regions": [],
+      "source_name": null,
+      "source_url": null,
+      "in_article_url": null,
+      "out_article_url": null,
+      "in_article_title": null,
+      "out_article_title": null,
+      "source_link_status": "no_link",
+      "data_source": 0,
+      "publisher_id": 223924,
+      "relation_id": 0,
+      "ai_flag": 0,
+      "platform_product_line": null,
+      "mapping_status": "ambiguous",
+      "quality_flags": [
+        "source_link_missing"
+      ]
+    },
+    {
+      "news_id": "4876659",
+      "published_at": "2026-09-20T05:43:38.413Z",
+      "published_at_ms": 1789883018413,
+      "timezone": "Asia/Shanghai",
+      "content_text": "9月20日，安庆主流品牌C30混凝土报330-420元/方，平。",
+      "content_html": "<p>9月20日，安庆主流品牌C30混凝土报330-420元/方，平。</p>",
+      "raw_content": "<p>9月20日，安庆主流品牌C30混凝土报330-420元/方，平。</p>",
+      "category": {
+        "id": 6,
+        "name": "6"
+      },
+      "section": {
+        "id": 7,
+        "name": "7"
+      },
+      "products": [
+        {
+          "id": "1002",
+          "name": "混凝土",
+          "source": "relationBreed"
+        },
+        {
+          "id": "C30混凝土",
+          "name": "C30混凝土",
+          "source": "breedTag"
+        }
+      ],
+      "regions": [],
+      "source_name": null,
+      "source_url": null,
+      "in_article_url": null,
+      "out_article_url": null,
+      "in_article_title": null,
+      "out_article_title": null,
+      "source_link_status": "no_link",
+      "data_source": 0,
+      "publisher_id": 223924,
+      "relation_id": 0,
+      "ai_flag": 0,
+      "platform_product_line": null,
+      "mapping_status": "ambiguous",
+      "quality_flags": [
+        "source_link_missing"
+      ]
+    },
+    {
+      "news_id": "4876663",
+      "published_at": "2026-09-20T05:43:00.000Z",
+      "published_at_ms": 1789882980000,
+      "timezone": "Asia/Shanghai",
+      "content_text": "今年前8个月，税务部门征收税收收入（不含海关代征进口增值税、消费税和关税、船舶吨税，未扣除出口退税）同比增长5.9%，与上半年现价GDP增速5.4%相比，略高出0.5个百分点。",
+      "content_html": "今年前8个月，税务部门征收税收收入（不含海关代征进口增值税、消费税和关税、船舶吨税，未扣除出口退税）同比增长5.9%，与上半年现价GDP增速5.4%相比，略高出0.5个百分点。",
+      "raw_content": "今年前8个月，税务部门征收税收收入（不含海关代征进口增值税、消费税和关税、船舶吨税，未扣除出口退税）同比增长5.9%，与上半年现价GDP增速5.4%相比，略高出0.5个百分点。",
+      "category": {
+        "id": 1,
+        "name": "1"
+      },
+      "section": {
+        "id": 8,
+        "name": "8"
+      },
+      "products": [],
+      "regions": [],
+      "source_name": "财联社",
+      "source_url": "http://news.mysteel.com/a/26092013/1FAB8CB12E0C1BF4.html",
+      "in_article_url": "http://news.mysteel.com/a/26092013/1FAB8CB12E0C1BF4.html",
+      "out_article_url": null,
+      "in_article_title": "前8个月税务部门征收税收收入同比增长5.9%",
+      "out_article_title": null,
+      "source_link_status": "article_link",
+      "data_source": 1,
+      "publisher_id": 216058,
+      "relation_id": 45921223,
+      "ai_flag": 0,
+      "platform_product_line": null,
+      "mapping_status": "unmapped",
+      "quality_flags": []
+    },
+    {
+      "news_id": "4876658",
+      "published_at": "2026-09-20T05:42:53.534Z",
+      "published_at_ms": 1789882973534,
+      "timezone": "Asia/Shanghai",
+      "content_text": "9月20日午后沈阳市场镀锌管价格稳，4寸*3.75mm唐山正元报4020，吉林华岐报3980，迁安正大报4020,过磅含税。（元/吨）",
+      "content_html": "9月20日午后沈阳市场镀锌管价格稳，4寸*3.75mm唐山正元报4020，吉林华岐报3980，迁安正大报4020,过磅含税。（元/吨）",
+      "raw_content": "9月20日午后沈阳市场镀锌管价格稳，4寸*3.75mm唐山正元报4020，吉林华岐报3980，迁安正大报4020,过磅含税。（元/吨）",
+      "category": {
+        "id": 2,
+        "name": "2"
+      },
+      "section": {
+        "id": 7,
+        "name": "7"
+      },
+      "products": [
+        {
+          "id": "01010905",
+          "name": "镀锌管",
+          "source": "relationBreed"
+        }
+      ],
+      "regions": [
+        {
+          "id": "01050101",
+          "name": "沈阳"
+        }
+      ],
+      "source_name": null,
+      "source_url": null,
+      "in_article_url": null,
+      "out_article_url": null,
+      "in_article_title": null,
+      "out_article_title": null,
+      "source_link_status": "no_link",
+      "data_source": 2,
+      "publisher_id": 225338,
+      "relation_id": 7630296,
+      "ai_flag": 0,
+      "platform_product_line": null,
+      "mapping_status": "ambiguous",
+      "quality_flags": [
+        "source_link_missing"
+      ]
+    },
+    {
+      "news_id": "4876657",
+      "published_at": "2026-09-20T05:42:13.902Z",
+      "published_at_ms": 1789882933902,
+      "timezone": "Asia/Shanghai",
+      "content_text": "9月20日，六安主流品牌C30混凝土报320-350元/方，平。",
+      "content_html": "<p>9月20日，六安主流品牌C30混凝土报320-350元/方，平。</p>",
+      "raw_content": "<p>9月20日，六安主流品牌C30混凝土报320-350元/方，平。</p>",
+      "category": {
+        "id": 6,
+        "name": "6"
+      },
+      "section": {
+        "id": 7,
+        "name": "7"
+      },
+      "products": [
+        {
+          "id": "C30混凝土",
+          "name": "C30混凝土",
+          "source": "breedTag"
+        }
+      ],
+      "regions": [],
+      "source_name": null,
+      "source_url": null,
+      "in_article_url": null,
+      "out_article_url": null,
+      "in_article_title": null,
+      "out_article_title": null,
+      "source_link_status": "no_link",
+      "data_source": 0,
+      "publisher_id": 223924,
+      "relation_id": 0,
+      "ai_flag": 0,
+      "platform_product_line": null,
+      "mapping_status": "ambiguous",
+      "quality_flags": [
+        "source_link_missing"
+      ]
+    },
+    {
+      "news_id": "4876656",
+      "published_at": "2026-09-20T05:41:44.676Z",
+      "published_at_ms": 1789882904676,
+      "timezone": "Asia/Shanghai",
+      "content_text": "9月20日宝武新钢建筑钢材工程价格螺纹跌10。抗震螺纹钢3120，线材3470，盘螺3470。（元/吨）",
+      "content_html": "9月20日宝武新钢建筑钢材工程价格螺纹跌10。抗震螺纹钢3120，线材3470，盘螺3470。（元/吨）",
+      "raw_content": "9月20日宝武新钢建筑钢材工程价格螺纹跌10。抗震螺纹钢3120，线材3470，盘螺3470。（元/吨）",
+      "category": {
+        "id": 2,
+        "name": "2"
+      },
+      "section": {
+        "id": 7,
+        "name": "7"
+      },
+      "products": [
+        {
+          "id": "010101",
+          "name": "建筑钢材",
+          "source": "relationBreed"
+        },
+        {
+          "id": "螺纹钢",
+          "name": "螺纹钢",
+          "source": "breedTag"
+        },
+        {
+          "id": "盘螺",
+          "name": "盘螺",
+          "source": "breedTag"
+        },
+        {
+          "id": "线材",
+          "name": "线材",
+          "source": "breedTag"
+        }
+      ],
+      "regions": [],
+      "source_name": null,
+      "source_url": null,
+      "in_article_url": null,
+      "out_article_url": null,
+      "in_article_title": null,
+      "out_article_title": null,
+      "source_link_status": "no_link",
+      "data_source": 2,
+      "publisher_id": 225817,
+      "relation_id": 7630295,
+      "ai_flag": 0,
+      "platform_product_line": null,
+      "mapping_status": "ambiguous",
+      "quality_flags": [
+        "source_link_missing"
+      ]
+    },
+    {
+      "news_id": "4876655",
+      "published_at": "2026-09-20T05:38:00.000Z",
+      "published_at_ms": 1789882680000,
+      "timezone": "Asia/Shanghai",
+      "content_text": "9月20日，北京城建兴昌置业有限公司成立，注册资本20亿元，经营范围含房地产开发经营。股权穿透显示，该公司由城建发展全资持股。",
+      "content_html": "9月20日，北京城建兴昌置业有限公司成立，注册资本20亿元，经营范围含房地产开发经营。股权穿透显示，该公司由城建发展全资持股。",
+      "raw_content": "9月20日，北京城建兴昌置业有限公司成立，注册资本20亿元，经营范围含房地产开发经营。股权穿透显示，该公司由城建发展全资持股。",
+      "category": {
+        "id": 13,
+        "name": "13"
+      },
+      "section": {
+        "id": 8,
+        "name": "8"
+      },
+      "products": [],
+      "regions": [],
+      "source_name": "财联社",
+      "source_url": "http://news.mysteel.com/a/26092013/EE3BFD6BFEF56C32.html",
+      "in_article_url": "http://news.mysteel.com/a/26092013/EE3BFD6BFEF56C32.html",
+      "out_article_url": null,
+      "in_article_title": "城建发展成立置业新公司，注册资本20亿",
+      "out_article_title": null,
+      "source_link_status": "article_link",
+      "data_source": 1,
+      "publisher_id": 221060,
+      "relation_id": 45921116,
+      "ai_flag": 0,
+      "platform_product_line": null,
+      "mapping_status": "unmapped",
+      "quality_flags": []
+    },
+    {
+      "news_id": "4876650",
+      "published_at": "2026-09-20T05:37:00.000Z",
+      "published_at_ms": 1789882620000,
+      "timezone": "Asia/Shanghai",
+      "content_text": "刚果（金）19日在东部伊图里省首府布尼亚启动一项埃博拉疫苗接种研究，标志着该国使用埃博拉疫苗Ervebo的范围进一步扩大至本轮疫情“震中”伊图里省。伊图里省官员当天在布尼亚带头接种疫苗，并呼吁参与疫情防控的医护人员等一线工作人员在知情同意的基础上自愿接种。",
+      "content_html": "刚果（金）19日在东部伊图里省首府布尼亚启动一项埃博拉疫苗接种研究，标志着该国使用埃博拉疫苗Ervebo的范围进一步扩大至本轮疫情“震中”伊图里省。伊图里省官员当天在布尼亚带头接种疫苗，并呼吁参与疫情防控的医护人员等一线工作人员在知情同意的基础上自愿接种。",
+      "raw_content": "刚果（金）19日在东部伊图里省首府布尼亚启动一项埃博拉疫苗接种研究，标志着该国使用埃博拉疫苗Ervebo的范围进一步扩大至本轮疫情“震中”伊图里省。伊图里省官员当天在布尼亚带头接种疫苗，并呼吁参与疫情防控的医护人员等一线工作人员在知情同意的基础上自愿接种。",
+      "category": {
+        "id": 1,
+        "name": "1"
+      },
+      "section": {
+        "id": 8,
+        "name": "8"
+      },
+      "products": [],
+      "regions": [],
+      "source_name": "财联社",
+      "source_url": "http://news.mysteel.com/a/26092013/01867DC5AD702698.html",
+      "in_article_url": "http://news.mysteel.com/a/26092013/01867DC5AD702698.html",
+      "out_article_url": null,
+      "in_article_title": "刚果（金）埃博拉疫苗接种扩大至疫情“震中”省份",
+      "out_article_title": null,
+      "source_link_status": "article_link",
+      "data_source": 1,
+      "publisher_id": 216058,
+      "relation_id": 45921078,
+      "ai_flag": 0,
+      "platform_product_line": null,
+      "mapping_status": "unmapped",
+      "quality_flags": []
+    },
+    {
+      "news_id": "4876648",
+      "published_at": "2026-09-20T05:35:00.000Z",
+      "published_at_ms": 1789882500000,
+      "timezone": "Asia/Shanghai",
+      "content_text": "宁德时代旗下江西宜春枧下窝锂矿采矿项目重启环评审批程序。此前因建设单位前期公示网站合规性遭质疑，拟受理公示被撤销。9月18日，宜春时代新能源矿业有限公司发布公告，对该项目环境影响报告书（拟报批稿）及环评公众参与说明进行报批前信息公示，征求社会各界环保方面意见。",
+      "content_html": "宁德时代旗下江西宜春枧下窝锂矿采矿项目重启环评审批程序。此前因建设单位前期公示网站合规性遭质疑，拟受理公示被撤销。9月18日，宜春时代新能源矿业有限公司发布公告，对该项目环境影响报告书（拟报批稿）及环评公众参与说明进行报批前信息公示，征求社会各界环保方面意见。",
+      "raw_content": "宁德时代旗下江西宜春枧下窝锂矿采矿项目重启环评审批程序。此前因建设单位前期公示网站合规性遭质疑，拟受理公示被撤销。9月18日，宜春时代新能源矿业有限公司发布公告，对该项目环境影响报告书（拟报批稿）及环评公众参与说明进行报批前信息公示，征求社会各界环保方面意见。",
+      "category": {
+        "id": 14,
+        "name": "14"
+      },
+      "section": {
+        "id": 8,
+        "name": "8"
+      },
+      "products": [
+        {
+          "id": "1102",
+          "name": "锂",
+          "source": "relationBreed"
+        },
+        {
+          "id": "锂矿",
+          "name": "锂矿",
+          "source": "breedTag"
+        }
+      ],
+      "regions": [],
+      "source_name": "财联社",
+      "source_url": "http://xny.mysteel.com/a/26092013/22870C48AF311AE6.html",
+      "in_article_url": "http://xny.mysteel.com/a/26092013/22870C48AF311AE6.html",
+      "out_article_url": null,
+      "in_article_title": "宁德时代枧下窝锂矿采矿项目重启环评审批程序",
+      "out_article_title": null,
+      "source_link_status": "article_link",
+      "data_source": 1,
+      "publisher_id": 221060,
+      "relation_id": 45921047,
+      "ai_flag": 0,
+      "platform_product_line": null,
+      "mapping_status": "ambiguous",
+      "quality_flags": []
+    },
+    {
+      "news_id": "4876647",
+      "published_at": "2026-09-20T05:35:00.000Z",
+      "published_at_ms": 1789882500000,
+      "timezone": "Asia/Shanghai",
+      "content_text": "截至9月20日12：00，江苏地区钢厂铁水与废钢价差相比，铁水比废钢价格相比高203元/吨。（注：已考虑到废钢入炉造成的损耗等问题，此数据仅为当天即时成本理论值，且不含到厂物流成本）。",
+      "content_html": "截至9月20日12：00，江苏地区钢厂铁水与废钢价差相比，铁水比废钢价格相比高203元/吨。（注：已考虑到废钢入炉造成的损耗等问题，此数据仅为当天即时成本理论值，且不含到厂物流成本）。",
+      "raw_content": "截至9月20日12：00，江苏地区钢厂铁水与废钢价差相比，铁水比废钢价格相比高203元/吨。（注：已考虑到废钢入炉造成的损耗等问题，此数据仅为当天即时成本理论值，且不含到厂物流成本）。",
+      "category": {
+        "id": 2,
+        "name": "2"
+      },
+      "section": {
+        "id": 8,
+        "name": "8"
+      },
+      "products": [
+        {
+          "id": "030604",
+          "name": "普碳废钢",
+          "source": "relationBreed"
+        },
+        {
+          "id": "铁水",
+          "name": "铁水",
+          "source": "breedTag"
+        },
+        {
+          "id": "废钢",
+          "name": "废钢",
+          "source": "breedTag"
+        },
+        {
+          "id": "再生金属",
+          "name": "再生金属",
+          "source": "breedTag"
+        }
+      ],
+      "regions": [
+        {
+          "id": "0101",
+          "name": "华东"
+        }
+      ],
+      "source_name": "我的钢铁网(Mysteel)",
+      "source_url": "http://feigang.mysteel.com/a/26092013/3DD9B2D87F2810F7.html",
+      "in_article_url": "http://feigang.mysteel.com/a/26092013/3DD9B2D87F2810F7.html",
+      "out_article_url": null,
+      "in_article_title": "Mysteel数据：江苏废钢与铁水成本即时价差监测（20260920）",
+      "out_article_title": null,
+      "source_link_status": "article_link",
+      "data_source": 1,
+      "publisher_id": 224979,
+      "relation_id": 45921042,
+      "ai_flag": 0,
+      "platform_product_line": null,
+      "mapping_status": "ambiguous",
+      "quality_flags": []
+    },
+    {
+      "news_id": "4876646",
+      "published_at": "2026-09-20T05:33:00.000Z",
+      "published_at_ms": 1789882380000,
+      "timezone": "Asia/Shanghai",
+      "content_text": "奕行智能完成B+轮20亿元融资，投后估值近150亿元。投资方包括华泰创新、中芯聚源等，老股东和利资本继续追资。继上半年获15亿元B轮及中国移动战略投资后，公司短期内再次获得大额融资",
+      "content_html": "奕行智能完成B+轮20亿元融资，投后估值近150亿元。投资方包括华泰创新、中芯聚源等，老股东和利资本继续追资。继上半年获15亿元B轮及中国移动战略投资后，公司短期内再次获得大额融资",
+      "raw_content": "奕行智能完成B+轮20亿元融资，投后估值近150亿元。投资方包括华泰创新、中芯聚源等，老股东和利资本继续追资。继上半年获15亿元B轮及中国移动战略投资后，公司短期内再次获得大额融资",
+      "category": {
+        "id": 18,
+        "name": "18"
+      },
+      "section": {
+        "id": 8,
+        "name": "8"
+      },
+      "products": [],
+      "regions": [],
+      "source_name": "财联社",
+      "source_url": "http://news.mysteel.com/a/26092013/C778B64858988B48.html",
+      "in_article_url": "http://news.mysteel.com/a/26092013/C778B64858988B48.html",
+      "out_article_url": null,
+      "in_article_title": "AI计算芯片企业奕行智能获20亿元融资，投后估值近150亿元",
+      "out_article_title": null,
+      "source_link_status": "article_link",
+      "data_source": 1,
+      "publisher_id": 216059,
+      "relation_id": 45921016,
+      "ai_flag": 0,
+      "platform_product_line": null,
+      "mapping_status": "unmapped",
+      "quality_flags": []
+    },
     {
       "news_id": "4876642",
       "published_at": "2026-09-20T04:10:00.000Z",
@@ -16313,6 +18442,11 @@
           "source": "relationBreed"
         },
         {
+          "id": "01020103",
+          "name": "低合金圆钢",
+          "source": "relationBreed"
+        },
+        {
           "id": "010202",
           "name": "管坯钢",
           "source": "relationBreed"
@@ -16325,11 +18459,6 @@
         {
           "id": "010203",
           "name": "工业普圆",
-          "source": "relationBreed"
-        },
-        {
-          "id": "01020103",
-          "name": "低合金圆钢",
           "source": "relationBreed"
         },
         {
@@ -21269,6 +23398,55 @@
       "quality_flags": []
     },
     {
+      "news_id": "4876653",
+      "published_at": "2026-09-20T02:58:00.000Z",
+      "published_at_ms": 1789873080000,
+      "timezone": "Asia/Shanghai",
+      "content_text": "9月20日，四川绵阳某食品企业白条价格稳定在14.50元/公斤。因市场需求平淡，走货一般，预计明日价格将稳中窄幅调整。",
+      "content_html": "9月20日，四川绵阳某食品企业白条价格稳定在14.50元/公斤。因市场需求平淡，走货一般，预计明日价格将稳中窄幅调整。",
+      "raw_content": "9月20日，四川绵阳某食品企业白条价格稳定在14.50元/公斤。因市场需求平淡，走货一般，预计明日价格将稳中窄幅调整。",
+      "category": {
+        "id": 5,
+        "name": "5"
+      },
+      "section": {
+        "id": 7,
+        "name": "7"
+      },
+      "products": [
+        {
+          "id": "07070701",
+          "name": "白条肉",
+          "source": "relationBreed"
+        },
+        {
+          "id": "猪肉",
+          "name": "猪肉",
+          "source": "breedTag"
+        }
+      ],
+      "regions": [
+        {
+          "id": "010603",
+          "name": "贵州"
+        }
+      ],
+      "source_name": "我的钢铁网(Mysteel)",
+      "source_url": "http://ncp.mysteel.com/a/26092010/C35F6C425957752C.html",
+      "in_article_url": "http://ncp.mysteel.com/a/26092010/C35F6C425957752C.html",
+      "out_article_url": null,
+      "in_article_title": "Mysteel：四川绵阳某食品企业白条价格稳定",
+      "out_article_title": null,
+      "source_link_status": "article_link",
+      "data_source": 1,
+      "publisher_id": 221699,
+      "relation_id": 45918513,
+      "ai_flag": 0,
+      "platform_product_line": null,
+      "mapping_status": "ambiguous",
+      "quality_flags": []
+    },
+    {
       "news_id": "4876234",
       "published_at": "2026-09-20T02:58:00.000Z",
       "published_at_ms": 1789873080000,
@@ -23629,9 +25807,9 @@
       "published_at": "2026-09-20T02:55:12.593Z",
       "published_at_ms": 1789872912593,
       "timezone": "Asia/Shanghai",
-      "content_text": "国家统计局数据显示：2026年8月份，福建省单月水泥产量307.98万吨，同比下降32.95%；1-8月份，江西水泥总产量为2594.95万吨，同比下降30.4%。",
-      "content_html": "国家统计局数据显示：2026年8月份，福建省单月水泥产量307.98万吨，同比下降32.95%；1-8月份，江西水泥总产量为2594.95万吨，同比下降30.4%。",
-      "raw_content": "国家统计局数据显示：2026年8月份，福建省单月水泥产量307.98万吨，同比下降32.95%；1-8月份，江西水泥总产量为2594.95万吨，同比下降30.4%。",
+      "content_text": "国家统计局数据显示：2026年8月份，福建省单月水泥产量307.98万吨，同比下降32.95%；1-8月份，福建水泥总产量为2594.95万吨，同比下降30.4%。",
+      "content_html": "国家统计局数据显示：2026年8月份，福建省单月水泥产量307.98万吨，同比下降32.95%；1-8月份，福建水泥总产量为2594.95万吨，同比下降30.4%。",
+      "raw_content": "国家统计局数据显示：2026年8月份，福建省单月水泥产量307.98万吨，同比下降32.95%；1-8月份，福建水泥总产量为2594.95万吨，同比下降30.4%。",
       "category": {
         "id": 6,
         "name": "6"
@@ -53472,16 +55650,6 @@
       },
       "products": [
         {
-          "id": "022607",
-          "name": "钽",
-          "source": "relationBreed"
-        },
-        {
-          "id": "022608",
-          "name": "锆",
-          "source": "relationBreed"
-        },
-        {
           "id": "0303",
           "name": "铁合金",
           "source": "relationBreed"
@@ -53489,6 +55657,16 @@
         {
           "id": "030307",
           "name": "钛系",
+          "source": "relationBreed"
+        },
+        {
+          "id": "022607",
+          "name": "钽",
+          "source": "relationBreed"
+        },
+        {
+          "id": "022608",
+          "name": "锆",
           "source": "relationBreed"
         },
         {
@@ -58192,6 +60370,50 @@
       "quality_flags": [
         "source_link_missing"
       ]
+    },
+    {
+      "news_id": "4876644",
+      "published_at": "2026-09-20T02:32:00.000Z",
+      "published_at_ms": 1789871520000,
+      "timezone": "Asia/Shanghai",
+      "content_text": "9月20日，广东某大型养殖场生猪报价：广东区三元牌价11.60元/公斤，较昨日价格稳定。今日市场供应略减，需求虽偏弱，但可维持，价格稳定为主。",
+      "content_html": "9月20日，广东某大型养殖场生猪报价：广东区三元牌价11.60元/公斤，较昨日价格稳定。今日市场供应略减，需求虽偏弱，但可维持，价格稳定为主。",
+      "raw_content": "9月20日，广东某大型养殖场生猪报价：广东区三元牌价11.60元/公斤，较昨日价格稳定。今日市场供应略减，需求虽偏弱，但可维持，价格稳定为主。",
+      "category": {
+        "id": 5,
+        "name": "5"
+      },
+      "section": {
+        "id": 7,
+        "name": "7"
+      },
+      "products": [
+        {
+          "id": "070705",
+          "name": "生猪",
+          "source": "relationBreed"
+        }
+      ],
+      "regions": [
+        {
+          "id": "010201",
+          "name": "广东"
+        }
+      ],
+      "source_name": "我的钢铁网(Mysteel)",
+      "source_url": "http://ncp.mysteel.com/a/26092010/F333BDF5E3C54264.html",
+      "in_article_url": "http://ncp.mysteel.com/a/26092010/F333BDF5E3C54264.html",
+      "out_article_url": null,
+      "in_article_title": "Mysteel：广东某大型养殖场生猪价格稳定",
+      "out_article_title": null,
+      "source_link_status": "article_link",
+      "data_source": 1,
+      "publisher_id": 219481,
+      "relation_id": 45917757,
+      "ai_flag": 0,
+      "platform_product_line": null,
+      "mapping_status": "ambiguous",
+      "quality_flags": []
     },
     {
       "news_id": "4875474",
@@ -67870,6 +70092,50 @@
       "quality_flags": [
         "source_link_missing"
       ]
+    },
+    {
+      "news_id": "4876651",
+      "published_at": "2026-09-20T02:24:00.000Z",
+      "published_at_ms": 1789871040000,
+      "timezone": "Asia/Shanghai",
+      "content_text": "9月20日川渝生猪出栏价稳中伴跌。四川多数企业报价10.3-10.8元/公斤，齐全跌0.2元至10.6元；重庆主流价10.3-10.6元/公斤，大正报11.4元仅供参考。整体市场正常出栏，价格以稳为主。",
+      "content_html": "9月20日川渝生猪出栏价稳中伴跌。四川多数企业报价10.3-10.8元/公斤，齐全跌0.2元至10.6元；重庆主流价10.3-10.6元/公斤，大正报11.4元仅供参考。整体市场正常出栏，价格以稳为主。",
+      "raw_content": "9月20日川渝生猪出栏价稳中伴跌。四川多数企业报价10.3-10.8元/公斤，齐全跌0.2元至10.6元；重庆主流价10.3-10.6元/公斤，大正报11.4元仅供参考。整体市场正常出栏，价格以稳为主。",
+      "category": {
+        "id": 5,
+        "name": "5"
+      },
+      "section": {
+        "id": 7,
+        "name": "7"
+      },
+      "products": [
+        {
+          "id": "070705",
+          "name": "生猪",
+          "source": "relationBreed"
+        }
+      ],
+      "regions": [
+        {
+          "id": "010602",
+          "name": "四川"
+        }
+      ],
+      "source_name": "我的钢铁网(Mysteel)",
+      "source_url": "http://ncp.mysteel.com/a/26092010/95AC6963982697F5.html",
+      "in_article_url": "http://ncp.mysteel.com/a/26092010/95AC6963982697F5.html",
+      "out_article_url": null,
+      "in_article_title": "Mysteel：川渝主要养殖企业生猪出栏价格汇总（20260920）",
+      "out_article_title": null,
+      "source_link_status": "article_link",
+      "data_source": 1,
+      "publisher_id": 221699,
+      "relation_id": 45917514,
+      "ai_flag": 0,
+      "platform_product_line": null,
+      "mapping_status": "ambiguous",
+      "quality_flags": []
     },
     {
       "news_id": "4875271",
@@ -78912,6 +81178,60 @@
       ]
     },
     {
+      "news_id": "4876645",
+      "published_at": "2026-09-20T02:09:00.000Z",
+      "published_at_ms": 1789870140000,
+      "timezone": "Asia/Shanghai",
+      "content_text": "9月20日，江西省宜春市某肉类食品有限公司白条猪肉通货参考低价15.20元/公斤，高价15.60元/公斤，价格较昨日稳定。屠宰量670头左右。今日生猪价格下滑，预计短期白条猪肉价格或稳中偏弱。",
+      "content_html": "9月20日，江西省宜春市某肉类食品有限公司白条猪肉通货参考低价15.20元/公斤，高价15.60元/公斤，价格较昨日稳定。屠宰量670头左右。今日生猪价格下滑，预计短期白条猪肉价格或稳中偏弱。",
+      "raw_content": "9月20日，江西省宜春市某肉类食品有限公司白条猪肉通货参考低价15.20元/公斤，高价15.60元/公斤，价格较昨日稳定。屠宰量670头左右。今日生猪价格下滑，预计短期白条猪肉价格或稳中偏弱。",
+      "category": {
+        "id": 5,
+        "name": "5"
+      },
+      "section": {
+        "id": 7,
+        "name": "7"
+      },
+      "products": [
+        {
+          "id": "07070701",
+          "name": "白条肉",
+          "source": "relationBreed"
+        },
+        {
+          "id": "生猪",
+          "name": "生猪",
+          "source": "breedTag"
+        },
+        {
+          "id": "猪肉",
+          "name": "猪肉",
+          "source": "breedTag"
+        }
+      ],
+      "regions": [
+        {
+          "id": "010106",
+          "name": "江西"
+        }
+      ],
+      "source_name": "我的钢铁网(Mysteel)",
+      "source_url": "http://ncp.mysteel.com/a/26092010/2C9C1CCBFF9F770D.html",
+      "in_article_url": "http://ncp.mysteel.com/a/26092010/2C9C1CCBFF9F770D.html",
+      "out_article_url": null,
+      "in_article_title": "Mysteel：江西省宜春市某肉企白条猪肉价格稳定",
+      "out_article_title": null,
+      "source_link_status": "article_link",
+      "data_source": 1,
+      "publisher_id": 221578,
+      "relation_id": 45917070,
+      "ai_flag": 0,
+      "platform_product_line": null,
+      "mapping_status": "ambiguous",
+      "quality_flags": []
+    },
+    {
       "news_id": "4875070",
       "published_at": "2026-09-20T02:09:00.000Z",
       "published_at_ms": 1789870140000,
@@ -81919,6 +84239,55 @@
       "quality_flags": [
         "source_link_missing"
       ]
+    },
+    {
+      "news_id": "4876654",
+      "published_at": "2026-09-20T02:05:00.000Z",
+      "published_at_ms": 1789869900000,
+      "timezone": "Asia/Shanghai",
+      "content_text": "9月20日，广西南宁某食品厂白条猪肉价格偏弱。其中，2.0 cm以内皮条出厂价为14.40元/公斤，二级皮条低0.20元/公斤，协商通货，日屠宰量700头。当日猪价相对偏弱，屠宰情况一般。预计短期白条猪肉价格仍以稳定为主。",
+      "content_html": "9月20日，广西南宁某食品厂白条猪肉价格偏弱。其中，2.0 cm以内皮条出厂价为14.40元/公斤，二级皮条低0.20元/公斤，协商通货，日屠宰量700头。当日猪价相对偏弱，屠宰情况一般。预计短期白条猪肉价格仍以稳定为主。",
+      "raw_content": "9月20日，广西南宁某食品厂白条猪肉价格偏弱。其中，2.0 cm以内皮条出厂价为14.40元/公斤，二级皮条低0.20元/公斤，协商通货，日屠宰量700头。当日猪价相对偏弱，屠宰情况一般。预计短期白条猪肉价格仍以稳定为主。",
+      "category": {
+        "id": 5,
+        "name": "5"
+      },
+      "section": {
+        "id": 7,
+        "name": "7"
+      },
+      "products": [
+        {
+          "id": "07070701",
+          "name": "白条肉",
+          "source": "relationBreed"
+        },
+        {
+          "id": "猪肉",
+          "name": "猪肉",
+          "source": "breedTag"
+        }
+      ],
+      "regions": [
+        {
+          "id": "010202",
+          "name": "广西"
+        }
+      ],
+      "source_name": "我的钢铁网(Mysteel)",
+      "source_url": "http://ncp.mysteel.com/a/26092010/5B78E8BF4C29CA17.html",
+      "in_article_url": "http://ncp.mysteel.com/a/26092010/5B78E8BF4C29CA17.html",
+      "out_article_url": null,
+      "in_article_title": "Mysteel：广西南宁某食品厂白条猪肉价格稳定",
+      "out_article_title": null,
+      "source_link_status": "article_link",
+      "data_source": 1,
+      "publisher_id": 219481,
+      "relation_id": 45916939,
+      "ai_flag": 0,
+      "platform_product_line": null,
+      "mapping_status": "ambiguous",
+      "quality_flags": []
     },
     {
       "news_id": "4875009",
@@ -91318,12 +93687,12 @@
           "name": "欧洲"
         },
         {
-          "id": "0220",
-          "name": "大洋洲"
-        },
-        {
           "id": "0221",
           "name": "北美洲"
+        },
+        {
+          "id": "0220",
+          "name": "大洋洲"
         },
         {
           "id": "0222",
@@ -100577,10 +102946,6 @@
           "name": "芜湖"
         },
         {
-          "id": "01010705",
-          "name": "安庆"
-        },
-        {
           "id": "01010706",
           "name": "六安"
         },
@@ -100595,6 +102960,10 @@
         {
           "id": "01010716",
           "name": "亳州"
+        },
+        {
+          "id": "01010705",
+          "name": "安庆"
         }
       ],
       "source_name": "我的钢铁网(Mysteel)",
@@ -102848,10 +105217,6 @@
           "name": "吉安"
         },
         {
-          "id": "01010607",
-          "name": "上饶"
-        },
-        {
           "id": "01010608",
           "name": "宜春"
         },
@@ -102870,6 +105235,10 @@
         {
           "id": "01010612",
           "name": "抚州"
+        },
+        {
+          "id": "01010607",
+          "name": "上饶"
         }
       ],
       "source_name": "我的钢铁网(Mysteel)",
@@ -104659,6 +107028,55 @@
       "quality_flags": [
         "source_link_missing"
       ]
+    },
+    {
+      "news_id": "4876649",
+      "published_at": "2026-09-20T01:18:00.000Z",
+      "published_at_ms": 1789867080000,
+      "timezone": "Asia/Shanghai",
+      "content_text": "9月20日，湖北温氏外三元生猪价格为10.6元/公斤，价格上涨0.10元/公斤，体重在120-130公斤左右，今日整体行情偏强运行，成交情况正常。",
+      "content_html": "9月20日，湖北温氏外三元生猪价格为10.6元/公斤，价格上涨0.10元/公斤，体重在120-130公斤左右，今日整体行情偏强运行，成交情况正常。",
+      "raw_content": "9月20日，湖北温氏外三元生猪价格为10.6元/公斤，价格上涨0.10元/公斤，体重在120-130公斤左右，今日整体行情偏强运行，成交情况正常。",
+      "category": {
+        "id": 5,
+        "name": "5"
+      },
+      "section": {
+        "id": 7,
+        "name": "7"
+      },
+      "products": [
+        {
+          "id": "070705",
+          "name": "生猪",
+          "source": "relationBreed"
+        },
+        {
+          "id": "商品猪",
+          "name": "商品猪",
+          "source": "breedTag"
+        }
+      ],
+      "regions": [
+        {
+          "id": "010302",
+          "name": "湖北"
+        }
+      ],
+      "source_name": "我的钢铁网(Mysteel)",
+      "source_url": "http://ncp.mysteel.com/a/26092009/23F3149D37B51A5E.html",
+      "in_article_url": "http://ncp.mysteel.com/a/26092009/23F3149D37B51A5E.html",
+      "out_article_url": null,
+      "in_article_title": "Mysteel：湖北温氏生猪价格上涨",
+      "out_article_title": null,
+      "source_link_status": "article_link",
+      "data_source": 1,
+      "publisher_id": 221578,
+      "relation_id": 45915671,
+      "ai_flag": 0,
+      "platform_product_line": null,
+      "mapping_status": "ambiguous",
+      "quality_flags": []
     },
     {
       "news_id": "4874599",
@@ -121505,6 +123923,55 @@
       "quality_flags": []
     },
     {
+      "news_id": "4876643",
+      "published_at": "2026-09-20T00:40:00.000Z",
+      "published_at_ms": 1789864800000,
+      "timezone": "Asia/Shanghai",
+      "content_text": "9月20日，辽宁锦州外三元商品猪价格维稳。散户出栏参考价为10.4-10.6元/公斤，体重115-130公斤。因供需双方僵持，较昨日价格持平，短期预计暂稳运行。",
+      "content_html": "9月20日，辽宁锦州外三元商品猪价格维稳。散户出栏参考价为10.4-10.6元/公斤，体重115-130公斤。因供需双方僵持，较昨日价格持平，短期预计暂稳运行。",
+      "raw_content": "9月20日，辽宁锦州外三元商品猪价格维稳。散户出栏参考价为10.4-10.6元/公斤，体重115-130公斤。因供需双方僵持，较昨日价格持平，短期预计暂稳运行。",
+      "category": {
+        "id": 5,
+        "name": "5"
+      },
+      "section": {
+        "id": 7,
+        "name": "7"
+      },
+      "products": [
+        {
+          "id": "070705",
+          "name": "生猪",
+          "source": "relationBreed"
+        },
+        {
+          "id": "商品猪",
+          "name": "商品猪",
+          "source": "breedTag"
+        }
+      ],
+      "regions": [
+        {
+          "id": "010501",
+          "name": "辽宁"
+        }
+      ],
+      "source_name": "我的钢铁网(Mysteel)",
+      "source_url": "http://ncp.mysteel.com/a/26092008/05E42624E579102F.html",
+      "in_article_url": "http://ncp.mysteel.com/a/26092008/05E42624E579102F.html",
+      "out_article_url": null,
+      "in_article_title": "Mysteel：辽宁锦州市场外三元商品猪出栏最新价格维稳",
+      "out_article_title": null,
+      "source_link_status": "article_link",
+      "data_source": 1,
+      "publisher_id": 219236,
+      "relation_id": 45914680,
+      "ai_flag": 0,
+      "platform_product_line": null,
+      "mapping_status": "ambiguous",
+      "quality_flags": []
+    },
+    {
       "news_id": "4874296",
       "published_at": "2026-09-20T00:40:00.000Z",
       "published_at_ms": 1789864800000,
@@ -121966,6 +124433,50 @@
       "data_source": 1,
       "publisher_id": 221060,
       "relation_id": 45914514,
+      "ai_flag": 0,
+      "platform_product_line": null,
+      "mapping_status": "ambiguous",
+      "quality_flags": []
+    },
+    {
+      "news_id": "4876652",
+      "published_at": "2026-09-20T00:32:00.000Z",
+      "published_at_ms": 1789864320000,
+      "timezone": "Asia/Shanghai",
+      "content_text": "9月20日，内蒙古澳菲利肉牛收购价部分回落。安格斯及西门塔尔满膘公牛胴体价55元/公斤，跌1元；荷斯坦公牛及多数母牛满膘价51-53元/公斤，均跌1元。仅部分八至九成膘西门塔尔母牛价格持稳。",
+      "content_html": "9月20日，内蒙古澳菲利肉牛收购价部分回落。安格斯及西门塔尔满膘公牛胴体价55元/公斤，跌1元；荷斯坦公牛及多数母牛满膘价51-53元/公斤，均跌1元。仅部分八至九成膘西门塔尔母牛价格持稳。",
+      "raw_content": "9月20日，内蒙古澳菲利肉牛收购价部分回落。安格斯及西门塔尔满膘公牛胴体价55元/公斤，跌1元；荷斯坦公牛及多数母牛满膘价51-53元/公斤，均跌1元。仅部分八至九成膘西门塔尔母牛价格持稳。",
+      "category": {
+        "id": 5,
+        "name": "5"
+      },
+      "section": {
+        "id": 7,
+        "name": "7"
+      },
+      "products": [
+        {
+          "id": "071301",
+          "name": "活牛",
+          "source": "relationBreed"
+        }
+      ],
+      "regions": [
+        {
+          "id": "010502",
+          "name": "吉林"
+        }
+      ],
+      "source_name": "我的钢铁网(Mysteel)",
+      "source_url": "http://ncp.mysteel.com/a/26092008/CC50917690EA5D06.html",
+      "in_article_url": "http://ncp.mysteel.com/a/26092008/CC50917690EA5D06.html",
+      "out_article_url": null,
+      "in_article_title": "Mysteel：内蒙古澳菲利食品股份有限公司肉牛收购价格部分回落",
+      "out_article_title": null,
+      "source_link_status": "article_link",
+      "data_source": 1,
+      "publisher_id": 225621,
+      "relation_id": 45914489,
       "ai_flag": 0,
       "platform_product_line": null,
       "mapping_status": "ambiguous",
@@ -122945,13 +125456,13 @@
     }
   ],
   "quality": {
-    "raw_count": 2400,
-    "accepted_count": 2374,
-    "rejected_count": 26,
+    "raw_count": 2500,
+    "accepted_count": 2429,
+    "rejected_count": 71,
     "deduped_count": 0,
-    "missing_source_link_count": 1929,
-    "missing_product_count": 53,
-    "malformed_content_count": 26,
+    "missing_source_link_count": 1967,
+    "missing_product_count": 59,
+    "malformed_content_count": 71,
     "duplicate_group_count": 0,
     "warnings": [
       "API 报告总量超过本次分页采集量；快照仅覆盖目标日期窗口，需按分类/地区拆分请求补全。"
