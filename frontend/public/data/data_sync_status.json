@@ -1,6 +1,6 @@
 {
   "schema_version": "1.1",
-  "generated_at": "2026-09-20T14:00:15.883Z",
+  "generated_at": "2026-09-21T04:48:13.248Z",
   "schedule": "全量每天 18:00；我的钢铁网快讯每天 08:10、09:00；潮汐早报与霍尔木兹专题每天 09:00（Asia/Shanghai）",
   "scheduler": "cron 或 launchd（由部署环境安装；本仓库不自动启动后台服务）",
   "sources": {
@@ -93,10 +93,10 @@
       "quality_warnings": [
         "API 报告总量超过本次分页采集量；快照仅覆盖目标日期窗口，需按分类/地区拆分请求补全。"
       ],
-      "attempted_at": "2026-09-20T13:58:45.416Z",
-      "success_at": "2026-09-20T14:00:11.390Z",
-      "snapshot_captured_at": "2026-09-20T14:00:11.290Z",
-      "coverage_end": "2026-09-20",
+      "attempted_at": "2026-09-21T04:47:57.097Z",
+      "success_at": "2026-09-21T04:48:13.248Z",
+      "snapshot_captured_at": "2026-09-21T04:48:13.164Z",
+      "coverage_end": "2026-09-21",
       "retry": {
         "attempts": 2,
         "timeoutMs": 180000,
