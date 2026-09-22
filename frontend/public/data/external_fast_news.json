@@ -6,10 +6,10 @@
     "dashboard_url": "https://www.mysteel.com/fastcomment/#/",
     "api_url": "https://openapi.mysteel.com/without_sign/newsflash/flashnews/query_by_tags.htm",
     "taxonomy_url": "https://a.mysteelcdn.com/common/publish/newsflash/newsflash_column.json",
-    "captured_at": "2026-09-22T04:45:53.887Z",
+    "captured_at": "2026-09-22T06:00:45.700Z",
     "coverage_start": "2026-09-22",
     "coverage_end": "2026-09-22",
-    "latest_published_at": "2026-09-22T04:34:16.942Z",
+    "latest_published_at": "2026-09-22T06:00:23.770Z",
     "timezone": "Asia/Shanghai",
     "fetch_mode": "api",
     "request_params": {
@@ -23,41 +23,42 @@
         ]
       ]
     },
-    "raw_sha256": "9c6fad6ddd2e6b1a45904de38e58aa08456152a5ab9045a4cc5bbf9338753d7e",
+    "raw_sha256": "6e3e1e3f934b1e7829ca729e980cfbc31700e886cf61fa8ce0a6a1a4f5a2b3a2",
     "taxonomy_sha256": "c98f5bfdacde3401c98ea8f43bac3ca63d35b569f6aad3e1fff2f39b58a0dbf3",
     "response_sha256": [
-      "1a264d5d31bdb16274609b9db4bb02b47e600b5cdbd175e6dd5075184eed1ea8",
-      "a18deaae7a58ac67ae5ef7413bcac9d013a8fc6b793801d010e8c39eae20318a",
-      "a7e66be3fd60416978fd7da380eac242fc20f8232d3a5f718a9412778f0b02e0",
-      "5e0448b51274437353875050199cbb359f134937f98d01717cbbe0d9cccc6b5c",
-      "50c62bdf3bf5c917a2c6f1eb72dbfaa8019a018ed44db79b834f82bb5c806370",
-      "f515f49de2e14bc167ee75f4bfac788eb68d325fe4289e781bca1f46e96a3be1",
-      "894d7c28981624a5025050f36e3727ecd586e1dc1f990c2e648d5865667fb813",
-      "40a262c9252eac7d8056c0544cb5e4999704bc41671128d803247adb6892defb",
-      "713847b7d2c5d78a36bca7675f7e2fd34066ad8a81ef7c658183badb571824f2",
-      "3199ba539aeb18e5e8a7a962056dba94506025d16f6107c19b0ab4fb5c5004b9",
-      "bdc78dbcfd1ee6a393d471d72f2c1ab89105a9d1aa4eebbd3b90805ef79684e1",
-      "c41ad6f117ebdbdab9acc66a4d7a4f0701c80d0e8a782d5aa58df23403a628ef",
-      "7a45a952d45767a4d4031c63f9feda3dd00d81afb4ab98ad851254d53ad8d345",
-      "f5c39fef7fb03b5b112485187a23e88cef2029e06c8c20c2c089b1f6ec8a8dfa",
-      "d11bdda84d6aa55ed9c4c7b3da6167f9999358f638506be112c47e37dee7ae79",
-      "9190a68fe7de31e0fce547a2b53f9f90b97b9fb08d2fdbfb447cd55151073550",
-      "acbb28b2ed770acece692213c0c8027298ef0d2736e5ad956e25643c11c173e9",
-      "68d5c35165845b99c59e44eabc4f3dad397f42c45c9c0fc68cd69d63fdb362e7",
-      "69132089c660b43b6ed5ef28f13cdcc958424f8e3a2888fe8579468ef92b8fc2",
-      "8e990f0d338f176ba9e188168bd83f164141db02f1ca2d628e8f78b2c6bc2209",
-      "11912ebd1dd77ea8579004172a633b6a1cc2e942457e6ee957a954faa953acf3",
-      "eae1a0450ac2347c46ac61da733570f43d2500385e3f7bdd2cc5efe5903c74c4",
-      "bc67a22427a2a795a79e80e14da6b9530c50f4ca4fdbc77066accbfa71f845be",
-      "5a86556c43f37046f8b50727b822f1f490184499ff1911f9b618f81c9275ed31",
-      "d552debd028107a7e44fc88b389b1e50cfbce1d0f1bf59818822e6f4e4c77089"
+      "944bccb62fc2b60f0facd485a594a998b40451ed79333e69c9326734736ef91e",
+      "e7aaa962bb00b2f33e8a6ab6dc84c8cced438cf693cf1c673e7b90618d1b6560",
+      "090cd3572cee6ba96ef4e482480cfa2e1ebe06b962be3cbde9f9430e1cc9bbce",
+      "11a28117a5be6f2c678263e25c3b539bc072ad71ba76ef868928e31a1ee6719f",
+      "716d5d25698f2616f10e0eeb07d48dfcffdc9f1321eca44d149ea44ea9be4336",
+      "15f0834b5cbb97820f0674b4bbdf9c80dc487aa934e904498e73565d1233a2ec",
+      "73bd86b0eb949a1bec19e0bbdf44007a8e6a9a1c5f34444b8fda97f0d1b81532",
+      "e0dd6184b90d82ff76c98fbd49d07e1b9a9ffdad28a68f2aed16fca45c825608",
+      "6e78d6042401a40e8222fa8ae867a96445ff31ed304d6d3aec9786ed6ee08324",
+      "0dd1fbf038eb8051b8cc2c8875cc13d21b54ba5fec144475fdaa8564806a6ccf",
+      "5bb56734c740497e88794580446ce8ae27cd2df002738f8968d6f34c9f2dc8b4",
+      "be52e1b66e3986b7867c66067fe3410f8e93241d6fa286afcc5d7f9ba230d545",
+      "9691e08e24e786ba486aa14ba57da1b466185f04a369054863008820530b41ac",
+      "4c27032e363e94cb35b256fde5724c8404bf9c4985de55c075fd94e9f885d0a4",
+      "5f783dd7d9e367259ea7841088f4e488407dd3035a12d80c6f294e95da365b03",
+      "4daf7c5e449e9f287e6aebbaf3cced83a76e2c70d4a016d32f1aee43852fb6b8",
+      "0c03b62bb33cb4c5be33c0d55c6ea541db8428489fec466463ac96a03b7ad202",
+      "b7e5757328ab3dfadbb9fe01ea73e03fb95b8ca85cfc1ab1d2c8deb87927f204",
+      "fb2ff7874c899c7791629641e9cf5b69eb0cb04cd46d72e92e3b342e3cae0d54",
+      "5d711885781a78a1a310bd75c80ce1fc5073d423b42047a30cb29848f8b56544",
+      "4cb86053ada7e47b7fa8de050e9a1789b196f4e7bfd252be14b7e3d5e974d3a7",
+      "2bbdc37009bad6379f01eaa1d461a53640d5a028e016466fba8d39b1044aee62",
+      "64d088086000166951d037d8a1dbd06acd036fc0b1429ef66d2fd838681a9ab0",
+      "306d043bde7006ada8a0d0e3f5eb885adc772d930247f79e552fdabd3ad61ddb",
+      "04487bb15ed049a6457f1f60015f1f3ab4b6a1042208ab8563f88e25ae1ea967",
+      "184d6ca7999e7af8cdbfe9425397e446440aaacaaa7595cb6462680f8f11198d"
     ],
-    "page_count": 25,
+    "page_count": 26,
     "reported_total": 10000,
     "truncation_detected": true,
     "watermark": {
-      "publisher_time_ms": 1790051656942,
-      "id": "4882594"
+      "publisher_time_ms": 1790056823770,
+      "id": "4882647"
     },
     "retry": {
       "attempts": 3,
@@ -68,13 +69,2585 @@
   },
   "items": [
     {
+      "news_id": "4882647",
+      "published_at": "2026-09-22T06:00:23.770Z",
+      "published_at_ms": 1790056823770,
+      "timezone": "Asia/Shanghai",
+      "content_text": "9月22日长治市场主流大矿喷吹煤价格暂稳，无烟喷吹煤Q6500、A11、V12、S0.4、HGI80、MT8出厂价现金含税1700元/吨。",
+      "content_html": "9月22日长治市场主流大矿喷吹煤价格暂稳，无烟喷吹煤Q6500、A11、V12、S0.4、HGI80、MT8出厂价现金含税1700元/吨。",
+      "raw_content": "9月22日长治市场主流大矿喷吹煤价格暂稳，无烟喷吹煤Q6500、A11、V12、S0.4、HGI80、MT8出厂价现金含税1700元/吨。",
+      "category": {
+        "id": 12,
+        "name": "12"
+      },
+      "section": {
+        "id": 7,
+        "name": "7"
+      },
+      "products": [
+        {
+          "id": "050203",
+          "name": "喷吹煤",
+          "source": "relationBreed"
+        },
+        {
+          "id": "无烟喷吹煤",
+          "name": "无烟喷吹煤",
+          "source": "breedTag"
+        }
+      ],
+      "regions": [
+        {
+          "id": "01040404",
+          "name": "长治"
+        }
+      ],
+      "source_name": null,
+      "source_url": null,
+      "in_article_url": null,
+      "out_article_url": null,
+      "in_article_title": null,
+      "out_article_title": null,
+      "source_link_status": "no_link",
+      "data_source": 2,
+      "publisher_id": 221766,
+      "relation_id": 7636652,
+      "ai_flag": 0,
+      "platform_product_line": null,
+      "mapping_status": "ambiguous",
+      "quality_flags": [
+        "source_link_missing"
+      ]
+    },
+    {
+      "news_id": "4882644",
+      "published_at": "2026-09-22T05:58:01.721Z",
+      "published_at_ms": 1790056681721,
+      "timezone": "Asia/Shanghai",
+      "content_text": "据央视新闻，国家发展改革委今天举行新闻发布会，新闻发言人表示，当前，我国正在加大“双一流”高校新校区建设，扩大优质本科教育招生规模和研究生培养规模。国家发展改革委新闻发言人李超介绍，按照“十五五”规划《纲要》部署要求，“十五五”期间，我国将有序扩大优质本科教育招生规模和研究生培养规模，支持建设若干“双一流”高校新校区。推动新校区建设融入区域重大战略。",
+      "content_html": "据央视新闻，国家发展改革委今天举行新闻发布会，新闻发言人表示，当前，我国正在加大“双一流”高校新校区建设，扩大优质本科教育招生规模和研究生培养规模。国家发展改革委新闻发言人李超介绍，按照“十五五”规划《纲要》部署要求，“十五五”期间，我国将有序扩大优质本科教育招生规模和研究生培养规模，支持建设若干“双一流”高校新校区。推动新校区建设融入区域重大战略。",
+      "raw_content": "据央视新闻，国家发展改革委今天举行新闻发布会，新闻发言人表示，当前，我国正在加大“双一流”高校新校区建设，扩大优质本科教育招生规模和研究生培养规模。国家发展改革委新闻发言人李超介绍，按照“十五五”规划《纲要》部署要求，“十五五”期间，我国将有序扩大优质本科教育招生规模和研究生培养规模，支持建设若干“双一流”高校新校区。推动新校区建设融入区域重大战略。",
+      "category": {
+        "id": 16,
+        "name": "16"
+      },
+      "section": {
+        "id": 8,
+        "name": "8"
+      },
+      "products": [],
+      "regions": [],
+      "source_name": null,
+      "source_url": null,
+      "in_article_url": null,
+      "out_article_url": null,
+      "in_article_title": null,
+      "out_article_title": null,
+      "source_link_status": "no_link",
+      "data_source": 0,
+      "publisher_id": 222846,
+      "relation_id": 0,
+      "ai_flag": 0,
+      "platform_product_line": null,
+      "mapping_status": "unmapped",
+      "quality_flags": [
+        "source_link_missing"
+      ]
+    },
+    {
+      "news_id": "4882646",
+      "published_at": "2026-09-22T05:58:00.000Z",
+      "published_at_ms": 1790056680000,
+      "timezone": "Asia/Shanghai",
+      "content_text": "四川省方大钒钛集团有限责任公司发布油缸年标招标公告，招标编号ZB/SC2026-BJ015。计划招标时间为2026年10月15日，报名截止至9月30日17:00。投标人需具备独立法人资格及5年以上成立时间，提交资质文件至指定邮箱。审查合格单位需缴纳投标保证金30000元及招标服务费500元。中标后15天内签订合同，标的为2年标。",
+      "content_html": "四川省方大钒钛集团有限责任公司发布油缸年标招标公告，招标编号ZB/SC2026-BJ015。计划招标时间为2026年10月15日，报名截止至9月30日17:00。投标人需具备独立法人资格及5年以上成立时间，提交资质文件至指定邮箱。审查合格单位需缴纳投标保证金30000元及招标服务费500元。中标后15天内签订合同，标的为2年标。",
+      "raw_content": "四川省方大钒钛集团有限责任公司发布油缸年标招标公告，招标编号ZB/SC2026-BJ015。计划招标时间为2026年10月15日，报名截止至9月30日17:00。投标人需具备独立法人资格及5年以上成立时间，提交资质文件至指定邮箱。审查合格单位需缴纳投标保证金30000元及招标服务费500元。中标后15天内签订合同，标的为2年标。",
+      "category": {
+        "id": 2,
+        "name": "2"
+      },
+      "section": {
+        "id": 8,
+        "name": "8"
+      },
+      "products": [
+        {
+          "id": "01010101",
+          "name": "螺纹钢",
+          "source": "relationBreed"
+        },
+        {
+          "id": "01010102",
+          "name": "线材",
+          "source": "relationBreed"
+        }
+      ],
+      "regions": [
+        {
+          "id": "010601",
+          "name": "重庆"
+        },
+        {
+          "id": "01060201",
+          "name": "成都"
+        },
+        {
+          "id": "01060203",
+          "name": "攀枝花"
+        },
+        {
+          "id": "01060206",
+          "name": "绵阳"
+        },
+        {
+          "id": "0106020703",
+          "name": "西昌"
+        },
+        {
+          "id": "01060301",
+          "name": "贵阳"
+        },
+        {
+          "id": "01060401",
+          "name": "昆明"
+        }
+      ],
+      "source_name": "我的钢铁网(Mysteel)",
+      "source_url": "http://gc.mysteel.com/a/26092213/2DB4C6A9CCEE2AAC.html",
+      "in_article_url": "http://gc.mysteel.com/a/26092213/2DB4C6A9CCEE2AAC.html",
+      "out_article_url": null,
+      "in_article_title": "四川省方大钒钛集团有限责任公司油缸年标招标公告",
+      "out_article_title": null,
+      "source_link_status": "article_link",
+      "data_source": 1,
+      "publisher_id": 163526,
+      "relation_id": 45942943,
+      "ai_flag": 0,
+      "platform_product_line": null,
+      "mapping_status": "ambiguous",
+      "quality_flags": []
+    },
+    {
+      "news_id": "4882645",
+      "published_at": "2026-09-22T05:58:00.000Z",
+      "published_at_ms": 1790056680000,
+      "timezone": "Asia/Shanghai",
+      "content_text": "9月22日，江苏省统计局发布1—8月江苏经济运行简况，1—8月，全省社会消费品零售总额31299.4亿元，同比增长1.0%。8月份，限额以上通讯器材类、文化办公用品类、化妆品类商品零售额同比分别增长44.7%、41.8%、7.9%；其中，计算机及其配套产品、智能手机零售额分别增长78.2%、52.2%。",
+      "content_html": "9月22日，江苏省统计局发布1—8月江苏经济运行简况，1—8月，全省社会消费品零售总额31299.4亿元，同比增长1.0%。8月份，限额以上通讯器材类、文化办公用品类、化妆品类商品零售额同比分别增长44.7%、41.8%、7.9%；其中，计算机及其配套产品、智能手机零售额分别增长78.2%、52.2%。",
+      "raw_content": "9月22日，江苏省统计局发布1—8月江苏经济运行简况，1—8月，全省社会消费品零售总额31299.4亿元，同比增长1.0%。8月份，限额以上通讯器材类、文化办公用品类、化妆品类商品零售额同比分别增长44.7%、41.8%、7.9%；其中，计算机及其配套产品、智能手机零售额分别增长78.2%、52.2%。",
+      "category": {
+        "id": 1,
+        "name": "1"
+      },
+      "section": {
+        "id": 8,
+        "name": "8"
+      },
+      "products": [],
+      "regions": [],
+      "source_name": "财联社",
+      "source_url": "http://news.mysteel.com/a/26092213/0D79C6ED24A643E8.html",
+      "in_article_url": "http://news.mysteel.com/a/26092213/0D79C6ED24A643E8.html",
+      "out_article_url": null,
+      "in_article_title": "江苏：1—8月全省社会消费品零售总额同比增长1.0%",
+      "out_article_title": null,
+      "source_link_status": "article_link",
+      "data_source": 1,
+      "publisher_id": 216058,
+      "relation_id": 45942938,
+      "ai_flag": 0,
+      "platform_product_line": null,
+      "mapping_status": "unmapped",
+      "quality_flags": []
+    },
+    {
+      "news_id": "4882643",
+      "published_at": "2026-09-22T05:56:55.944Z",
+      "published_at_ms": 1790056615944,
+      "timezone": "Asia/Shanghai",
+      "content_text": "据央视新闻，9月22日，在第二届中国—中亚气象合作论坛开幕式上，中国气象局发布《面向中亚国家的气象智能预警方案“妈祖”实施行动计划（2026—2027年）》。将深入推动“妈祖”方案在中亚国家落地应用，愿同中亚各国携手积极响应联合国全民早期预警倡议，共筑区域气象安全屏障。该行动计划以“践行全民早期预警，守护区域发展安全”为主题，致力于深化中国与中亚国家气象合作，携手提升区域防灾减灾能力、更好服务区域经济社会发展，促进互利共赢，并从五方面实施行动。",
+      "content_html": "据央视新闻，9月22日，在第二届中国—中亚气象合作论坛开幕式上，中国气象局发布《面向中亚国家的气象智能预警方案“妈祖”实施行动计划（2026—2027年）》。将深入推动“妈祖”方案在中亚国家落地应用，愿同中亚各国携手积极响应联合国全民早期预警倡议，共筑区域气象安全屏障。该行动计划以“践行全民早期预警，守护区域发展安全”为主题，致力于深化中国与中亚国家气象合作，携手提升区域防灾减灾能力、更好服务区域经济社会发展，促进互利共赢，并从五方面实施行动。",
+      "raw_content": "据央视新闻，9月22日，在第二届中国—中亚气象合作论坛开幕式上，中国气象局发布《面向中亚国家的气象智能预警方案“妈祖”实施行动计划（2026—2027年）》。将深入推动“妈祖”方案在中亚国家落地应用，愿同中亚各国携手积极响应联合国全民早期预警倡议，共筑区域气象安全屏障。该行动计划以“践行全民早期预警，守护区域发展安全”为主题，致力于深化中国与中亚国家气象合作，携手提升区域防灾减灾能力、更好服务区域经济社会发展，促进互利共赢，并从五方面实施行动。",
+      "category": {
+        "id": 16,
+        "name": "16"
+      },
+      "section": {
+        "id": 8,
+        "name": "8"
+      },
+      "products": [],
+      "regions": [],
+      "source_name": null,
+      "source_url": null,
+      "in_article_url": null,
+      "out_article_url": null,
+      "in_article_title": null,
+      "out_article_title": null,
+      "source_link_status": "no_link",
+      "data_source": 0,
+      "publisher_id": 222846,
+      "relation_id": 0,
+      "ai_flag": 0,
+      "platform_product_line": null,
+      "mapping_status": "unmapped",
+      "quality_flags": [
+        "source_link_missing"
+      ]
+    },
+    {
+      "news_id": "4882642",
+      "published_at": "2026-09-22T05:56:00.000Z",
+      "published_at_ms": 1790056560000,
+      "timezone": "Asia/Shanghai",
+      "content_text": "国家金融监督管理总局党委书记、局长丁向群9月21日会见香港特区政府财政司司长陈茂波、香港特区政府财经事务及库务局局长许正宇、香港金融管理局总裁余伟文和香港证券及期货事务监察委员会行政总裁梁凤仪。双方就内地和香港经济金融发展、深化两地金融市场互联互通、巩固提升香港国际金融中心地位等议题进行交流。",
+      "content_html": "国家金融监督管理总局党委书记、局长丁向群9月21日会见香港特区政府财政司司长陈茂波、香港特区政府财经事务及库务局局长许正宇、香港金融管理局总裁余伟文和香港证券及期货事务监察委员会行政总裁梁凤仪。双方就内地和香港经济金融发展、深化两地金融市场互联互通、巩固提升香港国际金融中心地位等议题进行交流。",
+      "raw_content": "国家金融监督管理总局党委书记、局长丁向群9月21日会见香港特区政府财政司司长陈茂波、香港特区政府财经事务及库务局局长许正宇、香港金融管理局总裁余伟文和香港证券及期货事务监察委员会行政总裁梁凤仪。双方就内地和香港经济金融发展、深化两地金融市场互联互通、巩固提升香港国际金融中心地位等议题进行交流。",
+      "category": {
+        "id": 1,
+        "name": "1"
+      },
+      "section": {
+        "id": 8,
+        "name": "8"
+      },
+      "products": [],
+      "regions": [],
+      "source_name": "财联社",
+      "source_url": "http://news.mysteel.com/a/26092213/F1719CA49758BBA3.html",
+      "in_article_url": "http://news.mysteel.com/a/26092213/F1719CA49758BBA3.html",
+      "out_article_url": null,
+      "in_article_title": "丁向群会见香港特区政府财政司司长陈茂波",
+      "out_article_title": null,
+      "source_link_status": "article_link",
+      "data_source": 1,
+      "publisher_id": 216058,
+      "relation_id": 45942915,
+      "ai_flag": 0,
+      "platform_product_line": null,
+      "mapping_status": "unmapped",
+      "quality_flags": []
+    },
+    {
+      "news_id": "4882641",
+      "published_at": "2026-09-22T05:55:57.955Z",
+      "published_at_ms": 1790056557955,
+      "timezone": "Asia/Shanghai",
+      "content_text": "9月22日盘中北京建筑钢材市场价格平稳，螺纹钢Ф12mm3270-3310、Ф18mm3090-3110，HRB400E盘螺Ф10mm3370-3400，中建利源商品钢筋基价3429。",
+      "content_html": "9月22日盘中北京建筑钢材市场价格平稳，螺纹钢Ф12mm3270-3310、Ф18mm3090-3110，HRB400E盘螺Ф10mm3370-3400，中建利源商品钢筋基价3429。",
+      "raw_content": "9月22日盘中北京建筑钢材市场价格平稳，螺纹钢Ф12mm3270-3310、Ф18mm3090-3110，HRB400E盘螺Ф10mm3370-3400，中建利源商品钢筋基价3429。",
+      "category": {
+        "id": 2,
+        "name": "2"
+      },
+      "section": {
+        "id": 7,
+        "name": "7"
+      },
+      "products": [
+        {
+          "id": "010101",
+          "name": "建筑钢材",
+          "source": "relationBreed"
+        },
+        {
+          "id": "螺纹钢",
+          "name": "螺纹钢",
+          "source": "breedTag"
+        },
+        {
+          "id": "盘螺",
+          "name": "盘螺",
+          "source": "breedTag"
+        }
+      ],
+      "regions": [
+        {
+          "id": "010401",
+          "name": "北京"
+        }
+      ],
+      "source_name": null,
+      "source_url": null,
+      "in_article_url": null,
+      "out_article_url": null,
+      "in_article_title": null,
+      "out_article_title": null,
+      "source_link_status": "no_link",
+      "data_source": 2,
+      "publisher_id": 215321,
+      "relation_id": 7636650,
+      "ai_flag": 0,
+      "platform_product_line": null,
+      "mapping_status": "ambiguous",
+      "quality_flags": [
+        "source_link_missing"
+      ]
+    },
+    {
+      "news_id": "4882640",
+      "published_at": "2026-09-22T05:55:30.735Z",
+      "published_at_ms": 1790056530735,
+      "timezone": "Asia/Shanghai",
+      "content_text": "9月22日，上海市场铜精废价差超3500元/吨，达6331元/吨。",
+      "content_html": "9月22日，上海市场铜精废价差超3500元/吨，达6331元/吨。",
+      "raw_content": "9月22日，上海市场铜精废价差超3500元/吨，达6331元/吨。",
+      "category": {
+        "id": 4,
+        "name": "4"
+      },
+      "section": {
+        "id": 7,
+        "name": "7"
+      },
+      "products": [
+        {
+          "id": "再生铜",
+          "name": "再生铜",
+          "source": "breedTag"
+        }
+      ],
+      "regions": [],
+      "source_name": null,
+      "source_url": null,
+      "in_article_url": null,
+      "out_article_url": null,
+      "in_article_title": null,
+      "out_article_title": null,
+      "source_link_status": "no_link",
+      "data_source": 6,
+      "publisher_id": 220967,
+      "relation_id": 326683,
+      "ai_flag": 1,
+      "platform_product_line": null,
+      "mapping_status": "ambiguous",
+      "quality_flags": [
+        "source_link_missing"
+      ]
+    },
+    {
+      "news_id": "4882639",
+      "published_at": "2026-09-22T05:55:30.655Z",
+      "published_at_ms": 1790056530655,
+      "timezone": "Asia/Shanghai",
+      "content_text": "9月22日，天津市场铜精废价差超3500元/吨，达5981元/吨。",
+      "content_html": "9月22日，天津市场铜精废价差超3500元/吨，达5981元/吨。",
+      "raw_content": "9月22日，天津市场铜精废价差超3500元/吨，达5981元/吨。",
+      "category": {
+        "id": 4,
+        "name": "4"
+      },
+      "section": {
+        "id": 7,
+        "name": "7"
+      },
+      "products": [
+        {
+          "id": "再生铜",
+          "name": "再生铜",
+          "source": "breedTag"
+        }
+      ],
+      "regions": [],
+      "source_name": null,
+      "source_url": null,
+      "in_article_url": null,
+      "out_article_url": null,
+      "in_article_title": null,
+      "out_article_title": null,
+      "source_link_status": "no_link",
+      "data_source": 6,
+      "publisher_id": 220967,
+      "relation_id": 326682,
+      "ai_flag": 1,
+      "platform_product_line": null,
+      "mapping_status": "ambiguous",
+      "quality_flags": [
+        "source_link_missing"
+      ]
+    },
+    {
+      "news_id": "4882638",
+      "published_at": "2026-09-22T05:55:30.415Z",
+      "published_at_ms": 1790056530415,
+      "timezone": "Asia/Shanghai",
+      "content_text": "9月22日，浙江市场铜精废价差超3500元/吨，达6331元/吨。",
+      "content_html": "9月22日，浙江市场铜精废价差超3500元/吨，达6331元/吨。",
+      "raw_content": "9月22日，浙江市场铜精废价差超3500元/吨，达6331元/吨。",
+      "category": {
+        "id": 4,
+        "name": "4"
+      },
+      "section": {
+        "id": 7,
+        "name": "7"
+      },
+      "products": [
+        {
+          "id": "再生铜",
+          "name": "再生铜",
+          "source": "breedTag"
+        }
+      ],
+      "regions": [],
+      "source_name": null,
+      "source_url": null,
+      "in_article_url": null,
+      "out_article_url": null,
+      "in_article_title": null,
+      "out_article_title": null,
+      "source_link_status": "no_link",
+      "data_source": 6,
+      "publisher_id": 220967,
+      "relation_id": 326680,
+      "ai_flag": 1,
+      "platform_product_line": null,
+      "mapping_status": "ambiguous",
+      "quality_flags": [
+        "source_link_missing"
+      ]
+    },
+    {
+      "news_id": "4882637",
+      "published_at": "2026-09-22T05:54:00.000Z",
+      "published_at_ms": 1790056440000,
+      "timezone": "Asia/Shanghai",
+      "content_text": "据Mysteel农产品调研显示，截至2026年9月18日，北方四港玉米库存共计152.7万吨，周环比减少16.5万吨；当周北方四港下海量共计35.9万吨，周环比增加9.40万吨。",
+      "content_html": "据Mysteel农产品调研显示，截至2026年9月18日，北方四港玉米库存共计152.7万吨，周环比减少16.5万吨；当周北方四港下海量共计35.9万吨，周环比增加9.40万吨。",
+      "raw_content": "据Mysteel农产品调研显示，截至2026年9月18日，北方四港玉米库存共计152.7万吨，周环比减少16.5万吨；当周北方四港下海量共计35.9万吨，周环比增加9.40万吨。",
+      "category": {
+        "id": 5,
+        "name": "5"
+      },
+      "section": {
+        "id": 4,
+        "name": "4"
+      },
+      "products": [
+        {
+          "id": "070401",
+          "name": "玉米",
+          "source": "relationBreed"
+        },
+        {
+          "id": "饲用玉米",
+          "name": "饲用玉米",
+          "source": "breedTag"
+        }
+      ],
+      "regions": [
+        {
+          "id": "01",
+          "name": "国内"
+        }
+      ],
+      "source_name": "我的钢铁网(Mysteel)",
+      "source_url": "http://ncp.mysteel.com/a/26092213/BCCBCE4BBAC0F485.html",
+      "in_article_url": "http://ncp.mysteel.com/a/26092213/BCCBCE4BBAC0F485.html",
+      "out_article_url": null,
+      "in_article_title": "Mysteel数据：北方四港玉米库存统计（20260918）",
+      "out_article_title": null,
+      "source_link_status": "article_link",
+      "data_source": 1,
+      "publisher_id": 221697,
+      "relation_id": 45942900,
+      "ai_flag": 0,
+      "platform_product_line": null,
+      "mapping_status": "ambiguous",
+      "quality_flags": []
+    },
+    {
+      "news_id": "4882636",
+      "published_at": "2026-09-22T05:50:00.000Z",
+      "published_at_ms": 1790056200000,
+      "timezone": "Asia/Shanghai",
+      "content_text": "Welspun旗下EPIC获沙特阿美7.71亿里亚尔钢管合同，约合2.09亿美元。合同执行期六个月，财务影响预计体现在2026/27财年Q4至2027/28财年Q1。受此利好消息推动，Welspun Corp股价周一盘中一度上涨5%。",
+      "content_html": "Welspun旗下EPIC获沙特阿美7.71亿里亚尔钢管合同，约合2.09亿美元。合同执行期六个月，财务影响预计体现在2026/27财年Q4至2027/28财年Q1。受此利好消息推动，Welspun Corp股价周一盘中一度上涨5%。",
+      "raw_content": "Welspun旗下EPIC获沙特阿美7.71亿里亚尔钢管合同，约合2.09亿美元。合同执行期六个月，财务影响预计体现在2026/27财年Q4至2027/28财年Q1。受此利好消息推动，Welspun Corp股价周一盘中一度上涨5%。",
+      "category": {
+        "id": 2,
+        "name": "2"
+      },
+      "section": {
+        "id": 6,
+        "name": "6"
+      },
+      "products": [
+        {
+          "id": "010109",
+          "name": "钢管",
+          "source": "relationBreed"
+        }
+      ],
+      "regions": [
+        {
+          "id": "02",
+          "name": "国外"
+        }
+      ],
+      "source_name": "我的钢铁网(Mysteel)",
+      "source_url": "http://gg.mysteel.com/a/26092213/07D9B7CAB1D0656B.html",
+      "in_article_url": "http://gg.mysteel.com/a/26092213/07D9B7CAB1D0656B.html",
+      "out_article_url": null,
+      "in_article_title": "Welspun旗下EPIC获沙特阿美771百万里亚尔钢管合同",
+      "out_article_title": null,
+      "source_link_status": "article_link",
+      "data_source": 1,
+      "publisher_id": 208846,
+      "relation_id": 45942826,
+      "ai_flag": 0,
+      "platform_product_line": null,
+      "mapping_status": "ambiguous",
+      "quality_flags": []
+    },
+    {
+      "news_id": "4882635",
+      "published_at": "2026-09-22T05:47:46.703Z",
+      "published_at_ms": 1790056066703,
+      "timezone": "Asia/Shanghai",
+      "content_text": "9月22日，镇江市场主流品牌P.O42.5散装水泥报235-255元/吨，平。",
+      "content_html": "9月22日，镇江市场主流品牌P.O42.5散装水泥报235-255元/吨，平。",
+      "raw_content": "9月22日，镇江市场主流品牌P.O42.5散装水泥报235-255元/吨，平。",
+      "category": {
+        "id": 6,
+        "name": "6"
+      },
+      "section": {
+        "id": 7,
+        "name": "7"
+      },
+      "products": [
+        {
+          "id": "10",
+          "name": "建筑材料",
+          "source": "relationBreed"
+        },
+        {
+          "id": "1001",
+          "name": "水泥",
+          "source": "relationBreed"
+        }
+      ],
+      "regions": [
+        {
+          "id": "01",
+          "name": "国内"
+        },
+        {
+          "id": "0101",
+          "name": "华东"
+        }
+      ],
+      "source_name": null,
+      "source_url": null,
+      "in_article_url": null,
+      "out_article_url": null,
+      "in_article_title": null,
+      "out_article_title": null,
+      "source_link_status": "no_link",
+      "data_source": 0,
+      "publisher_id": 224479,
+      "relation_id": 0,
+      "ai_flag": 0,
+      "platform_product_line": null,
+      "mapping_status": "ambiguous",
+      "quality_flags": [
+        "source_link_missing"
+      ]
+    },
+    {
+      "news_id": "4882634",
+      "published_at": "2026-09-22T05:47:25.296Z",
+      "published_at_ms": 1790056045296,
+      "timezone": "Asia/Shanghai",
+      "content_text": "9月22日，扬州市场主流品牌P.O42.5散装水泥报245-250元/吨，平。",
+      "content_html": "9月22日，扬州市场主流品牌P.O42.5散装水泥报245-250元/吨，平。",
+      "raw_content": "9月22日，扬州市场主流品牌P.O42.5散装水泥报245-250元/吨，平。",
+      "category": {
+        "id": 6,
+        "name": "6"
+      },
+      "section": {
+        "id": 7,
+        "name": "7"
+      },
+      "products": [
+        {
+          "id": "10",
+          "name": "建筑材料",
+          "source": "relationBreed"
+        },
+        {
+          "id": "1001",
+          "name": "水泥",
+          "source": "relationBreed"
+        }
+      ],
+      "regions": [
+        {
+          "id": "01",
+          "name": "国内"
+        },
+        {
+          "id": "0101",
+          "name": "华东"
+        }
+      ],
+      "source_name": null,
+      "source_url": null,
+      "in_article_url": null,
+      "out_article_url": null,
+      "in_article_title": null,
+      "out_article_title": null,
+      "source_link_status": "no_link",
+      "data_source": 0,
+      "publisher_id": 224479,
+      "relation_id": 0,
+      "ai_flag": 0,
+      "platform_product_line": null,
+      "mapping_status": "ambiguous",
+      "quality_flags": [
+        "source_link_missing"
+      ]
+    },
+    {
+      "news_id": "4882633",
+      "published_at": "2026-09-22T05:47:03.889Z",
+      "published_at_ms": 1790056023889,
+      "timezone": "Asia/Shanghai",
+      "content_text": "9月22日，泰州市场主流品牌P.O42.5散装水泥报245-250元/吨，平。",
+      "content_html": "9月22日，泰州市场主流品牌P.O42.5散装水泥报245-250元/吨，平。",
+      "raw_content": "9月22日，泰州市场主流品牌P.O42.5散装水泥报245-250元/吨，平。",
+      "category": {
+        "id": 6,
+        "name": "6"
+      },
+      "section": {
+        "id": 7,
+        "name": "7"
+      },
+      "products": [
+        {
+          "id": "10",
+          "name": "建筑材料",
+          "source": "relationBreed"
+        },
+        {
+          "id": "1001",
+          "name": "水泥",
+          "source": "relationBreed"
+        }
+      ],
+      "regions": [
+        {
+          "id": "01",
+          "name": "国内"
+        },
+        {
+          "id": "0101",
+          "name": "华东"
+        }
+      ],
+      "source_name": null,
+      "source_url": null,
+      "in_article_url": null,
+      "out_article_url": null,
+      "in_article_title": null,
+      "out_article_title": null,
+      "source_link_status": "no_link",
+      "data_source": 0,
+      "publisher_id": 224479,
+      "relation_id": 0,
+      "ai_flag": 0,
+      "platform_product_line": null,
+      "mapping_status": "ambiguous",
+      "quality_flags": [
+        "source_link_missing"
+      ]
+    },
+    {
+      "news_id": "4882632",
+      "published_at": "2026-09-22T05:46:46.191Z",
+      "published_at_ms": 1790056006191,
+      "timezone": "Asia/Shanghai",
+      "content_text": "9月22日，宿迁市场主流品牌P.O42.5散装水泥报220-235元/吨，平。",
+      "content_html": "9月22日，宿迁市场主流品牌P.O42.5散装水泥报220-235元/吨，平。",
+      "raw_content": "9月22日，宿迁市场主流品牌P.O42.5散装水泥报220-235元/吨，平。",
+      "category": {
+        "id": 6,
+        "name": "6"
+      },
+      "section": {
+        "id": 7,
+        "name": "7"
+      },
+      "products": [
+        {
+          "id": "10",
+          "name": "建筑材料",
+          "source": "relationBreed"
+        },
+        {
+          "id": "1001",
+          "name": "水泥",
+          "source": "relationBreed"
+        }
+      ],
+      "regions": [
+        {
+          "id": "01",
+          "name": "国内"
+        },
+        {
+          "id": "0101",
+          "name": "华东"
+        }
+      ],
+      "source_name": null,
+      "source_url": null,
+      "in_article_url": null,
+      "out_article_url": null,
+      "in_article_title": null,
+      "out_article_title": null,
+      "source_link_status": "no_link",
+      "data_source": 0,
+      "publisher_id": 224479,
+      "relation_id": 0,
+      "ai_flag": 0,
+      "platform_product_line": null,
+      "mapping_status": "ambiguous",
+      "quality_flags": [
+        "source_link_missing"
+      ]
+    },
+    {
+      "news_id": "4882631",
+      "published_at": "2026-09-22T05:46:26.373Z",
+      "published_at_ms": 1790055986373,
+      "timezone": "Asia/Shanghai",
+      "content_text": "9月22日，盐城市场主流品牌P.O42.5散装水泥报245-260元/吨，平。",
+      "content_html": "9月22日，盐城市场主流品牌P.O42.5散装水泥报245-260元/吨，平。",
+      "raw_content": "9月22日，盐城市场主流品牌P.O42.5散装水泥报245-260元/吨，平。",
+      "category": {
+        "id": 6,
+        "name": "6"
+      },
+      "section": {
+        "id": 7,
+        "name": "7"
+      },
+      "products": [
+        {
+          "id": "10",
+          "name": "建筑材料",
+          "source": "relationBreed"
+        },
+        {
+          "id": "1001",
+          "name": "水泥",
+          "source": "relationBreed"
+        }
+      ],
+      "regions": [
+        {
+          "id": "01",
+          "name": "国内"
+        },
+        {
+          "id": "0101",
+          "name": "华东"
+        }
+      ],
+      "source_name": null,
+      "source_url": null,
+      "in_article_url": null,
+      "out_article_url": null,
+      "in_article_title": null,
+      "out_article_title": null,
+      "source_link_status": "no_link",
+      "data_source": 0,
+      "publisher_id": 224479,
+      "relation_id": 0,
+      "ai_flag": 0,
+      "platform_product_line": null,
+      "mapping_status": "ambiguous",
+      "quality_flags": [
+        "source_link_missing"
+      ]
+    },
+    {
+      "news_id": "4882630",
+      "published_at": "2026-09-22T05:46:00.026Z",
+      "published_at_ms": 1790055960026,
+      "timezone": "Asia/Shanghai",
+      "content_text": "9月22日，连云港市场主流品牌P.O42.5散装水泥报215-230元/吨，平。",
+      "content_html": "9月22日，连云港市场主流品牌P.O42.5散装水泥报215-230元/吨，平。",
+      "raw_content": "9月22日，连云港市场主流品牌P.O42.5散装水泥报215-230元/吨，平。",
+      "category": {
+        "id": 6,
+        "name": "6"
+      },
+      "section": {
+        "id": 7,
+        "name": "7"
+      },
+      "products": [
+        {
+          "id": "10",
+          "name": "建筑材料",
+          "source": "relationBreed"
+        },
+        {
+          "id": "1001",
+          "name": "水泥",
+          "source": "relationBreed"
+        }
+      ],
+      "regions": [
+        {
+          "id": "01",
+          "name": "国内"
+        },
+        {
+          "id": "0101",
+          "name": "华东"
+        }
+      ],
+      "source_name": null,
+      "source_url": null,
+      "in_article_url": null,
+      "out_article_url": null,
+      "in_article_title": null,
+      "out_article_title": null,
+      "source_link_status": "no_link",
+      "data_source": 0,
+      "publisher_id": 224479,
+      "relation_id": 0,
+      "ai_flag": 0,
+      "platform_product_line": null,
+      "mapping_status": "ambiguous",
+      "quality_flags": [
+        "source_link_missing"
+      ]
+    },
+    {
+      "news_id": "4882629",
+      "published_at": "2026-09-22T05:45:42.093Z",
+      "published_at_ms": 1790055942093,
+      "timezone": "Asia/Shanghai",
+      "content_text": "9月22日，徐州市场主流品牌P.O42.5散装水泥报220-235元/吨，平。",
+      "content_html": "9月22日，徐州市场主流品牌P.O42.5散装水泥报220-235元/吨，平。",
+      "raw_content": "9月22日，徐州市场主流品牌P.O42.5散装水泥报220-235元/吨，平。",
+      "category": {
+        "id": 6,
+        "name": "6"
+      },
+      "section": {
+        "id": 7,
+        "name": "7"
+      },
+      "products": [
+        {
+          "id": "10",
+          "name": "建筑材料",
+          "source": "relationBreed"
+        },
+        {
+          "id": "1001",
+          "name": "水泥",
+          "source": "relationBreed"
+        }
+      ],
+      "regions": [
+        {
+          "id": "01",
+          "name": "国内"
+        },
+        {
+          "id": "0101",
+          "name": "华东"
+        }
+      ],
+      "source_name": null,
+      "source_url": null,
+      "in_article_url": null,
+      "out_article_url": null,
+      "in_article_title": null,
+      "out_article_title": null,
+      "source_link_status": "no_link",
+      "data_source": 0,
+      "publisher_id": 224479,
+      "relation_id": 0,
+      "ai_flag": 0,
+      "platform_product_line": null,
+      "mapping_status": "ambiguous",
+      "quality_flags": [
+        "source_link_missing"
+      ]
+    },
+    {
+      "news_id": "4882628",
+      "published_at": "2026-09-22T05:45:02.066Z",
+      "published_at_ms": 1790055902066,
+      "timezone": "Asia/Shanghai",
+      "content_text": "9月22日，日照市场主流品牌一级灰报125-130元/吨，二级灰报95-115元/吨，平。",
+      "content_html": "9月22日，日照市场主流品牌一级灰报125-130元/吨，二级灰报95-115元/吨，平。",
+      "raw_content": "9月22日，日照市场主流品牌一级灰报125-130元/吨，二级灰报95-115元/吨，平。",
+      "category": {
+        "id": 6,
+        "name": "6"
+      },
+      "section": {
+        "id": 7,
+        "name": "7"
+      },
+      "products": [
+        {
+          "id": "10",
+          "name": "建筑材料",
+          "source": "relationBreed"
+        },
+        {
+          "id": "1014",
+          "name": "粉煤灰",
+          "source": "relationBreed"
+        }
+      ],
+      "regions": [
+        {
+          "id": "01",
+          "name": "国内"
+        },
+        {
+          "id": "0101",
+          "name": "华东"
+        }
+      ],
+      "source_name": null,
+      "source_url": null,
+      "in_article_url": null,
+      "out_article_url": null,
+      "in_article_title": null,
+      "out_article_title": null,
+      "source_link_status": "no_link",
+      "data_source": 0,
+      "publisher_id": 224479,
+      "relation_id": 0,
+      "ai_flag": 0,
+      "platform_product_line": null,
+      "mapping_status": "ambiguous",
+      "quality_flags": [
+        "source_link_missing"
+      ]
+    },
+    {
+      "news_id": "4882626",
+      "published_at": "2026-09-22T05:43:51.401Z",
+      "published_at_ms": 1790055831401,
+      "timezone": "Asia/Shanghai",
+      "content_text": "9月22日，盐城市场主流品牌一级灰报70-75元/吨，二级灰报55-65元/吨，平。",
+      "content_html": "9月22日，盐城市场主流品牌一级灰报70-75元/吨，二级灰报55-65元/吨，平。",
+      "raw_content": "9月22日，盐城市场主流品牌一级灰报70-75元/吨，二级灰报55-65元/吨，平。",
+      "category": {
+        "id": 6,
+        "name": "6"
+      },
+      "section": {
+        "id": 7,
+        "name": "7"
+      },
+      "products": [
+        {
+          "id": "10",
+          "name": "建筑材料",
+          "source": "relationBreed"
+        },
+        {
+          "id": "1014",
+          "name": "粉煤灰",
+          "source": "relationBreed"
+        }
+      ],
+      "regions": [
+        {
+          "id": "01",
+          "name": "国内"
+        },
+        {
+          "id": "0101",
+          "name": "华东"
+        }
+      ],
+      "source_name": null,
+      "source_url": null,
+      "in_article_url": null,
+      "out_article_url": null,
+      "in_article_title": null,
+      "out_article_title": null,
+      "source_link_status": "no_link",
+      "data_source": 0,
+      "publisher_id": 224479,
+      "relation_id": 0,
+      "ai_flag": 0,
+      "platform_product_line": null,
+      "mapping_status": "ambiguous",
+      "quality_flags": [
+        "source_link_missing"
+      ]
+    },
+    {
+      "news_id": "4882625",
+      "published_at": "2026-09-22T05:43:34.224Z",
+      "published_at_ms": 1790055814224,
+      "timezone": "Asia/Shanghai",
+      "content_text": "9月22日，六安市场散装P.O42.5水泥价格报370-390元/吨，平。",
+      "content_html": "<p>9月22日，六安市场散装P.O42.5水泥价格报370-390元/吨，平。</p>",
+      "raw_content": "<p>9月22日，六安市场散装P.O42.5水泥价格报370-390元/吨，平。</p>",
+      "category": {
+        "id": 6,
+        "name": "6"
+      },
+      "section": {
+        "id": 7,
+        "name": "7"
+      },
+      "products": [
+        {
+          "id": "1001",
+          "name": "水泥",
+          "source": "relationBreed"
+        }
+      ],
+      "regions": [],
+      "source_name": null,
+      "source_url": null,
+      "in_article_url": null,
+      "out_article_url": null,
+      "in_article_title": null,
+      "out_article_title": null,
+      "source_link_status": "no_link",
+      "data_source": 0,
+      "publisher_id": 223924,
+      "relation_id": 0,
+      "ai_flag": 0,
+      "platform_product_line": null,
+      "mapping_status": "ambiguous",
+      "quality_flags": [
+        "source_link_missing"
+      ]
+    },
+    {
+      "news_id": "4882624",
+      "published_at": "2026-09-22T05:43:25.182Z",
+      "published_at_ms": 1790055805182,
+      "timezone": "Asia/Shanghai",
+      "content_text": "9月22日，宣城市场散装P.O42.5水泥价格报320-340元/吨，平。",
+      "content_html": "<p>9月22日，宣城市场散装P.O42.5水泥价格报320-340元/吨，平。</p>",
+      "raw_content": "<p>9月22日，宣城市场散装P.O42.5水泥价格报320-340元/吨，平。</p>",
+      "category": {
+        "id": 6,
+        "name": "6"
+      },
+      "section": {
+        "id": 7,
+        "name": "7"
+      },
+      "products": [
+        {
+          "id": "1001",
+          "name": "水泥",
+          "source": "relationBreed"
+        }
+      ],
+      "regions": [],
+      "source_name": null,
+      "source_url": null,
+      "in_article_url": null,
+      "out_article_url": null,
+      "in_article_title": null,
+      "out_article_title": null,
+      "source_link_status": "no_link",
+      "data_source": 0,
+      "publisher_id": 223924,
+      "relation_id": 0,
+      "ai_flag": 0,
+      "platform_product_line": null,
+      "mapping_status": "ambiguous",
+      "quality_flags": [
+        "source_link_missing"
+      ]
+    },
+    {
+      "news_id": "4882623",
+      "published_at": "2026-09-22T05:43:15.648Z",
+      "published_at_ms": 1790055795648,
+      "timezone": "Asia/Shanghai",
+      "content_text": "9月22日，阜阳主流品牌S95矿渣粉报230-240元/吨，平。",
+      "content_html": "<p>9月22日，阜阳主流品牌S95矿渣粉报230-240元/吨，平。</p>",
+      "raw_content": "<p>9月22日，阜阳主流品牌S95矿渣粉报230-240元/吨，平。</p>",
+      "category": {
+        "id": 6,
+        "name": "6"
+      },
+      "section": {
+        "id": 8,
+        "name": "8"
+      },
+      "products": [
+        {
+          "id": "1009",
+          "name": "矿渣粉",
+          "source": "relationBreed"
+        },
+        {
+          "id": "S95矿渣粉",
+          "name": "S95矿渣粉",
+          "source": "breedTag"
+        }
+      ],
+      "regions": [],
+      "source_name": null,
+      "source_url": null,
+      "in_article_url": null,
+      "out_article_url": null,
+      "in_article_title": null,
+      "out_article_title": null,
+      "source_link_status": "no_link",
+      "data_source": 0,
+      "publisher_id": 223924,
+      "relation_id": 0,
+      "ai_flag": 0,
+      "platform_product_line": null,
+      "mapping_status": "ambiguous",
+      "quality_flags": [
+        "source_link_missing"
+      ]
+    },
+    {
+      "news_id": "4882622",
+      "published_at": "2026-09-22T05:43:06.660Z",
+      "published_at_ms": 1790055786660,
+      "timezone": "Asia/Shanghai",
+      "content_text": "9月22日，合肥主流品牌S95矿渣粉报210-220元/吨，平。",
+      "content_html": "<p>9月22日，合肥主流品牌S95矿渣粉报210-220元/吨，平。</p>",
+      "raw_content": "<p>9月22日，合肥主流品牌S95矿渣粉报210-220元/吨，平。</p>",
+      "category": {
+        "id": 6,
+        "name": "6"
+      },
+      "section": {
+        "id": 7,
+        "name": "7"
+      },
+      "products": [
+        {
+          "id": "1009",
+          "name": "矿渣粉",
+          "source": "relationBreed"
+        },
+        {
+          "id": "S95矿渣粉",
+          "name": "S95矿渣粉",
+          "source": "breedTag"
+        }
+      ],
+      "regions": [],
+      "source_name": null,
+      "source_url": null,
+      "in_article_url": null,
+      "out_article_url": null,
+      "in_article_title": null,
+      "out_article_title": null,
+      "source_link_status": "no_link",
+      "data_source": 0,
+      "publisher_id": 223924,
+      "relation_id": 0,
+      "ai_flag": 0,
+      "platform_product_line": null,
+      "mapping_status": "ambiguous",
+      "quality_flags": [
+        "source_link_missing"
+      ]
+    },
+    {
+      "news_id": "4882627",
+      "published_at": "2026-09-22T05:43:00.000Z",
+      "published_at_ms": 1790055780000,
+      "timezone": "Asia/Shanghai",
+      "content_text": "9月8日以来，鄱阳湖水位持续快速下降，至9月22日8时，星子站水位从15.55米降至11.29米，14天内下降4.26米。9月16日以来，水位下跌尤为剧烈。至22日8时，6天内星子站水位从13.76米跌至11.29米，日跌幅超0.4米，累计下跌2.47米，创下连续5天日跌幅超0.4米、3天1.28米、4天1.68米、5天2.09米、6天2.47米的最快下跌纪录。同期，湖区水面平均每天收缩约160平方公里。跌幅之快、纪录刷新之密集实属罕见。当前枯水形势仍在发展，水位持续走低将对湖区生产生活用水及生态带来不利影响，需密切关注后续水情变化。",
+      "content_html": "9月8日以来，鄱阳湖水位持续快速下降，至9月22日8时，星子站水位从15.55米降至11.29米，14天内下降4.26米。9月16日以来，水位下跌尤为剧烈。至22日8时，6天内星子站水位从13.76米跌至11.29米，日跌幅超0.4米，累计下跌2.47米，创下连续5天日跌幅超0.4米、3天1.28米、4天1.68米、5天2.09米、6天2.47米的最快下跌纪录。同期，湖区水面平均每天收缩约160平方公里。跌幅之快、纪录刷新之密集实属罕见。当前枯水形势仍在发展，水位持续走低将对湖区生产生活用水及生态带来不利影响，需密切关注后续水情变化。",
+      "raw_content": "9月8日以来，鄱阳湖水位持续快速下降，至9月22日8时，星子站水位从15.55米降至11.29米，14天内下降4.26米。9月16日以来，水位下跌尤为剧烈。至22日8时，6天内星子站水位从13.76米跌至11.29米，日跌幅超0.4米，累计下跌2.47米，创下连续5天日跌幅超0.4米、3天1.28米、4天1.68米、5天2.09米、6天2.47米的最快下跌纪录。同期，湖区水面平均每天收缩约160平方公里。跌幅之快、纪录刷新之密集实属罕见。当前枯水形势仍在发展，水位持续走低将对湖区生产生活用水及生态带来不利影响，需密切关注后续水情变化。",
+      "category": {
+        "id": 1,
+        "name": "1"
+      },
+      "section": {
+        "id": 8,
+        "name": "8"
+      },
+      "products": [],
+      "regions": [],
+      "source_name": "财联社",
+      "source_url": "http://news.mysteel.com/a/26092213/365B94EFFB1D6566.html",
+      "in_article_url": "http://news.mysteel.com/a/26092213/365B94EFFB1D6566.html",
+      "out_article_url": null,
+      "in_article_title": "鄱阳湖快速跌破枯水位，湖区水面平均每天收缩约160平方公里",
+      "out_article_title": null,
+      "source_link_status": "article_link",
+      "data_source": 1,
+      "publisher_id": 216058,
+      "relation_id": 45942725,
+      "ai_flag": 0,
+      "platform_product_line": null,
+      "mapping_status": "unmapped",
+      "quality_flags": []
+    },
+    {
+      "news_id": "4882621",
+      "published_at": "2026-09-22T05:42:56.454Z",
+      "published_at_ms": 1790055776454,
+      "timezone": "Asia/Shanghai",
+      "content_text": "9月22日，芜湖主流品牌S95矿渣粉报200-210元/吨，平。",
+      "content_html": "<p>9月22日，芜湖主流品牌S95矿渣粉报200-210元/吨，平。</p>",
+      "raw_content": "<p>9月22日，芜湖主流品牌S95矿渣粉报200-210元/吨，平。</p>",
+      "category": {
+        "id": 6,
+        "name": "6"
+      },
+      "section": {
+        "id": 7,
+        "name": "7"
+      },
+      "products": [
+        {
+          "id": "1009",
+          "name": "矿渣粉",
+          "source": "relationBreed"
+        },
+        {
+          "id": "S95矿渣粉",
+          "name": "S95矿渣粉",
+          "source": "breedTag"
+        }
+      ],
+      "regions": [],
+      "source_name": null,
+      "source_url": null,
+      "in_article_url": null,
+      "out_article_url": null,
+      "in_article_title": null,
+      "out_article_title": null,
+      "source_link_status": "no_link",
+      "data_source": 0,
+      "publisher_id": 223924,
+      "relation_id": 0,
+      "ai_flag": 0,
+      "platform_product_line": null,
+      "mapping_status": "ambiguous",
+      "quality_flags": [
+        "source_link_missing"
+      ]
+    },
+    {
+      "news_id": "4882620",
+      "published_at": "2026-09-22T05:42:17.950Z",
+      "published_at_ms": 1790055737950,
+      "timezone": "Asia/Shanghai",
+      "content_text": "9月22日，芜湖主流品牌C30混凝土报300-320元/方，平。",
+      "content_html": "<p>9月22日，芜湖主流品牌C30混凝土报300-320元/方，平。</p>",
+      "raw_content": "<p>9月22日，芜湖主流品牌C30混凝土报300-320元/方，平。</p>",
+      "category": {
+        "id": 6,
+        "name": "6"
+      },
+      "section": {
+        "id": 7,
+        "name": "7"
+      },
+      "products": [
+        {
+          "id": "1002",
+          "name": "混凝土",
+          "source": "relationBreed"
+        },
+        {
+          "id": "C30混凝土",
+          "name": "C30混凝土",
+          "source": "breedTag"
+        }
+      ],
+      "regions": [],
+      "source_name": null,
+      "source_url": null,
+      "in_article_url": null,
+      "out_article_url": null,
+      "in_article_title": null,
+      "out_article_title": null,
+      "source_link_status": "no_link",
+      "data_source": 0,
+      "publisher_id": 223924,
+      "relation_id": 0,
+      "ai_flag": 0,
+      "platform_product_line": null,
+      "mapping_status": "ambiguous",
+      "quality_flags": [
+        "source_link_missing"
+      ]
+    },
+    {
+      "news_id": "4882619",
+      "published_at": "2026-09-22T05:42:08.495Z",
+      "published_at_ms": 1790055728495,
+      "timezone": "Asia/Shanghai",
+      "content_text": "9月22日，安庆主流品牌C30混凝土报330-420元/方，平。",
+      "content_html": "<p>9月22日，安庆主流品牌C30混凝土报330-420元/方，平。</p>",
+      "raw_content": "<p>9月22日，安庆主流品牌C30混凝土报330-420元/方，平。</p>",
+      "category": {
+        "id": 6,
+        "name": "6"
+      },
+      "section": {
+        "id": 7,
+        "name": "7"
+      },
+      "products": [
+        {
+          "id": "1002",
+          "name": "混凝土",
+          "source": "relationBreed"
+        },
+        {
+          "id": "C30混凝土",
+          "name": "C30混凝土",
+          "source": "breedTag"
+        }
+      ],
+      "regions": [],
+      "source_name": null,
+      "source_url": null,
+      "in_article_url": null,
+      "out_article_url": null,
+      "in_article_title": null,
+      "out_article_title": null,
+      "source_link_status": "no_link",
+      "data_source": 0,
+      "publisher_id": 223924,
+      "relation_id": 0,
+      "ai_flag": 0,
+      "platform_product_line": null,
+      "mapping_status": "ambiguous",
+      "quality_flags": [
+        "source_link_missing"
+      ]
+    },
+    {
+      "news_id": "4882617",
+      "published_at": "2026-09-22T05:41:30.602Z",
+      "published_at_ms": 1790055690602,
+      "timezone": "Asia/Shanghai",
+      "content_text": "9月22日，徐州市场主流品牌一级灰报85-95元/吨，二级灰报70-85元/吨，平。",
+      "content_html": "9月22日，徐州市场主流品牌一级灰报85-95元/吨，二级灰报70-85元/吨，平。",
+      "raw_content": "9月22日，徐州市场主流品牌一级灰报85-95元/吨，二级灰报70-85元/吨，平。",
+      "category": {
+        "id": 6,
+        "name": "6"
+      },
+      "section": {
+        "id": 7,
+        "name": "7"
+      },
+      "products": [
+        {
+          "id": "10",
+          "name": "建筑材料",
+          "source": "relationBreed"
+        },
+        {
+          "id": "1014",
+          "name": "粉煤灰",
+          "source": "relationBreed"
+        }
+      ],
+      "regions": [
+        {
+          "id": "01",
+          "name": "国内"
+        },
+        {
+          "id": "0101",
+          "name": "华东"
+        }
+      ],
+      "source_name": null,
+      "source_url": null,
+      "in_article_url": null,
+      "out_article_url": null,
+      "in_article_title": null,
+      "out_article_title": null,
+      "source_link_status": "no_link",
+      "data_source": 0,
+      "publisher_id": 224479,
+      "relation_id": 0,
+      "ai_flag": 0,
+      "platform_product_line": null,
+      "mapping_status": "ambiguous",
+      "quality_flags": [
+        "source_link_missing"
+      ]
+    },
+    {
+      "news_id": "4882616",
+      "published_at": "2026-09-22T05:40:49.506Z",
+      "published_at_ms": 1790055649506,
+      "timezone": "Asia/Shanghai",
+      "content_text": "9月22日秦皇岛建筑钢材价格盘中稳，抗震三大3220，φ12三级3330，抗震盘3480左右。（元/吨）",
+      "content_html": "9月22日秦皇岛建筑钢材价格盘中稳，抗震三大3220，φ12三级3330，抗震盘3480左右。（元/吨）",
+      "raw_content": "9月22日秦皇岛建筑钢材价格盘中稳，抗震三大3220，φ12三级3330，抗震盘3480左右。（元/吨）",
+      "category": {
+        "id": 2,
+        "name": "2"
+      },
+      "section": {
+        "id": 7,
+        "name": "7"
+      },
+      "products": [
+        {
+          "id": "010101",
+          "name": "建筑钢材",
+          "source": "relationBreed"
+        }
+      ],
+      "regions": [
+        {
+          "id": "01040303",
+          "name": "秦皇岛"
+        }
+      ],
+      "source_name": null,
+      "source_url": null,
+      "in_article_url": null,
+      "out_article_url": null,
+      "in_article_title": null,
+      "out_article_title": null,
+      "source_link_status": "no_link",
+      "data_source": 2,
+      "publisher_id": 210008,
+      "relation_id": 7636649,
+      "ai_flag": 0,
+      "platform_product_line": null,
+      "mapping_status": "ambiguous",
+      "quality_flags": [
+        "source_link_missing"
+      ]
+    },
+    {
+      "news_id": "4882615",
+      "published_at": "2026-09-22T05:40:41.964Z",
+      "published_at_ms": 1790055641964,
+      "timezone": "Asia/Shanghai",
+      "content_text": "9月22日，苏州市场主流品牌一级灰报80-85元/吨，二级灰报65-75元/吨，平。",
+      "content_html": "9月22日，苏州市场主流品牌一级灰报80-85元/吨，二级灰报65-75元/吨，平。",
+      "raw_content": "9月22日，苏州市场主流品牌一级灰报80-85元/吨，二级灰报65-75元/吨，平。",
+      "category": {
+        "id": 6,
+        "name": "6"
+      },
+      "section": {
+        "id": 7,
+        "name": "7"
+      },
+      "products": [
+        {
+          "id": "10",
+          "name": "建筑材料",
+          "source": "relationBreed"
+        },
+        {
+          "id": "1014",
+          "name": "粉煤灰",
+          "source": "relationBreed"
+        }
+      ],
+      "regions": [
+        {
+          "id": "01",
+          "name": "国内"
+        },
+        {
+          "id": "0101",
+          "name": "华东"
+        }
+      ],
+      "source_name": null,
+      "source_url": null,
+      "in_article_url": null,
+      "out_article_url": null,
+      "in_article_title": null,
+      "out_article_title": null,
+      "source_link_status": "no_link",
+      "data_source": 0,
+      "publisher_id": 224479,
+      "relation_id": 0,
+      "ai_flag": 0,
+      "platform_product_line": null,
+      "mapping_status": "ambiguous",
+      "quality_flags": [
+        "source_link_missing"
+      ]
+    },
+    {
+      "news_id": "4882614",
+      "published_at": "2026-09-22T05:40:38.157Z",
+      "published_at_ms": 1790055638157,
+      "timezone": "Asia/Shanghai",
+      "content_text": "9月22日，六安主流品牌C30混凝土报320-350元/方，平。",
+      "content_html": "<p>9月22日，六安主流品牌C30混凝土报320-350元/方，平。</p>",
+      "raw_content": "<p>9月22日，六安主流品牌C30混凝土报320-350元/方，平。</p>",
+      "category": {
+        "id": 6,
+        "name": "6"
+      },
+      "section": {
+        "id": 7,
+        "name": "7"
+      },
+      "products": [
+        {
+          "id": "1002",
+          "name": "混凝土",
+          "source": "relationBreed"
+        },
+        {
+          "id": "C30混凝土",
+          "name": "C30混凝土",
+          "source": "breedTag"
+        }
+      ],
+      "regions": [],
+      "source_name": null,
+      "source_url": null,
+      "in_article_url": null,
+      "out_article_url": null,
+      "in_article_title": null,
+      "out_article_title": null,
+      "source_link_status": "no_link",
+      "data_source": 0,
+      "publisher_id": 223924,
+      "relation_id": 0,
+      "ai_flag": 0,
+      "platform_product_line": null,
+      "mapping_status": "ambiguous",
+      "quality_flags": [
+        "source_link_missing"
+      ]
+    },
+    {
+      "news_id": "4882612",
+      "published_at": "2026-09-22T05:40:22.961Z",
+      "published_at_ms": 1790055622961,
+      "timezone": "Asia/Shanghai",
+      "content_text": "9月22日唐山建筑钢材市场价格盘中稳，现三级大螺纹3120，三级小螺纹3230，盘螺3380。（元/吨）",
+      "content_html": "9月22日唐山建筑钢材市场价格盘中稳，现三级大螺纹3120，三级小螺纹3230，盘螺3380。（元/吨）",
+      "raw_content": "9月22日唐山建筑钢材市场价格盘中稳，现三级大螺纹3120，三级小螺纹3230，盘螺3380。（元/吨）",
+      "category": {
+        "id": 2,
+        "name": "2"
+      },
+      "section": {
+        "id": 7,
+        "name": "7"
+      },
+      "products": [
+        {
+          "id": "010101",
+          "name": "建筑钢材",
+          "source": "relationBreed"
+        },
+        {
+          "id": "螺纹钢",
+          "name": "螺纹钢",
+          "source": "breedTag"
+        },
+        {
+          "id": "盘螺",
+          "name": "盘螺",
+          "source": "breedTag"
+        }
+      ],
+      "regions": [
+        {
+          "id": "010403",
+          "name": "河北"
+        }
+      ],
+      "source_name": null,
+      "source_url": null,
+      "in_article_url": null,
+      "out_article_url": null,
+      "in_article_title": null,
+      "out_article_title": null,
+      "source_link_status": "no_link",
+      "data_source": 2,
+      "publisher_id": 210008,
+      "relation_id": 7636648,
+      "ai_flag": 0,
+      "platform_product_line": null,
+      "mapping_status": "ambiguous",
+      "quality_flags": [
+        "source_link_missing"
+      ]
+    },
+    {
+      "news_id": "4882613",
+      "published_at": "2026-09-22T05:40:00.000Z",
+      "published_at_ms": 1790055600000,
+      "timezone": "Asia/Shanghai",
+      "content_text": "据大连商品交易所披露，2026年9月22日，原木期货交割合约LG2609滚动交割无卖方举牌。",
+      "content_html": "据大连商品交易所披露，2026年9月22日，原木期货交割合约LG2609滚动交割无卖方举牌。",
+      "raw_content": "据大连商品交易所披露，2026年9月22日，原木期货交割合约LG2609滚动交割无卖方举牌。",
+      "category": {
+        "id": 6,
+        "name": "6"
+      },
+      "section": {
+        "id": 6,
+        "name": "6"
+      },
+      "products": [
+        {
+          "id": "1201",
+          "name": "原木",
+          "source": "relationBreed"
+        },
+        {
+          "id": "1202",
+          "name": "木方",
+          "source": "relationBreed"
+        },
+        {
+          "id": "1203",
+          "name": "木模板",
+          "source": "relationBreed"
+        }
+      ],
+      "regions": [],
+      "source_name": "木联数据",
+      "source_url": "http://wood.100njz.com/a/26092213/2EFB845EB7994A6F.html",
+      "in_article_url": "http://wood.100njz.com/a/26092213/2EFB845EB7994A6F.html",
+      "out_article_url": null,
+      "in_article_title": "交割日报：原木LG2609滚动交割无卖方举牌，累计举牌28手（20260922）",
+      "out_article_title": null,
+      "source_link_status": "article_link",
+      "data_source": 1,
+      "publisher_id": 227708,
+      "relation_id": 45942674,
+      "ai_flag": 0,
+      "platform_product_line": null,
+      "mapping_status": "ambiguous",
+      "quality_flags": []
+    },
+    {
+      "news_id": "4882611",
+      "published_at": "2026-09-22T05:40:00.000Z",
+      "published_at_ms": 1790055600000,
+      "timezone": "Asia/Shanghai",
+      "content_text": "随着中秋、国庆假期到来，全国口岸预计将迎来出入境高峰。据国家移民管理局预测，今年中秋节假期日均出入境旅客将达225万人次，国庆节假期日均将达215万人次，出入境客流高峰主要集中在9月25日、9月27日、10月1日和10月4日，单日最高通关量预计将突破240万人次。",
+      "content_html": "随着中秋、国庆假期到来，全国口岸预计将迎来出入境高峰。据国家移民管理局预测，今年中秋节假期日均出入境旅客将达225万人次，国庆节假期日均将达215万人次，出入境客流高峰主要集中在9月25日、9月27日、10月1日和10月4日，单日最高通关量预计将突破240万人次。",
+      "raw_content": "随着中秋、国庆假期到来，全国口岸预计将迎来出入境高峰。据国家移民管理局预测，今年中秋节假期日均出入境旅客将达225万人次，国庆节假期日均将达215万人次，出入境客流高峰主要集中在9月25日、9月27日、10月1日和10月4日，单日最高通关量预计将突破240万人次。",
+      "category": {
+        "id": 1,
+        "name": "1"
+      },
+      "section": {
+        "id": 8,
+        "name": "8"
+      },
+      "products": [],
+      "regions": [],
+      "source_name": "财联社",
+      "source_url": "http://news.mysteel.com/a/26092213/65F7F8C3377C652C.html",
+      "in_article_url": "http://news.mysteel.com/a/26092213/65F7F8C3377C652C.html",
+      "out_article_url": null,
+      "in_article_title": "中秋、国庆假期出行热，日均出入境旅客预计超200万人次",
+      "out_article_title": null,
+      "source_link_status": "article_link",
+      "data_source": 1,
+      "publisher_id": 216058,
+      "relation_id": 45942662,
+      "ai_flag": 0,
+      "platform_product_line": null,
+      "mapping_status": "unmapped",
+      "quality_flags": []
+    },
+    {
+      "news_id": "4882610",
+      "published_at": "2026-09-22T05:39:34.324Z",
+      "published_at_ms": 1790055574324,
+      "timezone": "Asia/Shanghai",
+      "content_text": "9月22日，泰州市场主流品牌一级灰报105-115元/吨，二级灰报85-95元/吨，平。",
+      "content_html": "9月22日，泰州市场主流品牌一级灰报105-115元/吨，二级灰报85-95元/吨，平。",
+      "raw_content": "9月22日，泰州市场主流品牌一级灰报105-115元/吨，二级灰报85-95元/吨，平。",
+      "category": {
+        "id": 6,
+        "name": "6"
+      },
+      "section": {
+        "id": 7,
+        "name": "7"
+      },
+      "products": [
+        {
+          "id": "10",
+          "name": "建筑材料",
+          "source": "relationBreed"
+        },
+        {
+          "id": "1014",
+          "name": "粉煤灰",
+          "source": "relationBreed"
+        }
+      ],
+      "regions": [
+        {
+          "id": "01",
+          "name": "国内"
+        },
+        {
+          "id": "0101",
+          "name": "华东"
+        }
+      ],
+      "source_name": null,
+      "source_url": null,
+      "in_article_url": null,
+      "out_article_url": null,
+      "in_article_title": null,
+      "out_article_title": null,
+      "source_link_status": "no_link",
+      "data_source": 0,
+      "publisher_id": 224479,
+      "relation_id": 0,
+      "ai_flag": 0,
+      "platform_product_line": null,
+      "mapping_status": "ambiguous",
+      "quality_flags": [
+        "source_link_missing"
+      ]
+    },
+    {
+      "news_id": "4882609",
+      "published_at": "2026-09-22T05:39:05.863Z",
+      "published_at_ms": 1790055545863,
+      "timezone": "Asia/Shanghai",
+      "content_text": "9月22日邯郸建筑钢材价格盘中稳，φ18三级3160，φ12三级3280，抗震盘3360。（元/吨）",
+      "content_html": "9月22日邯郸建筑钢材价格盘中稳，φ18三级3160，φ12三级3280，抗震盘3360。（元/吨）",
+      "raw_content": "9月22日邯郸建筑钢材价格盘中稳，φ18三级3160，φ12三级3280，抗震盘3360。（元/吨）",
+      "category": {
+        "id": 2,
+        "name": "2"
+      },
+      "section": {
+        "id": 7,
+        "name": "7"
+      },
+      "products": [
+        {
+          "id": "010101",
+          "name": "建筑钢材",
+          "source": "relationBreed"
+        }
+      ],
+      "regions": [
+        {
+          "id": "010403",
+          "name": "河北"
+        }
+      ],
+      "source_name": null,
+      "source_url": null,
+      "in_article_url": null,
+      "out_article_url": null,
+      "in_article_title": null,
+      "out_article_title": null,
+      "source_link_status": "no_link",
+      "data_source": 2,
+      "publisher_id": 220278,
+      "relation_id": 7636647,
+      "ai_flag": 0,
+      "platform_product_line": null,
+      "mapping_status": "ambiguous",
+      "quality_flags": [
+        "source_link_missing"
+      ]
+    },
+    {
+      "news_id": "4882608",
+      "published_at": "2026-09-22T05:38:47.298Z",
+      "published_at_ms": 1790055527298,
+      "timezone": "Asia/Shanghai",
+      "content_text": "9月22日，南通市场主流品牌一级灰报95-105元/吨，二级灰报70-85元/吨，平。",
+      "content_html": "9月22日，南通市场主流品牌一级灰报95-105元/吨，二级灰报70-85元/吨，平。",
+      "raw_content": "9月22日，南通市场主流品牌一级灰报95-105元/吨，二级灰报70-85元/吨，平。",
+      "category": {
+        "id": 6,
+        "name": "6"
+      },
+      "section": {
+        "id": 7,
+        "name": "7"
+      },
+      "products": [
+        {
+          "id": "10",
+          "name": "建筑材料",
+          "source": "relationBreed"
+        },
+        {
+          "id": "1014",
+          "name": "粉煤灰",
+          "source": "relationBreed"
+        }
+      ],
+      "regions": [
+        {
+          "id": "01",
+          "name": "国内"
+        },
+        {
+          "id": "0101",
+          "name": "华东"
+        }
+      ],
+      "source_name": null,
+      "source_url": null,
+      "in_article_url": null,
+      "out_article_url": null,
+      "in_article_title": null,
+      "out_article_title": null,
+      "source_link_status": "no_link",
+      "data_source": 0,
+      "publisher_id": 224479,
+      "relation_id": 0,
+      "ai_flag": 0,
+      "platform_product_line": null,
+      "mapping_status": "ambiguous",
+      "quality_flags": [
+        "source_link_missing"
+      ]
+    },
+    {
+      "news_id": "4882607",
+      "published_at": "2026-09-22T05:38:00.000Z",
+      "published_at_ms": 1790055480000,
+      "timezone": "Asia/Shanghai",
+      "content_text": "截至9月22日12：00，江苏地区钢厂铁水与废钢价差相比，铁水比废钢价格相比高207元/吨。（注：已考虑到废钢入炉造成的损耗等问题，此数据仅为当天即时成本理论值，且不含到厂物流成本）。",
+      "content_html": "截至9月22日12：00，江苏地区钢厂铁水与废钢价差相比，铁水比废钢价格相比高207元/吨。（注：已考虑到废钢入炉造成的损耗等问题，此数据仅为当天即时成本理论值，且不含到厂物流成本）。",
+      "raw_content": "截至9月22日12：00，江苏地区钢厂铁水与废钢价差相比，铁水比废钢价格相比高207元/吨。（注：已考虑到废钢入炉造成的损耗等问题，此数据仅为当天即时成本理论值，且不含到厂物流成本）。",
+      "category": {
+        "id": 2,
+        "name": "2"
+      },
+      "section": {
+        "id": 8,
+        "name": "8"
+      },
+      "products": [
+        {
+          "id": "030604",
+          "name": "普碳废钢",
+          "source": "relationBreed"
+        },
+        {
+          "id": "铁水",
+          "name": "铁水",
+          "source": "breedTag"
+        },
+        {
+          "id": "废钢",
+          "name": "废钢",
+          "source": "breedTag"
+        },
+        {
+          "id": "再生金属",
+          "name": "再生金属",
+          "source": "breedTag"
+        }
+      ],
+      "regions": [
+        {
+          "id": "0101",
+          "name": "华东"
+        }
+      ],
+      "source_name": "我的钢铁网(Mysteel)",
+      "source_url": "http://feigang.mysteel.com/a/26092213/14E0B8B4012C753B.html",
+      "in_article_url": "http://feigang.mysteel.com/a/26092213/14E0B8B4012C753B.html",
+      "out_article_url": null,
+      "in_article_title": "Mysteel数据：江苏废钢与铁水成本即时价差监测（20260922）",
+      "out_article_title": null,
+      "source_link_status": "article_link",
+      "data_source": 1,
+      "publisher_id": 224979,
+      "relation_id": 45942640,
+      "ai_flag": 0,
+      "platform_product_line": null,
+      "mapping_status": "ambiguous",
+      "quality_flags": []
+    },
+    {
+      "news_id": "4882606",
+      "published_at": "2026-09-22T05:38:00.000Z",
+      "published_at_ms": 1790055480000,
+      "timezone": "Asia/Shanghai",
+      "content_text": "9月21日，安克创新与阿里云达成战略合作，围绕AI大模型端云协同、全球化及智能终端联合创新展开。",
+      "content_html": "9月21日，安克创新与阿里云达成战略合作，围绕AI大模型端云协同、全球化及智能终端联合创新展开。",
+      "raw_content": "9月21日，安克创新与阿里云达成战略合作，围绕AI大模型端云协同、全球化及智能终端联合创新展开。",
+      "category": {
+        "id": 18,
+        "name": "18"
+      },
+      "section": {
+        "id": 8,
+        "name": "8"
+      },
+      "products": [],
+      "regions": [],
+      "source_name": "我的钢铁网(Mysteel)",
+      "source_url": "http://news.mysteel.com/a/26092213/313F88A0B157F48D.html",
+      "in_article_url": "http://news.mysteel.com/a/26092213/313F88A0B157F48D.html",
+      "out_article_url": null,
+      "in_article_title": "安克创新与阿里云围绕全栈AI达成战略合作",
+      "out_article_title": null,
+      "source_link_status": "article_link",
+      "data_source": 1,
+      "publisher_id": 216059,
+      "relation_id": 45942629,
+      "ai_flag": 0,
+      "platform_product_line": null,
+      "mapping_status": "unmapped",
+      "quality_flags": []
+    },
+    {
+      "news_id": "4882605",
+      "published_at": "2026-09-22T05:37:25.403Z",
+      "published_at_ms": 1790055445403,
+      "timezone": "Asia/Shanghai",
+      "content_text": "9月22日，淮安市场主流品牌S95矿渣粉价格报85-105元/吨，平。",
+      "content_html": "9月22日，淮安市场主流品牌S95矿渣粉价格报85-105元/吨，平。",
+      "raw_content": "9月22日，淮安市场主流品牌S95矿渣粉价格报85-105元/吨，平。",
+      "category": {
+        "id": 6,
+        "name": "6"
+      },
+      "section": {
+        "id": 7,
+        "name": "7"
+      },
+      "products": [
+        {
+          "id": "10",
+          "name": "建筑材料",
+          "source": "relationBreed"
+        },
+        {
+          "id": "1009",
+          "name": "矿渣粉",
+          "source": "relationBreed"
+        },
+        {
+          "id": "S95矿渣粉",
+          "name": "S95矿渣粉",
+          "source": "breedTag"
+        }
+      ],
+      "regions": [
+        {
+          "id": "01",
+          "name": "国内"
+        },
+        {
+          "id": "0101",
+          "name": "华东"
+        }
+      ],
+      "source_name": null,
+      "source_url": null,
+      "in_article_url": null,
+      "out_article_url": null,
+      "in_article_title": null,
+      "out_article_title": null,
+      "source_link_status": "no_link",
+      "data_source": 0,
+      "publisher_id": 224479,
+      "relation_id": 0,
+      "ai_flag": 0,
+      "platform_product_line": null,
+      "mapping_status": "ambiguous",
+      "quality_flags": [
+        "source_link_missing"
+      ]
+    },
+    {
+      "news_id": "4882604",
+      "published_at": "2026-09-22T05:36:05.351Z",
+      "published_at_ms": 1790055365351,
+      "timezone": "Asia/Shanghai",
+      "content_text": "9月22日，连云港市场主流品牌S95矿渣粉价格报105-125元/吨，平。",
+      "content_html": "9月22日，连云港市场主流品牌S95矿渣粉价格报105-125元/吨，平。",
+      "raw_content": "9月22日，连云港市场主流品牌S95矿渣粉价格报105-125元/吨，平。",
+      "category": {
+        "id": 6,
+        "name": "6"
+      },
+      "section": {
+        "id": 7,
+        "name": "7"
+      },
+      "products": [
+        {
+          "id": "10",
+          "name": "建筑材料",
+          "source": "relationBreed"
+        },
+        {
+          "id": "1009",
+          "name": "矿渣粉",
+          "source": "relationBreed"
+        },
+        {
+          "id": "S95矿渣粉",
+          "name": "S95矿渣粉",
+          "source": "breedTag"
+        }
+      ],
+      "regions": [
+        {
+          "id": "01",
+          "name": "国内"
+        },
+        {
+          "id": "0101",
+          "name": "华东"
+        }
+      ],
+      "source_name": null,
+      "source_url": null,
+      "in_article_url": null,
+      "out_article_url": null,
+      "in_article_title": null,
+      "out_article_title": null,
+      "source_link_status": "no_link",
+      "data_source": 0,
+      "publisher_id": 224479,
+      "relation_id": 0,
+      "ai_flag": 0,
+      "platform_product_line": null,
+      "mapping_status": "ambiguous",
+      "quality_flags": [
+        "source_link_missing"
+      ]
+    },
+    {
+      "news_id": "4882603",
+      "published_at": "2026-09-22T05:35:36.212Z",
+      "published_at_ms": 1790055336212,
+      "timezone": "Asia/Shanghai",
+      "content_text": "9月22日，徐州市场主流品牌S95矿渣粉价格报90-105元/吨，平。",
+      "content_html": "9月22日，徐州市场主流品牌S95矿渣粉价格报90-105元/吨，平。",
+      "raw_content": "9月22日，徐州市场主流品牌S95矿渣粉价格报90-105元/吨，平。",
+      "category": {
+        "id": 6,
+        "name": "6"
+      },
+      "section": {
+        "id": 7,
+        "name": "7"
+      },
+      "products": [
+        {
+          "id": "10",
+          "name": "建筑材料",
+          "source": "relationBreed"
+        },
+        {
+          "id": "1009",
+          "name": "矿渣粉",
+          "source": "relationBreed"
+        },
+        {
+          "id": "S95矿渣粉",
+          "name": "S95矿渣粉",
+          "source": "breedTag"
+        }
+      ],
+      "regions": [
+        {
+          "id": "01",
+          "name": "国内"
+        },
+        {
+          "id": "0101",
+          "name": "华东"
+        }
+      ],
+      "source_name": null,
+      "source_url": null,
+      "in_article_url": null,
+      "out_article_url": null,
+      "in_article_title": null,
+      "out_article_title": null,
+      "source_link_status": "no_link",
+      "data_source": 0,
+      "publisher_id": 224479,
+      "relation_id": 0,
+      "ai_flag": 0,
+      "platform_product_line": null,
+      "mapping_status": "ambiguous",
+      "quality_flags": [
+        "source_link_missing"
+      ]
+    },
+    {
+      "news_id": "4882601",
+      "published_at": "2026-09-22T05:35:14.011Z",
+      "published_at_ms": 1790055314011,
+      "timezone": "Asia/Shanghai",
+      "content_text": "9月22日，南通市场主流品牌S95矿渣粉价格报85-100元/吨，平。",
+      "content_html": "9月22日，南通市场主流品牌S95矿渣粉价格报85-100元/吨，平。",
+      "raw_content": "9月22日，南通市场主流品牌S95矿渣粉价格报85-100元/吨，平。",
+      "category": {
+        "id": 6,
+        "name": "6"
+      },
+      "section": {
+        "id": 7,
+        "name": "7"
+      },
+      "products": [
+        {
+          "id": "10",
+          "name": "建筑材料",
+          "source": "relationBreed"
+        },
+        {
+          "id": "1009",
+          "name": "矿渣粉",
+          "source": "relationBreed"
+        },
+        {
+          "id": "S95矿渣粉",
+          "name": "S95矿渣粉",
+          "source": "breedTag"
+        }
+      ],
+      "regions": [
+        {
+          "id": "01",
+          "name": "国内"
+        },
+        {
+          "id": "0101",
+          "name": "华东"
+        }
+      ],
+      "source_name": null,
+      "source_url": null,
+      "in_article_url": null,
+      "out_article_url": null,
+      "in_article_title": null,
+      "out_article_title": null,
+      "source_link_status": "no_link",
+      "data_source": 0,
+      "publisher_id": 224479,
+      "relation_id": 0,
+      "ai_flag": 0,
+      "platform_product_line": null,
+      "mapping_status": "ambiguous",
+      "quality_flags": [
+        "source_link_missing"
+      ]
+    },
+    {
+      "news_id": "4882602",
+      "published_at": "2026-09-22T05:35:00.000Z",
+      "published_at_ms": 1790055300000,
+      "timezone": "Asia/Shanghai",
+      "content_text": "9月22日，全国工商联发布了“2026中国民营企业500强”榜单。据Mysteel统计，共有15家电池及储能相关企业上榜，营业收入总计达2.27万亿元。15家上榜企业中，排名前三的是比亚迪股份有限公司、宁德时代新能源科技股份有限公司和天能控股集团有限公司，排名分别为5名、16名和34名。",
+      "content_html": "9月22日，全国工商联发布了“2026中国民营企业500强”榜单。据Mysteel统计，共有15家电池及储能相关企业上榜，营业收入总计达2.27万亿元。15家上榜企业中，排名前三的是比亚迪股份有限公司、宁德时代新能源科技股份有限公司和天能控股集团有限公司，排名分别为5名、16名和34名。",
+      "raw_content": "9月22日，全国工商联发布了“2026中国民营企业500强”榜单。据Mysteel统计，共有15家电池及储能相关企业上榜，营业收入总计达2.27万亿元。15家上榜企业中，排名前三的是比亚迪股份有限公司、宁德时代新能源科技股份有限公司和天能控股集团有限公司，排名分别为5名、16名和34名。",
+      "category": {
+        "id": 14,
+        "name": "14"
+      },
+      "section": {
+        "id": 8,
+        "name": "8"
+      },
+      "products": [
+        {
+          "id": "1102",
+          "name": "锂",
+          "source": "relationBreed"
+        },
+        {
+          "id": "电池",
+          "name": "电池",
+          "source": "breedTag"
+        }
+      ],
+      "regions": [],
+      "source_name": "我的钢铁网(Mysteel)",
+      "source_url": "http://news.mysteel.com/a/26092213/1F477AAA8D5279CD.html",
+      "in_article_url": "http://news.mysteel.com/a/26092213/1F477AAA8D5279CD.html",
+      "out_article_url": null,
+      "in_article_title": "Mysteel：2026中国民营企业500强出炉（电池及储能篇）",
+      "out_article_title": null,
+      "source_link_status": "article_link",
+      "data_source": 1,
+      "publisher_id": 221060,
+      "relation_id": 45942584,
+      "ai_flag": 0,
+      "platform_product_line": null,
+      "mapping_status": "ambiguous",
+      "quality_flags": []
+    },
+    {
+      "news_id": "4882600",
+      "published_at": "2026-09-22T05:34:51.600Z",
+      "published_at_ms": 1790055291600,
+      "timezone": "Asia/Shanghai",
+      "content_text": "9月22日，苏州市场主流品牌S95矿渣粉价格报80-95元/吨，平。",
+      "content_html": "9月22日，苏州市场主流品牌S95矿渣粉价格报80-95元/吨，平。",
+      "raw_content": "9月22日，苏州市场主流品牌S95矿渣粉价格报80-95元/吨，平。",
+      "category": {
+        "id": 6,
+        "name": "6"
+      },
+      "section": {
+        "id": 7,
+        "name": "7"
+      },
+      "products": [
+        {
+          "id": "10",
+          "name": "建筑材料",
+          "source": "relationBreed"
+        },
+        {
+          "id": "1009",
+          "name": "矿渣粉",
+          "source": "relationBreed"
+        },
+        {
+          "id": "S95矿渣粉",
+          "name": "S95矿渣粉",
+          "source": "breedTag"
+        }
+      ],
+      "regions": [
+        {
+          "id": "01",
+          "name": "国内"
+        },
+        {
+          "id": "0101",
+          "name": "华东"
+        }
+      ],
+      "source_name": null,
+      "source_url": null,
+      "in_article_url": null,
+      "out_article_url": null,
+      "in_article_title": null,
+      "out_article_title": null,
+      "source_link_status": "no_link",
+      "data_source": 0,
+      "publisher_id": 224479,
+      "relation_id": 0,
+      "ai_flag": 0,
+      "platform_product_line": null,
+      "mapping_status": "ambiguous",
+      "quality_flags": [
+        "source_link_missing"
+      ]
+    },
+    {
+      "news_id": "4882599",
+      "published_at": "2026-09-22T05:34:04.805Z",
+      "published_at_ms": 1790055244805,
+      "timezone": "Asia/Shanghai",
+      "content_text": "9月22日，无锡市场主流品牌S95矿渣粉价格报80-95元/吨，平。",
+      "content_html": "9月22日，无锡市场主流品牌S95矿渣粉价格报80-95元/吨，平。",
+      "raw_content": "9月22日，无锡市场主流品牌S95矿渣粉价格报80-95元/吨，平。",
+      "category": {
+        "id": 6,
+        "name": "6"
+      },
+      "section": {
+        "id": 7,
+        "name": "7"
+      },
+      "products": [
+        {
+          "id": "10",
+          "name": "建筑材料",
+          "source": "relationBreed"
+        },
+        {
+          "id": "1009",
+          "name": "矿渣粉",
+          "source": "relationBreed"
+        },
+        {
+          "id": "S95矿渣粉",
+          "name": "S95矿渣粉",
+          "source": "breedTag"
+        }
+      ],
+      "regions": [
+        {
+          "id": "01",
+          "name": "国内"
+        },
+        {
+          "id": "0101",
+          "name": "华东"
+        }
+      ],
+      "source_name": null,
+      "source_url": null,
+      "in_article_url": null,
+      "out_article_url": null,
+      "in_article_title": null,
+      "out_article_title": null,
+      "source_link_status": "no_link",
+      "data_source": 0,
+      "publisher_id": 224479,
+      "relation_id": 0,
+      "ai_flag": 0,
+      "platform_product_line": null,
+      "mapping_status": "ambiguous",
+      "quality_flags": [
+        "source_link_missing"
+      ]
+    },
+    {
+      "news_id": "4882598",
+      "published_at": "2026-09-22T05:33:39.674Z",
+      "published_at_ms": 1790055219674,
+      "timezone": "Asia/Shanghai",
+      "content_text": "9月22日午后唐山市场热镀锌管价格稳，4寸*3.75mm唐山正元报4070，唐山华岐报4050，迁安正大报4060，唐山源泰德润4010，过磅含税。（元/吨）",
+      "content_html": "9月22日午后唐山市场热镀锌管价格稳，4寸*3.75mm唐山正元报4070，唐山华岐报4050，迁安正大报4060，唐山源泰德润4010，过磅含税。（元/吨）",
+      "raw_content": "9月22日午后唐山市场热镀锌管价格稳，4寸*3.75mm唐山正元报4070，唐山华岐报4050，迁安正大报4060，唐山源泰德润4010，过磅含税。（元/吨）",
+      "category": {
+        "id": 2,
+        "name": "2"
+      },
+      "section": {
+        "id": 7,
+        "name": "7"
+      },
+      "products": [
+        {
+          "id": "01010905",
+          "name": "镀锌管",
+          "source": "relationBreed"
+        }
+      ],
+      "regions": [
+        {
+          "id": "01040302",
+          "name": "唐山"
+        }
+      ],
+      "source_name": null,
+      "source_url": null,
+      "in_article_url": null,
+      "out_article_url": null,
+      "in_article_title": null,
+      "out_article_title": null,
+      "source_link_status": "no_link",
+      "data_source": 2,
+      "publisher_id": 220575,
+      "relation_id": 7636646,
+      "ai_flag": 0,
+      "platform_product_line": null,
+      "mapping_status": "ambiguous",
+      "quality_flags": [
+        "source_link_missing"
+      ]
+    },
+    {
+      "news_id": "4882597",
+      "published_at": "2026-09-22T05:33:37.666Z",
+      "published_at_ms": 1790055217666,
+      "timezone": "Asia/Shanghai",
+      "content_text": "9月22日，南京市场主流品牌S95矿渣粉价格报85-105元/吨，平。",
+      "content_html": "9月22日，南京市场主流品牌S95矿渣粉价格报85-105元/吨，平。",
+      "raw_content": "9月22日，南京市场主流品牌S95矿渣粉价格报85-105元/吨，平。",
+      "category": {
+        "id": 6,
+        "name": "6"
+      },
+      "section": {
+        "id": 7,
+        "name": "7"
+      },
+      "products": [
+        {
+          "id": "10",
+          "name": "建筑材料",
+          "source": "relationBreed"
+        },
+        {
+          "id": "1009",
+          "name": "矿渣粉",
+          "source": "relationBreed"
+        },
+        {
+          "id": "S95矿渣粉",
+          "name": "S95矿渣粉",
+          "source": "breedTag"
+        }
+      ],
+      "regions": [
+        {
+          "id": "01",
+          "name": "国内"
+        },
+        {
+          "id": "0101",
+          "name": "华东"
+        }
+      ],
+      "source_name": null,
+      "source_url": null,
+      "in_article_url": null,
+      "out_article_url": null,
+      "in_article_title": null,
+      "out_article_title": null,
+      "source_link_status": "no_link",
+      "data_source": 0,
+      "publisher_id": 224479,
+      "relation_id": 0,
+      "ai_flag": 0,
+      "platform_product_line": null,
+      "mapping_status": "ambiguous",
+      "quality_flags": [
+        "source_link_missing"
+      ]
+    },
+    {
+      "news_id": "4882596",
+      "published_at": "2026-09-22T05:33:20.855Z",
+      "published_at_ms": 1790055200855,
+      "timezone": "Asia/Shanghai",
+      "content_text": "9月22日午后唐山市场焊管价格稳，4寸*3.75mm唐山华岐报3370，迁安正大报3370，唐山源泰德润报3370，过磅含税。（元/吨）",
+      "content_html": "9月22日午后唐山市场焊管价格稳，4寸*3.75mm唐山华岐报3370，迁安正大报3370，唐山源泰德润报3370，过磅含税。（元/吨）",
+      "raw_content": "9月22日午后唐山市场焊管价格稳，4寸*3.75mm唐山华岐报3370，迁安正大报3370，唐山源泰德润报3370，过磅含税。（元/吨）",
+      "category": {
+        "id": 2,
+        "name": "2"
+      },
+      "section": {
+        "id": 7,
+        "name": "7"
+      },
+      "products": [
+        {
+          "id": "01010903",
+          "name": "焊管",
+          "source": "relationBreed"
+        }
+      ],
+      "regions": [
+        {
+          "id": "01040302",
+          "name": "唐山"
+        }
+      ],
+      "source_name": null,
+      "source_url": null,
+      "in_article_url": null,
+      "out_article_url": null,
+      "in_article_title": null,
+      "out_article_title": null,
+      "source_link_status": "no_link",
+      "data_source": 2,
+      "publisher_id": 220575,
+      "relation_id": 7636645,
+      "ai_flag": 0,
+      "platform_product_line": null,
+      "mapping_status": "ambiguous",
+      "quality_flags": [
+        "source_link_missing"
+      ]
+    },
+    {
+      "news_id": "4882595",
+      "published_at": "2026-09-22T04:55:05.013Z",
+      "published_at_ms": 1790052905013,
+      "timezone": "Asia/Shanghai",
+      "content_text": "9月22日桂鑫建筑钢材出厂价格二次上涨20，螺纹3195，盘螺3475含税。",
+      "content_html": "9月22日桂鑫建筑钢材出厂价格二次上涨20，螺纹3195，盘螺3475含税。",
+      "raw_content": "9月22日桂鑫建筑钢材出厂价格二次上涨20，螺纹3195，盘螺3475含税。",
+      "category": {
+        "id": 2,
+        "name": "2"
+      },
+      "section": {
+        "id": 7,
+        "name": "7"
+      },
+      "products": [
+        {
+          "id": "0101",
+          "name": "普钢",
+          "source": "relationBreed"
+        },
+        {
+          "id": "螺纹钢",
+          "name": "螺纹钢",
+          "source": "breedTag"
+        },
+        {
+          "id": "盘螺",
+          "name": "盘螺",
+          "source": "breedTag"
+        }
+      ],
+      "regions": [
+        {
+          "id": "010202",
+          "name": "广西"
+        }
+      ],
+      "source_name": null,
+      "source_url": null,
+      "in_article_url": null,
+      "out_article_url": null,
+      "in_article_title": null,
+      "out_article_title": null,
+      "source_link_status": "no_link",
+      "data_source": 2,
+      "publisher_id": 211606,
+      "relation_id": 7636582,
+      "ai_flag": 0,
+      "platform_product_line": null,
+      "mapping_status": "ambiguous",
+      "quality_flags": [
+        "source_link_missing"
+      ]
+    },
+    {
       "news_id": "4882594",
       "published_at": "2026-09-22T04:34:16.942Z",
       "published_at_ms": 1790051656942,
       "timezone": "Asia/Shanghai",
-      "content_text": "镔鑫钢铁9月22日招标计划：钛铁（FeTi70-B）60吨，投标截止时间：2026-09-2411：00。",
-      "content_html": "镔鑫钢铁9月22日招标计划：钛铁（FeTi70-B）60吨，投标截止时间：2026-09-2411：00。",
-      "raw_content": "镔鑫钢铁9月22日招标计划：钛铁（FeTi70-B）60吨，投标截止时间：2026-09-2411：00。",
+      "content_text": "镔鑫钢铁9月22日招标计划：钛铁（FeTi70-B）20吨，投标截止时间：2026-09-2411：00。",
+      "content_html": "镔鑫钢铁9月22日招标计划：钛铁（FeTi70-B）20吨，投标截止时间：2026-09-2411：00。",
+      "raw_content": "镔鑫钢铁9月22日招标计划：钛铁（FeTi70-B）20吨，投标截止时间：2026-09-2411：00。",
       "category": {
         "id": 2,
         "name": "2"
@@ -2776,6 +5349,45 @@
       "quality_flags": [
         "source_link_missing"
       ]
+    },
+    {
+      "news_id": "4882618",
+      "published_at": "2026-09-22T03:54:00.000Z",
+      "published_at_ms": 1790049240000,
+      "timezone": "Asia/Shanghai",
+      "content_text": "潍坊振兴创园科技有限公司（原“潍坊振兴焦化有限公司”）36万吨合规焦化产能指标转移至山东潍焦集团薛城能源有限公司、山东雷奥新能源有限公司、山东万山集团有限公司。转移后，潍坊振兴创园科技产能归零；山东潍焦薛城能源转入14万吨至180万吨；山东雷奥新能源转入18万吨至96万吨；山东万山集团转入4万吨至106万吨。",
+      "content_html": "潍坊振兴创园科技有限公司（原“潍坊振兴焦化有限公司”）36万吨合规焦化产能指标转移至山东潍焦集团薛城能源有限公司、山东雷奥新能源有限公司、山东万山集团有限公司。转移后，潍坊振兴创园科技产能归零；山东潍焦薛城能源转入14万吨至180万吨；山东雷奥新能源转入18万吨至96万吨；山东万山集团转入4万吨至106万吨。",
+      "raw_content": "潍坊振兴创园科技有限公司（原“潍坊振兴焦化有限公司”）36万吨合规焦化产能指标转移至山东潍焦集团薛城能源有限公司、山东雷奥新能源有限公司、山东万山集团有限公司。转移后，潍坊振兴创园科技产能归零；山东潍焦薛城能源转入14万吨至180万吨；山东雷奥新能源转入18万吨至96万吨；山东万山集团转入4万吨至106万吨。",
+      "category": {
+        "id": 2,
+        "name": "2"
+      },
+      "section": {
+        "id": 8,
+        "name": "8"
+      },
+      "products": [
+        {
+          "id": "焦炭",
+          "name": "焦炭",
+          "source": "breedTag"
+        }
+      ],
+      "regions": [],
+      "source_name": "山东省工信厅",
+      "source_url": "http://news.mysteel.com/a/26092211/804D0EBAF2E03465.html",
+      "in_article_url": "http://news.mysteel.com/a/26092211/804D0EBAF2E03465.html",
+      "out_article_url": null,
+      "in_article_title": "潍坊振兴创园科技有限公司焦化产能转移公示",
+      "out_article_title": null,
+      "source_link_status": "article_link",
+      "data_source": 1,
+      "publisher_id": 207700,
+      "relation_id": 45942247,
+      "ai_flag": 0,
+      "platform_product_line": null,
+      "mapping_status": "ambiguous",
+      "quality_flags": []
     },
     {
       "news_id": "4882542",
@@ -72692,13 +75304,13 @@
           "source": "relationBreed"
         },
         {
-          "id": "1014",
-          "name": "粉煤灰",
+          "id": "1012",
+          "name": "防水材料",
           "source": "relationBreed"
         },
         {
-          "id": "1012",
-          "name": "防水材料",
+          "id": "1014",
+          "name": "粉煤灰",
           "source": "relationBreed"
         }
       ],
@@ -101302,6 +103914,10 @@
           "name": "亚洲"
         },
         {
+          "id": "0219",
+          "name": "欧洲"
+        },
+        {
           "id": "0220",
           "name": "大洋洲"
         },
@@ -101316,10 +103932,6 @@
         {
           "id": "0223",
           "name": "非洲"
-        },
-        {
-          "id": "0219",
-          "name": "欧洲"
         }
       ],
       "source_name": "我的钢铁网(Mysteel)",
@@ -120499,12 +123111,12 @@
           "name": "东北"
         },
         {
-          "id": "01050201",
-          "name": "长春"
-        },
-        {
           "id": "010502",
           "name": "吉林"
+        },
+        {
+          "id": "01050201",
+          "name": "长春"
         }
       ],
       "source_name": "我的钢铁网(Mysteel)",
@@ -129020,13 +131632,13 @@
     }
   ],
   "quality": {
-    "raw_count": 2500,
-    "accepted_count": 2490,
-    "rejected_count": 10,
+    "raw_count": 2600,
+    "accepted_count": 2543,
+    "rejected_count": 57,
     "deduped_count": 0,
-    "missing_source_link_count": 2033,
-    "missing_product_count": 47,
-    "malformed_content_count": 10,
+    "missing_source_link_count": 2074,
+    "missing_product_count": 54,
+    "malformed_content_count": 57,
     "duplicate_group_count": 0,
     "warnings": [
       "API 报告总量超过本次分页采集量；快照仅覆盖目标日期窗口，需按分类/地区拆分请求补全。"
