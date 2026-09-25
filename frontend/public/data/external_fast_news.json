@@ -6,10 +6,10 @@
     "dashboard_url": "https://www.mysteel.com/fastcomment/#/",
     "api_url": "https://openapi.mysteel.com/without_sign/newsflash/flashnews/query_by_tags.htm",
     "taxonomy_url": "https://a.mysteelcdn.com/common/publish/newsflash/newsflash_column.json",
-    "captured_at": "2026-09-25T04:48:09.730Z",
+    "captured_at": "2026-09-25T06:03:22.079Z",
     "coverage_start": "2026-09-25",
     "coverage_end": "2026-09-25",
-    "latest_published_at": "2026-09-25T03:53:47.583Z",
+    "latest_published_at": "2026-09-25T05:27:10.487Z",
     "timezone": "Asia/Shanghai",
     "fetch_mode": "api",
     "request_params": {
@@ -23,17 +23,17 @@
         ]
       ]
     },
-    "raw_sha256": "2ae16eac3437be024e416724b5533c47a8ca7ed9b03124b27a8d7fd45d8697c3",
+    "raw_sha256": "62242e2356447d63b36fc80490109e61a5f95e780b248482dbd04141c660ac06",
     "taxonomy_sha256": "c98f5bfdacde3401c98ea8f43bac3ca63d35b569f6aad3e1fff2f39b58a0dbf3",
     "response_sha256": [
-      "2015f0a4e9a9dc7c33dca2629aa80e32cb6b824e58cf66c40ae1ce564e94d217"
+      "0428fedb662acdba76a4e277d3b6dd064a95bd68d8ca62cea8ab15321af41f0f"
     ],
     "page_count": 1,
     "reported_total": 10000,
     "truncation_detected": true,
     "watermark": {
-      "publisher_time_ms": 1790308427583,
-      "id": "4889164"
+      "publisher_time_ms": 1790314030487,
+      "id": "4889166"
     },
     "retry": {
       "attempts": 3,
@@ -43,6 +43,90 @@
     }
   },
   "items": [
+    {
+      "news_id": "4889166",
+      "published_at": "2026-09-25T05:27:10.487Z",
+      "published_at_ms": 1790314030487,
+      "timezone": "Asia/Shanghai",
+      "content_text": "9月25日尊敬的客户您好！东海特钢通知：2026年9月25日即刻起重D2160，重C2240，重B2290，重A2330，优质二2360，优质一2390，精品钢2410。轻薄料、爆炸物、掺假重罚、带油拒收，友情提示：进厂前水箱必须放空，国六以上车型正常进出厂，严禁使用国五或换车头的方式进厂！",
+      "content_html": "9月25日尊敬的客户您好！东海特钢通知：2026年9月25日即刻起重D2160，重C2240，重B2290，重A2330，优质二2360，优质一2390，精品钢2410。轻薄料、爆炸物、掺假重罚、带油拒收，友情提示：进厂前水箱必须放空，国六以上车型正常进出厂，严禁使用国五或换车头的方式进厂！",
+      "raw_content": "9月25日尊敬的客户您好！东海特钢通知：2026年9月25日即刻起重D2160，重C2240，重B2290，重A2330，优质二2360，优质一2390，精品钢2410。轻薄料、爆炸物、掺假重罚、带油拒收，友情提示：进厂前水箱必须放空，国六以上车型正常进出厂，严禁使用国五或换车头的方式进厂！",
+      "category": {
+        "id": 2,
+        "name": "2"
+      },
+      "section": {
+        "id": 9,
+        "name": "9"
+      },
+      "products": [
+        {
+          "id": "0306",
+          "name": "废钢",
+          "source": "relationBreed"
+        },
+        {
+          "id": "轻废",
+          "name": "轻废",
+          "source": "breedTag"
+        }
+      ],
+      "regions": [
+        {
+          "id": "01040302",
+          "name": "唐山"
+        }
+      ],
+      "source_name": null,
+      "source_url": null,
+      "in_article_url": null,
+      "out_article_url": null,
+      "in_article_title": null,
+      "out_article_title": null,
+      "source_link_status": "no_link",
+      "data_source": 2,
+      "publisher_id": 215826,
+      "relation_id": 7643312,
+      "ai_flag": 0,
+      "platform_product_line": null,
+      "mapping_status": "ambiguous",
+      "quality_flags": [
+        "source_link_missing"
+      ]
+    },
+    {
+      "news_id": "4889165",
+      "published_at": "2026-09-25T05:18:04.077Z",
+      "published_at_ms": 1790313484077,
+      "timezone": "Asia/Shanghai",
+      "content_text": "据CME“美联储观察”：美联储10月会议维持利率在3.75%-4.00%不变的概率为32.5%，加息25个基点的概率为67.5%。美联储到12月维持利率在3.75%-4.00%不变的概率为5.2%，累计加息25个基点的概率为38.0%，累计加息50个基点的概率为56.8%。",
+      "content_html": "据CME“美联储观察”：美联储10月会议维持利率在3.75%-4.00%不变的概率为32.5%，加息25个基点的概率为67.5%。美联储到12月维持利率在3.75%-4.00%不变的概率为5.2%，累计加息25个基点的概率为38.0%，累计加息50个基点的概率为56.8%。",
+      "raw_content": "据CME“美联储观察”：美联储10月会议维持利率在3.75%-4.00%不变的概率为32.5%，加息25个基点的概率为67.5%。美联储到12月维持利率在3.75%-4.00%不变的概率为5.2%，累计加息25个基点的概率为38.0%，累计加息50个基点的概率为56.8%。",
+      "category": {
+        "id": 1,
+        "name": "1"
+      },
+      "section": {
+        "id": 8,
+        "name": "8"
+      },
+      "products": [],
+      "regions": [],
+      "source_name": "我的钢铁网",
+      "source_url": "https://news.mysteel.com/a/26092513/54E720C697E28616.html",
+      "in_article_url": "https://news.mysteel.com/a/26092513/54E720C697E28616.html",
+      "out_article_url": null,
+      "in_article_title": "美联储10月加息的概率为67.5%",
+      "out_article_title": null,
+      "source_link_status": "article_link",
+      "data_source": 1,
+      "publisher_id": 216058,
+      "relation_id": 45968298,
+      "ai_flag": 0,
+      "platform_product_line": null,
+      "mapping_status": "unmapped",
+      "quality_flags": []
+    },
     {
       "news_id": "4889164",
       "published_at": "2026-09-25T03:53:47.583Z",
@@ -1025,12 +1109,12 @@
   ],
   "quality": {
     "raw_count": 100,
-    "accepted_count": 18,
-    "rejected_count": 82,
+    "accepted_count": 20,
+    "rejected_count": 80,
     "deduped_count": 0,
-    "missing_source_link_count": 11,
-    "missing_product_count": 3,
-    "malformed_content_count": 82,
+    "missing_source_link_count": 12,
+    "missing_product_count": 4,
+    "malformed_content_count": 80,
     "duplicate_group_count": 0,
     "warnings": [
       "API 报告总量超过本次分页采集量；快照仅覆盖目标日期窗口，需按分类/地区拆分请求补全。"
