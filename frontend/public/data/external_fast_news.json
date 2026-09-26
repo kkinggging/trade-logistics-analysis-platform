@@ -6,10 +6,10 @@
     "dashboard_url": "https://www.mysteel.com/fastcomment/#/",
     "api_url": "https://openapi.mysteel.com/without_sign/newsflash/flashnews/query_by_tags.htm",
     "taxonomy_url": "https://a.mysteelcdn.com/common/publish/newsflash/newsflash_column.json",
-    "captured_at": "2026-09-26T06:02:15.448Z",
+    "captured_at": "2026-09-26T14:11:56.796Z",
     "coverage_start": "2026-09-26",
     "coverage_end": "2026-09-26",
-    "latest_published_at": "2026-09-26T03:56:56.393Z",
+    "latest_published_at": "2026-09-26T13:35:24.793Z",
     "timezone": "Asia/Shanghai",
     "fetch_mode": "api",
     "request_params": {
@@ -23,17 +23,17 @@
         ]
       ]
     },
-    "raw_sha256": "c1adb4fcf49a3c4ac94892cd2571420e8a255e89f5979912944f01d65a1b75db",
+    "raw_sha256": "983bf8a1e20b09a322b1b84e2ec0b973ae1331b4b3575168f27fa2375d6a5877",
     "taxonomy_sha256": "c98f5bfdacde3401c98ea8f43bac3ca63d35b569f6aad3e1fff2f39b58a0dbf3",
     "response_sha256": [
-      "0da5f60e58bdda8832de1be44f3be142ccfa44288fe6b737f0dd1cec9993b621"
+      "05d64c14cbead584b0eb8ce75f179befe28211dcbb5d05b73a9275a0465fda2a"
     ],
     "page_count": 1,
     "reported_total": 10000,
     "truncation_detected": true,
     "watermark": {
-      "publisher_time_ms": 1790395016393,
-      "id": "4889223"
+      "publisher_time_ms": 1790429724793,
+      "id": "4889240"
     },
     "retry": {
       "attempts": 3,
@@ -43,6 +43,827 @@
     }
   },
   "items": [
+    {
+      "news_id": "4889240",
+      "published_at": "2026-09-26T13:35:24.793Z",
+      "published_at_ms": 1790429724793,
+      "timezone": "Asia/Shanghai",
+      "content_text": "据本周Mysteel调研数据显示，在47家彩涂生产企业，整体开工率为88.89%，较上周下降1.85%；产能利用率为62.09%，较上周下降0.88%；周产量为20.47万吨，较上周减少0.29万吨；钢厂库存量为20.37万吨，较上周减少0.27万吨。",
+      "content_html": "据本周Mysteel调研数据显示，在47家彩涂生产企业，整体开工率为88.89%，较上周下降1.85%；产能利用率为62.09%，较上周下降0.88%；周产量为20.47万吨，较上周减少0.29万吨；钢厂库存量为20.37万吨，较上周减少0.27万吨。",
+      "raw_content": "据本周Mysteel调研数据显示，在47家彩涂生产企业，整体开工率为88.89%，较上周下降1.85%；产能利用率为62.09%，较上周下降0.88%；周产量为20.47万吨，较上周减少0.29万吨；钢厂库存量为20.37万吨，较上周减少0.27万吨。",
+      "category": {
+        "id": 2,
+        "name": "2"
+      },
+      "section": {
+        "id": 4,
+        "name": "4"
+      },
+      "products": [
+        {
+          "id": "01010502",
+          "name": "彩涂板卷",
+          "source": "relationBreed"
+        }
+      ],
+      "regions": [
+        {
+          "id": "01",
+          "name": "国内"
+        }
+      ],
+      "source_name": null,
+      "source_url": null,
+      "in_article_url": null,
+      "out_article_url": null,
+      "in_article_title": null,
+      "out_article_title": null,
+      "source_link_status": "no_link",
+      "data_source": 2,
+      "publisher_id": 227444,
+      "relation_id": 7643362,
+      "ai_flag": 0,
+      "platform_product_line": null,
+      "mapping_status": "ambiguous",
+      "quality_flags": [
+        "source_link_missing"
+      ]
+    },
+    {
+      "news_id": "4889241",
+      "published_at": "2026-09-26T13:34:00.000Z",
+      "published_at_ms": 1790429640000,
+      "timezone": "Asia/Shanghai",
+      "content_text": "据本周Mysteel调研数据显示，在47家彩涂生产企业，整体开工率为88.89%，较上周下降1.85个百分点；产能利用率为62.09%，较上周下降0.88个百分点；周产量为20.47万吨，较上周减少0.29万吨。 全国彩涂板卷总库存为42.12万吨，较上周减少0.62万吨，其中钢厂库存量为20.37万吨，较上周减少0.27万吨，社会库存为21.75万吨，较上周减少0.35万吨。",
+      "content_html": "据本周Mysteel调研数据显示，在47家彩涂生产企业，整体开工率为88.89%，较上周下降1.85个百分点；产能利用率为62.09%，较上周下降0.88个百分点；周产量为20.47万吨，较上周减少0.29万吨。\r\n\r\n全国彩涂板卷总库存为42.12万吨，较上周减少0.62万吨，其中钢厂库存量为20.37万吨，较上周减少0.27万吨，社会库存为21.75万吨，较上周减少0.35万吨。",
+      "raw_content": "据本周Mysteel调研数据显示，在47家彩涂生产企业，整体开工率为88.89%，较上周下降1.85个百分点；产能利用率为62.09%，较上周下降0.88个百分点；周产量为20.47万吨，较上周减少0.29万吨。\r\n\r\n全国彩涂板卷总库存为42.12万吨，较上周减少0.62万吨，其中钢厂库存量为20.37万吨，较上周减少0.27万吨，社会库存为21.75万吨，较上周减少0.35万吨。",
+      "category": {
+        "id": 2,
+        "name": "2"
+      },
+      "section": {
+        "id": 8,
+        "name": "8"
+      },
+      "products": [
+        {
+          "id": "01010502",
+          "name": "彩涂板卷",
+          "source": "relationBreed"
+        }
+      ],
+      "regions": [],
+      "source_name": "我的钢铁网(Mysteel)",
+      "source_url": "http://factory.mysteel.com/a/26092621/B049321BE4AEAD63.html",
+      "in_article_url": "http://factory.mysteel.com/a/26092621/B049321BE4AEAD63.html",
+      "out_article_url": null,
+      "in_article_title": "Mysteel数据：全国彩涂板卷钢厂周生产情况调查统计（09.18-09.25）",
+      "out_article_title": null,
+      "source_link_status": "article_link",
+      "data_source": 1,
+      "publisher_id": 227444,
+      "relation_id": 45968524,
+      "ai_flag": 0,
+      "platform_product_line": null,
+      "mapping_status": "ambiguous",
+      "quality_flags": []
+    },
+    {
+      "news_id": "4889239",
+      "published_at": "2026-09-26T12:14:18.061Z",
+      "published_at_ms": 1790424858061,
+      "timezone": "Asia/Shanghai",
+      "content_text": "Mysteel煤焦：9月26日唐山九江喷吹煤采购招标，无烟喷吹1480元/吨，较上期降50元/吨；烟煤1090元/吨，较上期持平。以上价格均为到厂价现金含税。",
+      "content_html": "Mysteel煤焦：9月26日唐山九江喷吹煤采购招标，无烟喷吹1480元/吨，较上期降50元/吨；烟煤1090元/吨，较上期持平。以上价格均为到厂价现金含税。",
+      "raw_content": "Mysteel煤焦：9月26日唐山九江喷吹煤采购招标，无烟喷吹1480元/吨，较上期降50元/吨；烟煤1090元/吨，较上期持平。以上价格均为到厂价现金含税。",
+      "category": {
+        "id": 12,
+        "name": "12"
+      },
+      "section": {
+        "id": 7,
+        "name": "7"
+      },
+      "products": [
+        {
+          "id": "050202",
+          "name": "炼焦煤",
+          "source": "relationBreed"
+        },
+        {
+          "id": "无烟喷吹煤",
+          "name": "无烟喷吹煤",
+          "source": "breedTag"
+        }
+      ],
+      "regions": [
+        {
+          "id": "01040302",
+          "name": "唐山"
+        }
+      ],
+      "source_name": null,
+      "source_url": null,
+      "in_article_url": null,
+      "out_article_url": null,
+      "in_article_title": null,
+      "out_article_title": null,
+      "source_link_status": "no_link",
+      "data_source": 2,
+      "publisher_id": 222387,
+      "relation_id": 7643361,
+      "ai_flag": 0,
+      "platform_product_line": null,
+      "mapping_status": "ambiguous",
+      "quality_flags": [
+        "source_link_missing"
+      ]
+    },
+    {
+      "news_id": "4889238",
+      "published_at": "2026-09-26T11:27:56.346Z",
+      "published_at_ms": 1790422076346,
+      "timezone": "Asia/Shanghai",
+      "content_text": "9月26日尊敬的客户您好！东海特钢通知：即刻起重D2170，重C2250，重B2300，重A2340，优质二2370，优质一2400，精品钢2420。轻薄料、爆炸物、掺假重罚、带油拒收，友情提示：进厂前水箱必须放空，国六以上车型正常进出厂，严禁使用国五或换车头的方式进厂！",
+      "content_html": "9月26日尊敬的客户您好！东海特钢通知：即刻起重D2170，重C2250，重B2300，重A2340，优质二2370，优质一2400，精品钢2420。轻薄料、爆炸物、掺假重罚、带油拒收，友情提示：进厂前水箱必须放空，国六以上车型正常进出厂，严禁使用国五或换车头的方式进厂！",
+      "raw_content": "9月26日尊敬的客户您好！东海特钢通知：即刻起重D2170，重C2250，重B2300，重A2340，优质二2370，优质一2400，精品钢2420。轻薄料、爆炸物、掺假重罚、带油拒收，友情提示：进厂前水箱必须放空，国六以上车型正常进出厂，严禁使用国五或换车头的方式进厂！",
+      "category": {
+        "id": 2,
+        "name": "2"
+      },
+      "section": {
+        "id": 9,
+        "name": "9"
+      },
+      "products": [
+        {
+          "id": "0306",
+          "name": "废钢",
+          "source": "relationBreed"
+        },
+        {
+          "id": "轻废",
+          "name": "轻废",
+          "source": "breedTag"
+        }
+      ],
+      "regions": [
+        {
+          "id": "01040302",
+          "name": "唐山"
+        }
+      ],
+      "source_name": null,
+      "source_url": null,
+      "in_article_url": null,
+      "out_article_url": null,
+      "in_article_title": null,
+      "out_article_title": null,
+      "source_link_status": "no_link",
+      "data_source": 2,
+      "publisher_id": 220615,
+      "relation_id": 7643360,
+      "ai_flag": 0,
+      "platform_product_line": null,
+      "mapping_status": "ambiguous",
+      "quality_flags": [
+        "source_link_missing"
+      ]
+    },
+    {
+      "news_id": "4889237",
+      "published_at": "2026-09-26T10:42:00.024Z",
+      "published_at_ms": 1790419320024,
+      "timezone": "Asia/Shanghai",
+      "content_text": "9月26日老东海通知:起废钢价格上调10元。,价格参考：优质A≥15mm2390,优质B≥12mm2370,优质C≥10mm2340,重A≥8mm2310,重B≥6mm2270,重C≥4mm2230,重D≥3mm2170,矽钢片瓜子料2270,矽钢片三角片2270,冷热轧小料2-4厚2310,冷热轧小料1-2厚2270,08铝小料2230,无缝管头2310,模具钢2390,钢筋头2390,不含税。",
+      "content_html": "9月26日老东海通知:起废钢价格上调10元。,价格参考：优质A≥15mm2390,优质B≥12mm2370,优质C≥10mm2340,重A≥8mm2310,重B≥6mm2270,重C≥4mm2230,重D≥3mm2170,矽钢片瓜子料2270,矽钢片三角片2270,冷热轧小料2-4厚2310,冷热轧小料1-2厚2270,08铝小料2230,无缝管头2310,模具钢2390,钢筋头2390,不含税。",
+      "raw_content": "9月26日老东海通知:起废钢价格上调10元。,价格参考：优质A≥15mm2390,优质B≥12mm2370,优质C≥10mm2340,重A≥8mm2310,重B≥6mm2270,重C≥4mm2230,重D≥3mm2170,矽钢片瓜子料2270,矽钢片三角片2270,冷热轧小料2-4厚2310,冷热轧小料1-2厚2270,08铝小料2230,无缝管头2310,模具钢2390,钢筋头2390,不含税。",
+      "category": {
+        "id": 2,
+        "name": "2"
+      },
+      "section": {
+        "id": 9,
+        "name": "9"
+      },
+      "products": [
+        {
+          "id": "0306",
+          "name": "废钢",
+          "source": "relationBreed"
+        },
+        {
+          "id": "钢筋头",
+          "name": "钢筋头",
+          "source": "breedTag"
+        },
+        {
+          "id": "冲花料",
+          "name": "冲花料",
+          "source": "breedTag"
+        },
+        {
+          "id": "再生金属",
+          "name": "再生金属",
+          "source": "breedTag"
+        }
+      ],
+      "regions": [
+        {
+          "id": "01040302",
+          "name": "唐山"
+        }
+      ],
+      "source_name": null,
+      "source_url": null,
+      "in_article_url": null,
+      "out_article_url": null,
+      "in_article_title": null,
+      "out_article_title": null,
+      "source_link_status": "no_link",
+      "data_source": 2,
+      "publisher_id": 220615,
+      "relation_id": 7643359,
+      "ai_flag": 0,
+      "platform_product_line": null,
+      "mapping_status": "ambiguous",
+      "quality_flags": [
+        "source_link_missing"
+      ]
+    },
+    {
+      "news_id": "4889236",
+      "published_at": "2026-09-26T10:14:37.276Z",
+      "published_at_ms": 1790417677276,
+      "timezone": "Asia/Shanghai",
+      "content_text": "9月26日东华废钢价格执行价格涨20：精品废钢2410工、角、槽、板统料12厚2410，工、角、槽、板统料10厚2390，工、角、槽、板统料8厚2370，工、角、槽、板统料6厚2350，工、角、槽、板统料3厚2330，6厚以上混料2290-2330，钢筋头8mm以上2390，面包铁2240，不含税。",
+      "content_html": "9月26日东华废钢价格执行价格涨20：精品废钢2410工、角、槽、板统料12厚2410，工、角、槽、板统料10厚2390，工、角、槽、板统料8厚2370，工、角、槽、板统料6厚2350，工、角、槽、板统料3厚2330，6厚以上混料2290-2330，钢筋头8mm以上2390，面包铁2240，不含税。",
+      "raw_content": "9月26日东华废钢价格执行价格涨20：精品废钢2410工、角、槽、板统料12厚2410，工、角、槽、板统料10厚2390，工、角、槽、板统料8厚2370，工、角、槽、板统料6厚2350，工、角、槽、板统料3厚2330，6厚以上混料2290-2330，钢筋头8mm以上2390，面包铁2240，不含税。",
+      "category": {
+        "id": 2,
+        "name": "2"
+      },
+      "section": {
+        "id": 9,
+        "name": "9"
+      },
+      "products": [
+        {
+          "id": "0306",
+          "name": "废钢",
+          "source": "relationBreed"
+        },
+        {
+          "id": "钢筋头",
+          "name": "钢筋头",
+          "source": "breedTag"
+        },
+        {
+          "id": "再生金属",
+          "name": "再生金属",
+          "source": "breedTag"
+        }
+      ],
+      "regions": [
+        {
+          "id": "01040302",
+          "name": "唐山"
+        }
+      ],
+      "source_name": null,
+      "source_url": null,
+      "in_article_url": null,
+      "out_article_url": null,
+      "in_article_title": null,
+      "out_article_title": null,
+      "source_link_status": "no_link",
+      "data_source": 2,
+      "publisher_id": 215826,
+      "relation_id": 7643357,
+      "ai_flag": 0,
+      "platform_product_line": null,
+      "mapping_status": "ambiguous",
+      "quality_flags": [
+        "source_link_missing"
+      ]
+    },
+    {
+      "news_id": "4889235",
+      "published_at": "2026-09-26T10:09:00.000Z",
+      "published_at_ms": 1790417340000,
+      "timezone": "Asia/Shanghai",
+      "content_text": "9月26日，2家钢厂上调废钢采购价10-20元/吨。",
+      "content_html": "9月26日，2家钢厂上调废钢采购价10-20元/吨。",
+      "raw_content": "9月26日，2家钢厂上调废钢采购价10-20元/吨。",
+      "category": {
+        "id": 2,
+        "name": "2"
+      },
+      "section": {
+        "id": 8,
+        "name": "8"
+      },
+      "products": [
+        {
+          "id": "废钢",
+          "name": "废钢",
+          "source": "breedTag"
+        },
+        {
+          "id": "再生金属",
+          "name": "再生金属",
+          "source": "breedTag"
+        }
+      ],
+      "regions": [],
+      "source_name": "我的钢铁网(Mysteel)",
+      "source_url": "http://news.mysteel.com/a/26092618/EA86560244F57953.html",
+      "in_article_url": "http://news.mysteel.com/a/26092618/EA86560244F57953.html",
+      "out_article_url": null,
+      "in_article_title": "9月26日废钢调价汇总：2家上涨",
+      "out_article_title": null,
+      "source_link_status": "article_link",
+      "data_source": 1,
+      "publisher_id": 221060,
+      "relation_id": 45968523,
+      "ai_flag": 0,
+      "platform_product_line": null,
+      "mapping_status": "ambiguous",
+      "quality_flags": []
+    },
+    {
+      "news_id": "4889234",
+      "published_at": "2026-09-26T10:07:27.226Z",
+      "published_at_ms": 1790417247226,
+      "timezone": "Asia/Shanghai",
+      "content_text": "9月26日蒙古国煤炭短盘运费价格指数报82.0元/吨，较上一通关日持平，9月份均价82.0元/吨。",
+      "content_html": "9月26日蒙古国煤炭短盘运费价格指数报82.0元/吨，较上一通关日持平，9月份均价82.0元/吨。",
+      "raw_content": "9月26日蒙古国煤炭短盘运费价格指数报82.0元/吨，较上一通关日持平，9月份均价82.0元/吨。",
+      "category": {
+        "id": 12,
+        "name": "12"
+      },
+      "section": {
+        "id": 7,
+        "name": "7"
+      },
+      "products": [
+        {
+          "id": "0502",
+          "name": "煤炭",
+          "source": "relationBreed"
+        }
+      ],
+      "regions": [
+        {
+          "id": "02",
+          "name": "国外"
+        }
+      ],
+      "source_name": null,
+      "source_url": null,
+      "in_article_url": null,
+      "out_article_url": null,
+      "in_article_title": null,
+      "out_article_title": null,
+      "source_link_status": "no_link",
+      "data_source": 2,
+      "publisher_id": 221633,
+      "relation_id": 7643356,
+      "ai_flag": 0,
+      "platform_product_line": null,
+      "mapping_status": "ambiguous",
+      "quality_flags": [
+        "source_link_missing"
+      ]
+    },
+    {
+      "news_id": "4889233",
+      "published_at": "2026-09-26T09:53:00.000Z",
+      "published_at_ms": 1790416380000,
+      "timezone": "Asia/Shanghai",
+      "content_text": "【Mysteel：中秋假期热点速递（9月26日）】中美达成八点共识；特朗普拒伊朗重开霍尔木兹海峡提议；沙特原油日出口升至600万桶；美联储释放鹰派信号，10月加息概率64.2%；Mysteel数据显示全国焊管成交量环比增长；华北管厂出库量环比增加；全球铁矿石发运量周环比减少91万吨至3425.8万吨。",
+      "content_html": "【Mysteel：中秋假期热点速递（9月26日）】中美达成八点共识；特朗普拒伊朗重开霍尔木兹海峡提议；沙特原油日出口升至600万桶；美联储释放鹰派信号，10月加息概率64.2%；Mysteel数据显示全国焊管成交量环比增长；华北管厂出库量环比增加；全球铁矿石发运量周环比减少91万吨至3425.8万吨。",
+      "raw_content": "【Mysteel：中秋假期热点速递（9月26日）】中美达成八点共识；特朗普拒伊朗重开霍尔木兹海峡提议；沙特原油日出口升至600万桶；美联储释放鹰派信号，10月加息概率64.2%；Mysteel数据显示全国焊管成交量环比增长；华北管厂出库量环比增加；全球铁矿石发运量周环比减少91万吨至3425.8万吨。",
+      "category": {
+        "id": 16,
+        "name": "16"
+      },
+      "section": {
+        "id": 8,
+        "name": "8"
+      },
+      "products": [
+        {
+          "id": "焊管",
+          "name": "焊管",
+          "source": "breedTag"
+        },
+        {
+          "id": "原油",
+          "name": "原油",
+          "source": "breedTag"
+        }
+      ],
+      "regions": [],
+      "source_name": "我的钢铁网(Mysteel)",
+      "source_url": "http://news.mysteel.com/a/26092617/CB8CC12671ED5063.html",
+      "in_article_url": "http://news.mysteel.com/a/26092617/CB8CC12671ED5063.html",
+      "out_article_url": null,
+      "in_article_title": "Mysteel：中秋假期热点速递（9月26日）",
+      "out_article_title": null,
+      "source_link_status": "article_link",
+      "data_source": 1,
+      "publisher_id": 221060,
+      "relation_id": 45968521,
+      "ai_flag": 0,
+      "platform_product_line": null,
+      "mapping_status": "ambiguous",
+      "quality_flags": []
+    },
+    {
+      "news_id": "4889232",
+      "published_at": "2026-09-26T09:33:40.512Z",
+      "published_at_ms": 1790415220512,
+      "timezone": "Asia/Shanghai",
+      "content_text": "9月26日唐山迁安普方坯资源出厂含税稳，报3000。（元/吨）",
+      "content_html": "9月26日唐山迁安普方坯资源出厂含税稳，报3000。（元/吨）",
+      "raw_content": "9月26日唐山迁安普方坯资源出厂含税稳，报3000。（元/吨）",
+      "category": {
+        "id": 2,
+        "name": "2"
+      },
+      "section": {
+        "id": 7,
+        "name": "7"
+      },
+      "products": [
+        {
+          "id": "0307",
+          "name": "钢坯",
+          "source": "relationBreed"
+        },
+        {
+          "id": "方坯",
+          "name": "方坯",
+          "source": "breedTag"
+        }
+      ],
+      "regions": [
+        {
+          "id": "010403",
+          "name": "河北"
+        }
+      ],
+      "source_name": null,
+      "source_url": null,
+      "in_article_url": null,
+      "out_article_url": null,
+      "in_article_title": null,
+      "out_article_title": null,
+      "source_link_status": "no_link",
+      "data_source": 2,
+      "publisher_id": 222972,
+      "relation_id": 7643355,
+      "ai_flag": 0,
+      "platform_product_line": null,
+      "mapping_status": "ambiguous",
+      "quality_flags": [
+        "source_link_missing"
+      ]
+    },
+    {
+      "news_id": "4889231",
+      "published_at": "2026-09-26T08:17:04.589Z",
+      "published_at_ms": 1790410624589,
+      "timezone": "Asia/Shanghai",
+      "content_text": "据 Mysteel 调研（全国 178 家焊管贸易商）显示，2026 年9月第4周（9.20-9.24）全国焊管成交量环比增长。本周全国焊管日均成交量13727吨，环比减少275吨，降幅2.0%，同比下降12.7%。",
+      "content_html": "据 Mysteel 调研（全国 178 家焊管贸易商）显示，2026 年9月第4周（9.20-9.24）全国焊管成交量环比增长。本周全国焊管日均成交量13727吨，环比减少275吨，降幅2.0%，同比下降12.7%。",
+      "raw_content": "据 Mysteel 调研（全国 178 家焊管贸易商）显示，2026 年9月第4周（9.20-9.24）全国焊管成交量环比增长。本周全国焊管日均成交量13727吨，环比减少275吨，降幅2.0%，同比下降12.7%。",
+      "category": {
+        "id": 2,
+        "name": "2"
+      },
+      "section": {
+        "id": 4,
+        "name": "4"
+      },
+      "products": [
+        {
+          "id": "010109",
+          "name": "钢管",
+          "source": "relationBreed"
+        },
+        {
+          "id": "焊管",
+          "name": "焊管",
+          "source": "breedTag"
+        }
+      ],
+      "regions": [],
+      "source_name": null,
+      "source_url": null,
+      "in_article_url": null,
+      "out_article_url": null,
+      "in_article_title": null,
+      "out_article_title": null,
+      "source_link_status": "no_link",
+      "data_source": 0,
+      "publisher_id": 208846,
+      "relation_id": 0,
+      "ai_flag": 0,
+      "platform_product_line": null,
+      "mapping_status": "ambiguous",
+      "quality_flags": [
+        "source_link_missing"
+      ]
+    },
+    {
+      "news_id": "4889230",
+      "published_at": "2026-09-26T08:12:42.691Z",
+      "published_at_ms": 1790410362691,
+      "timezone": "Asia/Shanghai",
+      "content_text": "据 Mysteel 调研（华北 10 家主流管厂）显示， 2026年9月第4周（9.20–9.24）华北管厂出库量环比增加。本周华北管厂日均出库量26068吨，周环比增加12吨，增幅0.05%，同比下降4.26%。",
+      "content_html": "据 Mysteel 调研（华北 10 家主流管厂）显示， 2026年9月第4周（9.20–9.24）华北管厂出库量环比增加。本周华北管厂日均出库量26068吨，周环比增加12吨，增幅0.05%，同比下降4.26%。",
+      "raw_content": "据 Mysteel 调研（华北 10 家主流管厂）显示， 2026年9月第4周（9.20–9.24）华北管厂出库量环比增加。本周华北管厂日均出库量26068吨，周环比增加12吨，增幅0.05%，同比下降4.26%。",
+      "category": {
+        "id": 2,
+        "name": "2"
+      },
+      "section": {
+        "id": 4,
+        "name": "4"
+      },
+      "products": [
+        {
+          "id": "010109",
+          "name": "钢管",
+          "source": "relationBreed"
+        }
+      ],
+      "regions": [],
+      "source_name": null,
+      "source_url": null,
+      "in_article_url": null,
+      "out_article_url": null,
+      "in_article_title": null,
+      "out_article_title": null,
+      "source_link_status": "no_link",
+      "data_source": 0,
+      "publisher_id": 208846,
+      "relation_id": 0,
+      "ai_flag": 0,
+      "platform_product_line": null,
+      "mapping_status": "ambiguous",
+      "quality_flags": [
+        "source_link_missing"
+      ]
+    },
+    {
+      "news_id": "4889229",
+      "published_at": "2026-09-26T08:11:00.000Z",
+      "published_at_ms": 1790410260000,
+      "timezone": "Asia/Shanghai",
+      "content_text": "沙特9月份的原油日出口量达到600万桶，是约七个月前伊朗战争爆发以来的最高水平。该国的原油出口规模已恢复至2025年的月度平均水平。",
+      "content_html": "沙特9月份的原油日出口量达到600万桶，是约七个月前伊朗战争爆发以来的最高水平。该国的原油出口规模已恢复至2025年的月度平均水平。",
+      "raw_content": "沙特9月份的原油日出口量达到600万桶，是约七个月前伊朗战争爆发以来的最高水平。该国的原油出口规模已恢复至2025年的月度平均水平。",
+      "category": {
+        "id": 1,
+        "name": "1"
+      },
+      "section": {
+        "id": 8,
+        "name": "8"
+      },
+      "products": [
+        {
+          "id": "原油",
+          "name": "原油",
+          "source": "breedTag"
+        }
+      ],
+      "regions": [],
+      "source_name": "财联社",
+      "source_url": "http://news.mysteel.com/a/26092616/7938D2B2EAB9D27F.html",
+      "in_article_url": "http://news.mysteel.com/a/26092616/7938D2B2EAB9D27F.html",
+      "out_article_url": null,
+      "in_article_title": "油市重磅：沙特9月出口量创伊朗战争爆发来新高，环比飙升近80%",
+      "out_article_title": null,
+      "source_link_status": "article_link",
+      "data_source": 1,
+      "publisher_id": 221060,
+      "relation_id": 45968517,
+      "ai_flag": 0,
+      "platform_product_line": null,
+      "mapping_status": "ambiguous",
+      "quality_flags": []
+    },
+    {
+      "news_id": "4889228",
+      "published_at": "2026-09-26T08:04:00.000Z",
+      "published_at_ms": 1790409840000,
+      "timezone": "Asia/Shanghai",
+      "content_text": "当地时间9月23日至25日，中国国家主席习近平对美国进行国事访问。其间，两国元首就中美建设性战略稳定关系及重大国际地区问题深入交换意见，达成八点成果共识。",
+      "content_html": "当地时间9月23日至25日，中国国家主席习近平对美国进行国事访问。其间，两国元首就中美建设性战略稳定关系及重大国际地区问题深入交换意见，达成八点成果共识。",
+      "raw_content": "当地时间9月23日至25日，中国国家主席习近平对美国进行国事访问。其间，两国元首就中美建设性战略稳定关系及重大国际地区问题深入交换意见，达成八点成果共识。",
+      "category": {
+        "id": 1,
+        "name": "1"
+      },
+      "section": {
+        "id": 8,
+        "name": "8"
+      },
+      "products": [],
+      "regions": [],
+      "source_name": "财联社",
+      "source_url": "http://news.mysteel.com/a/26092616/3540369C9FFE3956.html",
+      "in_article_url": "http://news.mysteel.com/a/26092616/3540369C9FFE3956.html",
+      "out_article_url": null,
+      "in_article_title": "中美达成八点成果共识",
+      "out_article_title": null,
+      "source_link_status": "article_link",
+      "data_source": 1,
+      "publisher_id": 221060,
+      "relation_id": 45968516,
+      "ai_flag": 0,
+      "platform_product_line": null,
+      "mapping_status": "unmapped",
+      "quality_flags": []
+    },
+    {
+      "news_id": "4889227",
+      "published_at": "2026-09-26T07:14:16.585Z",
+      "published_at_ms": 1790406856585,
+      "timezone": "Asia/Shanghai",
+      "content_text": "9月26日唐山迁安松汀钢铁普方坯资源稳，执行3010含税出厂。（元/吨）",
+      "content_html": "9月26日唐山迁安松汀钢铁普方坯资源稳，执行3010含税出厂。（元/吨）",
+      "raw_content": "9月26日唐山迁安松汀钢铁普方坯资源稳，执行3010含税出厂。（元/吨）",
+      "category": {
+        "id": 2,
+        "name": "2"
+      },
+      "section": {
+        "id": 7,
+        "name": "7"
+      },
+      "products": [
+        {
+          "id": "0307",
+          "name": "钢坯",
+          "source": "relationBreed"
+        },
+        {
+          "id": "方坯",
+          "name": "方坯",
+          "source": "breedTag"
+        }
+      ],
+      "regions": [
+        {
+          "id": "010403",
+          "name": "河北"
+        }
+      ],
+      "source_name": null,
+      "source_url": null,
+      "in_article_url": null,
+      "out_article_url": null,
+      "in_article_title": null,
+      "out_article_title": null,
+      "source_link_status": "no_link",
+      "data_source": 2,
+      "publisher_id": 222972,
+      "relation_id": 7643354,
+      "ai_flag": 0,
+      "platform_product_line": null,
+      "mapping_status": "ambiguous",
+      "quality_flags": [
+        "source_link_missing"
+      ]
+    },
+    {
+      "news_id": "4889226",
+      "published_at": "2026-09-26T07:06:32.496Z",
+      "published_at_ms": 1790406392496,
+      "timezone": "Asia/Shanghai",
+      "content_text": "9月26日唐山天柱废钢执行价格涨10~20：精品、火车轮、钢坯头2414元/吨，钢筋切段2361，轧制废料、特级2386，优质、轧辊2354，重A2338，重B2297，重C2260，冲豆2401，不含税。",
+      "content_html": "9月26日唐山天柱废钢执行价格涨10~20：精品、火车轮、钢坯头2414元/吨，钢筋切段2361，轧制废料、特级2386，优质、轧辊2354，重A2338，重B2297，重C2260，冲豆2401，不含税。",
+      "raw_content": "9月26日唐山天柱废钢执行价格涨10~20：精品、火车轮、钢坯头2414元/吨，钢筋切段2361，轧制废料、特级2386，优质、轧辊2354，重A2338，重B2297，重C2260，冲豆2401，不含税。",
+      "category": {
+        "id": 2,
+        "name": "2"
+      },
+      "section": {
+        "id": 9,
+        "name": "9"
+      },
+      "products": [
+        {
+          "id": "0306",
+          "name": "废钢",
+          "source": "relationBreed"
+        },
+        {
+          "id": "冲子",
+          "name": "冲子",
+          "source": "breedTag"
+        },
+        {
+          "id": "再生金属",
+          "name": "再生金属",
+          "source": "breedTag"
+        }
+      ],
+      "regions": [
+        {
+          "id": "01040302",
+          "name": "唐山"
+        }
+      ],
+      "source_name": null,
+      "source_url": null,
+      "in_article_url": null,
+      "out_article_url": null,
+      "in_article_title": null,
+      "out_article_title": null,
+      "source_link_status": "no_link",
+      "data_source": 2,
+      "publisher_id": 220615,
+      "relation_id": 7643353,
+      "ai_flag": 0,
+      "platform_product_line": null,
+      "mapping_status": "ambiguous",
+      "quality_flags": [
+        "source_link_missing"
+      ]
+    },
+    {
+      "news_id": "4889225",
+      "published_at": "2026-09-26T06:37:00.000Z",
+      "published_at_ms": 1790404620000,
+      "timezone": "Asia/Shanghai",
+      "content_text": "9月25日，中秋假期第1日，全社会跨区域人员流动量24219.8万人次，环比增长6%。其中：铁路客运量2176.1万人次，环比增长27%。",
+      "content_html": "9月25日，中秋假期第1日，全社会跨区域人员流动量24219.8万人次，环比增长6%。其中：铁路客运量2176.1万人次，环比增长27%。",
+      "raw_content": "9月25日，中秋假期第1日，全社会跨区域人员流动量24219.8万人次，环比增长6%。其中：铁路客运量2176.1万人次，环比增长27%。",
+      "category": {
+        "id": 1,
+        "name": "1"
+      },
+      "section": {
+        "id": 8,
+        "name": "8"
+      },
+      "products": [],
+      "regions": [],
+      "source_name": "财联社",
+      "source_url": "http://news.mysteel.com/a/26092614/468A7DB7823DB8EC.html",
+      "in_article_url": "http://news.mysteel.com/a/26092614/468A7DB7823DB8EC.html",
+      "out_article_url": null,
+      "in_article_title": "中秋假期首日全社会跨区域人员流动量24219.8万人次",
+      "out_article_title": null,
+      "source_link_status": "article_link",
+      "data_source": 1,
+      "publisher_id": 221060,
+      "relation_id": 45968511,
+      "ai_flag": 0,
+      "platform_product_line": null,
+      "mapping_status": "unmapped",
+      "quality_flags": []
+    },
+    {
+      "news_id": "4889224",
+      "published_at": "2026-09-26T06:36:00.000Z",
+      "published_at_ms": 1790404560000,
+      "timezone": "Asia/Shanghai",
+      "content_text": "美国《华尔街日报》援引美官员消息称，特朗普拒绝了伊朗七日内重开霍尔木兹海峡的提议，并告诉其助手他可能在11月美国国会中期选举后恢复对伊朗的轰炸。",
+      "content_html": "美国《华尔街日报》援引美官员消息称，特朗普拒绝了伊朗七日内重开霍尔木兹海峡的提议，并告诉其助手他可能在11月美国国会中期选举后恢复对伊朗的轰炸。",
+      "raw_content": "美国《华尔街日报》援引美官员消息称，特朗普拒绝了伊朗七日内重开霍尔木兹海峡的提议，并告诉其助手他可能在11月美国国会中期选举后恢复对伊朗的轰炸。",
+      "category": {
+        "id": 1,
+        "name": "1"
+      },
+      "section": {
+        "id": 8,
+        "name": "8"
+      },
+      "products": [],
+      "regions": [],
+      "source_name": "财联社",
+      "source_url": "http://news.mysteel.com/a/26092614/60B674C1E680263C.html",
+      "in_article_url": "http://news.mysteel.com/a/26092614/60B674C1E680263C.html",
+      "out_article_url": null,
+      "in_article_title": "特朗普拒绝伊朗七日内重开霍尔木兹海峡提议",
+      "out_article_title": null,
+      "source_link_status": "article_link",
+      "data_source": 1,
+      "publisher_id": 221060,
+      "relation_id": 45968510,
+      "ai_flag": 0,
+      "platform_product_line": null,
+      "mapping_status": "unmapped",
+      "quality_flags": []
+    },
     {
       "news_id": "4889223",
       "published_at": "2026-09-26T03:56:56.393Z",
@@ -1156,12 +1977,12 @@
   ],
   "quality": {
     "raw_count": 100,
-    "accepted_count": 23,
-    "rejected_count": 77,
+    "accepted_count": 41,
+    "rejected_count": 59,
     "deduped_count": 0,
-    "missing_source_link_count": 12,
-    "missing_product_count": 6,
-    "malformed_content_count": 77,
+    "missing_source_link_count": 23,
+    "missing_product_count": 9,
+    "malformed_content_count": 59,
     "duplicate_group_count": 0,
     "warnings": [
       "API 报告总量超过本次分页采集量；快照仅覆盖目标日期窗口，需按分类/地区拆分请求补全。"
