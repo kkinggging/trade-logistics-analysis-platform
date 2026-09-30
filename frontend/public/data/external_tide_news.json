@@ -3,7 +3,7 @@
   "source": {
     "source_id": "tide-global-news",
     "name": "潮汐早报 · Kagi News 五板块",
-    "captured_at": "2026-09-29T16:22:39.640Z",
+    "captured_at": "2026-09-30T06:35:36.342Z",
     "coverage_start": "2026-09-28T08:13:39.000Z",
     "coverage_end": "2026-09-29T06:20:10.000Z",
     "timezone": "Asia/Shanghai",
@@ -45,7 +45,7 @@
       "url": "https://news.kagi.com/world/latest",
       "item_count": 8,
       "errors": [],
-      "captured_at": "2026-09-29T16:22:39.640Z",
+      "captured_at": "2026-09-30T06:35:36.342Z",
       "fetch_mode": "rss+detail+local-images",
       "used_fallback": false
     },
@@ -55,7 +55,7 @@
       "url": "https://news.kagi.com/business/latest",
       "item_count": 8,
       "errors": [],
-      "captured_at": "2026-09-29T16:22:39.640Z",
+      "captured_at": "2026-09-30T06:35:36.342Z",
       "fetch_mode": "rss+detail+local-images",
       "used_fallback": false
     },
@@ -65,7 +65,7 @@
       "url": "https://news.kagi.com/science/latest",
       "item_count": 8,
       "errors": [],
-      "captured_at": "2026-09-29T16:22:39.640Z",
+      "captured_at": "2026-09-30T06:35:36.342Z",
       "fetch_mode": "rss+detail+local-images",
       "used_fallback": false
     },
@@ -75,7 +75,7 @@
       "url": "https://news.kagi.com/sports/latest",
       "item_count": 8,
       "errors": [],
-      "captured_at": "2026-09-29T16:22:39.640Z",
+      "captured_at": "2026-09-30T06:35:36.342Z",
       "fetch_mode": "rss+detail+local-images",
       "used_fallback": false
     }
