@@ -6,10 +6,10 @@
     "dashboard_url": "https://www.mysteel.com/fastcomment/#/",
     "api_url": "https://openapi.mysteel.com/without_sign/newsflash/flashnews/query_by_tags.htm",
     "taxonomy_url": "https://a.mysteelcdn.com/common/publish/newsflash/newsflash_column.json",
-    "captured_at": "2026-10-01T05:42:45.161Z",
+    "captured_at": "2026-10-01T07:08:41.206Z",
     "coverage_start": "2026-10-01",
     "coverage_end": "2026-10-01",
-    "latest_published_at": "2026-10-01T05:35:24.798Z",
+    "latest_published_at": "2026-10-01T07:00:00.000Z",
     "timezone": "Asia/Shanghai",
     "fetch_mode": "api",
     "request_params": {
@@ -23,17 +23,17 @@
         ]
       ]
     },
-    "raw_sha256": "b03c2967b20452ecc631a08304bf0c1411411689e75cb11877b9690d070fb74f",
+    "raw_sha256": "5a810e8431f56487682ba5f44d6612750e3d1ab8360ecd844ccf14c0fd46a627",
     "taxonomy_sha256": "c98f5bfdacde3401c98ea8f43bac3ca63d35b569f6aad3e1fff2f39b58a0dbf3",
     "response_sha256": [
-      "11c40211408fc82bda527e13675744de261388f6ede25497a9ec70900a8e2ee6"
+      "dc3b509242dd37f81a30f8b815fd3b03b9c03be2c758a601d7c627ce70e80ddb"
     ],
     "page_count": 1,
     "reported_total": 10000,
     "truncation_detected": true,
     "watermark": {
-      "publisher_time_ms": 1790832924798,
-      "id": "4898336"
+      "publisher_time_ms": 1790838000000,
+      "id": "4898345"
     },
     "retry": {
       "attempts": 3,
@@ -43,6 +43,498 @@
     }
   },
   "items": [
+    {
+      "news_id": "4898345",
+      "published_at": "2026-10-01T07:00:00.000Z",
+      "published_at_ms": 1790838000000,
+      "timezone": "Asia/Shanghai",
+      "content_text": "【Mysteel全国焊管社会库存情况调查统计】Mysteel主流钢材仓库（61家）周度调研数据显示：截至9月30日，全国焊管社会库存141.85万吨，周环比增长0.42%，月环比增长0.40%。国庆假期来临，但下游采购、补货不及预期，叠加月末协议量入库，社会库存微幅增加。从细分品种来看，直缝焊圆管、螺旋管、方矩管、镀锌方矩管社会库存增加，增幅在0.06%-0.96%，方矩管增幅最大；镀锌管社会库存微幅减少，降幅为0.01%。",
+      "content_html": "【Mysteel全国焊管社会库存情况调查统计】Mysteel主流钢材仓库（61家）周度调研数据显示：截至9月30日，全国焊管社会库存141.85万吨，周环比增长0.42%，月环比增长0.40%。国庆假期来临，但下游采购、补货不及预期，叠加月末协议量入库，社会库存微幅增加。从细分品种来看，直缝焊圆管、螺旋管、方矩管、镀锌方矩管社会库存增加，增幅在0.06%-0.96%，方矩管增幅最大；镀锌管社会库存微幅减少，降幅为0.01%。",
+      "raw_content": "【Mysteel全国焊管社会库存情况调查统计】Mysteel主流钢材仓库（61家）周度调研数据显示：截至9月30日，全国焊管社会库存141.85万吨，周环比增长0.42%，月环比增长0.40%。国庆假期来临，但下游采购、补货不及预期，叠加月末协议量入库，社会库存微幅增加。从细分品种来看，直缝焊圆管、螺旋管、方矩管、镀锌方矩管社会库存增加，增幅在0.06%-0.96%，方矩管增幅最大；镀锌管社会库存微幅减少，降幅为0.01%。",
+      "category": {
+        "id": 2,
+        "name": "2"
+      },
+      "section": {
+        "id": 4,
+        "name": "4"
+      },
+      "products": [
+        {
+          "id": "01010301",
+          "name": "热轧板卷",
+          "source": "relationBreed"
+        },
+        {
+          "id": "01010801",
+          "name": "热轧带钢",
+          "source": "relationBreed"
+        },
+        {
+          "id": "01010902",
+          "name": "螺旋管",
+          "source": "relationBreed"
+        },
+        {
+          "id": "01010903",
+          "name": "焊管",
+          "source": "relationBreed"
+        },
+        {
+          "id": "01010904",
+          "name": "方矩管",
+          "source": "relationBreed"
+        },
+        {
+          "id": "01010905",
+          "name": "镀锌管",
+          "source": "relationBreed"
+        },
+        {
+          "id": "01010907",
+          "name": "镀锌方矩管",
+          "source": "relationBreed"
+        },
+        {
+          "id": "螺旋焊接钢管",
+          "name": "螺旋焊接钢管",
+          "source": "breedTag"
+        }
+      ],
+      "regions": [
+        {
+          "id": "01",
+          "name": "国内"
+        }
+      ],
+      "source_name": "我的钢铁网(Mysteel)",
+      "source_url": "http://gg.mysteel.com/a/26093015/049F9FA8A58D07DA.html",
+      "in_article_url": "http://gg.mysteel.com/a/26093015/049F9FA8A58D07DA.html",
+      "out_article_url": null,
+      "in_article_title": "Mysteel数据：月末补库 焊管社会库存四连增（2026年9月30日）",
+      "out_article_title": null,
+      "source_link_status": "article_link",
+      "data_source": 1,
+      "publisher_id": 225963,
+      "relation_id": 46001134,
+      "ai_flag": 0,
+      "platform_product_line": "hot-rolled",
+      "mapping_status": "mapped",
+      "quality_flags": []
+    },
+    {
+      "news_id": "4898344",
+      "published_at": "2026-10-01T06:42:34.809Z",
+      "published_at_ms": 1790836954809,
+      "timezone": "Asia/Shanghai",
+      "content_text": "2026年10月1日起，加纳正式落地GSA新标准GS4510:2022，全面收紧二手车进口准入规则。新规彻底取消以往“超龄补税通关”的宽松操作。出厂超过10年二手车，禁止入境、禁止清关、无任何补救渠道。",
+      "content_html": "2026年10月1日起，加纳正式落地GSA新标准GS4510:2022，全面收紧二手车进口准入规则。新规彻底取消以往“超龄补税通关”的宽松操作。出厂超过10年二手车，禁止入境、禁止清关、无任何补救渠道。",
+      "raw_content": "2026年10月1日起，加纳正式落地GSA新标准GS4510:2022，全面收紧二手车进口准入规则。新规彻底取消以往“超龄补税通关”的宽松操作。出厂超过10年二手车，禁止入境、禁止清关、无任何补救渠道。",
+      "category": {
+        "id": 2,
+        "name": "2"
+      },
+      "section": {
+        "id": 4,
+        "name": "4"
+      },
+      "products": [
+        {
+          "id": "01",
+          "name": "钢铁",
+          "source": "relationBreed"
+        },
+        {
+          "id": "01010401",
+          "name": "冷轧板卷",
+          "source": "relationBreed"
+        },
+        {
+          "id": "010105",
+          "name": "涂镀板卷",
+          "source": "relationBreed"
+        },
+        {
+          "id": "01010501",
+          "name": "镀锌板卷",
+          "source": "relationBreed"
+        },
+        {
+          "id": "01010502",
+          "name": "彩涂板卷",
+          "source": "relationBreed"
+        }
+      ],
+      "regions": [],
+      "source_name": null,
+      "source_url": null,
+      "in_article_url": null,
+      "out_article_url": null,
+      "in_article_title": null,
+      "out_article_title": null,
+      "source_link_status": "no_link",
+      "data_source": 0,
+      "publisher_id": 208224,
+      "relation_id": 0,
+      "ai_flag": 0,
+      "platform_product_line": "cold-rolled",
+      "mapping_status": "mapped",
+      "quality_flags": [
+        "source_link_missing"
+      ]
+    },
+    {
+      "news_id": "4898343",
+      "published_at": "2026-10-01T06:32:37.647Z",
+      "published_at_ms": 1790836357647,
+      "timezone": "Asia/Shanghai",
+      "content_text": "曲靖恒特219连轧产线于10月1日-7日期间检修，预计累计影响产量约1.5万吨。",
+      "content_html": "<p>曲靖恒特219连轧产线于10月1日-7日期间检修，预计累计影响产量约1.5万吨。</p><br/>",
+      "raw_content": "<p>曲靖恒特219连轧产线于10月1日-7日期间检修，预计累计影响产量约1.5万吨。</p><br/>",
+      "category": {
+        "id": 2,
+        "name": "2"
+      },
+      "section": {
+        "id": 4,
+        "name": "4"
+      },
+      "products": [
+        {
+          "id": "010109",
+          "name": "钢管",
+          "source": "relationBreed"
+        },
+        {
+          "id": "01010901",
+          "name": "无缝管",
+          "source": "relationBreed"
+        }
+      ],
+      "regions": [],
+      "source_name": null,
+      "source_url": null,
+      "in_article_url": null,
+      "out_article_url": null,
+      "in_article_title": null,
+      "out_article_title": null,
+      "source_link_status": "no_link",
+      "data_source": 0,
+      "publisher_id": 208812,
+      "relation_id": 0,
+      "ai_flag": 0,
+      "platform_product_line": null,
+      "mapping_status": "ambiguous",
+      "quality_flags": [
+        "source_link_missing"
+      ]
+    },
+    {
+      "news_id": "4898342",
+      "published_at": "2026-10-01T06:30:00.000Z",
+      "published_at_ms": 1790836200000,
+      "timezone": "Asia/Shanghai",
+      "content_text": "Mysteel数据显示，9月24日至30日焊管产量降至24.33万吨，环比降2.73万吨，厂库微降缓解压力；镀锌管产量21.14万吨，环比降1.43万吨，厂库小幅增加。整体产能利用率下滑，原料库存减少，市场供应收缩。",
+      "content_html": "Mysteel数据显示，9月24日至30日焊管产量降至24.33万吨，环比降2.73万吨，厂库微降缓解压力；镀锌管产量21.14万吨，环比降1.43万吨，厂库小幅增加。整体产能利用率下滑，原料库存减少，市场供应收缩。",
+      "raw_content": "Mysteel数据显示，9月24日至30日焊管产量降至24.33万吨，环比降2.73万吨，厂库微降缓解压力；镀锌管产量21.14万吨，环比降1.43万吨，厂库小幅增加。整体产能利用率下滑，原料库存减少，市场供应收缩。",
+      "category": {
+        "id": 2,
+        "name": "2"
+      },
+      "section": {
+        "id": 4,
+        "name": "4"
+      },
+      "products": [
+        {
+          "id": "01010301",
+          "name": "热轧板卷",
+          "source": "relationBreed"
+        },
+        {
+          "id": "01010801",
+          "name": "热轧带钢",
+          "source": "relationBreed"
+        },
+        {
+          "id": "01010903",
+          "name": "焊管",
+          "source": "relationBreed"
+        },
+        {
+          "id": "镀锌管",
+          "name": "镀锌管",
+          "source": "breedTag"
+        }
+      ],
+      "regions": [
+        {
+          "id": "01",
+          "name": "国内"
+        }
+      ],
+      "source_name": "我的钢铁网(Mysteel)",
+      "source_url": "http://gg.mysteel.com/a/26093015/A37195DF19582F42.html",
+      "in_article_url": "http://gg.mysteel.com/a/26093015/A37195DF19582F42.html",
+      "out_article_url": null,
+      "in_article_title": "Mysteel数据：焊管产量明显减少 厂库压力有所缓解（9.24-9.30）",
+      "out_article_title": null,
+      "source_link_status": "article_link",
+      "data_source": 1,
+      "publisher_id": 222979,
+      "relation_id": 46001234,
+      "ai_flag": 0,
+      "platform_product_line": "hot-rolled",
+      "mapping_status": "mapped",
+      "quality_flags": []
+    },
+    {
+      "news_id": "4898341",
+      "published_at": "2026-10-01T06:30:00.000Z",
+      "published_at_ms": 1790836200000,
+      "timezone": "Asia/Shanghai",
+      "content_text": "本周全国30家无缝管生产企业产量41.29万吨，周环比增加0.45万吨；产能利用率82.8%，周环比增长0.9%；开工率71.29%，周环比持平。厂内库存89.59万吨，周环比增加1.26万吨，止降转增；原料库存34.17万吨，周环比增加0.89万吨。",
+      "content_html": "本周全国30家无缝管生产企业产量41.29万吨，周环比增加0.45万吨；产能利用率82.8%，周环比增长0.9%；开工率71.29%，周环比持平。厂内库存89.59万吨，周环比增加1.26万吨，止降转增；原料库存34.17万吨，周环比增加0.89万吨。",
+      "raw_content": "本周全国30家无缝管生产企业产量41.29万吨，周环比增加0.45万吨；产能利用率82.8%，周环比增长0.9%；开工率71.29%，周环比持平。厂内库存89.59万吨，周环比增加1.26万吨，止降转增；原料库存34.17万吨，周环比增加0.89万吨。",
+      "category": {
+        "id": 2,
+        "name": "2"
+      },
+      "section": {
+        "id": 4,
+        "name": "4"
+      },
+      "products": [
+        {
+          "id": "010109",
+          "name": "钢管",
+          "source": "relationBreed"
+        },
+        {
+          "id": "无缝管",
+          "name": "无缝管",
+          "source": "breedTag"
+        }
+      ],
+      "regions": [
+        {
+          "id": "01",
+          "name": "国内"
+        }
+      ],
+      "source_name": "我的钢铁网(Mysteel)",
+      "source_url": "http://gg.mysteel.com/a/26093014/058FFAF2D2D15794.html",
+      "in_article_url": "http://gg.mysteel.com/a/26093014/058FFAF2D2D15794.html",
+      "out_article_url": null,
+      "in_article_title": "Mysteel数据：无缝管产量持续增加 厂内库存止降转增（9.24-9.30）",
+      "out_article_title": null,
+      "source_link_status": "article_link",
+      "data_source": 1,
+      "publisher_id": 225535,
+      "relation_id": 46000781,
+      "ai_flag": 0,
+      "platform_product_line": null,
+      "mapping_status": "ambiguous",
+      "quality_flags": []
+    },
+    {
+      "news_id": "4898340",
+      "published_at": "2026-10-01T06:08:05.012Z",
+      "published_at_ms": 1790834885012,
+      "timezone": "Asia/Shanghai",
+      "content_text": "9月30日Mysteel调研本周全国热轧带钢主要市场样本库存总量118.24万吨，较上周增加5.69万吨，较上月同期增加19.82万吨，较去年同期（公历）增加28.36万吨。",
+      "content_html": "9月30日Mysteel调研本周全国热轧带钢主要市场样本库存总量118.24万吨，较上周增加5.69万吨，较上月同期增加19.82万吨，较去年同期（公历）增加28.36万吨。",
+      "raw_content": "9月30日Mysteel调研本周全国热轧带钢主要市场样本库存总量118.24万吨，较上周增加5.69万吨，较上月同期增加19.82万吨，较去年同期（公历）增加28.36万吨。",
+      "category": {
+        "id": 2,
+        "name": "2"
+      },
+      "section": {
+        "id": 4,
+        "name": "4"
+      },
+      "products": [
+        {
+          "id": "010108",
+          "name": "带钢",
+          "source": "relationBreed"
+        },
+        {
+          "id": "热轧带钢",
+          "name": "热轧带钢",
+          "source": "breedTag"
+        }
+      ],
+      "regions": [
+        {
+          "id": "01",
+          "name": "国内"
+        }
+      ],
+      "source_name": null,
+      "source_url": null,
+      "in_article_url": null,
+      "out_article_url": null,
+      "in_article_title": null,
+      "out_article_title": null,
+      "source_link_status": "no_link",
+      "data_source": 2,
+      "publisher_id": 210041,
+      "relation_id": 7652566,
+      "ai_flag": 0,
+      "platform_product_line": "hot-rolled",
+      "mapping_status": "mapped",
+      "quality_flags": [
+        "source_link_missing"
+      ]
+    },
+    {
+      "news_id": "4898339",
+      "published_at": "2026-10-01T06:02:00.000Z",
+      "published_at_ms": 1790834520000,
+      "timezone": "Asia/Shanghai",
+      "content_text": "张家港万达薄板有限公司出台10月份镀锌板卷表单价格，1.0*1250*C出厂表列价4150元/吨，较上一期出厂价格持平。",
+      "content_html": "张家港万达薄板有限公司出台10月份镀锌板卷表单价格，1.0*1250*C出厂表列价4150元/吨，较上一期出厂价格持平。",
+      "raw_content": "张家港万达薄板有限公司出台10月份镀锌板卷表单价格，1.0*1250*C出厂表列价4150元/吨，较上一期出厂价格持平。",
+      "category": {
+        "id": 2,
+        "name": "2"
+      },
+      "section": {
+        "id": 9,
+        "name": "9"
+      },
+      "products": [
+        {
+          "id": "01010501",
+          "name": "镀锌板卷",
+          "source": "relationBreed"
+        }
+      ],
+      "regions": [
+        {
+          "id": "01",
+          "name": "国内"
+        },
+        {
+          "id": "0101",
+          "name": "华东"
+        }
+      ],
+      "source_name": "我的钢铁网(Mysteel)",
+      "source_url": "http://factory.mysteel.com/a/26100114/FBE5DA9A9BEC5A44.html",
+      "in_article_url": "http://factory.mysteel.com/a/26100114/FBE5DA9A9BEC5A44.html",
+      "out_article_url": null,
+      "in_article_title": "张家港万达出台2026年10月镀锌板卷产品价格政策",
+      "out_article_title": null,
+      "source_link_status": "article_link",
+      "data_source": 1,
+      "publisher_id": 223477,
+      "relation_id": 46003199,
+      "ai_flag": 0,
+      "platform_product_line": null,
+      "mapping_status": "ambiguous",
+      "quality_flags": []
+    },
+    {
+      "news_id": "4898338",
+      "published_at": "2026-10-01T05:57:44.785Z",
+      "published_at_ms": 1790834264785,
+      "timezone": "Asia/Shanghai",
+      "content_text": "10月1日达州市场冶金焦价格下调110元/吨，现二级焦A＜13.5、S＜0.8、CSR＞60.0干基出厂现金含税报2365元/吨。",
+      "content_html": "10月1日达州市场冶金焦价格下调110元/吨，现二级焦A＜13.5、S＜0.8、CSR＞60.0干基出厂现金含税报2365元/吨。",
+      "raw_content": "10月1日达州市场冶金焦价格下调110元/吨，现二级焦A＜13.5、S＜0.8、CSR＞60.0干基出厂现金含税报2365元/吨。",
+      "category": {
+        "id": 12,
+        "name": "12"
+      },
+      "section": {
+        "id": 7,
+        "name": "7"
+      },
+      "products": [
+        {
+          "id": "050101",
+          "name": "冶金焦",
+          "source": "relationBreed"
+        },
+        {
+          "id": "二级焦",
+          "name": "二级焦",
+          "source": "breedTag"
+        }
+      ],
+      "regions": [
+        {
+          "id": "01060204",
+          "name": "达州"
+        }
+      ],
+      "source_name": null,
+      "source_url": null,
+      "in_article_url": null,
+      "out_article_url": null,
+      "in_article_title": null,
+      "out_article_title": null,
+      "source_link_status": "no_link",
+      "data_source": 2,
+      "publisher_id": 207839,
+      "relation_id": 7652958,
+      "ai_flag": 0,
+      "platform_product_line": null,
+      "mapping_status": "ambiguous",
+      "quality_flags": [
+        "source_link_missing"
+      ]
+    },
+    {
+      "news_id": "4898337",
+      "published_at": "2026-10-01T05:57:00.000Z",
+      "published_at_ms": 1790834220000,
+      "timezone": "Asia/Shanghai",
+      "content_text": "张家港万达薄板有限公司出台10月份冷轧板卷表单价格，1.0*1250*C出厂表列价4040元/吨，较上一期出厂价格持平。",
+      "content_html": "张家港万达薄板有限公司出台10月份冷轧板卷表单价格，1.0*1250*C出厂表列价4040元/吨，较上一期出厂价格持平。",
+      "raw_content": "张家港万达薄板有限公司出台10月份冷轧板卷表单价格，1.0*1250*C出厂表列价4040元/吨，较上一期出厂价格持平。",
+      "category": {
+        "id": 2,
+        "name": "2"
+      },
+      "section": {
+        "id": 9,
+        "name": "9"
+      },
+      "products": [
+        {
+          "id": "01010401",
+          "name": "冷轧板卷",
+          "source": "relationBreed"
+        }
+      ],
+      "regions": [
+        {
+          "id": "01",
+          "name": "国内"
+        },
+        {
+          "id": "0101",
+          "name": "华东"
+        }
+      ],
+      "source_name": "我的钢铁网(Mysteel)",
+      "source_url": "http://factory.mysteel.com/a/26100113/0CAFF495471A20D1.html",
+      "in_article_url": "http://factory.mysteel.com/a/26100113/0CAFF495471A20D1.html",
+      "out_article_url": null,
+      "in_article_title": "张家港万达出台2026年10月冷轧板卷产品价格政策",
+      "out_article_title": null,
+      "source_link_status": "article_link",
+      "data_source": 1,
+      "publisher_id": 223477,
+      "relation_id": 46003194,
+      "ai_flag": 0,
+      "platform_product_line": "cold-rolled",
+      "mapping_status": "mapped",
+      "quality_flags": []
+    },
     {
       "news_id": "4898336",
       "published_at": "2026-10-01T05:35:24.798Z",
@@ -2713,12 +3205,12 @@
   ],
   "quality": {
     "raw_count": 100,
-    "accepted_count": 53,
-    "rejected_count": 47,
+    "accepted_count": 62,
+    "rejected_count": 38,
     "deduped_count": 0,
-    "missing_source_link_count": 43,
+    "missing_source_link_count": 47,
     "missing_product_count": 2,
-    "malformed_content_count": 47,
+    "malformed_content_count": 38,
     "duplicate_group_count": 0,
     "warnings": [
       "API 报告总量超过本次分页采集量；快照仅覆盖目标日期窗口，需按分类/地区拆分请求补全。"
