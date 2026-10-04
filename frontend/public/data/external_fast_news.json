@@ -6,10 +6,10 @@
     "dashboard_url": "https://www.mysteel.com/fastcomment/#/",
     "api_url": "https://openapi.mysteel.com/without_sign/newsflash/flashnews/query_by_tags.htm",
     "taxonomy_url": "https://a.mysteelcdn.com/common/publish/newsflash/newsflash_column.json",
-    "captured_at": "2026-10-04T05:44:04.796Z",
+    "captured_at": "2026-10-04T06:45:32.684Z",
     "coverage_start": "2026-10-04",
     "coverage_end": "2026-10-04",
-    "latest_published_at": "2026-10-04T04:25:00.000Z",
+    "latest_published_at": "2026-10-04T06:15:49.750Z",
     "timezone": "Asia/Shanghai",
     "fetch_mode": "api",
     "request_params": {
@@ -23,17 +23,17 @@
         ]
       ]
     },
-    "raw_sha256": "a8ddfa30d5b145eb86fbe43a7ee9b5440c3efa73b9c10eb6915473a4cf9e5fd3",
+    "raw_sha256": "66aa1aad7416c812f40d35f5548380a32ebeffc1a46b5f0ecfaf6b3f8a5e3fe3",
     "taxonomy_sha256": "c98f5bfdacde3401c98ea8f43bac3ca63d35b569f6aad3e1fff2f39b58a0dbf3",
     "response_sha256": [
-      "57823ddd6da1c1c8bffd43d5fbc78b0af9bfd5de9270610b5985ffdddce95cef"
+      "25635981be3d6045dea90ac7bae8fdcd0f02e715500dfafe22f1f175772404e2"
     ],
     "page_count": 1,
     "reported_total": 10000,
     "truncation_detected": true,
     "watermark": {
-      "publisher_time_ms": 1791087900000,
-      "id": "4898482"
+      "publisher_time_ms": 1791094549750,
+      "id": "4898483"
     },
     "retry": {
       "attempts": 3,
@@ -43,6 +43,57 @@
     }
   },
   "items": [
+    {
+      "news_id": "4898483",
+      "published_at": "2026-10-04T06:15:49.750Z",
+      "published_at_ms": 1791094549750,
+      "timezone": "Asia/Shanghai",
+      "content_text": "10月4日敬业通知：10月4日13点起本部废钢价格调整，具体详见价格表。",
+      "content_html": "10月4日敬业通知：10月4日13点起本部废钢价格调整，具体详见价格表。",
+      "raw_content": "10月4日敬业通知：10月4日13点起本部废钢价格调整，具体详见价格表。",
+      "category": {
+        "id": 2,
+        "name": "2"
+      },
+      "section": {
+        "id": 9,
+        "name": "9"
+      },
+      "products": [
+        {
+          "id": "0306",
+          "name": "废钢",
+          "source": "relationBreed"
+        },
+        {
+          "id": "再生金属",
+          "name": "再生金属",
+          "source": "breedTag"
+        }
+      ],
+      "regions": [
+        {
+          "id": "01040301",
+          "name": "石家庄"
+        }
+      ],
+      "source_name": null,
+      "source_url": null,
+      "in_article_url": null,
+      "out_article_url": null,
+      "in_article_title": null,
+      "out_article_title": null,
+      "source_link_status": "no_link",
+      "data_source": 2,
+      "publisher_id": 221086,
+      "relation_id": 7653029,
+      "ai_flag": 0,
+      "platform_product_line": null,
+      "mapping_status": "ambiguous",
+      "quality_flags": [
+        "source_link_missing"
+      ]
+    },
     {
       "news_id": "4898482",
       "published_at": "2026-10-04T04:25:00.000Z",
@@ -1253,12 +1304,12 @@
   ],
   "quality": {
     "raw_count": 100,
-    "accepted_count": 25,
-    "rejected_count": 75,
+    "accepted_count": 26,
+    "rejected_count": 74,
     "deduped_count": 0,
-    "missing_source_link_count": 12,
+    "missing_source_link_count": 13,
     "missing_product_count": 6,
-    "malformed_content_count": 75,
+    "malformed_content_count": 74,
     "duplicate_group_count": 0,
     "warnings": [
       "API 报告总量超过本次分页采集量；快照仅覆盖目标日期窗口，需按分类/地区拆分请求补全。"
