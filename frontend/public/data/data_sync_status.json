@@ -1,6 +1,6 @@
 {
   "schema_version": "1.1",
-  "generated_at": "2026-10-05T05:29:52.683Z",
+  "generated_at": "2026-10-05T06:50:56.094Z",
   "schedule": "全量每天 18:00；我的钢铁网快讯每天 08:10、09:00；潮汐早报与霍尔木兹专题每天 09:00（Asia/Shanghai）",
   "scheduler": "cron 或 launchd（由部署环境安装；本仓库不自动启动后台服务）",
   "sources": {
@@ -86,9 +86,9 @@
       "quality_warnings": [
         "API 报告总量超过本次分页采集量；快照仅覆盖目标日期窗口，需按分类/地区拆分请求补全。"
       ],
-      "attempted_at": "2026-10-05T05:28:48.122Z",
-      "success_at": "2026-10-05T05:29:52.683Z",
-      "snapshot_captured_at": "2026-10-05T05:29:52.670Z",
+      "attempted_at": "2026-10-05T06:50:48.988Z",
+      "success_at": "2026-10-05T06:50:51.576Z",
+      "snapshot_captured_at": "2026-10-05T06:50:51.561Z",
       "coverage_end": "2026-10-05",
       "retry": {
         "attempts": 2,
@@ -106,9 +106,9 @@
         "历史上的今天：未取得可验证的人物/事件结构化数据，未虚构内容；请检查 Kagi 历史批次页访问与解析状态"
       ],
       "history_status": "unavailable",
-      "attempted_at": "2026-10-04T15:11:02.457Z",
-      "success_at": "2026-10-04T15:12:10.972Z",
-      "snapshot_captured_at": "2026-10-04T15:12:07.018Z",
+      "attempted_at": "2026-10-05T06:50:48.988Z",
+      "success_at": "2026-10-05T06:50:56.094Z",
+      "snapshot_captured_at": "2026-10-05T06:50:51.610Z",
       "coverage_end": "2026-10-04T07:52:42.000Z",
       "retry": {
         "attempts": 2,

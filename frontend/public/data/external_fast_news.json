@@ -6,7 +6,7 @@
     "dashboard_url": "https://www.mysteel.com/fastcomment/#/",
     "api_url": "https://openapi.mysteel.com/without_sign/newsflash/flashnews/query_by_tags.htm",
     "taxonomy_url": "https://a.mysteelcdn.com/common/publish/newsflash/newsflash_column.json",
-    "captured_at": "2026-10-05T05:29:52.670Z",
+    "captured_at": "2026-10-05T06:50:51.561Z",
     "coverage_start": "2026-10-05",
     "coverage_end": "2026-10-05",
     "latest_published_at": "2026-10-05T03:59:12.346Z",
@@ -23,10 +23,10 @@
         ]
       ]
     },
-    "raw_sha256": "d586dd5b953e20429e8c70ed7fc596b6a1268ca8605111ddf34528b458599605",
+    "raw_sha256": "af3935748f23516397b490c5284ec40b4a8d27130e710833fa676ffc8a034a75",
     "taxonomy_sha256": "c98f5bfdacde3401c98ea8f43bac3ca63d35b569f6aad3e1fff2f39b58a0dbf3",
     "response_sha256": [
-      "6920281bde00c6da50f34d8c3fb072d6afdb2997a1a433492053e46926464b9a"
+      "a89d13114b7b26c2fe2a343fcb112dc55dd05ac7af92b10c477220321f9b2896"
     ],
     "page_count": 1,
     "reported_total": 10000,
