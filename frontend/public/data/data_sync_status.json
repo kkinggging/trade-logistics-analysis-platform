@@ -1,6 +1,6 @@
 {
   "schema_version": "1.1",
-  "generated_at": "2026-10-06T16:33:50.371Z",
+  "generated_at": "2026-10-07T05:49:56.678Z",
   "schedule": "全量每天 18:00；我的钢铁网快讯每天 08:10、09:00；潮汐早报与霍尔木兹专题每天 09:00（Asia/Shanghai）",
   "scheduler": "cron 或 launchd（由部署环境安装；本仓库不自动启动后台服务）",
   "sources": {
@@ -81,12 +81,21 @@
     },
     "mysteel-fast-news": {
       "source_id": "mysteel-fast-news",
-      "state": "fallback",
-      "attempted_at": "2026-10-06T16:32:33.980Z",
-      "success_at": "2026-10-06T07:28:09.538Z",
-      "snapshot_captured_at": "2026-10-06T07:28:09.524Z",
-      "coverage_end": "2026-10-06",
-      "error": "本次抓取失败，继续使用上一次成功快照"
+      "state": "fresh",
+      "quality_state": "partial",
+      "quality_warnings": [
+        "API 报告总量超过本次分页采集量；快照仅覆盖目标日期窗口，需按分类/地区拆分请求补全。"
+      ],
+      "attempted_at": "2026-10-07T05:48:52.990Z",
+      "success_at": "2026-10-07T05:49:56.677Z",
+      "snapshot_captured_at": "2026-10-07T05:49:56.665Z",
+      "coverage_end": "2026-10-07",
+      "retry": {
+        "attempts": 2,
+        "timeoutMs": 180000,
+        "baseDelayMs": 3000,
+        "maxDelayMs": 15000
+      }
     },
     "tide-global-news": {
       "source_id": "tide-global-news",
