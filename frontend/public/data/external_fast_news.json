@@ -6,10 +6,10 @@
     "dashboard_url": "https://www.mysteel.com/fastcomment/#/",
     "api_url": "https://openapi.mysteel.com/without_sign/newsflash/flashnews/query_by_tags.htm",
     "taxonomy_url": "https://a.mysteelcdn.com/common/publish/newsflash/newsflash_column.json",
-    "captured_at": "2026-10-07T13:03:46.485Z",
+    "captured_at": "2026-10-07T13:33:03.192Z",
     "coverage_start": "2026-10-07",
     "coverage_end": "2026-10-07",
-    "latest_published_at": "2026-10-07T11:41:01.272Z",
+    "latest_published_at": "2026-10-07T13:17:00.000Z",
     "timezone": "Asia/Shanghai",
     "fetch_mode": "api",
     "request_params": {
@@ -23,17 +23,17 @@
         ]
       ]
     },
-    "raw_sha256": "6341902636b6ee55bfb900b96e0432733c1adc5bf0541fc80904170c299ab587",
+    "raw_sha256": "da004770640756864c00f952d27bd820ce1db1efabcae99af42bdefeba3ad710",
     "taxonomy_sha256": "c98f5bfdacde3401c98ea8f43bac3ca63d35b569f6aad3e1fff2f39b58a0dbf3",
     "response_sha256": [
-      "bf4c57af075c2c3f218a4c724db4c0d98aa0dfd5fdd9f190ded076c51d275e24"
+      "85c8366f196cc8ddf42d8c750834da313a02e40b4bd68669d8bbd8ba6c4550d6"
     ],
     "page_count": 1,
     "reported_total": 10000,
     "truncation_detected": true,
     "watermark": {
-      "publisher_time_ms": 1791373261272,
-      "id": "4898652"
+      "publisher_time_ms": 1791379020000,
+      "id": "4898654"
     },
     "retry": {
       "attempts": 3,
@@ -43,6 +43,269 @@
     }
   },
   "items": [
+    {
+      "news_id": "4898654",
+      "published_at": "2026-10-07T13:17:00.000Z",
+      "published_at_ms": 1791379020000,
+      "timezone": "Asia/Shanghai",
+      "content_text": "Mysteel数据显示，10月7日全国132城建筑钢材社会库存中，螺纹钢668.25万吨，周增17.53万吨；线材149.15万吨，周增6.9万吨。两者月环比及年同比均下降，其中华东区螺纹钢去库显著，整体库存仍低于去年同期水平。",
+      "content_html": "Mysteel数据显示，10月7日全国132城建筑钢材社会库存中，螺纹钢668.25万吨，周增17.53万吨；线材149.15万吨，周增6.9万吨。两者月环比及年同比均下降，其中华东区螺纹钢去库显著，整体库存仍低于去年同期水平。",
+      "raw_content": "Mysteel数据显示，10月7日全国132城建筑钢材社会库存中，螺纹钢668.25万吨，周增17.53万吨；线材149.15万吨，周增6.9万吨。两者月环比及年同比均下降，其中华东区螺纹钢去库显著，整体库存仍低于去年同期水平。",
+      "category": {
+        "id": 2,
+        "name": "2"
+      },
+      "section": {
+        "id": 6,
+        "name": "6"
+      },
+      "products": [
+        {
+          "id": "01010101",
+          "name": "螺纹钢",
+          "source": "relationBreed"
+        },
+        {
+          "id": "线材",
+          "name": "线材",
+          "source": "breedTag"
+        }
+      ],
+      "regions": [
+        {
+          "id": "01",
+          "name": "国内"
+        },
+        {
+          "id": "010102",
+          "name": "山东"
+        },
+        {
+          "id": "010103",
+          "name": "江苏"
+        },
+        {
+          "id": "010106",
+          "name": "江西"
+        },
+        {
+          "id": "010107",
+          "name": "安徽"
+        },
+        {
+          "id": "010201",
+          "name": "广东"
+        },
+        {
+          "id": "01020101",
+          "name": "广州"
+        },
+        {
+          "id": "010202",
+          "name": "广西"
+        },
+        {
+          "id": "010301",
+          "name": "河南"
+        },
+        {
+          "id": "01030101",
+          "name": "郑州"
+        },
+        {
+          "id": "010302",
+          "name": "湖北"
+        },
+        {
+          "id": "01030204",
+          "name": "武汉"
+        },
+        {
+          "id": "010303",
+          "name": "湖南"
+        },
+        {
+          "id": "01030301",
+          "name": "长沙"
+        },
+        {
+          "id": "010401",
+          "name": "北京"
+        },
+        {
+          "id": "010402",
+          "name": "天津"
+        },
+        {
+          "id": "010403",
+          "name": "河北"
+        },
+        {
+          "id": "010404",
+          "name": "山西"
+        },
+        {
+          "id": "010602",
+          "name": "四川"
+        },
+        {
+          "id": "01060201",
+          "name": "成都"
+        },
+        {
+          "id": "010701",
+          "name": "陕西"
+        }
+      ],
+      "source_name": "我的钢铁网(Mysteel)",
+      "source_url": "http://kucun.mysteel.com/a/26100721/625D6037FCDD5BA0.html",
+      "in_article_url": "http://kucun.mysteel.com/a/26100721/625D6037FCDD5BA0.html",
+      "out_article_url": null,
+      "in_article_title": "Mysteel数据:全国132个城市建筑钢材社会库存统计(2026.10.1-2026.10.7）",
+      "out_article_title": null,
+      "source_link_status": "article_link",
+      "data_source": 1,
+      "publisher_id": 224732,
+      "relation_id": 46004455,
+      "ai_flag": 0,
+      "platform_product_line": null,
+      "mapping_status": "ambiguous",
+      "quality_flags": []
+    },
+    {
+      "news_id": "4898653",
+      "published_at": "2026-10-07T13:16:00.000Z",
+      "published_at_ms": 1791378960000,
+      "timezone": "Asia/Shanghai",
+      "content_text": "Mysteel数据：10月7日35城建筑钢材社会库存周增。螺纹钢库存427.25万吨，周环比增12.13万吨；线材库存58.23万吨，周环比增2.81万吨。尽管周库存小幅回升，但两者月环比及年同比均显著下降，整体库存水平低于去年同期。",
+      "content_html": "Mysteel数据：10月7日35城建筑钢材社会库存周增。螺纹钢库存427.25万吨，周环比增12.13万吨；线材库存58.23万吨，周环比增2.81万吨。尽管周库存小幅回升，但两者月环比及年同比均显著下降，整体库存水平低于去年同期。",
+      "raw_content": "Mysteel数据：10月7日35城建筑钢材社会库存周增。螺纹钢库存427.25万吨，周环比增12.13万吨；线材库存58.23万吨，周环比增2.81万吨。尽管周库存小幅回升，但两者月环比及年同比均显著下降，整体库存水平低于去年同期。",
+      "category": {
+        "id": 2,
+        "name": "2"
+      },
+      "section": {
+        "id": 6,
+        "name": "6"
+      },
+      "products": [
+        {
+          "id": "010101",
+          "name": "建筑钢材",
+          "source": "relationBreed"
+        },
+        {
+          "id": "螺纹钢",
+          "name": "螺纹钢",
+          "source": "breedTag"
+        },
+        {
+          "id": "线材",
+          "name": "线材",
+          "source": "breedTag"
+        }
+      ],
+      "regions": [
+        {
+          "id": "01",
+          "name": "国内"
+        },
+        {
+          "id": "010102",
+          "name": "山东"
+        },
+        {
+          "id": "010103",
+          "name": "江苏"
+        },
+        {
+          "id": "010106",
+          "name": "江西"
+        },
+        {
+          "id": "010107",
+          "name": "安徽"
+        },
+        {
+          "id": "010201",
+          "name": "广东"
+        },
+        {
+          "id": "01020101",
+          "name": "广州"
+        },
+        {
+          "id": "010202",
+          "name": "广西"
+        },
+        {
+          "id": "010301",
+          "name": "河南"
+        },
+        {
+          "id": "01030101",
+          "name": "郑州"
+        },
+        {
+          "id": "010302",
+          "name": "湖北"
+        },
+        {
+          "id": "01030204",
+          "name": "武汉"
+        },
+        {
+          "id": "010303",
+          "name": "湖南"
+        },
+        {
+          "id": "01030301",
+          "name": "长沙"
+        },
+        {
+          "id": "010401",
+          "name": "北京"
+        },
+        {
+          "id": "010402",
+          "name": "天津"
+        },
+        {
+          "id": "010403",
+          "name": "河北"
+        },
+        {
+          "id": "010404",
+          "name": "山西"
+        },
+        {
+          "id": "010602",
+          "name": "四川"
+        },
+        {
+          "id": "01060201",
+          "name": "成都"
+        },
+        {
+          "id": "010701",
+          "name": "陕西"
+        }
+      ],
+      "source_name": "我的钢铁网(Mysteel)",
+      "source_url": "http://kucun.mysteel.com/a/26100721/83B08F64772A12C8.html",
+      "in_article_url": "http://kucun.mysteel.com/a/26100721/83B08F64772A12C8.html",
+      "out_article_url": null,
+      "in_article_title": "Mysteel数据：全国35主要城市建筑钢材社会库存统计（2026.10.1-2026.10.7）",
+      "out_article_title": null,
+      "source_link_status": "article_link",
+      "data_source": 1,
+      "publisher_id": 224732,
+      "relation_id": 46004456,
+      "ai_flag": 0,
+      "platform_product_line": null,
+      "mapping_status": "ambiguous",
+      "quality_flags": []
+    },
     {
       "news_id": "4898652",
       "published_at": "2026-10-07T11:41:01.272Z",
@@ -2810,10 +3073,6 @@
           "name": "沈阳"
         },
         {
-          "id": "01050102",
-          "name": "鞍山"
-        },
-        {
           "id": "01050103",
           "name": "大连"
         },
@@ -2824,6 +3083,10 @@
         {
           "id": "01050301",
           "name": "哈尔滨"
+        },
+        {
+          "id": "01050102",
+          "name": "鞍山"
         }
       ],
       "source_name": "我的钢铁网(Mysteel)",
@@ -4194,12 +4457,12 @@
   ],
   "quality": {
     "raw_count": 100,
-    "accepted_count": 77,
-    "rejected_count": 23,
+    "accepted_count": 79,
+    "rejected_count": 21,
     "deduped_count": 0,
     "missing_source_link_count": 39,
     "missing_product_count": 17,
-    "malformed_content_count": 23,
+    "malformed_content_count": 21,
     "duplicate_group_count": 0,
     "warnings": [
       "API 报告总量超过本次分页采集量；快照仅覆盖目标日期窗口，需按分类/地区拆分请求补全。"
