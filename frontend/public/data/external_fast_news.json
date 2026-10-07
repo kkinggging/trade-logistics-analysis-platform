@@ -6,10 +6,10 @@
     "dashboard_url": "https://www.mysteel.com/fastcomment/#/",
     "api_url": "https://openapi.mysteel.com/without_sign/newsflash/flashnews/query_by_tags.htm",
     "taxonomy_url": "https://a.mysteelcdn.com/common/publish/newsflash/newsflash_column.json",
-    "captured_at": "2026-10-07T05:49:56.665Z",
+    "captured_at": "2026-10-07T13:03:46.485Z",
     "coverage_start": "2026-10-07",
     "coverage_end": "2026-10-07",
-    "latest_published_at": "2026-10-07T05:48:06.754Z",
+    "latest_published_at": "2026-10-07T11:41:01.272Z",
     "timezone": "Asia/Shanghai",
     "fetch_mode": "api",
     "request_params": {
@@ -23,17 +23,17 @@
         ]
       ]
     },
-    "raw_sha256": "2b6f588b3e0a3e321348895314e9c97774cb16a1147b17cf3d373b56bc23b84e",
+    "raw_sha256": "6341902636b6ee55bfb900b96e0432733c1adc5bf0541fc80904170c299ab587",
     "taxonomy_sha256": "c98f5bfdacde3401c98ea8f43bac3ca63d35b569f6aad3e1fff2f39b58a0dbf3",
     "response_sha256": [
-      "a7e83527c1384c023d3bc157bac327510d310ca92a4503a1431c38fb4d27c084"
+      "bf4c57af075c2c3f218a4c724db4c0d98aa0dfd5fdd9f190ded076c51d275e24"
     ],
     "page_count": 1,
     "reported_total": 10000,
     "truncation_detected": true,
     "watermark": {
-      "publisher_time_ms": 1791352086754,
-      "id": "4898618"
+      "publisher_time_ms": 1791373261272,
+      "id": "4898652"
     },
     "retry": {
       "attempts": 3,
@@ -43,6 +43,1497 @@
     }
   },
   "items": [
+    {
+      "news_id": "4898652",
+      "published_at": "2026-10-07T11:41:01.272Z",
+      "published_at_ms": 1791373261272,
+      "timezone": "Asia/Shanghai",
+      "content_text": "AI芯片需求旺盛加剧半导体测试产能紧张，矽格确认涨价，已有存储客户加价锁产能。矽格前三季度营收173.46亿新台币，同比增长21.2%，创历史新高。公司启动涨价并加快扩产，全年资本开支增至88亿新台币。",
+      "content_html": "AI芯片需求旺盛加剧半导体测试产能紧张，矽格确认涨价，已有存储客户加价锁产能。矽格前三季度营收173.46亿新台币，同比增长21.2%，创历史新高。公司启动涨价并加快扩产，全年资本开支增至88亿新台币。",
+      "raw_content": "AI芯片需求旺盛加剧半导体测试产能紧张，矽格确认涨价，已有存储客户加价锁产能。矽格前三季度营收173.46亿新台币，同比增长21.2%，创历史新高。公司启动涨价并加快扩产，全年资本开支增至88亿新台币。",
+      "category": {
+        "id": 18,
+        "name": "18"
+      },
+      "section": {
+        "id": 8,
+        "name": "8"
+      },
+      "products": [],
+      "regions": [],
+      "source_name": "我的钢铁网",
+      "source_url": "https://news.mysteel.com/a/26100719/DE9221A7A8DB8FC7.html",
+      "in_article_url": "https://news.mysteel.com/a/26100719/DE9221A7A8DB8FC7.html",
+      "out_article_url": null,
+      "in_article_title": "AI芯片测试需求旺，矽格确认涨价，已有存储客户加价锁产能",
+      "out_article_title": null,
+      "source_link_status": "article_link",
+      "data_source": 1,
+      "publisher_id": 216059,
+      "relation_id": 46004445,
+      "ai_flag": 0,
+      "platform_product_line": null,
+      "mapping_status": "unmapped",
+      "quality_flags": []
+    },
+    {
+      "news_id": "4898651",
+      "published_at": "2026-10-07T10:59:21.310Z",
+      "published_at_ms": 1791370761310,
+      "timezone": "Asia/Shanghai",
+      "content_text": "10月7日Mysteel进口铁精粉与球团价格：65%精粉107.7，涨0.1，月均107.96，67.5%造球精粉114.75，涨0.1，月均115.01；63%球团112.75，月均113.01，65%球团123.3，月均123.56。（单位：美元/干吨）",
+      "content_html": "10月7日Mysteel进口铁精粉与球团价格：65%精粉107.7，涨0.1，月均107.96，67.5%造球精粉114.75，涨0.1，月均115.01；63%球团112.75，月均113.01，65%球团123.3，月均123.56。（单位：美元/干吨）",
+      "raw_content": "10月7日Mysteel进口铁精粉与球团价格：65%精粉107.7，涨0.1，月均107.96，67.5%造球精粉114.75，涨0.1，月均115.01；63%球团112.75，月均113.01，65%球团123.3，月均123.56。（单位：美元/干吨）",
+      "category": {
+        "id": 2,
+        "name": "2"
+      },
+      "section": {
+        "id": 7,
+        "name": "7"
+      },
+      "products": [
+        {
+          "id": "0311",
+          "name": "铁矿石",
+          "source": "relationBreed"
+        },
+        {
+          "id": "国产精粉",
+          "name": "国产精粉",
+          "source": "breedTag"
+        },
+        {
+          "id": "粉矿",
+          "name": "粉矿",
+          "source": "breedTag"
+        },
+        {
+          "id": "球团",
+          "name": "球团",
+          "source": "breedTag"
+        }
+      ],
+      "regions": [],
+      "source_name": null,
+      "source_url": null,
+      "in_article_url": null,
+      "out_article_url": null,
+      "in_article_title": null,
+      "out_article_title": null,
+      "source_link_status": "no_link",
+      "data_source": 2,
+      "publisher_id": 224053,
+      "relation_id": 7653132,
+      "ai_flag": 0,
+      "platform_product_line": null,
+      "mapping_status": "ambiguous",
+      "quality_flags": [
+        "source_link_missing"
+      ]
+    },
+    {
+      "news_id": "4898650",
+      "published_at": "2026-10-07T10:58:52.054Z",
+      "published_at_ms": 1791370732054,
+      "timezone": "Asia/Shanghai",
+      "content_text": "10月7日Mysteel铁矿石浮动溢价： 纽曼粉-0.9，平；金布巴粉-3.8，平；麦克粉-0.8，平；BRBF-0.5，平；卡粉-0.5，平。（单位：美元/干吨）",
+      "content_html": "10月7日Mysteel铁矿石浮动溢价：\r\n纽曼粉-0.9，平；金布巴粉-3.8，平；麦克粉-0.8，平；BRBF-0.5，平；卡粉-0.5，平。（单位：美元/干吨）",
+      "raw_content": "10月7日Mysteel铁矿石浮动溢价：\r\n纽曼粉-0.9，平；金布巴粉-3.8，平；麦克粉-0.8，平；BRBF-0.5，平；卡粉-0.5，平。（单位：美元/干吨）",
+      "category": {
+        "id": 2,
+        "name": "2"
+      },
+      "section": {
+        "id": 7,
+        "name": "7"
+      },
+      "products": [
+        {
+          "id": "0311",
+          "name": "铁矿石",
+          "source": "relationBreed"
+        },
+        {
+          "id": "纽曼粉",
+          "name": "纽曼粉",
+          "source": "breedTag"
+        },
+        {
+          "id": "金布巴粉",
+          "name": "金布巴粉",
+          "source": "breedTag"
+        },
+        {
+          "id": "麦克粉",
+          "name": "麦克粉",
+          "source": "breedTag"
+        }
+      ],
+      "regions": [],
+      "source_name": null,
+      "source_url": null,
+      "in_article_url": null,
+      "out_article_url": null,
+      "in_article_title": null,
+      "out_article_title": null,
+      "source_link_status": "no_link",
+      "data_source": 2,
+      "publisher_id": 224053,
+      "relation_id": 7653131,
+      "ai_flag": 0,
+      "platform_product_line": null,
+      "mapping_status": "ambiguous",
+      "quality_flags": [
+        "source_link_missing"
+      ]
+    },
+    {
+      "news_id": "4898649",
+      "published_at": "2026-10-07T10:58:17.187Z",
+      "published_at_ms": 1791370697187,
+      "timezone": "Asia/Shanghai",
+      "content_text": "10月7日Mysteel进口铁矿石62%澳洲粉矿远期现货指数92.65，涨0.1，月均92.91；65%巴西粉矿远期现货指数105.35，涨0.1，月均105.61; 58%高铝粉矿远期现货指数76.8，涨0.1，月均77.06。（单位：美元/干吨）",
+      "content_html": "10月7日Mysteel进口铁矿石62%澳洲粉矿远期现货指数92.65，涨0.1，月均92.91；65%巴西粉矿远期现货指数105.35，涨0.1，月均105.61; 58%高铝粉矿远期现货指数76.8，涨0.1，月均77.06。（单位：美元/干吨）",
+      "raw_content": "10月7日Mysteel进口铁矿石62%澳洲粉矿远期现货指数92.65，涨0.1，月均92.91；65%巴西粉矿远期现货指数105.35，涨0.1，月均105.61; 58%高铝粉矿远期现货指数76.8，涨0.1，月均77.06。（单位：美元/干吨）",
+      "category": {
+        "id": 2,
+        "name": "2"
+      },
+      "section": {
+        "id": 7,
+        "name": "7"
+      },
+      "products": [
+        {
+          "id": "0311",
+          "name": "铁矿石",
+          "source": "relationBreed"
+        }
+      ],
+      "regions": [
+        {
+          "id": "01",
+          "name": "国内"
+        }
+      ],
+      "source_name": null,
+      "source_url": null,
+      "in_article_url": null,
+      "out_article_url": null,
+      "in_article_title": null,
+      "out_article_title": null,
+      "source_link_status": "no_link",
+      "data_source": 2,
+      "publisher_id": 224053,
+      "relation_id": 7653130,
+      "ai_flag": 0,
+      "platform_product_line": null,
+      "mapping_status": "ambiguous",
+      "quality_flags": [
+        "source_link_missing"
+      ]
+    },
+    {
+      "news_id": "4898647",
+      "published_at": "2026-10-07T10:30:05.071Z",
+      "published_at_ms": 1791369005071,
+      "timezone": "Asia/Shanghai",
+      "content_text": "10月7日本网监测132个城市库存，本周线材（盘螺）社会库存149.15，周环比增加6.9，月环比减少16.66，年同比（公历）减少37.27，年同比（农历）减少34.75。（单位：万吨）",
+      "content_html": "10月7日本网监测132个城市库存，本周线材（盘螺）社会库存149.15，周环比增加6.9，月环比减少16.66，年同比（公历）减少37.27，年同比（农历）减少34.75。（单位：万吨）",
+      "raw_content": "10月7日本网监测132个城市库存，本周线材（盘螺）社会库存149.15，周环比增加6.9，月环比减少16.66，年同比（公历）减少37.27，年同比（农历）减少34.75。（单位：万吨）",
+      "category": {
+        "id": 2,
+        "name": "2"
+      },
+      "section": {
+        "id": 4,
+        "name": "4"
+      },
+      "products": [
+        {
+          "id": "010101",
+          "name": "建筑钢材",
+          "source": "relationBreed"
+        },
+        {
+          "id": "盘螺",
+          "name": "盘螺",
+          "source": "breedTag"
+        },
+        {
+          "id": "线材",
+          "name": "线材",
+          "source": "breedTag"
+        }
+      ],
+      "regions": [
+        {
+          "id": "01",
+          "name": "国内"
+        }
+      ],
+      "source_name": null,
+      "source_url": null,
+      "in_article_url": null,
+      "out_article_url": null,
+      "in_article_title": null,
+      "out_article_title": null,
+      "source_link_status": "no_link",
+      "data_source": 2,
+      "publisher_id": 209143,
+      "relation_id": 7653128,
+      "ai_flag": 0,
+      "platform_product_line": null,
+      "mapping_status": "ambiguous",
+      "quality_flags": [
+        "source_link_missing"
+      ]
+    },
+    {
+      "news_id": "4898645",
+      "published_at": "2026-10-07T10:30:05.049Z",
+      "published_at_ms": 1791369005049,
+      "timezone": "Asia/Shanghai",
+      "content_text": "10月7日本网监测35个主要城市库存，本周线材社会库存58.23，周环比增加2.81，月环比减少7.26，年同比（公历）减少18.31，年同比（农历）减少17.43。（单位：万吨）",
+      "content_html": "10月7日本网监测35个主要城市库存，本周线材社会库存58.23，周环比增加2.81，月环比减少7.26，年同比（公历）减少18.31，年同比（农历）减少17.43。（单位：万吨）",
+      "raw_content": "10月7日本网监测35个主要城市库存，本周线材社会库存58.23，周环比增加2.81，月环比减少7.26，年同比（公历）减少18.31，年同比（农历）减少17.43。（单位：万吨）",
+      "category": {
+        "id": 2,
+        "name": "2"
+      },
+      "section": {
+        "id": 4,
+        "name": "4"
+      },
+      "products": [
+        {
+          "id": "010101",
+          "name": "建筑钢材",
+          "source": "relationBreed"
+        },
+        {
+          "id": "线材",
+          "name": "线材",
+          "source": "breedTag"
+        }
+      ],
+      "regions": [
+        {
+          "id": "01",
+          "name": "国内"
+        }
+      ],
+      "source_name": null,
+      "source_url": null,
+      "in_article_url": null,
+      "out_article_url": null,
+      "in_article_title": null,
+      "out_article_title": null,
+      "source_link_status": "no_link",
+      "data_source": 2,
+      "publisher_id": 209143,
+      "relation_id": 7653127,
+      "ai_flag": 0,
+      "platform_product_line": null,
+      "mapping_status": "ambiguous",
+      "quality_flags": [
+        "source_link_missing"
+      ]
+    },
+    {
+      "news_id": "4898648",
+      "published_at": "2026-10-07T10:30:05.026Z",
+      "published_at_ms": 1791369005026,
+      "timezone": "Asia/Shanghai",
+      "content_text": "10月7日本网监测132个城市库存，本周螺纹钢社会库存668.25，周环比增加17.53，月环比减少98.46，年同比（公历）减少22.99，年同比（农历）减少13.70。（单位：万吨）",
+      "content_html": "10月7日本网监测132个城市库存，本周螺纹钢社会库存668.25，周环比增加17.53，月环比减少98.46，年同比（公历）减少22.99，年同比（农历）减少13.70。（单位：万吨）",
+      "raw_content": "10月7日本网监测132个城市库存，本周螺纹钢社会库存668.25，周环比增加17.53，月环比减少98.46，年同比（公历）减少22.99，年同比（农历）减少13.70。（单位：万吨）",
+      "category": {
+        "id": 2,
+        "name": "2"
+      },
+      "section": {
+        "id": 4,
+        "name": "4"
+      },
+      "products": [
+        {
+          "id": "010101",
+          "name": "建筑钢材",
+          "source": "relationBreed"
+        },
+        {
+          "id": "螺纹钢",
+          "name": "螺纹钢",
+          "source": "breedTag"
+        }
+      ],
+      "regions": [
+        {
+          "id": "01",
+          "name": "国内"
+        }
+      ],
+      "source_name": null,
+      "source_url": null,
+      "in_article_url": null,
+      "out_article_url": null,
+      "in_article_title": null,
+      "out_article_title": null,
+      "source_link_status": "no_link",
+      "data_source": 2,
+      "publisher_id": 209143,
+      "relation_id": 7653126,
+      "ai_flag": 0,
+      "platform_product_line": null,
+      "mapping_status": "ambiguous",
+      "quality_flags": [
+        "source_link_missing"
+      ]
+    },
+    {
+      "news_id": "4898646",
+      "published_at": "2026-10-07T10:30:05.013Z",
+      "published_at_ms": 1791369005013,
+      "timezone": "Asia/Shanghai",
+      "content_text": "10月7日本网监测35个主要城市库存，本周螺纹钢社会库存427.25，周环比增加12.13，月环比减少62.05，年同比（公历）减少40.05，年同比（农历）减少29.16。（单位：万吨）",
+      "content_html": "10月7日本网监测35个主要城市库存，本周螺纹钢社会库存427.25，周环比增加12.13，月环比减少62.05，年同比（公历）减少40.05，年同比（农历）减少29.16。（单位：万吨）",
+      "raw_content": "10月7日本网监测35个主要城市库存，本周螺纹钢社会库存427.25，周环比增加12.13，月环比减少62.05，年同比（公历）减少40.05，年同比（农历）减少29.16。（单位：万吨）",
+      "category": {
+        "id": 2,
+        "name": "2"
+      },
+      "section": {
+        "id": 4,
+        "name": "4"
+      },
+      "products": [
+        {
+          "id": "010101",
+          "name": "建筑钢材",
+          "source": "relationBreed"
+        },
+        {
+          "id": "螺纹钢",
+          "name": "螺纹钢",
+          "source": "breedTag"
+        }
+      ],
+      "regions": [
+        {
+          "id": "01",
+          "name": "国内"
+        }
+      ],
+      "source_name": null,
+      "source_url": null,
+      "in_article_url": null,
+      "out_article_url": null,
+      "in_article_title": null,
+      "out_article_title": null,
+      "source_link_status": "no_link",
+      "data_source": 2,
+      "publisher_id": 209143,
+      "relation_id": 7653125,
+      "ai_flag": 0,
+      "platform_product_line": null,
+      "mapping_status": "ambiguous",
+      "quality_flags": [
+        "source_link_missing"
+      ]
+    },
+    {
+      "news_id": "4898644",
+      "published_at": "2026-10-07T10:00:05.014Z",
+      "published_at_ms": 1791367205014,
+      "timezone": "Asia/Shanghai",
+      "content_text": "10月7日33个主要城市无缝管样本库存107.4，周环比增0.95，月环比增0.41，年同比增5.23。 （单位：万吨）",
+      "content_html": "10月7日33个主要城市无缝管样本库存107.4，周环比增0.95，月环比增0.41，年同比增5.23。 （单位：万吨）",
+      "raw_content": "10月7日33个主要城市无缝管样本库存107.4，周环比增0.95，月环比增0.41，年同比增5.23。 （单位：万吨）",
+      "category": {
+        "id": 2,
+        "name": "2"
+      },
+      "section": {
+        "id": 4,
+        "name": "4"
+      },
+      "products": [
+        {
+          "id": "010109",
+          "name": "钢管",
+          "source": "relationBreed"
+        },
+        {
+          "id": "无缝管",
+          "name": "无缝管",
+          "source": "breedTag"
+        }
+      ],
+      "regions": [
+        {
+          "id": "01",
+          "name": "国内"
+        }
+      ],
+      "source_name": null,
+      "source_url": null,
+      "in_article_url": null,
+      "out_article_url": null,
+      "in_article_title": null,
+      "out_article_title": null,
+      "source_link_status": "no_link",
+      "data_source": 2,
+      "publisher_id": 205678,
+      "relation_id": 7653112,
+      "ai_flag": 0,
+      "platform_product_line": null,
+      "mapping_status": "ambiguous",
+      "quality_flags": [
+        "source_link_missing"
+      ]
+    },
+    {
+      "news_id": "4898643",
+      "published_at": "2026-10-07T09:32:05.013Z",
+      "published_at_ms": 1791365525013,
+      "timezone": "Asia/Shanghai",
+      "content_text": "10月7日本网监测29个城市库存，本周冷轧板卷社会库存240.58，周环比增加5.99，月环比增加12.59，年同比(农历）减少2.77，年同比（公历)减少5.84。（单位：万吨） 7日本网监测重点城市库存，本周冷轧板卷社会库存272.56，周环比增加7.01，月环比增加15.15，年同比(农历）增加1.42，年同比（公历)减少1.31。（单位：万吨）",
+      "content_html": "10月7日本网监测29个城市库存，本周冷轧板卷社会库存240.58，周环比增加5.99，月环比增加12.59，年同比(农历）减少2.77，年同比（公历)减少5.84。（单位：万吨）\r\n7日本网监测重点城市库存，本周冷轧板卷社会库存272.56，周环比增加7.01，月环比增加15.15，年同比(农历）增加1.42，年同比（公历)减少1.31。（单位：万吨）",
+      "raw_content": "10月7日本网监测29个城市库存，本周冷轧板卷社会库存240.58，周环比增加5.99，月环比增加12.59，年同比(农历）减少2.77，年同比（公历)减少5.84。（单位：万吨）\r\n7日本网监测重点城市库存，本周冷轧板卷社会库存272.56，周环比增加7.01，月环比增加15.15，年同比(农历）增加1.42，年同比（公历)减少1.31。（单位：万吨）",
+      "category": {
+        "id": 2,
+        "name": "2"
+      },
+      "section": {
+        "id": 4,
+        "name": "4"
+      },
+      "products": [
+        {
+          "id": "010104",
+          "name": "冷轧",
+          "source": "relationBreed"
+        },
+        {
+          "id": "冷轧板卷",
+          "name": "冷轧板卷",
+          "source": "breedTag"
+        }
+      ],
+      "regions": [
+        {
+          "id": "01",
+          "name": "国内"
+        }
+      ],
+      "source_name": null,
+      "source_url": null,
+      "in_article_url": null,
+      "out_article_url": null,
+      "in_article_title": null,
+      "out_article_title": null,
+      "source_link_status": "no_link",
+      "data_source": 2,
+      "publisher_id": 225019,
+      "relation_id": 7653119,
+      "ai_flag": 0,
+      "platform_product_line": "cold-rolled",
+      "mapping_status": "mapped",
+      "quality_flags": [
+        "source_link_missing"
+      ]
+    },
+    {
+      "news_id": "4898640",
+      "published_at": "2026-10-07T09:30:05.106Z",
+      "published_at_ms": 1791365405106,
+      "timezone": "Asia/Shanghai",
+      "content_text": "10月7日本周全国81家工角槽钢厂开工率24.35%，较上周下降2.61%，产能利用率26.27%，较上周下降1.09%；工角槽产量32.29万吨，较上周减少1.34万吨；工角槽钢厂厂内库存138.13万吨，较上周增加7.89万吨。",
+      "content_html": "10月7日本周全国81家工角槽钢厂开工率24.35%，较上周下降2.61%，产能利用率26.27%，较上周下降1.09%；工角槽产量32.29万吨，较上周减少1.34万吨；工角槽钢厂厂内库存138.13万吨，较上周增加7.89万吨。",
+      "raw_content": "10月7日本周全国81家工角槽钢厂开工率24.35%，较上周下降2.61%，产能利用率26.27%，较上周下降1.09%；工角槽产量32.29万吨，较上周减少1.34万吨；工角槽钢厂厂内库存138.13万吨，较上周增加7.89万吨。",
+      "category": {
+        "id": 2,
+        "name": "2"
+      },
+      "section": {
+        "id": 4,
+        "name": "4"
+      },
+      "products": [
+        {
+          "id": "01010701",
+          "name": "工角槽",
+          "source": "relationBreed"
+        }
+      ],
+      "regions": [
+        {
+          "id": "01",
+          "name": "国内"
+        }
+      ],
+      "source_name": null,
+      "source_url": null,
+      "in_article_url": null,
+      "out_article_url": null,
+      "in_article_title": null,
+      "out_article_title": null,
+      "source_link_status": "no_link",
+      "data_source": 2,
+      "publisher_id": 211868,
+      "relation_id": 7653111,
+      "ai_flag": 0,
+      "platform_product_line": null,
+      "mapping_status": "ambiguous",
+      "quality_flags": [
+        "source_link_missing"
+      ]
+    },
+    {
+      "news_id": "4898641",
+      "published_at": "2026-10-07T09:30:05.092Z",
+      "published_at_ms": 1791365405092,
+      "timezone": "Asia/Shanghai",
+      "content_text": "10月7日北京建筑钢材市场库存59万吨，较9月30日增加0.74万吨，其中螺纹钢库存53.15万吨，较上周增加0.9万吨，盘线库存5.85万吨，较上周减少0.16万吨。（期现资源11万吨，环比减少1万吨。）",
+      "content_html": "10月7日北京建筑钢材市场库存59万吨，较9月30日增加0.74万吨，其中螺纹钢库存53.15万吨，较上周增加0.9万吨，盘线库存5.85万吨，较上周减少0.16万吨。（期现资源11万吨，环比减少1万吨。）",
+      "raw_content": "10月7日北京建筑钢材市场库存59万吨，较9月30日增加0.74万吨，其中螺纹钢库存53.15万吨，较上周增加0.9万吨，盘线库存5.85万吨，较上周减少0.16万吨。（期现资源11万吨，环比减少1万吨。）",
+      "category": {
+        "id": 2,
+        "name": "2"
+      },
+      "section": {
+        "id": 7,
+        "name": "7"
+      },
+      "products": [
+        {
+          "id": "010101",
+          "name": "建筑钢材",
+          "source": "relationBreed"
+        },
+        {
+          "id": "螺纹钢",
+          "name": "螺纹钢",
+          "source": "breedTag"
+        }
+      ],
+      "regions": [
+        {
+          "id": "010401",
+          "name": "北京"
+        }
+      ],
+      "source_name": null,
+      "source_url": null,
+      "in_article_url": null,
+      "out_article_url": null,
+      "in_article_title": null,
+      "out_article_title": null,
+      "source_link_status": "no_link",
+      "data_source": 2,
+      "publisher_id": 215321,
+      "relation_id": 7653108,
+      "ai_flag": 0,
+      "platform_product_line": null,
+      "mapping_status": "ambiguous",
+      "quality_flags": [
+        "source_link_missing"
+      ]
+    },
+    {
+      "news_id": "4898642",
+      "published_at": "2026-10-07T09:30:05.081Z",
+      "published_at_ms": 1791365405081,
+      "timezone": "Asia/Shanghai",
+      "content_text": "10月7日本网所盘上海全体仓库库存，其中螺纹24.59，增4.26；线材3.10，增0.11；盘螺7.97，增0.58。",
+      "content_html": "10月7日本网所盘上海全体仓库库存，其中螺纹24.59，增4.26；线材3.10，增0.11；盘螺7.97，增0.58。",
+      "raw_content": "10月7日本网所盘上海全体仓库库存，其中螺纹24.59，增4.26；线材3.10，增0.11；盘螺7.97，增0.58。",
+      "category": {
+        "id": 2,
+        "name": "2"
+      },
+      "section": {
+        "id": 4,
+        "name": "4"
+      },
+      "products": [
+        {
+          "id": "010101",
+          "name": "建筑钢材",
+          "source": "relationBreed"
+        },
+        {
+          "id": "螺纹钢",
+          "name": "螺纹钢",
+          "source": "breedTag"
+        },
+        {
+          "id": "盘螺",
+          "name": "盘螺",
+          "source": "breedTag"
+        },
+        {
+          "id": "线材",
+          "name": "线材",
+          "source": "breedTag"
+        }
+      ],
+      "regions": [
+        {
+          "id": "010101",
+          "name": "上海"
+        }
+      ],
+      "source_name": null,
+      "source_url": null,
+      "in_article_url": null,
+      "out_article_url": null,
+      "in_article_title": null,
+      "out_article_title": null,
+      "source_link_status": "no_link",
+      "data_source": 2,
+      "publisher_id": 210639,
+      "relation_id": 7653105,
+      "ai_flag": 0,
+      "platform_product_line": null,
+      "mapping_status": "ambiguous",
+      "quality_flags": [
+        "source_link_missing"
+      ]
+    },
+    {
+      "news_id": "4898639",
+      "published_at": "2026-10-07T09:30:05.015Z",
+      "published_at_ms": 1791365405015,
+      "timezone": "Asia/Shanghai",
+      "content_text": "10月7日我的钢铁网统计杭州库存螺纹80.76增2.14，盘螺14.91增0.38，线材12.3增0.15。船只26减15。",
+      "content_html": "10月7日我的钢铁网统计杭州库存螺纹80.76增2.14，盘螺14.91增0.38，线材12.3增0.15。船只26减15。",
+      "raw_content": "10月7日我的钢铁网统计杭州库存螺纹80.76增2.14，盘螺14.91增0.38，线材12.3增0.15。船只26减15。",
+      "category": {
+        "id": 2,
+        "name": "2"
+      },
+      "section": {
+        "id": 4,
+        "name": "4"
+      },
+      "products": [
+        {
+          "id": "010101",
+          "name": "建筑钢材",
+          "source": "relationBreed"
+        },
+        {
+          "id": "螺纹钢",
+          "name": "螺纹钢",
+          "source": "breedTag"
+        },
+        {
+          "id": "盘螺",
+          "name": "盘螺",
+          "source": "breedTag"
+        },
+        {
+          "id": "线材",
+          "name": "线材",
+          "source": "breedTag"
+        }
+      ],
+      "regions": [
+        {
+          "id": "010104",
+          "name": "浙江"
+        }
+      ],
+      "source_name": null,
+      "source_url": null,
+      "in_article_url": null,
+      "out_article_url": null,
+      "in_article_title": null,
+      "out_article_title": null,
+      "source_link_status": "no_link",
+      "data_source": 2,
+      "publisher_id": 212746,
+      "relation_id": 7653103,
+      "ai_flag": 0,
+      "platform_product_line": null,
+      "mapping_status": "ambiguous",
+      "quality_flags": [
+        "source_link_missing"
+      ]
+    },
+    {
+      "news_id": "4898638",
+      "published_at": "2026-10-07T08:28:29.484Z",
+      "published_at_ms": 1791361709484,
+      "timezone": "Asia/Shanghai",
+      "content_text": "10月7日唐山迁安普方坯资源出厂含税稳，报2970。（元/吨）",
+      "content_html": "10月7日唐山迁安普方坯资源出厂含税稳，报2970。（元/吨）",
+      "raw_content": "10月7日唐山迁安普方坯资源出厂含税稳，报2970。（元/吨）",
+      "category": {
+        "id": 2,
+        "name": "2"
+      },
+      "section": {
+        "id": 7,
+        "name": "7"
+      },
+      "products": [
+        {
+          "id": "0307",
+          "name": "钢坯",
+          "source": "relationBreed"
+        },
+        {
+          "id": "方坯",
+          "name": "方坯",
+          "source": "breedTag"
+        }
+      ],
+      "regions": [
+        {
+          "id": "010403",
+          "name": "河北"
+        }
+      ],
+      "source_name": null,
+      "source_url": null,
+      "in_article_url": null,
+      "out_article_url": null,
+      "in_article_title": null,
+      "out_article_title": null,
+      "source_link_status": "no_link",
+      "data_source": 2,
+      "publisher_id": 209974,
+      "relation_id": 7653124,
+      "ai_flag": 0,
+      "platform_product_line": null,
+      "mapping_status": "ambiguous",
+      "quality_flags": [
+        "source_link_missing"
+      ]
+    },
+    {
+      "news_id": "4898637",
+      "published_at": "2026-10-07T08:09:18.092Z",
+      "published_at_ms": 1791360558092,
+      "timezone": "Asia/Shanghai",
+      "content_text": "罗曼股份公告，控股子公司上海武桐树高新技术有限公司签订两份算力设备合同。其一与招商局融资租赁有限公司及招商局智融供应链服务有限公司签订买卖合同，金额约3.11亿元；其二与北京光码软件签订算力设备采购框架合同，金额约2.77亿元。",
+      "content_html": "罗曼股份公告，控股子公司上海武桐树高新技术有限公司签订两份算力设备合同。其一与招商局融资租赁有限公司及招商局智融供应链服务有限公司签订买卖合同，金额约3.11亿元；其二与北京光码软件签订算力设备采购框架合同，金额约2.77亿元。",
+      "raw_content": "罗曼股份公告，控股子公司上海武桐树高新技术有限公司签订两份算力设备合同。其一与招商局融资租赁有限公司及招商局智融供应链服务有限公司签订买卖合同，金额约3.11亿元；其二与北京光码软件签订算力设备采购框架合同，金额约2.77亿元。",
+      "category": {
+        "id": 18,
+        "name": "18"
+      },
+      "section": {
+        "id": 8,
+        "name": "8"
+      },
+      "products": [],
+      "regions": [],
+      "source_name": "我的钢铁网",
+      "source_url": "https://news.mysteel.com/a/26100716/3D14B88B3CFAFD82.html",
+      "in_article_url": "https://news.mysteel.com/a/26100716/3D14B88B3CFAFD82.html",
+      "out_article_url": null,
+      "in_article_title": "罗曼股份：子公司签订两份算力设备合同，合计5.88亿元",
+      "out_article_title": null,
+      "source_link_status": "article_link",
+      "data_source": 1,
+      "publisher_id": 216059,
+      "relation_id": 46004430,
+      "ai_flag": 0,
+      "platform_product_line": null,
+      "mapping_status": "unmapped",
+      "quality_flags": []
+    },
+    {
+      "news_id": "4898636",
+      "published_at": "2026-10-07T07:58:56.221Z",
+      "published_at_ms": 1791359936221,
+      "timezone": "Asia/Shanghai",
+      "content_text": "高盛表示，尽管美国数据中心面临政治和社区反对，但到2027年增长前景基本不变。该行将2026年底美国数据中心容量预测上调5吉瓦至64吉瓦，2027年底预测下调5吉瓦至90吉瓦，预计2026年和2027年美国数据中心电力需求均增长38%，分别为12吉瓦和17吉瓦。",
+      "content_html": "高盛表示，尽管美国数据中心面临政治和社区反对，但到2027年增长前景基本不变。该行将2026年底美国数据中心容量预测上调5吉瓦至64吉瓦，2027年底预测下调5吉瓦至90吉瓦，预计2026年和2027年美国数据中心电力需求均增长38%，分别为12吉瓦和17吉瓦。",
+      "raw_content": "高盛表示，尽管美国数据中心面临政治和社区反对，但到2027年增长前景基本不变。该行将2026年底美国数据中心容量预测上调5吉瓦至64吉瓦，2027年底预测下调5吉瓦至90吉瓦，预计2026年和2027年美国数据中心电力需求均增长38%，分别为12吉瓦和17吉瓦。",
+      "category": {
+        "id": 18,
+        "name": "18"
+      },
+      "section": {
+        "id": 8,
+        "name": "8"
+      },
+      "products": [],
+      "regions": [],
+      "source_name": "我的钢铁网",
+      "source_url": "https://news.mysteel.com/a/26100715/3DD6D8679BA5B1B3.html",
+      "in_article_url": "https://news.mysteel.com/a/26100715/3DD6D8679BA5B1B3.html",
+      "out_article_url": null,
+      "in_article_title": "美国数据中心抵制声浪愈演愈烈？高盛：到2027年增长前景基本不变",
+      "out_article_title": null,
+      "source_link_status": "article_link",
+      "data_source": 1,
+      "publisher_id": 216059,
+      "relation_id": 46004425,
+      "ai_flag": 0,
+      "platform_product_line": null,
+      "mapping_status": "unmapped",
+      "quality_flags": []
+    },
+    {
+      "news_id": "4898635",
+      "published_at": "2026-10-07T07:54:46.390Z",
+      "published_at_ms": 1791359686390,
+      "timezone": "Asia/Shanghai",
+      "content_text": "OpenAI首席执行官萨姆·奥尔特曼表示，社会应该接受人工智能技术带来的一些“负面事件”。",
+      "content_html": "OpenAI首席执行官萨姆·奥尔特曼表示，社会应该接受人工智能技术带来的一些“负面事件”。",
+      "raw_content": "OpenAI首席执行官萨姆·奥尔特曼表示，社会应该接受人工智能技术带来的一些“负面事件”。",
+      "category": {
+        "id": 18,
+        "name": "18"
+      },
+      "section": {
+        "id": 8,
+        "name": "8"
+      },
+      "products": [],
+      "regions": [],
+      "source_name": "我的钢铁网",
+      "source_url": "https://news.mysteel.com/a/26100715/5B4BBDC002D77A67.html",
+      "in_article_url": "https://news.mysteel.com/a/26100715/5B4BBDC002D77A67.html",
+      "out_article_url": null,
+      "in_article_title": "奥尔特曼：AI红利足以抵消部分风险， “坏事”发生也值得接受",
+      "out_article_title": null,
+      "source_link_status": "article_link",
+      "data_source": 1,
+      "publisher_id": 216059,
+      "relation_id": 46004424,
+      "ai_flag": 0,
+      "platform_product_line": null,
+      "mapping_status": "unmapped",
+      "quality_flags": []
+    },
+    {
+      "news_id": "4898634",
+      "published_at": "2026-10-07T07:50:00.000Z",
+      "published_at_ms": 1791359400000,
+      "timezone": "Asia/Shanghai",
+      "content_text": "云南方大钒钛新材料发布通告，自2026年10月7日起调整贵州区域产品规格价差。此次调整旨在优化市场定价体系，请相关客户及合作伙伴及时关注最新价格政策，做好业务对接与采购计划安排。",
+      "content_html": "云南方大钒钛新材料发布通告，自2026年10月7日起调整贵州区域产品规格价差。此次调整旨在优化市场定价体系，请相关客户及合作伙伴及时关注最新价格政策，做好业务对接与采购计划安排。",
+      "raw_content": "云南方大钒钛新材料发布通告，自2026年10月7日起调整贵州区域产品规格价差。此次调整旨在优化市场定价体系，请相关客户及合作伙伴及时关注最新价格政策，做好业务对接与采购计划安排。",
+      "category": {
+        "id": 2,
+        "name": "2"
+      },
+      "section": {
+        "id": 9,
+        "name": "9"
+      },
+      "products": [
+        {
+          "id": "010101",
+          "name": "建筑钢材",
+          "source": "relationBreed"
+        }
+      ],
+      "regions": [
+        {
+          "id": "010603",
+          "name": "贵州"
+        },
+        {
+          "id": "01060301",
+          "name": "贵阳"
+        }
+      ],
+      "source_name": "我的钢铁网(Mysteel)",
+      "source_url": "http://gc.mysteel.com/a/26100715/87946A19780FBB6F.html",
+      "in_article_url": "http://gc.mysteel.com/a/26100715/87946A19780FBB6F.html",
+      "out_article_url": null,
+      "in_article_title": "云南方大钒钛新材料有限公司关于贵州区域品规价差调整的通告函",
+      "out_article_title": null,
+      "source_link_status": "article_link",
+      "data_source": 1,
+      "publisher_id": 210502,
+      "relation_id": 46004423,
+      "ai_flag": 0,
+      "platform_product_line": null,
+      "mapping_status": "ambiguous",
+      "quality_flags": []
+    },
+    {
+      "news_id": "4898633",
+      "published_at": "2026-10-07T07:49:21.487Z",
+      "published_at_ms": 1791359361487,
+      "timezone": "Asia/Shanghai",
+      "content_text": "有市场消息称，可灵AI计划于未来12个月内启动港股上市程序，预计2027年初递表，拟融资至少10亿美元，已选定中金、高盛和瑞银为其香港IPO的承销商。",
+      "content_html": "有市场消息称，可灵AI计划于未来12个月内启动港股上市程序，预计2027年初递表，拟融资至少10亿美元，已选定中金、高盛和瑞银为其香港IPO的承销商。",
+      "raw_content": "有市场消息称，可灵AI计划于未来12个月内启动港股上市程序，预计2027年初递表，拟融资至少10亿美元，已选定中金、高盛和瑞银为其香港IPO的承销商。",
+      "category": {
+        "id": 18,
+        "name": "18"
+      },
+      "section": {
+        "id": 8,
+        "name": "8"
+      },
+      "products": [],
+      "regions": [],
+      "source_name": "我的钢铁网",
+      "source_url": "https://news.mysteel.com/a/26100715/7C1E227A7ABF3B5F.html",
+      "in_article_url": "https://news.mysteel.com/a/26100715/7C1E227A7ABF3B5F.html",
+      "out_article_url": null,
+      "in_article_title": "可灵AI拟启动港股上市，预计2027年初递表、融资至少10亿美元",
+      "out_article_title": null,
+      "source_link_status": "article_link",
+      "data_source": 1,
+      "publisher_id": 216059,
+      "relation_id": 46004422,
+      "ai_flag": 0,
+      "platform_product_line": null,
+      "mapping_status": "unmapped",
+      "quality_flags": []
+    },
+    {
+      "news_id": "4898632",
+      "published_at": "2026-10-07T07:44:33.432Z",
+      "published_at_ms": 1791359073432,
+      "timezone": "Asia/Shanghai",
+      "content_text": "知情人士透露，希捷和东芝竞购日本TDK公司硬盘磁头业务，以应对AI数据中心存储需求增长。潜在交易金额预计最高达数十亿美元。",
+      "content_html": "知情人士透露，希捷和东芝竞购日本TDK公司硬盘磁头业务，以应对AI数据中心存储需求增长。潜在交易金额预计最高达数十亿美元。",
+      "raw_content": "知情人士透露，希捷和东芝竞购日本TDK公司硬盘磁头业务，以应对AI数据中心存储需求增长。潜在交易金额预计最高达数十亿美元。",
+      "category": {
+        "id": 18,
+        "name": "18"
+      },
+      "section": {
+        "id": 8,
+        "name": "8"
+      },
+      "products": [],
+      "regions": [],
+      "source_name": "我的钢铁网",
+      "source_url": "https://news.mysteel.com/a/26100715/C5159ADCCBEA5A54.html",
+      "in_article_url": "https://news.mysteel.com/a/26100715/C5159ADCCBEA5A54.html",
+      "out_article_url": null,
+      "in_article_title": "硬盘磁头成兵家必争之地：希捷、东芝竞购TDK业务",
+      "out_article_title": null,
+      "source_link_status": "article_link",
+      "data_source": 1,
+      "publisher_id": 216059,
+      "relation_id": 46004421,
+      "ai_flag": 0,
+      "platform_product_line": null,
+      "mapping_status": "unmapped",
+      "quality_flags": []
+    },
+    {
+      "news_id": "4898631",
+      "published_at": "2026-10-07T07:37:55.846Z",
+      "published_at_ms": 1791358675846,
+      "timezone": "Asia/Shanghai",
+      "content_text": "AMD首席执行官苏姿丰表示，AI芯片需求“非常旺盛”，尽管2026年已增加产能，但需求仍高于供应，计划2027年大幅扩产。",
+      "content_html": "AMD首席执行官苏姿丰表示，AI芯片需求“非常旺盛”，尽管2026年已增加产能，但需求仍高于供应，计划2027年大幅扩产。",
+      "raw_content": "AMD首席执行官苏姿丰表示，AI芯片需求“非常旺盛”，尽管2026年已增加产能，但需求仍高于供应，计划2027年大幅扩产。",
+      "category": {
+        "id": 18,
+        "name": "18"
+      },
+      "section": {
+        "id": 8,
+        "name": "8"
+      },
+      "products": [],
+      "regions": [],
+      "source_name": "我的钢铁网",
+      "source_url": "https://news.mysteel.com/a/26100715/593B15A7D30BB1E2.html",
+      "in_article_url": "https://news.mysteel.com/a/26100715/593B15A7D30BB1E2.html",
+      "out_article_url": null,
+      "in_article_title": "苏姿丰：AI芯片需求非常旺盛，AMD将持续大幅扩产",
+      "out_article_title": null,
+      "source_link_status": "article_link",
+      "data_source": 1,
+      "publisher_id": 216059,
+      "relation_id": 46004420,
+      "ai_flag": 0,
+      "platform_product_line": null,
+      "mapping_status": "unmapped",
+      "quality_flags": []
+    },
+    {
+      "news_id": "4898630",
+      "published_at": "2026-10-07T07:32:53.460Z",
+      "published_at_ms": 1791358373460,
+      "timezone": "Asia/Shanghai",
+      "content_text": "10月7日唐山迁安松汀钢铁普方坯资源稳，执行2990含税出厂。（元/吨）",
+      "content_html": "10月7日唐山迁安松汀钢铁普方坯资源稳，执行2990含税出厂。（元/吨）",
+      "raw_content": "10月7日唐山迁安松汀钢铁普方坯资源稳，执行2990含税出厂。（元/吨）",
+      "category": {
+        "id": 2,
+        "name": "2"
+      },
+      "section": {
+        "id": 7,
+        "name": "7"
+      },
+      "products": [
+        {
+          "id": "0307",
+          "name": "钢坯",
+          "source": "relationBreed"
+        },
+        {
+          "id": "方坯",
+          "name": "方坯",
+          "source": "breedTag"
+        }
+      ],
+      "regions": [
+        {
+          "id": "010403",
+          "name": "河北"
+        }
+      ],
+      "source_name": null,
+      "source_url": null,
+      "in_article_url": null,
+      "out_article_url": null,
+      "in_article_title": null,
+      "out_article_title": null,
+      "source_link_status": "no_link",
+      "data_source": 2,
+      "publisher_id": 209974,
+      "relation_id": 7653123,
+      "ai_flag": 0,
+      "platform_product_line": null,
+      "mapping_status": "ambiguous",
+      "quality_flags": [
+        "source_link_missing"
+      ]
+    },
+    {
+      "news_id": "4898629",
+      "published_at": "2026-10-07T07:27:08.082Z",
+      "published_at_ms": 1791358028082,
+      "timezone": "Asia/Shanghai",
+      "content_text": "10月6日，亚马逊云科技（AWS）旗下大模型服务平台Amazon Bedrock官宣接入智谱GLM-5.3，AWS基于模型调用量与智谱进行收入分成。",
+      "content_html": "10月6日，亚马逊云科技（AWS）旗下大模型服务平台Amazon Bedrock官宣接入智谱GLM-5.3，AWS基于模型调用量与智谱进行收入分成。",
+      "raw_content": "10月6日，亚马逊云科技（AWS）旗下大模型服务平台Amazon Bedrock官宣接入智谱GLM-5.3，AWS基于模型调用量与智谱进行收入分成。",
+      "category": {
+        "id": 18,
+        "name": "18"
+      },
+      "section": {
+        "id": 8,
+        "name": "8"
+      },
+      "products": [],
+      "regions": [],
+      "source_name": "我的钢铁网",
+      "source_url": "https://news.mysteel.com/a/26100715/917C872BA5E3FBBC.html",
+      "in_article_url": "https://news.mysteel.com/a/26100715/917C872BA5E3FBBC.html",
+      "out_article_url": null,
+      "in_article_title": "GLM-5.3上架Amazon，智谱打开海外收入分成通道",
+      "out_article_title": null,
+      "source_link_status": "article_link",
+      "data_source": 1,
+      "publisher_id": 216059,
+      "relation_id": 46004418,
+      "ai_flag": 0,
+      "platform_product_line": null,
+      "mapping_status": "unmapped",
+      "quality_flags": []
+    },
+    {
+      "news_id": "4898628",
+      "published_at": "2026-10-07T07:22:23.658Z",
+      "published_at_ms": 1791357743658,
+      "timezone": "Asia/Shanghai",
+      "content_text": "华为与高通10月5日宣布，双方达成一项长期、广泛的专利许可协议。双方将在5G、计算、人工智能（AI）、网络等技术领域实现专利组合交叉许可。这是华为与高通之间首份涵盖5G技术的专利许可协议。高通还将收购华为在计算、AI、网络及其他技术领域的部分美国专利。",
+      "content_html": "华为与高通10月5日宣布，双方达成一项长期、广泛的专利许可协议。双方将在5G、计算、人工智能（AI）、网络等技术领域实现专利组合交叉许可。这是华为与高通之间首份涵盖5G技术的专利许可协议。高通还将收购华为在计算、AI、网络及其他技术领域的部分美国专利。",
+      "raw_content": "华为与高通10月5日宣布，双方达成一项长期、广泛的专利许可协议。双方将在5G、计算、人工智能（AI）、网络等技术领域实现专利组合交叉许可。这是华为与高通之间首份涵盖5G技术的专利许可协议。高通还将收购华为在计算、AI、网络及其他技术领域的部分美国专利。",
+      "category": {
+        "id": 18,
+        "name": "18"
+      },
+      "section": {
+        "id": 8,
+        "name": "8"
+      },
+      "products": [],
+      "regions": [],
+      "source_name": "我的钢铁网",
+      "source_url": "https://news.mysteel.com/a/26100715/D68992182479662E.html",
+      "in_article_url": "https://news.mysteel.com/a/26100715/D68992182479662E.html",
+      "out_article_url": null,
+      "in_article_title": "华为与高通达成长期专利许可，覆盖5G、韬定律技术等",
+      "out_article_title": null,
+      "source_link_status": "article_link",
+      "data_source": 1,
+      "publisher_id": 216059,
+      "relation_id": 46004415,
+      "ai_flag": 0,
+      "platform_product_line": null,
+      "mapping_status": "unmapped",
+      "quality_flags": []
+    },
+    {
+      "news_id": "4898627",
+      "published_at": "2026-10-07T07:17:11.139Z",
+      "published_at_ms": 1791357431139,
+      "timezone": "Asia/Shanghai",
+      "content_text": "当地时间10月4日，美国总统特朗普宣布成立“超级智能特别工作组”（SIF），负责协调美国联邦政府在超级智能领域的相关工作。",
+      "content_html": "当地时间10月4日，美国总统特朗普宣布成立“超级智能特别工作组”（SIF），负责协调美国联邦政府在超级智能领域的相关工作。",
+      "raw_content": "当地时间10月4日，美国总统特朗普宣布成立“超级智能特别工作组”（SIF），负责协调美国联邦政府在超级智能领域的相关工作。",
+      "category": {
+        "id": 18,
+        "name": "18"
+      },
+      "section": {
+        "id": 8,
+        "name": "8"
+      },
+      "products": [],
+      "regions": [],
+      "source_name": "我的钢铁网",
+      "source_url": "https://news.mysteel.com/a/26100715/C95FC785EE2327E0.html",
+      "in_article_url": "https://news.mysteel.com/a/26100715/C95FC785EE2327E0.html",
+      "out_article_url": null,
+      "in_article_title": "特朗普宣布成立“超级智能特别工作组”",
+      "out_article_title": null,
+      "source_link_status": "article_link",
+      "data_source": 1,
+      "publisher_id": 216059,
+      "relation_id": 46004414,
+      "ai_flag": 0,
+      "platform_product_line": null,
+      "mapping_status": "unmapped",
+      "quality_flags": []
+    },
+    {
+      "news_id": "4898626",
+      "published_at": "2026-10-07T06:53:21.814Z",
+      "published_at_ms": 1791356001814,
+      "timezone": "Asia/Shanghai",
+      "content_text": "10月7日石家庄敬业毛料废钢价格：二级剪切料2151，二级剪切料优2201，二级剪切料压块2087，三级剪切料2050，三级剪切料优2071，中型1类A:2283，中型2类A:2265，重型3类A:2300，不含税。",
+      "content_html": "10月7日石家庄敬业毛料废钢价格：二级剪切料2151，二级剪切料优2201，二级剪切料压块2087，三级剪切料2050，三级剪切料优2071，中型1类A:2283，中型2类A:2265，重型3类A:2300，不含税。",
+      "raw_content": "10月7日石家庄敬业毛料废钢价格：二级剪切料2151，二级剪切料优2201，二级剪切料压块2087，三级剪切料2050，三级剪切料优2071，中型1类A:2283，中型2类A:2265，重型3类A:2300，不含税。",
+      "category": {
+        "id": 2,
+        "name": "2"
+      },
+      "section": {
+        "id": 9,
+        "name": "9"
+      },
+      "products": [
+        {
+          "id": "0306",
+          "name": "废钢",
+          "source": "relationBreed"
+        },
+        {
+          "id": "中废",
+          "name": "中废",
+          "source": "breedTag"
+        },
+        {
+          "id": "再生金属",
+          "name": "再生金属",
+          "source": "breedTag"
+        }
+      ],
+      "regions": [
+        {
+          "id": "01040301",
+          "name": "石家庄"
+        }
+      ],
+      "source_name": null,
+      "source_url": null,
+      "in_article_url": null,
+      "out_article_url": null,
+      "in_article_title": null,
+      "out_article_title": null,
+      "source_link_status": "no_link",
+      "data_source": 2,
+      "publisher_id": 220615,
+      "relation_id": 7653122,
+      "ai_flag": 0,
+      "platform_product_line": null,
+      "mapping_status": "ambiguous",
+      "quality_flags": [
+        "source_link_missing"
+      ]
+    },
+    {
+      "news_id": "4898625",
+      "published_at": "2026-10-07T06:20:55.139Z",
+      "published_at_ms": 1791354055139,
+      "timezone": "Asia/Shanghai",
+      "content_text": "10月7日潍坊特钢废钢价格做出如下调整： 3%增值税专用发票----重型废钢：2575元/吨，特级废钢：2524元/吨，中级废钢：2450元/吨 13%增值税专用发票---重型废钢：2713元/吨，特级废钢：2658元/吨，中级废钢：2580元/吨。 以上规格及价格自2026年10月8日上午6点开始执行",
+      "content_html": "10月7日潍坊特钢废钢价格做出如下调整：\n3%增值税专用发票----重型废钢：2575元/吨，特级废钢：2524元/吨，中级废钢：2450元/吨\n13%增值税专用发票---重型废钢：2713元/吨，特级废钢：2658元/吨，中级废钢：2580元/吨。\n以上规格及价格自2026年10月8日上午6点开始执行",
+      "raw_content": "10月7日潍坊特钢废钢价格做出如下调整：\n3%增值税专用发票----重型废钢：2575元/吨，特级废钢：2524元/吨，中级废钢：2450元/吨\n13%增值税专用发票---重型废钢：2713元/吨，特级废钢：2658元/吨，中级废钢：2580元/吨。\n以上规格及价格自2026年10月8日上午6点开始执行",
+      "category": {
+        "id": 2,
+        "name": "2"
+      },
+      "section": {
+        "id": 9,
+        "name": "9"
+      },
+      "products": [
+        {
+          "id": "0306",
+          "name": "废钢",
+          "source": "relationBreed"
+        },
+        {
+          "id": "再生金属",
+          "name": "再生金属",
+          "source": "breedTag"
+        }
+      ],
+      "regions": [
+        {
+          "id": "01010207",
+          "name": "潍坊"
+        }
+      ],
+      "source_name": null,
+      "source_url": null,
+      "in_article_url": null,
+      "out_article_url": null,
+      "in_article_title": null,
+      "out_article_title": null,
+      "source_link_status": "no_link",
+      "data_source": 2,
+      "publisher_id": 220651,
+      "relation_id": 7653121,
+      "ai_flag": 0,
+      "platform_product_line": null,
+      "mapping_status": "ambiguous",
+      "quality_flags": [
+        "source_link_missing"
+      ]
+    },
+    {
+      "news_id": "4898624",
+      "published_at": "2026-10-07T06:17:37.982Z",
+      "published_at_ms": 1791353857982,
+      "timezone": "Asia/Shanghai",
+      "content_text": "三星电机获2856.11亿韩元AI服务器用MLCC大单。受AI需求拉动，日韩厂商产能转向高端产品，挤压消费级产能，导致供需失衡。日本村田、太阳诱电及三星电机相继发布涨价函，高容量MLCC原厂涨幅15%—35%。",
+      "content_html": "三星电机获2856.11亿韩元AI服务器用MLCC大单。受AI需求拉动，日韩厂商产能转向高端产品，挤压消费级产能，导致供需失衡。日本村田、太阳诱电及三星电机相继发布涨价函，高容量MLCC原厂涨幅15%—35%。",
+      "raw_content": "三星电机获2856.11亿韩元AI服务器用MLCC大单。受AI需求拉动，日韩厂商产能转向高端产品，挤压消费级产能，导致供需失衡。日本村田、太阳诱电及三星电机相继发布涨价函，高容量MLCC原厂涨幅15%—35%。",
+      "category": {
+        "id": 18,
+        "name": "18"
+      },
+      "section": {
+        "id": 8,
+        "name": "8"
+      },
+      "products": [],
+      "regions": [],
+      "source_name": "我的钢铁网",
+      "source_url": "https://news.mysteel.com/a/26100714/58F6CDC08096A9A7.html",
+      "in_article_url": "https://news.mysteel.com/a/26100714/58F6CDC08096A9A7.html",
+      "out_article_url": null,
+      "in_article_title": "三星电机再获2800亿韩元MLCC大单，行业涨价缺货仍在延续",
+      "out_article_title": null,
+      "source_link_status": "article_link",
+      "data_source": 1,
+      "publisher_id": 216059,
+      "relation_id": 46004407,
+      "ai_flag": 0,
+      "platform_product_line": null,
+      "mapping_status": "unmapped",
+      "quality_flags": []
+    },
+    {
+      "news_id": "4898623",
+      "published_at": "2026-10-07T06:04:01.745Z",
+      "published_at_ms": 1791353041745,
+      "timezone": "Asia/Shanghai",
+      "content_text": "华为全联接（HC）大会提到，其基于950DT的超节点目前还在测试中，规模供货应该在今年年底或明年初。从明年开始，大量模型的训练会构筑在950DT超节点上",
+      "content_html": "华为全联接（HC）大会提到，其基于950DT的超节点目前还在测试中，规模供货应该在今年年底或明年初。从明年开始，大量模型的训练会构筑在950DT超节点上",
+      "raw_content": "华为全联接（HC）大会提到，其基于950DT的超节点目前还在测试中，规模供货应该在今年年底或明年初。从明年开始，大量模型的训练会构筑在950DT超节点上",
+      "category": {
+        "id": 18,
+        "name": "18"
+      },
+      "section": {
+        "id": 8,
+        "name": "8"
+      },
+      "products": [],
+      "regions": [],
+      "source_name": "我的钢铁网",
+      "source_url": "https://news.mysteel.com/a/26100714/820A9771B037758C.html",
+      "in_article_url": "https://news.mysteel.com/a/26100714/820A9771B037758C.html",
+      "out_article_url": null,
+      "in_article_title": "华为徐直军：Peerium架构与灵衢总线，让百万颗处理器成为一台计算机",
+      "out_article_title": null,
+      "source_link_status": "article_link",
+      "data_source": 1,
+      "publisher_id": 216059,
+      "relation_id": 46004406,
+      "ai_flag": 0,
+      "platform_product_line": null,
+      "mapping_status": "unmapped",
+      "quality_flags": []
+    },
+    {
+      "news_id": "4898622",
+      "published_at": "2026-10-07T05:56:23.150Z",
+      "published_at_ms": 1791352583150,
+      "timezone": "Asia/Shanghai",
+      "content_text": "谷歌与星座能源签署长期战略清洁能源合作协议，将890兆瓦核电新容量接入PJM电网。协议包含20年购电安排，支持11座核电机组升级，首座预计2028年供电，新增投资超43亿美元。此外，双方还签署15年能源供应协议新增2700兆瓦容量，并达成五年技术联盟。",
+      "content_html": "谷歌与星座能源签署长期战略清洁能源合作协议，将890兆瓦核电新容量接入PJM电网。协议包含20年购电安排，支持11座核电机组升级，首座预计2028年供电，新增投资超43亿美元。此外，双方还签署15年能源供应协议新增2700兆瓦容量，并达成五年技术联盟。",
+      "raw_content": "谷歌与星座能源签署长期战略清洁能源合作协议，将890兆瓦核电新容量接入PJM电网。协议包含20年购电安排，支持11座核电机组升级，首座预计2028年供电，新增投资超43亿美元。此外，双方还签署15年能源供应协议新增2700兆瓦容量，并达成五年技术联盟。",
+      "category": {
+        "id": 18,
+        "name": "18"
+      },
+      "section": {
+        "id": 8,
+        "name": "8"
+      },
+      "products": [],
+      "regions": [],
+      "source_name": "我的钢铁网",
+      "source_url": "https://news.mysteel.com/a/26100713/3BE921DA5C8EBE2F.html",
+      "in_article_url": "https://news.mysteel.com/a/26100713/3BE921DA5C8EBE2F.html",
+      "out_article_url": null,
+      "in_article_title": "谷歌再度出手锁定核电资源：与星座能源签署长期协议",
+      "out_article_title": null,
+      "source_link_status": "article_link",
+      "data_source": 1,
+      "publisher_id": 216059,
+      "relation_id": 46004403,
+      "ai_flag": 0,
+      "platform_product_line": null,
+      "mapping_status": "unmapped",
+      "quality_flags": []
+    },
+    {
+      "news_id": "4898621",
+      "published_at": "2026-10-07T05:55:54.981Z",
+      "published_at_ms": 1791352554981,
+      "timezone": "Asia/Shanghai",
+      "content_text": "10月7日统计华东主导钢企废钢到货昨卸8203吨，较前一日增加2.43%，今统计到船26条，大小车55车。",
+      "content_html": "10月7日统计华东主导钢企废钢到货昨卸8203吨，较前一日增加2.43%，今统计到船26条，大小车55车。",
+      "raw_content": "10月7日统计华东主导钢企废钢到货昨卸8203吨，较前一日增加2.43%，今统计到船26条，大小车55车。",
+      "category": {
+        "id": 2,
+        "name": "2"
+      },
+      "section": {
+        "id": 4,
+        "name": "4"
+      },
+      "products": [
+        {
+          "id": "0306",
+          "name": "废钢",
+          "source": "relationBreed"
+        },
+        {
+          "id": "再生金属",
+          "name": "再生金属",
+          "source": "breedTag"
+        }
+      ],
+      "regions": [
+        {
+          "id": "010103",
+          "name": "江苏"
+        }
+      ],
+      "source_name": null,
+      "source_url": null,
+      "in_article_url": null,
+      "out_article_url": null,
+      "in_article_title": null,
+      "out_article_title": null,
+      "source_link_status": "no_link",
+      "data_source": 2,
+      "publisher_id": 226590,
+      "relation_id": 7653120,
+      "ai_flag": 0,
+      "platform_product_line": null,
+      "mapping_status": "ambiguous",
+      "quality_flags": [
+        "source_link_missing"
+      ]
+    },
+    {
+      "news_id": "4898620",
+      "published_at": "2026-10-07T05:53:36.169Z",
+      "published_at_ms": 1791352416169,
+      "timezone": "Asia/Shanghai",
+      "content_text": "获英伟达支持的Lambda拟在IPO前融资至多40亿美元，投前估值达145亿美元。该公司计划2027年IPO，AI算力积压订单从6月150亿美元增至9月500亿美元。",
+      "content_html": "获英伟达支持的Lambda拟在IPO前融资至多40亿美元，投前估值达145亿美元。该公司计划2027年IPO，AI算力积压订单从6月150亿美元增至9月500亿美元。",
+      "raw_content": "获英伟达支持的Lambda拟在IPO前融资至多40亿美元，投前估值达145亿美元。该公司计划2027年IPO，AI算力积压订单从6月150亿美元增至9月500亿美元。",
+      "category": {
+        "id": 18,
+        "name": "18"
+      },
+      "section": {
+        "id": 8,
+        "name": "8"
+      },
+      "products": [],
+      "regions": [],
+      "source_name": "我的钢铁网",
+      "source_url": "https://news.mysteel.com/a/26100713/8BC4C4F4E08AFB7D.html",
+      "in_article_url": "https://news.mysteel.com/a/26100713/8BC4C4F4E08AFB7D.html",
+      "out_article_url": null,
+      "in_article_title": "AI算力订单暴增至500亿美元！英伟达支持的Lambda拟融资40亿美元冲刺IPO",
+      "out_article_title": null,
+      "source_link_status": "article_link",
+      "data_source": 1,
+      "publisher_id": 216059,
+      "relation_id": 46004402,
+      "ai_flag": 0,
+      "platform_product_line": null,
+      "mapping_status": "unmapped",
+      "quality_flags": []
+    },
+    {
+      "news_id": "4898619",
+      "published_at": "2026-10-07T05:50:12.672Z",
+      "published_at_ms": 1791352212672,
+      "timezone": "Asia/Shanghai",
+      "content_text": "AMD首席执行官苏姿丰时隔七个月再度访韩，计划与三星电子半导体业务负责人全永铉会面。此次访问正值全球内存产品短缺、价格持续上涨之际。苏姿丰表示半导体需求维持在“极高”水平，2027年将大幅增加供应。三星是AMD下一代AI加速器Instinct MI455X GPU和HBM4的首选供应商，双方正探讨代工合作，将合作范围从存储器供应扩展至产品开发和制造领域。",
+      "content_html": "AMD首席执行官苏姿丰时隔七个月再度访韩，计划与三星电子半导体业务负责人全永铉会面。此次访问正值全球内存产品短缺、价格持续上涨之际。苏姿丰表示半导体需求维持在“极高”水平，2027年将大幅增加供应。三星是AMD下一代AI加速器Instinct MI455X GPU和HBM4的首选供应商，双方正探讨代工合作，将合作范围从存储器供应扩展至产品开发和制造领域。",
+      "raw_content": "AMD首席执行官苏姿丰时隔七个月再度访韩，计划与三星电子半导体业务负责人全永铉会面。此次访问正值全球内存产品短缺、价格持续上涨之际。苏姿丰表示半导体需求维持在“极高”水平，2027年将大幅增加供应。三星是AMD下一代AI加速器Instinct MI455X GPU和HBM4的首选供应商，双方正探讨代工合作，将合作范围从存储器供应扩展至产品开发和制造领域。",
+      "category": {
+        "id": 18,
+        "name": "18"
+      },
+      "section": {
+        "id": 8,
+        "name": "8"
+      },
+      "products": [],
+      "regions": [],
+      "source_name": "我的钢铁网",
+      "source_url": "https://news.mysteel.com/a/26100713/2BE6550DE5AF0818.html",
+      "in_article_url": "https://news.mysteel.com/a/26100713/2BE6550DE5AF0818.html",
+      "out_article_url": null,
+      "in_article_title": "苏姿丰时隔七月再度访韩，将与三星半导体负责人会谈",
+      "out_article_title": null,
+      "source_link_status": "article_link",
+      "data_source": 1,
+      "publisher_id": 216059,
+      "relation_id": 46004401,
+      "ai_flag": 0,
+      "platform_product_line": null,
+      "mapping_status": "unmapped",
+      "quality_flags": []
+    },
     {
       "news_id": "4898618",
       "published_at": "2026-10-07T05:48:06.754Z",
@@ -2703,12 +4194,12 @@
   ],
   "quality": {
     "raw_count": 100,
-    "accepted_count": 43,
-    "rejected_count": 57,
+    "accepted_count": 77,
+    "rejected_count": 23,
     "deduped_count": 0,
-    "missing_source_link_count": 21,
-    "missing_product_count": 2,
-    "malformed_content_count": 57,
+    "missing_source_link_count": 39,
+    "missing_product_count": 17,
+    "malformed_content_count": 23,
     "duplicate_group_count": 0,
     "warnings": [
       "API 报告总量超过本次分页采集量；快照仅覆盖目标日期窗口，需按分类/地区拆分请求补全。"
