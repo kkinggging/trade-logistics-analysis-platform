@@ -47,9 +47,28 @@ function parseBin(compressed) {
     hs: read(2, (b, o) => b.readUInt16LE(o)),
     p: read(2, (b, o) => b.readUInt16LE(o)),
     r: read(1, (b, o) => b.readUInt8(o)),
-    q: read(4, (b, o) => b.readFloatLE(o)),
-    u: read(4, (b, o) => b.readFloatLE(o)),
+    // 源站 v3.36 起数量和金额数组使用 Float64；按 Float32 解码会造成
+    // 偏移错位，最终聚合出 e+39 级别的伪数量和负数金额。
+    q: read(8, (b, o) => b.readDoubleLE(o)),
+    u: read(8, (b, o) => b.readDoubleLE(o)),
   };
+}
+
+function validateSnapshotTotals(meta, totalQty, totalAmount, factRows) {
+  const expectedQty = Number(meta?.total_qty);
+  const expectedAmount = Number(meta?.total_usd);
+  if (!Number.isFinite(totalQty) || !Number.isFinite(totalAmount) || totalQty <= 0 || totalAmount <= 0) {
+    throw new Error('出口快照聚合结果不是有效的正数');
+  }
+  if (Number.isFinite(expectedQty) && (totalQty / expectedQty < .5 || totalQty / expectedQty > 1.5)) {
+    throw new Error(`出口量校验失败：聚合值 ${totalQty} 与源站元数据 ${expectedQty} 偏差过大`);
+  }
+  if (Number.isFinite(expectedAmount) && (totalAmount / expectedAmount < .5 || totalAmount / expectedAmount > 1.5)) {
+    throw new Error(`出口额校验失败：聚合值 ${totalAmount} 与源站元数据 ${expectedAmount} 偏差过大`);
+  }
+  if (Number.isFinite(Number(meta?.rows_fact)) && factRows !== Number(meta.rows_fact)) {
+    throw new Error(`明细条数校验失败：读取 ${factRows} 条，源站记录 ${meta.rows_fact} 条`);
+  }
 }
 
 function mapAccumulator(map, key, label) {
@@ -163,6 +182,10 @@ async function main() {
   const defaultMonthlyRows = [...defaultMonthly.values()].sort((left, right) => left.key.localeCompare(right.key));
   const defaultTotalQty = defaultMonthlyRows.reduce((sum, row) => sum + row.qty_t, 0);
   const defaultTotalAmount = defaultMonthlyRows.reduce((sum, row) => sum + row.amount_usd, 0);
+  validateSnapshotTotals(codebook.meta, totalQty, totalAmount, factRows);
+  if ([...monthlyRows, ...partnerRows, ...defaultMonthlyRows, ...defaultPartnerRows].some((row) => row.qty_t < 0 || row.amount_usd < 0 || !Number.isFinite(row.qty_t) || !Number.isFinite(row.amount_usd))) {
+    throw new Error('出口快照聚合行包含负数或非有限数量/金额');
+  }
   const dates = monthlyRows.map((row) => row.key);
   const snapshot = {
     schema_version: '1.0',

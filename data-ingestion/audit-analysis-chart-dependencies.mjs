@@ -92,6 +92,10 @@ async function main() {
   checkSource('steel_dashboard', steel);
   checkRows('steel_dashboard.market_quotes', steel.market_quotes, ['quote_id', 'source', 'indicator_code', 'indicator_name', 'date', 'unit', 'frequency', 'publish_time'], ['value']);
   checkSource('steel_export', steelExport);
+  const exportSummary = steelExport.summary || {};
+  check(isFiniteNumber(exportSummary.total_qty_t) && exportSummary.total_qty_t > 0 && exportSummary.total_qty_t <= 10_000_000_000, 'steel_export.summary.total_qty_t', '出口总量超出合理范围，疑似二进制解码或单位错误');
+  check(isFiniteNumber(exportSummary.total_amount_usd) && exportSummary.total_amount_usd > 0 && exportSummary.total_amount_usd <= 10_000_000_000_000, 'steel_export.summary.total_amount_usd', '出口总额超出合理范围，疑似二进制解码或单位错误');
+  check(isFiniteNumber(exportSummary.average_price_usd_t) && exportSummary.average_price_usd_t > 0 && exportSummary.average_price_usd_t <= 10_000, 'steel_export.summary.average_price_usd_t', '出口均价超出合理范围');
   const exportView = steelExport.default_view;
   check(Boolean(exportView), 'steel_export.default_view', '缺少默认展示视图');
   checkRows('steel_export.monthly', exportView?.monthly, ['label'], ['qty_t', 'amount_usd']);
@@ -99,6 +103,8 @@ async function main() {
     if (row.qty_t > 0) check(isFiniteNumber(row.amount_usd / row.qty_t), `steel_export.monthly[${index}].avg_price_usd_t`, '无法由出口量和出口额计算');
   });
   checkRows('steel_export.partner', exportView?.partner, ['label'], ['qty_t', 'amount_usd', 'avg_price_usd_t']);
+  check((exportView?.monthly || []).every((row) => row.qty_t >= 0 && row.amount_usd >= 0), 'steel_export.monthly.non_negative', '出口趋势包含负数数量或金额');
+  check((exportView?.partner || []).every((row) => row.qty_t >= 0 && row.amount_usd >= 0 && row.avg_price_usd_t >= 0), 'steel_export.partner.non_negative', '贸易伙伴包含负数数量、金额或均价');
   checkRows('steel_export.partner.map', (exportView?.partner || []).filter((row) => row.world || row.special), ['label'], ['qty_t']);
   checkSource('forex', forex);
   for (const code of ['DINIW', 'EURUSD', 'USDCNY']) {

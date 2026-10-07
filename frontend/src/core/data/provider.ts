@@ -40,6 +40,21 @@ export interface DataProvider {
   getCbamParameters(): Promise<CbamParameterSnapshot | null>;
 }
 
+function isValidSteelExportSnapshot(snapshot: SteelExportSnapshot | null): snapshot is SteelExportSnapshot {
+  if (!snapshot || snapshot.schema_version !== '1.0' || !snapshot.source || !snapshot.summary) return false;
+  const { total_qty_t: quantity, total_amount_usd: amount, average_price_usd_t: averagePrice } = snapshot.summary;
+  if (![quantity, amount, averagePrice].every(Number.isFinite) || quantity <= 0 || amount <= 0 || averagePrice <= 0) return false;
+  // 全国多年钢材出口快照允许口径扩展，但拒绝明显由二进制错位产生的数量/金额。
+  if (quantity > 10_000_000_000 || amount > 10_000_000_000_000 || averagePrice > 10_000) return false;
+  const rows = [
+    ...(snapshot.monthly || []),
+    ...(snapshot.partner || []),
+    ...(snapshot.default_view?.monthly || []),
+    ...(snapshot.default_view?.partner || []),
+  ];
+  return rows.every((row) => Number.isFinite(row.qty_t) && Number.isFinite(row.amount_usd) && row.qty_t >= 0 && row.amount_usd >= 0);
+}
+
 export class StaticDataProvider implements DataProvider {
   private baseUrl = `${import.meta.env.BASE_URL}data`;
 
@@ -200,7 +215,12 @@ export class StaticDataProvider implements DataProvider {
   }
 
   async getSteelExportSnapshot(): Promise<SteelExportSnapshot | null> {
-    return this.fetchOptionalJson<SteelExportSnapshot>('external_steel_export.json');
+    const snapshot = await this.fetchOptionalJson<SteelExportSnapshot>('external_steel_export.json');
+    if (!isValidSteelExportSnapshot(snapshot)) {
+      console.warn('海关钢材出口快照未通过数量/金额合理性校验，已停止向趋势和贸易伙伴模块传递异常值。');
+      return null;
+    }
+    return snapshot;
   }
 
   async getForexSnapshot(): Promise<ForexSnapshot | null> {
