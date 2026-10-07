@@ -6,6 +6,7 @@ import { DataSyncStatus, ProductLine, ShippingIndexSnapshot, ShippingOption } fr
 import { SHIPPING_PORT_BY_EN } from '@/core/data/shippingPorts';
 import DynamicGlobe from '@/shared/components/visualization/DynamicGlobe';
 import { buildTransportDecision } from '@/core/strategy/transportRules';
+import { DataStatusBar, latestDataTimestamp } from '@/shared/components/data/DataStatusBar';
 import './Shipping.css';
 gsap.registerPlugin(useGSAP);
 
@@ -187,6 +188,8 @@ export function Shipping() {
   const generatedRouteObjects = routes.filter((route) => generatedRouteIds.includes(route.option_id));
   const displayPortCount = new Set([...originOptions, ...destinationOptions]).size;
   const dataLabel = syncLabel(syncStatus, snapshotOptions.length > 0);
+  const shippingSyncSource = Object.values(syncStatus?.sources || {}).find((item) => item.source_id.includes('shipping') && !item.source_id.includes('index'));
+  const shippingStatus = snapshotLoading ? 'loading' : !snapshotOptions.length && snapshotError ? 'unavailable' : shippingSyncSource?.state === 'fallback' ? 'fallback' : shippingSyncSource?.quality_state === 'partial' || Boolean(snapshotError) ? 'partial' : 'fresh' as const;
   const globeRoutes = generatedRouteObjects.map((route, index) => ({ id: route.option_id, origin: route.port_origin, destination: route.destination_port, originPoint: portPoint(route.port_origin), destinationPoint: portPoint(route.destination_port), status: index === 0 ? 'recommended' : route.status, score: route.totalScore }));
   const transportDecisions = useMemo(() => routes.map((route) => ({ route, decision: buildTransportDecision({ product: orderInput.productLine, quantity: orderInput.quantity, origin: route.port_origin, deadline: orderInput.deadline, route, indices: shippingIndices, month: departureMonth }) })), [routes, orderInput.productLine, orderInput.quantity, orderInput.deadline, shippingIndices, departureMonth]);
   useGSAP(() => {
@@ -199,6 +202,19 @@ export function Shipping() {
 
   return <div className="shipping-assistance">
     <section className="shipping-intro"><div><p className="shipping-kicker">LOGISTICS ROUTE PLANNING / 运输决策</p><h1>运输方案</h1><p className="shipping-subtitle">从当前路线样本中按港口、货量、交期和舱位条件探索候选方案。</p></div><div className={`snapshot-status ${snapshotOptions.length ? 'is-ready' : 'is-muted'}`}><span className="status-dot" /><div><strong>{dataLabel}</strong><small>{snapshotLoading ? '正在读取最新样本…' : `${snapshotOptions.length} 条路线记录 · ${displayPortCount} 个港口`}</small></div></div></section>
+    <DataStatusBar
+      state={shippingStatus}
+      updatedAt={latestDataTimestamp([shippingSyncSource?.snapshot_captured_at, shippingSyncSource?.success_at, shippingIndices?.source.captured_at, syncStatus?.generated_at])}
+      source={shippingIndices ? `平台路线样本 · ${shippingIndices.source.name}` : '平台路线样本快照'}
+      snapshot={shippingSyncSource?.state === 'fallback' ? '沿用上次成功快照' : snapshotOptions.length ? '当前路线样本' : '暂无可用快照'}
+      coverage={shippingIndices?.source.coverage_end ? `航运指数覆盖至 ${shippingIndices.source.coverage_end} · 路线样本 ${snapshotOptions.length} 条` : `${snapshotOptions.length} 条路线记录 · ${displayPortCount} 个港口`}
+      scope="路线筛选、运输评分、船型建议与动态路线图；真实订舱仍以船公司确认结果为准。"
+      details={<>
+        <div><span>路线数据状态</span><strong>{dataLabel}</strong></div>
+        <div><span>指数口径</span><strong>{shippingIndices ? Object.keys(shippingIndices.series || {}).length + ' 个航运序列' : '航运指数未加载'}</strong></div>
+        <div><span>业务边界</span><strong>运费为估算区间，不替代实际提单运费</strong></div>
+      </>}
+    />
     <section className="order-input-section"><div className="section-heading"><div><span className="section-index">01</span><div><h2>探索运输路线</h2><p>条件均可留空；系统会从当前全部路线样本中展开候选，再按可用性、时效、运费与风险排序。</p></div></div><span className="data-rule">航运指数仅作市场环境参考</span></div>
       <div className="input-grid"><div className="input-group"><label htmlFor="product-line">产品线 <span>可选</span></label><select id="product-line" value={orderInput.productLine} onChange={(event) => { setOrderInput((previous) => ({ ...previous, productLine: event.target.value as ProductLine | '', origin: '', destination: '' })); resetRoutes(); }} className="input-field"><option value="">不限产品线</option><option value="hot-rolled">热轧卷板</option><option value="cold-rolled">冷轧卷板</option><option value="silicon-steel">硅钢</option></select></div><div className="input-group"><label htmlFor="origin-port">起运港 <span>可选</span></label><select id="origin-port" value={orderInput.origin} onChange={(event) => changeOrigin(event.target.value)} className="input-field" disabled={snapshotLoading || !originOptions.length}><option value="">不限起运港</option>{originOptions.map((port) => <option key={port} value={port}>{portLabel(port)}</option>)}</select></div><div className="input-group"><label htmlFor="destination-port">目的港 <span>可选</span></label><select id="destination-port" value={orderInput.destination} onChange={(event) => { setOrderInput((previous) => ({ ...previous, destination: event.target.value })); resetRoutes(); }} className="input-field" disabled={snapshotLoading || !destinationOptions.length}><option value="">不限目的港</option>{destinationOptions.map((port) => <option key={port} value={port}>{portLabel(port)}</option>)}</select></div><div className="input-group"><label htmlFor="quantity">货量 <span>可选 · 吨</span></label><input id="quantity" type="number" value={orderInput.quantity ?? ''} placeholder="留空查看参考路线" onChange={(event) => { setOrderInput((previous) => ({ ...previous, quantity: event.target.value ? Number(event.target.value) : null })); resetRoutes(); }} className="input-field" min="1" step="100" /></div><div className="input-group"><label htmlFor="deadline">最晚到达日期 <span>可选</span></label><input id="deadline" type="date" value={orderInput.deadline} onChange={(event) => { setOrderInput((previous) => ({ ...previous, deadline: event.target.value })); resetRoutes(); }} className="input-field" /></div><div className="input-group"><label htmlFor="departure-month">起运月份</label><select id="departure-month" value={departureMonth} onChange={(event) => setDepartureMonth(Number(event.target.value))} className="input-field">{Array.from({ length: 12 }, (_, index) => <option value={index + 1} key={index + 1}>{index + 1} 月</option>)}</select></div><div className="input-group"><label htmlFor="availability">舱位状态</label><select id="availability" value={orderInput.availability} onChange={(event) => { setOrderInput((previous) => ({ ...previous, availability: event.target.value as AvailabilityFilter })); resetRoutes(); }} className="input-field"><option value="available">仅可用舱位</option><option value="available_limited">可用 + 有限舱位</option></select></div></div>
       <div className="input-actions"><div className="filter-note"><span>生成逻辑</span><p>未选择的条件不参与过滤；货量/交期填写后才作为硬约束，路线结果最多展示 3 条差异化候选。</p></div><button onClick={searchRoutes} disabled={loading || snapshotLoading || !snapshotOptions.length} className="btn-primary-large">{loading ? '正在分析…' : '生成候选路线'}</button></div>

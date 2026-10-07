@@ -3,7 +3,7 @@ import type { RefObject } from 'react';
 import { useGSAP } from '@gsap/react';
 import gsap from 'gsap';
 import type { TideNewsItem, TideNewsSnapshot } from '@/core/store/types';
-import { HistoryTimeline } from './HistoryTimeline';
+import { DataStatusBar, latestDataTimestamp } from '@/shared/components/data/DataStatusBar';
 import './TideBrief.css';
 
 gsap.registerPlugin(useGSAP);
@@ -44,9 +44,6 @@ function imageUrl(value: string | null) { return value && !/^https?:\/\//i.test(
 function hasEditorialImage(item: TideNewsItem) {
   return Boolean(imageUrl(item.image_url) && !/kite-banner|placeholder|default/i.test(`${item.image_url || ''} ${item.image_source_url || ''}`));
 }
-function isInvalidHistoryPlaceholder(item: TideNewsItem) {
-  return item.category === 'onthisday' && /(?:Notable Person|历史事件|历史上的今天)/i.test(item.title) && !item.url?.includes('/onthisday/');
-}
 async function readSnapshot<T>(url: string): Promise<T | null> {
   try { const response = await fetch(url, { cache: 'no-store' }); if (!response.ok) return null; return await response.json() as T; } catch { return null; }
 }
@@ -61,13 +58,17 @@ export function TideBrief() {
   const readerCloseButton = useRef<HTMLButtonElement>(null);
   const readerReturnElement = useRef<HTMLElement | null>(null);
   const closeReaderRef = useRef<() => void>(() => undefined);
-  const historyItems = (news?.sections.onthisday || []).filter((item) => !isInvalidHistoryPlaceholder(item));
-  const focus = historyItems[0] || null;
   const hasStructuredHistory = Boolean(news?.history?.events?.length || news?.history?.people?.length);
-  const historySource = news?.sources.find((source) => source.id === 'onthisday');
-  const historyStatus = news?.quality.history_status || (hasStructuredHistory ? 'available' : historySource?.used_fallback ? 'fallback' : 'unavailable');
+  const visibleSections = useMemo(() => sectionMeta.filter((section) => section.id !== 'onthisday' || hasStructuredHistory), [hasStructuredHistory]);
   const activeItems = useMemo(() => news?.sections[activeSection] || [], [news, activeSection]);
-  const sectionCount = news ? Object.values(news.sections).reduce((total, items) => total + items.length, 0) : 0;
+  const sectionCount = news ? visibleSections.reduce((total, section) => total + (news.sections[section.id]?.length || 0), 0) : 0;
+  const tideHasFallback = Boolean(news?.sources.some((source) => source.used_fallback));
+  const tideHasPartial = Boolean(news && (news.quality.successful_source_count < news.quality.source_count || news.quality.warnings.length));
+  const tideStatus = loading ? 'loading' : !news ? 'unavailable' : tideHasFallback ? 'fallback' : tideHasPartial ? 'partial' : 'fresh' as const;
+
+  useEffect(() => {
+    if (!visibleSections.some((section) => section.id === activeSection)) setActiveSection(visibleSections[0]?.id || 'world');
+  }, [activeSection, visibleSections]);
 
   useEffect(() => {
     let active = true;
@@ -130,25 +131,28 @@ export function TideBrief() {
   }
 
   return <main className="tide-brief" ref={root}>
+    <DataStatusBar
+      state={tideStatus}
+      updatedAt={latestDataTimestamp([news?.source.captured_at, ...(news?.sources.map((source) => source.captured_at) || [])])}
+      source={news ? `Kagi 新闻 · ${news.sources.length} 个板块` : 'Kagi 世界、商业、科学与运动新闻'}
+      snapshot={tideHasFallback ? '至少一个板块沿用上次成功快照' : news ? '当前未标记回退快照' : loading ? '正在读取新闻快照' : '暂无可用新闻快照'}
+      coverage={news ? `${news.source.coverage_start} 至 ${news.source.coverage_end} · ${sectionCount} 条新闻` : '新闻覆盖日期待读取'}
+      scope="潮汐早报仅展示 Kagi 已采集的世界、商业、科学与运动内容；历史事件按独立结构化数据源状态判断。"
+      details={<>{news?.sources.map((source) => <div key={source.id}><span>{source.name}</span><strong>{source.used_fallback ? '沿用快照' : source.errors.length ? '采集异常' : source.item_count ? '已采集' : '无有效条目'} · {source.captured_at ? formatTime(source.captured_at) : '时间未提供'}</strong></div>)}<div><span>采集质量</span><strong>{news ? `${news.quality.successful_source_count}/${news.quality.source_count} 个板块成功 · ${news.quality.image_count} 张图 · ${news.quality.full_content_count} 条正文` : error || '快照未加载'}</strong></div></>}
+    />
     <section className="tide-hero tide-reveal">
       <div className="tide-hero-orbit" aria-hidden="true"><span className="orbit-core">T</span><i /><i /><i /></div>
-      <div className="tide-hero-copy"><span className="tide-kicker">TIDE BRIEF · GLOBAL NEWS CURRENT</span><h1>潮汐早报</h1><p>从世界、商业、科学与运动新闻中，收束一页值得今天打开的全球脉搏。</p></div>
-      <div className="tide-hero-meta"><strong>{new Intl.DateTimeFormat('zh-CN', { dateStyle: 'full', timeZone: 'Asia/Shanghai' }).format(new Date())}</strong><span>{news?.source?.captured_at ? `快照 ${formatTime(news.source.captured_at)}` : '等待今日快照'} · 每日 09:00 更新</span><span className="tide-integrity"><b /> {news ? `${news.quality.successful_source_count}/${news.quality.source_count} 个新闻板块有数据` : '正在校验来源'}</span></div>
+      <div className="tide-hero-copy"><span className="tide-kicker">TIDE BRIEF · GLOBAL NEWS CURRENT</span><div className="tide-hero-rule" aria-hidden="true"><i /></div><h1>潮汐早报</h1><p>从世界、商业、科学与运动新闻中，收束一页值得今天打开的全球脉搏。</p><div className="tide-hero-contents" aria-label="潮汐早报内容范围"><span>WORLD</span><span>BUSINESS</span><span>SCIENCE</span><span>SPORTS</span></div></div>
+      <div className="tide-hero-meta"><strong>{new Intl.DateTimeFormat('zh-CN', { dateStyle: 'full', timeZone: 'Asia/Shanghai' }).format(new Date())}</strong><span>{news?.source?.captured_at ? `快照 ${formatTime(news.source.captured_at)}` : '等待今日快照'} · 每日 09:00 更新</span><span className="tide-integrity"><b /> {news ? `${news.quality.successful_source_count}/${news.quality.source_count - (hasStructuredHistory ? 0 : 1)} 个有效新闻板块` : '正在校验来源'}</span></div>
     </section>
     {error && <p className="tide-state tide-error" role="alert">{error}</p>}
-    <section className="tide-section tide-cover tide-reveal" id="tide-cover"><div className="tide-section-heading"><div><span>今日封面</span><h2>历史上的今天</h2></div><small>来自 Kagi News · {focus ? formatTime(focus.published_at) : '等待历史页数据'}</small></div>{loading ? <div className="tide-state">正在读取今日快照…</div> : hasStructuredHistory ? <><div className="tide-history-cover-note">源站历史页已解析：下方按原站结构展示大事记、人物及悬停详情。</div><HistoryTimeline data={news?.history} fallbackItems={[]} onOpen={openReader} /></> : <HistoryUnavailable status={historyStatus} source={historySource?.url || 'https://news.kagi.com/onthisday/latest'} errors={historySource?.errors || news?.quality.warnings.filter((warning) => warning.startsWith('历史上的今天')) || []} />}</section>
-    <section className="tide-section tide-stream tide-reveal" id="tide-stream"><div className="tide-section-heading tide-stream-heading"><div><span>全球新闻流</span><h2>{sectionById[activeSection].short}</h2></div><small>{activeItems.length} 条 · 共 {sectionCount} 条可读快讯</small></div><nav className="tide-tabs" aria-label="潮汐早报新闻板块">{sectionMeta.map((section) => <button key={section.id} type="button" className={`tide-tab tide-tab-${section.tone} ${activeSection === section.id ? 'is-active' : ''}`} onClick={() => setActiveSection(section.id)} aria-pressed={activeSection === section.id}><span>{section.label}</span><b>{news?.sections[section.id]?.length || 0}</b></button>)}</nav>{loading ? <div className="tide-state">正在整理新闻流…</div> : activeItems.length ? <div className="tide-story-grid">{activeItems.map((item) => <StoryCard key={item.id} item={item} onOpen={openReader} />)}</div> : <div className="tide-state">该板块当前没有可验证内容。</div>}</section>
+    <section className="tide-section tide-stream tide-reveal" id="tide-stream"><div className="tide-section-heading tide-stream-heading"><div><span>全球新闻流</span><h2>{sectionById[activeSection].short}</h2></div><small>{activeItems.length} 条 · 共 {sectionCount} 条可读快讯</small></div><nav className="tide-tabs" aria-label="潮汐早报新闻板块">{visibleSections.map((section) => <button key={section.id} type="button" className={`tide-tab tide-tab-${section.tone} ${activeSection === section.id ? 'is-active' : ''}`} onClick={() => setActiveSection(section.id)} aria-pressed={activeSection === section.id}><span>{section.label}</span><b>{news?.sections[section.id]?.length || 0}</b></button>)}</nav>{loading ? <div className="tide-state">正在整理新闻流…</div> : activeItems.length ? <div className="tide-story-grid">{activeItems.map((item) => <StoryCard key={item.id} item={item} onOpen={openReader} />)}</div> : <div className="tide-state">该板块当前没有可验证内容。</div>}</section>
     <section className="tide-section tide-index tide-reveal"><div className="tide-index-copy"><span>快照索引</span><h2>一份可追溯的今日新闻底稿</h2><p>每条新闻保留标题、摘要、正文、图片和原始入口；当某个板块暂时不可访问时，仅沿用该板块上一次成功快照，不覆盖其他板块。</p></div><div className="tide-index-facts"><div><strong>{sectionCount}</strong><span>新闻条目</span></div><div><strong>{news?.quality.image_count || 0}</strong><span>已提取图片</span></div><div><strong>{news?.quality.full_content_count || 0}</strong><span>含完整正文</span></div></div></section>
-    <footer className="tide-sources tide-reveal"><span>来源</span>{sectionMeta.map((section) => <a key={section.id} href={`https://news.kagi.com/${section.id}/latest`} target="_blank" rel="noreferrer">Kagi · {section.label} ↗</a>)}</footer>
+    <footer className="tide-sources tide-reveal"><span>来源</span>{visibleSections.map((section) => <a key={section.id} href={`https://news.kagi.com/${section.id}/latest`} target="_blank" rel="noreferrer">Kagi · {section.label} ↗</a>)}</footer>
     {readerItem && <ReaderOverlay item={readerItem} onClose={closeReader} closeButtonRef={readerCloseButton} />}
   </main>;
 }
 
-function HistoryUnavailable({ status, source, errors }: { status: 'available' | 'unavailable' | 'blocked' | 'fallback'; source: string; errors: string[] }) {
-  const title = status === 'blocked' ? '历史页暂时无法访问' : status === 'fallback' ? '历史页沿用旧快照' : '历史页未返回可验证内容';
-  const detail = status === 'blocked' ? '当前抓取环境没有拿到 Kagi 历史批次页；普通新闻板块的快照不代表历史人物和事件已成功。' : 'RSS 只返回批次入口或占位摘要，未解析出人物、事件和图片，因此不展示错误内容。';
-  return <div className="tide-history-unavailable" role="status"><div className="tide-history-unavailable-mark" aria-hidden="true">史</div><div><span className="tide-history-status">{status === 'blocked' ? 'FETCH BLOCKED' : 'HISTORY DATA CHECK'}</span><h3>{title}</h3><p>{detail}</p>{errors.length > 0 && <small>抓取记录：{errors[0]}</small>}<a href={source} target="_blank" rel="noreferrer">打开 Kagi 历史原页核验 ↗</a></div></div>;
-}
 function StoryCard({ item, onOpen }: { item: TideNewsItem; onOpen: (item: TideNewsItem) => void }) { return <article className="tide-story-card"><div className={`tide-story-image tide-story-image-${item.category}`}>{hasEditorialImage(item) ? <img src={imageUrl(item.image_url) || undefined} alt={item.image_alt || item.title_zh || item.title} loading="lazy" /> : <span aria-hidden="true">{categoryLabel(item.category).slice(0, 1)}</span>}</div><div className="tide-story-body"><div className="tide-news-meta"><span>{item.source}</span><time>{formatTime(item.published_at)}</time></div><h3>{displayTitle(item)}</h3><p className="tide-story-summary">{displaySummary(item)}</p><button className="tide-story-trigger" type="button" onClick={() => onOpen(item)}>展开阅读全文与大图 <span aria-hidden="true">→</span></button></div></article>; }
 function StoryLinks({ item }: { item: TideNewsItem }) { return <div className="tide-story-links">{item.url && <a href={item.url} target="_blank" rel="noreferrer">Kagi 原文 ↗</a>}{item.source_links?.slice(0, 2).map((link) => <a key={link} href={link} target="_blank" rel="noreferrer">来源链接 ↗</a>)}</div>; }
 

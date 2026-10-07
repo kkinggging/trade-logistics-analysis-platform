@@ -21,7 +21,9 @@ import {
   TradeRemedySnapshot,
   InternalBusinessSnapshot,
   FastNewsSnapshot,
+  DataSyncStatus,
 } from '@/core/store/types';
+import { DataStatusBar, latestDataTimestamp } from '@/shared/components/data/DataStatusBar';
 import './UnifiedAnalysis.css';
 
 gsap.registerPlugin(useGSAP);
@@ -445,6 +447,42 @@ const opportunitySpecialCoordinates: Record<string, [number, number]> = {
   'European Union': [4.5, 50.8], 'United Kingdom': [-2.2, 54.5], 'Eurasian Economic Union': [45, 55], 'Gulf Cooperation Council': [47, 25], 'Russia-Belarus-Kazakhstan Customs Union': [48, 54], Taiwan: [120.5, 23.7], 'Hong Kong': [114.2, 22.3], Macao: [113.5, 22.2],
 };
 
+/**
+ * 将业务快照中的中文、旧英文简称统一到 world.json 的真实 feature name。
+ * 地图交互依赖这个名字精确匹配；没有匹配时 ECharts 只会显示灰色底图，
+ * 这也是此前韩国等国家“有数据但地图不响应”的根因之一。
+ */
+const worldCountryAliases: Record<string, string> = {
+  'South Korea': 'Korea', 'Republic of Korea': 'Korea', '韩国': 'Korea',
+  'Ivory Coast': "Côte d'Ivoire", 'Cote dIvoire': "Côte d'Ivoire", '科特迪瓦': "Côte d'Ivoire", '科特迪瓦共和国': "Côte d'Ivoire",
+  'Czechia': 'Czech Rep.', 'Czech Republic': 'Czech Rep.', '捷克': 'Czech Rep.',
+  'Dominican Republic': 'Dominican Rep.', '多米尼加共和国': 'Dominican Rep.', '多米尼加': 'Dominican Rep.',
+  'North Macedonia': 'Macedonia', '北马其顿': 'Macedonia',
+  'United Arab Emirates': 'United Arab Emirates', 'UAE': 'United Arab Emirates', '阿联酋': 'United Arab Emirates',
+  'United States of America': 'United States', '美国': 'United States', '英国': 'United Kingdom',
+  'EU': 'European Union', '欧盟': 'European Union', '台湾': 'Taiwan', '中国台湾': 'Taiwan', '中国台湾地区': 'Taiwan',
+  '中国香港': 'Hong Kong', '中国澳门': 'Macao', '澳门': 'Macao', '香港': 'Hong Kong',
+  '俄罗斯联邦': 'Russia', 'Russia Federation': 'Russia', '孟加拉': 'Bangladesh', '孟加拉国': 'Bangladesh',
+  '塞尔维亚共和国': 'Serbia', '塞尔维亚': 'Serbia', '乌兹别克': 'Uzbekistan', '乌兹别克斯坦': 'Uzbekistan',
+  '危地马拉共和国': 'Guatemala', '危地马拉': 'Guatemala', '俄罗斯': 'Russia',
+};
+
+function worldCountryKey(value: string) {
+  return value.trim().toLowerCase().replace(/[\s._'-]+/g, '').replace(/[()]/g, '');
+}
+
+function resolveWorldCountry(value?: string | null, worldNames: string[] = []) {
+  if (!value) return undefined;
+  const trimmed = value.trim();
+  if (worldNames.includes(trimmed)) return trimmed;
+  const alias = worldCountryAliases[trimmed] || opportunityWorldAliases[trimmed];
+  if (alias && (!worldNames.length || worldNames.includes(alias))) return alias;
+  const candidates = worldNames.length ? worldNames : Object.values(opportunityWorldAliases);
+  const wanted = worldCountryKey(trimmed);
+  return candidates.find((name) => worldCountryKey(name) === wanted)
+    || candidates.find((name) => worldCountryKey(name) === worldCountryKey(alias || ''));
+}
+
 const euMemberWorldNames = new Set([
   'Austria', 'Belgium', 'Bulgaria', 'Croatia', 'Cyprus', 'Czech Rep.', 'Denmark', 'Estonia', 'Finland', 'France', 'Germany', 'Greece',
   'Hungary', 'Ireland', 'Italy', 'Latvia', 'Lithuania', 'Luxembourg', 'Malta', 'Netherlands', 'Poland', 'Portugal', 'Romania', 'Slovakia',
@@ -497,7 +535,7 @@ function buildOpportunityAssessments(
   const coordinateByWorld = new Map<string, [number, number]>();
   const sourceLabelByWorld = new Map<string, string>();
   exportRows.forEach((row) => {
-    const worldName = row.world || opportunityWorldAliases[row.label] || (row.name ? opportunityWorldAliases[row.name] : undefined);
+    const worldName = resolveWorldCountry(row.world || row.label || row.name, worldNames);
     if (!worldName) return;
     exportByWorld.set(worldName, (exportByWorld.get(worldName) || 0) + Math.max(0, row.qty_t));
     sourceLabelByWorld.set(worldName, sourceLabelByWorld.get(worldName) || row.label);
@@ -508,7 +546,8 @@ function buildOpportunityAssessments(
 
   const internalByWorld = new Map<string, number>();
   internalBusiness?.by_destination.forEach((row) => {
-    const worldName = opportunityWorldAliases[row.label] || exportRows.find((item) => item.label === row.label)?.world;
+    const exportMatch = exportRows.find((item) => item.label === row.label || item.name === row.label);
+    const worldName = resolveWorldCountry(row.label, worldNames) || resolveWorldCountry(exportMatch?.world, worldNames);
     if (!worldName) return;
     internalByWorld.set(worldName, (internalByWorld.get(worldName) || 0) + Math.max(0, row.volume_t));
     sourceLabelByWorld.set(worldName, sourceLabelByWorld.get(worldName) || row.label);
@@ -516,7 +555,7 @@ function buildOpportunityAssessments(
 
   const remedyByWorld = new Map<string, RemedyAggregateRow>();
   tradeRemedy?.aggregates.country.forEach((row) => {
-    const worldName = remedyOpportunityNames[row.name] || remedyMapNames[row.name] || opportunityWorldAliases[row.name];
+    const worldName = resolveWorldCountry(remedyOpportunityNames[row.name] || remedyMapNames[row.name] || row.name, worldNames);
     if (!worldName) return;
     const previous = remedyByWorld.get(worldName);
     if (!previous || row.measures_in_force > previous.measures_in_force || row.case_count > previous.case_count) remedyByWorld.set(worldName, row);
@@ -525,7 +564,7 @@ function buildOpportunityAssessments(
 
   const maxRateByWorld = new Map<string, number>();
   tradeRemedy?.cases.forEach((item) => {
-    const worldName = remedyOpportunityNames[item.country] || remedyMapNames[item.country] || opportunityWorldAliases[item.country];
+    const worldName = resolveWorldCountry(remedyOpportunityNames[item.country] || remedyMapNames[item.country] || item.country, worldNames);
     if (!worldName || item.final_rate_pct == null) return;
     maxRateByWorld.set(worldName, Math.max(maxRateByWorld.get(worldName) || 0, item.final_rate_pct));
   });
@@ -659,13 +698,38 @@ function ObjectiveCharts({ quotes, internalBusiness, steelExport, taricQuota, ad
     const remedyRows = allRemedyRows.filter((row) => remedyOriginFilter === 'all' || (remedyOriginFilter === 'non-single' ? isNonSingleRemedyOrigin(row.name) : !isNonSingleRemedyOrigin(row.name)));
     const maxExport = Math.max(...exportRows.map((row) => row.qty_t), 1);
     const maxCases = Math.max(...allRemedyRows.map((row) => row.case_count), 1);
-    const partnerMap = exportRows.filter((row) => row.world && row.qty_t > 0).map((row) => ({ name: row.world as string, value: row.qty_t, chineseName: row.name, detail: `出口量：${formatNumber(row.qty_t, 0)} 吨<br/>出口额：$${formatNumber(row.amount_usd, 0)}<br/>平均单价：$${formatNumber(row.avg_price_usd_t, 2)}/吨` }));
+    const internalByWorld = new Map<string, { label: string; qty: number }>();
+    internalBusiness?.by_destination.forEach((row) => {
+      const worldName = resolveWorldCountry(row.label, worldNames);
+      if (worldName) internalByWorld.set(worldName, { label: row.label, qty: row.volume_t });
+    });
+    const partnerMap = exportRows
+      .map((row) => {
+        const worldName = resolveWorldCountry(row.world || row.label || row.name, worldNames);
+        if (!worldName) return null;
+        const internal = internalByWorld.get(worldName);
+        return { name: worldName, value: row.qty_t, chineseName: row.name || row.label, detail: `海关出口量：${formatNumber(row.qty_t, 0)} 吨<br/>内部业务量：${internal ? `${formatNumber(internal.qty, 0)} 吨` : '未匹配'}<br/>出口额：$${formatNumber(row.amount_usd, 0)}<br/>平均单价：$${formatNumber(row.avg_price_usd_t, 2)}/吨` };
+      })
+      .filter((row): row is { name: string; value: number; chineseName: string; detail: string } => Boolean(row && row.value > 0));
+    internalByWorld.forEach((internal, worldName) => {
+      if (partnerMap.some((row) => row.name === worldName) || internal.qty <= 0) return;
+      partnerMap.push({ name: worldName, value: 0, chineseName: internal.label, detail: `海关出口量：0 吨<br/>内部业务量：${formatNumber(internal.qty, 0)} 吨<br/>该国家存在内部业务记录，但当前海关快照未匹配到出口量` });
+    });
     const partnerSpecial = exportRows.filter((row) => row.special && row.qty_t > 0).map((row) => ({ name: row.name, value: [row.special?.lng, row.special?.lat, row.qty_t], chineseName: row.name, detail: `出口量：${formatNumber(row.qty_t, 0)} 吨<br/>出口额：$${formatNumber(row.amount_usd, 0)}<br/>平均单价：$${formatNumber(row.avg_price_usd_t, 2)}/吨` }));
     const remedyMap = remedyRows.filter((row) => remedyMapNames[row.name] && !remedySpecialPoints[row.name]).map((row) => ({ name: remedyMapNames[row.name], value: row.case_count, chineseName: row.name, detail: `案件：${row.case_count} 件<br/>反倾销：${row.anti_dumping} · 反补贴：${row.countervailing} · 保障措施：${row.safeguard}<br/>措施执行中：${row.measures_in_force} 件` }));
     const remedySpecial = remedyRows.filter((row) => remedySpecialPoints[row.name]).map((row) => ({ name: row.name, value: [...remedySpecialPoints[row.name], row.case_count], chineseName: row.name, detail: `案件：${row.case_count} 件<br/>反倾销：${row.anti_dumping} · 反补贴：${row.countervailing} · 保障措施：${row.safeguard}<br/>措施执行中：${row.measures_in_force} 件` }));
-    const assessmentMap = opportunityAssessments.filter((row) => worldNames.includes(row.worldName)).map((row) => ({ name: row.worldName, value: row.score == null ? -1 : row.score, chineseName: row.label, detail: row.detail, itemStyle: row.status === '受贸易救济限制' ? { areaColor: '#c4514c' } : row.score == null ? { areaColor: chartTheme.muted } : undefined }));
+    const assessmentMap = opportunityAssessments.filter((row) => worldNames.includes(row.worldName)).map((row) => ({ name: row.worldName, value: row.score == null ? 0 : row.score, chineseName: row.label, detail: row.detail, itemStyle: row.status === '受贸易救济限制' ? { areaColor: '#c4514c' } : row.score == null ? { areaColor: chartTheme.muted } : undefined }));
     const assessmentSpecial = opportunityAssessments.filter((row) => row.coordinate).map((row) => ({ name: row.label, value: [row.coordinate![0], row.coordinate![1], row.score == null ? 0 : row.score], chineseName: row.label, detail: row.detail, itemStyle: row.status === '受贸易救济限制' ? { color: '#c4514c' } : row.score == null ? { color: chartTheme.muted } : undefined }));
-    const activeMap = mapMode === 'partners' ? partnerMap : mapMode === 'remedy' ? remedyMap : assessmentMap;
+    const knownMapData = new Map((mapMode === 'partners' ? partnerMap : mapMode === 'remedy' ? remedyMap : assessmentMap).map((item) => [item.name, item]));
+    // 每个边界都放入地图系列：有业务数据的国家使用真实值，无数据国家仍可点击并显示“未匹配”，
+    // 避免 ECharts 仅对有 data 的地区提供交互，造成“灰色且无法检索”的错觉。
+    const activeMap = worldNames.map((name) => knownMapData.get(name) || {
+      name,
+      value: null,
+      chineseName: opportunityWorldChinese[name] || name,
+      detail: `<div class="map-tooltip-title">${opportunityWorldChinese[name] || name}</div><div class="map-tooltip-status">暂无已接入${mapMode === 'partners' ? '出口' : mapMode === 'remedy' ? '贸易救济' : '评估'}数据</div><div class="map-tooltip-note">边界已加载，可继续补充该国家的数据源；暂无数据不等于没有业务或风险。</div>`,
+      itemStyle: { areaColor: chartTheme.surface },
+    });
     const activeSpecial = mapMode === 'partners' ? partnerSpecial : mapMode === 'remedy' ? remedySpecial : assessmentSpecial;
     const activeMax = mapMode === 'partners' ? maxExport : mapMode === 'remedy' ? maxCases : 100;
     const palette = mapMode === 'partners' ? ['#dcebf5', '#9fc7df', '#4b8fbd', '#1e5e91', '#0b3b68'] : mapMode === 'remedy' ? ['#fff0df', '#eeae61', '#c85b3d', '#8c2538'] : ['#edf0fa', '#a5acd9', '#6875b7', '#333b78'];
@@ -673,9 +737,16 @@ function ObjectiveCharts({ quotes, internalBusiness, steelExport, taricQuota, ad
     chart.setOption({
       tooltip: { trigger: 'item', confine: true, className: 'analysis-map-tooltip', formatter: (params: any) => params.data?.detail || `${params.data?.chineseName || opportunityWorldChinese[params.name] || params.name}<br/>${params.value == null ? '暂无数据：尚未匹配到已接入数据源' : `数值：${params.value}`}` },
       visualMap: { show: true, left: 18, bottom: 12, min: mapMode === 'opportunity' ? 0 : 0, max: activeMax, calculable: false, text: mapMode === 'partners' ? ['高出口量', '低出口量'] : mapMode === 'remedy' ? ['高案件数', '低案件数'] : ['高适配度', '低适配度'], textStyle: { color: chartTheme.text, fontSize: 12 }, inRange: { color: palette }, outOfRange: { color: chartTheme.muted } },
-      geo: { map: 'trade-world', roam: true, zoom: 1.05, itemStyle: { areaColor: chartTheme.surface, borderColor: chartTheme.grid, borderWidth: 0.7 }, emphasis: { label: { show: false }, itemStyle: { areaColor: chartTheme.orange } } },
-      series: [{ name: title, type: 'map', map: 'trade-world', geoIndex: 0, emphasis: { label: { show: false } }, data: activeMap }, { name: '地区明细', type: 'scatter', coordinateSystem: 'geo', symbolSize: (value: number[]) => Math.max(9, Math.min(25, Math.sqrt(Math.max(1, Number(value[2] || value[0])) / Math.max(1, activeMax)) * 26)), itemStyle: { color: mapMode === 'remedy' ? '#bd4f3d' : mapMode === 'opportunity' ? '#525fae' : chartTheme.orange, borderColor: chartTheme.card, borderWidth: 1 }, label: { show: false }, emphasis: { label: { show: false }, itemStyle: { borderColor: chartTheme.text, borderWidth: 2 } }, data: activeSpecial }],
+      geo: { map: 'trade-world', roam: true, zoom: 1.05, selectedMode: 'single', itemStyle: { areaColor: chartTheme.surface, borderColor: chartTheme.grid, borderWidth: 0.7 }, emphasis: { label: { show: false }, itemStyle: { areaColor: chartTheme.orange, borderColor: chartTheme.text, borderWidth: 1.5 } }, select: { itemStyle: { areaColor: '#f0a33a', borderColor: '#7e3f16', borderWidth: 2.4 }, label: { show: false } } },
+      series: [{ name: title, type: 'map', map: 'trade-world', geoIndex: 0, selectedMode: 'single', emphasis: { label: { show: false }, itemStyle: { areaColor: chartTheme.orange, borderColor: chartTheme.text, borderWidth: 1.5 } }, select: { itemStyle: { areaColor: '#f0a33a', borderColor: '#7e3f16', borderWidth: 2.4 }, label: { show: false } }, data: activeMap }, { name: '地区明细', type: 'scatter', coordinateSystem: 'geo', symbolSize: (value: number[]) => Math.max(9, Math.min(25, Math.sqrt(Math.max(1, Number(value[2] || value[0])) / Math.max(1, activeMax)) * 26)), itemStyle: { color: mapMode === 'remedy' ? '#bd4f3d' : mapMode === 'opportunity' ? '#525fae' : chartTheme.orange, borderColor: chartTheme.card, borderWidth: 1 }, label: { show: false }, emphasis: { label: { show: false }, itemStyle: { borderColor: chartTheme.text, borderWidth: 2 } }, data: activeSpecial }],
     }, true);
+    chart.off('click');
+    chart.on('click', (params: any) => {
+      if (params.componentType === 'series' && params.seriesType === 'map' && params.name) {
+        chart.dispatchAction({ type: 'select', seriesIndex: params.seriesIndex, name: params.name });
+        chart.dispatchAction({ type: 'showTip', seriesIndex: params.seriesIndex, name: params.name });
+      }
+    });
     const resize = () => chart.resize();
     const observer = typeof ResizeObserver !== 'undefined' ? new ResizeObserver(resize) : null;
     observer?.observe(mapNode);
@@ -1012,6 +1083,7 @@ export function UnifiedAnalysis() {
   const [shippingIndices, setShippingIndices] = useState<ShippingIndexSnapshot | null>(null);
   const [internalBusiness, setInternalBusiness] = useState<InternalBusinessSnapshot | null>(null);
   const [fastNews, setFastNews] = useState<FastNewsSnapshot | null>(null);
+  const [syncStatus, setSyncStatus] = useState<DataSyncStatus | null>(null);
   const [analysisAdvice, setAnalysisAdvice] = useState<DataDrivenAdvice[]>([]);
   const [riskFilter, setRiskFilter] = useState<'all' | RiskCategory>('remedy');
   const [expandedRiskId, setExpandedRiskId] = useState<string | null>(null);
@@ -1050,6 +1122,7 @@ export function UnifiedAnalysis() {
         setTaricQuota(nextTaricQuota);
         setTradeRemedy(nextTradeRemedy);
         setShippingIndices(nextShippingIndices);
+        setSyncStatus(nextSyncStatus);
         setInternalBusiness(nextInternalBusiness);
         setFastNews(nextFastNews);
         setAnalysisAdvice(buildDataDrivenAdvice({ quotes: nextQuotes, risks: nextSignals, policies: nextPolicies, aggregates: nextAggregates, costs: nextCosts, fxScenarios: nextScenarios, steelExport: nextSteelExport, forex: nextForex, taricQuota: nextTaricQuota, shippingIndices: nextShippingIndices, internalBusiness: nextInternalBusiness, syncStatus: nextSyncStatus }));
@@ -1099,6 +1172,13 @@ export function UnifiedAnalysis() {
     return counts;
   }, { remedy: 0, quota: 0, 'market-volatility': 0, 'internal-competition': 0, 'trade-policy': 0, geopolitical: 0 }), [riskItems]);
 
+  const syncSources = Object.values(syncStatus?.sources || {});
+  const hasFallback = syncSources.some((source) => source.state === 'fallback');
+  const hasUnavailable = syncSources.some((source) => source.state === 'unavailable');
+  const hasPartial = syncSources.some((source) => source.quality_state === 'partial');
+  const analysisStatus = loading ? 'loading' : !syncStatus || !syncSources.length || hasUnavailable ? 'partial' : hasFallback ? 'fallback' : hasPartial ? 'partial' : 'fresh' as const;
+  const analysisUpdatedAt = latestDataTimestamp([syncStatus?.generated_at, ...syncSources.flatMap((source) => [source.snapshot_captured_at, source.success_at]), steelExport?.source.captured_at, forex?.source.captured_at, shippingIndices?.source.captured_at, taricQuota?.source.captured_at, tradeRemedy?.source.captured_at, fastNews?.source.captured_at]);
+
   useGSAP(() => {
     if (!riskSectionRef.current) return;
     const motion = gsap.matchMedia();
@@ -1137,6 +1217,18 @@ export function UnifiedAnalysis() {
   return (
     <div className="unified-analysis">
       {error && <div className="analysis-error">{error}</div>}
+      <DataStatusBar
+        state={analysisStatus}
+        updatedAt={analysisUpdatedAt}
+        source={syncStatus ? `多源数据 · ${syncSources.length} 个数据源` : '多源业务数据 · 状态快照未加载'}
+        snapshot={hasFallback ? '部分沿用上次成功快照' : syncStatus ? '当前未标记回退快照' : '状态快照待确认'}
+        coverage={`${state.productLine || '全部品类'} · ${state.region || '全部区域'} · 图表、地图、风险与政策时间线`}
+        scope="综合分析优先使用平台本地快照；数据缺口在对应图表、地图和风险条目内分别保留。"
+        details={<>
+          {syncSources.slice(0, 6).map((source) => <div key={source.source_id}><span>{source.source_id}</span><strong>{source.state === 'fresh' ? '已更新' : source.state === 'fallback' ? '沿用快照' : '不可用'} · 覆盖至 {source.coverage_end || '—'}</strong></div>)}
+          <div><span>页面范围</span><strong>风险默认筛选：救济 · 其余分类可通过索引查看</strong></div>
+        </>}
+      />
 
       <section id="analysis-objective-charts" className="analysis-section objective-section">
         {!loading && <ObjectiveCharts quotes={quotes} aggregates={aggregates} costs={costs} scenarios={scenarios} internalBusiness={internalBusiness} steelExport={steelExport} taricQuota={taricQuota} tradeRemedy={tradeRemedy} advice={analysisAdvice} />}

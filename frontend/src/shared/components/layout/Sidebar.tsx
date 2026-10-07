@@ -10,6 +10,8 @@ const navItems: NavItem[] = [
   { path: '/', label: '晨报' },
   { path: '/analysis', label: '综合分析' },
   { path: '/globe', label: '3D地球' },
+  { path: '/globe-lab', label: '地球实验' },
+  { path: '/trade-sandbox', label: '贸易沙盘模拟' },
   { path: '/data-health', label: '数据健康' },
   { path: '/template-library', label: '模板库' },
   { path: '/cost-calculator', label: '成本计算器' },

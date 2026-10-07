@@ -10,6 +10,7 @@ import type { BeijingWeather } from '@/shared/utils/weather';
 import './MorningBrief.css';
 import { useAppContext } from '@/core/store/context';
 import { TideBrief } from './TideBrief';
+import { DataStatusBar, latestDataTimestamp } from '@/shared/components/data/DataStatusBar';
 
 gsap.registerPlugin(useGSAP);
 
@@ -123,10 +124,25 @@ export function MorningBrief() {
   if (briefMode === 'tide') return <div className="morning-brief morning-brief-shell morning-brief-tide"><BriefModeSwitch mode={briefMode} onChange={setBriefMode} /><TideBrief /></div>;
   if (loading && !briefData) return <div className="morning-brief morning-brief-shell"><BriefModeSwitch mode={briefMode} onChange={setBriefMode} /><div className="brief-loading" role="status">正在整理当期晨报…</div></div>;
   const model = briefData;
+  const statusBarState = model?.dataState === 'unavailable' ? 'unavailable' : model?.fallbackSources.length ? 'fallback' : model?.dataState === 'partial' ? 'partial' : 'fresh' as const;
   return <div className="morning-brief morning-brief-shell" ref={briefRef}>
     <BriefModeSwitch mode={briefMode} onChange={setBriefMode} />
     {error && <div className="error-banner" role="alert"><span className="error-mark" aria-hidden="true">!</span><p>{error}</p></div>}
     {model && <div className="brief-paper">
+      <DataStatusBar
+        state={statusBarState}
+        updatedAt={latestDataTimestamp([model.newsSource?.source.captured_at, model.dataSyncGeneratedAt])}
+        source={`多源数据 · ${new Set([...model.metrics.map((metric) => metric.source), ...(model.newsSource ? [model.newsSource.source.name] : []), '内部业务与政策快照']).size} 类来源`}
+        snapshot={model.fallbackSources.length ? '部分沿用最近成功快照' : '未检测到回退快照'}
+        coverage={model.newsSource?.source.coverage_end ? `行业快讯覆盖至 ${model.newsSource.source.coverage_end} · 业务结论按当前晨报口径` : '晨报当期数据 · 详细覆盖见展开口径'}
+        scope="结论、行情、内部业务、政策风险与行业快讯；新闻区仍保留原有采集明细。"
+        details={<>
+          <div><span>页面生成</span><strong>{formatWeatherTime(model.generatedAt)}</strong></div>
+          <div><span>已识别来源</span><strong>{[...new Set([...model.metrics.map((metric) => metric.source), ...(model.newsSource ? [model.newsSource.source.name] : []), '内部业务与政策快照'])].join('、')}</strong></div>
+          <div><span>数据缺口</span><strong>{model.degradedSources.length ? model.degradedSources.join('、') : '未发现已标记缺口'}</strong></div>
+          <div><span>快讯质量</span><strong>{model.newsSource ? `${model.newsSource.quality.accepted_count} 条有效 · ${model.newsSource.source.truncation_detected ? '存在截断提示' : '未标记截断'}` : '快讯快照未加载'}</strong></div>
+        </>}
+      />
       <section className="brief-cover brief-reveal" style={{ backgroundImage: `linear-gradient(110deg, rgba(11, 31, 50, .96) 0%, rgba(17, 51, 78, .82) 46%, rgba(19, 48, 72, .34) 100%), url('${import.meta.env.BASE_URL}assets/cover-building.jpg')` }}>
         <div className="cover-top"><div className="cover-brand"><img src={`${import.meta.env.BASE_URL}assets/logo.jpg`} alt="首钢国际" /><span>首钢国际 · 贸易物流一体化分析辅助平台</span></div><div className="cover-tools">{showWeather && <div className={`weather-chip weather-chip-${weatherStatus}`} title={weather?.updatedAt ? `天气更新于 ${formatWeatherTime(weather.updatedAt)}` : '天气数据暂不可用'}><span className="weather-glyph" aria-hidden="true">{weatherStatus === 'ready' ? '天气' : '气'}</span><div><strong>{weatherStatus === 'ready' && weather ? `${weather.location} ${Math.round(weather.temperature)}°` : '北京天气'}</strong><small>{weatherStatus === 'ready' && weather ? `${formatWeather(weather.weatherCode)} · ${Math.round(weather.low)}°—${Math.round(weather.high)}°` : weatherStatus === 'loading' ? '正在更新' : '暂不可用 · 不影响晨报'}</small></div></div>}</div></div>
         <div className="cover-copy"><span className="cover-kicker">TRADE & LOGISTICS · MORNING BRIEF</span><div className="cover-motion-line" aria-hidden="true"><span /></div><h1>贸易物流一体化行业晨报</h1><p>用事实筛出今天真正需要先看的事项</p></div>
@@ -147,11 +163,18 @@ export function MorningBrief() {
 
 function BriefModeSwitch({ mode, onChange }: { mode: 'trade' | 'tide'; onChange: (mode: 'trade' | 'tide') => void }) {
   return <div className="brief-mode-switch" role="group" aria-label="选择早报类型">
-    <span className="brief-mode-label">早报</span>
-    <label className="brief-mode-control">
-      <input type="checkbox" checked={mode === 'tide'} onChange={(event) => onChange(event.currentTarget.checked ? 'tide' : 'trade')} aria-label="切换贸易晨报与潮汐早报" />
-      <span className="brief-mode-track" aria-hidden="true"><span data-off="贸易晨报" data-on="潮汐早报" /></span>
-    </label>
+    <span className="brief-mode-label">晨报视图</span>
+    <div className="brief-mode-options" role="tablist" aria-label="早报类型">
+      <button type="button" role="tab" aria-selected={mode === 'trade'} className={`brief-mode-option ${mode === 'trade' ? 'is-active' : ''}`} onClick={() => onChange('trade')}>
+        <span className="brief-mode-option-mark" aria-hidden="true">01</span>
+        <span><strong>贸易晨报</strong><small>钢材业务 · 今日先看</small></span>
+      </button>
+      <button type="button" role="tab" aria-selected={mode === 'tide'} className={`brief-mode-option brief-mode-option-tide ${mode === 'tide' ? 'is-active' : ''}`} onClick={() => onChange('tide')}>
+        <span className="brief-mode-option-mark" aria-hidden="true">02</span>
+        <span><strong>潮汐早报</strong><small>世界新闻 · 四个板块</small></span>
+        <span className="brief-mode-live" aria-hidden="true" />
+      </button>
+    </div>
   </div>;
 }
 

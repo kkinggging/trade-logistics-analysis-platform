@@ -1,8 +1,9 @@
 import { useEffect, useMemo, useState } from 'react';
 import { dataProvider } from '@/core/data/provider';
-import { ForexSnapshot, InternalBusinessSnapshot, MarketQuote, ShippingIndexSnapshot, TaricQuotaSnapshot, TradeRemedySnapshot } from '@/core/store/types';
+import { DataSyncStatus, ForexSnapshot, InternalBusinessSnapshot, MarketQuote, ShippingIndexSnapshot, TaricQuotaSnapshot, TradeRemedySnapshot } from '@/core/store/types';
 import { DEFAULT_COST_PARAMETERS, PRODUCT_DEFINITIONS, estimateSteelExportCost } from '@/core/cost/steelExportCostEstimator';
 import { CbamParameterSnapshot, CostEstimate, CostInput, CostTradeTerm, DestinationRegion, SteelCostProduct } from '@/core/cost/types';
+import { DataStatusBar, latestDataTimestamp } from '@/shared/components/data/DataStatusBar';
 import './CostCalculator.css';
 
 const products: Array<{ value: SteelCostProduct; label: string }> = [
@@ -23,8 +24,8 @@ function SectionHeading({ title, text }: { title: string; text?: string }) { ret
 function Metric({ label, value, detail, tone = '' }: { label: string; value: string; detail: string; tone?: string }) { return <div className={`cost-metric ${tone}`}><span>{label}</span><strong>{value}</strong><small>{detail}</small></div>; }
 
 export function CostCalculator() {
-  const [input, setInput] = useState<CostInput>(initialInput); const [data, setData] = useState<LoadedData | null>(null); const [estimate, setEstimate] = useState<CostEstimate | null>(null); const [loading, setLoading] = useState(true); const [calculating, setCalculating] = useState(false); const [error, setError] = useState<string | null>(null);
-  const loadData = async () => { setLoading(true); setError(null); try { const [forex, shipping, marketQuotes, quota, remedies, internalBusiness, cbam] = await Promise.all([dataProvider.getForexSnapshot(), dataProvider.getShippingIndexSnapshot(), dataProvider.getMarketQuotes(), dataProvider.getTaricQuotaSnapshot(), dataProvider.getTradeRemedySnapshot(), dataProvider.getInternalBusinessSnapshot(), dataProvider.getCbamParameters()]); setData({ forex, shipping, marketQuotes, quota, remedies, internalBusiness, cbam }); } catch (e) { setError(e instanceof Error ? e.message : '成本数据加载失败'); } finally { setLoading(false); } };
+  const [input, setInput] = useState<CostInput>(initialInput); const [data, setData] = useState<LoadedData | null>(null); const [estimate, setEstimate] = useState<CostEstimate | null>(null); const [syncStatus, setSyncStatus] = useState<DataSyncStatus | null>(null); const [loading, setLoading] = useState(true); const [calculating, setCalculating] = useState(false); const [error, setError] = useState<string | null>(null);
+  const loadData = async () => { setLoading(true); setError(null); try { const [forex, shipping, marketQuotes, quota, remedies, internalBusiness, cbam, nextSyncStatus] = await Promise.all([dataProvider.getForexSnapshot(), dataProvider.getShippingIndexSnapshot(), dataProvider.getMarketQuotes(), dataProvider.getTaricQuotaSnapshot(), dataProvider.getTradeRemedySnapshot(), dataProvider.getInternalBusinessSnapshot(), dataProvider.getCbamParameters(), dataProvider.getDataSyncStatus()]); setData({ forex, shipping, marketQuotes, quota, remedies, internalBusiness, cbam }); setSyncStatus(nextSyncStatus); } catch (e) { setError(e instanceof Error ? e.message : '成本数据加载失败'); } finally { setLoading(false); } };
   useEffect(() => { void loadData(); }, []);
   const indexOptions = useMemo(() => Object.values(DEFAULT_COST_PARAMETERS.shipping_mappings).filter((m) => m.vessel_mode === input.vesselMode), [input.vesselMode]);
   const product = PRODUCT_DEFINITIONS[input.product]; const regionLabel = input.destinationRegion === 'EU' ? '欧盟' : input.destinationRegion === 'UK' ? '英国' : '其他地区'; const internal = data?.internalBusiness?.by_business_region.find((r) => r.label === regionLabel);
@@ -32,11 +33,29 @@ export function CostCalculator() {
   const update = (key: keyof CostInput, value: string) => { const numeric = ['eurUnitPrice', 'cnyUnitPrice', 'eurBaselineRate', 'cnyBaselineRate', 'cargoValueUsdPerT', 'measuredEmissionTco2PerT', 'thirdCountryPaidCarbonUsdPerT'].includes(key); setField(key, numeric ? Number(value) || 0 : value as never); };
   useEffect(() => { if (!indexOptions.some((m) => m.code === input.shippingIndexCode)) setField('shippingIndexCode', indexOptions[0]?.code || 'CCFI'); }, [indexOptions, input.shippingIndexCode]);
   const calculate = () => { if (!data) return; if ([input.eurUnitPrice, input.cnyUnitPrice, input.cargoValueUsdPerT].some((v) => v < 0)) { setError('金额输入不能为负数'); return; } setCalculating(true); setError(null); window.setTimeout(() => { setEstimate(estimateSteelExportCost(input, { forex: data.forex, shipping: data.shipping, marketQuotes: data.marketQuotes, cbam: data.cbam, parameters: DEFAULT_COST_PARAMETERS })); setCalculating(false); }, 160); };
-  if (loading) return <div className="cost-state"><div className="cost-state-pulse" /><h2>正在载入成本口径</h2><p>正在核对汇率、航运指数、CBAM参数与风险事件快照。</p></div>;
-  if (error && !data) return <div className="cost-state"><span className="cost-state-icon">!</span><h2>成本数据暂不可用</h2><p>{error}</p><button className="cost-button" onClick={() => void loadData()}>重新加载</button></div>;
+  const syncSources = Object.values(syncStatus?.sources || {});
+  const hasFallback = syncSources.some((source) => source.state === 'fallback');
+  const hasUnavailable = syncSources.some((source) => source.state === 'unavailable');
+  const costStatus = loading ? 'loading' : !data ? 'unavailable' : hasFallback ? 'fallback' : !syncStatus || !syncSources.length || hasUnavailable || Boolean(error) ? 'partial' : 'fresh' as const;
+  const costUpdatedAt = latestDataTimestamp([syncStatus?.generated_at, ...syncSources.flatMap((source) => [source.snapshot_captured_at, source.success_at]), data?.forex?.source.captured_at, data?.shipping?.source.captured_at, data?.cbam?.source.captured_at, data?.quota?.source.captured_at, data?.remedies?.source.captured_at]);
+  if (loading) return <div className="cost-state"><DataStatusBar state="loading" updatedAt={null} source="汇率、航运、CBAM 与风险事件快照" snapshot="正在确认" coverage="成本计算器初始化口径" scope="等待数据源返回后再开放测算。" /><div className="cost-state-pulse" /><h2>正在载入成本口径</h2><p>正在核对汇率、航运指数、CBAM参数与风险事件快照。</p></div>;
+  if (error && !data) return <div className="cost-state"><DataStatusBar state="unavailable" updatedAt={null} source="成本数据源" snapshot="无法确认" coverage="当前未形成可用测算快照" scope="需重新加载后再进行成本估算。" /><span className="cost-state-icon">!</span><h2>成本数据暂不可用</h2><p>{error}</p><button className="cost-button" onClick={() => void loadData()}>重新加载</button></div>;
   return <div className="cost-calculator">
     <header className="cost-hero"><div><span className="cost-kicker">EXPORT COST / USD PER TON</span><h1>钢材出口附加吨成本</h1><p>只估算出口外部附加成本，不计算钢材货值、购销价差、关税配额或贸易救济税率。</p></div><div className="cost-hero-meta"><span>FOB 为默认基准</span><strong>【理论测算值】</strong><small>结果单位：美元 / 吨</small></div></header>
     <div className="cost-notice"><span className="cost-notice-mark">i</span><p>汇率损益只描述结算环节变动；港杂、保险和航运均为区间估算。配额与贸易救济独立展示，供业务人工复核，不进入公式数值运算。</p></div>
+    <DataStatusBar
+      state={costStatus}
+      updatedAt={costUpdatedAt}
+      source={syncStatus ? `多源数据 · ${syncSources.length} 个数据源` : '汇率、航运、CBAM 与风险事件快照'}
+      snapshot={hasFallback ? '部分沿用上次成功快照' : syncStatus ? '当前未标记回退快照' : '状态快照待确认'}
+      coverage={`${regionLabel} · ${product.label} · ${input.tradeTerm} · 结果统一为 USD/t`}
+      scope="汇率、航运、港杂、保险和 CBAM 进入对应口径；配额与贸易救济仅作为独立风险事件展示。"
+      details={<>
+        <div><span>汇率</span><strong>{data?.forex?.source.captured_at || '未加载'} · 公开中间价理论测算</strong></div>
+        <div><span>航运</span><strong>{data?.shipping?.source.captured_at || '未加载'} · 指数映射区间，不代表订舱价格</strong></div>
+        <div><span>CBAM</span><strong>{data?.cbam?.source.captured_at || '平台参数'} · 企业实测或国别默认口径</strong></div>
+      </>}
+    />
     <section className="cost-input-panel"><SectionHeading title="测算条件" text="先确定产品、区域与贸易术语，再补充结算和货值参数。" /><div className="cost-form-grid">
       <Field label="产品品类" hint={product.cnDisplay}><select value={input.product} onChange={(e) => update('product', e.target.value)}>{products.map((p) => <option key={p.value} value={p.value}>{p.label}</option>)}</select></Field>
       {input.product === 'automotive-plate' && <Field label="汽车板基材" hint="冲压成品零部件不适用"><select value={input.automotiveBase} onChange={(e) => update('automotiveBase', e.target.value)}><option value="hot-rolled">热轧基材 · 7208</option><option value="cold-rolled">冷轧基材 · 7209</option><option value="coated">镀层基材 · 7210</option></select></Field>}
