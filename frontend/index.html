@@ -7,6 +7,7 @@
           content="default-src 'self';
                    script-src 'self' 'wasm-unsafe-eval';
                    connect-src 'self' https://api.open-meteo.com;
+                   frame-src https://ai.shougang.com.cn;
                    img-src 'self' data: blob:;
                    style-src 'self' 'unsafe-inline';" />
     <meta name="description" content="贸易物流一体化分析辅助平台" />
@@ -14,6 +15,154 @@
   </head>
   <body>
     <div id="root"></div>
+    <aside id="shougang-ai-embed" class="shougang-ai-embed" aria-label="首钢大模型">
+      <section class="shougang-ai-embed__panel" id="shougang-ai-panel" aria-label="首钢大模型对话窗口" hidden>
+        <header class="shougang-ai-embed__header">
+          <div>
+            <p class="shougang-ai-embed__eyebrow">SHOUGANG AI</p>
+            <h2>首钢大模型</h2>
+          </div>
+          <button class="shougang-ai-embed__close" type="button" aria-label="收起首钢大模型">×</button>
+        </header>
+        <div class="shougang-ai-embed__frame">
+          <iframe
+            src="https://ai.shougang.com.cn/chat/flow/d7ff9dc44ed148c4a6558662472e2f96"
+            title="首钢大模型对话"
+            loading="lazy"
+            frameborder="0"
+            allow="fullscreen;clipboard-write">
+          </iframe>
+        </div>
+      </section>
+      <button class="shougang-ai-embed__toggle" type="button" aria-controls="shougang-ai-panel" aria-expanded="false" aria-label="打开首钢大模型">
+        <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+          <path d="M5 6.75h14a1.75 1.75 0 0 1 1.75 1.75v7A1.75 1.75 0 0 1 19 17.25H11l-4.25 3v-3H5a1.75 1.75 0 0 1-1.75-1.75v-7A1.75 1.75 0 0 1 5 6.75Z" />
+          <path d="M8 11.75h8M8 14.75h5" />
+        </svg>
+        <span>AI</span>
+      </button>
+    </aside>
+    <style>
+      /* 首钢大模型嵌入层：默认收起，避免覆盖贸易表格与图表。 */
+      .shougang-ai-embed {
+        --sg-ai-ink: #e8fbf8;
+        --sg-ai-muted: #a6c8c6;
+        --sg-ai-line: rgba(151, 221, 213, .24);
+        --sg-ai-panel: #082633;
+        --sg-ai-accent: #67d3c7;
+        position: fixed;
+        right: clamp(16px, 2vw, 32px);
+        bottom: clamp(16px, 2vw, 24px);
+        z-index: 1200;
+        color: var(--sg-ai-ink);
+        font-family: Inter, "PingFang SC", "Microsoft YaHei", sans-serif;
+      }
+
+      .shougang-ai-embed__panel {
+        display: grid;
+        grid-template-rows: auto minmax(0, 1fr);
+        width: min(432px, calc(100vw - 32px));
+        height: min(720px, calc(100vh - 96px));
+        min-height: min(480px, calc(100vh - 96px));
+        margin-bottom: 12px;
+        overflow: hidden;
+        border: 1px solid var(--sg-ai-line);
+        border-radius: 16px;
+        background: var(--sg-ai-panel);
+        box-shadow: 0 22px 56px rgba(1, 18, 27, .36), 0 0 0 1px rgba(255, 255, 255, .03);
+      }
+
+      .shougang-ai-embed__panel[hidden] { display: none; }
+
+      .shougang-ai-embed__header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 16px;
+        min-height: 64px;
+        padding: 12px 14px 12px 18px;
+        border-bottom: 1px solid var(--sg-ai-line);
+        background: linear-gradient(110deg, rgba(28, 95, 106, .72), rgba(8, 38, 51, .96));
+      }
+
+      .shougang-ai-embed__eyebrow {
+        margin: 0 0 3px;
+        color: var(--sg-ai-accent);
+        font-size: 10px;
+        font-weight: 700;
+        letter-spacing: .14em;
+      }
+
+      .shougang-ai-embed__header h2 {
+        margin: 0;
+        color: var(--sg-ai-ink);
+        font-size: 16px;
+        line-height: 1.2;
+      }
+
+      .shougang-ai-embed__close,
+      .shougang-ai-embed__toggle {
+        display: inline-grid;
+        place-items: center;
+        border: 1px solid var(--sg-ai-line);
+        color: var(--sg-ai-ink);
+        background: rgba(4, 25, 35, .54);
+        cursor: pointer;
+        transition: border-color 180ms ease, background-color 180ms ease, transform 180ms ease;
+      }
+
+      .shougang-ai-embed__close {
+        width: 34px;
+        height: 34px;
+        border-radius: 9px;
+        font-size: 24px;
+        line-height: 1;
+      }
+
+      .shougang-ai-embed__close:hover,
+      .shougang-ai-embed__toggle:hover {
+        border-color: rgba(151, 221, 213, .62);
+        background: rgba(42, 128, 133, .48);
+      }
+
+      .shougang-ai-embed__close:focus-visible,
+      .shougang-ai-embed__toggle:focus-visible {
+        outline: 2px solid var(--sg-ai-accent);
+        outline-offset: 3px;
+      }
+
+      .shougang-ai-embed__frame,
+      .shougang-ai-embed__frame iframe {
+        width: 100%;
+        height: 100%;
+        min-height: 0;
+        border: 0;
+      }
+
+      .shougang-ai-embed__toggle {
+        width: 54px;
+        height: 54px;
+        margin-left: auto;
+        border-radius: 50%;
+        background: #0d5366;
+        box-shadow: 0 12px 28px rgba(1, 18, 27, .28);
+      }
+
+      .shougang-ai-embed__toggle svg { width: 22px; height: 22px; fill: none; stroke: currentColor; stroke-linecap: round; stroke-linejoin: round; stroke-width: 1.6; }
+      .shougang-ai-embed__toggle span { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+
+      @media (max-width: 560px) {
+        .shougang-ai-embed { right: 12px; bottom: 12px; }
+        .shougang-ai-embed__panel { width: calc(100vw - 24px); height: calc(100vh - 88px); min-height: min(400px, calc(100vh - 88px)); border-radius: 13px; }
+        .shougang-ai-embed__toggle { width: 50px; height: 50px; }
+      }
+
+      @media (prefers-reduced-motion: reduce) {
+        .shougang-ai-embed__close,
+        .shougang-ai-embed__toggle { transition: none; }
+      }
+    </style>
+    <script type="module" src="./sg-ai-embed.js"></script>
     <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>
