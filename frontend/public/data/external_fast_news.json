@@ -6,10 +6,10 @@
     "dashboard_url": "https://www.mysteel.com/fastcomment/#/",
     "api_url": "https://openapi.mysteel.com/without_sign/newsflash/flashnews/query_by_tags.htm",
     "taxonomy_url": "https://a.mysteelcdn.com/common/publish/newsflash/newsflash_column.json",
-    "captured_at": "2026-10-11T05:38:50.814Z",
+    "captured_at": "2026-10-11T07:01:33.227Z",
     "coverage_start": "2026-10-11",
     "coverage_end": "2026-10-11",
-    "latest_published_at": "2026-10-11T05:03:09.332Z",
+    "latest_published_at": "2026-10-11T06:58:00.000Z",
     "timezone": "Asia/Shanghai",
     "fetch_mode": "api",
     "request_params": {
@@ -23,17 +23,17 @@
         ]
       ]
     },
-    "raw_sha256": "e66333b1d8b7388c9e4affc8fc76cf1c424d8627e14352b50f337dbe624813c4",
+    "raw_sha256": "46bb327caff56c3dbd16a4ed4fb0d2c472b32d4c67caa95e40a039945eaeac55",
     "taxonomy_sha256": "c98f5bfdacde3401c98ea8f43bac3ca63d35b569f6aad3e1fff2f39b58a0dbf3",
     "response_sha256": [
-      "d42645554bfabe8b335ae119e1fcf95b9d144e9e192c9557fdc0bebc0c605dd1"
+      "20ab6261376f27dfa62c7918b8205accc4237795048fc174e5872d26831a1dca"
     ],
     "page_count": 1,
     "reported_total": 10000,
     "truncation_detected": true,
     "watermark": {
-      "publisher_time_ms": 1791694989332,
-      "id": "4907768"
+      "publisher_time_ms": 1791701880000,
+      "id": "4907771"
     },
     "retry": {
       "attempts": 3,
@@ -43,6 +43,169 @@
     }
   },
   "items": [
+    {
+      "news_id": "4907771",
+      "published_at": "2026-10-11T06:58:00.000Z",
+      "published_at_ms": 1791701880000,
+      "timezone": "Asia/Shanghai",
+      "content_text": "磐金钢管将于10月12日上午8:00起，对全系列产品价格上调30，调整后：108*4.5mm报4270、219*6mm报4240、480*7mm报4630、508*7mm报4610。6-10米之间（含6米）定尺加50，325*6-7.5及351(含)以上规格11-11.99，12米非定尺价格减30。以上价格过磅含税。（元/吨）",
+      "content_html": "磐金钢管将于10月12日上午8:00起，对全系列产品价格上调30，调整后：108*4.5mm报4270、219*6mm报4240、480*7mm报4630、508*7mm报4610。6-10米之间（含6米）定尺加50，325*6-7.5及351(含)以上规格11-11.99，12米非定尺价格减30。以上价格过磅含税。（元/吨）",
+      "raw_content": "磐金钢管将于10月12日上午8:00起，对全系列产品价格上调30，调整后：108*4.5mm报4270、219*6mm报4240、480*7mm报4630、508*7mm报4610。6-10米之间（含6米）定尺加50，325*6-7.5及351(含)以上规格11-11.99，12米非定尺价格减30。以上价格过磅含税。（元/吨）",
+      "category": {
+        "id": 2,
+        "name": "2"
+      },
+      "section": {
+        "id": 4,
+        "name": "4"
+      },
+      "products": [
+        {
+          "id": "01010901",
+          "name": "无缝管",
+          "source": "relationBreed"
+        },
+        {
+          "id": "钢管",
+          "name": "钢管",
+          "source": "breedTag"
+        }
+      ],
+      "regions": [
+        {
+          "id": "01",
+          "name": "国内"
+        },
+        {
+          "id": "0101",
+          "name": "华东"
+        },
+        {
+          "id": "0102",
+          "name": "华南"
+        },
+        {
+          "id": "0104",
+          "name": "华北"
+        }
+      ],
+      "source_name": "我的钢铁网(Mysteel)",
+      "source_url": "http://gg.mysteel.com/a/26101114/60234E870D6CD18B.html",
+      "in_article_url": "http://gg.mysteel.com/a/26101114/60234E870D6CD18B.html",
+      "out_article_url": null,
+      "in_article_title": "磐金钢管自10月12日起上调无缝管产品价格通知",
+      "out_article_title": null,
+      "source_link_status": "article_link",
+      "data_source": 1,
+      "publisher_id": 222911,
+      "relation_id": 46038913,
+      "ai_flag": 0,
+      "platform_product_line": null,
+      "mapping_status": "ambiguous",
+      "quality_flags": []
+    },
+    {
+      "news_id": "4907770",
+      "published_at": "2026-10-11T06:55:32.239Z",
+      "published_at_ms": 1791701732239,
+      "timezone": "Asia/Shanghai",
+      "content_text": "10月11日沙钢10-2期优线调价：所有线材品种价格不动，现45# 3760，82B 3750，35K 3780。",
+      "content_html": "10月11日沙钢10-2期优线调价：所有线材品种价格不动，现45# 3760，82B 3750，35K 3780。",
+      "raw_content": "10月11日沙钢10-2期优线调价：所有线材品种价格不动，现45# 3760，82B 3750，35K 3780。",
+      "category": {
+        "id": 2,
+        "name": "2"
+      },
+      "section": {
+        "id": 7,
+        "name": "7"
+      },
+      "products": [
+        {
+          "id": "010212",
+          "name": "优焊线",
+          "source": "relationBreed"
+        },
+        {
+          "id": "线材",
+          "name": "线材",
+          "source": "breedTag"
+        }
+      ],
+      "regions": [
+        {
+          "id": "010103",
+          "name": "江苏"
+        }
+      ],
+      "source_name": null,
+      "source_url": null,
+      "in_article_url": null,
+      "out_article_url": null,
+      "in_article_title": null,
+      "out_article_title": null,
+      "source_link_status": "no_link",
+      "data_source": 2,
+      "publisher_id": 224300,
+      "relation_id": 7662676,
+      "ai_flag": 0,
+      "platform_product_line": null,
+      "mapping_status": "ambiguous",
+      "quality_flags": [
+        "source_link_missing"
+      ]
+    },
+    {
+      "news_id": "4907769",
+      "published_at": "2026-10-11T06:50:13.352Z",
+      "published_at_ms": 1791701413352,
+      "timezone": "Asia/Shanghai",
+      "content_text": "磐金钢管将于10月12日上午8:00起，对全系列产品价格上调30元/吨，调整后：108*4.5mm报4270、219*6mm报4240、480*7mm报4610、508*7mm报4710。6-10米之间（含6米）定尺加50，325*6-7.5及351(含)以上规格11-11.99，12米非定尺价格减30。以上价格过磅含税。（元/吨）",
+      "content_html": "磐金钢管将于10月12日上午8:00起，对全系列产品价格上调30元/吨，调整后：108*4.5mm报4270、219*6mm报4240、480*7mm报4610、508*7mm报4710。6-10米之间（含6米）定尺加50，325*6-7.5及351(含)以上规格11-11.99，12米非定尺价格减30。以上价格过磅含税。（元/吨）",
+      "raw_content": "磐金钢管将于10月12日上午8:00起，对全系列产品价格上调30元/吨，调整后：108*4.5mm报4270、219*6mm报4240、480*7mm报4610、508*7mm报4710。6-10米之间（含6米）定尺加50，325*6-7.5及351(含)以上规格11-11.99，12米非定尺价格减30。以上价格过磅含税。（元/吨）",
+      "category": {
+        "id": 2,
+        "name": "2"
+      },
+      "section": {
+        "id": 9,
+        "name": "9"
+      },
+      "products": [
+        {
+          "id": "01010901",
+          "name": "无缝管",
+          "source": "relationBreed"
+        },
+        {
+          "id": "钢管",
+          "name": "钢管",
+          "source": "breedTag"
+        }
+      ],
+      "regions": [
+        {
+          "id": "01010207",
+          "name": "潍坊"
+        }
+      ],
+      "source_name": null,
+      "source_url": null,
+      "in_article_url": null,
+      "out_article_url": null,
+      "in_article_title": null,
+      "out_article_title": null,
+      "source_link_status": "no_link",
+      "data_source": 2,
+      "publisher_id": 208812,
+      "relation_id": 7662675,
+      "ai_flag": 0,
+      "platform_product_line": null,
+      "mapping_status": "ambiguous",
+      "quality_flags": [
+        "source_link_missing"
+      ]
+    },
     {
       "news_id": "4907768",
       "published_at": "2026-10-11T05:03:09.332Z",
@@ -1510,12 +1673,12 @@
   ],
   "quality": {
     "raw_count": 100,
-    "accepted_count": 26,
-    "rejected_count": 74,
+    "accepted_count": 29,
+    "rejected_count": 71,
     "deduped_count": 0,
-    "missing_source_link_count": 19,
+    "missing_source_link_count": 21,
     "missing_product_count": 2,
-    "malformed_content_count": 74,
+    "malformed_content_count": 71,
     "duplicate_group_count": 0,
     "warnings": [
       "API 报告总量超过本次分页采集量；快照仅覆盖目标日期窗口，需按分类/地区拆分请求补全。"
