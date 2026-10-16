@@ -6,10 +6,10 @@
     "dashboard_url": "https://www.mysteel.com/fastcomment/#/",
     "api_url": "https://openapi.mysteel.com/without_sign/newsflash/flashnews/query_by_tags.htm",
     "taxonomy_url": "https://a.mysteelcdn.com/common/publish/newsflash/newsflash_column.json",
-    "captured_at": "2026-10-16T04:23:24.785Z",
+    "captured_at": "2026-10-16T05:44:27.195Z",
     "coverage_start": "2026-10-16",
     "coverage_end": "2026-10-16",
-    "latest_published_at": "2026-10-16T04:18:30.348Z",
+    "latest_published_at": "2026-10-16T05:42:49.637Z",
     "timezone": "Asia/Shanghai",
     "fetch_mode": "api",
     "request_params": {
@@ -23,42 +23,42 @@
         ]
       ]
     },
-    "raw_sha256": "7bc014ec6f32025aa1697b6154e94fc10c1e9db97fbd923e58c5fc9c99af0260",
+    "raw_sha256": "eeb9b0103d5153a2d7c7d3bf19872b0cc5529e48c23dced446afed12730ea060",
     "taxonomy_sha256": "c98f5bfdacde3401c98ea8f43bac3ca63d35b569f6aad3e1fff2f39b58a0dbf3",
     "response_sha256": [
-      "a45c4a895b49a8783484bceffbb84d2c22494d73ad414c564377234388f815d0",
-      "3f6bb3ca34263836d7a56d6f9e0cb3581dcd6bc58a0df071458014853a758906",
-      "7c8609a413386d5915b0b4256c5abc1ba9eaf35858f8c22fc09435db8b2eaba4",
-      "bd607f4a9ed5a01b979aa3027cf5a86f19817b451572022a49e4b2c2142339fd",
-      "873a2dfd0aac47f98fff738f928a30ed6753bf06ac773373c82b0a639d2274d1",
-      "acc418c16ae72e0516083a9e8592481d7ca43237e1f01894ed32c1cdae63b765",
-      "c808d5c7cdbd53a506230dcf747e4e727726f596dc39c6c20d2a76df8ba97225",
-      "3404dc0e768f79f407b41d4b4e41b9be82c4f3f34e9b2875f9eabf0ee7a5d9be",
-      "b91e7f833e924ff68623bca060e56b98cf0a6847c52f2e2fe934f388fbb9a49b",
-      "43822fb43237d7d26434e729741802973c0d5679fc91feb1a31d47db7d8c1752",
-      "87346589ad15cbf17460b49d99ab5dee2c1ed1b199ad38b0e063505a21b2e1f1",
-      "9b2aed8ff6a60015a1b9f6aa60a1688cecc3a83d391903a12b8532332aa48776",
-      "0a59e725ff88bb58fdcec642f259a54f0c9211a80101d242ffb82174ecd6f838",
-      "93271aa6ed3f85952945cbf988a5de291d91bc5175c11a608554fc88b0f07591",
-      "32415efc7bc67108b9690df4fc11eadfc3c3e5e0931d12eaaa51448f806bcd51",
-      "69c75e74a2279bb7a8dfbd84d95cb80577ab5164dfa9970bf3d8ad8fd9ed7f16",
-      "fc8ead128a6d8046c3f3d761fe8d5a8f83f942c33f8693d80a72189563f768c9",
-      "e30075ad784870823c16ad96aea4c58eb564ac5cbdb3771bad4b5651dc228a9a",
-      "2af65439cadef5f558308b84ff14a9e0166a85bc7b06cfb581be8ebb0945911a",
-      "e858139a086278d362027088fea8267cd0d82ee63eeb613a907b0dce71fa8baf",
-      "cb560637d49a56e9f0447073a0da480e4b1707aa25537d53b1ffdfcbf448577f",
-      "160704256c2957efec3dfc0c1514e412c9d9bf984a5701ceb68c5c57db6e6b5b",
-      "692eb3ae357b9ca1b2ced3df1313f41d4fbc6e08a06e28f979a8c40ea8bd591e",
-      "2a7adc83cc0589ab2b25b826fd3e0d3096d0b2a313ee4317f191ce4306ad1bc7",
-      "8b9822f2e64b6dfb05dda9bb978c1f7bba4bdf5df64327e4bf65f7dc89068fcf",
-      "fcc371d086ba6f553cc4fde474c946c3b1204efc8b048316100c6cb21ddb3cb9"
+      "6977b94b3a4e39400fd1e00b6d5fa3ef41b70f47652ca6112a5c166b3c3288d1",
+      "fe851a030f58ebe170f6ce3ea8fac35ca9137783d2da7dc332a6b934cf7999d9",
+      "ffe17cd26daed15fd961f4c752fa97531973eee624dc9a9bba48a726bbec5edb",
+      "15b3bc1ab6c4d49fa75f782a128cd3c2861d907698a6dd6005106603f59254f6",
+      "027f840e6f5150128f2cd2bda6a9098d7d1cedc18ec83414a6334b57c24812d9",
+      "07ff1362adfe632130ecaff8fdede8858613ed37c37ae7caec7860ef1cdf8e49",
+      "8e11c1e545a912cdf75c0e9d2b7ad4d65b43b5cd6d06899e4b329fec943e4237",
+      "d71bca538a187399dd5dbd92702f979cc9d6c49aceeef657693425b577aa8a81",
+      "986190fe15c75b3e8c5d90123da9f33058087e5f14c714c577bafc1aa4f76dc1",
+      "28a8be30072a4d4fbf75b4f3962dbe6665d0ff7b037f5a2d50cf44b37336b367",
+      "a396e58b60eb27c7483eda1b8f05ce69638308cc0df65e0f649e54e280293c68",
+      "e44e80c7e872918d9943427545a61278b91dd3de2c6ce53d197e85341673d59b",
+      "09afa7de6cab632aafcac8c042c78110bb7bb03e684079d0e76b14c4ee833dd6",
+      "17039f58f06c5821bc9142ed1e39143861dbc8e49a1047adbe1c66b1a5d25792",
+      "d2ba4207111df1c7048bad2f204e2b904ffec9cab12ad22d3667905bfe33d809",
+      "fd63ec7eb2b4d5eaaf34a906f245158cd6ed944f10894f78da98373228664fff",
+      "c3f4fa9d2971b9e80c20144080357eb3877ad2f245e2e61e81d51ed9743fd7df",
+      "61e2588ec4bb831af5e0b93ad5e21e7f2c2c8f58f52faace52a81fa2eb9edc3a",
+      "8834812af941ac96880f5816905ade0cf82e3508f6f6c865db9fec88eb02428e",
+      "f299bbb570b5e88682429034d484e0a498470f226fc7f09e8be1587bf5e5a6af",
+      "87575f4fbf09413e497877f67759c16d9f84da750e2c90389b5bba76d038f51f",
+      "341f77e31396b97483dc42a0141de6ebbebfa27bd3c09e8105e1852f4a90d98e",
+      "987aed5f35b69b5981b384ee99b6d719654d901e56fbf6077128a1a7f907adfc",
+      "4067d2af98078fed3d429f8a723e24e139cb1d82d51f33c4ccf64f4cc7269981",
+      "df9e04eaf951e3f21b35297a57568743f53544346832d85cf0da25aeb4dc7b34",
+      "cc2132548283b3c720c532a72f4170879867d01a0a44f7424da0457e88b90759"
     ],
     "page_count": 26,
     "reported_total": 10000,
     "truncation_detected": true,
     "watermark": {
-      "publisher_time_ms": 1792124310348,
-      "id": "4922172"
+      "publisher_time_ms": 1792129369637,
+      "id": "4922185"
     },
     "retry": {
       "attempts": 3,
@@ -68,6 +68,641 @@
     }
   },
   "items": [
+    {
+      "news_id": "4922185",
+      "published_at": "2026-10-16T05:42:49.637Z",
+      "published_at_ms": 1792129369637,
+      "timezone": "Asia/Shanghai",
+      "content_text": "10月16日午盘南京中板价格跌10-20，普板：南钢3470，唐钢3410，旋力3410，西城3380，飞达3380。低合金中板：南钢3770，旋力3630，萍钢3630。单位：元/吨。",
+      "content_html": "10月16日午盘南京中板价格跌10-20，普板：南钢3470，唐钢3410，旋力3410，西城3380，飞达3380。低合金中板：南钢3770，旋力3630，萍钢3630。单位：元/吨。",
+      "raw_content": "10月16日午盘南京中板价格跌10-20，普板：南钢3470，唐钢3410，旋力3410，西城3380，飞达3380。低合金中板：南钢3770，旋力3630，萍钢3630。单位：元/吨。",
+      "category": {
+        "id": 2,
+        "name": "2"
+      },
+      "section": {
+        "id": 7,
+        "name": "7"
+      },
+      "products": [
+        {
+          "id": "010102",
+          "name": "中板",
+          "source": "relationBreed"
+        },
+        {
+          "id": "低合金高强板",
+          "name": "低合金高强板",
+          "source": "breedTag"
+        }
+      ],
+      "regions": [
+        {
+          "id": "010103",
+          "name": "江苏"
+        }
+      ],
+      "source_name": null,
+      "source_url": null,
+      "in_article_url": null,
+      "out_article_url": null,
+      "in_article_title": null,
+      "out_article_title": null,
+      "source_link_status": "no_link",
+      "data_source": 2,
+      "publisher_id": 224995,
+      "relation_id": 7678371,
+      "ai_flag": 0,
+      "platform_product_line": null,
+      "mapping_status": "ambiguous",
+      "quality_flags": [
+        "source_link_missing"
+      ]
+    },
+    {
+      "news_id": "4922184",
+      "published_at": "2026-10-16T05:35:56.979Z",
+      "published_at_ms": 1792128956979,
+      "timezone": "Asia/Shanghai",
+      "content_text": "10月16日午后太原市场镀锌管价格稳，4寸*3.75mm山西正大报4070，邯郸友发报4090，唐山华岐报4020，过磅含税。（元/吨）",
+      "content_html": "10月16日午后太原市场镀锌管价格稳，4寸*3.75mm山西正大报4070，邯郸友发报4090，唐山华岐报4020，过磅含税。（元/吨）",
+      "raw_content": "10月16日午后太原市场镀锌管价格稳，4寸*3.75mm山西正大报4070，邯郸友发报4090，唐山华岐报4020，过磅含税。（元/吨）",
+      "category": {
+        "id": 2,
+        "name": "2"
+      },
+      "section": {
+        "id": 7,
+        "name": "7"
+      },
+      "products": [
+        {
+          "id": "01010905",
+          "name": "镀锌管",
+          "source": "relationBreed"
+        }
+      ],
+      "regions": [
+        {
+          "id": "01040401",
+          "name": "太原"
+        }
+      ],
+      "source_name": null,
+      "source_url": null,
+      "in_article_url": null,
+      "out_article_url": null,
+      "in_article_title": null,
+      "out_article_title": null,
+      "source_link_status": "no_link",
+      "data_source": 2,
+      "publisher_id": 213169,
+      "relation_id": 7678369,
+      "ai_flag": 0,
+      "platform_product_line": null,
+      "mapping_status": "ambiguous",
+      "quality_flags": [
+        "source_link_missing"
+      ]
+    },
+    {
+      "news_id": "4922183",
+      "published_at": "2026-10-16T05:35:40.324Z",
+      "published_at_ms": 1792128940324,
+      "timezone": "Asia/Shanghai",
+      "content_text": "10月16日内蒙古赤峰金帆废电瓶价格：电动9050、电信8850、大白9450、黑皮80A以下9650、120叉车管式9550、电轿9100、AGM 8950、摩托车8100、电子秤5400。（单位：元/吨）",
+      "content_html": "10月16日内蒙古赤峰金帆废电瓶价格：电动9050、电信8850、大白9450、黑皮80A以下9650、120叉车管式9550、电轿9100、AGM 8950、摩托车8100、电子秤5400。（单位：元/吨）",
+      "raw_content": "10月16日内蒙古赤峰金帆废电瓶价格：电动9050、电信8850、大白9450、黑皮80A以下9650、120叉车管式9550、电轿9100、AGM 8950、摩托车8100、电子秤5400。（单位：元/吨）",
+      "category": {
+        "id": 4,
+        "name": "4"
+      },
+      "section": {
+        "id": 7,
+        "name": "7"
+      },
+      "products": [
+        {
+          "id": "020308",
+          "name": "2#铅",
+          "source": "relationBreed"
+        },
+        {
+          "id": "废电瓶",
+          "name": "废电瓶",
+          "source": "breedTag"
+        },
+        {
+          "id": "废旧铅酸蓄电池",
+          "name": "废旧铅酸蓄电池",
+          "source": "breedTag"
+        },
+        {
+          "id": "再生金属",
+          "name": "再生金属",
+          "source": "breedTag"
+        }
+      ],
+      "regions": [
+        {
+          "id": "01010713",
+          "name": "阜阳"
+        }
+      ],
+      "source_name": null,
+      "source_url": null,
+      "in_article_url": null,
+      "out_article_url": null,
+      "in_article_title": null,
+      "out_article_title": null,
+      "source_link_status": "no_link",
+      "data_source": 2,
+      "publisher_id": 228187,
+      "relation_id": 7678368,
+      "ai_flag": 0,
+      "platform_product_line": null,
+      "mapping_status": "ambiguous",
+      "quality_flags": [
+        "source_link_missing"
+      ]
+    },
+    {
+      "news_id": "4922182",
+      "published_at": "2026-10-16T05:34:57.163Z",
+      "published_at_ms": 1792128897163,
+      "timezone": "Asia/Shanghai",
+      "content_text": "10月16日Mysteel监测的全国22家H型钢生产企业中，本周开工率51.61%，周环比下降3.23%；钢厂周实际产量25.2万吨，周环比下降2.35%；钢厂产能利用率45.21%，周环比下降2.35%；库存19.4万吨，周环比上涨0.52%。",
+      "content_html": "10月16日Mysteel监测的全国22家H型钢生产企业中，本周开工率51.61%，周环比下降3.23%；钢厂周实际产量25.2万吨，周环比下降2.35%；钢厂产能利用率45.21%，周环比下降2.35%；库存19.4万吨，周环比上涨0.52%。",
+      "raw_content": "10月16日Mysteel监测的全国22家H型钢生产企业中，本周开工率51.61%，周环比下降3.23%；钢厂周实际产量25.2万吨，周环比下降2.35%；钢厂产能利用率45.21%，周环比下降2.35%；库存19.4万吨，周环比上涨0.52%。",
+      "category": {
+        "id": 2,
+        "name": "2"
+      },
+      "section": {
+        "id": 4,
+        "name": "4"
+      },
+      "products": [
+        {
+          "id": "01010705",
+          "name": "H型钢",
+          "source": "relationBreed"
+        },
+        {
+          "id": "热轧H型钢",
+          "name": "热轧H型钢",
+          "source": "breedTag"
+        }
+      ],
+      "regions": [
+        {
+          "id": "01",
+          "name": "国内"
+        }
+      ],
+      "source_name": null,
+      "source_url": null,
+      "in_article_url": null,
+      "out_article_url": null,
+      "in_article_title": null,
+      "out_article_title": null,
+      "source_link_status": "no_link",
+      "data_source": 2,
+      "publisher_id": 225969,
+      "relation_id": 7678367,
+      "ai_flag": 0,
+      "platform_product_line": "hot-rolled",
+      "mapping_status": "mapped",
+      "quality_flags": [
+        "source_link_missing"
+      ]
+    },
+    {
+      "news_id": "4922181",
+      "published_at": "2026-10-16T05:34:32.651Z",
+      "published_at_ms": 1792128872651,
+      "timezone": "Asia/Shanghai",
+      "content_text": "据Mysteel了解，2026年10月16日海外市场氧化铝以印度FOB382美元/吨的价格成交3万吨，11月船期。",
+      "content_html": "据Mysteel了解，2026年10月16日海外市场氧化铝以印度FOB382美元/吨的价格成交3万吨，11月船期。",
+      "raw_content": "据Mysteel了解，2026年10月16日海外市场氧化铝以印度FOB382美元/吨的价格成交3万吨，11月船期。",
+      "category": {
+        "id": 4,
+        "name": "4"
+      },
+      "section": {
+        "id": 4,
+        "name": "4"
+      },
+      "products": [
+        {
+          "id": "020202",
+          "name": "氧化铝",
+          "source": "relationBreed"
+        }
+      ],
+      "regions": [],
+      "source_name": null,
+      "source_url": null,
+      "in_article_url": null,
+      "out_article_url": null,
+      "in_article_title": null,
+      "out_article_title": null,
+      "source_link_status": "no_link",
+      "data_source": 0,
+      "publisher_id": 222029,
+      "relation_id": 0,
+      "ai_flag": 0,
+      "platform_product_line": null,
+      "mapping_status": "ambiguous",
+      "quality_flags": [
+        "source_link_missing"
+      ]
+    },
+    {
+      "news_id": "4922180",
+      "published_at": "2026-10-16T05:34:18.071Z",
+      "published_at_ms": 1792128858071,
+      "timezone": "Asia/Shanghai",
+      "content_text": "10月16日午后唐山市场热镀锌管价格稳，4寸*3.75mm唐山正元报4030，唐山华岐报4010，迁安正大报4020，唐山源泰德润3970，过磅含税。（元/吨）",
+      "content_html": "10月16日午后唐山市场热镀锌管价格稳，4寸*3.75mm唐山正元报4030，唐山华岐报4010，迁安正大报4020，唐山源泰德润3970，过磅含税。（元/吨）",
+      "raw_content": "10月16日午后唐山市场热镀锌管价格稳，4寸*3.75mm唐山正元报4030，唐山华岐报4010，迁安正大报4020，唐山源泰德润3970，过磅含税。（元/吨）",
+      "category": {
+        "id": 2,
+        "name": "2"
+      },
+      "section": {
+        "id": 7,
+        "name": "7"
+      },
+      "products": [
+        {
+          "id": "01010905",
+          "name": "镀锌管",
+          "source": "relationBreed"
+        }
+      ],
+      "regions": [
+        {
+          "id": "01040302",
+          "name": "唐山"
+        }
+      ],
+      "source_name": null,
+      "source_url": null,
+      "in_article_url": null,
+      "out_article_url": null,
+      "in_article_title": null,
+      "out_article_title": null,
+      "source_link_status": "no_link",
+      "data_source": 2,
+      "publisher_id": 220575,
+      "relation_id": 7678366,
+      "ai_flag": 0,
+      "platform_product_line": null,
+      "mapping_status": "ambiguous",
+      "quality_flags": [
+        "source_link_missing"
+      ]
+    },
+    {
+      "news_id": "4922179",
+      "published_at": "2026-10-16T05:34:07.551Z",
+      "published_at_ms": 1792128847551,
+      "timezone": "Asia/Shanghai",
+      "content_text": "16日大量采购（全国皆可自提）含税价高：H13刨花块料、F22刨花块料、8630刨花块料、镍4钼刨花块料、P91刨花块料、1镍0.5钼刨花块料、含镍4.5钢锭、镍2钼刨花块料、F11刨花块料。联系：李明明18800589917(微信同号)。",
+      "content_html": "16日大量采购（全国皆可自提）含税价高：H13刨花块料、F22刨花块料、8630刨花块料、镍4钼刨花块料、P91刨花块料、1镍0.5钼刨花块料、含镍4.5钢锭、镍2钼刨花块料、F11刨花块料。联系：李明明18800589917(微信同号)。",
+      "raw_content": "16日大量采购（全国皆可自提）含税价高：H13刨花块料、F22刨花块料、8630刨花块料、镍4钼刨花块料、P91刨花块料、1镍0.5钼刨花块料、含镍4.5钢锭、镍2钼刨花块料、F11刨花块料。联系：李明明18800589917(微信同号)。",
+      "category": {
+        "id": 2,
+        "name": "2"
+      },
+      "section": {
+        "id": 7,
+        "name": "7"
+      },
+      "products": [
+        {
+          "id": "03061402",
+          "name": "其它废料",
+          "source": "relationBreed"
+        },
+        {
+          "id": "废钢刨花",
+          "name": "废钢刨花",
+          "source": "breedTag"
+        }
+      ],
+      "regions": [
+        {
+          "id": "010103",
+          "name": "江苏"
+        },
+        {
+          "id": "01010301",
+          "name": "无锡"
+        },
+        {
+          "id": "0101030101",
+          "name": "江阴"
+        },
+        {
+          "id": "0101030103",
+          "name": "宜兴"
+        }
+      ],
+      "source_name": "我的钢铁网",
+      "source_url": "https://feigang.mysteel.com/a/26101613/4B0A59C01F9B6C88.html",
+      "in_article_url": "https://feigang.mysteel.com/a/26101613/4B0A59C01F9B6C88.html",
+      "out_article_url": null,
+      "in_article_title": "16日无锡鸿发再生采购信息",
+      "out_article_title": null,
+      "source_link_status": "article_link",
+      "data_source": 1,
+      "publisher_id": 224979,
+      "relation_id": 46088646,
+      "ai_flag": 0,
+      "platform_product_line": null,
+      "mapping_status": "ambiguous",
+      "quality_flags": []
+    },
+    {
+      "news_id": "4922178",
+      "published_at": "2026-10-16T05:34:03.354Z",
+      "published_at_ms": 1792128843354,
+      "timezone": "Asia/Shanghai",
+      "content_text": "10月16日午后唐山市场焊管价格稳，4寸*3.75mm唐山华岐报3340，迁安正大报3340，唐山源泰德润报3340，过磅含税。（元/吨）",
+      "content_html": "10月16日午后唐山市场焊管价格稳，4寸*3.75mm唐山华岐报3340，迁安正大报3340，唐山源泰德润报3340，过磅含税。（元/吨）",
+      "raw_content": "10月16日午后唐山市场焊管价格稳，4寸*3.75mm唐山华岐报3340，迁安正大报3340，唐山源泰德润报3340，过磅含税。（元/吨）",
+      "category": {
+        "id": 2,
+        "name": "2"
+      },
+      "section": {
+        "id": 7,
+        "name": "7"
+      },
+      "products": [
+        {
+          "id": "01010903",
+          "name": "焊管",
+          "source": "relationBreed"
+        }
+      ],
+      "regions": [
+        {
+          "id": "01040302",
+          "name": "唐山"
+        }
+      ],
+      "source_name": null,
+      "source_url": null,
+      "in_article_url": null,
+      "out_article_url": null,
+      "in_article_title": null,
+      "out_article_title": null,
+      "source_link_status": "no_link",
+      "data_source": 2,
+      "publisher_id": 220575,
+      "relation_id": 7678365,
+      "ai_flag": 0,
+      "platform_product_line": null,
+      "mapping_status": "ambiguous",
+      "quality_flags": [
+        "source_link_missing"
+      ]
+    },
+    {
+      "news_id": "4922177",
+      "published_at": "2026-10-16T05:33:01.917Z",
+      "published_at_ms": 1792128781917,
+      "timezone": "Asia/Shanghai",
+      "content_text": "10月16日午后天津市场焊管价格稳，4寸*3.75mm焊管天津友发报3360，迁安正大报3370，衡水华岐报3370，过磅含税。（元/吨）",
+      "content_html": "10月16日午后天津市场焊管价格稳，4寸*3.75mm焊管天津友发报3360，迁安正大报3370，衡水华岐报3370，过磅含税。（元/吨）",
+      "raw_content": "10月16日午后天津市场焊管价格稳，4寸*3.75mm焊管天津友发报3360，迁安正大报3370，衡水华岐报3370，过磅含税。（元/吨）",
+      "category": {
+        "id": 2,
+        "name": "2"
+      },
+      "section": {
+        "id": 7,
+        "name": "7"
+      },
+      "products": [
+        {
+          "id": "01010903",
+          "name": "焊管",
+          "source": "relationBreed"
+        }
+      ],
+      "regions": [
+        {
+          "id": "010402",
+          "name": "天津"
+        }
+      ],
+      "source_name": null,
+      "source_url": null,
+      "in_article_url": null,
+      "out_article_url": null,
+      "in_article_title": null,
+      "out_article_title": null,
+      "source_link_status": "no_link",
+      "data_source": 2,
+      "publisher_id": 213169,
+      "relation_id": 7678364,
+      "ai_flag": 0,
+      "platform_product_line": null,
+      "mapping_status": "ambiguous",
+      "quality_flags": [
+        "source_link_missing"
+      ]
+    },
+    {
+      "news_id": "4922176",
+      "published_at": "2026-10-16T05:32:00.000Z",
+      "published_at_ms": 1792128720000,
+      "timezone": "Asia/Shanghai",
+      "content_text": "Mysteel获悉，贵州机房释放80台昇腾910C整机租赁资源，按整租与散租分层定价：910C（560T）48台整租、闭口1-3年，报价5.7万元/台/月；同规格16台可散租、闭口可谈，报价5.9万元/台/月，散租较整租溢价2000元；910C（752T）16台、闭口可谈，报价6.65万元/台/月。本次货源供方标注为低位报价，国产算力租赁市场长协、大批量采购较散租存在议价优势；752T 算力规格更高，报价抬升明显。当前昇腾现货资源偏紧，闭口合约便于客户锁定成本，适合中长期训练需求，后续关注 752T 机型互联配置、进场排期及实际成交情况。",
+      "content_html": "Mysteel获悉，贵州机房释放80台昇腾910C整机租赁资源，按整租与散租分层定价：910C（560T）48台整租、闭口1-3年，报价5.7万元/台/月；同规格16台可散租、闭口可谈，报价5.9万元/台/月，散租较整租溢价2000元；910C（752T）16台、闭口可谈，报价6.65万元/台/月。本次货源供方标注为低位报价，国产算力租赁市场长协、大批量采购较散租存在议价优势；752T 算力规格更高，报价抬升明显。当前昇腾现货资源偏紧，闭口合约便于客户锁定成本，适合中长期训练需求，后续关注 752T 机型互联配置、进场排期及实际成交情况。",
+      "raw_content": "Mysteel获悉，贵州机房释放80台昇腾910C整机租赁资源，按整租与散租分层定价：910C（560T）48台整租、闭口1-3年，报价5.7万元/台/月；同规格16台可散租、闭口可谈，报价5.9万元/台/月，散租较整租溢价2000元；910C（752T）16台、闭口可谈，报价6.65万元/台/月。本次货源供方标注为低位报价，国产算力租赁市场长协、大批量采购较散租存在议价优势；752T 算力规格更高，报价抬升明显。当前昇腾现货资源偏紧，闭口合约便于客户锁定成本，适合中长期训练需求，后续关注 752T 机型互联配置、进场排期及实际成交情况。",
+      "category": {
+        "id": 18,
+        "name": "18"
+      },
+      "section": {
+        "id": 7,
+        "name": "7"
+      },
+      "products": [],
+      "regions": [],
+      "source_name": "我的钢铁网(Mysteel)",
+      "source_url": "http://suanli.mysteel.com/a/26101613/428BFA4ADC0EDB44.html",
+      "in_article_url": "http://suanli.mysteel.com/a/26101613/428BFA4ADC0EDB44.html",
+      "out_article_url": null,
+      "in_article_title": "Mysteel算力：贵州昇腾910C 560T整租5.7万较散租让价2000元,752T报6.65万",
+      "out_article_title": null,
+      "source_link_status": "article_link",
+      "data_source": 1,
+      "publisher_id": 226337,
+      "relation_id": 46088626,
+      "ai_flag": 0,
+      "platform_product_line": null,
+      "mapping_status": "unmapped",
+      "quality_flags": []
+    },
+    {
+      "news_id": "4922175",
+      "published_at": "2026-10-16T05:04:29.674Z",
+      "published_at_ms": 1792127069674,
+      "timezone": "Asia/Shanghai",
+      "content_text": "10月16日内蒙古棋盘井某主流煤企炼焦精煤竞拍，高灰低硫肥煤(A15S0.8)起拍价1340元/吨，实际成交价1740元/吨，较上期9日成交价涨350元/吨。",
+      "content_html": "10月16日内蒙古棋盘井某主流煤企炼焦精煤竞拍，高灰低硫肥煤(A15S0.8)起拍价1340元/吨，实际成交价1740元/吨，较上期9日成交价涨350元/吨。",
+      "raw_content": "10月16日内蒙古棋盘井某主流煤企炼焦精煤竞拍，高灰低硫肥煤(A15S0.8)起拍价1340元/吨，实际成交价1740元/吨，较上期9日成交价涨350元/吨。",
+      "category": {
+        "id": 12,
+        "name": "12"
+      },
+      "section": {
+        "id": 7,
+        "name": "7"
+      },
+      "products": [
+        {
+          "id": "050202",
+          "name": "炼焦煤",
+          "source": "relationBreed"
+        },
+        {
+          "id": "肥煤",
+          "name": "肥煤",
+          "source": "breedTag"
+        }
+      ],
+      "regions": [
+        {
+          "id": "01040503",
+          "name": "乌海"
+        }
+      ],
+      "source_name": null,
+      "source_url": null,
+      "in_article_url": null,
+      "out_article_url": null,
+      "in_article_title": null,
+      "out_article_title": null,
+      "source_link_status": "no_link",
+      "data_source": 2,
+      "publisher_id": 219681,
+      "relation_id": 7678363,
+      "ai_flag": 0,
+      "platform_product_line": null,
+      "mapping_status": "ambiguous",
+      "quality_flags": [
+        "source_link_missing"
+      ]
+    },
+    {
+      "news_id": "4922174",
+      "published_at": "2026-10-16T05:04:00.009Z",
+      "published_at_ms": 1792127040009,
+      "timezone": "Asia/Shanghai",
+      "content_text": "10月16日内蒙古棋盘井某主流煤企炼焦精煤竞拍，高灰低硫肥煤(A12S0.8)起拍价1620元/吨，实际成交价1860元/吨，较上期9日成交价涨190元/吨。",
+      "content_html": "10月16日内蒙古棋盘井某主流煤企炼焦精煤竞拍，高灰低硫肥煤(A12S0.8)起拍价1620元/吨，实际成交价1860元/吨，较上期9日成交价涨190元/吨。",
+      "raw_content": "10月16日内蒙古棋盘井某主流煤企炼焦精煤竞拍，高灰低硫肥煤(A12S0.8)起拍价1620元/吨，实际成交价1860元/吨，较上期9日成交价涨190元/吨。",
+      "category": {
+        "id": 12,
+        "name": "12"
+      },
+      "section": {
+        "id": 7,
+        "name": "7"
+      },
+      "products": [
+        {
+          "id": "050202",
+          "name": "炼焦煤",
+          "source": "relationBreed"
+        },
+        {
+          "id": "肥煤",
+          "name": "肥煤",
+          "source": "breedTag"
+        }
+      ],
+      "regions": [
+        {
+          "id": "01040503",
+          "name": "乌海"
+        }
+      ],
+      "source_name": null,
+      "source_url": null,
+      "in_article_url": null,
+      "out_article_url": null,
+      "in_article_title": null,
+      "out_article_title": null,
+      "source_link_status": "no_link",
+      "data_source": 2,
+      "publisher_id": 219681,
+      "relation_id": 7678362,
+      "ai_flag": 0,
+      "platform_product_line": null,
+      "mapping_status": "ambiguous",
+      "quality_flags": [
+        "source_link_missing"
+      ]
+    },
+    {
+      "news_id": "4922173",
+      "published_at": "2026-10-16T05:03:25.389Z",
+      "published_at_ms": 1792127005389,
+      "timezone": "Asia/Shanghai",
+      "content_text": "10月16日内蒙古棋盘井某主流煤企炼焦精煤竞拍，高灰中硫肥煤(A15S1.1)起拍价1490元/吨，实际成交价1760元/吨，较上期9日成交价涨220元/吨。",
+      "content_html": "10月16日内蒙古棋盘井某主流煤企炼焦精煤竞拍，高灰中硫肥煤(A15S1.1)起拍价1490元/吨，实际成交价1760元/吨，较上期9日成交价涨220元/吨。",
+      "raw_content": "10月16日内蒙古棋盘井某主流煤企炼焦精煤竞拍，高灰中硫肥煤(A15S1.1)起拍价1490元/吨，实际成交价1760元/吨，较上期9日成交价涨220元/吨。",
+      "category": {
+        "id": 12,
+        "name": "12"
+      },
+      "section": {
+        "id": 7,
+        "name": "7"
+      },
+      "products": [
+        {
+          "id": "050202",
+          "name": "炼焦煤",
+          "source": "relationBreed"
+        },
+        {
+          "id": "肥煤",
+          "name": "肥煤",
+          "source": "breedTag"
+        }
+      ],
+      "regions": [
+        {
+          "id": "01040503",
+          "name": "乌海"
+        }
+      ],
+      "source_name": null,
+      "source_url": null,
+      "in_article_url": null,
+      "out_article_url": null,
+      "in_article_title": null,
+      "out_article_title": null,
+      "source_link_status": "no_link",
+      "data_source": 2,
+      "publisher_id": 219681,
+      "relation_id": 7678361,
+      "ai_flag": 0,
+      "platform_product_line": null,
+      "mapping_status": "ambiguous",
+      "quality_flags": [
+        "source_link_missing"
+      ]
+    },
     {
       "news_id": "4922172",
       "published_at": "2026-10-16T04:18:30.348Z",
@@ -1000,9 +1635,9 @@
       "published_at": "2026-10-16T04:02:00.000Z",
       "published_at_ms": 1792123320000,
       "timezone": "Asia/Shanghai",
-      "content_text": "2026年10月第二期金属矿产参考价(HMA)公布： HMA_Ni=15847.67美元/吨； HMA_Co=38938.33美元/吨； HMA_Fe=1.4美元/吨； HMA_Cr=6.37美元/吨。 Mysteel测算印尼镍矿HPM基准价如下： ——火法矿(Mc:35%、Co:0.05%、Fe:20%、Cr:1%) HPM_Ni1.4%=50.05美元/湿吨，环比跌1.61美元/湿吨； HPM_Ni1.5%=54.48美元/湿吨，环比跌1.74美元/湿吨； HPM_Ni1.6%=59.12美元/湿吨，环比跌1.88美元/湿吨。 ——湿法矿(Mc:40%、Co:0.1%、Fe:40%、Cr:1%) HPM_Ni1.1%=17.95美元/湿吨，环比跌0.62美元/湿吨； HPM_Ni1.2%=20.33美元/湿吨，环比跌0.69美元/湿吨。",
-      "content_html": "2026年10月第二期金属矿产参考价(HMA)公布：\r\nHMA_Ni=15847.67美元/吨；\r\nHMA_Co=38938.33美元/吨；\r\nHMA_Fe=1.4美元/吨；\r\nHMA_Cr=6.37美元/吨。\r\n\r\nMysteel测算印尼镍矿HPM基准价如下：\r\n——火法矿(Mc:35%、Co:0.05%、Fe:20%、Cr:1%)\r\nHPM_Ni1.4%=50.05美元/湿吨，环比跌1.61美元/湿吨；\r\nHPM_Ni1.5%=54.48美元/湿吨，环比跌1.74美元/湿吨；\r\nHPM_Ni1.6%=59.12美元/湿吨，环比跌1.88美元/湿吨。\r\n——湿法矿(Mc:40%、Co:0.1%、Fe:40%、Cr:1%)\r\nHPM_Ni1.1%=17.95美元/湿吨，环比跌0.62美元/湿吨；\r\nHPM_Ni1.2%=20.33美元/湿吨，环比跌0.69美元/湿吨。",
-      "raw_content": "2026年10月第二期金属矿产参考价(HMA)公布：\r\nHMA_Ni=15847.67美元/吨；\r\nHMA_Co=38938.33美元/吨；\r\nHMA_Fe=1.4美元/吨；\r\nHMA_Cr=6.37美元/吨。\r\n\r\nMysteel测算印尼镍矿HPM基准价如下：\r\n——火法矿(Mc:35%、Co:0.05%、Fe:20%、Cr:1%)\r\nHPM_Ni1.4%=50.05美元/湿吨，环比跌1.61美元/湿吨；\r\nHPM_Ni1.5%=54.48美元/湿吨，环比跌1.74美元/湿吨；\r\nHPM_Ni1.6%=59.12美元/湿吨，环比跌1.88美元/湿吨。\r\n——湿法矿(Mc:40%、Co:0.1%、Fe:40%、Cr:1%)\r\nHPM_Ni1.1%=17.95美元/湿吨，环比跌0.62美元/湿吨；\r\nHPM_Ni1.2%=20.33美元/湿吨，环比跌0.69美元/湿吨。",
+      "content_text": "2026年10月第二期金属矿产参考价(HMA)公布： HMA_Ni=15847.67美元/吨； HMA_Co=38938.33美元/吨； HMA_Fe=1.4美元/吨； HMA_Cr=6.37美元/吨。 Mysteel测算印尼镍矿HPM基准价如下： **火法矿(Mc:35%/Co:0.05%/Fe:20%/Cr:1%) HPM_Ni1.4%=50.05$/wmt，跌1.61$/wmt； HPM_Ni1.5%=54.48$/wmt，跌1.74$/wmt； HPM_Ni1.6%=59.12$/wmt，跌1.88$/wmt。 **湿法矿(Mc:40%/Co:0.1%/Fe:40%/Cr:1%) HPM_Ni1.1%=17.95$/wmt，跌0.62$/wmt； HPM_Ni1.2%=20.33$/wmt，跌0.69$/wmt。",
+      "content_html": "<p>2026年10月第二期金属矿产参考价(HMA)公布：<br>HMA_Ni=15847.67美元/吨；<br>HMA_Co=38938.33美元/吨；<br>HMA_Fe=1.4美元/吨；<br>HMA_Cr=6.37美元/吨。<br><br>Mysteel测算印尼镍矿HPM基准价如下：<br>**火法矿(Mc:35%/Co:0.05%/Fe:20%/Cr:1%)<br>HPM_Ni1.4%=50.05$/wmt，跌1.61$/wmt；<br>HPM_Ni1.5%=54.48$/wmt，跌1.74$/wmt；<br>HPM_Ni1.6%=59.12$/wmt，跌1.88$/wmt。<br>**湿法矿(Mc:40%/Co:0.1%/Fe:40%/Cr:1%)<br>HPM_Ni1.1%=17.95$/wmt，跌0.62$/wmt；<br>HPM_Ni1.2%=20.33$/wmt，跌0.69$/wmt。</p>",
+      "raw_content": "<p>2026年10月第二期金属矿产参考价(HMA)公布：<br>HMA_Ni=15847.67美元/吨；<br>HMA_Co=38938.33美元/吨；<br>HMA_Fe=1.4美元/吨；<br>HMA_Cr=6.37美元/吨。<br><br>Mysteel测算印尼镍矿HPM基准价如下：<br>**火法矿(Mc:35%/Co:0.05%/Fe:20%/Cr:1%)<br>HPM_Ni1.4%=50.05$/wmt，跌1.61$/wmt；<br>HPM_Ni1.5%=54.48$/wmt，跌1.74$/wmt；<br>HPM_Ni1.6%=59.12$/wmt，跌1.88$/wmt。<br>**湿法矿(Mc:40%/Co:0.1%/Fe:40%/Cr:1%)<br>HPM_Ni1.1%=17.95$/wmt，跌0.62$/wmt；<br>HPM_Ni1.2%=20.33$/wmt，跌0.69$/wmt。</p>",
       "category": {
         "id": 14,
         "name": "14"
@@ -11515,16 +12150,16 @@
           "name": "国内"
         },
         {
+          "id": "0102",
+          "name": "华南"
+        },
+        {
           "id": "010202",
           "name": "广西"
         },
         {
           "id": "01020203",
           "name": "柳州"
-        },
-        {
-          "id": "0102",
-          "name": "华南"
         }
       ],
       "source_name": null,
@@ -125362,13 +125997,13 @@
       },
       "products": [
         {
-          "id": "010220",
-          "name": "金属制品",
+          "id": "01022002",
+          "name": "钢绞线",
           "source": "relationBreed"
         },
         {
-          "id": "01022002",
-          "name": "钢绞线",
+          "id": "010220",
+          "name": "金属制品",
           "source": "relationBreed"
         }
       ],
@@ -131315,12 +131950,12 @@
   ],
   "quality": {
     "raw_count": 2600,
-    "accepted_count": 2529,
-    "rejected_count": 71,
+    "accepted_count": 2542,
+    "rejected_count": 58,
     "deduped_count": 0,
-    "missing_source_link_count": 2058,
-    "missing_product_count": 52,
-    "malformed_content_count": 71,
+    "missing_source_link_count": 2069,
+    "missing_product_count": 53,
+    "malformed_content_count": 58,
     "duplicate_group_count": 0,
     "warnings": [
       "API 报告总量超过本次分页采集量；快照仅覆盖目标日期窗口，需按分类/地区拆分请求补全。"
