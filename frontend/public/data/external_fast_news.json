@@ -6,10 +6,10 @@
     "dashboard_url": "https://www.mysteel.com/fastcomment/#/",
     "api_url": "https://openapi.mysteel.com/without_sign/newsflash/flashnews/query_by_tags.htm",
     "taxonomy_url": "https://a.mysteelcdn.com/common/publish/newsflash/newsflash_column.json",
-    "captured_at": "2026-10-17T04:17:32.373Z",
+    "captured_at": "2026-10-17T05:29:51.164Z",
     "coverage_start": "2026-10-17",
     "coverage_end": "2026-10-17",
-    "latest_published_at": "2026-10-17T04:07:00.000Z",
+    "latest_published_at": "2026-10-17T05:13:00.000Z",
     "timezone": "Asia/Shanghai",
     "fetch_mode": "api",
     "request_params": {
@@ -23,17 +23,17 @@
         ]
       ]
     },
-    "raw_sha256": "43a7b0cad7c3d37ff6bc1de188e713e06f597e68a30ff44f80bc03aeaaeabf6b",
+    "raw_sha256": "2492822988420b2e6e7e806d98ed2874a820d9341678bb8dbbbc7430c341a573",
     "taxonomy_sha256": "c98f5bfdacde3401c98ea8f43bac3ca63d35b569f6aad3e1fff2f39b58a0dbf3",
     "response_sha256": [
-      "6249c5735dcb0155f2424521c954f629138579810b398d795aeca1736660e8d7"
+      "4bde50c6e21aa797eba449022aefe6c67c46075e9198eb88cc698b66a2a00916"
     ],
     "page_count": 1,
     "reported_total": 10000,
     "truncation_detected": true,
     "watermark": {
-      "publisher_time_ms": 1792210020000,
-      "id": "4922716"
+      "publisher_time_ms": 1792213980000,
+      "id": "4922722"
     },
     "retry": {
       "attempts": 3,
@@ -44,61 +44,347 @@
   },
   "items": [
     {
-      "news_id": "4922716",
-      "published_at": "2026-10-17T04:07:00.000Z",
-      "published_at_ms": 1792210020000,
+      "news_id": "4922722",
+      "published_at": "2026-10-17T05:13:00.000Z",
+      "published_at_ms": 1792213980000,
       "timezone": "Asia/Shanghai",
-      "content_text": "江苏电力交易中心发布《2027年江苏电力零售市场交易工作指引》，明确2027年起取消工商业“固定价”，零售电价全面传导批发市场价格。新机制下，零售套餐由电能量价格、封顶价格及解除条款构成。电能量价格挂钩中长期、日前及实时市场加权均价，并叠加浮动价格与分摊费用；设立以五层市场最高价加权为基准的“封顶价”作为风险兜底；同时引入单方免赔解除机制，当结算均价偏离全省均价一定比例时可无责解约。此外，绿电套餐实行电能量与环境价值分离计价，支持多年期PPA匹配。目前2027年度零售交易窗口已开放，建议企业尽快梳理用电曲线，关注浮动价格、封顶系数及分摊费用变化，通过比价优化购电策略，应对电价波动风险。",
-      "content_html": "江苏电力交易中心发布《2027年江苏电力零售市场交易工作指引》，明确2027年起取消工商业“固定价”，零售电价全面传导批发市场价格。新机制下，零售套餐由电能量价格、封顶价格及解除条款构成。电能量价格挂钩中长期、日前及实时市场加权均价，并叠加浮动价格与分摊费用；设立以五层市场最高价加权为基准的“封顶价”作为风险兜底；同时引入单方免赔解除机制，当结算均价偏离全省均价一定比例时可无责解约。此外，绿电套餐实行电能量与环境价值分离计价，支持多年期PPA匹配。目前2027年度零售交易窗口已开放，建议企业尽快梳理用电曲线，关注浮动价格、封顶系数及分摊费用变化，通过比价优化购电策略，应对电价波动风险。",
-      "raw_content": "江苏电力交易中心发布《2027年江苏电力零售市场交易工作指引》，明确2027年起取消工商业“固定价”，零售电价全面传导批发市场价格。新机制下，零售套餐由电能量价格、封顶价格及解除条款构成。电能量价格挂钩中长期、日前及实时市场加权均价，并叠加浮动价格与分摊费用；设立以五层市场最高价加权为基准的“封顶价”作为风险兜底；同时引入单方免赔解除机制，当结算均价偏离全省均价一定比例时可无责解约。此外，绿电套餐实行电能量与环境价值分离计价，支持多年期PPA匹配。目前2027年度零售交易窗口已开放，建议企业尽快梳理用电曲线，关注浮动价格、封顶系数及分摊费用变化，通过比价优化购电策略，应对电价波动风险。",
+      "content_text": "据央视新闻，美国总统特朗普当地时间10月16日签署一项行政命令，暂缓实施美国国会通过的针对俄罗斯经济的新一轮大规模制裁措施。特朗普向国会表示，暂缓实施这些制裁符合美国国家利益。据悉，这项以已故南卡罗来纳州联邦参议员林赛·格雷厄姆命名的制裁措施，旨在更迅速地切断为俄罗斯对乌克兰军事行动提供支持的资金来源。",
+      "content_html": "据央视新闻，美国总统特朗普当地时间10月16日签署一项行政命令，暂缓实施美国国会通过的针对俄罗斯经济的新一轮大规模制裁措施。特朗普向国会表示，暂缓实施这些制裁符合美国国家利益。据悉，这项以已故南卡罗来纳州联邦参议员林赛·格雷厄姆命名的制裁措施，旨在更迅速地切断为俄罗斯对乌克兰军事行动提供支持的资金来源。",
+      "raw_content": "据央视新闻，美国总统特朗普当地时间10月16日签署一项行政命令，暂缓实施美国国会通过的针对俄罗斯经济的新一轮大规模制裁措施。特朗普向国会表示，暂缓实施这些制裁符合美国国家利益。据悉，这项以已故南卡罗来纳州联邦参议员林赛·格雷厄姆命名的制裁措施，旨在更迅速地切断为俄罗斯对乌克兰军事行动提供支持的资金来源。",
       "category": {
         "id": 1,
         "name": "1"
       },
       "section": {
-        "id": 6,
-        "name": "6"
+        "id": 8,
+        "name": "8"
+      },
+      "products": [],
+      "regions": [],
+      "source_name": "财联社",
+      "source_url": "http://news.mysteel.com/a/26101713/D2019A3CAAF0DB96.html",
+      "in_article_url": "http://news.mysteel.com/a/26101713/D2019A3CAAF0DB96.html",
+      "out_article_url": null,
+      "in_article_title": "特朗普宣布暂缓实施新一轮对俄制裁",
+      "out_article_title": null,
+      "source_link_status": "article_link",
+      "data_source": 1,
+      "publisher_id": 221247,
+      "relation_id": 46092065,
+      "ai_flag": 0,
+      "platform_product_line": null,
+      "mapping_status": "unmapped",
+      "quality_flags": []
+    },
+    {
+      "news_id": "4922721",
+      "published_at": "2026-10-17T04:29:07.821Z",
+      "published_at_ms": 1792211347821,
+      "timezone": "Asia/Shanghai",
+      "content_text": "10月17日佰工，普通废钢降价10元/吨，二级破碎料降价50元/吨，其余料型降价20元/吨。10月18日上午8点开始执行。",
+      "content_html": "10月17日佰工，普通废钢降价10元/吨，二级破碎料降价50元/吨，其余料型降价20元/吨。10月18日上午8点开始执行。",
+      "raw_content": "10月17日佰工，普通废钢降价10元/吨，二级破碎料降价50元/吨，其余料型降价20元/吨。10月18日上午8点开始执行。",
+      "category": {
+        "id": 2,
+        "name": "2"
+      },
+      "section": {
+        "id": 9,
+        "name": "9"
       },
       "products": [
         {
-          "id": "01010101",
-          "name": "螺纹钢",
+          "id": "0306",
+          "name": "废钢",
           "source": "relationBreed"
         },
         {
-          "id": "01010102",
-          "name": "线材",
-          "source": "relationBreed"
+          "id": "二级破碎料",
+          "name": "二级破碎料",
+          "source": "breedTag"
+        },
+        {
+          "id": "再生金属",
+          "name": "再生金属",
+          "source": "breedTag"
         }
       ],
       "regions": [
         {
-          "id": "01",
-          "name": "国内"
-        },
-        {
-          "id": "0101",
-          "name": "华东"
-        },
-        {
-          "id": "010103",
-          "name": "江苏"
+          "id": "01040303",
+          "name": "秦皇岛"
         }
       ],
-      "source_name": "我的钢铁网(Mysteel)",
-      "source_url": "http://dianli.mysteel.com/a/26101712/0D70BD1C38888FAE.html",
-      "in_article_url": "http://dianli.mysteel.com/a/26101712/0D70BD1C38888FAE.html",
+      "source_name": null,
+      "source_url": null,
+      "in_article_url": null,
       "out_article_url": null,
-      "in_article_title": "Mysteel：江苏工商业电价告别“固定价”，2027年江苏企业怎么买电",
+      "in_article_title": null,
       "out_article_title": null,
-      "source_link_status": "article_link",
-      "data_source": 1,
-      "publisher_id": 198052,
-      "relation_id": 46092060,
+      "source_link_status": "no_link",
+      "data_source": 2,
+      "publisher_id": 215826,
+      "relation_id": 7678791,
       "ai_flag": 0,
       "platform_product_line": null,
       "mapping_status": "ambiguous",
-      "quality_flags": []
+      "quality_flags": [
+        "source_link_missing"
+      ]
+    },
+    {
+      "news_id": "4922720",
+      "published_at": "2026-10-17T04:26:52.149Z",
+      "published_at_ms": 1792211212149,
+      "timezone": "Asia/Shanghai",
+      "content_text": "10月17日广西钢铁最新价:配重1类2590,配重2类2590,配重3类2590,冲片2类2620,冲片4类2610,冲片5类2580,工业压块2440,钢筋压块2640,压块5类2520,压块3类2440,压块1类2330,压块1彩类2030,剪切6类2560,剪切4类2490,剪切2类2240,加工大料1类2080,加工大料2类1820,冷饼1类2410,冷饼2类2430,冷饼3类1980,热熔压饼2206,轻薄料1类1350,轻薄料2类520,轻薄料3类410,接货人：【广西资环：13826977387陈生】",
+      "content_html": "10月17日广西钢铁最新价:配重1类2590,配重2类2590,配重3类2590,冲片2类2620,冲片4类2610,冲片5类2580,工业压块2440,钢筋压块2640,压块5类2520,压块3类2440,压块1类2330,压块1彩类2030,剪切6类2560,剪切4类2490,剪切2类2240,加工大料1类2080,加工大料2类1820,冷饼1类2410,冷饼2类2430,冷饼3类1980,热熔压饼2206,轻薄料1类1350,轻薄料2类520,轻薄料3类410,接货人：【广西资环：13826977387陈生】",
+      "raw_content": "10月17日广西钢铁最新价:配重1类2590,配重2类2590,配重3类2590,冲片2类2620,冲片4类2610,冲片5类2580,工业压块2440,钢筋压块2640,压块5类2520,压块3类2440,压块1类2330,压块1彩类2030,剪切6类2560,剪切4类2490,剪切2类2240,加工大料1类2080,加工大料2类1820,冷饼1类2410,冷饼2类2430,冷饼3类1980,热熔压饼2206,轻薄料1类1350,轻薄料2类520,轻薄料3类410,接货人：【广西资环：13826977387陈生】",
+      "category": {
+        "id": 2,
+        "name": "2"
+      },
+      "section": {
+        "id": 9,
+        "name": "9"
+      },
+      "products": [
+        {
+          "id": "0306",
+          "name": "废钢",
+          "source": "relationBreed"
+        },
+        {
+          "id": "轻废",
+          "name": "轻废",
+          "source": "breedTag"
+        },
+        {
+          "id": "钢筋压块",
+          "name": "钢筋压块",
+          "source": "breedTag"
+        },
+        {
+          "id": "工业压块",
+          "name": "工业压块",
+          "source": "breedTag"
+        }
+      ],
+      "regions": [
+        {
+          "id": "01020201",
+          "name": "防城港"
+        }
+      ],
+      "source_name": null,
+      "source_url": null,
+      "in_article_url": null,
+      "out_article_url": null,
+      "in_article_title": null,
+      "out_article_title": null,
+      "source_link_status": "no_link",
+      "data_source": 2,
+      "publisher_id": 221419,
+      "relation_id": 7678790,
+      "ai_flag": 0,
+      "platform_product_line": null,
+      "mapping_status": "ambiguous",
+      "quality_flags": [
+        "source_link_missing"
+      ]
+    },
+    {
+      "news_id": "4922719",
+      "published_at": "2026-10-17T04:26:02.022Z",
+      "published_at_ms": 1792211162022,
+      "timezone": "Asia/Shanghai",
+      "content_text": "10月17日各供方：广西钢铁自2026年10月17日至下次调价止：冲片类、钢筋压块、工业压块、剪切料6类废钢价格下调20元/吨；配重1-3类、冷压饼1-2类废钢价格下调10元/吨；其他料型废钢价格不变，接货人：【广西资环：13826977387陈生】",
+      "content_html": "10月17日各供方：广西钢铁自2026年10月17日至下次调价止：冲片类、钢筋压块、工业压块、剪切料6类废钢价格下调20元/吨；配重1-3类、冷压饼1-2类废钢价格下调10元/吨；其他料型废钢价格不变，接货人：【广西资环：13826977387陈生】",
+      "raw_content": "10月17日各供方：广西钢铁自2026年10月17日至下次调价止：冲片类、钢筋压块、工业压块、剪切料6类废钢价格下调20元/吨；配重1-3类、冷压饼1-2类废钢价格下调10元/吨；其他料型废钢价格不变，接货人：【广西资环：13826977387陈生】",
+      "category": {
+        "id": 2,
+        "name": "2"
+      },
+      "section": {
+        "id": 9,
+        "name": "9"
+      },
+      "products": [
+        {
+          "id": "0306",
+          "name": "废钢",
+          "source": "relationBreed"
+        },
+        {
+          "id": "钢筋压块",
+          "name": "钢筋压块",
+          "source": "breedTag"
+        },
+        {
+          "id": "中废",
+          "name": "中废",
+          "source": "breedTag"
+        },
+        {
+          "id": "工业压块",
+          "name": "工业压块",
+          "source": "breedTag"
+        },
+        {
+          "id": "再生金属",
+          "name": "再生金属",
+          "source": "breedTag"
+        }
+      ],
+      "regions": [
+        {
+          "id": "01020201",
+          "name": "防城港"
+        }
+      ],
+      "source_name": null,
+      "source_url": null,
+      "in_article_url": null,
+      "out_article_url": null,
+      "in_article_title": null,
+      "out_article_title": null,
+      "source_link_status": "no_link",
+      "data_source": 2,
+      "publisher_id": 221419,
+      "relation_id": 7678789,
+      "ai_flag": 0,
+      "platform_product_line": null,
+      "mapping_status": "ambiguous",
+      "quality_flags": [
+        "source_link_missing"
+      ]
+    },
+    {
+      "news_id": "4922718",
+      "published_at": "2026-10-17T04:25:07.972Z",
+      "published_at_ms": 1792211107972,
+      "timezone": "Asia/Shanghai",
+      "content_text": "10月17日柳钢废钢最新价:配重1类2590,配重2类2590,配重3类2590,冲片2类2600,冲片4类2590,冲片5类2530,工业压块2400,钢筋压块2590,压块5类2500,压块3类2440,压块1类2330,压块1彩类2020,剪切6类2530,剪切4类2470,剪切2类2320,加工大料1类2080,加工大料2类1810,冷饼1类2340,冷饼2类2390,冷饼3类1870,热熔压饼2206,轻薄料1类1380,轻薄料2类520,轻薄料3类410。",
+      "content_html": "10月17日柳钢废钢最新价:配重1类2590,配重2类2590,配重3类2590,冲片2类2600,冲片4类2590,冲片5类2530,工业压块2400,钢筋压块2590,压块5类2500,压块3类2440,压块1类2330,压块1彩类2020,剪切6类2530,剪切4类2470,剪切2类2320,加工大料1类2080,加工大料2类1810,冷饼1类2340,冷饼2类2390,冷饼3类1870,热熔压饼2206,轻薄料1类1380,轻薄料2类520,轻薄料3类410。",
+      "raw_content": "10月17日柳钢废钢最新价:配重1类2590,配重2类2590,配重3类2590,冲片2类2600,冲片4类2590,冲片5类2530,工业压块2400,钢筋压块2590,压块5类2500,压块3类2440,压块1类2330,压块1彩类2020,剪切6类2530,剪切4类2470,剪切2类2320,加工大料1类2080,加工大料2类1810,冷饼1类2340,冷饼2类2390,冷饼3类1870,热熔压饼2206,轻薄料1类1380,轻薄料2类520,轻薄料3类410。",
+      "category": {
+        "id": 2,
+        "name": "2"
+      },
+      "section": {
+        "id": 9,
+        "name": "9"
+      },
+      "products": [
+        {
+          "id": "0306",
+          "name": "废钢",
+          "source": "relationBreed"
+        },
+        {
+          "id": "轻废",
+          "name": "轻废",
+          "source": "breedTag"
+        },
+        {
+          "id": "钢筋压块",
+          "name": "钢筋压块",
+          "source": "breedTag"
+        },
+        {
+          "id": "工业压块",
+          "name": "工业压块",
+          "source": "breedTag"
+        },
+        {
+          "id": "再生金属",
+          "name": "再生金属",
+          "source": "breedTag"
+        }
+      ],
+      "regions": [
+        {
+          "id": "01020203",
+          "name": "柳州"
+        }
+      ],
+      "source_name": null,
+      "source_url": null,
+      "in_article_url": null,
+      "out_article_url": null,
+      "in_article_title": null,
+      "out_article_title": null,
+      "source_link_status": "no_link",
+      "data_source": 2,
+      "publisher_id": 221419,
+      "relation_id": 7678788,
+      "ai_flag": 0,
+      "platform_product_line": null,
+      "mapping_status": "ambiguous",
+      "quality_flags": [
+        "source_link_missing"
+      ]
+    },
+    {
+      "news_id": "4922717",
+      "published_at": "2026-10-17T04:24:35.105Z",
+      "published_at_ms": 1792211075105,
+      "timezone": "Asia/Shanghai",
+      "content_text": "10月17日各供方：柳钢股份自2026年10月17日至下次调价止：冲片类废钢价格下调20元/吨；配重1-3类、钢筋压块、剪切料类、冷压饼1-2类下调10元/吨；其他料型废钢价格不变。",
+      "content_html": "10月17日各供方：柳钢股份自2026年10月17日至下次调价止：冲片类废钢价格下调20元/吨；配重1-3类、钢筋压块、剪切料类、冷压饼1-2类下调10元/吨；其他料型废钢价格不变。",
+      "raw_content": "10月17日各供方：柳钢股份自2026年10月17日至下次调价止：冲片类废钢价格下调20元/吨；配重1-3类、钢筋压块、剪切料类、冷压饼1-2类下调10元/吨；其他料型废钢价格不变。",
+      "category": {
+        "id": 2,
+        "name": "2"
+      },
+      "section": {
+        "id": 9,
+        "name": "9"
+      },
+      "products": [
+        {
+          "id": "0306",
+          "name": "废钢",
+          "source": "relationBreed"
+        },
+        {
+          "id": "钢筋压块",
+          "name": "钢筋压块",
+          "source": "breedTag"
+        },
+        {
+          "id": "中废",
+          "name": "中废",
+          "source": "breedTag"
+        },
+        {
+          "id": "再生金属",
+          "name": "再生金属",
+          "source": "breedTag"
+        }
+      ],
+      "regions": [
+        {
+          "id": "01020203",
+          "name": "柳州"
+        }
+      ],
+      "source_name": null,
+      "source_url": null,
+      "in_article_url": null,
+      "out_article_url": null,
+      "in_article_title": null,
+      "out_article_title": null,
+      "source_link_status": "no_link",
+      "data_source": 2,
+      "publisher_id": 221419,
+      "relation_id": 7678787,
+      "ai_flag": 0,
+      "platform_product_line": null,
+      "mapping_status": "ambiguous",
+      "quality_flags": [
+        "source_link_missing"
+      ]
     },
     {
       "news_id": "4922715",
@@ -1362,12 +1648,12 @@
   ],
   "quality": {
     "raw_count": 100,
-    "accepted_count": 24,
-    "rejected_count": 76,
+    "accepted_count": 29,
+    "rejected_count": 71,
     "deduped_count": 0,
-    "missing_source_link_count": 15,
-    "missing_product_count": 1,
-    "malformed_content_count": 76,
+    "missing_source_link_count": 20,
+    "missing_product_count": 2,
+    "malformed_content_count": 71,
     "duplicate_group_count": 0,
     "warnings": [
       "API 报告总量超过本次分页采集量；快照仅覆盖目标日期窗口，需按分类/地区拆分请求补全。"
