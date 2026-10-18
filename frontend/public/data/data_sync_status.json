@@ -1,6 +1,6 @@
 {
   "schema_version": "1.1",
-  "generated_at": "2026-10-18T05:42:44.254Z",
+  "generated_at": "2026-10-18T13:50:47.713Z",
   "schedule": "全量每天 18:00；我的钢铁网快讯每天 08:10、09:00；潮汐早报与霍尔木兹专题每天 09:00（Asia/Shanghai）",
   "scheduler": "cron 或 launchd（由部署环境安装；本仓库不自动启动后台服务）",
   "sources": {
@@ -9,9 +9,9 @@
       "state": "fresh",
       "quality_state": "complete",
       "quality_warnings": [],
-      "attempted_at": "2026-10-17T13:30:03.760Z",
-      "success_at": "2026-10-17T13:30:06.658Z",
-      "snapshot_captured_at": "2026-10-17T13:30:06.608Z",
+      "attempted_at": "2026-10-18T13:48:30.763Z",
+      "success_at": "2026-10-18T13:48:33.010Z",
+      "snapshot_captured_at": "2026-10-18T13:48:32.962Z",
       "coverage_end": "2026-10-16",
       "retry": {
         "attempts": 2,
@@ -25,9 +25,9 @@
       "state": "fresh",
       "quality_state": "complete",
       "quality_warnings": [],
-      "attempted_at": "2026-10-17T13:30:03.760Z",
-      "success_at": "2026-10-17T13:30:25.310Z",
-      "snapshot_captured_at": "2026-10-17T13:30:25.221Z",
+      "attempted_at": "2026-10-18T13:48:30.763Z",
+      "success_at": "2026-10-18T13:49:00.840Z",
+      "snapshot_captured_at": "2026-10-18T13:49:00.751Z",
       "coverage_end": "2026-08",
       "retry": {
         "attempts": 2,
@@ -41,10 +41,10 @@
       "state": "fresh",
       "quality_state": "complete",
       "quality_warnings": [],
-      "attempted_at": "2026-10-17T13:30:03.760Z",
-      "success_at": "2026-10-17T13:30:30.005Z",
-      "snapshot_captured_at": "2026-10-17T13:30:29.988Z",
-      "coverage_end": "2026-10-15",
+      "attempted_at": "2026-10-18T13:48:30.763Z",
+      "success_at": "2026-10-18T13:49:03.748Z",
+      "snapshot_captured_at": "2026-10-18T13:49:03.732Z",
+      "coverage_end": "2026-10-16",
       "retry": {
         "attempts": 2,
         "timeoutMs": 180000,
@@ -55,7 +55,7 @@
     "taric-quota-dashboard-public": {
       "source_id": "taric-quota-dashboard-public",
       "state": "fallback",
-      "attempted_at": "2026-10-17T13:30:03.760Z",
+      "attempted_at": "2026-10-18T13:48:30.763Z",
       "success_at": "2026-09-23T14:44:35.500Z",
       "snapshot_captured_at": "2026-09-23T14:44:29.428Z",
       "coverage_end": "2026-09-09",
@@ -64,7 +64,7 @@
     "shipping-index-dashboard-public": {
       "source_id": "shipping-index-dashboard-public",
       "state": "fallback",
-      "attempted_at": "2026-10-17T13:30:03.760Z",
+      "attempted_at": "2026-10-18T13:48:30.763Z",
       "success_at": "2026-09-08T14:12:07.358Z",
       "snapshot_captured_at": "2026-09-08T14:12:07.286Z",
       "coverage_end": "2026-09-07",
@@ -73,7 +73,7 @@
     "trade-remedy-dashboard-public": {
       "source_id": "trade-remedy-dashboard-public",
       "state": "fallback",
-      "attempted_at": "2026-10-17T13:30:03.760Z",
+      "attempted_at": "2026-10-18T13:48:30.763Z",
       "success_at": "2026-09-08T14:12:13.320Z",
       "snapshot_captured_at": "2026-09-08T14:12:13.237Z",
       "coverage_end": "2026-09-04",
@@ -86,9 +86,9 @@
       "quality_warnings": [
         "API 报告总量超过本次分页采集量；快照仅覆盖目标日期窗口，需按分类/地区拆分请求补全。"
       ],
-      "attempted_at": "2026-10-18T05:42:36.929Z",
-      "success_at": "2026-10-18T05:42:40.261Z",
-      "snapshot_captured_at": "2026-10-18T05:42:40.246Z",
+      "attempted_at": "2026-10-18T13:48:30.763Z",
+      "success_at": "2026-10-18T13:50:44.175Z",
+      "snapshot_captured_at": "2026-10-18T13:50:44.161Z",
       "coverage_end": "2026-10-18",
       "retry": {
         "attempts": 2,
@@ -106,10 +106,10 @@
         "历史上的今天：未取得可验证的人物/事件结构化数据，未虚构内容；请检查 Kagi 历史批次页访问与解析状态"
       ],
       "history_status": "unavailable",
-      "attempted_at": "2026-10-18T05:42:36.929Z",
-      "success_at": "2026-10-18T05:42:44.254Z",
-      "snapshot_captured_at": "2026-10-18T05:42:40.289Z",
-      "coverage_end": "2026-10-17T06:18:37.000Z",
+      "attempted_at": "2026-10-18T13:48:30.763Z",
+      "success_at": "2026-10-18T13:50:47.713Z",
+      "snapshot_captured_at": "2026-10-18T13:50:44.208Z",
+      "coverage_end": "2026-10-18T06:30:35.000Z",
       "retry": {
         "attempts": 2,
         "timeoutMs": 180000,
