@@ -6,10 +6,10 @@
     "dashboard_url": "https://www.mysteel.com/fastcomment/#/",
     "api_url": "https://openapi.mysteel.com/without_sign/newsflash/flashnews/query_by_tags.htm",
     "taxonomy_url": "https://a.mysteelcdn.com/common/publish/newsflash/newsflash_column.json",
-    "captured_at": "2026-10-18T04:21:23.064Z",
+    "captured_at": "2026-10-18T05:42:40.246Z",
     "coverage_start": "2026-10-18",
     "coverage_end": "2026-10-18",
-    "latest_published_at": "2026-10-18T04:20:00.000Z",
+    "latest_published_at": "2026-10-18T04:26:00.000Z",
     "timezone": "Asia/Shanghai",
     "fetch_mode": "api",
     "request_params": {
@@ -23,17 +23,17 @@
         ]
       ]
     },
-    "raw_sha256": "eebed19c5ffc76982043b2b3d5d644c7cb971e2fc777153818bcd45858b0485f",
+    "raw_sha256": "7bde9712447f65ad9467ffe8cbfb8725e0bba3dee56088db6a4370debf5a4cf2",
     "taxonomy_sha256": "c98f5bfdacde3401c98ea8f43bac3ca63d35b569f6aad3e1fff2f39b58a0dbf3",
     "response_sha256": [
-      "088a6a9eaf1391aa32780269e85ad5c7b48d897c1a073d19d0d12ef20b64bfb0"
+      "bfcfb9832b6a1171cb81551779536b8e67b4e10b600cd4ce0c17677cac74fd56"
     ],
     "page_count": 1,
     "reported_total": 10000,
     "truncation_detected": true,
     "watermark": {
-      "publisher_time_ms": 1792297200000,
-      "id": "4922758"
+      "publisher_time_ms": 1792297560000,
+      "id": "4922760"
     },
     "retry": {
       "attempts": 3,
@@ -43,6 +43,142 @@
     }
   },
   "items": [
+    {
+      "news_id": "4922760",
+      "published_at": "2026-10-18T04:26:00.000Z",
+      "published_at_ms": 1792297560000,
+      "timezone": "Asia/Shanghai",
+      "content_text": "厂家调价：自2026年10月18日8:00起，分宜海螺水泥通知对吉安市、吉安县、吉水县、泰和县、安福县、井冈山各品种袋、散装水泥价格上调20元/吨。",
+      "content_html": "厂家调价：自2026年10月18日8:00起，分宜海螺水泥通知对吉安市、吉安县、吉水县、泰和县、安福县、井冈山各品种袋、散装水泥价格上调20元/吨。",
+      "raw_content": "厂家调价：自2026年10月18日8:00起，分宜海螺水泥通知对吉安市、吉安县、吉水县、泰和县、安福县、井冈山各品种袋、散装水泥价格上调20元/吨。",
+      "category": {
+        "id": 6,
+        "name": "6"
+      },
+      "section": {
+        "id": 9,
+        "name": "9"
+      },
+      "products": [
+        {
+          "id": "1001",
+          "name": "水泥",
+          "source": "relationBreed"
+        }
+      ],
+      "regions": [
+        {
+          "id": "010106",
+          "name": "江西"
+        },
+        {
+          "id": "01010603",
+          "name": "新余"
+        },
+        {
+          "id": "01010608",
+          "name": "宜春"
+        }
+      ],
+      "source_name": "百年建筑网",
+      "source_url": "http://www.100njz.com/a/26101812/F72495CF4F91C4DF.html",
+      "in_article_url": "http://www.100njz.com/a/26101812/F72495CF4F91C4DF.html",
+      "out_article_url": null,
+      "in_article_title": "百年建筑：10月18日江西分宜海螺水泥对各规格品种的水泥出厂价格进行调整",
+      "out_article_title": null,
+      "source_link_status": "article_link",
+      "data_source": 1,
+      "publisher_id": 225018,
+      "relation_id": 46092234,
+      "ai_flag": 0,
+      "platform_product_line": null,
+      "mapping_status": "ambiguous",
+      "quality_flags": []
+    },
+    {
+      "news_id": "4922759",
+      "published_at": "2026-10-18T04:23:00.000Z",
+      "published_at_ms": 1792297380000,
+      "timezone": "Asia/Shanghai",
+      "content_text": "厂家调价：自2026年10月18日上午7时起，吉安市宏光实业通知对发往吉安地区各规格品种水泥价格在原基础上上调20元/吨。",
+      "content_html": "厂家调价：自2026年10月18日上午7时起，吉安市宏光实业通知对发往吉安地区各规格品种水泥价格在原基础上上调20元/吨。",
+      "raw_content": "厂家调价：自2026年10月18日上午7时起，吉安市宏光实业通知对发往吉安地区各规格品种水泥价格在原基础上上调20元/吨。",
+      "category": {
+        "id": 6,
+        "name": "6"
+      },
+      "section": {
+        "id": 9,
+        "name": "9"
+      },
+      "products": [
+        {
+          "id": "1001",
+          "name": "水泥",
+          "source": "relationBreed"
+        }
+      ],
+      "regions": [
+        {
+          "id": "0101",
+          "name": "华东"
+        },
+        {
+          "id": "010106",
+          "name": "江西"
+        },
+        {
+          "id": "01010601",
+          "name": "南昌"
+        },
+        {
+          "id": "01010602",
+          "name": "萍乡"
+        },
+        {
+          "id": "01010603",
+          "name": "新余"
+        },
+        {
+          "id": "01010604",
+          "name": "九江"
+        },
+        {
+          "id": "01010605",
+          "name": "赣州"
+        },
+        {
+          "id": "01010606",
+          "name": "吉安"
+        },
+        {
+          "id": "01010607",
+          "name": "上饶"
+        },
+        {
+          "id": "01010608",
+          "name": "宜春"
+        },
+        {
+          "id": "01010609",
+          "name": "丰城"
+        }
+      ],
+      "source_name": "百年建筑网",
+      "source_url": "http://www.100njz.com/a/26101812/CFF1A290DE5F622A.html",
+      "in_article_url": "http://www.100njz.com/a/26101812/CFF1A290DE5F622A.html",
+      "out_article_url": null,
+      "in_article_title": "百年建筑：10月18日江西吉安宏光实业对各规格品种的水泥出厂价格进行上调",
+      "out_article_title": null,
+      "source_link_status": "article_link",
+      "data_source": 1,
+      "publisher_id": 225018,
+      "relation_id": 46092233,
+      "ai_flag": 0,
+      "platform_product_line": null,
+      "mapping_status": "ambiguous",
+      "quality_flags": []
+    },
     {
       "news_id": "4922758",
       "published_at": "2026-10-18T04:20:00.000Z",
@@ -1234,12 +1370,12 @@
   ],
   "quality": {
     "raw_count": 100,
-    "accepted_count": 23,
-    "rejected_count": 77,
+    "accepted_count": 25,
+    "rejected_count": 75,
     "deduped_count": 0,
     "missing_source_link_count": 13,
     "missing_product_count": 3,
-    "malformed_content_count": 77,
+    "malformed_content_count": 75,
     "duplicate_group_count": 0,
     "warnings": [
       "API 报告总量超过本次分页采集量；快照仅覆盖目标日期窗口，需按分类/地区拆分请求补全。"
