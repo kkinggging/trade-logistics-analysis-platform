@@ -6,10 +6,10 @@
     "dashboard_url": "https://www.mysteel.com/fastcomment/#/",
     "api_url": "https://openapi.mysteel.com/without_sign/newsflash/flashnews/query_by_tags.htm",
     "taxonomy_url": "https://a.mysteelcdn.com/common/publish/newsflash/newsflash_column.json",
-    "captured_at": "2026-10-19T04:32:17.803Z",
+    "captured_at": "2026-10-19T05:59:46.415Z",
     "coverage_start": "2026-10-19",
     "coverage_end": "2026-10-19",
-    "latest_published_at": "2026-10-19T04:13:00.345Z",
+    "latest_published_at": "2026-10-19T05:57:00.000Z",
     "timezone": "Asia/Shanghai",
     "fetch_mode": "api",
     "request_params": {
@@ -23,43 +23,43 @@
         ]
       ]
     },
-    "raw_sha256": "fba79d2829c23cdb3618565a6f3f58e5476153e4085191d41c938724268f9578",
+    "raw_sha256": "869aac148c6badcbf9fb999e5ad89eed2ca71d9efbfc63ff06406bdf851b259c",
     "taxonomy_sha256": "c98f5bfdacde3401c98ea8f43bac3ca63d35b569f6aad3e1fff2f39b58a0dbf3",
     "response_sha256": [
-      "7e0e8be87ddec3d1af6f141628582cf8169d8bfacb22b0594d89e2a85918ddc5",
-      "32821c95eec100d6d1540366784d1c0b7ccd590f132cda63e53616a0d228b65e",
-      "c84b74d13a9985d2cc3c02e3e9833ca6971aff04e0d5d94f916cd955a607d56d",
-      "08eb5c2934b37e341f2b918880318f93c31b1825860c48d2547ab78ed854b907",
-      "94fa5e855a41065d92b556bcf940ab6cc66054f309943b8f26b8eafb4d38154d",
-      "d99b28cd6aff1c377dd180ef95d022ea7c32b111e00978021783c084d4b817d5",
-      "dd0f0ea86f0946e03bdf23627bab4a414e21670aaf5073ecc3978718d2d66e57",
-      "d5ffe3ae14c87b6034f5834228f27a8197a65b6369d090a0d40535f2d8fa3d60",
-      "71c7725a894e79b7f4dc72a9ba8fa1d7b12bc296c38f131d8eed151d0c1bc309",
-      "b493b9bf81e782adc470e7e99828fb69a8928e24aa2b4e8ce8389571b1621650",
-      "99e54fcaa30c9c49e674a716132a90790fe7a616f66653293b693283d44ad78d",
-      "961d497e67b6e164e8006574081da33044fdf351b86ac91f622e3af57843240b",
-      "f03de61d7597daa0569959b967146c7ebba4cecd8abf08074a2d4e6b194d745a",
-      "313daf29b68d11f22bbdfcb2f72fd1b27c8b228eee8cd44b1b8eaa5f88e3ab1f",
-      "8be055fb940484358d8bf7e5c59c7dd90703ecfa72f042e98f833970dd911c26",
-      "8e1c358187e8fad6307abdc7c5688c62c271dba02efc9bc7e2a4a69891b41ad1",
-      "23f5713236e8056cf80426d92c6ccce610b11486bd2c17f98dea0f1fcd296431",
-      "60762c995687b485770983f5a26f5855f591e272522bd8451969cfeb8c592158",
-      "f066ead982dc3722ae71d1fcc1294cd4acd135198cf9620aa2284fc2e2451ba4",
-      "055921f2aadce18ee5a6dd4911052921ef030c29bd36a6e377155576cb36cabc",
-      "5311b5054e244075d14e56073c9322357ea4ff9374f4ca44ecd0fa64d8ab9b8f",
-      "a8dff9e4d660027fc0b941bee688db378469d6017d131258eb12b9b68ed5a7ac",
-      "7ad5d104d1c19634d8bacec5c7a672d8b5571fde8b1ceb5007a6a48b6add10ef",
-      "b18b51f81ed65340047d903559c303aa226115747211cab4b1d8231674952a4c",
-      "97c31f97ceb36915c9b04266e1056447d2c639fdf2d39c96fba3fd03e98dae9a",
-      "c04e11f83085eea0041d670018c9bbde12d06a688a6be143f4241f42605c8aef",
-      "cf09aaf1a367b01985b20c30449461bf3ac297e8dbc14cb0de1503cc12b72de3"
+      "170a2fdd185055da4f639d34a21154234894b394489dc9ad6068eeca382d091e",
+      "b486f4935eaeeb9f12535246d857aaff22ddcca14480abc8f5af897d9f60bf3e",
+      "75babe447660c1b384106984e2bd777e7e144307d946e2b8b919eeb11674d4a6",
+      "207a22093e852b377b7a68d4ac73f9c03723d2c4d1a997ef1623650eb68ee15d",
+      "1f3a86879195ec3b2c5696919635b03146ee247eeb0cf5d6f3619a5f0d994589",
+      "00326e5837e358d92cc273850940b58e812ce078b53e365236824fac49a9e837",
+      "da198dfe4417046b1cc8271bac74b87db7f1a84260c14ca4f49527bd32fc924f",
+      "2ebff7cfb76d59d49bd27086e1a50e8a0e3ab0af2eb7f5c3a5f0558d4e926838",
+      "7f12d128e746f8745c51de81d07c1624a500cbba88da832755393d506b8acf88",
+      "5cb654516e2d1556cdf3fcbb12aa4761f700fa1e2549dfa34becf90c8adb62d2",
+      "1e7d3c8a86896f9f64865805b5d51a88399b0a214f92ab9f017d9cc9f802aaf1",
+      "58ba02529241c0ed6b7bcd280a3c6fc10f605e75fe8b4d1df0b2c27ccf14303c",
+      "a7216bde9b8f9b74a32ccc8a643b1fa0e26129531d9b582a419f805c15e72d4a",
+      "69819f1c9a1877c1e64745d76d623ab164117c73927bbd80002ba3787d4463c6",
+      "2b225257eecad731c71b31cb6a06e7631502db5797533fcb5d350fe2f089fd9b",
+      "cb944fab50056891ddf52aedcdcd69cce7ce270680d2801771894a2a23e80b12",
+      "5fc895299643e2b33abf63705ef4ca0430c95dc486a99ebd6f816dbd5be6e5a2",
+      "299475521f84381e99d2af78b1773d1ee5809d5123fbe1f49479a8a467031443",
+      "5cbbbef11b8aee87b8f1278ac9323445fb48044aa4f8b31716173a2f9cffdbd5",
+      "1c2d004b2ad052c52b7ec89343f0c48e5922fe921f3517d8c9303312068ab5f0",
+      "b166d9a87f30e7122d752e2a0f7cdaa636e28ccb8269562a26dfff5d0d257c84",
+      "6461f44a21124e70099f62a6e11de9f8b4f523a290ada4dbd63328242f36feb4",
+      "c7d343a66fd16bb1d0d8edc92fef0db4fb4fd32674a91f9a28c1ca11383672a1",
+      "5ca95779692c76479b87680a5b1fe9e5e3dd87725efd47837fb5b847e02f29ad",
+      "32f80beeee75c665bad8b1faf90702d8d357849ca1da72eed9f262588a23549f",
+      "ca8fcf10fcb5be7e83558c0d2f5d63dd989d8dc193260e92751035dac75a5b27",
+      "9598b04df60e7e71c2ec394260c39281e4462a2c558c6ab099adafc13a9e05cf"
     ],
     "page_count": 27,
     "reported_total": 10000,
     "truncation_detected": true,
     "watermark": {
-      "publisher_time_ms": 1792383180345,
-      "id": "4925391"
+      "publisher_time_ms": 1792389420000,
+      "id": "4925440"
     },
     "retry": {
       "attempts": 3,
@@ -69,6 +69,2297 @@
     }
   },
   "items": [
+    {
+      "news_id": "4925440",
+      "published_at": "2026-10-19T05:57:00.000Z",
+      "published_at_ms": 1792389420000,
+      "timezone": "Asia/Shanghai",
+      "content_text": "为支持国债做市，提高国债二级市场流动性，健全反映市场供求关系的国债收益率曲线，财政部决定开展国债做市支持操作。",
+      "content_html": "为支持国债做市，提高国债二级市场流动性，健全反映市场供求关系的国债收益率曲线，财政部决定开展国债做市支持操作。",
+      "raw_content": "为支持国债做市，提高国债二级市场流动性，健全反映市场供求关系的国债收益率曲线，财政部决定开展国债做市支持操作。",
+      "category": {
+        "id": 1,
+        "name": "1"
+      },
+      "section": {
+        "id": 8,
+        "name": "8"
+      },
+      "products": [],
+      "regions": [],
+      "source_name": "财联社",
+      "source_url": "http://news.mysteel.com/a/26101913/E2A3CE58BAEDC0D6.html",
+      "in_article_url": "http://news.mysteel.com/a/26101913/E2A3CE58BAEDC0D6.html",
+      "out_article_url": null,
+      "in_article_title": "财政部决定开展国债做市支持操作",
+      "out_article_title": null,
+      "source_link_status": "article_link",
+      "data_source": 1,
+      "publisher_id": 216058,
+      "relation_id": 46100582,
+      "ai_flag": 0,
+      "platform_product_line": null,
+      "mapping_status": "unmapped",
+      "quality_flags": []
+    },
+    {
+      "news_id": "4925439",
+      "published_at": "2026-10-19T05:57:00.000Z",
+      "published_at_ms": 1792389420000,
+      "timezone": "Asia/Shanghai",
+      "content_text": "产业在线数据显示，全冷年销量2.14亿台，同比下降7.1%；销售额568.5亿美元，同比下滑6.8%；产量2.36亿台，同比下降8.9%。",
+      "content_html": "产业在线数据显示，全冷年销量2.14亿台，同比下降7.1%；销售额568.5亿美元，同比下滑6.8%；产量2.36亿台，同比下降8.9%。",
+      "raw_content": "产业在线数据显示，全冷年销量2.14亿台，同比下降7.1%；销售额568.5亿美元，同比下滑6.8%；产量2.36亿台，同比下降8.9%。",
+      "category": {
+        "id": 13,
+        "name": "13"
+      },
+      "section": {
+        "id": 8,
+        "name": "8"
+      },
+      "products": [],
+      "regions": [],
+      "source_name": "产业在线",
+      "source_url": "http://news.mysteel.com/a/26101913/12A969F35E4EF252.html",
+      "in_article_url": "http://news.mysteel.com/a/26101913/12A969F35E4EF252.html",
+      "out_article_url": null,
+      "in_article_title": "冷年盘点：全球家用空调高位回调，引擎换挡",
+      "out_article_title": null,
+      "source_link_status": "article_link",
+      "data_source": 1,
+      "publisher_id": 220399,
+      "relation_id": 46100578,
+      "ai_flag": 0,
+      "platform_product_line": null,
+      "mapping_status": "unmapped",
+      "quality_flags": []
+    },
+    {
+      "news_id": "4925437",
+      "published_at": "2026-10-19T05:55:00.000Z",
+      "published_at_ms": 1792389300000,
+      "timezone": "Asia/Shanghai",
+      "content_text": "据Mysteel了解，诺德克斯与土耳其icdas就R25库塔希亚风电项目关键条款达成一致，拟于2026年10月签署最终协议。该项目采用防冰技术，将推动诺德克斯在土扩大叶片制造投资，助力本地能力建设及国内制造业长期发展。",
+      "content_html": "据Mysteel了解，诺德克斯与土耳其icdas就R25库塔希亚风电项目关键条款达成一致，拟于2026年10月签署最终协议。该项目采用防冰技术，将推动诺德克斯在土扩大叶片制造投资，助力本地能力建设及国内制造业长期发展。",
+      "raw_content": "据Mysteel了解，诺德克斯与土耳其icdas就R25库塔希亚风电项目关键条款达成一致，拟于2026年10月签署最终协议。该项目采用防冰技术，将推动诺德克斯在土扩大叶片制造投资，助力本地能力建设及国内制造业长期发展。",
+      "category": {
+        "id": 2,
+        "name": "2"
+      },
+      "section": {
+        "id": 8,
+        "name": "8"
+      },
+      "products": [
+        {
+          "id": "01",
+          "name": "钢铁",
+          "source": "relationBreed"
+        }
+      ],
+      "regions": [
+        {
+          "id": "02",
+          "name": "国外"
+        }
+      ],
+      "source_name": "我的钢铁网(Mysteel)",
+      "source_url": "http://export.mysteel.com/a/26101913/A714225A27AB5908.html",
+      "in_article_url": "http://export.mysteel.com/a/26101913/A714225A27AB5908.html",
+      "out_article_url": null,
+      "in_article_title": "国际钢讯：诺德克斯与icdas就土耳其R25库塔希亚风电项目的关键条款达成一致",
+      "out_article_title": null,
+      "source_link_status": "article_link",
+      "data_source": 1,
+      "publisher_id": 227933,
+      "relation_id": 46100539,
+      "ai_flag": 0,
+      "platform_product_line": null,
+      "mapping_status": "ambiguous",
+      "quality_flags": []
+    },
+    {
+      "news_id": "4925438",
+      "published_at": "2026-10-19T05:54:00.000Z",
+      "published_at_ms": 1792389240000,
+      "timezone": "Asia/Shanghai",
+      "content_text": "国家发展改革委定于2026年10月20日（星期二）上午10:00，在国家发展改革委北楼中三大会议室，召开国家发展改革委10月份新闻发布会。",
+      "content_html": "国家发展改革委定于2026年10月20日（星期二）上午10:00，在国家发展改革委北楼中三大会议室，召开国家发展改革委10月份新闻发布会。",
+      "raw_content": "国家发展改革委定于2026年10月20日（星期二）上午10:00，在国家发展改革委北楼中三大会议室，召开国家发展改革委10月份新闻发布会。",
+      "category": {
+        "id": 1,
+        "name": "1"
+      },
+      "section": {
+        "id": 8,
+        "name": "8"
+      },
+      "products": [],
+      "regions": [],
+      "source_name": "财联社",
+      "source_url": "http://news.mysteel.com/a/26101913/B20461E8D2C4C1DC.html",
+      "in_article_url": "http://news.mysteel.com/a/26101913/B20461E8D2C4C1DC.html",
+      "out_article_url": null,
+      "in_article_title": "预告：国家发改委定于10月20日召开10月份新闻发布会",
+      "out_article_title": null,
+      "source_link_status": "article_link",
+      "data_source": 1,
+      "publisher_id": 216058,
+      "relation_id": 46100543,
+      "ai_flag": 0,
+      "platform_product_line": null,
+      "mapping_status": "unmapped",
+      "quality_flags": []
+    },
+    {
+      "news_id": "4925436",
+      "published_at": "2026-10-19T05:52:53.188Z",
+      "published_at_ms": 1792389173188,
+      "timezone": "Asia/Shanghai",
+      "content_text": "10月19日河北雄泰废电瓶价格：电动8700、电轿8900、电信8500、AGM8800、摩托7800、大白9100、黑壳9350、牵引/管式9250。（单位：元/吨）（五天之内送到 按照净重每吨加150元结算）",
+      "content_html": "10月19日河北雄泰废电瓶价格：电动8700、电轿8900、电信8500、AGM8800、摩托7800、大白9100、黑壳9350、牵引/管式9250。（单位：元/吨）（五天之内送到 按照净重每吨加150元结算）",
+      "raw_content": "10月19日河北雄泰废电瓶价格：电动8700、电轿8900、电信8500、AGM8800、摩托7800、大白9100、黑壳9350、牵引/管式9250。（单位：元/吨）（五天之内送到 按照净重每吨加150元结算）",
+      "category": {
+        "id": 4,
+        "name": "4"
+      },
+      "section": {
+        "id": 7,
+        "name": "7"
+      },
+      "products": [
+        {
+          "id": "020308",
+          "name": "2#铅",
+          "source": "relationBreed"
+        },
+        {
+          "id": "废电瓶",
+          "name": "废电瓶",
+          "source": "breedTag"
+        },
+        {
+          "id": "废旧铅酸蓄电池",
+          "name": "废旧铅酸蓄电池",
+          "source": "breedTag"
+        },
+        {
+          "id": "再生金属",
+          "name": "再生金属",
+          "source": "breedTag"
+        }
+      ],
+      "regions": [
+        {
+          "id": "01010713",
+          "name": "阜阳"
+        }
+      ],
+      "source_name": null,
+      "source_url": null,
+      "in_article_url": null,
+      "out_article_url": null,
+      "in_article_title": null,
+      "out_article_title": null,
+      "source_link_status": "no_link",
+      "data_source": 2,
+      "publisher_id": 228187,
+      "relation_id": 7681740,
+      "ai_flag": 0,
+      "platform_product_line": null,
+      "mapping_status": "ambiguous",
+      "quality_flags": [
+        "source_link_missing"
+      ]
+    },
+    {
+      "news_id": "4925435",
+      "published_at": "2026-10-19T05:52:30.985Z",
+      "published_at_ms": 1792389150985,
+      "timezone": "Asia/Shanghai",
+      "content_text": "10月19日土耳其建筑钢材FOB价格下跌4美元，螺纹610，线材640-648，盘螺655。（美元/吨）",
+      "content_html": "10月19日土耳其建筑钢材FOB价格下跌4美元，螺纹610，线材640-648，盘螺655。（美元/吨）",
+      "raw_content": "10月19日土耳其建筑钢材FOB价格下跌4美元，螺纹610，线材640-648，盘螺655。（美元/吨）",
+      "category": {
+        "id": 2,
+        "name": "2"
+      },
+      "section": {
+        "id": 7,
+        "name": "7"
+      },
+      "products": [
+        {
+          "id": "010101",
+          "name": "建筑钢材",
+          "source": "relationBreed"
+        },
+        {
+          "id": "螺纹钢",
+          "name": "螺纹钢",
+          "source": "breedTag"
+        },
+        {
+          "id": "盘螺",
+          "name": "盘螺",
+          "source": "breedTag"
+        },
+        {
+          "id": "线材",
+          "name": "线材",
+          "source": "breedTag"
+        }
+      ],
+      "regions": [
+        {
+          "id": "021905",
+          "name": "土耳其"
+        }
+      ],
+      "source_name": null,
+      "source_url": null,
+      "in_article_url": null,
+      "out_article_url": null,
+      "in_article_title": null,
+      "out_article_title": null,
+      "source_link_status": "no_link",
+      "data_source": 2,
+      "publisher_id": 226187,
+      "relation_id": 7681739,
+      "ai_flag": 0,
+      "platform_product_line": null,
+      "mapping_status": "ambiguous",
+      "quality_flags": [
+        "source_link_missing"
+      ]
+    },
+    {
+      "news_id": "4925434",
+      "published_at": "2026-10-19T05:51:34.674Z",
+      "published_at_ms": 1792389094674,
+      "timezone": "Asia/Shanghai",
+      "content_text": "10月19日午后济南市场镀锌管价格稳，4寸*3.75mm天津友发报4310，山东君诚报4030，衡水华岐报4180，唐山华岐报4030，邯郸正大报3980，天津利达报4030，过磅含税。(元/吨)",
+      "content_html": "10月19日午后济南市场镀锌管价格稳，4寸*3.75mm天津友发报4310，山东君诚报4030，衡水华岐报4180，唐山华岐报4030，邯郸正大报3980，天津利达报4030，过磅含税。(元/吨)",
+      "raw_content": "10月19日午后济南市场镀锌管价格稳，4寸*3.75mm天津友发报4310，山东君诚报4030，衡水华岐报4180，唐山华岐报4030，邯郸正大报3980，天津利达报4030，过磅含税。(元/吨)",
+      "category": {
+        "id": 2,
+        "name": "2"
+      },
+      "section": {
+        "id": 7,
+        "name": "7"
+      },
+      "products": [
+        {
+          "id": "01010905",
+          "name": "镀锌管",
+          "source": "relationBreed"
+        }
+      ],
+      "regions": [
+        {
+          "id": "01010201",
+          "name": "济南"
+        }
+      ],
+      "source_name": null,
+      "source_url": null,
+      "in_article_url": null,
+      "out_article_url": null,
+      "in_article_title": null,
+      "out_article_title": null,
+      "source_link_status": "no_link",
+      "data_source": 2,
+      "publisher_id": 223161,
+      "relation_id": 7681737,
+      "ai_flag": 0,
+      "platform_product_line": null,
+      "mapping_status": "ambiguous",
+      "quality_flags": [
+        "source_link_missing"
+      ]
+    },
+    {
+      "news_id": "4925433",
+      "published_at": "2026-10-19T05:51:16.683Z",
+      "published_at_ms": 1792389076683,
+      "timezone": "Asia/Shanghai",
+      "content_text": "焦煤期货连续主力合约日内跌5%，现报1410.50元/吨。",
+      "content_html": "焦煤期货连续主力合约日内跌5%，现报1410.50元/吨。",
+      "raw_content": "焦煤期货连续主力合约日内跌5%，现报1410.50元/吨。",
+      "category": {
+        "id": 2,
+        "name": "2"
+      },
+      "section": {
+        "id": 8,
+        "name": "8"
+      },
+      "products": [
+        {
+          "id": "0502",
+          "name": "煤炭",
+          "source": "relationBreed"
+        },
+        {
+          "id": "炼焦煤",
+          "name": "炼焦煤",
+          "source": "breedTag"
+        }
+      ],
+      "regions": [],
+      "source_name": null,
+      "source_url": null,
+      "in_article_url": null,
+      "out_article_url": null,
+      "in_article_title": null,
+      "out_article_title": null,
+      "source_link_status": "no_link",
+      "data_source": 0,
+      "publisher_id": 207700,
+      "relation_id": 0,
+      "ai_flag": 0,
+      "platform_product_line": null,
+      "mapping_status": "ambiguous",
+      "quality_flags": [
+        "source_link_missing"
+      ]
+    },
+    {
+      "news_id": "4925432",
+      "published_at": "2026-10-19T05:47:45.271Z",
+      "published_at_ms": 1792388865271,
+      "timezone": "Asia/Shanghai",
+      "content_text": "10月19日秦皇岛建筑钢材价格盘中稳，抗震三大3240，φ12三级3320，抗震盘3470左右。（元/吨）",
+      "content_html": "10月19日秦皇岛建筑钢材价格盘中稳，抗震三大3240，φ12三级3320，抗震盘3470左右。（元/吨）",
+      "raw_content": "10月19日秦皇岛建筑钢材价格盘中稳，抗震三大3240，φ12三级3320，抗震盘3470左右。（元/吨）",
+      "category": {
+        "id": 2,
+        "name": "2"
+      },
+      "section": {
+        "id": 7,
+        "name": "7"
+      },
+      "products": [
+        {
+          "id": "010101",
+          "name": "建筑钢材",
+          "source": "relationBreed"
+        }
+      ],
+      "regions": [
+        {
+          "id": "01040303",
+          "name": "秦皇岛"
+        }
+      ],
+      "source_name": null,
+      "source_url": null,
+      "in_article_url": null,
+      "out_article_url": null,
+      "in_article_title": null,
+      "out_article_title": null,
+      "source_link_status": "no_link",
+      "data_source": 2,
+      "publisher_id": 210008,
+      "relation_id": 7681736,
+      "ai_flag": 0,
+      "platform_product_line": null,
+      "mapping_status": "ambiguous",
+      "quality_flags": [
+        "source_link_missing"
+      ]
+    },
+    {
+      "news_id": "4925431",
+      "published_at": "2026-10-19T05:47:26.193Z",
+      "published_at_ms": 1792388846193,
+      "timezone": "Asia/Shanghai",
+      "content_text": "10月19日唐山建筑钢材市场价格盘中稳，现三级大螺纹3140，三级小螺纹3220，盘螺3370。（元/吨）",
+      "content_html": "10月19日唐山建筑钢材市场价格盘中稳，现三级大螺纹3140，三级小螺纹3220，盘螺3370。（元/吨）",
+      "raw_content": "10月19日唐山建筑钢材市场价格盘中稳，现三级大螺纹3140，三级小螺纹3220，盘螺3370。（元/吨）",
+      "category": {
+        "id": 2,
+        "name": "2"
+      },
+      "section": {
+        "id": 7,
+        "name": "7"
+      },
+      "products": [
+        {
+          "id": "010101",
+          "name": "建筑钢材",
+          "source": "relationBreed"
+        },
+        {
+          "id": "螺纹钢",
+          "name": "螺纹钢",
+          "source": "breedTag"
+        },
+        {
+          "id": "盘螺",
+          "name": "盘螺",
+          "source": "breedTag"
+        }
+      ],
+      "regions": [
+        {
+          "id": "010403",
+          "name": "河北"
+        }
+      ],
+      "source_name": null,
+      "source_url": null,
+      "in_article_url": null,
+      "out_article_url": null,
+      "in_article_title": null,
+      "out_article_title": null,
+      "source_link_status": "no_link",
+      "data_source": 2,
+      "publisher_id": 210008,
+      "relation_id": 7681735,
+      "ai_flag": 0,
+      "platform_product_line": null,
+      "mapping_status": "ambiguous",
+      "quality_flags": [
+        "source_link_missing"
+      ]
+    },
+    {
+      "news_id": "4925429",
+      "published_at": "2026-10-19T05:46:11.064Z",
+      "published_at_ms": 1792388771064,
+      "timezone": "Asia/Shanghai",
+      "content_text": "焦炭期货主力合约日内跌2%，现报1935元/吨；焦煤期货连续主力合约日内跌4%，现报1426元/吨。",
+      "content_html": "焦炭期货主力合约日内跌2%，现报1935元/吨；焦煤期货连续主力合约日内跌4%，现报1426元/吨。",
+      "raw_content": "焦炭期货主力合约日内跌2%，现报1935元/吨；焦煤期货连续主力合约日内跌4%，现报1426元/吨。",
+      "category": {
+        "id": 2,
+        "name": "2"
+      },
+      "section": {
+        "id": 8,
+        "name": "8"
+      },
+      "products": [
+        {
+          "id": "0502",
+          "name": "煤炭",
+          "source": "relationBreed"
+        },
+        {
+          "id": "焦炭",
+          "name": "焦炭",
+          "source": "breedTag"
+        },
+        {
+          "id": "炼焦煤",
+          "name": "炼焦煤",
+          "source": "breedTag"
+        }
+      ],
+      "regions": [],
+      "source_name": null,
+      "source_url": null,
+      "in_article_url": null,
+      "out_article_url": null,
+      "in_article_title": null,
+      "out_article_title": null,
+      "source_link_status": "no_link",
+      "data_source": 0,
+      "publisher_id": 207700,
+      "relation_id": 0,
+      "ai_flag": 0,
+      "platform_product_line": null,
+      "mapping_status": "ambiguous",
+      "quality_flags": [
+        "source_link_missing"
+      ]
+    },
+    {
+      "news_id": "4925430",
+      "published_at": "2026-10-19T05:46:00.000Z",
+      "published_at_ms": 1792388760000,
+      "timezone": "Asia/Shanghai",
+      "content_text": "今年前三季度，吉林省新能源发电量达324.92亿千瓦时，同比增长4.75%，占全省总发电量的37.8%，同比提高1.5个百分点，预计全年占比将突破38%。",
+      "content_html": "今年前三季度，吉林省新能源发电量达324.92亿千瓦时，同比增长4.75%，占全省总发电量的37.8%，同比提高1.5个百分点，预计全年占比将突破38%。",
+      "raw_content": "今年前三季度，吉林省新能源发电量达324.92亿千瓦时，同比增长4.75%，占全省总发电量的37.8%，同比提高1.5个百分点，预计全年占比将突破38%。",
+      "category": {
+        "id": 18,
+        "name": "18"
+      },
+      "section": {
+        "id": 8,
+        "name": "8"
+      },
+      "products": [],
+      "regions": [],
+      "source_name": "中国新闻网",
+      "source_url": "http://news.mysteel.com/a/26101913/381F75776300F7BA.html",
+      "in_article_url": "http://news.mysteel.com/a/26101913/381F75776300F7BA.html",
+      "out_article_url": null,
+      "in_article_title": "吉林前三季度新能源发电量占比近四成，绿电变燃料出海",
+      "out_article_title": null,
+      "source_link_status": "article_link",
+      "data_source": 1,
+      "publisher_id": 220399,
+      "relation_id": 46100448,
+      "ai_flag": 0,
+      "platform_product_line": null,
+      "mapping_status": "unmapped",
+      "quality_flags": []
+    },
+    {
+      "news_id": "4925428",
+      "published_at": "2026-10-19T05:45:12.286Z",
+      "published_at_ms": 1792388712286,
+      "timezone": "Asia/Shanghai",
+      "content_text": "据Mysteel调研了解，新疆地区氧化铝最新招标采购价格为2960元/吨（到厂价），较上一笔（10月12日）持平。",
+      "content_html": "据Mysteel调研了解，新疆地区氧化铝最新招标采购价格为2960元/吨（到厂价），较上一笔（10月12日）持平。",
+      "raw_content": "据Mysteel调研了解，新疆地区氧化铝最新招标采购价格为2960元/吨（到厂价），较上一笔（10月12日）持平。",
+      "category": {
+        "id": 4,
+        "name": "4"
+      },
+      "section": {
+        "id": 4,
+        "name": "4"
+      },
+      "products": [
+        {
+          "id": "020202",
+          "name": "氧化铝",
+          "source": "relationBreed"
+        }
+      ],
+      "regions": [],
+      "source_name": null,
+      "source_url": null,
+      "in_article_url": null,
+      "out_article_url": null,
+      "in_article_title": null,
+      "out_article_title": null,
+      "source_link_status": "no_link",
+      "data_source": 0,
+      "publisher_id": 222029,
+      "relation_id": 0,
+      "ai_flag": 0,
+      "platform_product_line": null,
+      "mapping_status": "ambiguous",
+      "quality_flags": [
+        "source_link_missing"
+      ]
+    },
+    {
+      "news_id": "4925427",
+      "published_at": "2026-10-19T05:44:00.000Z",
+      "published_at_ms": 1792388640000,
+      "timezone": "Asia/Shanghai",
+      "content_text": "据国际船舶网跟踪：2026年10月12日至2026年10月18日，全球船厂共接获53+7艘新船订单。其中中国船厂接获46+5艘新船订单；日本船厂接获2艘新船订单；韩国船厂接获4艘新船订单；美国船厂也获得相关新船订单。",
+      "content_html": "据国际船舶网跟踪：2026年10月12日至2026年10月18日，全球船厂共接获53+7艘新船订单。其中中国船厂接获46+5艘新船订单；日本船厂接获2艘新船订单；韩国船厂接获4艘新船订单；美国船厂也获得相关新船订单。",
+      "raw_content": "据国际船舶网跟踪：2026年10月12日至2026年10月18日，全球船厂共接获53+7艘新船订单。其中中国船厂接获46+5艘新船订单；日本船厂接获2艘新船订单；韩国船厂接获4艘新船订单；美国船厂也获得相关新船订单。",
+      "category": {
+        "id": 13,
+        "name": "13"
+      },
+      "section": {
+        "id": 8,
+        "name": "8"
+      },
+      "products": [],
+      "regions": [],
+      "source_name": "国际船舶网",
+      "source_url": "http://news.mysteel.com/a/26101913/01A94380E3910B31.html",
+      "in_article_url": "http://news.mysteel.com/a/26101913/01A94380E3910B31.html",
+      "out_article_url": null,
+      "in_article_title": "全球新船订单跟踪（10.12—10.18）",
+      "out_article_title": null,
+      "source_link_status": "article_link",
+      "data_source": 1,
+      "publisher_id": 216058,
+      "relation_id": 46100411,
+      "ai_flag": 0,
+      "platform_product_line": null,
+      "mapping_status": "unmapped",
+      "quality_flags": []
+    },
+    {
+      "news_id": "4925426",
+      "published_at": "2026-10-19T05:43:00.000Z",
+      "published_at_ms": 1792388580000,
+      "timezone": "Asia/Shanghai",
+      "content_text": "【不锈钢-钢厂盘价】10月19日太钢不锈钢盘价，冷卷304价18230，跌120；321价18250，跌200；316L价32460，跌300；热卷304价17190,跌220；304L价17490，跌220；321价17460，跌200；316L价30960，跌300；中厚板通尺板304价17680，跌120；304L价17880，跌120；321价19480，跌220；316L价32800，跌200。（单位：元/吨）",
+      "content_html": "【不锈钢-钢厂盘价】10月19日太钢不锈钢盘价，冷卷304价18230，跌120；321价18250，跌200；316L价32460，跌300；热卷304价17190,跌220；304L价17490，跌220；321价17460，跌200；316L价30960，跌300；中厚板通尺板304价17680，跌120；304L价17880，跌120；321价19480，跌220；316L价32800，跌200。（单位：元/吨）",
+      "raw_content": "【不锈钢-钢厂盘价】10月19日太钢不锈钢盘价，冷卷304价18230，跌120；321价18250，跌200；316L价32460，跌300；热卷304价17190,跌220；304L价17490，跌220；321价17460，跌200；316L价30960，跌300；中厚板通尺板304价17680，跌120；304L价17880，跌120；321价19480，跌220；316L价32800，跌200。（单位：元/吨）",
+      "category": {
+        "id": 11,
+        "name": "11"
+      },
+      "section": {
+        "id": 7,
+        "name": "7"
+      },
+      "products": [
+        {
+          "id": "01021601",
+          "name": "不锈卷板",
+          "source": "relationBreed"
+        },
+        {
+          "id": "不锈钢",
+          "name": "不锈钢",
+          "source": "breedTag"
+        },
+        {
+          "id": "中厚板",
+          "name": "中厚板",
+          "source": "breedTag"
+        }
+      ],
+      "regions": [
+        {
+          "id": "01010301",
+          "name": "无锡"
+        },
+        {
+          "id": "01020108",
+          "name": "佛山"
+        },
+        {
+          "id": "01",
+          "name": "国内"
+        }
+      ],
+      "source_name": "我的钢铁网(Mysteel)",
+      "source_url": "http://bxg.mysteel.com/a/26101913/03E5EB721EFDAEAE.html",
+      "in_article_url": "http://bxg.mysteel.com/a/26101913/03E5EB721EFDAEAE.html",
+      "out_article_url": null,
+      "in_article_title": "太钢不锈盘价（2026.10.19）",
+      "out_article_title": null,
+      "source_link_status": "article_link",
+      "data_source": 1,
+      "publisher_id": 227195,
+      "relation_id": 46100402,
+      "ai_flag": 0,
+      "platform_product_line": null,
+      "mapping_status": "ambiguous",
+      "quality_flags": []
+    },
+    {
+      "news_id": "4925425",
+      "published_at": "2026-10-19T05:42:17.843Z",
+      "published_at_ms": 1792388537843,
+      "timezone": "Asia/Shanghai",
+      "content_text": "10月19日，济宁市场主流品牌C30混凝土价格报262-282元/方，平。",
+      "content_html": "<p>10月19日，济宁市场主流品牌C30混凝土价格报262-282元/方，平。</p>",
+      "raw_content": "<p>10月19日，济宁市场主流品牌C30混凝土价格报262-282元/方，平。</p>",
+      "category": {
+        "id": 6,
+        "name": "6"
+      },
+      "section": {
+        "id": 7,
+        "name": "7"
+      },
+      "products": [
+        {
+          "id": "1002",
+          "name": "混凝土",
+          "source": "relationBreed"
+        },
+        {
+          "id": "C30混凝土",
+          "name": "C30混凝土",
+          "source": "breedTag"
+        }
+      ],
+      "regions": [],
+      "source_name": null,
+      "source_url": null,
+      "in_article_url": null,
+      "out_article_url": null,
+      "in_article_title": null,
+      "out_article_title": null,
+      "source_link_status": "no_link",
+      "data_source": 0,
+      "publisher_id": 226578,
+      "relation_id": 0,
+      "ai_flag": 0,
+      "platform_product_line": null,
+      "mapping_status": "ambiguous",
+      "quality_flags": [
+        "source_link_missing"
+      ]
+    },
+    {
+      "news_id": "4925424",
+      "published_at": "2026-10-19T05:42:03.606Z",
+      "published_at_ms": 1792388523606,
+      "timezone": "Asia/Shanghai",
+      "content_text": "10月19日，菏泽市场主流品牌C30混凝土价格报279-294元/方，平。",
+      "content_html": "<p>10月19日，菏泽市场主流品牌C30混凝土价格报279-294元/方，平。</p>",
+      "raw_content": "<p>10月19日，菏泽市场主流品牌C30混凝土价格报279-294元/方，平。</p>",
+      "category": {
+        "id": 6,
+        "name": "6"
+      },
+      "section": {
+        "id": 7,
+        "name": "7"
+      },
+      "products": [
+        {
+          "id": "1002",
+          "name": "混凝土",
+          "source": "relationBreed"
+        },
+        {
+          "id": "C30混凝土",
+          "name": "C30混凝土",
+          "source": "breedTag"
+        }
+      ],
+      "regions": [],
+      "source_name": null,
+      "source_url": null,
+      "in_article_url": null,
+      "out_article_url": null,
+      "in_article_title": null,
+      "out_article_title": null,
+      "source_link_status": "no_link",
+      "data_source": 0,
+      "publisher_id": 226578,
+      "relation_id": 0,
+      "ai_flag": 0,
+      "platform_product_line": null,
+      "mapping_status": "ambiguous",
+      "quality_flags": [
+        "source_link_missing"
+      ]
+    },
+    {
+      "news_id": "4925423",
+      "published_at": "2026-10-19T05:41:52.031Z",
+      "published_at_ms": 1792388512031,
+      "timezone": "Asia/Shanghai",
+      "content_text": "10月19日，泰安市场主流品牌C30混凝土价格报273-293元/方，平。",
+      "content_html": "<p>10月19日，泰安市场主流品牌C30混凝土价格报273-293元/方，平。</p>",
+      "raw_content": "<p>10月19日，泰安市场主流品牌C30混凝土价格报273-293元/方，平。</p>",
+      "category": {
+        "id": 6,
+        "name": "6"
+      },
+      "section": {
+        "id": 7,
+        "name": "7"
+      },
+      "products": [
+        {
+          "id": "1002",
+          "name": "混凝土",
+          "source": "relationBreed"
+        },
+        {
+          "id": "C30混凝土",
+          "name": "C30混凝土",
+          "source": "breedTag"
+        }
+      ],
+      "regions": [],
+      "source_name": null,
+      "source_url": null,
+      "in_article_url": null,
+      "out_article_url": null,
+      "in_article_title": null,
+      "out_article_title": null,
+      "source_link_status": "no_link",
+      "data_source": 0,
+      "publisher_id": 226578,
+      "relation_id": 0,
+      "ai_flag": 0,
+      "platform_product_line": null,
+      "mapping_status": "ambiguous",
+      "quality_flags": [
+        "source_link_missing"
+      ]
+    },
+    {
+      "news_id": "4925422",
+      "published_at": "2026-10-19T05:41:33.899Z",
+      "published_at_ms": 1792388493899,
+      "timezone": "Asia/Shanghai",
+      "content_text": "10月19日，滁州市场主流品牌C30混凝土价格报314-319元/方，平。",
+      "content_html": "<p>10月19日，滁州市场主流品牌C30混凝土价格报314-319元/方，平。</p>",
+      "raw_content": "<p>10月19日，滁州市场主流品牌C30混凝土价格报314-319元/方，平。</p>",
+      "category": {
+        "id": 6,
+        "name": "6"
+      },
+      "section": {
+        "id": 7,
+        "name": "7"
+      },
+      "products": [
+        {
+          "id": "1002",
+          "name": "混凝土",
+          "source": "relationBreed"
+        },
+        {
+          "id": "C30混凝土",
+          "name": "C30混凝土",
+          "source": "breedTag"
+        }
+      ],
+      "regions": [],
+      "source_name": null,
+      "source_url": null,
+      "in_article_url": null,
+      "out_article_url": null,
+      "in_article_title": null,
+      "out_article_title": null,
+      "source_link_status": "no_link",
+      "data_source": 0,
+      "publisher_id": 226578,
+      "relation_id": 0,
+      "ai_flag": 0,
+      "platform_product_line": null,
+      "mapping_status": "ambiguous",
+      "quality_flags": [
+        "source_link_missing"
+      ]
+    },
+    {
+      "news_id": "4925421",
+      "published_at": "2026-10-19T05:41:25.286Z",
+      "published_at_ms": 1792388485286,
+      "timezone": "Asia/Shanghai",
+      "content_text": "10月19日邯郸建筑钢材价格盘中稳，φ18三级3200，φ12三级3290，抗震盘3370。（元/吨）",
+      "content_html": "10月19日邯郸建筑钢材价格盘中稳，φ18三级3200，φ12三级3290，抗震盘3370。（元/吨）",
+      "raw_content": "10月19日邯郸建筑钢材价格盘中稳，φ18三级3200，φ12三级3290，抗震盘3370。（元/吨）",
+      "category": {
+        "id": 2,
+        "name": "2"
+      },
+      "section": {
+        "id": 7,
+        "name": "7"
+      },
+      "products": [
+        {
+          "id": "010101",
+          "name": "建筑钢材",
+          "source": "relationBreed"
+        }
+      ],
+      "regions": [
+        {
+          "id": "010403",
+          "name": "河北"
+        }
+      ],
+      "source_name": null,
+      "source_url": null,
+      "in_article_url": null,
+      "out_article_url": null,
+      "in_article_title": null,
+      "out_article_title": null,
+      "source_link_status": "no_link",
+      "data_source": 2,
+      "publisher_id": 220278,
+      "relation_id": 7681732,
+      "ai_flag": 0,
+      "platform_product_line": null,
+      "mapping_status": "ambiguous",
+      "quality_flags": [
+        "source_link_missing"
+      ]
+    },
+    {
+      "news_id": "4925420",
+      "published_at": "2026-10-19T05:41:24.166Z",
+      "published_at_ms": 1792388484166,
+      "timezone": "Asia/Shanghai",
+      "content_text": "10月19日，阜阳市场主流品牌C30混凝土价格报305-310元/方，平。",
+      "content_html": "<p>10月19日，阜阳市场主流品牌C30混凝土价格报305-310元/方，平。</p>",
+      "raw_content": "<p>10月19日，阜阳市场主流品牌C30混凝土价格报305-310元/方，平。</p>",
+      "category": {
+        "id": 6,
+        "name": "6"
+      },
+      "section": {
+        "id": 7,
+        "name": "7"
+      },
+      "products": [
+        {
+          "id": "1002",
+          "name": "混凝土",
+          "source": "relationBreed"
+        },
+        {
+          "id": "C30混凝土",
+          "name": "C30混凝土",
+          "source": "breedTag"
+        }
+      ],
+      "regions": [],
+      "source_name": null,
+      "source_url": null,
+      "in_article_url": null,
+      "out_article_url": null,
+      "in_article_title": null,
+      "out_article_title": null,
+      "source_link_status": "no_link",
+      "data_source": 0,
+      "publisher_id": 226578,
+      "relation_id": 0,
+      "ai_flag": 0,
+      "platform_product_line": null,
+      "mapping_status": "ambiguous",
+      "quality_flags": [
+        "source_link_missing"
+      ]
+    },
+    {
+      "news_id": "4925419",
+      "published_at": "2026-10-19T05:40:56.854Z",
+      "published_at_ms": 1792388456854,
+      "timezone": "Asia/Shanghai",
+      "content_text": "10月19日，宿州市场主流品牌C30混凝土价格报288-298元/方，平。",
+      "content_html": "<p>10月19日，宿州市场主流品牌C30混凝土价格报288-298元/方，平。</p>",
+      "raw_content": "<p>10月19日，宿州市场主流品牌C30混凝土价格报288-298元/方，平。</p>",
+      "category": {
+        "id": 6,
+        "name": "6"
+      },
+      "section": {
+        "id": 7,
+        "name": "7"
+      },
+      "products": [
+        {
+          "id": "1002",
+          "name": "混凝土",
+          "source": "relationBreed"
+        },
+        {
+          "id": "C30混凝土",
+          "name": "C30混凝土",
+          "source": "breedTag"
+        }
+      ],
+      "regions": [],
+      "source_name": null,
+      "source_url": null,
+      "in_article_url": null,
+      "out_article_url": null,
+      "in_article_title": null,
+      "out_article_title": null,
+      "source_link_status": "no_link",
+      "data_source": 0,
+      "publisher_id": 226578,
+      "relation_id": 0,
+      "ai_flag": 0,
+      "platform_product_line": null,
+      "mapping_status": "ambiguous",
+      "quality_flags": [
+        "source_link_missing"
+      ]
+    },
+    {
+      "news_id": "4925418",
+      "published_at": "2026-10-19T05:40:47.422Z",
+      "published_at_ms": 1792388447422,
+      "timezone": "Asia/Shanghai",
+      "content_text": "10月19日，蚌埠市场主流品牌C30混凝土价格报304-319元/方，平。",
+      "content_html": "<p>10月19日，蚌埠市场主流品牌C30混凝土价格报304-319元/方，平。</p>",
+      "raw_content": "<p>10月19日，蚌埠市场主流品牌C30混凝土价格报304-319元/方，平。</p>",
+      "category": {
+        "id": 6,
+        "name": "6"
+      },
+      "section": {
+        "id": 7,
+        "name": "7"
+      },
+      "products": [
+        {
+          "id": "1002",
+          "name": "混凝土",
+          "source": "relationBreed"
+        },
+        {
+          "id": "C30混凝土",
+          "name": "C30混凝土",
+          "source": "breedTag"
+        }
+      ],
+      "regions": [],
+      "source_name": null,
+      "source_url": null,
+      "in_article_url": null,
+      "out_article_url": null,
+      "in_article_title": null,
+      "out_article_title": null,
+      "source_link_status": "no_link",
+      "data_source": 0,
+      "publisher_id": 226578,
+      "relation_id": 0,
+      "ai_flag": 0,
+      "platform_product_line": null,
+      "mapping_status": "ambiguous",
+      "quality_flags": [
+        "source_link_missing"
+      ]
+    },
+    {
+      "news_id": "4925417",
+      "published_at": "2026-10-19T05:40:36.236Z",
+      "published_at_ms": 1792388436236,
+      "timezone": "Asia/Shanghai",
+      "content_text": "10月19日，马鞍山市场主流品牌C30混凝土价格报290-310元/方，平。",
+      "content_html": "<p>10月19日，马鞍山市场主流品牌C30混凝土价格报290-310元/方，平。</p>",
+      "raw_content": "<p>10月19日，马鞍山市场主流品牌C30混凝土价格报290-310元/方，平。</p>",
+      "category": {
+        "id": 6,
+        "name": "6"
+      },
+      "section": {
+        "id": 7,
+        "name": "7"
+      },
+      "products": [
+        {
+          "id": "1002",
+          "name": "混凝土",
+          "source": "relationBreed"
+        },
+        {
+          "id": "C30混凝土",
+          "name": "C30混凝土",
+          "source": "breedTag"
+        }
+      ],
+      "regions": [],
+      "source_name": null,
+      "source_url": null,
+      "in_article_url": null,
+      "out_article_url": null,
+      "in_article_title": null,
+      "out_article_title": null,
+      "source_link_status": "no_link",
+      "data_source": 0,
+      "publisher_id": 226578,
+      "relation_id": 0,
+      "ai_flag": 0,
+      "platform_product_line": null,
+      "mapping_status": "ambiguous",
+      "quality_flags": [
+        "source_link_missing"
+      ]
+    },
+    {
+      "news_id": "4925416",
+      "published_at": "2026-10-19T05:40:26.638Z",
+      "published_at_ms": 1792388426638,
+      "timezone": "Asia/Shanghai",
+      "content_text": "10月19日，淮南市场主流品牌C30混凝土价格报315-318元/方，平。",
+      "content_html": "<p>10月19日，淮南市场主流品牌C30混凝土价格报315-318元/方，平。</p>",
+      "raw_content": "<p>10月19日，淮南市场主流品牌C30混凝土价格报315-318元/方，平。</p>",
+      "category": {
+        "id": 6,
+        "name": "6"
+      },
+      "section": {
+        "id": 7,
+        "name": "7"
+      },
+      "products": [
+        {
+          "id": "1002",
+          "name": "混凝土",
+          "source": "relationBreed"
+        },
+        {
+          "id": "C30混凝土",
+          "name": "C30混凝土",
+          "source": "breedTag"
+        }
+      ],
+      "regions": [],
+      "source_name": null,
+      "source_url": null,
+      "in_article_url": null,
+      "out_article_url": null,
+      "in_article_title": null,
+      "out_article_title": null,
+      "source_link_status": "no_link",
+      "data_source": 0,
+      "publisher_id": 226578,
+      "relation_id": 0,
+      "ai_flag": 0,
+      "platform_product_line": null,
+      "mapping_status": "ambiguous",
+      "quality_flags": [
+        "source_link_missing"
+      ]
+    },
+    {
+      "news_id": "4925415",
+      "published_at": "2026-10-19T05:40:16.706Z",
+      "published_at_ms": 1792388416706,
+      "timezone": "Asia/Shanghai",
+      "content_text": "10月19日，亳州市场主流品牌C30混凝土价格报288-313元/方，平。",
+      "content_html": "<p>10月19日，亳州市场主流品牌C30混凝土价格报288-313元/方，平。</p>",
+      "raw_content": "<p>10月19日，亳州市场主流品牌C30混凝土价格报288-313元/方，平。</p>",
+      "category": {
+        "id": 6,
+        "name": "6"
+      },
+      "section": {
+        "id": 7,
+        "name": "7"
+      },
+      "products": [
+        {
+          "id": "1002",
+          "name": "混凝土",
+          "source": "relationBreed"
+        },
+        {
+          "id": "C30混凝土",
+          "name": "C30混凝土",
+          "source": "breedTag"
+        }
+      ],
+      "regions": [],
+      "source_name": null,
+      "source_url": null,
+      "in_article_url": null,
+      "out_article_url": null,
+      "in_article_title": null,
+      "out_article_title": null,
+      "source_link_status": "no_link",
+      "data_source": 0,
+      "publisher_id": 226578,
+      "relation_id": 0,
+      "ai_flag": 0,
+      "platform_product_line": null,
+      "mapping_status": "ambiguous",
+      "quality_flags": [
+        "source_link_missing"
+      ]
+    },
+    {
+      "news_id": "4925414",
+      "published_at": "2026-10-19T05:40:04.613Z",
+      "published_at_ms": 1792388404613,
+      "timezone": "Asia/Shanghai",
+      "content_text": "10月19日，淮南市场水泥主流品牌散装P.O42.5报260-270元/吨，平。",
+      "content_html": "<p>10月19日，淮南市场水泥主流品牌散装P.O42.5报260-270元/吨，平。</p>",
+      "raw_content": "<p>10月19日，淮南市场水泥主流品牌散装P.O42.5报260-270元/吨，平。</p>",
+      "category": {
+        "id": 6,
+        "name": "6"
+      },
+      "section": {
+        "id": 7,
+        "name": "7"
+      },
+      "products": [
+        {
+          "id": "1001",
+          "name": "水泥",
+          "source": "relationBreed"
+        }
+      ],
+      "regions": [],
+      "source_name": null,
+      "source_url": null,
+      "in_article_url": null,
+      "out_article_url": null,
+      "in_article_title": null,
+      "out_article_title": null,
+      "source_link_status": "no_link",
+      "data_source": 0,
+      "publisher_id": 226578,
+      "relation_id": 0,
+      "ai_flag": 0,
+      "platform_product_line": null,
+      "mapping_status": "ambiguous",
+      "quality_flags": [
+        "source_link_missing"
+      ]
+    },
+    {
+      "news_id": "4925413",
+      "published_at": "2026-10-19T05:39:55.008Z",
+      "published_at_ms": 1792388395008,
+      "timezone": "Asia/Shanghai",
+      "content_text": "10月19日，亳州市场水泥主流品牌散装P.O42.5报250-260元/吨，平。",
+      "content_html": "<p>10月19日，亳州市场水泥主流品牌散装P.O42.5报250-260元/吨，平。</p>",
+      "raw_content": "<p>10月19日，亳州市场水泥主流品牌散装P.O42.5报250-260元/吨，平。</p>",
+      "category": {
+        "id": 6,
+        "name": "6"
+      },
+      "section": {
+        "id": 7,
+        "name": "7"
+      },
+      "products": [
+        {
+          "id": "1001",
+          "name": "水泥",
+          "source": "relationBreed"
+        }
+      ],
+      "regions": [],
+      "source_name": null,
+      "source_url": null,
+      "in_article_url": null,
+      "out_article_url": null,
+      "in_article_title": null,
+      "out_article_title": null,
+      "source_link_status": "no_link",
+      "data_source": 0,
+      "publisher_id": 226578,
+      "relation_id": 0,
+      "ai_flag": 0,
+      "platform_product_line": null,
+      "mapping_status": "ambiguous",
+      "quality_flags": [
+        "source_link_missing"
+      ]
+    },
+    {
+      "news_id": "4925412",
+      "published_at": "2026-10-19T05:39:45.145Z",
+      "published_at_ms": 1792388385145,
+      "timezone": "Asia/Shanghai",
+      "content_text": "10月19日，淮北市场水泥主流品牌散装P.O42.5报275-285元/吨，平。",
+      "content_html": "<p>10月19日，淮北市场水泥主流品牌散装P.O42.5报275-285元/吨，平。</p>",
+      "raw_content": "<p>10月19日，淮北市场水泥主流品牌散装P.O42.5报275-285元/吨，平。</p>",
+      "category": {
+        "id": 6,
+        "name": "6"
+      },
+      "section": {
+        "id": 7,
+        "name": "7"
+      },
+      "products": [
+        {
+          "id": "1001",
+          "name": "水泥",
+          "source": "relationBreed"
+        }
+      ],
+      "regions": [],
+      "source_name": null,
+      "source_url": null,
+      "in_article_url": null,
+      "out_article_url": null,
+      "in_article_title": null,
+      "out_article_title": null,
+      "source_link_status": "no_link",
+      "data_source": 0,
+      "publisher_id": 226578,
+      "relation_id": 0,
+      "ai_flag": 0,
+      "platform_product_line": null,
+      "mapping_status": "ambiguous",
+      "quality_flags": [
+        "source_link_missing"
+      ]
+    },
+    {
+      "news_id": "4925410",
+      "published_at": "2026-10-19T05:39:00.622Z",
+      "published_at_ms": 1792388340622,
+      "timezone": "Asia/Shanghai",
+      "content_text": "10月19日，国内冶炼厂锌锭市场价格：火炬25880元/吨；葫锌26430元/吨；南华25680元/吨；驰宏锌锗25630元/吨；豫光25600元/吨；红鹭25630元/吨。",
+      "content_html": "10月19日，国内冶炼厂锌锭市场价格：火炬25880元/吨；葫锌26430元/吨；南华25680元/吨；驰宏锌锗25630元/吨；豫光25600元/吨；红鹭25630元/吨。",
+      "raw_content": "10月19日，国内冶炼厂锌锭市场价格：火炬25880元/吨；葫锌26430元/吨；南华25680元/吨；驰宏锌锗25630元/吨；豫光25600元/吨；红鹭25630元/吨。",
+      "category": {
+        "id": 4,
+        "name": "4"
+      },
+      "section": {
+        "id": 7,
+        "name": "7"
+      },
+      "products": [
+        {
+          "id": "020401",
+          "name": "锌锭",
+          "source": "relationBreed"
+        }
+      ],
+      "regions": [
+        {
+          "id": "01",
+          "name": "国内"
+        }
+      ],
+      "source_name": null,
+      "source_url": null,
+      "in_article_url": null,
+      "out_article_url": null,
+      "in_article_title": null,
+      "out_article_title": null,
+      "source_link_status": "no_link",
+      "data_source": 2,
+      "publisher_id": 228153,
+      "relation_id": 7681731,
+      "ai_flag": 0,
+      "platform_product_line": null,
+      "mapping_status": "ambiguous",
+      "quality_flags": [
+        "source_link_missing"
+      ]
+    },
+    {
+      "news_id": "4925411",
+      "published_at": "2026-10-19T05:39:00.000Z",
+      "published_at_ms": 1792388340000,
+      "timezone": "Asia/Shanghai",
+      "content_text": "三星电子将采用台积电的3纳米工艺为英伟达的下一代定制高带宽内存（HBM）生产基础芯片，这将是三星首次与台积电在HBM制造阶段展开合作。",
+      "content_html": "三星电子将采用台积电的3纳米工艺为英伟达的下一代定制高带宽内存（HBM）生产基础芯片，这将是三星首次与台积电在HBM制造阶段展开合作。",
+      "raw_content": "三星电子将采用台积电的3纳米工艺为英伟达的下一代定制高带宽内存（HBM）生产基础芯片，这将是三星首次与台积电在HBM制造阶段展开合作。",
+      "category": {
+        "id": 18,
+        "name": "18"
+      },
+      "section": {
+        "id": 8,
+        "name": "8"
+      },
+      "products": [],
+      "regions": [],
+      "source_name": "财联社",
+      "source_url": "http://news.mysteel.com/a/26101913/21F8E51FAB4CF1BB.html",
+      "in_article_url": "http://news.mysteel.com/a/26101913/21F8E51FAB4CF1BB.html",
+      "out_article_url": null,
+      "in_article_title": "应英伟达标准化要求，三星将与台积电首次合作生产HBM！",
+      "out_article_title": null,
+      "source_link_status": "article_link",
+      "data_source": 1,
+      "publisher_id": 221060,
+      "relation_id": 46100315,
+      "ai_flag": 0,
+      "platform_product_line": null,
+      "mapping_status": "unmapped",
+      "quality_flags": []
+    },
+    {
+      "news_id": "4925409",
+      "published_at": "2026-10-19T05:38:59.049Z",
+      "published_at_ms": 1792388339049,
+      "timezone": "Asia/Shanghai",
+      "content_text": "10月19日，马鞍山市场水泥主流品牌散装P.O42.5报280-290元/吨，平。",
+      "content_html": "<p>10月19日，马鞍山市场水泥主流品牌散装P.O42.5报280-290元/吨，平。</p>",
+      "raw_content": "<p>10月19日，马鞍山市场水泥主流品牌散装P.O42.5报280-290元/吨，平。</p>",
+      "category": {
+        "id": 6,
+        "name": "6"
+      },
+      "section": {
+        "id": 7,
+        "name": "7"
+      },
+      "products": [
+        {
+          "id": "1001",
+          "name": "水泥",
+          "source": "relationBreed"
+        }
+      ],
+      "regions": [],
+      "source_name": null,
+      "source_url": null,
+      "in_article_url": null,
+      "out_article_url": null,
+      "in_article_title": null,
+      "out_article_title": null,
+      "source_link_status": "no_link",
+      "data_source": 0,
+      "publisher_id": 226578,
+      "relation_id": 0,
+      "ai_flag": 0,
+      "platform_product_line": null,
+      "mapping_status": "ambiguous",
+      "quality_flags": [
+        "source_link_missing"
+      ]
+    },
+    {
+      "news_id": "4925408",
+      "published_at": "2026-10-19T05:38:49.724Z",
+      "published_at_ms": 1792388329724,
+      "timezone": "Asia/Shanghai",
+      "content_text": "10月19日，滁州市场水泥主流品牌散装P.O42.5报260-290元/吨，平。",
+      "content_html": "<p>10月19日，滁州市场水泥主流品牌散装P.O42.5报260-290元/吨，平。</p>",
+      "raw_content": "<p>10月19日，滁州市场水泥主流品牌散装P.O42.5报260-290元/吨，平。</p>",
+      "category": {
+        "id": 6,
+        "name": "6"
+      },
+      "section": {
+        "id": 7,
+        "name": "7"
+      },
+      "products": [
+        {
+          "id": "1001",
+          "name": "水泥",
+          "source": "relationBreed"
+        }
+      ],
+      "regions": [],
+      "source_name": null,
+      "source_url": null,
+      "in_article_url": null,
+      "out_article_url": null,
+      "in_article_title": null,
+      "out_article_title": null,
+      "source_link_status": "no_link",
+      "data_source": 0,
+      "publisher_id": 226578,
+      "relation_id": 0,
+      "ai_flag": 0,
+      "platform_product_line": null,
+      "mapping_status": "ambiguous",
+      "quality_flags": [
+        "source_link_missing"
+      ]
+    },
+    {
+      "news_id": "4925407",
+      "published_at": "2026-10-19T05:38:38.128Z",
+      "published_at_ms": 1792388318128,
+      "timezone": "Asia/Shanghai",
+      "content_text": "10月19日，阜阳市场水泥主流品牌散装P.O42.5报270-280元/吨，平。",
+      "content_html": "<p>10月19日，阜阳市场水泥主流品牌散装P.O42.5报270-280元/吨，平。</p>",
+      "raw_content": "<p>10月19日，阜阳市场水泥主流品牌散装P.O42.5报270-280元/吨，平。</p>",
+      "category": {
+        "id": 6,
+        "name": "6"
+      },
+      "section": {
+        "id": 7,
+        "name": "7"
+      },
+      "products": [
+        {
+          "id": "1001",
+          "name": "水泥",
+          "source": "relationBreed"
+        }
+      ],
+      "regions": [],
+      "source_name": null,
+      "source_url": null,
+      "in_article_url": null,
+      "out_article_url": null,
+      "in_article_title": null,
+      "out_article_title": null,
+      "source_link_status": "no_link",
+      "data_source": 0,
+      "publisher_id": 226578,
+      "relation_id": 0,
+      "ai_flag": 0,
+      "platform_product_line": null,
+      "mapping_status": "ambiguous",
+      "quality_flags": [
+        "source_link_missing"
+      ]
+    },
+    {
+      "news_id": "4925406",
+      "published_at": "2026-10-19T05:38:27.448Z",
+      "published_at_ms": 1792388307448,
+      "timezone": "Asia/Shanghai",
+      "content_text": "10月19日，蚌埠市场水泥主流品牌散装P.O42.5报265-285元/吨，平。",
+      "content_html": "<p>10月19日，蚌埠市场水泥主流品牌散装P.O42.5报265-285元/吨，平。</p>",
+      "raw_content": "<p>10月19日，蚌埠市场水泥主流品牌散装P.O42.5报265-285元/吨，平。</p>",
+      "category": {
+        "id": 6,
+        "name": "6"
+      },
+      "section": {
+        "id": 7,
+        "name": "7"
+      },
+      "products": [
+        {
+          "id": "1001",
+          "name": "水泥",
+          "source": "relationBreed"
+        }
+      ],
+      "regions": [],
+      "source_name": null,
+      "source_url": null,
+      "in_article_url": null,
+      "out_article_url": null,
+      "in_article_title": null,
+      "out_article_title": null,
+      "source_link_status": "no_link",
+      "data_source": 0,
+      "publisher_id": 226578,
+      "relation_id": 0,
+      "ai_flag": 0,
+      "platform_product_line": null,
+      "mapping_status": "ambiguous",
+      "quality_flags": [
+        "source_link_missing"
+      ]
+    },
+    {
+      "news_id": "4925405",
+      "published_at": "2026-10-19T05:38:16.908Z",
+      "published_at_ms": 1792388296908,
+      "timezone": "Asia/Shanghai",
+      "content_text": "10月19日，济宁市场水泥主流品牌散装P.O42.5报260-280元/吨，平。",
+      "content_html": "<p>10月19日，济宁市场水泥主流品牌散装P.O42.5报260-280元/吨，平。</p>",
+      "raw_content": "<p>10月19日，济宁市场水泥主流品牌散装P.O42.5报260-280元/吨，平。</p>",
+      "category": {
+        "id": 6,
+        "name": "6"
+      },
+      "section": {
+        "id": 7,
+        "name": "7"
+      },
+      "products": [
+        {
+          "id": "1001",
+          "name": "水泥",
+          "source": "relationBreed"
+        }
+      ],
+      "regions": [],
+      "source_name": null,
+      "source_url": null,
+      "in_article_url": null,
+      "out_article_url": null,
+      "in_article_title": null,
+      "out_article_title": null,
+      "source_link_status": "no_link",
+      "data_source": 0,
+      "publisher_id": 226578,
+      "relation_id": 0,
+      "ai_flag": 0,
+      "platform_product_line": null,
+      "mapping_status": "ambiguous",
+      "quality_flags": [
+        "source_link_missing"
+      ]
+    },
+    {
+      "news_id": "4925402",
+      "published_at": "2026-10-19T05:38:07.074Z",
+      "published_at_ms": 1792388287074,
+      "timezone": "Asia/Shanghai",
+      "content_text": "10月19日，泰安市场水泥主流品牌散装P.O42.5报280-285元/吨，平。",
+      "content_html": "<p>10月19日，泰安市场水泥主流品牌散装P.O42.5报280-285元/吨，平。</p>",
+      "raw_content": "<p>10月19日，泰安市场水泥主流品牌散装P.O42.5报280-285元/吨，平。</p>",
+      "category": {
+        "id": 6,
+        "name": "6"
+      },
+      "section": {
+        "id": 7,
+        "name": "7"
+      },
+      "products": [
+        {
+          "id": "1001",
+          "name": "水泥",
+          "source": "relationBreed"
+        }
+      ],
+      "regions": [],
+      "source_name": null,
+      "source_url": null,
+      "in_article_url": null,
+      "out_article_url": null,
+      "in_article_title": null,
+      "out_article_title": null,
+      "source_link_status": "no_link",
+      "data_source": 0,
+      "publisher_id": 226578,
+      "relation_id": 0,
+      "ai_flag": 0,
+      "platform_product_line": null,
+      "mapping_status": "ambiguous",
+      "quality_flags": [
+        "source_link_missing"
+      ]
+    },
+    {
+      "news_id": "4925403",
+      "published_at": "2026-10-19T05:38:00.000Z",
+      "published_at_ms": 1792388280000,
+      "timezone": "Asia/Shanghai",
+      "content_text": "巴西近四年亚马逊砍伐量削减逾三分之二，年均损失降至4.6万平方公里。尽管政府加强执法并开出巨额罚单，但环保人士批评进展缓慢，超两百万起破坏事件未受制止，距2030年零非法毁林目标仍有差距。",
+      "content_html": "巴西近四年亚马逊砍伐量削减逾三分之二，年均损失降至4.6万平方公里。尽管政府加强执法并开出巨额罚单，但环保人士批评进展缓慢，超两百万起破坏事件未受制止，距2030年零非法毁林目标仍有差距。",
+      "raw_content": "巴西近四年亚马逊砍伐量削减逾三分之二，年均损失降至4.6万平方公里。尽管政府加强执法并开出巨额罚单，但环保人士批评进展缓慢，超两百万起破坏事件未受制止，距2030年零非法毁林目标仍有差距。",
+      "category": {
+        "id": 6,
+        "name": "6"
+      },
+      "section": {
+        "id": 8,
+        "name": "8"
+      },
+      "products": [
+        {
+          "id": "1201",
+          "name": "原木",
+          "source": "relationBreed"
+        },
+        {
+          "id": "1202",
+          "name": "木方",
+          "source": "relationBreed"
+        },
+        {
+          "id": "1203",
+          "name": "木模板",
+          "source": "relationBreed"
+        },
+        {
+          "id": "木材",
+          "name": "木材",
+          "source": "breedTag"
+        }
+      ],
+      "regions": [
+        {
+          "id": "01",
+          "name": "国内"
+        },
+        {
+          "id": "02",
+          "name": "国外"
+        }
+      ],
+      "source_name": "木联数据",
+      "source_url": "http://wood.100njz.com/a/26101913/3D7A0BF283C52F45.html",
+      "in_article_url": "http://wood.100njz.com/a/26101913/3D7A0BF283C52F45.html",
+      "out_article_url": null,
+      "in_article_title": "巴西四年内将亚马逊砍伐量削减逾三分之二",
+      "out_article_title": null,
+      "source_link_status": "article_link",
+      "data_source": 1,
+      "publisher_id": 221065,
+      "relation_id": 46100287,
+      "ai_flag": 0,
+      "platform_product_line": null,
+      "mapping_status": "ambiguous",
+      "quality_flags": []
+    },
+    {
+      "news_id": "4925401",
+      "published_at": "2026-10-19T05:37:56.696Z",
+      "published_at_ms": 1792388276696,
+      "timezone": "Asia/Shanghai",
+      "content_text": "10月19日，菏泽市场水泥主流品牌散装P.O42.5报265-305元/吨，平。",
+      "content_html": "<p>10月19日，菏泽市场水泥主流品牌散装P.O42.5报265-305元/吨，平。</p>",
+      "raw_content": "<p>10月19日，菏泽市场水泥主流品牌散装P.O42.5报265-305元/吨，平。</p>",
+      "category": {
+        "id": 6,
+        "name": "6"
+      },
+      "section": {
+        "id": 7,
+        "name": "7"
+      },
+      "products": [
+        {
+          "id": "1001",
+          "name": "水泥",
+          "source": "relationBreed"
+        }
+      ],
+      "regions": [],
+      "source_name": null,
+      "source_url": null,
+      "in_article_url": null,
+      "out_article_url": null,
+      "in_article_title": null,
+      "out_article_title": null,
+      "source_link_status": "no_link",
+      "data_source": 0,
+      "publisher_id": 226578,
+      "relation_id": 0,
+      "ai_flag": 0,
+      "platform_product_line": null,
+      "mapping_status": "ambiguous",
+      "quality_flags": [
+        "source_link_missing"
+      ]
+    },
+    {
+      "news_id": "4925400",
+      "published_at": "2026-10-19T05:37:46.304Z",
+      "published_at_ms": 1792388266304,
+      "timezone": "Asia/Shanghai",
+      "content_text": "10月19日，合肥市场水泥主流品牌散装P.O42.5报275-295元/吨，平。",
+      "content_html": "<p>10月19日，合肥市场水泥主流品牌散装P.O42.5报275-295元/吨，平。</p>",
+      "raw_content": "<p>10月19日，合肥市场水泥主流品牌散装P.O42.5报275-295元/吨，平。</p>",
+      "category": {
+        "id": 6,
+        "name": "6"
+      },
+      "section": {
+        "id": 7,
+        "name": "7"
+      },
+      "products": [
+        {
+          "id": "1001",
+          "name": "水泥",
+          "source": "relationBreed"
+        }
+      ],
+      "regions": [],
+      "source_name": null,
+      "source_url": null,
+      "in_article_url": null,
+      "out_article_url": null,
+      "in_article_title": null,
+      "out_article_title": null,
+      "source_link_status": "no_link",
+      "data_source": 0,
+      "publisher_id": 226578,
+      "relation_id": 0,
+      "ai_flag": 0,
+      "platform_product_line": null,
+      "mapping_status": "ambiguous",
+      "quality_flags": [
+        "source_link_missing"
+      ]
+    },
+    {
+      "news_id": "4925404",
+      "published_at": "2026-10-19T05:37:00.000Z",
+      "published_at_ms": 1792388220000,
+      "timezone": "Asia/Shanghai",
+      "content_text": "英国埃塞克斯郡AI数据中心项目因电力供应问题失去大客户微软。该项目原计划明年开业，现进展缓慢。Nscale表示，微软终止了在该项目中资助建设超级计算机的合作，但双方将在其他海外项目继续合作。作为英国政府支持的最大自主AI数据中心，失去唯一公开宣布的客户可能削弱开发商Nscale今年赴美上市及350亿美元估值的计划。",
+      "content_html": "英国埃塞克斯郡AI数据中心项目因电力供应问题失去大客户微软。该项目原计划明年开业，现进展缓慢。Nscale表示，微软终止了在该项目中资助建设超级计算机的合作，但双方将在其他海外项目继续合作。作为英国政府支持的最大自主AI数据中心，失去唯一公开宣布的客户可能削弱开发商Nscale今年赴美上市及350亿美元估值的计划。",
+      "raw_content": "英国埃塞克斯郡AI数据中心项目因电力供应问题失去大客户微软。该项目原计划明年开业，现进展缓慢。Nscale表示，微软终止了在该项目中资助建设超级计算机的合作，但双方将在其他海外项目继续合作。作为英国政府支持的最大自主AI数据中心，失去唯一公开宣布的客户可能削弱开发商Nscale今年赴美上市及350亿美元估值的计划。",
+      "category": {
+        "id": 18,
+        "name": "18"
+      },
+      "section": {
+        "id": 8,
+        "name": "8"
+      },
+      "products": [],
+      "regions": [],
+      "source_name": "财联社",
+      "source_url": "http://news.mysteel.com/a/26101913/D35696D6886A82F5.html",
+      "in_article_url": "http://news.mysteel.com/a/26101913/D35696D6886A82F5.html",
+      "out_article_url": null,
+      "in_article_title": "微软退出！英国最大AI数据中心项目痛失大客户",
+      "out_article_title": null,
+      "source_link_status": "article_link",
+      "data_source": 1,
+      "publisher_id": 221060,
+      "relation_id": 46100290,
+      "ai_flag": 0,
+      "platform_product_line": null,
+      "mapping_status": "unmapped",
+      "quality_flags": []
+    },
+    {
+      "news_id": "4925398",
+      "published_at": "2026-10-19T05:36:23.517Z",
+      "published_at_ms": 1792388183517,
+      "timezone": "Asia/Shanghai",
+      "content_text": "10月19日【调价】内蒙古赤峰金帆废电瓶价格：电动9000、电信8800、大白9400、黑皮80A以下9600、120叉车管式9500、电轿9050、AGM 8900、摩托车8050、电子秤5350。（单位：元/吨）",
+      "content_html": "10月19日【调价】内蒙古赤峰金帆废电瓶价格：电动9000、电信8800、大白9400、黑皮80A以下9600、120叉车管式9500、电轿9050、AGM 8900、摩托车8050、电子秤5350。（单位：元/吨）",
+      "raw_content": "10月19日【调价】内蒙古赤峰金帆废电瓶价格：电动9000、电信8800、大白9400、黑皮80A以下9600、120叉车管式9500、电轿9050、AGM 8900、摩托车8050、电子秤5350。（单位：元/吨）",
+      "category": {
+        "id": 4,
+        "name": "4"
+      },
+      "section": {
+        "id": 7,
+        "name": "7"
+      },
+      "products": [
+        {
+          "id": "020308",
+          "name": "2#铅",
+          "source": "relationBreed"
+        },
+        {
+          "id": "废电瓶",
+          "name": "废电瓶",
+          "source": "breedTag"
+        },
+        {
+          "id": "废旧铅酸蓄电池",
+          "name": "废旧铅酸蓄电池",
+          "source": "breedTag"
+        },
+        {
+          "id": "再生金属",
+          "name": "再生金属",
+          "source": "breedTag"
+        }
+      ],
+      "regions": [
+        {
+          "id": "01010713",
+          "name": "阜阳"
+        }
+      ],
+      "source_name": null,
+      "source_url": null,
+      "in_article_url": null,
+      "out_article_url": null,
+      "in_article_title": null,
+      "out_article_title": null,
+      "source_link_status": "no_link",
+      "data_source": 2,
+      "publisher_id": 228187,
+      "relation_id": 7681730,
+      "ai_flag": 0,
+      "platform_product_line": null,
+      "mapping_status": "ambiguous",
+      "quality_flags": [
+        "source_link_missing"
+      ]
+    },
+    {
+      "news_id": "4925399",
+      "published_at": "2026-10-19T05:36:00.000Z",
+      "published_at_ms": 1792388160000,
+      "timezone": "Asia/Shanghai",
+      "content_text": "Midway Global Holdings对塔斯马尼亚贝尔湾木片厂展开运营审查，聚焦柴油及木片成本波动。受运输燃油效率低及原料涨价影响，公司拟优化供应链、引入车队管理系统并探索长期供货协议，计划下季度公布整改措施以提升盈利能力。",
+      "content_html": "Midway Global Holdings对塔斯马尼亚贝尔湾木片厂展开运营审查，聚焦柴油及木片成本波动。受运输燃油效率低及原料涨价影响，公司拟优化供应链、引入车队管理系统并探索长期供货协议，计划下季度公布整改措施以提升盈利能力。",
+      "raw_content": "Midway Global Holdings对塔斯马尼亚贝尔湾木片厂展开运营审查，聚焦柴油及木片成本波动。受运输燃油效率低及原料涨价影响，公司拟优化供应链、引入车队管理系统并探索长期供货协议，计划下季度公布整改措施以提升盈利能力。",
+      "category": {
+        "id": 6,
+        "name": "6"
+      },
+      "section": {
+        "id": 6,
+        "name": "6"
+      },
+      "products": [
+        {
+          "id": "1201",
+          "name": "原木",
+          "source": "relationBreed"
+        },
+        {
+          "id": "1202",
+          "name": "木方",
+          "source": "relationBreed"
+        },
+        {
+          "id": "1203",
+          "name": "木模板",
+          "source": "relationBreed"
+        },
+        {
+          "id": "柴油",
+          "name": "柴油",
+          "source": "breedTag"
+        },
+        {
+          "id": "木材",
+          "name": "木材",
+          "source": "breedTag"
+        }
+      ],
+      "regions": [
+        {
+          "id": "01",
+          "name": "国内"
+        },
+        {
+          "id": "02",
+          "name": "国外"
+        }
+      ],
+      "source_name": "木联数据",
+      "source_url": "http://wood.100njz.com/a/26101913/A53B7670F7C147DF.html",
+      "in_article_url": "http://wood.100njz.com/a/26101913/A53B7670F7C147DF.html",
+      "out_article_url": null,
+      "in_article_title": "Midway 因柴油和木片价格审查贝尔湾木片生产线",
+      "out_article_title": null,
+      "source_link_status": "article_link",
+      "data_source": 1,
+      "publisher_id": 221065,
+      "relation_id": 46100257,
+      "ai_flag": 0,
+      "platform_product_line": null,
+      "mapping_status": "ambiguous",
+      "quality_flags": []
+    },
+    {
+      "news_id": "4925397",
+      "published_at": "2026-10-19T05:35:00.000Z",
+      "published_at_ms": 1792388100000,
+      "timezone": "Asia/Shanghai",
+      "content_text": "美林主在欧盟零毁林法规游说上超越巧克力及大豆巨头。数据显示，USLCA联盟提交232份意见函，多于ChocoEU的217份和ESPO的122份。尽管资源较足，美林主仍指EUDR合规成本构成不合理负担，尤其受关税影响显著。",
+      "content_html": "美林主在欧盟零毁林法规游说上超越巧克力及大豆巨头。数据显示，USLCA联盟提交232份意见函，多于ChocoEU的217份和ESPO的122份。尽管资源较足，美林主仍指EUDR合规成本构成不合理负担，尤其受关税影响显著。",
+      "raw_content": "美林主在欧盟零毁林法规游说上超越巧克力及大豆巨头。数据显示，USLCA联盟提交232份意见函，多于ChocoEU的217份和ESPO的122份。尽管资源较足，美林主仍指EUDR合规成本构成不合理负担，尤其受关税影响显著。",
+      "category": {
+        "id": 6,
+        "name": "6"
+      },
+      "section": {
+        "id": 6,
+        "name": "6"
+      },
+      "products": [
+        {
+          "id": "1201",
+          "name": "原木",
+          "source": "relationBreed"
+        },
+        {
+          "id": "1202",
+          "name": "木方",
+          "source": "relationBreed"
+        },
+        {
+          "id": "1203",
+          "name": "木模板",
+          "source": "relationBreed"
+        },
+        {
+          "id": "大豆",
+          "name": "大豆",
+          "source": "breedTag"
+        },
+        {
+          "id": "木材",
+          "name": "木材",
+          "source": "breedTag"
+        }
+      ],
+      "regions": [
+        {
+          "id": "01",
+          "name": "国内"
+        },
+        {
+          "id": "02",
+          "name": "国外"
+        }
+      ],
+      "source_name": "木联数据",
+      "source_url": "http://wood.100njz.com/a/26101913/C68668F92F855CFC.html",
+      "in_article_url": "http://wood.100njz.com/a/26101913/C68668F92F855CFC.html",
+      "out_article_url": null,
+      "in_article_title": "美国林主在欧盟零毁林法规上比巧克力和大豆巨头更积极游说",
+      "out_article_title": null,
+      "source_link_status": "article_link",
+      "data_source": 1,
+      "publisher_id": 221065,
+      "relation_id": 46100226,
+      "ai_flag": 0,
+      "platform_product_line": null,
+      "mapping_status": "ambiguous",
+      "quality_flags": []
+    },
+    {
+      "news_id": "4925396",
+      "published_at": "2026-10-19T05:34:58.764Z",
+      "published_at_ms": 1792388098764,
+      "timezone": "Asia/Shanghai",
+      "content_text": "扬州鸿蓝钢铁收购以下废钢材料： 冷板、热板打包料，激光板厚度2个以下，价格2120元每吨。 激光板、冷热板、冲料（无油漆、无镀锌），厚度2至6个，价格2140-2160元每吨。 厚度6个以上，价格2160元每吨。 纯冲子、冲豆，价格2180元每吨。 重废，价格2000至2020元每吨。 镀锌铁皮，价格1850至元每吨。 剪料停收，当日打款！当日打款！当日打款！！！ 欢迎新老客户联系。 收购电话：18012318888，徐先生，微信同步。 地址：邗江区槐泗镇肖胡村肖胡路1号，扬州鸿蓝钢铁加工有限公司。",
+      "content_html": "扬州鸿蓝钢铁收购以下废钢材料：\n\n冷板、热板打包料，激光板厚度2个以下，价格2120元每吨。\n\n激光板、冷热板、冲料（无油漆、无镀锌），厚度2至6个，价格2140-2160元每吨。\n\n厚度6个以上，价格2160元每吨。\n\n纯冲子、冲豆，价格2180元每吨。\n\n重废，价格2000至2020元每吨。\n\n镀锌铁皮，价格1850至元每吨。\n\n剪料停收，当日打款！当日打款！当日打款！！！\n\n欢迎新老客户联系。\n\n收购电话：18012318888，徐先生，微信同步。\n\n地址：邗江区槐泗镇肖胡村肖胡路1号，扬州鸿蓝钢铁加工有限公司。",
+      "raw_content": "扬州鸿蓝钢铁收购以下废钢材料：\n\n冷板、热板打包料，激光板厚度2个以下，价格2120元每吨。\n\n激光板、冷热板、冲料（无油漆、无镀锌），厚度2至6个，价格2140-2160元每吨。\n\n厚度6个以上，价格2160元每吨。\n\n纯冲子、冲豆，价格2180元每吨。\n\n重废，价格2000至2020元每吨。\n\n镀锌铁皮，价格1850至元每吨。\n\n剪料停收，当日打款！当日打款！当日打款！！！\n\n欢迎新老客户联系。\n\n收购电话：18012318888，徐先生，微信同步。\n\n地址：邗江区槐泗镇肖胡村肖胡路1号，扬州鸿蓝钢铁加工有限公司。",
+      "category": {
+        "id": 2,
+        "name": "2"
+      },
+      "section": {
+        "id": 7,
+        "name": "7"
+      },
+      "products": [
+        {
+          "id": "03061402",
+          "name": "其它废料",
+          "source": "relationBreed"
+        },
+        {
+          "id": "中废",
+          "name": "中废",
+          "source": "breedTag"
+        },
+        {
+          "id": "冲子",
+          "name": "冲子",
+          "source": "breedTag"
+        },
+        {
+          "id": "再生金属",
+          "name": "再生金属",
+          "source": "breedTag"
+        }
+      ],
+      "regions": [
+        {
+          "id": "01010302",
+          "name": "扬州"
+        }
+      ],
+      "source_name": "我的钢铁网",
+      "source_url": "https://feigang.mysteel.com/a/26101913/260D5CE7067A6A1E.html",
+      "in_article_url": "https://feigang.mysteel.com/a/26101913/260D5CE7067A6A1E.html",
+      "out_article_url": null,
+      "in_article_title": "19日扬州鸿蓝钢铁废钢采购价格调整信息",
+      "out_article_title": null,
+      "source_link_status": "article_link",
+      "data_source": 1,
+      "publisher_id": 220087,
+      "relation_id": 46100207,
+      "ai_flag": 0,
+      "platform_product_line": null,
+      "mapping_status": "ambiguous",
+      "quality_flags": []
+    },
+    {
+      "news_id": "4925395",
+      "published_at": "2026-10-19T05:34:00.000Z",
+      "published_at_ms": 1792388040000,
+      "timezone": "Asia/Shanghai",
+      "content_text": "为加快推进全国统一电力市场建设，强化电力市场基础制度规则统一，规范电力现货市场运营和管理，国家发展改革委组织对《电力现货市场基本规则（试行）》（发改能源规〔2023〕1217号）进行了修订，形成了《电力现货市场基本规则（公开征求意见稿）》，现向社会公开征求意见。此次公开征求意见的时间为2026年10月19日至2026年11月18日。",
+      "content_html": "为加快推进全国统一电力市场建设，强化电力市场基础制度规则统一，规范电力现货市场运营和管理，国家发展改革委组织对《电力现货市场基本规则（试行）》（发改能源规〔2023〕1217号）进行了修订，形成了《电力现货市场基本规则（公开征求意见稿）》，现向社会公开征求意见。此次公开征求意见的时间为2026年10月19日至2026年11月18日。",
+      "raw_content": "为加快推进全国统一电力市场建设，强化电力市场基础制度规则统一，规范电力现货市场运营和管理，国家发展改革委组织对《电力现货市场基本规则（试行）》（发改能源规〔2023〕1217号）进行了修订，形成了《电力现货市场基本规则（公开征求意见稿）》，现向社会公开征求意见。此次公开征求意见的时间为2026年10月19日至2026年11月18日。",
+      "category": {
+        "id": 18,
+        "name": "18"
+      },
+      "section": {
+        "id": 8,
+        "name": "8"
+      },
+      "products": [],
+      "regions": [],
+      "source_name": "国家发改委",
+      "source_url": "http://news.mysteel.com/a/26101913/FC061B3135221247.html",
+      "in_article_url": "http://news.mysteel.com/a/26101913/FC061B3135221247.html",
+      "out_article_url": null,
+      "in_article_title": "国家发改委向社会公开征求《电力现货市场基本规则（公开征求意见稿）》意见",
+      "out_article_title": null,
+      "source_link_status": "article_link",
+      "data_source": 1,
+      "publisher_id": 220399,
+      "relation_id": 46100202,
+      "ai_flag": 0,
+      "platform_product_line": null,
+      "mapping_status": "unmapped",
+      "quality_flags": []
+    },
+    {
+      "news_id": "4925394",
+      "published_at": "2026-10-19T05:34:00.000Z",
+      "published_at_ms": 1792388040000,
+      "timezone": "Asia/Shanghai",
+      "content_text": "截至10月19日12：00，江苏地区钢厂铁水与废钢价差相比，铁水与废钢价格相比高61元/吨。（注：已考虑到废钢入炉造成的损耗等问题，此数据仅为当天即时成本理论值，且不含到厂物流成本）。",
+      "content_html": "截至10月19日12：00，江苏地区钢厂铁水与废钢价差相比，铁水与废钢价格相比高61元/吨。（注：已考虑到废钢入炉造成的损耗等问题，此数据仅为当天即时成本理论值，且不含到厂物流成本）。",
+      "raw_content": "截至10月19日12：00，江苏地区钢厂铁水与废钢价差相比，铁水与废钢价格相比高61元/吨。（注：已考虑到废钢入炉造成的损耗等问题，此数据仅为当天即时成本理论值，且不含到厂物流成本）。",
+      "category": {
+        "id": 2,
+        "name": "2"
+      },
+      "section": {
+        "id": 8,
+        "name": "8"
+      },
+      "products": [
+        {
+          "id": "030604",
+          "name": "普碳废钢",
+          "source": "relationBreed"
+        },
+        {
+          "id": "铁水",
+          "name": "铁水",
+          "source": "breedTag"
+        },
+        {
+          "id": "废钢",
+          "name": "废钢",
+          "source": "breedTag"
+        },
+        {
+          "id": "再生金属",
+          "name": "再生金属",
+          "source": "breedTag"
+        }
+      ],
+      "regions": [
+        {
+          "id": "0101",
+          "name": "华东"
+        }
+      ],
+      "source_name": "我的钢铁网(Mysteel)",
+      "source_url": "http://feigang.mysteel.com/a/26101913/D4B589B06102D4DE.html",
+      "in_article_url": "http://feigang.mysteel.com/a/26101913/D4B589B06102D4DE.html",
+      "out_article_url": null,
+      "in_article_title": "Mysteel数据：江苏废钢与铁水成本即时价差监测（20261019）",
+      "out_article_title": null,
+      "source_link_status": "article_link",
+      "data_source": 1,
+      "publisher_id": 224979,
+      "relation_id": 46100185,
+      "ai_flag": 0,
+      "platform_product_line": null,
+      "mapping_status": "ambiguous",
+      "quality_flags": []
+    },
+    {
+      "news_id": "4925393",
+      "published_at": "2026-10-19T05:33:00.000Z",
+      "published_at_ms": 1792387980000,
+      "timezone": "Asia/Shanghai",
+      "content_text": "美商务部将加软木综合关税降至24.75%，但叠加特朗普10%关税后仍达34.75%。Canfor等个别企业税率大幅下调，105家公司被移出审查。美方重申加方存在不公平贸易，而美建筑商协会呼吁暂停关税以减轻住房负担。",
+      "content_html": "美商务部将加软木综合关税降至24.75%，但叠加特朗普10%关税后仍达34.75%。Canfor等个别企业税率大幅下调，105家公司被移出审查。美方重申加方存在不公平贸易，而美建筑商协会呼吁暂停关税以减轻住房负担。",
+      "raw_content": "美商务部将加软木综合关税降至24.75%，但叠加特朗普10%关税后仍达34.75%。Canfor等个别企业税率大幅下调，105家公司被移出审查。美方重申加方存在不公平贸易，而美建筑商协会呼吁暂停关税以减轻住房负担。",
+      "category": {
+        "id": 6,
+        "name": "6"
+      },
+      "section": {
+        "id": 8,
+        "name": "8"
+      },
+      "products": [
+        {
+          "id": "1201",
+          "name": "原木",
+          "source": "relationBreed"
+        },
+        {
+          "id": "1202",
+          "name": "木方",
+          "source": "relationBreed"
+        },
+        {
+          "id": "1203",
+          "name": "木模板",
+          "source": "relationBreed"
+        },
+        {
+          "id": "木材",
+          "name": "木材",
+          "source": "breedTag"
+        }
+      ],
+      "regions": [
+        {
+          "id": "01",
+          "name": "国内"
+        },
+        {
+          "id": "02",
+          "name": "国外"
+        }
+      ],
+      "source_name": "木联数据",
+      "source_url": "http://wood.100njz.com/a/26101913/D6D8F534C907EF9C.html",
+      "in_article_url": "http://wood.100njz.com/a/26101913/D6D8F534C907EF9C.html",
+      "out_article_url": null,
+      "in_article_title": "华盛顿降低加拿大软木关税，特朗普关税保留",
+      "out_article_title": null,
+      "source_link_status": "article_link",
+      "data_source": 1,
+      "publisher_id": 221065,
+      "relation_id": 46100168,
+      "ai_flag": 0,
+      "platform_product_line": null,
+      "mapping_status": "ambiguous",
+      "quality_flags": []
+    },
+    {
+      "news_id": "4925392",
+      "published_at": "2026-10-19T05:32:00.000Z",
+      "published_at_ms": 1792387920000,
+      "timezone": "Asia/Shanghai",
+      "content_text": "10月19日11:20起，天津君诚管道调整价格：热镀锌圆管、衬塑复合管、直缝焊管、燃气专用管、方矩管及光伏支架等，较10月14日基价上调20元/吨；无缝管、涂塑管、护栏板及抗震支架等执行既往特定日期价格政策。",
+      "content_html": "10月19日11:20起，天津君诚管道调整价格：热镀锌圆管、衬塑复合管、直缝焊管、燃气专用管、方矩管及光伏支架等，较10月14日基价上调20元/吨；无缝管、涂塑管、护栏板及抗震支架等执行既往特定日期价格政策。",
+      "raw_content": "10月19日11:20起，天津君诚管道调整价格：热镀锌圆管、衬塑复合管、直缝焊管、燃气专用管、方矩管及光伏支架等，较10月14日基价上调20元/吨；无缝管、涂塑管、护栏板及抗震支架等执行既往特定日期价格政策。",
+      "category": {
+        "id": 2,
+        "name": "2"
+      },
+      "section": {
+        "id": 9,
+        "name": "9"
+      },
+      "products": [
+        {
+          "id": "010109",
+          "name": "钢管",
+          "source": "relationBreed"
+        },
+        {
+          "id": "燃气管",
+          "name": "燃气管",
+          "source": "breedTag"
+        },
+        {
+          "id": "光伏支架",
+          "name": "光伏支架",
+          "source": "breedTag"
+        },
+        {
+          "id": "无缝管",
+          "name": "无缝管",
+          "source": "breedTag"
+        },
+        {
+          "id": "方矩管",
+          "name": "方矩管",
+          "source": "breedTag"
+        },
+        {
+          "id": "涂塑管",
+          "name": "涂塑管",
+          "source": "breedTag"
+        }
+      ],
+      "regions": [
+        {
+          "id": "01",
+          "name": "国内"
+        }
+      ],
+      "source_name": "我的钢铁网(Mysteel)",
+      "source_url": "http://factory.mysteel.com/a/26101913/C0449956D5A1882D.html",
+      "in_article_url": "http://factory.mysteel.com/a/26101913/C0449956D5A1882D.html",
+      "out_article_url": null,
+      "in_article_title": "10月19日天津君诚管道实业集团有限公司价格调整通知",
+      "out_article_title": null,
+      "source_link_status": "article_link",
+      "data_source": 1,
+      "publisher_id": 205678,
+      "relation_id": 46100154,
+      "ai_flag": 0,
+      "platform_product_line": null,
+      "mapping_status": "ambiguous",
+      "quality_flags": []
+    },
     {
       "news_id": "4925391",
       "published_at": "2026-10-19T04:13:00.345Z",
@@ -4978,9 +7269,9 @@
       "published_at": "2026-10-19T03:42:00.000Z",
       "published_at_ms": 1792381320000,
       "timezone": "Asia/Shanghai",
-      "content_text": "据Mysteel了解，欧盟批准Tenaris收购罗马尼亚钢管商Artrom。评估认为此举不引发竞争问题。Artrom在罗拥有两处基地，年炼钢产能约45万吨，无缝管轧制产能最高20万吨。收购将支持Tenaris欧洲工业钢管业务，加强其区域制造网络。",
-      "content_html": "据Mysteel了解，欧盟批准Tenaris收购罗马尼亚钢管商Artrom。评估认为此举不引发竞争问题。Artrom在罗拥有两处基地，年炼钢产能约45万吨，无缝管轧制产能最高20万吨。收购将支持Tenaris欧洲工业钢管业务，加强其区域制造网络。",
-      "raw_content": "据Mysteel了解，欧盟批准Tenaris收购罗马尼亚钢管商Artrom。评估认为此举不引发竞争问题。Artrom在罗拥有两处基地，年炼钢产能约45万吨，无缝管轧制产能最高20万吨。收购将支持Tenaris欧洲工业钢管业务，加强其区域制造网络。",
+      "content_text": "据Mysteel了解，印度金达尔钢铁在奥里萨邦投产5.27亿美元碳钢厂，年产能220万吨。该厂配备先进自动化及环保系统，并与日本JFE钢铁合作，旨在提升资源利用率与高品质钢生产效率，成为该地区最现代化设施之一。",
+      "content_html": "据Mysteel了解，印度金达尔钢铁在奥里萨邦投产5.27亿美元碳钢厂，年产能220万吨。该厂配备先进自动化及环保系统，并与日本JFE钢铁合作，旨在提升资源利用率与高品质钢生产效率，成为该地区最现代化设施之一。",
+      "raw_content": "据Mysteel了解，印度金达尔钢铁在奥里萨邦投产5.27亿美元碳钢厂，年产能220万吨。该厂配备先进自动化及环保系统，并与日本JFE钢铁合作，旨在提升资源利用率与高品质钢生产效率，成为该地区最现代化设施之一。",
       "category": {
         "id": 2,
         "name": "2"
@@ -5011,7 +7302,7 @@
       "source_url": "http://export.mysteel.com/a/26101911/D978004EB7B88601.html",
       "in_article_url": "http://export.mysteel.com/a/26101911/D978004EB7B88601.html",
       "out_article_url": null,
-      "in_article_title": "国际钢讯：Tenaris获得欧盟批准，将收购罗马尼亚钢管生产商Artrom",
+      "in_article_title": "国际钢讯：印度金达尔钢铁公司在奥里萨邦投产新的碳钢生产设施",
       "out_article_title": null,
       "source_link_status": "article_link",
       "data_source": 1,
@@ -134790,12 +137081,12 @@
   ],
   "quality": {
     "raw_count": 2700,
-    "accepted_count": 2601,
-    "rejected_count": 99,
+    "accepted_count": 2650,
+    "rejected_count": 50,
     "deduped_count": 0,
-    "missing_source_link_count": 2062,
-    "missing_product_count": 53,
-    "malformed_content_count": 99,
+    "missing_source_link_count": 2094,
+    "missing_product_count": 61,
+    "malformed_content_count": 50,
     "duplicate_group_count": 0,
     "warnings": [
       "API 报告总量超过本次分页采集量；快照仅覆盖目标日期窗口，需按分类/地区拆分请求补全。"
