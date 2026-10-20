@@ -6,10 +6,10 @@
     "dashboard_url": "https://www.mysteel.com/fastcomment/#/",
     "api_url": "https://openapi.mysteel.com/without_sign/newsflash/flashnews/query_by_tags.htm",
     "taxonomy_url": "https://a.mysteelcdn.com/common/publish/newsflash/newsflash_column.json",
-    "captured_at": "2026-10-20T04:42:34.555Z",
+    "captured_at": "2026-10-20T05:53:25.275Z",
     "coverage_start": "2026-10-20",
     "coverage_end": "2026-10-20",
-    "latest_published_at": "2026-10-20T04:13:33.921Z",
+    "latest_published_at": "2026-10-20T05:52:00.000Z",
     "timezone": "Asia/Shanghai",
     "fetch_mode": "api",
     "request_params": {
@@ -23,42 +23,42 @@
         ]
       ]
     },
-    "raw_sha256": "73dcb65386574869a45ba4c7c4bdca4edb5341db0e09e66d2d2ab4af6e78a645",
+    "raw_sha256": "8f583e3153612ae0f4a2d565647ddd7efc34634dd60ed3949af63ab36c7477a2",
     "taxonomy_sha256": "c98f5bfdacde3401c98ea8f43bac3ca63d35b569f6aad3e1fff2f39b58a0dbf3",
     "response_sha256": [
-      "2eeaf268781c95f7c0c103ad7a99ff5014e3e6f9a6313029e4e78c76f9f5ad49",
-      "6bda6ed2fc8b31f0f69e0227d21b77a6d8480f2a02ac189ecf05378cbff91644",
-      "867d4525ac2b6f81ca783f96ded56be6201511e5aff790e9473adc88ed3ef3ac",
-      "977a89cbef6a615bc6a9f397057d6b5b341b0918c21dcca7dfa51db9d54b3b52",
-      "6ae543d61e2d07440eae12cdf5afe236eaa339830d578f4d64fdd8679e617a31",
-      "d740b7d96f02e8696b8aec46be36a7697d17a19f6e916c216e1e85a392613a0f",
-      "f4fc6e21db0954d22f77109c9dccefa861f3c76d02cd74615c06d67a7bd38edb",
-      "e012849f85d3304cdcb74b294d7d1a59635b4d795561358cfd2188002dcd7d82",
-      "0991669766415323f4729c1a311ebc6f2351eea977eccf2797df103a39707456",
-      "b676914f6a42ef643059de70f0bb742c7b718cbba63437650c34ffe0c05189fb",
-      "cf5961192254cd8f165ae52c4c9169a907db4c34c2773e402588d07a8e76a400",
-      "448ebf0dec24449f5a02d189b138aa308adeb538992f73384b2659565fabf630",
-      "92ba1996c77ee8bec86d932cdc19a4411b3469af365a431368149118baf2a033",
-      "40f4c3356b44b0b4897747d596f16b72f8f1bc40e2700b5d1fb87e366b96726d",
-      "092b1f4c443c1bff6bc785356b1594094e587bf3f0aacecbb8afe1b4bb28e5d9",
-      "9cf7d9cfb5592241651926313785b17508a335dd4ccb1736ad939b54f7637e6f",
-      "1d9885fe1335ef3d88e5d282c9651c59beb73a3ba9ed60b38dea3830cd1c41b9",
-      "ff54b6ae1bf2951e77589d80494795eaf3d39b9aac32427d670d417255c55b49",
-      "8176ce01667716aa7803738417b847eb2f7b1dc470e053b37a4c445f2435a616",
-      "5279ae186d54127fb9c2e2ef39e62de4bddab4749250c820cb2c3e880abae97c",
-      "c6d4e21cfebb5d6bafca42b57f1db2870f7e3deb674fc91f9d68606b00ebc034",
-      "6d7b7189947c43018b74615911e1fd56c1a95426ae06926ba862536cf7f7a77f",
-      "6efda525745fb928ce24ed4de6ea97ca16fbd476d4524cc9e58a7508deb1f61e",
-      "58af91f6bf891e10d4aa7c0a994aef983afc36f006683e8848468b24607c974e",
-      "8cec4fdc513bb99e4343621674debbab9ba7f77af9dd022deb7302773c7f19a2",
-      "ba3ad1820511b3b5d8faa6a2abae83a0b252395cc64dcd5f347a6c176a887c30"
+      "6ecc2d59845deee868a6f5ab9e004cd991dae53bcde60e807d534108103834f4",
+      "3c3b13b5ce8e0599a2520e94db5b0b089ede7185e81e698d20d781e0a8fea7ec",
+      "adc78015eaec16ad7a1ee698abace0e424561d031564aba51a49d7075a81900d",
+      "77c7bba537e7e079e44f2cb493f6b6a3c0955ea50168f9537e096ce97af8b536",
+      "99046c95f69a7936fc0f085f058a7d5c7284d064bdb8d29ed3407b1f1f38c0ce",
+      "f2c9a8a36bce7a911b5693cc97fe5591b56145fdebb062263b606880d7f3dbfd",
+      "52ce3355d6b7bdb232dc63767763d6258a3cfa32fc80aaf4e313934539c7c3ed",
+      "48941cf025da0907aea59638790e5837035ec2ea8de1975d5f64b1607b436340",
+      "5259ae9b15d4ca5271927d21c6e99b85d73840e0ce6f4e6946592d4db3891935",
+      "e47f3a095ec6f29ab5c3b9438c346ef30149a93f9cb9dda18a2b177694a0d91a",
+      "fa681776be18cbc60140166d4649099d8f8fec1863fd1fec37f3527387818f36",
+      "1a28cdadbb84f9c368abd3a13d99c2ffb5829649837e4f8c9a6c6b7a3dd8f02d",
+      "c0ef4e40e0d3c5324ec5d274c04fc4bd0bfabaadc043b70435a3c5e4bf7efa13",
+      "4bb865d661006e40bb84633ff1ac8ed298bccaf10c8b0bc8b17f8e1aaa9d1cd5",
+      "b87e34b917c0813f14362162483a146b25a104b1bf10764ed12c89b4f9c96ae8",
+      "2cf7bb1395c2f2863b635f7e00c619e22ff3acc221844d8cc8f4e5669e50b882",
+      "580ebb108b449d0740d11ded0d34566fe6994fd178b2fe7cbed1d858ace4cf59",
+      "69618b9b6a7231239addf28f3768aed4a1742cfd25a76e995f3094598457629d",
+      "a4c352ec1229b686fe810d6b3eb1c394819c356a813dd3ce504b814a217d7bd1",
+      "37260ff24adc30ba521c90086491ddbca681af0f0729051bc4a8faab6ab74862",
+      "19a60c2eaf7d6ef4d039f9456049c32dfe62e77cf37d8859ef0dd306ba98ea4c",
+      "387d90373cd5b2580ec989703a750d22475f6b3c7b1cf66be39cc7390918231d",
+      "437f4c1462d049cb3a91c0f2dc03834151da4b14ee393f507ee3b4aded807612",
+      "ec5363ffb30060676bc94f9ce62e012ea6c140b7a19723eb68309734d233de53",
+      "384e7aa3a5a2f420508ff2562746689b377c54c16ae08218c4c72d594b04716f",
+      "5a4eff651042257832f3db91957f74aa3b59111b58fc979a9d702caf8ec1270e"
     ],
     "page_count": 26,
     "reported_total": 10000,
     "truncation_detected": true,
     "watermark": {
-      "publisher_time_ms": 1792469613921,
-      "id": "4928381"
+      "publisher_time_ms": 1792475520000,
+      "id": "4928400"
     },
     "retry": {
       "attempts": 3,
@@ -68,6 +68,795 @@
     }
   },
   "items": [
+    {
+      "news_id": "4928400",
+      "published_at": "2026-10-20T05:52:00.000Z",
+      "published_at_ms": 1792475520000,
+      "timezone": "Asia/Shanghai",
+      "content_text": "【不锈钢-钢厂盘价】10月20日，佛山市场响水德龙304冷轧盘价13500，10月期货，报量待批，此价格环比10月15日跌100。（单位：元/吨）",
+      "content_html": "【不锈钢-钢厂盘价】10月20日，佛山市场响水德龙304冷轧盘价13500，10月期货，报量待批，此价格环比10月15日跌100。（单位：元/吨）",
+      "raw_content": "【不锈钢-钢厂盘价】10月20日，佛山市场响水德龙304冷轧盘价13500，10月期货，报量待批，此价格环比10月15日跌100。（单位：元/吨）",
+      "category": {
+        "id": 11,
+        "name": "11"
+      },
+      "section": {
+        "id": 9,
+        "name": "9"
+      },
+      "products": [
+        {
+          "id": "0102160101",
+          "name": "冷轧",
+          "source": "relationBreed"
+        },
+        {
+          "id": "0102160102",
+          "name": "热轧",
+          "source": "relationBreed"
+        },
+        {
+          "id": "不锈钢",
+          "name": "不锈钢",
+          "source": "breedTag"
+        }
+      ],
+      "regions": [
+        {
+          "id": "01010301",
+          "name": "无锡"
+        },
+        {
+          "id": "01020108",
+          "name": "佛山"
+        }
+      ],
+      "source_name": "我的钢铁网(Mysteel)",
+      "source_url": "http://bxg.mysteel.com/a/26102013/2CE4D233EF66368F.html",
+      "in_article_url": "http://bxg.mysteel.com/a/26102013/2CE4D233EF66368F.html",
+      "out_article_url": null,
+      "in_article_title": "10月20日响水德龙公布304冷轧盘价信息",
+      "out_article_title": null,
+      "source_link_status": "article_link",
+      "data_source": 1,
+      "publisher_id": 228075,
+      "relation_id": 46111302,
+      "ai_flag": 0,
+      "platform_product_line": "hot-rolled",
+      "mapping_status": "mapped",
+      "quality_flags": []
+    },
+    {
+      "news_id": "4928399",
+      "published_at": "2026-10-20T05:50:01.138Z",
+      "published_at_ms": 1792475401138,
+      "timezone": "Asia/Shanghai",
+      "content_text": "10月20日土耳其建筑钢材FOB价格保持平稳，螺纹610，线材640-648，盘螺655。（美元/吨）",
+      "content_html": "10月20日土耳其建筑钢材FOB价格保持平稳，螺纹610，线材640-648，盘螺655。（美元/吨）",
+      "raw_content": "10月20日土耳其建筑钢材FOB价格保持平稳，螺纹610，线材640-648，盘螺655。（美元/吨）",
+      "category": {
+        "id": 2,
+        "name": "2"
+      },
+      "section": {
+        "id": 7,
+        "name": "7"
+      },
+      "products": [
+        {
+          "id": "010101",
+          "name": "建筑钢材",
+          "source": "relationBreed"
+        },
+        {
+          "id": "螺纹钢",
+          "name": "螺纹钢",
+          "source": "breedTag"
+        },
+        {
+          "id": "盘螺",
+          "name": "盘螺",
+          "source": "breedTag"
+        },
+        {
+          "id": "线材",
+          "name": "线材",
+          "source": "breedTag"
+        }
+      ],
+      "regions": [
+        {
+          "id": "021905",
+          "name": "土耳其"
+        }
+      ],
+      "source_name": null,
+      "source_url": null,
+      "in_article_url": null,
+      "out_article_url": null,
+      "in_article_title": null,
+      "out_article_title": null,
+      "source_link_status": "no_link",
+      "data_source": 2,
+      "publisher_id": 226187,
+      "relation_id": 7684921,
+      "ai_flag": 0,
+      "platform_product_line": null,
+      "mapping_status": "ambiguous",
+      "quality_flags": [
+        "source_link_missing"
+      ]
+    },
+    {
+      "news_id": "4928398",
+      "published_at": "2026-10-20T05:49:00.000Z",
+      "published_at_ms": 1792475340000,
+      "timezone": "Asia/Shanghai",
+      "content_text": "据南京海关统计，今年前三季度，江苏省外贸进出口总值5.69万亿元，较去年同期（下同）增长29.8%，增幅较全国高11个百分点，占同期我国进出口总值的14.2%。其中，出口3.67万亿元，增长25.5%；进口2.02万亿元，增长38.4%。9月份，江苏省进出口规模首次突破8000亿元，达8136亿元，增长45.5%；其中，出口5213.3亿元，增长41.4%；进口2922.7亿元，增长53.4%。",
+      "content_html": "据南京海关统计，今年前三季度，江苏省外贸进出口总值5.69万亿元，较去年同期（下同）增长29.8%，增幅较全国高11个百分点，占同期我国进出口总值的14.2%。其中，出口3.67万亿元，增长25.5%；进口2.02万亿元，增长38.4%。9月份，江苏省进出口规模首次突破8000亿元，达8136亿元，增长45.5%；其中，出口5213.3亿元，增长41.4%；进口2922.7亿元，增长53.4%。",
+      "raw_content": "据南京海关统计，今年前三季度，江苏省外贸进出口总值5.69万亿元，较去年同期（下同）增长29.8%，增幅较全国高11个百分点，占同期我国进出口总值的14.2%。其中，出口3.67万亿元，增长25.5%；进口2.02万亿元，增长38.4%。9月份，江苏省进出口规模首次突破8000亿元，达8136亿元，增长45.5%；其中，出口5213.3亿元，增长41.4%；进口2922.7亿元，增长53.4%。",
+      "category": {
+        "id": 1,
+        "name": "1"
+      },
+      "section": {
+        "id": 8,
+        "name": "8"
+      },
+      "products": [],
+      "regions": [],
+      "source_name": "财联社",
+      "source_url": "http://news.mysteel.com/a/26102013/F22F881A4E9BC37F.html",
+      "in_article_url": "http://news.mysteel.com/a/26102013/F22F881A4E9BC37F.html",
+      "out_article_url": null,
+      "in_article_title": "前三季度江苏省外贸进出口增长近3成，9月份规模首次突破8000亿元",
+      "out_article_title": null,
+      "source_link_status": "article_link",
+      "data_source": 1,
+      "publisher_id": 216058,
+      "relation_id": 46111257,
+      "ai_flag": 0,
+      "platform_product_line": null,
+      "mapping_status": "unmapped",
+      "quality_flags": []
+    },
+    {
+      "news_id": "4928397",
+      "published_at": "2026-10-20T05:48:58.284Z",
+      "published_at_ms": 1792475338284,
+      "timezone": "Asia/Shanghai",
+      "content_text": "10月20日天钢优钢出厂价格下调10，20#管坯3160，10#管坯3210，45#3210，Q235B3130。",
+      "content_html": "10月20日天钢优钢出厂价格下调10，20#管坯3160，10#管坯3210，45#3210，Q235B3130。",
+      "raw_content": "10月20日天钢优钢出厂价格下调10，20#管坯3160，10#管坯3210，45#3210，Q235B3130。",
+      "category": {
+        "id": 2,
+        "name": "2"
+      },
+      "section": {
+        "id": 9,
+        "name": "9"
+      },
+      "products": [
+        {
+          "id": "0102",
+          "name": "特钢",
+          "source": "relationBreed"
+        },
+        {
+          "id": "管坯",
+          "name": "管坯",
+          "source": "breedTag"
+        }
+      ],
+      "regions": [],
+      "source_name": null,
+      "source_url": null,
+      "in_article_url": null,
+      "out_article_url": null,
+      "in_article_title": null,
+      "out_article_title": null,
+      "source_link_status": "no_link",
+      "data_source": 2,
+      "publisher_id": 226659,
+      "relation_id": 7684920,
+      "ai_flag": 0,
+      "platform_product_line": null,
+      "mapping_status": "ambiguous",
+      "quality_flags": [
+        "source_link_missing"
+      ]
+    },
+    {
+      "news_id": "4928396",
+      "published_at": "2026-10-20T05:45:00.000Z",
+      "published_at_ms": 1792475100000,
+      "timezone": "Asia/Shanghai",
+      "content_text": "沙钢集团召开2026年三季度工作会议，复盘前三季度经营并部署四季度工作。沈彬指出，当前宏观环境复杂多变，钢铁行业盈利承压成为常态。",
+      "content_html": "沙钢集团召开2026年三季度工作会议，复盘前三季度经营并部署四季度工作。沈彬指出，当前宏观环境复杂多变，钢铁行业盈利承压成为常态。",
+      "raw_content": "沙钢集团召开2026年三季度工作会议，复盘前三季度经营并部署四季度工作。沈彬指出，当前宏观环境复杂多变，钢铁行业盈利承压成为常态。",
+      "category": {
+        "id": 2,
+        "name": "2"
+      },
+      "section": {
+        "id": 8,
+        "name": "8"
+      },
+      "products": [],
+      "regions": [],
+      "source_name": "沙钢集团",
+      "source_url": "http://news.mysteel.com/a/26102013/F20C8A5AA2AD77CD.html",
+      "in_article_url": "http://news.mysteel.com/a/26102013/F20C8A5AA2AD77CD.html",
+      "out_article_url": null,
+      "in_article_title": "沈彬：当前宏观环境复杂多变，钢铁行业盈利承压成为常态",
+      "out_article_title": null,
+      "source_link_status": "article_link",
+      "data_source": 1,
+      "publisher_id": 207700,
+      "relation_id": 46111196,
+      "ai_flag": 0,
+      "platform_product_line": null,
+      "mapping_status": "unmapped",
+      "quality_flags": []
+    },
+    {
+      "news_id": "4928395",
+      "published_at": "2026-10-20T05:42:00.000Z",
+      "published_at_ms": 1792474920000,
+      "timezone": "Asia/Shanghai",
+      "content_text": "10月20日，长沙出让1宗岳麓区低密宅地，起始价10.36亿元，起始楼面价12000元/㎡。最终湖南楚承置业有限公司以底价10.36亿元竞得该地块。",
+      "content_html": "10月20日，长沙出让1宗岳麓区低密宅地，起始价10.36亿元，起始楼面价12000元/㎡。最终湖南楚承置业有限公司以底价10.36亿元竞得该地块。",
+      "raw_content": "10月20日，长沙出让1宗岳麓区低密宅地，起始价10.36亿元，起始楼面价12000元/㎡。最终湖南楚承置业有限公司以底价10.36亿元竞得该地块。",
+      "category": {
+        "id": 13,
+        "name": "13"
+      },
+      "section": {
+        "id": 8,
+        "name": "8"
+      },
+      "products": [],
+      "regions": [],
+      "source_name": "财联社",
+      "source_url": "http://news.mysteel.com/a/26102013/7DB5537387F6018B.html",
+      "in_article_url": "http://news.mysteel.com/a/26102013/7DB5537387F6018B.html",
+      "out_article_url": null,
+      "in_article_title": "长沙1宗低密宅地10.36亿元底价成交",
+      "out_article_title": null,
+      "source_link_status": "article_link",
+      "data_source": 1,
+      "publisher_id": 221060,
+      "relation_id": 46111144,
+      "ai_flag": 0,
+      "platform_product_line": null,
+      "mapping_status": "unmapped",
+      "quality_flags": []
+    },
+    {
+      "news_id": "4928394",
+      "published_at": "2026-10-20T05:41:32.202Z",
+      "published_at_ms": 1792474892202,
+      "timezone": "Asia/Shanghai",
+      "content_text": "10月20日内蒙古赤峰金帆废电瓶价格：电动9000、电信8800、大白9400、黑皮80A以下9600、120叉车管式9500、电轿9050、AGM 8900、摩托车8050、电子秤5350",
+      "content_html": "10月20日内蒙古赤峰金帆废电瓶价格：电动9000、电信8800、大白9400、黑皮80A以下9600、120叉车管式9500、电轿9050、AGM 8900、摩托车8050、电子秤5350",
+      "raw_content": "10月20日内蒙古赤峰金帆废电瓶价格：电动9000、电信8800、大白9400、黑皮80A以下9600、120叉车管式9500、电轿9050、AGM 8900、摩托车8050、电子秤5350",
+      "category": {
+        "id": 4,
+        "name": "4"
+      },
+      "section": {
+        "id": 7,
+        "name": "7"
+      },
+      "products": [
+        {
+          "id": "020308",
+          "name": "2#铅",
+          "source": "relationBreed"
+        },
+        {
+          "id": "废电瓶",
+          "name": "废电瓶",
+          "source": "breedTag"
+        },
+        {
+          "id": "废旧铅酸蓄电池",
+          "name": "废旧铅酸蓄电池",
+          "source": "breedTag"
+        },
+        {
+          "id": "再生金属",
+          "name": "再生金属",
+          "source": "breedTag"
+        }
+      ],
+      "regions": [
+        {
+          "id": "01010713",
+          "name": "阜阳"
+        }
+      ],
+      "source_name": null,
+      "source_url": null,
+      "in_article_url": null,
+      "out_article_url": null,
+      "in_article_title": null,
+      "out_article_title": null,
+      "source_link_status": "no_link",
+      "data_source": 2,
+      "publisher_id": 228187,
+      "relation_id": 7684919,
+      "ai_flag": 0,
+      "platform_product_line": null,
+      "mapping_status": "ambiguous",
+      "quality_flags": [
+        "source_link_missing"
+      ]
+    },
+    {
+      "news_id": "4928393",
+      "published_at": "2026-10-20T05:41:06.013Z",
+      "published_at_ms": 1792474866013,
+      "timezone": "Asia/Shanghai",
+      "content_text": "10月20日秦皇岛建筑钢材价格盘中稳，抗震三大3230，φ12三级3300，抗震盘3460左右。（元/吨）",
+      "content_html": "10月20日秦皇岛建筑钢材价格盘中稳，抗震三大3230，φ12三级3300，抗震盘3460左右。（元/吨）",
+      "raw_content": "10月20日秦皇岛建筑钢材价格盘中稳，抗震三大3230，φ12三级3300，抗震盘3460左右。（元/吨）",
+      "category": {
+        "id": 2,
+        "name": "2"
+      },
+      "section": {
+        "id": 7,
+        "name": "7"
+      },
+      "products": [
+        {
+          "id": "010101",
+          "name": "建筑钢材",
+          "source": "relationBreed"
+        }
+      ],
+      "regions": [
+        {
+          "id": "01040303",
+          "name": "秦皇岛"
+        }
+      ],
+      "source_name": null,
+      "source_url": null,
+      "in_article_url": null,
+      "out_article_url": null,
+      "in_article_title": null,
+      "out_article_title": null,
+      "source_link_status": "no_link",
+      "data_source": 2,
+      "publisher_id": 210008,
+      "relation_id": 7684917,
+      "ai_flag": 0,
+      "platform_product_line": null,
+      "mapping_status": "ambiguous",
+      "quality_flags": [
+        "source_link_missing"
+      ]
+    },
+    {
+      "news_id": "4928392",
+      "published_at": "2026-10-20T05:40:44.881Z",
+      "published_at_ms": 1792474844881,
+      "timezone": "Asia/Shanghai",
+      "content_text": "10月20日唐山建筑钢材市场价格盘中稳，现三级大螺纹3130，三级小螺纹3200，盘螺3360。（元/吨）",
+      "content_html": "10月20日唐山建筑钢材市场价格盘中稳，现三级大螺纹3130，三级小螺纹3200，盘螺3360。（元/吨）",
+      "raw_content": "10月20日唐山建筑钢材市场价格盘中稳，现三级大螺纹3130，三级小螺纹3200，盘螺3360。（元/吨）",
+      "category": {
+        "id": 2,
+        "name": "2"
+      },
+      "section": {
+        "id": 7,
+        "name": "7"
+      },
+      "products": [
+        {
+          "id": "010101",
+          "name": "建筑钢材",
+          "source": "relationBreed"
+        },
+        {
+          "id": "螺纹钢",
+          "name": "螺纹钢",
+          "source": "breedTag"
+        },
+        {
+          "id": "盘螺",
+          "name": "盘螺",
+          "source": "breedTag"
+        }
+      ],
+      "regions": [
+        {
+          "id": "010403",
+          "name": "河北"
+        }
+      ],
+      "source_name": null,
+      "source_url": null,
+      "in_article_url": null,
+      "out_article_url": null,
+      "in_article_title": null,
+      "out_article_title": null,
+      "source_link_status": "no_link",
+      "data_source": 2,
+      "publisher_id": 210008,
+      "relation_id": 7684916,
+      "ai_flag": 0,
+      "platform_product_line": null,
+      "mapping_status": "ambiguous",
+      "quality_flags": [
+        "source_link_missing"
+      ]
+    },
+    {
+      "news_id": "4928391",
+      "published_at": "2026-10-20T05:40:28.502Z",
+      "published_at_ms": 1792474828502,
+      "timezone": "Asia/Shanghai",
+      "content_text": "10月20日邯郸建筑钢材价格盘中稳，φ18三级3200，φ12三级3290，抗震盘3370。（元/吨）",
+      "content_html": "10月20日邯郸建筑钢材价格盘中稳，φ18三级3200，φ12三级3290，抗震盘3370。（元/吨）",
+      "raw_content": "10月20日邯郸建筑钢材价格盘中稳，φ18三级3200，φ12三级3290，抗震盘3370。（元/吨）",
+      "category": {
+        "id": 2,
+        "name": "2"
+      },
+      "section": {
+        "id": 7,
+        "name": "7"
+      },
+      "products": [
+        {
+          "id": "010101",
+          "name": "建筑钢材",
+          "source": "relationBreed"
+        }
+      ],
+      "regions": [
+        {
+          "id": "010403",
+          "name": "河北"
+        }
+      ],
+      "source_name": null,
+      "source_url": null,
+      "in_article_url": null,
+      "out_article_url": null,
+      "in_article_title": null,
+      "out_article_title": null,
+      "source_link_status": "no_link",
+      "data_source": 2,
+      "publisher_id": 220278,
+      "relation_id": 7684915,
+      "ai_flag": 0,
+      "platform_product_line": null,
+      "mapping_status": "ambiguous",
+      "quality_flags": [
+        "source_link_missing"
+      ]
+    },
+    {
+      "news_id": "4928390",
+      "published_at": "2026-10-20T05:37:00.000Z",
+      "published_at_ms": 1792474620000,
+      "timezone": "Asia/Shanghai",
+      "content_text": "山西省气象台10月20日发布寒潮黄色预警，预警区域为临汾市北部、忻州市西部、朔州市、大同市、太原市西部、吕梁市西部、晋中市南部、长治市西北部，预警区域48小时内最低气温将下降10℃以上，最低气温小于等于4℃。",
+      "content_html": "山西省气象台10月20日发布寒潮黄色预警，预警区域为临汾市北部、忻州市西部、朔州市、大同市、太原市西部、吕梁市西部、晋中市南部、长治市西北部，预警区域48小时内最低气温将下降10℃以上，最低气温小于等于4℃。",
+      "raw_content": "山西省气象台10月20日发布寒潮黄色预警，预警区域为临汾市北部、忻州市西部、朔州市、大同市、太原市西部、吕梁市西部、晋中市南部、长治市西北部，预警区域48小时内最低气温将下降10℃以上，最低气温小于等于4℃。",
+      "category": {
+        "id": 1,
+        "name": "1"
+      },
+      "section": {
+        "id": 8,
+        "name": "8"
+      },
+      "products": [],
+      "regions": [],
+      "source_name": "财联社",
+      "source_url": "http://news.mysteel.com/a/26102013/6ACF95300E760F1D.html",
+      "in_article_url": "http://news.mysteel.com/a/26102013/6ACF95300E760F1D.html",
+      "out_article_url": null,
+      "in_article_title": "山西发布寒潮黄色预警，最低气温将下降10℃以上",
+      "out_article_title": null,
+      "source_link_status": "article_link",
+      "data_source": 1,
+      "publisher_id": 216058,
+      "relation_id": 46111043,
+      "ai_flag": 0,
+      "platform_product_line": null,
+      "mapping_status": "unmapped",
+      "quality_flags": []
+    },
+    {
+      "news_id": "4928389",
+      "published_at": "2026-10-20T05:35:00.000Z",
+      "published_at_ms": 1792474500000,
+      "timezone": "Asia/Shanghai",
+      "content_text": "前三季度，全国铁路发送煤炭20.50亿吨、集装箱8.48亿吨、化肥及农药4018万吨，同比分别增长0.3%、9.1%、12.0%，保障了国计民生重点物资运输。",
+      "content_html": "前三季度，全国铁路发送煤炭20.50亿吨、集装箱8.48亿吨、化肥及农药4018万吨，同比分别增长0.3%、9.1%、12.0%，保障了国计民生重点物资运输。",
+      "raw_content": "前三季度，全国铁路发送煤炭20.50亿吨、集装箱8.48亿吨、化肥及农药4018万吨，同比分别增长0.3%、9.1%、12.0%，保障了国计民生重点物资运输。",
+      "category": {
+        "id": 2,
+        "name": "2"
+      },
+      "section": {
+        "id": 8,
+        "name": "8"
+      },
+      "products": [
+        {
+          "id": "煤炭",
+          "name": "煤炭",
+          "source": "breedTag"
+        },
+        {
+          "id": "化肥",
+          "name": "化肥",
+          "source": "breedTag"
+        },
+        {
+          "id": "农药",
+          "name": "农药",
+          "source": "breedTag"
+        }
+      ],
+      "regions": [],
+      "source_name": "国家铁路局",
+      "source_url": "http://news.mysteel.com/a/26102013/448E68BBF0005AEA.html",
+      "in_article_url": "http://news.mysteel.com/a/26102013/448E68BBF0005AEA.html",
+      "out_article_url": null,
+      "in_article_title": "前三季度全国铁路发送煤炭20.50亿吨，同比增长0.3%",
+      "out_article_title": null,
+      "source_link_status": "article_link",
+      "data_source": 1,
+      "publisher_id": 207700,
+      "relation_id": 46110997,
+      "ai_flag": 0,
+      "platform_product_line": null,
+      "mapping_status": "ambiguous",
+      "quality_flags": []
+    },
+    {
+      "news_id": "4928388",
+      "published_at": "2026-10-20T05:33:00.000Z",
+      "published_at_ms": 1792474380000,
+      "timezone": "Asia/Shanghai",
+      "content_text": "据中国煤炭工业协会统计与信息部统计，1-9月直报重点大型企业原煤产量合计为16.9亿吨，同比减少1.1亿吨，占规上工业原煤产量的49.0%。",
+      "content_html": "据中国煤炭工业协会统计与信息部统计，1-9月直报重点大型企业原煤产量合计为16.9亿吨，同比减少1.1亿吨，占规上工业原煤产量的49.0%。",
+      "raw_content": "据中国煤炭工业协会统计与信息部统计，1-9月直报重点大型企业原煤产量合计为16.9亿吨，同比减少1.1亿吨，占规上工业原煤产量的49.0%。",
+      "category": {
+        "id": 2,
+        "name": "2"
+      },
+      "section": {
+        "id": 8,
+        "name": "8"
+      },
+      "products": [],
+      "regions": [],
+      "source_name": "中国煤炭工业协会",
+      "source_url": "http://news.mysteel.com/a/26102013/434CD7654D4178D8.html",
+      "in_article_url": "http://news.mysteel.com/a/26102013/434CD7654D4178D8.html",
+      "out_article_url": null,
+      "in_article_title": "中国煤炭工业协会：2026年1-9月重点企业原煤产量完成情况",
+      "out_article_title": null,
+      "source_link_status": "article_link",
+      "data_source": 1,
+      "publisher_id": 207700,
+      "relation_id": 46110957,
+      "ai_flag": 0,
+      "platform_product_line": null,
+      "mapping_status": "unmapped",
+      "quality_flags": []
+    },
+    {
+      "news_id": "4928387",
+      "published_at": "2026-10-20T05:32:46.613Z",
+      "published_at_ms": 1792474366613,
+      "timezone": "Asia/Shanghai",
+      "content_text": "据海关数据显示，2026年9月中国钛铁及硅钛铁进口量1046.4吨，环比减10.88%，同比增156.47%，进口金额3045741美元，环比减6.69%，同比增159.98%。1-9月中国钛铁及硅钛铁进口总量11463.097吨，同比增191.92%，进口总金额32401026美元，同比增173.37%。",
+      "content_html": "据海关数据显示，2026年9月中国钛铁及硅钛铁进口量1046.4吨，环比减10.88%，同比增156.47%，进口金额3045741美元，环比减6.69%，同比增159.98%。1-9月中国钛铁及硅钛铁进口总量11463.097吨，同比增191.92%，进口总金额32401026美元，同比增173.37%。",
+      "raw_content": "据海关数据显示，2026年9月中国钛铁及硅钛铁进口量1046.4吨，环比减10.88%，同比增156.47%，进口金额3045741美元，环比减6.69%，同比增159.98%。1-9月中国钛铁及硅钛铁进口总量11463.097吨，同比增191.92%，进口总金额32401026美元，同比增173.37%。",
+      "category": {
+        "id": 2,
+        "name": "2"
+      },
+      "section": {
+        "id": 8,
+        "name": "8"
+      },
+      "products": [
+        {
+          "id": "钛铁",
+          "name": "钛铁",
+          "source": "breedTag"
+        }
+      ],
+      "regions": [],
+      "source_name": null,
+      "source_url": null,
+      "in_article_url": null,
+      "out_article_url": null,
+      "in_article_title": null,
+      "out_article_title": null,
+      "source_link_status": "no_link",
+      "data_source": 6,
+      "publisher_id": 222580,
+      "relation_id": 338625,
+      "ai_flag": 1,
+      "platform_product_line": null,
+      "mapping_status": "ambiguous",
+      "quality_flags": [
+        "source_link_missing"
+      ]
+    },
+    {
+      "news_id": "4928386",
+      "published_at": "2026-10-20T05:32:44.919Z",
+      "published_at_ms": 1792474364919,
+      "timezone": "Asia/Shanghai",
+      "content_text": "据海关数据显示，2026年9月中国钛铁及硅钛铁出口量1046.4吨，环比减10.88%，同比增156.47%，出口金额3045741美元，环比减6.69%，同比增159.98%。1-9月中国钛铁及硅钛铁出口总量11463.097吨，同比增191.92%，出口总金额32401026美元，同比增173.37%。",
+      "content_html": "据海关数据显示，2026年9月中国钛铁及硅钛铁出口量1046.4吨，环比减10.88%，同比增156.47%，出口金额3045741美元，环比减6.69%，同比增159.98%。1-9月中国钛铁及硅钛铁出口总量11463.097吨，同比增191.92%，出口总金额32401026美元，同比增173.37%。",
+      "raw_content": "据海关数据显示，2026年9月中国钛铁及硅钛铁出口量1046.4吨，环比减10.88%，同比增156.47%，出口金额3045741美元，环比减6.69%，同比增159.98%。1-9月中国钛铁及硅钛铁出口总量11463.097吨，同比增191.92%，出口总金额32401026美元，同比增173.37%。",
+      "category": {
+        "id": 2,
+        "name": "2"
+      },
+      "section": {
+        "id": 8,
+        "name": "8"
+      },
+      "products": [
+        {
+          "id": "钛铁",
+          "name": "钛铁",
+          "source": "breedTag"
+        }
+      ],
+      "regions": [],
+      "source_name": null,
+      "source_url": null,
+      "in_article_url": null,
+      "out_article_url": null,
+      "in_article_title": null,
+      "out_article_title": null,
+      "source_link_status": "no_link",
+      "data_source": 6,
+      "publisher_id": 222580,
+      "relation_id": 338626,
+      "ai_flag": 1,
+      "platform_product_line": null,
+      "mapping_status": "ambiguous",
+      "quality_flags": [
+        "source_link_missing"
+      ]
+    },
+    {
+      "news_id": "4928385",
+      "published_at": "2026-10-20T05:32:42.983Z",
+      "published_at_ms": 1792474362983,
+      "timezone": "Asia/Shanghai",
+      "content_text": "据海关数据显示，2026年9月中国钛矿及其精矿进口量388134.582吨，环比减33.04%，同比减12.59%，进口金额86249552美元，环比减31.72%，同比减26.67%。1-9月中国钛矿及其精矿进口总量4243387.867吨，同比增12.36%，进口总金额1013855657美元，同比减3.41%。",
+      "content_html": "据海关数据显示，2026年9月中国钛矿及其精矿进口量388134.582吨，环比减33.04%，同比减12.59%，进口金额86249552美元，环比减31.72%，同比减26.67%。1-9月中国钛矿及其精矿进口总量4243387.867吨，同比增12.36%，进口总金额1013855657美元，同比减3.41%。",
+      "raw_content": "据海关数据显示，2026年9月中国钛矿及其精矿进口量388134.582吨，环比减33.04%，同比减12.59%，进口金额86249552美元，环比减31.72%，同比减26.67%。1-9月中国钛矿及其精矿进口总量4243387.867吨，同比增12.36%，进口总金额1013855657美元，同比减3.41%。",
+      "category": {
+        "id": 2,
+        "name": "2"
+      },
+      "section": {
+        "id": 8,
+        "name": "8"
+      },
+      "products": [],
+      "regions": [],
+      "source_name": null,
+      "source_url": null,
+      "in_article_url": null,
+      "out_article_url": null,
+      "in_article_title": null,
+      "out_article_title": null,
+      "source_link_status": "no_link",
+      "data_source": 6,
+      "publisher_id": 222580,
+      "relation_id": 338632,
+      "ai_flag": 1,
+      "platform_product_line": null,
+      "mapping_status": "unmapped",
+      "quality_flags": [
+        "source_link_missing"
+      ]
+    },
+    {
+      "news_id": "4928384",
+      "published_at": "2026-10-20T05:32:40.806Z",
+      "published_at_ms": 1792474360806,
+      "timezone": "Asia/Shanghai",
+      "content_text": "据海关数据显示，2026年9月中国钛矿及其精矿出口量3453.105吨，环比减26.31%，同比减25.17%，出口金额3937204美元，环比减10.72%，同比减24.59%。1-9月中国钛矿及其精矿出口总量40359.931吨，同比减60.34%，出口总金额39559318美元，同比减44.86%。",
+      "content_html": "据海关数据显示，2026年9月中国钛矿及其精矿出口量3453.105吨，环比减26.31%，同比减25.17%，出口金额3937204美元，环比减10.72%，同比减24.59%。1-9月中国钛矿及其精矿出口总量40359.931吨，同比减60.34%，出口总金额39559318美元，同比减44.86%。",
+      "raw_content": "据海关数据显示，2026年9月中国钛矿及其精矿出口量3453.105吨，环比减26.31%，同比减25.17%，出口金额3937204美元，环比减10.72%，同比减24.59%。1-9月中国钛矿及其精矿出口总量40359.931吨，同比减60.34%，出口总金额39559318美元，同比减44.86%。",
+      "category": {
+        "id": 2,
+        "name": "2"
+      },
+      "section": {
+        "id": 8,
+        "name": "8"
+      },
+      "products": [],
+      "regions": [],
+      "source_name": null,
+      "source_url": null,
+      "in_article_url": null,
+      "out_article_url": null,
+      "in_article_title": null,
+      "out_article_title": null,
+      "source_link_status": "no_link",
+      "data_source": 6,
+      "publisher_id": 222580,
+      "relation_id": 338699,
+      "ai_flag": 1,
+      "platform_product_line": null,
+      "mapping_status": "unmapped",
+      "quality_flags": [
+        "source_link_missing"
+      ]
+    },
+    {
+      "news_id": "4928382",
+      "published_at": "2026-10-20T05:29:00.000Z",
+      "published_at_ms": 1792474140000,
+      "timezone": "Asia/Shanghai",
+      "content_text": "木片进口成本由FOB（占74%）、海运费及13%增值税构成，关税已为零。因华东产能密集且依赖特定纤维品质，进口木片虽到厂价远高于国产，仍具区域竞争力。企业需锁定长协、对冲汇率并优化物流以控本。",
+      "content_html": "木片进口成本由FOB（占74%）、海运费及13%增值税构成，关税已为零。因华东产能密集且依赖特定纤维品质，进口木片虽到厂价远高于国产，仍具区域竞争力。企业需锁定长协、对冲汇率并优化物流以控本。",
+      "raw_content": "木片进口成本由FOB（占74%）、海运费及13%增值税构成，关税已为零。因华东产能密集且依赖特定纤维品质，进口木片虽到厂价远高于国产，仍具区域竞争力。企业需锁定长协、对冲汇率并优化物流以控本。",
+      "category": {
+        "id": 6,
+        "name": "6"
+      },
+      "section": {
+        "id": 8,
+        "name": "8"
+      },
+      "products": [
+        {
+          "id": "1201",
+          "name": "原木",
+          "source": "relationBreed"
+        },
+        {
+          "id": "1202",
+          "name": "木方",
+          "source": "relationBreed"
+        },
+        {
+          "id": "1203",
+          "name": "木模板",
+          "source": "relationBreed"
+        }
+      ],
+      "regions": [],
+      "source_name": "木联数据",
+      "source_url": "http://wood.100njz.com/a/26101917/A2B33148FEBCA363.html",
+      "in_article_url": "http://wood.100njz.com/a/26101917/A2B33148FEBCA363.html",
+      "out_article_url": null,
+      "in_article_title": "木材基础知识：木片进口价格的成本构成",
+      "out_article_title": null,
+      "source_link_status": "article_link",
+      "data_source": 1,
+      "publisher_id": 226773,
+      "relation_id": 46102593,
+      "ai_flag": 0,
+      "platform_product_line": null,
+      "mapping_status": "ambiguous",
+      "quality_flags": []
+    },
     {
       "news_id": "4928381",
       "published_at": "2026-10-20T04:13:33.921Z",
@@ -104483,6 +105272,45 @@
       ]
     },
     {
+      "news_id": "4928383",
+      "published_at": "2026-10-20T01:31:00.000Z",
+      "published_at_ms": 1792459860000,
+      "timezone": "Asia/Shanghai",
+      "content_text": "2026第十四届中国建筑材料产业链供需论坛暨百年建筑网年会将于12月3-4日在杭州召开。聚焦“新周期·新赛道·新生态”，解析宏观政策、出海低碳数智路径及生态协同。现场对接央企国企采购需求，助企业辨方向、拿订单。点击报名，共解锁增长密码。",
+      "content_html": "2026第十四届中国建筑材料产业链供需论坛暨百年建筑网年会将于12月3-4日在杭州召开。聚焦“新周期·新赛道·新生态”，解析宏观政策、出海低碳数智路径及生态协同。现场对接央企国企采购需求，助企业辨方向、拿订单。点击报名，共解锁增长密码。",
+      "raw_content": "2026第十四届中国建筑材料产业链供需论坛暨百年建筑网年会将于12月3-4日在杭州召开。聚焦“新周期·新赛道·新生态”，解析宏观政策、出海低碳数智路径及生态协同。现场对接央企国企采购需求，助企业辨方向、拿订单。点击报名，共解锁增长密码。",
+      "category": {
+        "id": 6,
+        "name": "6"
+      },
+      "section": {
+        "id": 15,
+        "name": "15"
+      },
+      "products": [
+        {
+          "id": "建筑材料",
+          "name": "建筑材料",
+          "source": "breedTag"
+        }
+      ],
+      "regions": [],
+      "source_name": "百年建筑网",
+      "source_url": "http://www.100njz.com/a/26102009/FBA5CB3435CBD395.html",
+      "in_article_url": "http://www.100njz.com/a/26102009/FBA5CB3435CBD395.html",
+      "out_article_url": null,
+      "in_article_title": "新周期·新赛道·新生态 | 读懂本届年会的主题密码",
+      "out_article_title": null,
+      "source_link_status": "article_link",
+      "data_source": 1,
+      "publisher_id": 227194,
+      "relation_id": 46105136,
+      "ai_flag": 0,
+      "platform_product_line": null,
+      "mapping_status": "ambiguous",
+      "quality_flags": []
+    },
+    {
       "news_id": "4926312",
       "published_at": "2026-10-20T01:30:54.102Z",
       "published_at_ms": 1792459854102,
@@ -129109,6 +129937,11 @@
           "source": "relationBreed"
         },
         {
+          "id": "020203",
+          "name": "铝板卷",
+          "source": "relationBreed"
+        },
+        {
           "id": "020204",
           "name": "电解铝",
           "source": "relationBreed"
@@ -129136,11 +129969,6 @@
         {
           "id": "020211",
           "name": "铝杆线",
-          "source": "relationBreed"
-        },
-        {
-          "id": "020203",
-          "name": "铝板卷",
           "source": "relationBreed"
         },
         {
@@ -129896,12 +130724,12 @@
   ],
   "quality": {
     "raw_count": 2600,
-    "accepted_count": 2504,
-    "rejected_count": 96,
+    "accepted_count": 2523,
+    "rejected_count": 77,
     "deduped_count": 0,
-    "missing_source_link_count": 2043,
-    "missing_product_count": 61,
-    "malformed_content_count": 96,
+    "missing_source_link_count": 2053,
+    "missing_product_count": 68,
+    "malformed_content_count": 77,
     "duplicate_group_count": 0,
     "warnings": [
       "API 报告总量超过本次分页采集量；快照仅覆盖目标日期窗口，需按分类/地区拆分请求补全。"
