@@ -1,6 +1,6 @@
 {
   "schema_version": "1.1",
-  "generated_at": "2026-10-22T04:34:58.274Z",
+  "generated_at": "2026-10-22T05:59:19.418Z",
   "schedule": "全量每天 18:00；我的钢铁网快讯每天 08:10、09:00；潮汐早报与霍尔木兹专题每天 09:00（Asia/Shanghai）",
   "scheduler": "cron 或 launchd（由部署环境安装；本仓库不自动启动后台服务）",
   "sources": {
@@ -81,21 +81,12 @@
     },
     "mysteel-fast-news": {
       "source_id": "mysteel-fast-news",
-      "state": "fresh",
-      "quality_state": "partial",
-      "quality_warnings": [
-        "API 报告总量超过本次分页采集量；快照仅覆盖目标日期窗口，需按分类/地区拆分请求补全。"
-      ],
-      "attempted_at": "2026-10-22T04:33:41.070Z",
+      "state": "fallback",
+      "attempted_at": "2026-10-22T05:58:03.714Z",
       "success_at": "2026-10-22T04:34:58.274Z",
       "snapshot_captured_at": "2026-10-22T04:34:58.183Z",
       "coverage_end": "2026-10-22",
-      "retry": {
-        "attempts": 2,
-        "timeoutMs": 180000,
-        "baseDelayMs": 3000,
-        "maxDelayMs": 15000
-      }
+      "error": "本次抓取失败，继续使用上一次成功快照"
     },
     "tide-global-news": {
       "source_id": "tide-global-news",
@@ -106,9 +97,9 @@
         "历史上的今天：未取得可验证的人物/事件结构化数据，未虚构内容；请检查 Kagi 历史批次页访问与解析状态"
       ],
       "history_status": "unavailable",
-      "attempted_at": "2026-10-21T14:54:31.728Z",
-      "success_at": "2026-10-21T14:56:10.303Z",
-      "snapshot_captured_at": "2026-10-21T14:56:04.967Z",
+      "attempted_at": "2026-10-22T05:58:03.714Z",
+      "success_at": "2026-10-22T05:59:19.418Z",
+      "snapshot_captured_at": "2026-10-22T05:59:15.264Z",
       "coverage_end": "2026-10-21T06:30:27.000Z",
       "retry": {
         "attempts": 2,
