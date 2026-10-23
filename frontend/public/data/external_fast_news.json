@@ -6,10 +6,10 @@
     "dashboard_url": "https://www.mysteel.com/fastcomment/#/",
     "api_url": "https://openapi.mysteel.com/without_sign/newsflash/flashnews/query_by_tags.htm",
     "taxonomy_url": "https://a.mysteelcdn.com/common/publish/newsflash/newsflash_column.json",
-    "captured_at": "2026-10-23T04:39:38.312Z",
+    "captured_at": "2026-10-23T05:55:26.646Z",
     "coverage_start": "2026-10-23",
     "coverage_end": "2026-10-23",
-    "latest_published_at": "2026-10-23T04:23:14.331Z",
+    "latest_published_at": "2026-10-23T05:54:00.000Z",
     "timezone": "Asia/Shanghai",
     "fetch_mode": "api",
     "request_params": {
@@ -23,43 +23,43 @@
         ]
       ]
     },
-    "raw_sha256": "5fc2ea9c3c600479f82fe240dc5a79988e8025549ee35d42488bf928bbc86f4f",
+    "raw_sha256": "5213e3884a7d22606d983d8f89eaffeb0ea7644f3dd21501b32141581117fca1",
     "taxonomy_sha256": "c98f5bfdacde3401c98ea8f43bac3ca63d35b569f6aad3e1fff2f39b58a0dbf3",
     "response_sha256": [
-      "82452f87fb7b79285584ff48f3e251a3b0ecf4db9ea11ed71b73daf2f93ba677",
-      "79830843a521ccf25e6d0c30fb3cf155a2216a32b9d3b04e287cb38d26318e19",
-      "7e65f03e2371849bd74a47b9ae1d7399d57c37f0856d7b9b66a98e2c2fd0d1f1",
-      "faec4267947ab5491ab6fa5161c7edca0403c878c079a9a8b8dd85ef892d733c",
-      "54efca3bd677d01dffe8a82a5011120f5f3deee9ec562e9e57387d1c27ec3ba1",
-      "a36ffa049a054a55accfc81e51069804791279670ca8d2a7ea4de03cea6a14ac",
-      "ee555b8915a69a508d5331e1c67b566803d76f07e4445e86180b9c3902fdb431",
-      "8efe856ebfa96242b55c17e7f556a9a1ba0a9053cb513863243f270afaae5f23",
-      "3866fffbcc8104f03bd68a9352acd5e82c6ebc5032ebaad2849c7f8bb30ab97f",
-      "390805a31d3642bf7bc53db6cf12c937a15ad562ead8bd261a98a58a8092b9b3",
-      "7e0f61e0433a87a5ce56fc0d9faa05725ce847cab4d4a6e422ab803b2167d502",
-      "ed7d9f0c57f7b6592b4e042bcb0589e07fa0371b0a787c77847de528d3c105e1",
-      "10045d99a887b2a135d9a0c48bd092ef20eeb0def743f8fe5b477fd932eb44a8",
-      "c4437d2613e46e8add10b4e92af1e606f1b3f625433e1e47eba9c8ece6fc0b27",
-      "ae2a1d1a84f1ea0689878c91206ce6229defb40e36cf65255789f4a7fb242fb3",
-      "bcacb840d97c20754636201684cd90619e2b2d3365ad2064eabc506ff96909e4",
-      "ab691c8bc76b3f4551b205317321cfd8fffee74f99d982e1259c11d1e84f8b24",
-      "b4f1280acb7f6b25b15f2a9a3f0bd2efbb5487ceb2cee020a4b844a03921b88a",
-      "54816adb9b6697ba9d1a53d495876a14f3a073baeab1be82764b6633c1078d93",
-      "f52ca58e2bee0a0c3423c914616dbe61122ce20006c5651359af3bcf3f7330f6",
-      "ed490172d6a67b547257b7fddcd89541fe1c1efc59a361bd26f5d591de06b5e7",
-      "554ab3d28ef276e16969a53b45212cd72209969a6bd451d878028c027ca06135",
-      "8b8e39e908be8e0fcb36c584fadd6d3c6e2c1e7419432c4a2b6fc75c9e61f6b4",
-      "653d7d7533c841a42d2498b73d705da6f3665e50803ddf4c1ea23bcf6ae21105",
-      "deb2c04ab9ceb22c1fee7f86fe9361370dc541bf1e5d02d1c5c31af857982f72",
-      "359fb5cf03e6b84f3d4008b8a521e8db1b66c30e1f6de351cddae5215d0b714a",
-      "77506f68716dad41cb328beaa534ecebe2697f5da0b6250373a87dbd39783634"
+      "38db4c931a837b8d0e6bf4fbd92ce9a1dfcc0e668c452f57d5f104fc9c2ccb7a",
+      "bc43531e95aaed4c01736ebd274dab8699a0359671fe4d711b30b5b36343f819",
+      "01a3361ec0d60794c7d5855dcfabc243cfe04c0ffd5329a8eb323748907d1efe",
+      "d991da2904b2bc284c74d9f26d9cdc5bc3feddf9dbe71470fb20004d7d4e8c8f",
+      "d9af53004be7be53978f2732bf8b6f8b5f4f48e2f295f7c5c7307976b2155a23",
+      "32ed1271efe44eca2f4b35100547813b1d336679a461b767be159dfeef612fb6",
+      "aeaf21936343ed2ee0b868dde36aad9aedbfe56f3cdabcbc3ba639d345186f15",
+      "ce0c0fc9481cc87a19dc33f0f69715ec975b7966aec0a80e6efa8ba737c6a47f",
+      "6cfa5165afd055aac123407445e98184632e71a251f634be903704cc2db27e93",
+      "c4acac8dcaa027db6fe07f10bd81f65f5862fab98e6f240043961a2b64cb4d0d",
+      "5e2fd7655e9f81de221db71dd3827b3107e2ed7ecf014d851a723a889daa0269",
+      "97a158fa6be0afb9b471db0a2a117d1b2204cb43aa9e740a64346b0398ac8a74",
+      "ee2ef17544fab66b61d0ffa5c22e1e4f3daebe5226dfa3cd9419f58f2cb3f56c",
+      "cd770896b55c483cb4eabf94115f6f3369b22ca75a1bc683cdc3b16144ac909c",
+      "2ed216ffafc9eb35a6928ac077d8ae1a193d54a9a972e1e355c81d214be71ad3",
+      "830308c3dc72c82fc920cbdd2178dd82a6ebb6a39e54eaeced275ad01047f003",
+      "d969d643046f4f736cfc1ac52ac1a257e9c256638b26326074f4bf8ea84b4af7",
+      "df1ff7bcf3cfd38f6a631b16a7e5b1b9d383302f7768a2433c5fae4d937f5168",
+      "8862ac2b84451f4706c294bddae7f31fa9036e5dfd58cd29594c4fbf622fd6fb",
+      "a967f743991ef30a7d7667a8c38b5a810372e0e2bb64d12df095d39fcaa218de",
+      "aff9366c1d2768db435ea475c8ca3f733161959ec439699c9be0ee9b8477b02d",
+      "1125acdfdfac0acf363142990a73d8188b223d9acd072ef761246d756d27aeca",
+      "1fdb095eb08c79bd4178d5b36540c679dbdc51529acb579e0df99f015960906a",
+      "6d6b747ec72ca081f764b6a2d057d5323a231a80486051f0a3c8846f30e03832",
+      "5ebf4e20608586e4c0a987dcd3b70c67a57362e4db5235000e55683c9c604f5b",
+      "cd07b297a04120cffb91b4df8344abf56ff82b1c892a8e55c17b92f8be90ed9e",
+      "24b438fba4e1f95c7daba346d0d4cb0550f19f0fc1cb0f28a6e1ebdde829a504"
     ],
     "page_count": 27,
     "reported_total": 10000,
     "truncation_detected": true,
     "watermark": {
-      "publisher_time_ms": 1792729394331,
-      "id": "4937527"
+      "publisher_time_ms": 1792734840000,
+      "id": "4937544"
     },
     "retry": {
       "attempts": 3,
@@ -69,6 +69,861 @@
     }
   },
   "items": [
+    {
+      "news_id": "4937544",
+      "published_at": "2026-10-23T05:54:00.000Z",
+      "published_at_ms": 1792734840000,
+      "timezone": "Asia/Shanghai",
+      "content_text": "随着10月前两周再次向旗下超级政治行动委员会注入资金，埃隆·马斯克在本轮选举周期中的捐款总额现已超过4.45亿美元，成为此类组织有史以来最大的捐助者之一。美国联邦选举委员会的申报文件显示，这位全球首富在10月前两周向美国政治行动委员会(America PAC)投入了7700万美元，力图帮助共和党人在11月的中期选举中获胜。",
+      "content_html": "随着10月前两周再次向旗下超级政治行动委员会注入资金，埃隆·马斯克在本轮选举周期中的捐款总额现已超过4.45亿美元，成为此类组织有史以来最大的捐助者之一。美国联邦选举委员会的申报文件显示，这位全球首富在10月前两周向美国政治行动委员会(America PAC)投入了7700万美元，力图帮助共和党人在11月的中期选举中获胜。",
+      "raw_content": "随着10月前两周再次向旗下超级政治行动委员会注入资金，埃隆·马斯克在本轮选举周期中的捐款总额现已超过4.45亿美元，成为此类组织有史以来最大的捐助者之一。美国联邦选举委员会的申报文件显示，这位全球首富在10月前两周向美国政治行动委员会(America PAC)投入了7700万美元，力图帮助共和党人在11月的中期选举中获胜。",
+      "category": {
+        "id": 1,
+        "name": "1"
+      },
+      "section": {
+        "id": 8,
+        "name": "8"
+      },
+      "products": [],
+      "regions": [],
+      "source_name": "财联社",
+      "source_url": "http://news.mysteel.com/a/26102313/FB856C21D24DC911.html",
+      "in_article_url": "http://news.mysteel.com/a/26102313/FB856C21D24DC911.html",
+      "out_article_url": null,
+      "in_article_title": "马斯克为美共和党中期选举捐款超4.45亿美元",
+      "out_article_title": null,
+      "source_link_status": "article_link",
+      "data_source": 1,
+      "publisher_id": 216058,
+      "relation_id": 46166864,
+      "ai_flag": 0,
+      "platform_product_line": null,
+      "mapping_status": "unmapped",
+      "quality_flags": []
+    },
+    {
+      "news_id": "4937543",
+      "published_at": "2026-10-23T05:53:00.000Z",
+      "published_at_ms": 1792734780000,
+      "timezone": "Asia/Shanghai",
+      "content_text": "重庆发布国际产业投资合作机会清单，111个项目总投资833亿元，聚焦智能网联新能源、电子信息及生产性服务业。2026年前三季度实际使用外资增26.66%，325家世界500强落户，外资持续加码重庆。",
+      "content_html": "重庆发布国际产业投资合作机会清单，111个项目总投资833亿元，聚焦智能网联新能源、电子信息及生产性服务业。2026年前三季度实际使用外资增26.66%，325家世界500强落户，外资持续加码重庆。",
+      "raw_content": "重庆发布国际产业投资合作机会清单，111个项目总投资833亿元，聚焦智能网联新能源、电子信息及生产性服务业。2026年前三季度实际使用外资增26.66%，325家世界500强落户，外资持续加码重庆。",
+      "category": {
+        "id": 16,
+        "name": "16"
+      },
+      "section": {
+        "id": 8,
+        "name": "8"
+      },
+      "products": [
+        {
+          "id": "010101",
+          "name": "建筑钢材",
+          "source": "relationBreed"
+        }
+      ],
+      "regions": [
+        {
+          "id": "0106",
+          "name": "西南"
+        },
+        {
+          "id": "010601",
+          "name": "重庆"
+        }
+      ],
+      "source_name": "重庆市人民政府网",
+      "source_url": "http://gc.mysteel.com/a/26102313/C0B92A1E3DF2DB2F.html",
+      "in_article_url": "http://gc.mysteel.com/a/26102313/C0B92A1E3DF2DB2F.html",
+      "out_article_url": null,
+      "in_article_title": "重庆发布国际产业投资合作机会清单 111个项目总投资833亿元",
+      "out_article_title": null,
+      "source_link_status": "article_link",
+      "data_source": 1,
+      "publisher_id": 219019,
+      "relation_id": 46166841,
+      "ai_flag": 0,
+      "platform_product_line": null,
+      "mapping_status": "ambiguous",
+      "quality_flags": []
+    },
+    {
+      "news_id": "4937542",
+      "published_at": "2026-10-23T05:52:00.000Z",
+      "published_at_ms": 1792734720000,
+      "timezone": "Asia/Shanghai",
+      "content_text": "SpaceX正与大型基础设施公司谈判，目标获取美国至少8万个基站使用权，有望成为第四家全国性无线运营商。若协议达成，交易价值或达数十亿美元。",
+      "content_html": "SpaceX正与大型基础设施公司谈判，目标获取美国至少8万个基站使用权，有望成为第四家全国性无线运营商。若协议达成，交易价值或达数十亿美元。",
+      "raw_content": "SpaceX正与大型基础设施公司谈判，目标获取美国至少8万个基站使用权，有望成为第四家全国性无线运营商。若协议达成，交易价值或达数十亿美元。",
+      "category": {
+        "id": 18,
+        "name": "18"
+      },
+      "section": {
+        "id": 8,
+        "name": "8"
+      },
+      "products": [],
+      "regions": [],
+      "source_name": "财联社",
+      "source_url": "http://news.mysteel.com/a/26102313/097903D15FF0F1E1.html",
+      "in_article_url": "http://news.mysteel.com/a/26102313/097903D15FF0F1E1.html",
+      "out_article_url": null,
+      "in_article_title": "SpaceX目标拿下美国一半基站，正与大型基础设施公司谈判",
+      "out_article_title": null,
+      "source_link_status": "article_link",
+      "data_source": 1,
+      "publisher_id": 216274,
+      "relation_id": 46166833,
+      "ai_flag": 0,
+      "platform_product_line": null,
+      "mapping_status": "unmapped",
+      "quality_flags": []
+    },
+    {
+      "news_id": "4937541",
+      "published_at": "2026-10-23T05:51:00.000Z",
+      "published_at_ms": 1792734660000,
+      "timezone": "Asia/Shanghai",
+      "content_text": "川达钢集团将于10月27日对片状五氧化二钒、钒氮合金进行公开比价销售。报名截止同日12时，需缴10万元保证金。报价通过邮箱提交并经历多轮询价，交货方式为自提。联系人李成、唐裕恒。",
+      "content_html": "川达钢集团将于10月27日对片状五氧化二钒、钒氮合金进行公开比价销售。报名截止同日12时，需缴10万元保证金。报价通过邮箱提交并经历多轮询价，交货方式为自提。联系人李成、唐裕恒。",
+      "raw_content": "川达钢集团将于10月27日对片状五氧化二钒、钒氮合金进行公开比价销售。报名截止同日12时，需缴10万元保证金。报价通过邮箱提交并经历多轮询价，交货方式为自提。联系人李成、唐裕恒。",
+      "category": {
+        "id": 16,
+        "name": "16"
+      },
+      "section": {
+        "id": 8,
+        "name": "8"
+      },
+      "products": [
+        {
+          "id": "01010101",
+          "name": "螺纹钢",
+          "source": "relationBreed"
+        },
+        {
+          "id": "钒氮合金",
+          "name": "钒氮合金",
+          "source": "breedTag"
+        },
+        {
+          "id": "五氧化二钒",
+          "name": "五氧化二钒",
+          "source": "breedTag"
+        }
+      ],
+      "regions": [
+        {
+          "id": "0106",
+          "name": "西南"
+        },
+        {
+          "id": "010601",
+          "name": "重庆"
+        },
+        {
+          "id": "010602",
+          "name": "四川"
+        },
+        {
+          "id": "01060201",
+          "name": "成都"
+        }
+      ],
+      "source_name": "我的钢铁网(Mysteel)",
+      "source_url": "http://gc.mysteel.com/a/26102313/9AC99BE818D98FFA.html",
+      "in_article_url": "http://gc.mysteel.com/a/26102313/9AC99BE818D98FFA.html",
+      "out_article_url": null,
+      "in_article_title": "四川省达州钢铁集团有限责任公司 片状五氧化二钒、钒氮合金比价公告",
+      "out_article_title": null,
+      "source_link_status": "article_link",
+      "data_source": 1,
+      "publisher_id": 219019,
+      "relation_id": 46166811,
+      "ai_flag": 0,
+      "platform_product_line": null,
+      "mapping_status": "ambiguous",
+      "quality_flags": []
+    },
+    {
+      "news_id": "4937540",
+      "published_at": "2026-10-23T05:48:00.000Z",
+      "published_at_ms": 1792734480000,
+      "timezone": "Asia/Shanghai",
+      "content_text": "靖江零界科技以超90%预制率领跑装配式木结构，前九月销售近6亿，订单排至2028年。开发区依托其龙头效应，整合物流与上下游资源，推动木材产业从传统加工向绿色智造集群转型，加速出海步伐，预计全年销售达9亿元。",
+      "content_html": "靖江零界科技以超90%预制率领跑装配式木结构，前九月销售近6亿，订单排至2028年。开发区依托其龙头效应，整合物流与上下游资源，推动木材产业从传统加工向绿色智造集群转型，加速出海步伐，预计全年销售达9亿元。",
+      "raw_content": "靖江零界科技以超90%预制率领跑装配式木结构，前九月销售近6亿，订单排至2028年。开发区依托其龙头效应，整合物流与上下游资源，推动木材产业从传统加工向绿色智造集群转型，加速出海步伐，预计全年销售达9亿元。",
+      "category": {
+        "id": 6,
+        "name": "6"
+      },
+      "section": {
+        "id": 8,
+        "name": "8"
+      },
+      "products": [
+        {
+          "id": "1201",
+          "name": "原木",
+          "source": "relationBreed"
+        },
+        {
+          "id": "1202",
+          "name": "木方",
+          "source": "relationBreed"
+        },
+        {
+          "id": "1203",
+          "name": "木模板",
+          "source": "relationBreed"
+        },
+        {
+          "id": "木材",
+          "name": "木材",
+          "source": "breedTag"
+        }
+      ],
+      "regions": [
+        {
+          "id": "01",
+          "name": "国内"
+        },
+        {
+          "id": "0101",
+          "name": "华东"
+        },
+        {
+          "id": "0102",
+          "name": "华南"
+        },
+        {
+          "id": "0103",
+          "name": "华中"
+        },
+        {
+          "id": "0104",
+          "name": "华北"
+        },
+        {
+          "id": "0105",
+          "name": "东北"
+        },
+        {
+          "id": "0106",
+          "name": "西南"
+        },
+        {
+          "id": "0107",
+          "name": "西北"
+        }
+      ],
+      "source_name": "木联数据",
+      "source_url": "http://wood.100njz.com/a/26102313/57582875510E4F34.html",
+      "in_article_url": "http://wood.100njz.com/a/26102313/57582875510E4F34.html",
+      "out_article_url": null,
+      "in_article_title": "链式集聚壮大靖江木业集群 预制智造拓宽出海赛道",
+      "out_article_title": null,
+      "source_link_status": "article_link",
+      "data_source": 1,
+      "publisher_id": 221065,
+      "relation_id": 46166757,
+      "ai_flag": 0,
+      "platform_product_line": null,
+      "mapping_status": "ambiguous",
+      "quality_flags": []
+    },
+    {
+      "news_id": "4937539",
+      "published_at": "2026-10-23T05:47:00.000Z",
+      "published_at_ms": 1792734420000,
+      "timezone": "Asia/Shanghai",
+      "content_text": "10月23日，福建人形机器人创新中心有限公司正式宣布完成Pre-A+轮融资。本轮融资由福州市鼓楼区城建投资发展集团有限公司、厦门航智量数未来科技孵化器有限公司加持。",
+      "content_html": "10月23日，福建人形机器人创新中心有限公司正式宣布完成Pre-A+轮融资。本轮融资由福州市鼓楼区城建投资发展集团有限公司、厦门航智量数未来科技孵化器有限公司加持。",
+      "raw_content": "10月23日，福建人形机器人创新中心有限公司正式宣布完成Pre-A+轮融资。本轮融资由福州市鼓楼区城建投资发展集团有限公司、厦门航智量数未来科技孵化器有限公司加持。",
+      "category": {
+        "id": 18,
+        "name": "18"
+      },
+      "section": {
+        "id": 8,
+        "name": "8"
+      },
+      "products": [],
+      "regions": [],
+      "source_name": "财联社",
+      "source_url": "http://news.mysteel.com/a/26102313/41E2B525F3C0AE8C.html",
+      "in_article_url": "http://news.mysteel.com/a/26102313/41E2B525F3C0AE8C.html",
+      "out_article_url": null,
+      "in_article_title": "福建人形机器人创新中心完成Pre-A+轮融资",
+      "out_article_title": null,
+      "source_link_status": "article_link",
+      "data_source": 1,
+      "publisher_id": 216274,
+      "relation_id": 46166751,
+      "ai_flag": 0,
+      "platform_product_line": null,
+      "mapping_status": "unmapped",
+      "quality_flags": []
+    },
+    {
+      "news_id": "4937538",
+      "published_at": "2026-10-23T05:44:11.108Z",
+      "published_at_ms": 1792734251108,
+      "timezone": "Asia/Shanghai",
+      "content_text": "10月23日东北地区20家样本钢厂废钢到货1.15万吨，较上一工作日增加0.05万吨，环比增加4.55%。",
+      "content_html": "10月23日东北地区20家样本钢厂废钢到货1.15万吨，较上一工作日增加0.05万吨，环比增加4.55%。",
+      "raw_content": "10月23日东北地区20家样本钢厂废钢到货1.15万吨，较上一工作日增加0.05万吨，环比增加4.55%。",
+      "category": {
+        "id": 2,
+        "name": "2"
+      },
+      "section": {
+        "id": 4,
+        "name": "4"
+      },
+      "products": [
+        {
+          "id": "0306",
+          "name": "废钢",
+          "source": "relationBreed"
+        },
+        {
+          "id": "再生金属",
+          "name": "再生金属",
+          "source": "breedTag"
+        }
+      ],
+      "regions": [
+        {
+          "id": "0105",
+          "name": "东北"
+        }
+      ],
+      "source_name": null,
+      "source_url": null,
+      "in_article_url": null,
+      "out_article_url": null,
+      "in_article_title": null,
+      "out_article_title": null,
+      "source_link_status": "no_link",
+      "data_source": 2,
+      "publisher_id": 223887,
+      "relation_id": 7694523,
+      "ai_flag": 0,
+      "platform_product_line": null,
+      "mapping_status": "ambiguous",
+      "quality_flags": [
+        "source_link_missing"
+      ]
+    },
+    {
+      "news_id": "4937537",
+      "published_at": "2026-10-23T05:43:54.295Z",
+      "published_at_ms": 1792734234295,
+      "timezone": "Asia/Shanghai",
+      "content_text": "10月23日午后沈阳市场镀锌管价格稳，4寸*3.75mm唐山正元报3970，吉林华岐报3920，迁安正大报3970,过磅含税。（元/吨）",
+      "content_html": "10月23日午后沈阳市场镀锌管价格稳，4寸*3.75mm唐山正元报3970，吉林华岐报3920，迁安正大报3970,过磅含税。（元/吨）",
+      "raw_content": "10月23日午后沈阳市场镀锌管价格稳，4寸*3.75mm唐山正元报3970，吉林华岐报3920，迁安正大报3970,过磅含税。（元/吨）",
+      "category": {
+        "id": 2,
+        "name": "2"
+      },
+      "section": {
+        "id": 7,
+        "name": "7"
+      },
+      "products": [
+        {
+          "id": "01010905",
+          "name": "镀锌管",
+          "source": "relationBreed"
+        }
+      ],
+      "regions": [
+        {
+          "id": "01050101",
+          "name": "沈阳"
+        }
+      ],
+      "source_name": null,
+      "source_url": null,
+      "in_article_url": null,
+      "out_article_url": null,
+      "in_article_title": null,
+      "out_article_title": null,
+      "source_link_status": "no_link",
+      "data_source": 2,
+      "publisher_id": 225338,
+      "relation_id": 7694522,
+      "ai_flag": 0,
+      "platform_product_line": null,
+      "mapping_status": "ambiguous",
+      "quality_flags": [
+        "source_link_missing"
+      ]
+    },
+    {
+      "news_id": "4937536",
+      "published_at": "2026-10-23T05:40:27.350Z",
+      "published_at_ms": 1792734027350,
+      "timezone": "Asia/Shanghai",
+      "content_text": "10月23日秦皇岛建筑钢材价格盘中稳，抗震三大3220，φ12三级3280，抗震盘3440左右。（元/吨）",
+      "content_html": "10月23日秦皇岛建筑钢材价格盘中稳，抗震三大3220，φ12三级3280，抗震盘3440左右。（元/吨）",
+      "raw_content": "10月23日秦皇岛建筑钢材价格盘中稳，抗震三大3220，φ12三级3280，抗震盘3440左右。（元/吨）",
+      "category": {
+        "id": 2,
+        "name": "2"
+      },
+      "section": {
+        "id": 7,
+        "name": "7"
+      },
+      "products": [
+        {
+          "id": "010101",
+          "name": "建筑钢材",
+          "source": "relationBreed"
+        }
+      ],
+      "regions": [
+        {
+          "id": "01040303",
+          "name": "秦皇岛"
+        }
+      ],
+      "source_name": null,
+      "source_url": null,
+      "in_article_url": null,
+      "out_article_url": null,
+      "in_article_title": null,
+      "out_article_title": null,
+      "source_link_status": "no_link",
+      "data_source": 2,
+      "publisher_id": 210008,
+      "relation_id": 7694521,
+      "ai_flag": 0,
+      "platform_product_line": null,
+      "mapping_status": "ambiguous",
+      "quality_flags": [
+        "source_link_missing"
+      ]
+    },
+    {
+      "news_id": "4937535",
+      "published_at": "2026-10-23T05:38:37.558Z",
+      "published_at_ms": 1792733917558,
+      "timezone": "Asia/Shanghai",
+      "content_text": "青山集团2026年11月高碳铬铁长协采购价7595元/50基吨（现金含税到厂价）；天津港收货价格减150元/50基吨",
+      "content_html": "<p>青山集团2026年11月高碳铬铁长协采购价7595元/50基吨（现金含税到厂价）；天津港收货价格减150元/50基吨</p>",
+      "raw_content": "<p>青山集团2026年11月高碳铬铁长协采购价7595元/50基吨（现金含税到厂价）；天津港收货价格减150元/50基吨</p>",
+      "category": {
+        "id": 2,
+        "name": "2"
+      },
+      "section": {
+        "id": 6,
+        "name": "6"
+      },
+      "products": [
+        {
+          "id": "0223",
+          "name": "铬",
+          "source": "relationBreed"
+        },
+        {
+          "id": "高碳铬铁",
+          "name": "高碳铬铁",
+          "source": "breedTag"
+        }
+      ],
+      "regions": [],
+      "source_name": null,
+      "source_url": null,
+      "in_article_url": null,
+      "out_article_url": null,
+      "in_article_title": null,
+      "out_article_title": null,
+      "source_link_status": "no_link",
+      "data_source": 0,
+      "publisher_id": 209693,
+      "relation_id": 0,
+      "ai_flag": 0,
+      "platform_product_line": null,
+      "mapping_status": "ambiguous",
+      "quality_flags": [
+        "source_link_missing"
+      ]
+    },
+    {
+      "news_id": "4937534",
+      "published_at": "2026-10-23T05:37:08.316Z",
+      "published_at_ms": 1792733828316,
+      "timezone": "Asia/Shanghai",
+      "content_text": "10月23日唐山建筑钢材市场价格盘中稳，现三级大螺纹3120，三级小螺纹3180，盘螺3340。（元/吨）",
+      "content_html": "10月23日唐山建筑钢材市场价格盘中稳，现三级大螺纹3120，三级小螺纹3180，盘螺3340。（元/吨）",
+      "raw_content": "10月23日唐山建筑钢材市场价格盘中稳，现三级大螺纹3120，三级小螺纹3180，盘螺3340。（元/吨）",
+      "category": {
+        "id": 2,
+        "name": "2"
+      },
+      "section": {
+        "id": 7,
+        "name": "7"
+      },
+      "products": [
+        {
+          "id": "010101",
+          "name": "建筑钢材",
+          "source": "relationBreed"
+        },
+        {
+          "id": "螺纹钢",
+          "name": "螺纹钢",
+          "source": "breedTag"
+        },
+        {
+          "id": "盘螺",
+          "name": "盘螺",
+          "source": "breedTag"
+        }
+      ],
+      "regions": [
+        {
+          "id": "010403",
+          "name": "河北"
+        }
+      ],
+      "source_name": null,
+      "source_url": null,
+      "in_article_url": null,
+      "out_article_url": null,
+      "in_article_title": null,
+      "out_article_title": null,
+      "source_link_status": "no_link",
+      "data_source": 2,
+      "publisher_id": 210008,
+      "relation_id": 7694520,
+      "ai_flag": 0,
+      "platform_product_line": null,
+      "mapping_status": "ambiguous",
+      "quality_flags": [
+        "source_link_missing"
+      ]
+    },
+    {
+      "news_id": "4937533",
+      "published_at": "2026-10-23T05:23:43.542Z",
+      "published_at_ms": 1792733023542,
+      "timezone": "Asia/Shanghai",
+      "content_text": "10月23日江西台鑫废钢最新价：精炉料一2240，生铁一2190大件生铁2120优重2190；重废一2160；中废2100小废一2070小废二1980统一1630加工料1980-2120打包料1630-2110，大龙刨2140，钢刨花2050，数控刨花2040，普通刨花1980，长碎刨花1900，不含税。",
+      "content_html": "10月23日江西台鑫废钢最新价：精炉料一2240，生铁一2190大件生铁2120优重2190；重废一2160；中废2100小废一2070小废二1980统一1630加工料1980-2120打包料1630-2110，大龙刨2140，钢刨花2050，数控刨花2040，普通刨花1980，长碎刨花1900，不含税。",
+      "raw_content": "10月23日江西台鑫废钢最新价：精炉料一2240，生铁一2190大件生铁2120优重2190；重废一2160；中废2100小废一2070小废二1980统一1630加工料1980-2120打包料1630-2110，大龙刨2140，钢刨花2050，数控刨花2040，普通刨花1980，长碎刨花1900，不含税。",
+      "category": {
+        "id": 2,
+        "name": "2"
+      },
+      "section": {
+        "id": 9,
+        "name": "9"
+      },
+      "products": [
+        {
+          "id": "0306",
+          "name": "废钢",
+          "source": "relationBreed"
+        },
+        {
+          "id": "钢刨花",
+          "name": "钢刨花",
+          "source": "breedTag"
+        },
+        {
+          "id": "数控刨花",
+          "name": "数控刨花",
+          "source": "breedTag"
+        },
+        {
+          "id": "小废",
+          "name": "小废",
+          "source": "breedTag"
+        },
+        {
+          "id": "中废",
+          "name": "中废",
+          "source": "breedTag"
+        },
+        {
+          "id": "重废",
+          "name": "重废",
+          "source": "breedTag"
+        },
+        {
+          "id": "再生金属",
+          "name": "再生金属",
+          "source": "breedTag"
+        }
+      ],
+      "regions": [
+        {
+          "id": "01010607",
+          "name": "上饶"
+        }
+      ],
+      "source_name": null,
+      "source_url": null,
+      "in_article_url": null,
+      "out_article_url": null,
+      "in_article_title": null,
+      "out_article_title": null,
+      "source_link_status": "no_link",
+      "data_source": 2,
+      "publisher_id": 221694,
+      "relation_id": 7694518,
+      "ai_flag": 0,
+      "platform_product_line": null,
+      "mapping_status": "ambiguous",
+      "quality_flags": [
+        "source_link_missing"
+      ]
+    },
+    {
+      "news_id": "4937532",
+      "published_at": "2026-10-23T05:23:23.578Z",
+      "published_at_ms": 1792733003578,
+      "timezone": "Asia/Shanghai",
+      "content_text": "10月23日江西台鑫通知：10月23日12点06分起，门面、外调、驻外场地所有料型统一下调10元，详见价格表。",
+      "content_html": "10月23日江西台鑫通知：10月23日12点06分起，门面、外调、驻外场地所有料型统一下调10元，详见价格表。",
+      "raw_content": "10月23日江西台鑫通知：10月23日12点06分起，门面、外调、驻外场地所有料型统一下调10元，详见价格表。",
+      "category": {
+        "id": 2,
+        "name": "2"
+      },
+      "section": {
+        "id": 9,
+        "name": "9"
+      },
+      "products": [
+        {
+          "id": "0306",
+          "name": "废钢",
+          "source": "relationBreed"
+        }
+      ],
+      "regions": [
+        {
+          "id": "01010607",
+          "name": "上饶"
+        }
+      ],
+      "source_name": null,
+      "source_url": null,
+      "in_article_url": null,
+      "out_article_url": null,
+      "in_article_title": null,
+      "out_article_title": null,
+      "source_link_status": "no_link",
+      "data_source": 2,
+      "publisher_id": 221694,
+      "relation_id": 7694517,
+      "ai_flag": 0,
+      "platform_product_line": null,
+      "mapping_status": "ambiguous",
+      "quality_flags": [
+        "source_link_missing"
+      ]
+    },
+    {
+      "news_id": "4937531",
+      "published_at": "2026-10-23T04:58:52.223Z",
+      "published_at_ms": 1792731532223,
+      "timezone": "Asia/Shanghai",
+      "content_text": "10月24日起广西贵港废钢采购价格调整部分下调20： 铸铁、铸钢件、机械件2270元/吨，重型废钢2220元/吨，一级剪料1970元/吨，二级剪料1910元/吨，轻薄料1310元/吨，破碎料1860元/吨，整车乱钢筋1860元/吨，纯钢筋头2220元/吨，钢筋压块2260元/吨，不含税。（以此为准）",
+      "content_html": "10月24日起广西贵港废钢采购价格调整部分下调20： 铸铁、铸钢件、机械件2270元/吨，重型废钢2220元/吨，一级剪料1970元/吨，二级剪料1910元/吨，轻薄料1310元/吨，破碎料1860元/吨，整车乱钢筋1860元/吨，纯钢筋头2220元/吨，钢筋压块2260元/吨，不含税。（以此为准）",
+      "raw_content": "10月24日起广西贵港废钢采购价格调整部分下调20： 铸铁、铸钢件、机械件2270元/吨，重型废钢2220元/吨，一级剪料1970元/吨，二级剪料1910元/吨，轻薄料1310元/吨，破碎料1860元/吨，整车乱钢筋1860元/吨，纯钢筋头2220元/吨，钢筋压块2260元/吨，不含税。（以此为准）",
+      "category": {
+        "id": 2,
+        "name": "2"
+      },
+      "section": {
+        "id": 9,
+        "name": "9"
+      },
+      "products": [
+        {
+          "id": "0306",
+          "name": "废钢",
+          "source": "relationBreed"
+        },
+        {
+          "id": "轻废",
+          "name": "轻废",
+          "source": "breedTag"
+        },
+        {
+          "id": "钢筋头",
+          "name": "钢筋头",
+          "source": "breedTag"
+        },
+        {
+          "id": "中废",
+          "name": "中废",
+          "source": "breedTag"
+        },
+        {
+          "id": "钢筋压块",
+          "name": "钢筋压块",
+          "source": "breedTag"
+        },
+        {
+          "id": "铸造生铁",
+          "name": "铸造生铁",
+          "source": "breedTag"
+        },
+        {
+          "id": "破碎料",
+          "name": "破碎料",
+          "source": "breedTag"
+        },
+        {
+          "id": "再生金属",
+          "name": "再生金属",
+          "source": "breedTag"
+        }
+      ],
+      "regions": [
+        {
+          "id": "01020202",
+          "name": "贵港"
+        }
+      ],
+      "source_name": null,
+      "source_url": null,
+      "in_article_url": null,
+      "out_article_url": null,
+      "in_article_title": null,
+      "out_article_title": null,
+      "source_link_status": "no_link",
+      "data_source": 2,
+      "publisher_id": 221419,
+      "relation_id": 7694516,
+      "ai_flag": 0,
+      "platform_product_line": null,
+      "mapping_status": "ambiguous",
+      "quality_flags": [
+        "source_link_missing"
+      ]
+    },
+    {
+      "news_id": "4937529",
+      "published_at": "2026-10-23T04:42:58.536Z",
+      "published_at_ms": 1792730578536,
+      "timezone": "Asia/Shanghai",
+      "content_text": "10月23日广东金晟兰冶金科技有限公司,老铁们有需要国六车辆请联系物流部调度室,24小时热线电话18676640103,温馨提示：本公司物流车辆优先进厂卸货！特别提示:现对广东广西地区废钢运费价格进行下调。2026年8月5日起开始执行！",
+      "content_html": "10月23日广东金晟兰冶金科技有限公司,老铁们有需要国六车辆请联系物流部调度室,24小时热线电话18676640103,温馨提示：本公司物流车辆优先进厂卸货！特别提示:现对广东广西地区废钢运费价格进行下调。2026年8月5日起开始执行！",
+      "raw_content": "10月23日广东金晟兰冶金科技有限公司,老铁们有需要国六车辆请联系物流部调度室,24小时热线电话18676640103,温馨提示：本公司物流车辆优先进厂卸货！特别提示:现对广东广西地区废钢运费价格进行下调。2026年8月5日起开始执行！",
+      "category": {
+        "id": 2,
+        "name": "2"
+      },
+      "section": {
+        "id": 9,
+        "name": "9"
+      },
+      "products": [
+        {
+          "id": "030604",
+          "name": "普碳废钢",
+          "source": "relationBreed"
+        },
+        {
+          "id": "废钢",
+          "name": "废钢",
+          "source": "breedTag"
+        },
+        {
+          "id": "再生金属",
+          "name": "再生金属",
+          "source": "breedTag"
+        }
+      ],
+      "regions": [
+        {
+          "id": "01020117",
+          "name": "云浮"
+        }
+      ],
+      "source_name": null,
+      "source_url": null,
+      "in_article_url": null,
+      "out_article_url": null,
+      "in_article_title": null,
+      "out_article_title": null,
+      "source_link_status": "no_link",
+      "data_source": 2,
+      "publisher_id": 209768,
+      "relation_id": 7694510,
+      "ai_flag": 0,
+      "platform_product_line": null,
+      "mapping_status": "ambiguous",
+      "quality_flags": [
+        "source_link_missing"
+      ]
+    },
+    {
+      "news_id": "4937528",
+      "published_at": "2026-10-23T04:42:30.893Z",
+      "published_at_ms": 1792730550893,
+      "timezone": "Asia/Shanghai",
+      "content_text": "10月23日管坯厂提价稳，热轧管坯20#：天钢3140，东海3110；连铸圆坯20#：钢投特钢3140。(元/吨)",
+      "content_html": "10月23日管坯厂提价稳，热轧管坯20#：天钢3140，东海3110；连铸圆坯20#：钢投特钢3140。(元/吨)",
+      "raw_content": "10月23日管坯厂提价稳，热轧管坯20#：天钢3140，东海3110；连铸圆坯20#：钢投特钢3140。(元/吨)",
+      "category": {
+        "id": 2,
+        "name": "2"
+      },
+      "section": {
+        "id": 7,
+        "name": "7"
+      },
+      "products": [
+        {
+          "id": "010202",
+          "name": "管坯钢",
+          "source": "relationBreed"
+        },
+        {
+          "id": "热轧管坯",
+          "name": "热轧管坯",
+          "source": "breedTag"
+        }
+      ],
+      "regions": [
+        {
+          "id": "010102",
+          "name": "山东"
+        }
+      ],
+      "source_name": null,
+      "source_url": null,
+      "in_article_url": null,
+      "out_article_url": null,
+      "in_article_title": null,
+      "out_article_title": null,
+      "source_link_status": "no_link",
+      "data_source": 2,
+      "publisher_id": 221011,
+      "relation_id": 7694509,
+      "ai_flag": 0,
+      "platform_product_line": "hot-rolled",
+      "mapping_status": "mapped",
+      "quality_flags": [
+        "source_link_missing"
+      ]
+    },
     {
       "news_id": "4937527",
       "published_at": "2026-10-23T04:23:14.331Z",
@@ -134897,13 +135752,13 @@
       },
       "products": [
         {
-          "id": "07040202",
-          "name": "麸皮",
+          "id": "07040203",
+          "name": "小麦原粮",
           "source": "relationBreed"
         },
         {
-          "id": "07040203",
-          "name": "小麦原粮",
+          "id": "07040202",
+          "name": "麸皮",
           "source": "relationBreed"
         },
         {
@@ -135114,12 +135969,12 @@
   ],
   "quality": {
     "raw_count": 2700,
-    "accepted_count": 2591,
-    "rejected_count": 109,
+    "accepted_count": 2607,
+    "rejected_count": 93,
     "deduped_count": 0,
-    "missing_source_link_count": 2098,
-    "missing_product_count": 52,
-    "malformed_content_count": 109,
+    "missing_source_link_count": 2108,
+    "missing_product_count": 55,
+    "malformed_content_count": 93,
     "duplicate_group_count": 0,
     "warnings": [
       "API 报告总量超过本次分页采集量；快照仅覆盖目标日期窗口，需按分类/地区拆分请求补全。"
