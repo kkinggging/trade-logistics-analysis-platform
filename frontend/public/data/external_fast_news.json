@@ -6,10 +6,10 @@
     "dashboard_url": "https://www.mysteel.com/fastcomment/#/",
     "api_url": "https://openapi.mysteel.com/without_sign/newsflash/flashnews/query_by_tags.htm",
     "taxonomy_url": "https://a.mysteelcdn.com/common/publish/newsflash/newsflash_column.json",
-    "captured_at": "2026-10-25T04:31:35.446Z",
+    "captured_at": "2026-10-25T05:53:26.946Z",
     "coverage_start": "2026-10-25",
     "coverage_end": "2026-10-25",
-    "latest_published_at": "2026-10-25T03:43:04.883Z",
+    "latest_published_at": "2026-10-25T04:35:51.838Z",
     "timezone": "Asia/Shanghai",
     "fetch_mode": "api",
     "request_params": {
@@ -23,17 +23,17 @@
         ]
       ]
     },
-    "raw_sha256": "f512ceb7e78e1c632a1b9043cb14dcbebb8d939ffbc1deb8764ad5d91db9163b",
+    "raw_sha256": "dc7f842767bc48488efb2781525baa15baf9924c17e36eb661bb3b9b051ebf38",
     "taxonomy_sha256": "c98f5bfdacde3401c98ea8f43bac3ca63d35b569f6aad3e1fff2f39b58a0dbf3",
     "response_sha256": [
-      "a7d6f3d84b72db2ec4daba4df6777ba70d180ebe48b26b33bdfd954b725f5fa7"
+      "b6683e3d40971868249a6488675d4518ab732ed22be5e7f45293b416f80e5385"
     ],
     "page_count": 1,
     "reported_total": 10000,
     "truncation_detected": true,
     "watermark": {
-      "publisher_time_ms": 1792899784883,
-      "id": "4938186"
+      "publisher_time_ms": 1792902951838,
+      "id": "4938187"
     },
     "retry": {
       "attempts": 3,
@@ -43,6 +43,73 @@
     }
   },
   "items": [
+    {
+      "news_id": "4938187",
+      "published_at": "2026-10-25T04:35:51.838Z",
+      "published_at_ms": 1792902951838,
+      "timezone": "Asia/Shanghai",
+      "content_text": "2026年10月25号10点30分 揭阳市新顺废铁场价格表 工业料冲剪 2050元／吨 马口铁 工业镀锌 1830元／吨 模具 2160元／吨 直钢筋 2140元／吨 杂生铁、硬钢 2110元／吨 纯工槽钢 2120元／吨 注塑机脚 2040元／吨 纯电机生 2080元／吨 6厘以上分割2080 元／吨 5厘以上分割，2060元/吨 工地建筑排山管，2020元/吨 3-4厘以上纯剪料2010元／吨 2厘 以上剪料1990元／吨 杂厚碎铁 1750元/吨 纯铁皮（干净无腐蚀） 1700元／吨 乱钢筋 2070元／吨 打楼钢筋 2100元／吨 生活杂铁 1180一1280元/吨 钢丝绳.床垫网 1530元／吨 奕压器壳 2000元吨 夹层铁皮防火铁皮 800-1300元／吨 具体看货给价(化学桶、煤气瓶、氧气瓶、灭火器、千斤顶、避震等密封件，如发现当杂质扣除，做假重罚） 询价、联系人: 陈濂隐：13828196195 覃光南：15119390987 地址:揭阳榕城仙桥湖心村新路中段 （新顺废铁场）",
+      "content_html": "2026年10月25号10点30分\n揭阳市新顺废铁场价格表\n工业料冲剪 2050元／吨\n马口铁 工业镀锌 1830元／吨\n模具 2160元／吨\n直钢筋 2140元／吨\n杂生铁、硬钢 2110元／吨\n纯工槽钢 2120元／吨\n注塑机脚 2040元／吨\n纯电机生 2080元／吨\n6厘以上分割2080 元／吨\n5厘以上分割，2060元/吨\n工地建筑排山管，2020元/吨\n3-4厘以上纯剪料2010元／吨\n2厘 以上剪料1990元／吨\n杂厚碎铁 1750元/吨\n纯铁皮（干净无腐蚀） 1700元／吨\n乱钢筋 2070元／吨\n打楼钢筋 2100元／吨\n生活杂铁 1180一1280元/吨\n钢丝绳.床垫网 1530元／吨\n奕压器壳 2000元吨\n夹层铁皮防火铁皮 800-1300元／吨\n具体看货给价(化学桶、煤气瓶、氧气瓶、灭火器、千斤顶、避震等密封件，如发现当杂质扣除，做假重罚）\n询价、联系人:\n陈濂隐：13828196195\n覃光南：15119390987\n地址:揭阳榕城仙桥湖心村新路中段 （新顺废铁场）",
+      "raw_content": "2026年10月25号10点30分\n揭阳市新顺废铁场价格表\n工业料冲剪 2050元／吨\n马口铁 工业镀锌 1830元／吨\n模具 2160元／吨\n直钢筋 2140元／吨\n杂生铁、硬钢 2110元／吨\n纯工槽钢 2120元／吨\n注塑机脚 2040元／吨\n纯电机生 2080元／吨\n6厘以上分割2080 元／吨\n5厘以上分割，2060元/吨\n工地建筑排山管，2020元/吨\n3-4厘以上纯剪料2010元／吨\n2厘 以上剪料1990元／吨\n杂厚碎铁 1750元/吨\n纯铁皮（干净无腐蚀） 1700元／吨\n乱钢筋 2070元／吨\n打楼钢筋 2100元／吨\n生活杂铁 1180一1280元/吨\n钢丝绳.床垫网 1530元／吨\n奕压器壳 2000元吨\n夹层铁皮防火铁皮 800-1300元／吨\n具体看货给价(化学桶、煤气瓶、氧气瓶、灭火器、千斤顶、避震等密封件，如发现当杂质扣除，做假重罚）\n询价、联系人:\n陈濂隐：13828196195\n覃光南：15119390987\n地址:揭阳榕城仙桥湖心村新路中段 （新顺废铁场）",
+      "category": {
+        "id": 2,
+        "name": "2"
+      },
+      "section": {
+        "id": 7,
+        "name": "7"
+      },
+      "products": [
+        {
+          "id": "03061402",
+          "name": "其它废料",
+          "source": "relationBreed"
+        },
+        {
+          "id": "钢筋头",
+          "name": "钢筋头",
+          "source": "breedTag"
+        },
+        {
+          "id": "中废",
+          "name": "中废",
+          "source": "breedTag"
+        },
+        {
+          "id": "再生金属",
+          "name": "再生金属",
+          "source": "breedTag"
+        }
+      ],
+      "regions": [
+        {
+          "id": "010201",
+          "name": "广东"
+        },
+        {
+          "id": "01020101",
+          "name": "广州"
+        },
+        {
+          "id": "01020110",
+          "name": "揭阳"
+        }
+      ],
+      "source_name": "我的钢铁网",
+      "source_url": "https://feigang.mysteel.com/a/26102512/D2E1AEF54A7B9C5F.html",
+      "in_article_url": "https://feigang.mysteel.com/a/26102512/D2E1AEF54A7B9C5F.html",
+      "out_article_url": null,
+      "in_article_title": "25日揭阳新顺废钢采购价格调整信息",
+      "out_article_title": null,
+      "source_link_status": "article_link",
+      "data_source": 1,
+      "publisher_id": 209768,
+      "relation_id": 46170189,
+      "ai_flag": 0,
+      "platform_product_line": null,
+      "mapping_status": "ambiguous",
+      "quality_flags": []
+    },
     {
       "news_id": "4938186",
       "published_at": "2026-10-25T03:43:04.883Z",
@@ -1860,12 +1927,12 @@
   ],
   "quality": {
     "raw_count": 100,
-    "accepted_count": 36,
-    "rejected_count": 64,
+    "accepted_count": 37,
+    "rejected_count": 63,
     "deduped_count": 0,
     "missing_source_link_count": 18,
     "missing_product_count": 13,
-    "malformed_content_count": 64,
+    "malformed_content_count": 63,
     "duplicate_group_count": 0,
     "warnings": [
       "API 报告总量超过本次分页采集量；快照仅覆盖目标日期窗口，需按分类/地区拆分请求补全。"
