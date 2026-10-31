@@ -6,10 +6,10 @@
     "dashboard_url": "https://www.mysteel.com/fastcomment/#/",
     "api_url": "https://openapi.mysteel.com/without_sign/newsflash/flashnews/query_by_tags.htm",
     "taxonomy_url": "https://a.mysteelcdn.com/common/publish/newsflash/newsflash_column.json",
-    "captured_at": "2026-10-31T05:27:34.232Z",
+    "captured_at": "2026-10-31T06:53:36.658Z",
     "coverage_start": "2026-10-31",
     "coverage_end": "2026-10-31",
-    "latest_published_at": "2026-10-31T04:13:54.290Z",
+    "latest_published_at": "2026-10-31T06:39:00.000Z",
     "timezone": "Asia/Shanghai",
     "fetch_mode": "api",
     "request_params": {
@@ -23,17 +23,17 @@
         ]
       ]
     },
-    "raw_sha256": "9257c81c47a5968acb1ba633134cba8025461802f889d6ebf57055a04fd73d5c",
+    "raw_sha256": "25e126374b69ef7eed4fc42657048e66e91a7ca1ef3059082ffe0fbf63759f02",
     "taxonomy_sha256": "c98f5bfdacde3401c98ea8f43bac3ca63d35b569f6aad3e1fff2f39b58a0dbf3",
     "response_sha256": [
-      "c42cf46911455e5bee5990424319e1fe6e555cbb3ed8f1c41d4b73fbe00743ea"
+      "20b96017950c3f6dee341e0f6ae287fbf8ae8e000bccfc8ca24a919efdc645b5"
     ],
     "page_count": 1,
     "reported_total": 10000,
     "truncation_detected": true,
     "watermark": {
-      "publisher_time_ms": 1793420034290,
-      "id": "4953465"
+      "publisher_time_ms": 1793428740000,
+      "id": "4953469"
     },
     "retry": {
       "attempts": 3,
@@ -43,6 +43,235 @@
     }
   },
   "items": [
+    {
+      "news_id": "4953469",
+      "published_at": "2026-10-31T06:39:00.000Z",
+      "published_at_ms": 1793428740000,
+      "timezone": "Asia/Shanghai",
+      "content_text": "卡塔尔与伊朗举行会谈，推动美伊达成协议",
+      "content_html": "卡塔尔与伊朗举行会谈，推动美伊达成协议",
+      "raw_content": "卡塔尔与伊朗举行会谈，推动美伊达成协议",
+      "category": {
+        "id": 1,
+        "name": "1"
+      },
+      "section": {
+        "id": 8,
+        "name": "8"
+      },
+      "products": [],
+      "regions": [],
+      "source_name": "财联社",
+      "source_url": "http://news.mysteel.com/a/26103114/003588618CB6EB24.html",
+      "in_article_url": "http://news.mysteel.com/a/26103114/003588618CB6EB24.html",
+      "out_article_url": null,
+      "in_article_title": "卡塔尔与伊朗举行会谈，推动美伊达成协议",
+      "out_article_title": null,
+      "source_link_status": "article_link",
+      "data_source": 1,
+      "publisher_id": 189285,
+      "relation_id": 46341237,
+      "ai_flag": 0,
+      "platform_product_line": null,
+      "mapping_status": "unmapped",
+      "quality_flags": []
+    },
+    {
+      "news_id": "4953468",
+      "published_at": "2026-10-31T06:13:08.764Z",
+      "published_at_ms": 1793427188764,
+      "timezone": "Asia/Shanghai",
+      "content_text": "10月31日宏兴废钢降10执行价格：模具钢2320钢板料2270-2320优重一2280优重二2260重A2240重B2200重C2160马蹄铁2220-2280矽钢片-2230钢筋切粒2260-2320花铁压块2250-2280钢筋压块2260大钢刨2120-2140小钢刨2050-2070普销一级1980-2000不含税。",
+      "content_html": "10月31日宏兴废钢降10执行价格：模具钢2320钢板料2270-2320优重一2280优重二2260重A2240重B2200重C2160马蹄铁2220-2280矽钢片-2230钢筋切粒2260-2320花铁压块2250-2280钢筋压块2260大钢刨2120-2140小钢刨2050-2070普销一级1980-2000不含税。",
+      "raw_content": "10月31日宏兴废钢降10执行价格：模具钢2320钢板料2270-2320优重一2280优重二2260重A2240重B2200重C2160马蹄铁2220-2280矽钢片-2230钢筋切粒2260-2320花铁压块2250-2280钢筋压块2260大钢刨2120-2140小钢刨2050-2070普销一级1980-2000不含税。",
+      "category": {
+        "id": 2,
+        "name": "2"
+      },
+      "section": {
+        "id": 9,
+        "name": "9"
+      },
+      "products": [
+        {
+          "id": "0306",
+          "name": "废钢",
+          "source": "relationBreed"
+        },
+        {
+          "id": "钢板料",
+          "name": "钢板料",
+          "source": "breedTag"
+        },
+        {
+          "id": "钢筋压块",
+          "name": "钢筋压块",
+          "source": "breedTag"
+        },
+        {
+          "id": "冲花料",
+          "name": "冲花料",
+          "source": "breedTag"
+        },
+        {
+          "id": "钢筋切粒",
+          "name": "钢筋切粒",
+          "source": "breedTag"
+        },
+        {
+          "id": "重废Ⅰ类",
+          "name": "重废Ⅰ类",
+          "source": "breedTag"
+        },
+        {
+          "id": "重废Ⅱ类",
+          "name": "重废Ⅱ类",
+          "source": "breedTag"
+        },
+        {
+          "id": "再生金属",
+          "name": "再生金属",
+          "source": "breedTag"
+        }
+      ],
+      "regions": [
+        {
+          "id": "01040303",
+          "name": "秦皇岛"
+        }
+      ],
+      "source_name": null,
+      "source_url": null,
+      "in_article_url": null,
+      "out_article_url": null,
+      "in_article_title": null,
+      "out_article_title": null,
+      "source_link_status": "no_link",
+      "data_source": 2,
+      "publisher_id": 215826,
+      "relation_id": 7711224,
+      "ai_flag": 0,
+      "platform_product_line": null,
+      "mapping_status": "ambiguous",
+      "quality_flags": [
+        "source_link_missing"
+      ]
+    },
+    {
+      "news_id": "4953467",
+      "published_at": "2026-10-31T06:12:07.346Z",
+      "published_at_ms": 1793427127346,
+      "timezone": "Asia/Shanghai",
+      "content_text": "10月31日安丰废钢降10最新参考价格：满价2350，10厚以上新板料(0.6-1.2m)2350、冲豆≥4mm以上、道轨、钢筋切粒2350，钢筋头2340，20mm以上重废2330，2-4小冲豆(无油无锈无氧化铁)2330滚剪钢筋头2330手撕钢筋头2310，大车弓子板2300，厚马蹄铁6-8mm2300，冷板小料2270，集装箱矽钢片2250不含税。",
+      "content_html": "10月31日安丰废钢降10最新参考价格：满价2350，10厚以上新板料(0.6-1.2m)2350、冲豆≥4mm以上、道轨、钢筋切粒2350，钢筋头2340，20mm以上重废2330，2-4小冲豆(无油无锈无氧化铁)2330滚剪钢筋头2330手撕钢筋头2310，大车弓子板2300，厚马蹄铁6-8mm2300，冷板小料2270，集装箱矽钢片2250不含税。",
+      "raw_content": "10月31日安丰废钢降10最新参考价格：满价2350，10厚以上新板料(0.6-1.2m)2350、冲豆≥4mm以上、道轨、钢筋切粒2350，钢筋头2340，20mm以上重废2330，2-4小冲豆(无油无锈无氧化铁)2330滚剪钢筋头2330手撕钢筋头2310，大车弓子板2300，厚马蹄铁6-8mm2300，冷板小料2270，集装箱矽钢片2250不含税。",
+      "category": {
+        "id": 2,
+        "name": "2"
+      },
+      "section": {
+        "id": 9,
+        "name": "9"
+      },
+      "products": [
+        {
+          "id": "0306",
+          "name": "废钢",
+          "source": "relationBreed"
+        },
+        {
+          "id": "钢筋头",
+          "name": "钢筋头",
+          "source": "breedTag"
+        },
+        {
+          "id": "冲花料",
+          "name": "冲花料",
+          "source": "breedTag"
+        },
+        {
+          "id": "冲子",
+          "name": "冲子",
+          "source": "breedTag"
+        },
+        {
+          "id": "钢筋切粒",
+          "name": "钢筋切粒",
+          "source": "breedTag"
+        },
+        {
+          "id": "再生金属",
+          "name": "再生金属",
+          "source": "breedTag"
+        }
+      ],
+      "regions": [
+        {
+          "id": "01040303",
+          "name": "秦皇岛"
+        }
+      ],
+      "source_name": null,
+      "source_url": null,
+      "in_article_url": null,
+      "out_article_url": null,
+      "in_article_title": null,
+      "out_article_title": null,
+      "source_link_status": "no_link",
+      "data_source": 2,
+      "publisher_id": 215826,
+      "relation_id": 7711223,
+      "ai_flag": 0,
+      "platform_product_line": null,
+      "mapping_status": "ambiguous",
+      "quality_flags": [
+        "source_link_missing"
+      ]
+    },
+    {
+      "news_id": "4953466",
+      "published_at": "2026-10-31T05:32:00.000Z",
+      "published_at_ms": 1793424720000,
+      "timezone": "Asia/Shanghai",
+      "content_text": "Mysteel：2026年华南焊管“金九银十”落空，旺季规律系统性打破。价格低位僵持，成交中枢下移，库存被动累积。受地产收缩及需求结构转变影响，行业步入供需再平衡新常态，从业者需适应无显著旺季的市场环境。",
+      "content_html": "Mysteel：2026年华南焊管“金九银十”落空，旺季规律系统性打破。价格低位僵持，成交中枢下移，库存被动累积。受地产收缩及需求结构转变影响，行业步入供需再平衡新常态，从业者需适应无显著旺季的市场环境。",
+      "raw_content": "Mysteel：2026年华南焊管“金九银十”落空，旺季规律系统性打破。价格低位僵持，成交中枢下移，库存被动累积。受地产收缩及需求结构转变影响，行业步入供需再平衡新常态，从业者需适应无显著旺季的市场环境。",
+      "category": {
+        "id": 2,
+        "name": "2"
+      },
+      "section": {
+        "id": 6,
+        "name": "6"
+      },
+      "products": [
+        {
+          "id": "010109",
+          "name": "钢管",
+          "source": "relationBreed"
+        },
+        {
+          "id": "焊管",
+          "name": "焊管",
+          "source": "breedTag"
+        }
+      ],
+      "regions": [],
+      "source_name": "我的钢铁网(Mysteel)",
+      "source_url": "http://gg.mysteel.com/a/26103113/7C8D2D08FC0F488E.html",
+      "in_article_url": "http://gg.mysteel.com/a/26103113/7C8D2D08FC0F488E.html",
+      "out_article_url": null,
+      "in_article_title": "Mysteel：华南焊管旺季叙事退场 供需再平衡即将开启",
+      "out_article_title": null,
+      "source_link_status": "article_link",
+      "data_source": 1,
+      "publisher_id": 228104,
+      "relation_id": 46341223,
+      "ai_flag": 0,
+      "platform_product_line": null,
+      "mapping_status": "ambiguous",
+      "quality_flags": []
+    },
     {
       "news_id": "4953465",
       "published_at": "2026-10-31T04:13:54.290Z",
@@ -1497,12 +1726,12 @@
   ],
   "quality": {
     "raw_count": 100,
-    "accepted_count": 29,
-    "rejected_count": 71,
+    "accepted_count": 33,
+    "rejected_count": 67,
     "deduped_count": 0,
-    "missing_source_link_count": 21,
-    "missing_product_count": 5,
-    "malformed_content_count": 71,
+    "missing_source_link_count": 23,
+    "missing_product_count": 6,
+    "malformed_content_count": 67,
     "duplicate_group_count": 0,
     "warnings": [
       "API 报告总量超过本次分页采集量；快照仅覆盖目标日期窗口，需按分类/地区拆分请求补全。"
