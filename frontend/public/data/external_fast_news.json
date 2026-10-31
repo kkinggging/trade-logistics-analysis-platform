@@ -6,10 +6,10 @@
     "dashboard_url": "https://www.mysteel.com/fastcomment/#/",
     "api_url": "https://openapi.mysteel.com/without_sign/newsflash/flashnews/query_by_tags.htm",
     "taxonomy_url": "https://a.mysteelcdn.com/common/publish/newsflash/newsflash_column.json",
-    "captured_at": "2026-10-31T06:53:36.658Z",
+    "captured_at": "2026-10-31T15:38:46.981Z",
     "coverage_start": "2026-10-31",
     "coverage_end": "2026-10-31",
-    "latest_published_at": "2026-10-31T06:39:00.000Z",
+    "latest_published_at": "2026-10-31T15:09:00.000Z",
     "timezone": "Asia/Shanghai",
     "fetch_mode": "api",
     "request_params": {
@@ -23,17 +23,17 @@
         ]
       ]
     },
-    "raw_sha256": "25e126374b69ef7eed4fc42657048e66e91a7ca1ef3059082ffe0fbf63759f02",
+    "raw_sha256": "996079cb5c0762154166e83186276c774e5bdfe1a69cd3d7cd8f47aa6c100377",
     "taxonomy_sha256": "c98f5bfdacde3401c98ea8f43bac3ca63d35b569f6aad3e1fff2f39b58a0dbf3",
     "response_sha256": [
-      "20b96017950c3f6dee341e0f6ae287fbf8ae8e000bccfc8ca24a919efdc645b5"
+      "b2300d1023d8886ece1f484a38622b5fd47dfd4dd4fadd74c66077a7a097eb05"
     ],
     "page_count": 1,
     "reported_total": 10000,
     "truncation_detected": true,
     "watermark": {
-      "publisher_time_ms": 1793428740000,
-      "id": "4953469"
+      "publisher_time_ms": 1793459340000,
+      "id": "4953496"
     },
     "retry": {
       "attempts": 3,
@@ -43,6 +43,1664 @@
     }
   },
   "items": [
+    {
+      "news_id": "4953496",
+      "published_at": "2026-10-31T15:09:00.000Z",
+      "published_at_ms": 1793459340000,
+      "timezone": "Asia/Shanghai",
+      "content_text": "Mysteel分析显示，2020-2025年无缝管产能增至4291万吨，表观消费量仅微增1.65万吨至2469.72万吨，产能利用率预计2026年降至69.07%。内需横盘下，出口依赖度升至20.33%，2025年出口628.28万吨。但面临中东市场集中风险及印度、韩国反倾销调查，出口均价下跌。行业呈现“能源强、地产弱”分化，未来竞争聚焦高端特种管材制造能力，需通过产品高端化和市场多元化应对供需错配。",
+      "content_html": "Mysteel分析显示，2020-2025年无缝管产能增至4291万吨，表观消费量仅微增1.65万吨至2469.72万吨，产能利用率预计2026年降至69.07%。内需横盘下，出口依赖度升至20.33%，2025年出口628.28万吨。但面临中东市场集中风险及印度、韩国反倾销调查，出口均价下跌。行业呈现“能源强、地产弱”分化，未来竞争聚焦高端特种管材制造能力，需通过产品高端化和市场多元化应对供需错配。",
+      "raw_content": "Mysteel分析显示，2020-2025年无缝管产能增至4291万吨，表观消费量仅微增1.65万吨至2469.72万吨，产能利用率预计2026年降至69.07%。内需横盘下，出口依赖度升至20.33%，2025年出口628.28万吨。但面临中东市场集中风险及印度、韩国反倾销调查，出口均价下跌。行业呈现“能源强、地产弱”分化，未来竞争聚焦高端特种管材制造能力，需通过产品高端化和市场多元化应对供需错配。",
+      "category": {
+        "id": 2,
+        "name": "2"
+      },
+      "section": {
+        "id": 6,
+        "name": "6"
+      },
+      "products": [
+        {
+          "id": "010109",
+          "name": "钢管",
+          "source": "relationBreed"
+        },
+        {
+          "id": "无缝管",
+          "name": "无缝管",
+          "source": "breedTag"
+        },
+        {
+          "id": "管材",
+          "name": "管材",
+          "source": "breedTag"
+        }
+      ],
+      "regions": [],
+      "source_name": "我的钢铁网(Mysteel)",
+      "source_url": "http://gg.mysteel.com/a/26103123/9F58C8CDFC376A55.html",
+      "in_article_url": "http://gg.mysteel.com/a/26103123/9F58C8CDFC376A55.html",
+      "out_article_url": null,
+      "in_article_title": "Mysteel：无缝管行业供需错配下的结构性分析",
+      "out_article_title": null,
+      "source_link_status": "article_link",
+      "data_source": 1,
+      "publisher_id": 228184,
+      "relation_id": 46341296,
+      "ai_flag": 0,
+      "platform_product_line": null,
+      "mapping_status": "ambiguous",
+      "quality_flags": []
+    },
+    {
+      "news_id": "4953495",
+      "published_at": "2026-10-31T12:30:17.860Z",
+      "published_at_ms": 1793449817860,
+      "timezone": "Asia/Shanghai",
+      "content_text": "10月31日张宣科技废钢最新挂牌价价格：重型2236-2256，中型2196，小型2119，轻料1808，不含税。",
+      "content_html": "10月31日张宣科技废钢最新挂牌价价格：重型2236-2256，中型2196，小型2119，轻料1808，不含税。",
+      "raw_content": "10月31日张宣科技废钢最新挂牌价价格：重型2236-2256，中型2196，小型2119，轻料1808，不含税。",
+      "category": {
+        "id": 2,
+        "name": "2"
+      },
+      "section": {
+        "id": 9,
+        "name": "9"
+      },
+      "products": [
+        {
+          "id": "0306",
+          "name": "废钢",
+          "source": "relationBreed"
+        },
+        {
+          "id": "再生金属",
+          "name": "再生金属",
+          "source": "breedTag"
+        }
+      ],
+      "regions": [
+        {
+          "id": "01040307",
+          "name": "张家口"
+        }
+      ],
+      "source_name": null,
+      "source_url": null,
+      "in_article_url": null,
+      "out_article_url": null,
+      "in_article_title": null,
+      "out_article_title": null,
+      "source_link_status": "no_link",
+      "data_source": 2,
+      "publisher_id": 215826,
+      "relation_id": 7711244,
+      "ai_flag": 0,
+      "platform_product_line": null,
+      "mapping_status": "ambiguous",
+      "quality_flags": [
+        "source_link_missing"
+      ]
+    },
+    {
+      "news_id": "4953494",
+      "published_at": "2026-10-31T12:23:00.000Z",
+      "published_at_ms": 1793449380000,
+      "timezone": "Asia/Shanghai",
+      "content_text": "据百年建筑调研，截至10月27日，样本建筑工地资金到位率为56.3%，周环比上升0.09个百分点。",
+      "content_html": "据百年建筑调研，截至10月27日，样本建筑工地资金到位率为56.3%，周环比上升0.09个百分点。",
+      "raw_content": "据百年建筑调研，截至10月27日，样本建筑工地资金到位率为56.3%，周环比上升0.09个百分点。",
+      "category": {
+        "id": 6,
+        "name": "6"
+      },
+      "section": {
+        "id": 4,
+        "name": "4"
+      },
+      "products": [
+        {
+          "id": "1001",
+          "name": "水泥",
+          "source": "relationBreed"
+        },
+        {
+          "id": "1002",
+          "name": "混凝土",
+          "source": "relationBreed"
+        },
+        {
+          "id": "1006",
+          "name": "砂石",
+          "source": "relationBreed"
+        },
+        {
+          "id": "12",
+          "name": "木材",
+          "source": "relationBreed"
+        },
+        {
+          "id": "建筑材料",
+          "name": "建筑材料",
+          "source": "breedTag"
+        }
+      ],
+      "regions": [
+        {
+          "id": "01",
+          "name": "国内"
+        },
+        {
+          "id": "0101",
+          "name": "华东"
+        },
+        {
+          "id": "0102",
+          "name": "华南"
+        },
+        {
+          "id": "0103",
+          "name": "华中"
+        },
+        {
+          "id": "0104",
+          "name": "华北"
+        },
+        {
+          "id": "0105",
+          "name": "东北"
+        },
+        {
+          "id": "0106",
+          "name": "西南"
+        },
+        {
+          "id": "0107",
+          "name": "西北"
+        }
+      ],
+      "source_name": "百年建筑网",
+      "source_url": "http://www.100njz.com/a/26103120/25F9BC37061F8CCE.html",
+      "in_article_url": "http://www.100njz.com/a/26103120/25F9BC37061F8CCE.html",
+      "out_article_url": null,
+      "in_article_title": "百年建筑数据：国内样本建筑工地资金到位率（20261027）",
+      "out_article_title": null,
+      "source_link_status": "article_link",
+      "data_source": 1,
+      "publisher_id": 221065,
+      "relation_id": 46341286,
+      "ai_flag": 0,
+      "platform_product_line": null,
+      "mapping_status": "ambiguous",
+      "quality_flags": []
+    },
+    {
+      "news_id": "4953493",
+      "published_at": "2026-10-31T12:22:00.000Z",
+      "published_at_ms": 1793449320000,
+      "timezone": "Asia/Shanghai",
+      "content_text": "据百年建筑调研，截至10月20日，样本建筑工地资金到位率为56.21%，周环比-0.09%。",
+      "content_html": "据百年建筑调研，截至10月20日，样本建筑工地资金到位率为56.21%，周环比-0.09%。",
+      "raw_content": "据百年建筑调研，截至10月20日，样本建筑工地资金到位率为56.21%，周环比-0.09%。",
+      "category": {
+        "id": 6,
+        "name": "6"
+      },
+      "section": {
+        "id": 4,
+        "name": "4"
+      },
+      "products": [
+        {
+          "id": "1001",
+          "name": "水泥",
+          "source": "relationBreed"
+        },
+        {
+          "id": "1002",
+          "name": "混凝土",
+          "source": "relationBreed"
+        },
+        {
+          "id": "1006",
+          "name": "砂石",
+          "source": "relationBreed"
+        },
+        {
+          "id": "12",
+          "name": "木材",
+          "source": "relationBreed"
+        },
+        {
+          "id": "建筑材料",
+          "name": "建筑材料",
+          "source": "breedTag"
+        }
+      ],
+      "regions": [
+        {
+          "id": "01",
+          "name": "国内"
+        },
+        {
+          "id": "0101",
+          "name": "华东"
+        },
+        {
+          "id": "0102",
+          "name": "华南"
+        },
+        {
+          "id": "0103",
+          "name": "华中"
+        },
+        {
+          "id": "0104",
+          "name": "华北"
+        },
+        {
+          "id": "0105",
+          "name": "东北"
+        },
+        {
+          "id": "0106",
+          "name": "西南"
+        },
+        {
+          "id": "0107",
+          "name": "西北"
+        }
+      ],
+      "source_name": "百年建筑网",
+      "source_url": "http://www.100njz.com/a/26103120/53411CBB7D5973BD.html",
+      "in_article_url": "http://www.100njz.com/a/26103120/53411CBB7D5973BD.html",
+      "out_article_url": null,
+      "in_article_title": "百年建筑数据：国内样本建筑工地资金到位率（20261020）",
+      "out_article_title": null,
+      "source_link_status": "article_link",
+      "data_source": 1,
+      "publisher_id": 221065,
+      "relation_id": 46341285,
+      "ai_flag": 0,
+      "platform_product_line": null,
+      "mapping_status": "ambiguous",
+      "quality_flags": []
+    },
+    {
+      "news_id": "4953492",
+      "published_at": "2026-10-31T12:12:00.000Z",
+      "published_at_ms": 1793448720000,
+      "timezone": "Asia/Shanghai",
+      "content_text": "2026年10月原木市场北强南弱，期货主力换月回调。新西兰发运增18.5%，国内库存去化但需求淡季特征明显。成本支撑边际弱化，外盘高位但海运预期降价。展望11月，市场预计区间震荡，关注库存去化支撑与到港压力风险。",
+      "content_html": "2026年10月原木市场北强南弱，期货主力换月回调。新西兰发运增18.5%，国内库存去化但需求淡季特征明显。成本支撑边际弱化，外盘高位但海运预期降价。展望11月，市场预计区间震荡，关注库存去化支撑与到港压力风险。",
+      "raw_content": "2026年10月原木市场北强南弱，期货主力换月回调。新西兰发运增18.5%，国内库存去化但需求淡季特征明显。成本支撑边际弱化，外盘高位但海运预期降价。展望11月，市场预计区间震荡，关注库存去化支撑与到港压力风险。",
+      "category": {
+        "id": 6,
+        "name": "6"
+      },
+      "section": {
+        "id": 6,
+        "name": "6"
+      },
+      "products": [
+        {
+          "id": "1201",
+          "name": "原木",
+          "source": "relationBreed"
+        },
+        {
+          "id": "1202",
+          "name": "木方",
+          "source": "relationBreed"
+        },
+        {
+          "id": "1203",
+          "name": "木模板",
+          "source": "relationBreed"
+        }
+      ],
+      "regions": [
+        {
+          "id": "01",
+          "name": "国内"
+        },
+        {
+          "id": "0101",
+          "name": "华东"
+        },
+        {
+          "id": "0102",
+          "name": "华南"
+        },
+        {
+          "id": "0103",
+          "name": "华中"
+        },
+        {
+          "id": "0104",
+          "name": "华北"
+        },
+        {
+          "id": "0105",
+          "name": "东北"
+        },
+        {
+          "id": "0106",
+          "name": "西南"
+        },
+        {
+          "id": "0107",
+          "name": "西北"
+        }
+      ],
+      "source_name": "木联数据",
+      "source_url": "http://wood.100njz.com/a/26103120/D87FB5EE202D4720.html",
+      "in_article_url": "http://wood.100njz.com/a/26103120/D87FB5EE202D4720.html",
+      "out_article_url": null,
+      "in_article_title": "木联月报：2026年10月原木市场呈现北强南弱运行，成本支撑边际弱化",
+      "out_article_title": null,
+      "source_link_status": "article_link",
+      "data_source": 1,
+      "publisher_id": 221065,
+      "relation_id": 46341283,
+      "ai_flag": 0,
+      "platform_product_line": null,
+      "mapping_status": "ambiguous",
+      "quality_flags": []
+    },
+    {
+      "news_id": "4953491",
+      "published_at": "2026-10-31T12:09:58.074Z",
+      "published_at_ms": 1793448598074,
+      "timezone": "Asia/Shanghai",
+      "content_text": "11月1日新疆闽新钢铁废钢所有料型下调30元/吨。",
+      "content_html": "11月1日新疆闽新钢铁废钢所有料型下调30元/吨。",
+      "raw_content": "11月1日新疆闽新钢铁废钢所有料型下调30元/吨。",
+      "category": {
+        "id": 2,
+        "name": "2"
+      },
+      "section": {
+        "id": 9,
+        "name": "9"
+      },
+      "products": [
+        {
+          "id": "0306",
+          "name": "废钢",
+          "source": "relationBreed"
+        },
+        {
+          "id": "再生金属",
+          "name": "再生金属",
+          "source": "breedTag"
+        }
+      ],
+      "regions": [
+        {
+          "id": "01070505",
+          "name": "昌吉"
+        }
+      ],
+      "source_name": null,
+      "source_url": null,
+      "in_article_url": null,
+      "out_article_url": null,
+      "in_article_title": null,
+      "out_article_title": null,
+      "source_link_status": "no_link",
+      "data_source": 2,
+      "publisher_id": 218949,
+      "relation_id": 7711243,
+      "ai_flag": 0,
+      "platform_product_line": null,
+      "mapping_status": "ambiguous",
+      "quality_flags": [
+        "source_link_missing"
+      ]
+    },
+    {
+      "news_id": "4953490",
+      "published_at": "2026-10-31T12:03:00.000Z",
+      "published_at_ms": 1793448180000,
+      "timezone": "Asia/Shanghai",
+      "content_text": "2026年10月31日，一线城市商品房周度成交面积为639,008.88平方米，周环比增加2.82%，同比减少1.55%。",
+      "content_html": "2026年10月31日，一线城市商品房周度成交面积为639,008.88平方米，周环比增加2.82%，同比减少1.55%。",
+      "raw_content": "2026年10月31日，一线城市商品房周度成交面积为639,008.88平方米，周环比增加2.82%，同比减少1.55%。",
+      "category": {
+        "id": 6,
+        "name": "6"
+      },
+      "section": {
+        "id": 8,
+        "name": "8"
+      },
+      "products": [
+        {
+          "id": "1001",
+          "name": "水泥",
+          "source": "relationBreed"
+        },
+        {
+          "id": "1002",
+          "name": "混凝土",
+          "source": "relationBreed"
+        },
+        {
+          "id": "1006",
+          "name": "砂石",
+          "source": "relationBreed"
+        },
+        {
+          "id": "12",
+          "name": "木材",
+          "source": "relationBreed"
+        },
+        {
+          "id": "建筑材料",
+          "name": "建筑材料",
+          "source": "breedTag"
+        }
+      ],
+      "regions": [
+        {
+          "id": "01",
+          "name": "国内"
+        },
+        {
+          "id": "0101",
+          "name": "华东"
+        },
+        {
+          "id": "0102",
+          "name": "华南"
+        },
+        {
+          "id": "0103",
+          "name": "华中"
+        },
+        {
+          "id": "0104",
+          "name": "华北"
+        },
+        {
+          "id": "0105",
+          "name": "东北"
+        },
+        {
+          "id": "0106",
+          "name": "西南"
+        },
+        {
+          "id": "0107",
+          "name": "西北"
+        }
+      ],
+      "source_name": "百年建筑网",
+      "source_url": "http://www.100njz.com/a/26103120/61AD3636F72C7E2A.html",
+      "in_article_url": "http://www.100njz.com/a/26103120/61AD3636F72C7E2A.html",
+      "out_article_url": null,
+      "in_article_title": "房地产成交日报：一线城市新房同比降1.5%，上海二手房降14%（20261031）",
+      "out_article_title": null,
+      "source_link_status": "article_link",
+      "data_source": 1,
+      "publisher_id": 221065,
+      "relation_id": 46341281,
+      "ai_flag": 0,
+      "platform_product_line": null,
+      "mapping_status": "ambiguous",
+      "quality_flags": []
+    },
+    {
+      "news_id": "4953489",
+      "published_at": "2026-10-31T12:00:00.000Z",
+      "published_at_ms": 1793448000000,
+      "timezone": "Asia/Shanghai",
+      "content_text": "当前焊管利润为负值一方面说明管厂已无进一步降价空间，另一方面也意味着一旦带钢继续下移，管厂将继续被迫在“亏损加深”与“销量减少”之间做选择。带钢开工率下降与库存去化提供了一定短期支撑，焦炭月末进入“不涨不降”的僵持阶段，成本端大幅下移的空间暂时收窄，但需求季节性走弱仍是市场主导因素，在此格局下，管厂控产实为上上之策。总体而言，焊管利润归零并非底部信号，而是带钢仍在下跌的佐证。",
+      "content_html": "当前焊管利润为负值一方面说明管厂已无进一步降价空间，另一方面也意味着一旦带钢继续下移，管厂将继续被迫在“亏损加深”与“销量减少”之间做选择。带钢开工率下降与库存去化提供了一定短期支撑，焦炭月末进入“不涨不降”的僵持阶段，成本端大幅下移的空间暂时收窄，但需求季节性走弱仍是市场主导因素，在此格局下，管厂控产实为上上之策。总体而言，焊管利润归零并非底部信号，而是带钢仍在下跌的佐证。",
+      "raw_content": "当前焊管利润为负值一方面说明管厂已无进一步降价空间，另一方面也意味着一旦带钢继续下移，管厂将继续被迫在“亏损加深”与“销量减少”之间做选择。带钢开工率下降与库存去化提供了一定短期支撑，焦炭月末进入“不涨不降”的僵持阶段，成本端大幅下移的空间暂时收窄，但需求季节性走弱仍是市场主导因素，在此格局下，管厂控产实为上上之策。总体而言，焊管利润归零并非底部信号，而是带钢仍在下跌的佐证。",
+      "category": {
+        "id": 2,
+        "name": "2"
+      },
+      "section": {
+        "id": 6,
+        "name": "6"
+      },
+      "products": [
+        {
+          "id": "01010901",
+          "name": "无缝管",
+          "source": "relationBreed"
+        },
+        {
+          "id": "01010902",
+          "name": "螺旋管",
+          "source": "relationBreed"
+        },
+        {
+          "id": "01010903",
+          "name": "焊管",
+          "source": "relationBreed"
+        },
+        {
+          "id": "01010904",
+          "name": "方矩管",
+          "source": "relationBreed"
+        },
+        {
+          "id": "01010905",
+          "name": "镀锌管",
+          "source": "relationBreed"
+        },
+        {
+          "id": "焦炭",
+          "name": "焦炭",
+          "source": "breedTag"
+        },
+        {
+          "id": "带钢",
+          "name": "带钢",
+          "source": "breedTag"
+        }
+      ],
+      "regions": [
+        {
+          "id": "01",
+          "name": "国内"
+        },
+        {
+          "id": "0103",
+          "name": "华中"
+        },
+        {
+          "id": "010301",
+          "name": "河南"
+        }
+      ],
+      "source_name": "我的钢铁网(Mysteel)",
+      "source_url": "http://gg.mysteel.com/a/26103119/D7676A4737A5A62C.html",
+      "in_article_url": "http://gg.mysteel.com/a/26103119/D7676A4737A5A62C.html",
+      "out_article_url": null,
+      "in_article_title": "Mysteel：焊管利润为负与带钢成本下移背景下的管带利润分配格局",
+      "out_article_title": null,
+      "source_link_status": "article_link",
+      "data_source": 1,
+      "publisher_id": 226226,
+      "relation_id": 46341275,
+      "ai_flag": 0,
+      "platform_product_line": null,
+      "mapping_status": "ambiguous",
+      "quality_flags": []
+    },
+    {
+      "news_id": "4953488",
+      "published_at": "2026-10-31T11:53:00.000Z",
+      "published_at_ms": 1793447580000,
+      "timezone": "Asia/Shanghai",
+      "content_text": "Mysteel：10月焊管“银十”预期落空，呈窄幅震荡、重心下移格局。受成本下行、需求乏力及库存高企影响，市场看空情绪浓。虽管厂加大减产，但旺季效应减弱，下游按需采购，短期市场仍承压运行。",
+      "content_html": "Mysteel：10月焊管“银十”预期落空，呈窄幅震荡、重心下移格局。受成本下行、需求乏力及库存高企影响，市场看空情绪浓。虽管厂加大减产，但旺季效应减弱，下游按需采购，短期市场仍承压运行。",
+      "raw_content": "Mysteel：10月焊管“银十”预期落空，呈窄幅震荡、重心下移格局。受成本下行、需求乏力及库存高企影响，市场看空情绪浓。虽管厂加大减产，但旺季效应减弱，下游按需采购，短期市场仍承压运行。",
+      "category": {
+        "id": 2,
+        "name": "2"
+      },
+      "section": {
+        "id": 6,
+        "name": "6"
+      },
+      "products": [
+        {
+          "id": "010109",
+          "name": "钢管",
+          "source": "relationBreed"
+        },
+        {
+          "id": "焊管",
+          "name": "焊管",
+          "source": "breedTag"
+        }
+      ],
+      "regions": [],
+      "source_name": "我的钢铁网(Mysteel)",
+      "source_url": "http://gg.mysteel.com/a/26103119/C5271D82C0BACD18.html",
+      "in_article_url": "http://gg.mysteel.com/a/26103119/C5271D82C0BACD18.html",
+      "out_article_url": null,
+      "in_article_title": "Mysteel：“银十”预期落空  焊管市场承压运行",
+      "out_article_title": null,
+      "source_link_status": "article_link",
+      "data_source": 1,
+      "publisher_id": 196767,
+      "relation_id": 46341278,
+      "ai_flag": 0,
+      "platform_product_line": null,
+      "mapping_status": "ambiguous",
+      "quality_flags": []
+    },
+    {
+      "news_id": "4953487",
+      "published_at": "2026-10-31T11:38:23.816Z",
+      "published_at_ms": 1793446703816,
+      "timezone": "Asia/Shanghai",
+      "content_text": "钢厂快讯:方大达钢计划于11月2日-3日对2#高炉控产检修2天。",
+      "content_html": "<p>钢厂快讯:方大达钢计划于11月2日-3日对2#高炉控产检修2天。</p>",
+      "raw_content": "<p>钢厂快讯:方大达钢计划于11月2日-3日对2#高炉控产检修2天。</p>",
+      "category": {
+        "id": 2,
+        "name": "2"
+      },
+      "section": {
+        "id": 4,
+        "name": "4"
+      },
+      "products": [
+        {
+          "id": "010101",
+          "name": "建筑钢材",
+          "source": "relationBreed"
+        },
+        {
+          "id": "01010101",
+          "name": "螺纹钢",
+          "source": "relationBreed"
+        },
+        {
+          "id": "01010102",
+          "name": "线材",
+          "source": "relationBreed"
+        },
+        {
+          "id": "01010103",
+          "name": "盘螺",
+          "source": "relationBreed"
+        }
+      ],
+      "regions": [],
+      "source_name": null,
+      "source_url": null,
+      "in_article_url": null,
+      "out_article_url": null,
+      "in_article_title": null,
+      "out_article_title": null,
+      "source_link_status": "no_link",
+      "data_source": 0,
+      "publisher_id": 198623,
+      "relation_id": 0,
+      "ai_flag": 0,
+      "platform_product_line": null,
+      "mapping_status": "ambiguous",
+      "quality_flags": [
+        "source_link_missing"
+      ]
+    },
+    {
+      "news_id": "4953486",
+      "published_at": "2026-10-31T11:37:44.814Z",
+      "published_at_ms": 1793446664814,
+      "timezone": "Asia/Shanghai",
+      "content_text": "11月1日河南闽源钢铁废钢采购价跌20：特级料2240，钢筋切头、冲豆2240，重型废钢2120-2220，精料废钢2070，统料废钢1970-2020，工厂压块2120，矽钢片2120，破碎料2090-2120，不含税。",
+      "content_html": "11月1日河南闽源钢铁废钢采购价跌20：特级料2240，钢筋切头、冲豆2240，重型废钢2120-2220，精料废钢2070，统料废钢1970-2020，工厂压块2120，矽钢片2120，破碎料2090-2120，不含税。",
+      "raw_content": "11月1日河南闽源钢铁废钢采购价跌20：特级料2240，钢筋切头、冲豆2240，重型废钢2120-2220，精料废钢2070，统料废钢1970-2020，工厂压块2120，矽钢片2120，破碎料2090-2120，不含税。",
+      "category": {
+        "id": 2,
+        "name": "2"
+      },
+      "section": {
+        "id": 9,
+        "name": "9"
+      },
+      "products": [
+        {
+          "id": "0306",
+          "name": "废钢",
+          "source": "relationBreed"
+        },
+        {
+          "id": "冲花料",
+          "name": "冲花料",
+          "source": "breedTag"
+        },
+        {
+          "id": "冲子",
+          "name": "冲子",
+          "source": "breedTag"
+        },
+        {
+          "id": "钢筋切粒",
+          "name": "钢筋切粒",
+          "source": "breedTag"
+        },
+        {
+          "id": "破碎料",
+          "name": "破碎料",
+          "source": "breedTag"
+        },
+        {
+          "id": "再生金属",
+          "name": "再生金属",
+          "source": "breedTag"
+        }
+      ],
+      "regions": [
+        {
+          "id": "01030111",
+          "name": "商丘"
+        }
+      ],
+      "source_name": null,
+      "source_url": null,
+      "in_article_url": null,
+      "out_article_url": null,
+      "in_article_title": null,
+      "out_article_title": null,
+      "source_link_status": "no_link",
+      "data_source": 2,
+      "publisher_id": 220520,
+      "relation_id": 7711242,
+      "ai_flag": 0,
+      "platform_product_line": null,
+      "mapping_status": "ambiguous",
+      "quality_flags": [
+        "source_link_missing"
+      ]
+    },
+    {
+      "news_id": "4953485",
+      "published_at": "2026-10-31T11:31:10.490Z",
+      "published_at_ms": 1793446270490,
+      "timezone": "Asia/Shanghai",
+      "content_text": "11月1日湖北嘉鱼顺乐废钢含税价跌10-20，冲子、冲片2467,机生铁2413镀锌冲子/冲片2413,重废二2445，中废2380,中剪2347，含税13%。",
+      "content_html": "11月1日湖北嘉鱼顺乐废钢含税价跌10-20，冲子、冲片2467,机生铁2413镀锌冲子/冲片2413,重废二2445，中废2380,中剪2347，含税13%。",
+      "raw_content": "11月1日湖北嘉鱼顺乐废钢含税价跌10-20，冲子、冲片2467,机生铁2413镀锌冲子/冲片2413,重废二2445，中废2380,中剪2347，含税13%。",
+      "category": {
+        "id": 2,
+        "name": "2"
+      },
+      "section": {
+        "id": 9,
+        "name": "9"
+      },
+      "products": [
+        {
+          "id": "0306",
+          "name": "废钢",
+          "source": "relationBreed"
+        },
+        {
+          "id": "中废",
+          "name": "中废",
+          "source": "breedTag"
+        },
+        {
+          "id": "冲子",
+          "name": "冲子",
+          "source": "breedTag"
+        },
+        {
+          "id": "再生金属",
+          "name": "再生金属",
+          "source": "breedTag"
+        }
+      ],
+      "regions": [
+        {
+          "id": "01030216",
+          "name": "咸宁"
+        }
+      ],
+      "source_name": null,
+      "source_url": null,
+      "in_article_url": null,
+      "out_article_url": null,
+      "in_article_title": null,
+      "out_article_title": null,
+      "source_link_status": "no_link",
+      "data_source": 2,
+      "publisher_id": 221694,
+      "relation_id": 7711240,
+      "ai_flag": 0,
+      "platform_product_line": null,
+      "mapping_status": "ambiguous",
+      "quality_flags": [
+        "source_link_missing"
+      ]
+    },
+    {
+      "news_id": "4953484",
+      "published_at": "2026-10-31T11:30:14.984Z",
+      "published_at_ms": 1793446214984,
+      "timezone": "Asia/Shanghai",
+      "content_text": "11月1日湖北广水华鑫废钢跌20：边角料2240，优重2240，重废2190，新矽钢片2130，生铁2130，中废2130，中剪料2060，剪料1980，不含税。",
+      "content_html": "11月1日湖北广水华鑫废钢跌20：边角料2240，优重2240，重废2190，新矽钢片2130，生铁2130，中废2130，中剪料2060，剪料1980，不含税。",
+      "raw_content": "11月1日湖北广水华鑫废钢跌20：边角料2240，优重2240，重废2190，新矽钢片2130，生铁2130，中废2130，中剪料2060，剪料1980，不含税。",
+      "category": {
+        "id": 2,
+        "name": "2"
+      },
+      "section": {
+        "id": 9,
+        "name": "9"
+      },
+      "products": [
+        {
+          "id": "0306",
+          "name": "废钢",
+          "source": "relationBreed"
+        },
+        {
+          "id": "冲花料",
+          "name": "冲花料",
+          "source": "breedTag"
+        },
+        {
+          "id": "边角料",
+          "name": "边角料",
+          "source": "breedTag"
+        },
+        {
+          "id": "再生金属",
+          "name": "再生金属",
+          "source": "breedTag"
+        }
+      ],
+      "regions": [
+        {
+          "id": "0103021701",
+          "name": "广水"
+        }
+      ],
+      "source_name": null,
+      "source_url": null,
+      "in_article_url": null,
+      "out_article_url": null,
+      "in_article_title": null,
+      "out_article_title": null,
+      "source_link_status": "no_link",
+      "data_source": 2,
+      "publisher_id": 221694,
+      "relation_id": 7711239,
+      "ai_flag": 0,
+      "platform_product_line": null,
+      "mapping_status": "ambiguous",
+      "quality_flags": [
+        "source_link_missing"
+      ]
+    },
+    {
+      "news_id": "4953483",
+      "published_at": "2026-10-31T09:53:51.536Z",
+      "published_at_ms": 1793440431536,
+      "timezone": "Asia/Shanghai",
+      "content_text": "11月1日湖北嘉鱼顺乐跌10~20，具体详见价格表。",
+      "content_html": "11月1日湖北嘉鱼顺乐跌10~20，具体详见价格表。",
+      "raw_content": "11月1日湖北嘉鱼顺乐跌10~20，具体详见价格表。",
+      "category": {
+        "id": 2,
+        "name": "2"
+      },
+      "section": {
+        "id": 9,
+        "name": "9"
+      },
+      "products": [
+        {
+          "id": "0306",
+          "name": "废钢",
+          "source": "relationBreed"
+        }
+      ],
+      "regions": [
+        {
+          "id": "01030216",
+          "name": "咸宁"
+        }
+      ],
+      "source_name": null,
+      "source_url": null,
+      "in_article_url": null,
+      "out_article_url": null,
+      "in_article_title": null,
+      "out_article_title": null,
+      "source_link_status": "no_link",
+      "data_source": 2,
+      "publisher_id": 221694,
+      "relation_id": 7711238,
+      "ai_flag": 0,
+      "platform_product_line": null,
+      "mapping_status": "ambiguous",
+      "quality_flags": [
+        "source_link_missing"
+      ]
+    },
+    {
+      "news_id": "4953482",
+      "published_at": "2026-10-31T09:53:31.388Z",
+      "published_at_ms": 1793440411388,
+      "timezone": "Asia/Shanghai",
+      "content_text": "11月1日湖北嘉鱼金盛兰废钢跌20，具体详见价格表。",
+      "content_html": "11月1日湖北嘉鱼金盛兰废钢跌20，具体详见价格表。",
+      "raw_content": "11月1日湖北嘉鱼金盛兰废钢跌20，具体详见价格表。",
+      "category": {
+        "id": 2,
+        "name": "2"
+      },
+      "section": {
+        "id": 9,
+        "name": "9"
+      },
+      "products": [
+        {
+          "id": "0306",
+          "name": "废钢",
+          "source": "relationBreed"
+        },
+        {
+          "id": "再生金属",
+          "name": "再生金属",
+          "source": "breedTag"
+        }
+      ],
+      "regions": [
+        {
+          "id": "01030216",
+          "name": "咸宁"
+        }
+      ],
+      "source_name": null,
+      "source_url": null,
+      "in_article_url": null,
+      "out_article_url": null,
+      "in_article_title": null,
+      "out_article_title": null,
+      "source_link_status": "no_link",
+      "data_source": 2,
+      "publisher_id": 221694,
+      "relation_id": 7711237,
+      "ai_flag": 0,
+      "platform_product_line": null,
+      "mapping_status": "ambiguous",
+      "quality_flags": [
+        "source_link_missing"
+      ]
+    },
+    {
+      "news_id": "4953481",
+      "published_at": "2026-10-31T09:51:38.345Z",
+      "published_at_ms": 1793440298345,
+      "timezone": "Asia/Shanghai",
+      "content_text": "10月31日桂林平钢废钢价跌10，最新执行价重废（6个厚）2150，优重（8个厚）2170，具体以实际到厂为准。",
+      "content_html": "10月31日桂林平钢废钢价跌10，最新执行价重废（6个厚）2150，优重（8个厚）2170，具体以实际到厂为准。",
+      "raw_content": "10月31日桂林平钢废钢价跌10，最新执行价重废（6个厚）2150，优重（8个厚）2170，具体以实际到厂为准。",
+      "category": {
+        "id": 2,
+        "name": "2"
+      },
+      "section": {
+        "id": 7,
+        "name": "7"
+      },
+      "products": [
+        {
+          "id": "030604",
+          "name": "普碳废钢",
+          "source": "relationBreed"
+        },
+        {
+          "id": "重废",
+          "name": "重废",
+          "source": "breedTag"
+        },
+        {
+          "id": "再生金属",
+          "name": "再生金属",
+          "source": "breedTag"
+        }
+      ],
+      "regions": [
+        {
+          "id": "01020207",
+          "name": "桂林"
+        }
+      ],
+      "source_name": null,
+      "source_url": null,
+      "in_article_url": null,
+      "out_article_url": null,
+      "in_article_title": null,
+      "out_article_title": null,
+      "source_link_status": "no_link",
+      "data_source": 2,
+      "publisher_id": 209768,
+      "relation_id": 7711236,
+      "ai_flag": 0,
+      "platform_product_line": null,
+      "mapping_status": "ambiguous",
+      "quality_flags": [
+        "source_link_missing"
+      ]
+    },
+    {
+      "news_id": "4953480",
+      "published_at": "2026-10-31T09:29:44.684Z",
+      "published_at_ms": 1793438984684,
+      "timezone": "Asia/Shanghai",
+      "content_text": "10月31日蒙古国煤炭短盘运费价格指数报82.0元/吨，较上一通关日持平，10月份均价82.0元/吨。",
+      "content_html": "10月31日蒙古国煤炭短盘运费价格指数报82.0元/吨，较上一通关日持平，10月份均价82.0元/吨。",
+      "raw_content": "10月31日蒙古国煤炭短盘运费价格指数报82.0元/吨，较上一通关日持平，10月份均价82.0元/吨。",
+      "category": {
+        "id": 12,
+        "name": "12"
+      },
+      "section": {
+        "id": 7,
+        "name": "7"
+      },
+      "products": [
+        {
+          "id": "0502",
+          "name": "煤炭",
+          "source": "relationBreed"
+        }
+      ],
+      "regions": [
+        {
+          "id": "02",
+          "name": "国外"
+        }
+      ],
+      "source_name": null,
+      "source_url": null,
+      "in_article_url": null,
+      "out_article_url": null,
+      "in_article_title": null,
+      "out_article_title": null,
+      "source_link_status": "no_link",
+      "data_source": 2,
+      "publisher_id": 221633,
+      "relation_id": 7711235,
+      "ai_flag": 0,
+      "platform_product_line": null,
+      "mapping_status": "ambiguous",
+      "quality_flags": [
+        "source_link_missing"
+      ]
+    },
+    {
+      "news_id": "4953479",
+      "published_at": "2026-10-31T09:28:04.738Z",
+      "published_at_ms": 1793438884738,
+      "timezone": "Asia/Shanghai",
+      "content_text": "11月1日徐州金虹钢铁00：00时起（具体以车辆过磅时间为准），所有料型统一下调10元。",
+      "content_html": "11月1日徐州金虹钢铁00：00时起（具体以车辆过磅时间为准），所有料型统一下调10元。",
+      "raw_content": "11月1日徐州金虹钢铁00：00时起（具体以车辆过磅时间为准），所有料型统一下调10元。",
+      "category": {
+        "id": 2,
+        "name": "2"
+      },
+      "section": {
+        "id": 9,
+        "name": "9"
+      },
+      "products": [
+        {
+          "id": "0306",
+          "name": "废钢",
+          "source": "relationBreed"
+        }
+      ],
+      "regions": [
+        {
+          "id": "01010303",
+          "name": "徐州"
+        }
+      ],
+      "source_name": null,
+      "source_url": null,
+      "in_article_url": null,
+      "out_article_url": null,
+      "in_article_title": null,
+      "out_article_title": null,
+      "source_link_status": "no_link",
+      "data_source": 2,
+      "publisher_id": 218879,
+      "relation_id": 7711234,
+      "ai_flag": 0,
+      "platform_product_line": null,
+      "mapping_status": "ambiguous",
+      "quality_flags": [
+        "source_link_missing"
+      ]
+    },
+    {
+      "news_id": "4953478",
+      "published_at": "2026-10-31T09:15:19.968Z",
+      "published_at_ms": 1793438119968,
+      "timezone": "Asia/Shanghai",
+      "content_text": "10月31日唐山迁安普方坯资源出厂含税稳，报2890。（元/吨）",
+      "content_html": "10月31日唐山迁安普方坯资源出厂含税稳，报2890。（元/吨）",
+      "raw_content": "10月31日唐山迁安普方坯资源出厂含税稳，报2890。（元/吨）",
+      "category": {
+        "id": 2,
+        "name": "2"
+      },
+      "section": {
+        "id": 7,
+        "name": "7"
+      },
+      "products": [
+        {
+          "id": "0307",
+          "name": "钢坯",
+          "source": "relationBreed"
+        },
+        {
+          "id": "方坯",
+          "name": "方坯",
+          "source": "breedTag"
+        }
+      ],
+      "regions": [
+        {
+          "id": "010403",
+          "name": "河北"
+        }
+      ],
+      "source_name": null,
+      "source_url": null,
+      "in_article_url": null,
+      "out_article_url": null,
+      "in_article_title": null,
+      "out_article_title": null,
+      "source_link_status": "no_link",
+      "data_source": 2,
+      "publisher_id": 228233,
+      "relation_id": 7711233,
+      "ai_flag": 0,
+      "platform_product_line": null,
+      "mapping_status": "ambiguous",
+      "quality_flags": [
+        "source_link_missing"
+      ]
+    },
+    {
+      "news_id": "4953477",
+      "published_at": "2026-10-31T08:14:37.571Z",
+      "published_at_ms": 1793434477571,
+      "timezone": "Asia/Shanghai",
+      "content_text": "10月31日唐山迁安松汀钢铁普方坯资源稳，执行2900含税出厂。（元/吨）",
+      "content_html": "10月31日唐山迁安松汀钢铁普方坯资源稳，执行2900含税出厂。（元/吨）",
+      "raw_content": "10月31日唐山迁安松汀钢铁普方坯资源稳，执行2900含税出厂。（元/吨）",
+      "category": {
+        "id": 2,
+        "name": "2"
+      },
+      "section": {
+        "id": 7,
+        "name": "7"
+      },
+      "products": [
+        {
+          "id": "0307",
+          "name": "钢坯",
+          "source": "relationBreed"
+        },
+        {
+          "id": "方坯",
+          "name": "方坯",
+          "source": "breedTag"
+        }
+      ],
+      "regions": [
+        {
+          "id": "010403",
+          "name": "河北"
+        }
+      ],
+      "source_name": null,
+      "source_url": null,
+      "in_article_url": null,
+      "out_article_url": null,
+      "in_article_title": null,
+      "out_article_title": null,
+      "source_link_status": "no_link",
+      "data_source": 2,
+      "publisher_id": 228233,
+      "relation_id": 7711232,
+      "ai_flag": 0,
+      "platform_product_line": null,
+      "mapping_status": "ambiguous",
+      "quality_flags": [
+        "source_link_missing"
+      ]
+    },
+    {
+      "news_id": "4953476",
+      "published_at": "2026-10-31T08:05:17.854Z",
+      "published_at_ms": 1793433917854,
+      "timezone": "Asia/Shanghai",
+      "content_text": "10月31日九江卷板最新执行价：特级破碎料2250，特一级破碎料2230，一级-破碎料2210；；一级电炉料2300，二级电炉料2270，三级电炉料2230，旧镀锌压块、纯龙骨压块1950，新08铝压块、冷板压块2100，钢筋小压块2220，生铁2170，生铁暖气片2120，钢筋头2260，架子管2170，冲料2080；破碎原料A2145，破碎原料B2125，破碎原料C2065，破碎原料D1955，不含税",
+      "content_html": "10月31日九江卷板最新执行价：特级破碎料2250，特一级破碎料2230，一级-破碎料2210；；一级电炉料2300，二级电炉料2270，三级电炉料2230，旧镀锌压块、纯龙骨压块1950，新08铝压块、冷板压块2100，钢筋小压块2220，生铁2170，生铁暖气片2120，钢筋头2260，架子管2170，冲料2080；破碎原料A2145，破碎原料B2125，破碎原料C2065，破碎原料D1955，不含税",
+      "raw_content": "10月31日九江卷板最新执行价：特级破碎料2250，特一级破碎料2230，一级-破碎料2210；；一级电炉料2300，二级电炉料2270，三级电炉料2230，旧镀锌压块、纯龙骨压块1950，新08铝压块、冷板压块2100，钢筋小压块2220，生铁2170，生铁暖气片2120，钢筋头2260，架子管2170，冲料2080；破碎原料A2145，破碎原料B2125，破碎原料C2065，破碎原料D1955，不含税",
+      "category": {
+        "id": 2,
+        "name": "2"
+      },
+      "section": {
+        "id": 9,
+        "name": "9"
+      },
+      "products": [
+        {
+          "id": "030604",
+          "name": "普碳废钢",
+          "source": "relationBreed"
+        },
+        {
+          "id": "生铁",
+          "name": "生铁",
+          "source": "breedTag"
+        },
+        {
+          "id": "特级破碎料",
+          "name": "特级破碎料",
+          "source": "breedTag"
+        },
+        {
+          "id": "一级破碎料",
+          "name": "一级破碎料",
+          "source": "breedTag"
+        },
+        {
+          "id": "钢筋头",
+          "name": "钢筋头",
+          "source": "breedTag"
+        },
+        {
+          "id": "08铝压块",
+          "name": "08铝压块",
+          "source": "breedTag"
+        },
+        {
+          "id": "无缝管",
+          "name": "无缝管",
+          "source": "breedTag"
+        },
+        {
+          "id": "镀锌压块",
+          "name": "镀锌压块",
+          "source": "breedTag"
+        },
+        {
+          "id": "冷板压块",
+          "name": "冷板压块",
+          "source": "breedTag"
+        },
+        {
+          "id": "脚手架管",
+          "name": "脚手架管",
+          "source": "breedTag"
+        }
+      ],
+      "regions": [
+        {
+          "id": "01040302",
+          "name": "唐山"
+        }
+      ],
+      "source_name": null,
+      "source_url": null,
+      "in_article_url": null,
+      "out_article_url": null,
+      "in_article_title": null,
+      "out_article_title": null,
+      "source_link_status": "no_link",
+      "data_source": 2,
+      "publisher_id": 215826,
+      "relation_id": 7711231,
+      "ai_flag": 0,
+      "platform_product_line": null,
+      "mapping_status": "ambiguous",
+      "quality_flags": [
+        "source_link_missing"
+      ]
+    },
+    {
+      "news_id": "4953475",
+      "published_at": "2026-10-31T07:58:09.057Z",
+      "published_at_ms": 1793433489057,
+      "timezone": "Asia/Shanghai",
+      "content_text": "11月1日珠海粤裕丰废钢最新价格跌10，矽钢片2490，冲花料2490，钢筋压块2560，精料废钢2550，优重废钢2540，冲子料2510，工业重废2510，小剪料2400。含税价。",
+      "content_html": "11月1日珠海粤裕丰废钢最新价格跌10，矽钢片2490，冲花料2490，钢筋压块2560，精料废钢2550，优重废钢2540，冲子料2510，工业重废2510，小剪料2400。含税价。",
+      "raw_content": "11月1日珠海粤裕丰废钢最新价格跌10，矽钢片2490，冲花料2490，钢筋压块2560，精料废钢2550，优重废钢2540，冲子料2510，工业重废2510，小剪料2400。含税价。",
+      "category": {
+        "id": 2,
+        "name": "2"
+      },
+      "section": {
+        "id": 9,
+        "name": "9"
+      },
+      "products": [
+        {
+          "id": "030604",
+          "name": "普碳废钢",
+          "source": "relationBreed"
+        },
+        {
+          "id": "钢筋压块",
+          "name": "钢筋压块",
+          "source": "breedTag"
+        },
+        {
+          "id": "冲花料",
+          "name": "冲花料",
+          "source": "breedTag"
+        },
+        {
+          "id": "冲子",
+          "name": "冲子",
+          "source": "breedTag"
+        },
+        {
+          "id": "再生金属",
+          "name": "再生金属",
+          "source": "breedTag"
+        }
+      ],
+      "regions": [
+        {
+          "id": "01020109",
+          "name": "珠海"
+        }
+      ],
+      "source_name": null,
+      "source_url": null,
+      "in_article_url": null,
+      "out_article_url": null,
+      "in_article_title": null,
+      "out_article_title": null,
+      "source_link_status": "no_link",
+      "data_source": 2,
+      "publisher_id": 209768,
+      "relation_id": 7711230,
+      "ai_flag": 0,
+      "platform_product_line": null,
+      "mapping_status": "ambiguous",
+      "quality_flags": [
+        "source_link_missing"
+      ]
+    },
+    {
+      "news_id": "4953474",
+      "published_at": "2026-10-31T07:56:23.754Z",
+      "published_at_ms": 1793433383754,
+      "timezone": "Asia/Shanghai",
+      "content_text": "10月31日唐山金州破碎原料价格，2-3毫米剪切2110，一级破碎废钢2090二级破碎废钢2070，三级破碎废钢2000，废钢压块2030，彩钢瓦散片，冰箱壳、洗衣机壳、电脑壳散片1880，汽车楼子小压块1960不含税。",
+      "content_html": "10月31日唐山金州破碎原料价格，2-3毫米剪切2110，一级破碎废钢2090二级破碎废钢2070，三级破碎废钢2000，废钢压块2030，彩钢瓦散片，冰箱壳、洗衣机壳、电脑壳散片1880，汽车楼子小压块1960不含税。",
+      "raw_content": "10月31日唐山金州破碎原料价格，2-3毫米剪切2110，一级破碎废钢2090二级破碎废钢2070，三级破碎废钢2000，废钢压块2030，彩钢瓦散片，冰箱壳、洗衣机壳、电脑壳散片1880，汽车楼子小压块1960不含税。",
+      "category": {
+        "id": 2,
+        "name": "2"
+      },
+      "section": {
+        "id": 9,
+        "name": "9"
+      },
+      "products": [
+        {
+          "id": "0306",
+          "name": "废钢",
+          "source": "relationBreed"
+        },
+        {
+          "id": "废钢压块",
+          "name": "废钢压块",
+          "source": "breedTag"
+        },
+        {
+          "id": "彩钢瓦",
+          "name": "彩钢瓦",
+          "source": "breedTag"
+        },
+        {
+          "id": "再生金属",
+          "name": "再生金属",
+          "source": "breedTag"
+        }
+      ],
+      "regions": [
+        {
+          "id": "01040302",
+          "name": "唐山"
+        }
+      ],
+      "source_name": null,
+      "source_url": null,
+      "in_article_url": null,
+      "out_article_url": null,
+      "in_article_title": null,
+      "out_article_title": null,
+      "source_link_status": "no_link",
+      "data_source": 2,
+      "publisher_id": 215826,
+      "relation_id": 7711229,
+      "ai_flag": 0,
+      "platform_product_line": null,
+      "mapping_status": "ambiguous",
+      "quality_flags": [
+        "source_link_missing"
+      ]
+    },
+    {
+      "news_id": "4953473",
+      "published_at": "2026-10-31T07:56:04.003Z",
+      "published_at_ms": 1793433364003,
+      "timezone": "Asia/Shanghai",
+      "content_text": "10月31日唐山玉田金州废钢价格跌10：3-6厚2150、6厚2190，8厚2230钢筋压块2180新镀锌、冷板小料2160镀锌小料2020，生铁暖气片2130，不含税。",
+      "content_html": "10月31日唐山玉田金州废钢价格跌10：3-6厚2150、6厚2190，8厚2230钢筋压块2180新镀锌、冷板小料2160镀锌小料2020，生铁暖气片2130，不含税。",
+      "raw_content": "10月31日唐山玉田金州废钢价格跌10：3-6厚2150、6厚2190，8厚2230钢筋压块2180新镀锌、冷板小料2160镀锌小料2020，生铁暖气片2130，不含税。",
+      "category": {
+        "id": 2,
+        "name": "2"
+      },
+      "section": {
+        "id": 9,
+        "name": "9"
+      },
+      "products": [
+        {
+          "id": "0306",
+          "name": "废钢",
+          "source": "relationBreed"
+        },
+        {
+          "id": "钢筋压块",
+          "name": "钢筋压块",
+          "source": "breedTag"
+        },
+        {
+          "id": "再生金属",
+          "name": "再生金属",
+          "source": "breedTag"
+        }
+      ],
+      "regions": [
+        {
+          "id": "01040302",
+          "name": "唐山"
+        }
+      ],
+      "source_name": null,
+      "source_url": null,
+      "in_article_url": null,
+      "out_article_url": null,
+      "in_article_title": null,
+      "out_article_title": null,
+      "source_link_status": "no_link",
+      "data_source": 2,
+      "publisher_id": 215826,
+      "relation_id": 7711228,
+      "ai_flag": 0,
+      "platform_product_line": null,
+      "mapping_status": "ambiguous",
+      "quality_flags": [
+        "source_link_missing"
+      ]
+    },
+    {
+      "news_id": "4953472",
+      "published_at": "2026-10-31T07:41:03.586Z",
+      "published_at_ms": 1793432463586,
+      "timezone": "Asia/Shanghai",
+      "content_text": "10月31日15时40分起，卷板厂所有料型下调10元/吨，稍后出价格表。",
+      "content_html": "10月31日15时40分起，卷板厂所有料型下调10元/吨，稍后出价格表。",
+      "raw_content": "10月31日15时40分起，卷板厂所有料型下调10元/吨，稍后出价格表。",
+      "category": {
+        "id": 2,
+        "name": "2"
+      },
+      "section": {
+        "id": 9,
+        "name": "9"
+      },
+      "products": [
+        {
+          "id": "030604",
+          "name": "普碳废钢",
+          "source": "relationBreed"
+        }
+      ],
+      "regions": [
+        {
+          "id": "01040302",
+          "name": "唐山"
+        }
+      ],
+      "source_name": null,
+      "source_url": null,
+      "in_article_url": null,
+      "out_article_url": null,
+      "in_article_title": null,
+      "out_article_title": null,
+      "source_link_status": "no_link",
+      "data_source": 2,
+      "publisher_id": 215826,
+      "relation_id": 7711227,
+      "ai_flag": 0,
+      "platform_product_line": null,
+      "mapping_status": "ambiguous",
+      "quality_flags": [
+        "source_link_missing"
+      ]
+    },
+    {
+      "news_id": "4953471",
+      "published_at": "2026-10-31T07:40:21.735Z",
+      "published_at_ms": 1793432421735,
+      "timezone": "Asia/Shanghai",
+      "content_text": "10月31日普阳钢厂最新价格 含税降20元 -钢筋压块6mm2209元 -花铁压块6mm2260元 -废钢压块3mm2132元 -重废压块5mm2166元 -模板压块5.75mm2192元 -拆厂料3mm2166元 -拆厂料6mm2200元 报量保价，有货大量来",
+      "content_html": "10月31日普阳钢厂最新价格\n含税降20元\n-钢筋压块6mm2209元\n-花铁压块6mm2260元\n-废钢压块3mm2132元\n-重废压块5mm2166元\n-模板压块5.75mm2192元\n-拆厂料3mm2166元\n-拆厂料6mm2200元\n报量保价，有货大量来",
+      "raw_content": "10月31日普阳钢厂最新价格\n含税降20元\n-钢筋压块6mm2209元\n-花铁压块6mm2260元\n-废钢压块3mm2132元\n-重废压块5mm2166元\n-模板压块5.75mm2192元\n-拆厂料3mm2166元\n-拆厂料6mm2200元\n报量保价，有货大量来",
+      "category": {
+        "id": 2,
+        "name": "2"
+      },
+      "section": {
+        "id": 9,
+        "name": "9"
+      },
+      "products": [
+        {
+          "id": "0306",
+          "name": "废钢",
+          "source": "relationBreed"
+        },
+        {
+          "id": "钢筋压块",
+          "name": "钢筋压块",
+          "source": "breedTag"
+        },
+        {
+          "id": "重废",
+          "name": "重废",
+          "source": "breedTag"
+        }
+      ],
+      "regions": [
+        {
+          "id": "01040304",
+          "name": "邯郸"
+        }
+      ],
+      "source_name": null,
+      "source_url": null,
+      "in_article_url": null,
+      "out_article_url": null,
+      "in_article_title": null,
+      "out_article_title": null,
+      "source_link_status": "no_link",
+      "data_source": 2,
+      "publisher_id": 215826,
+      "relation_id": 7711226,
+      "ai_flag": 0,
+      "platform_product_line": null,
+      "mapping_status": "ambiguous",
+      "quality_flags": [
+        "source_link_missing"
+      ]
+    },
+    {
+      "news_id": "4953470",
+      "published_at": "2026-10-31T07:38:50.629Z",
+      "published_at_ms": 1793432330629,
+      "timezone": "Asia/Shanghai",
+      "content_text": "10月31日秦皇岛昌黎（AF）部分普方坯资源出厂含税下调10，报2870。（元/吨）",
+      "content_html": "10月31日秦皇岛昌黎（AF）部分普方坯资源出厂含税下调10，报2870。（元/吨）",
+      "raw_content": "10月31日秦皇岛昌黎（AF）部分普方坯资源出厂含税下调10，报2870。（元/吨）",
+      "category": {
+        "id": 2,
+        "name": "2"
+      },
+      "section": {
+        "id": 7,
+        "name": "7"
+      },
+      "products": [
+        {
+          "id": "0307",
+          "name": "钢坯",
+          "source": "relationBreed"
+        },
+        {
+          "id": "方坯",
+          "name": "方坯",
+          "source": "breedTag"
+        }
+      ],
+      "regions": [
+        {
+          "id": "010403",
+          "name": "河北"
+        }
+      ],
+      "source_name": null,
+      "source_url": null,
+      "in_article_url": null,
+      "out_article_url": null,
+      "in_article_title": null,
+      "out_article_title": null,
+      "source_link_status": "no_link",
+      "data_source": 2,
+      "publisher_id": 228233,
+      "relation_id": 7711225,
+      "ai_flag": 0,
+      "platform_product_line": null,
+      "mapping_status": "ambiguous",
+      "quality_flags": [
+        "source_link_missing"
+      ]
+    },
     {
       "news_id": "4953469",
       "published_at": "2026-10-31T06:39:00.000Z",
@@ -1726,12 +3384,12 @@
   ],
   "quality": {
     "raw_count": 100,
-    "accepted_count": 33,
-    "rejected_count": 67,
+    "accepted_count": 60,
+    "rejected_count": 40,
     "deduped_count": 0,
-    "missing_source_link_count": 23,
+    "missing_source_link_count": 43,
     "missing_product_count": 6,
-    "malformed_content_count": 67,
+    "malformed_content_count": 40,
     "duplicate_group_count": 0,
     "warnings": [
       "API 报告总量超过本次分页采集量；快照仅覆盖目标日期窗口，需按分类/地区拆分请求补全。"
