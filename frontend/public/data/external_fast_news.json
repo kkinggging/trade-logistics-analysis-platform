@@ -6,10 +6,10 @@
     "dashboard_url": "https://www.mysteel.com/fastcomment/#/",
     "api_url": "https://openapi.mysteel.com/without_sign/newsflash/flashnews/query_by_tags.htm",
     "taxonomy_url": "https://a.mysteelcdn.com/common/publish/newsflash/newsflash_column.json",
-    "captured_at": "2026-11-07T05:50:27.909Z",
+    "captured_at": "2026-11-07T07:00:11.275Z",
     "coverage_start": "2026-11-07",
     "coverage_end": "2026-11-07",
-    "latest_published_at": "2026-11-07T04:01:35.765Z",
+    "latest_published_at": "2026-11-07T06:43:00.000Z",
     "timezone": "Asia/Shanghai",
     "fetch_mode": "api",
     "request_params": {
@@ -23,17 +23,17 @@
         ]
       ]
     },
-    "raw_sha256": "3afaae081e20b3443e35f7e61713d9f0ccd3639c702c6bccfdb67bfb55e6382b",
+    "raw_sha256": "681922aecf23475813e9e36e3382607821ae86d6ced7a4ee20195718b2d9ea84",
     "taxonomy_sha256": "c98f5bfdacde3401c98ea8f43bac3ca63d35b569f6aad3e1fff2f39b58a0dbf3",
     "response_sha256": [
-      "8a4ffadb91d12c81570fe838b2bf6702a78839135b5b1da8f20226bfc71bd203"
+      "edb92dc9828f767e3e04b404efb760062fef050df5b91cd6dac4d614350a831c"
     ],
     "page_count": 1,
     "reported_total": 10000,
     "truncation_detected": true,
     "watermark": {
-      "publisher_time_ms": 1794024095765,
-      "id": "4969092"
+      "publisher_time_ms": 1794033780000,
+      "id": "4969093"
     },
     "retry": {
       "attempts": 3,
@@ -43,6 +43,39 @@
     }
   },
   "items": [
+    {
+      "news_id": "4969093",
+      "published_at": "2026-11-07T06:43:00.000Z",
+      "published_at_ms": 1794033780000,
+      "timezone": "Asia/Shanghai",
+      "content_text": "马斯克预测SpaceX到2027年12月年化营收有望突破5000亿美元，甚至可能达到1万亿美元。该预期远超华尔街分析师平均预估的1800亿美元。SpaceX第三季度营收146亿美元，AI业务营收76亿美元，同比增长830%。第四季度政府合同占比预计降至10%以下。目前公司市值1.82万亿美元，股价报134.27美元。首席财务官Bret Johnsen预计年底前年度经常性收入达1000亿美元。",
+      "content_html": "马斯克预测SpaceX到2027年12月年化营收有望突破5000亿美元，甚至可能达到1万亿美元。该预期远超华尔街分析师平均预估的1800亿美元。SpaceX第三季度营收146亿美元，AI业务营收76亿美元，同比增长830%。第四季度政府合同占比预计降至10%以下。目前公司市值1.82万亿美元，股价报134.27美元。首席财务官Bret Johnsen预计年底前年度经常性收入达1000亿美元。",
+      "raw_content": "马斯克预测SpaceX到2027年12月年化营收有望突破5000亿美元，甚至可能达到1万亿美元。该预期远超华尔街分析师平均预估的1800亿美元。SpaceX第三季度营收146亿美元，AI业务营收76亿美元，同比增长830%。第四季度政府合同占比预计降至10%以下。目前公司市值1.82万亿美元，股价报134.27美元。首席财务官Bret Johnsen预计年底前年度经常性收入达1000亿美元。",
+      "category": {
+        "id": 18,
+        "name": "18"
+      },
+      "section": {
+        "id": 8,
+        "name": "8"
+      },
+      "products": [],
+      "regions": [],
+      "source_name": "财联社",
+      "source_url": "http://news.mysteel.com/a/26110714/846D1ABAB8BAD6B4.html",
+      "in_article_url": "http://news.mysteel.com/a/26110714/846D1ABAB8BAD6B4.html",
+      "out_article_url": null,
+      "in_article_title": "震惊华尔街！马斯克豪言：SpaceX明年底年化营收或超5000亿美元",
+      "out_article_title": null,
+      "source_link_status": "article_link",
+      "data_source": 1,
+      "publisher_id": 221060,
+      "relation_id": 46396296,
+      "ai_flag": 0,
+      "platform_product_line": null,
+      "mapping_status": "unmapped",
+      "quality_flags": []
+    },
     {
       "news_id": "4969092",
       "published_at": "2026-11-07T04:01:35.765Z",
@@ -1530,12 +1563,12 @@
   ],
   "quality": {
     "raw_count": 100,
-    "accepted_count": 31,
-    "rejected_count": 69,
+    "accepted_count": 32,
+    "rejected_count": 68,
     "deduped_count": 0,
     "missing_source_link_count": 16,
-    "missing_product_count": 11,
-    "malformed_content_count": 69,
+    "missing_product_count": 12,
+    "malformed_content_count": 68,
     "duplicate_group_count": 0,
     "warnings": [
       "API 报告总量超过本次分页采集量；快照仅覆盖目标日期窗口，需按分类/地区拆分请求补全。"
