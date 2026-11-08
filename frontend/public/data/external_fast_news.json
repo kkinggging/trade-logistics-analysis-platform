@@ -6,10 +6,10 @@
     "dashboard_url": "https://www.mysteel.com/fastcomment/#/",
     "api_url": "https://openapi.mysteel.com/without_sign/newsflash/flashnews/query_by_tags.htm",
     "taxonomy_url": "https://a.mysteelcdn.com/common/publish/newsflash/newsflash_column.json",
-    "captured_at": "2026-11-08T05:53:00.359Z",
+    "captured_at": "2026-11-08T07:09:36.073Z",
     "coverage_start": "2026-11-08",
     "coverage_end": "2026-11-08",
-    "latest_published_at": "2026-11-08T05:50:52.634Z",
+    "latest_published_at": "2026-11-08T07:00:00.000Z",
     "timezone": "Asia/Shanghai",
     "fetch_mode": "api",
     "request_params": {
@@ -23,17 +23,17 @@
         ]
       ]
     },
-    "raw_sha256": "b04e616ef9862b52454446563ba2c96b205ad9a1680c45692de90e1cc20b5b2a",
+    "raw_sha256": "fe0d44daf4a9b1c2c931dd327bd16b18f85d26935ba6de7ed6ddf2ab1b8c8edc",
     "taxonomy_sha256": "c98f5bfdacde3401c98ea8f43bac3ca63d35b569f6aad3e1fff2f39b58a0dbf3",
     "response_sha256": [
-      "798b3d188311e0a98445925854cb85116a1e2de8c8cc48915418a91539b71e5f"
+      "86ee82eb0b0f843d06482b08ff76e186eed9ce08c75c16869e7c340122191743"
     ],
     "page_count": 1,
     "reported_total": 10000,
     "truncation_detected": true,
     "watermark": {
-      "publisher_time_ms": 1794117052634,
-      "id": "4969141"
+      "publisher_time_ms": 1794121200000,
+      "id": "4969143"
     },
     "retry": {
       "attempts": 3,
@@ -43,6 +43,108 @@
     }
   },
   "items": [
+    {
+      "news_id": "4969143",
+      "published_at": "2026-11-08T07:00:00.000Z",
+      "published_at_ms": 1794121200000,
+      "timezone": "Asia/Shanghai",
+      "content_text": "沙特阿拉伯首都利雅得金融区遭到袭击，沙特阿美石油公司大楼受损。",
+      "content_html": "沙特阿拉伯首都利雅得金融区遭到袭击，沙特阿美石油公司大楼受损。",
+      "raw_content": "沙特阿拉伯首都利雅得金融区遭到袭击，沙特阿美石油公司大楼受损。",
+      "category": {
+        "id": 1,
+        "name": "1"
+      },
+      "section": {
+        "id": 8,
+        "name": "8"
+      },
+      "products": [],
+      "regions": [],
+      "source_name": "财联社",
+      "source_url": "http://news.mysteel.com/a/26110815/045A38176B0A5AB5.html",
+      "in_article_url": "http://news.mysteel.com/a/26110815/045A38176B0A5AB5.html",
+      "out_article_url": null,
+      "in_article_title": "沙特首都金融区遭袭，阿美石油公司大楼受损",
+      "out_article_title": null,
+      "source_link_status": "article_link",
+      "data_source": 1,
+      "publisher_id": 205089,
+      "relation_id": 46396473,
+      "ai_flag": 0,
+      "platform_product_line": null,
+      "mapping_status": "unmapped",
+      "quality_flags": []
+    },
+    {
+      "news_id": "4969142",
+      "published_at": "2026-11-08T06:42:08.960Z",
+      "published_at_ms": 1794120128960,
+      "timezone": "Asia/Shanghai",
+      "content_text": "溧阳市荣竣物资｜废钢收购报价（2026年11月08日价格） 欢迎带票销售，公司所有自然人实行反向开票，当天付款 ①精品新钢板料2120-2140 ②钢筋切粒合格料：2120-2140 ③工业边角料合格料（角钢、槽钢、工字钢、钢管等）：2060-2080 ④重废合格料：2000-2050 ⑤中废合格料：1930-1970 ⑥剪切合格料：1820-1920 ⑦冷热轧冲皮 / 激光板＞2mm：2060 ⑧冷热轧冲皮 / 激光板＞1mm：2040 ⑨汽车切片：2020‑2040 ⑩工业镀锌 / 冲皮：1900‑1970 ⑪镀锌扁丝 / 白户圈：1720‑1820 ⑫镀锌风管 / 打包带：1720‑1820 备注：量大议价，其他看货给价 业务电话 史18168817632 姚 15190504828 方 17715954320 地址：溧阳市别桥镇湖边大桥西南。",
+      "content_html": "溧阳市荣竣物资｜废钢收购报价（2026年11月08日价格）\n \n欢迎带票销售，公司所有自然人实行反向开票，当天付款\n \n①精品新钢板料2120-2140\n②钢筋切粒合格料：2120-2140\n③工业边角料合格料（角钢、槽钢、工字钢、钢管等）：2060-2080\n④重废合格料：2000-2050\n⑤中废合格料：1930-1970\n⑥剪切合格料：1820-1920\n⑦冷热轧冲皮 / 激光板＞2mm：2060\n⑧冷热轧冲皮 / 激光板＞1mm：2040\n⑨汽车切片：2020‑2040\n⑩工业镀锌 / 冲皮：1900‑1970\n⑪镀锌扁丝 / 白户圈：1720‑1820\n⑫镀锌风管 / 打包带：1720‑1820\n 备注：量大议价，其他看货给价\n\n业务电话\n史18168817632\n姚 15190504828\n方 17715954320\n 地址：溧阳市别桥镇湖边大桥西南。",
+      "raw_content": "溧阳市荣竣物资｜废钢收购报价（2026年11月08日价格）\n \n欢迎带票销售，公司所有自然人实行反向开票，当天付款\n \n①精品新钢板料2120-2140\n②钢筋切粒合格料：2120-2140\n③工业边角料合格料（角钢、槽钢、工字钢、钢管等）：2060-2080\n④重废合格料：2000-2050\n⑤中废合格料：1930-1970\n⑥剪切合格料：1820-1920\n⑦冷热轧冲皮 / 激光板＞2mm：2060\n⑧冷热轧冲皮 / 激光板＞1mm：2040\n⑨汽车切片：2020‑2040\n⑩工业镀锌 / 冲皮：1900‑1970\n⑪镀锌扁丝 / 白户圈：1720‑1820\n⑫镀锌风管 / 打包带：1720‑1820\n 备注：量大议价，其他看货给价\n\n业务电话\n史18168817632\n姚 15190504828\n方 17715954320\n 地址：溧阳市别桥镇湖边大桥西南。",
+      "category": {
+        "id": 2,
+        "name": "2"
+      },
+      "section": {
+        "id": 7,
+        "name": "7"
+      },
+      "products": [
+        {
+          "id": "03061402",
+          "name": "其它废料",
+          "source": "relationBreed"
+        },
+        {
+          "id": "角钢",
+          "name": "角钢",
+          "source": "breedTag"
+        },
+        {
+          "id": "中废",
+          "name": "中废",
+          "source": "breedTag"
+        },
+        {
+          "id": "边角料",
+          "name": "边角料",
+          "source": "breedTag"
+        },
+        {
+          "id": "钢筋切粒",
+          "name": "钢筋切粒",
+          "source": "breedTag"
+        },
+        {
+          "id": "再生金属",
+          "name": "再生金属",
+          "source": "breedTag"
+        }
+      ],
+      "regions": [
+        {
+          "id": "01010305",
+          "name": "常州"
+        }
+      ],
+      "source_name": "我的钢铁网",
+      "source_url": "https://feigang.mysteel.com/a/26110814/7960F24BA84F4EF5.html",
+      "in_article_url": "https://feigang.mysteel.com/a/26110814/7960F24BA84F4EF5.html",
+      "out_article_url": null,
+      "in_article_title": "8日常州溧阳市荣竣物资废钢采购价格调整信息",
+      "out_article_title": null,
+      "source_link_status": "article_link",
+      "data_source": 1,
+      "publisher_id": 220087,
+      "relation_id": 46396472,
+      "ai_flag": 0,
+      "platform_product_line": null,
+      "mapping_status": "ambiguous",
+      "quality_flags": []
+    },
     {
       "news_id": "4969141",
       "published_at": "2026-11-08T05:50:52.634Z",
@@ -1497,12 +1599,12 @@
   ],
   "quality": {
     "raw_count": 100,
-    "accepted_count": 30,
-    "rejected_count": 70,
+    "accepted_count": 32,
+    "rejected_count": 68,
     "deduped_count": 0,
     "missing_source_link_count": 17,
-    "missing_product_count": 8,
-    "malformed_content_count": 70,
+    "missing_product_count": 9,
+    "malformed_content_count": 68,
     "duplicate_group_count": 0,
     "warnings": [
       "API 报告总量超过本次分页采集量；快照仅覆盖目标日期窗口，需按分类/地区拆分请求补全。"
