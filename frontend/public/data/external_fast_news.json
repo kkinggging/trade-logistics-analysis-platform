@@ -6,15 +6,15 @@
     "dashboard_url": "https://www.mysteel.com/fastcomment/#/",
     "api_url": "https://openapi.mysteel.com/without_sign/newsflash/flashnews/query_by_tags.htm",
     "taxonomy_url": "https://a.mysteelcdn.com/common/publish/newsflash/newsflash_column.json",
-    "captured_at": "2026-11-07T07:00:11.275Z",
-    "coverage_start": "2026-11-07",
-    "coverage_end": "2026-11-07",
-    "latest_published_at": "2026-11-07T06:43:00.000Z",
+    "captured_at": "2026-11-08T05:53:00.359Z",
+    "coverage_start": "2026-11-08",
+    "coverage_end": "2026-11-08",
+    "latest_published_at": "2026-11-08T05:50:52.634Z",
     "timezone": "Asia/Shanghai",
     "fetch_mode": "api",
     "request_params": {
       "pageSize": 100,
-      "target_date": "2026-11-07",
+      "target_date": "2026-11-08",
       "columnIds": [
         [
           2,
@@ -23,17 +23,17 @@
         ]
       ]
     },
-    "raw_sha256": "681922aecf23475813e9e36e3382607821ae86d6ced7a4ee20195718b2d9ea84",
+    "raw_sha256": "b04e616ef9862b52454446563ba2c96b205ad9a1680c45692de90e1cc20b5b2a",
     "taxonomy_sha256": "c98f5bfdacde3401c98ea8f43bac3ca63d35b569f6aad3e1fff2f39b58a0dbf3",
     "response_sha256": [
-      "edb92dc9828f767e3e04b404efb760062fef050df5b91cd6dac4d614350a831c"
+      "798b3d188311e0a98445925854cb85116a1e2de8c8cc48915418a91539b71e5f"
     ],
     "page_count": 1,
     "reported_total": 10000,
     "truncation_detected": true,
     "watermark": {
-      "publisher_time_ms": 1794033780000,
-      "id": "4969093"
+      "publisher_time_ms": 1794117052634,
+      "id": "4969141"
     },
     "retry": {
       "attempts": 3,
@@ -44,46 +44,64 @@
   },
   "items": [
     {
-      "news_id": "4969093",
-      "published_at": "2026-11-07T06:43:00.000Z",
-      "published_at_ms": 1794033780000,
+      "news_id": "4969141",
+      "published_at": "2026-11-08T05:50:52.634Z",
+      "published_at_ms": 1794117052634,
       "timezone": "Asia/Shanghai",
-      "content_text": "马斯克预测SpaceX到2027年12月年化营收有望突破5000亿美元，甚至可能达到1万亿美元。该预期远超华尔街分析师平均预估的1800亿美元。SpaceX第三季度营收146亿美元，AI业务营收76亿美元，同比增长830%。第四季度政府合同占比预计降至10%以下。目前公司市值1.82万亿美元，股价报134.27美元。首席财务官Bret Johnsen预计年底前年度经常性收入达1000亿美元。",
-      "content_html": "马斯克预测SpaceX到2027年12月年化营收有望突破5000亿美元，甚至可能达到1万亿美元。该预期远超华尔街分析师平均预估的1800亿美元。SpaceX第三季度营收146亿美元，AI业务营收76亿美元，同比增长830%。第四季度政府合同占比预计降至10%以下。目前公司市值1.82万亿美元，股价报134.27美元。首席财务官Bret Johnsen预计年底前年度经常性收入达1000亿美元。",
-      "raw_content": "马斯克预测SpaceX到2027年12月年化营收有望突破5000亿美元，甚至可能达到1万亿美元。该预期远超华尔街分析师平均预估的1800亿美元。SpaceX第三季度营收146亿美元，AI业务营收76亿美元，同比增长830%。第四季度政府合同占比预计降至10%以下。目前公司市值1.82万亿美元，股价报134.27美元。首席财务官Bret Johnsen预计年底前年度经常性收入达1000亿美元。",
+      "content_text": "磐金钢管将于11月9日上午8:00起，对全系列产品价格上调30，调整后：108*4.5mm报4210、219*6mm报4240、480*7mm报4500、508*7mm报4600。6-10米之间（含6米）定尺加50，325*6-7.5及351(含)以上规格11-11.99，12米非定尺价格减30。以上价格过磅含税。（元/吨）",
+      "content_html": "磐金钢管将于11月9日上午8:00起，对全系列产品价格上调30，调整后：108*4.5mm报4210、219*6mm报4240、480*7mm报4500、508*7mm报4600。6-10米之间（含6米）定尺加50，325*6-7.5及351(含)以上规格11-11.99，12米非定尺价格减30。以上价格过磅含税。（元/吨）",
+      "raw_content": "磐金钢管将于11月9日上午8:00起，对全系列产品价格上调30，调整后：108*4.5mm报4210、219*6mm报4240、480*7mm报4500、508*7mm报4600。6-10米之间（含6米）定尺加50，325*6-7.5及351(含)以上规格11-11.99，12米非定尺价格减30。以上价格过磅含税。（元/吨）",
       "category": {
-        "id": 18,
-        "name": "18"
+        "id": 2,
+        "name": "2"
       },
       "section": {
-        "id": 8,
-        "name": "8"
+        "id": 9,
+        "name": "9"
       },
-      "products": [],
-      "regions": [],
-      "source_name": "财联社",
-      "source_url": "http://news.mysteel.com/a/26110714/846D1ABAB8BAD6B4.html",
-      "in_article_url": "http://news.mysteel.com/a/26110714/846D1ABAB8BAD6B4.html",
+      "products": [
+        {
+          "id": "01010901",
+          "name": "无缝管",
+          "source": "relationBreed"
+        },
+        {
+          "id": "钢管",
+          "name": "钢管",
+          "source": "breedTag"
+        }
+      ],
+      "regions": [
+        {
+          "id": "01010207",
+          "name": "潍坊"
+        }
+      ],
+      "source_name": null,
+      "source_url": null,
+      "in_article_url": null,
       "out_article_url": null,
-      "in_article_title": "震惊华尔街！马斯克豪言：SpaceX明年底年化营收或超5000亿美元",
+      "in_article_title": null,
       "out_article_title": null,
-      "source_link_status": "article_link",
-      "data_source": 1,
-      "publisher_id": 221060,
-      "relation_id": 46396296,
+      "source_link_status": "no_link",
+      "data_source": 2,
+      "publisher_id": 208812,
+      "relation_id": 7727605,
       "ai_flag": 0,
       "platform_product_line": null,
-      "mapping_status": "unmapped",
-      "quality_flags": []
+      "mapping_status": "ambiguous",
+      "quality_flags": [
+        "source_link_missing"
+      ]
     },
     {
-      "news_id": "4969092",
-      "published_at": "2026-11-07T04:01:35.765Z",
-      "published_at_ms": 1794024095765,
+      "news_id": "4969140",
+      "published_at": "2026-11-08T05:17:27.314Z",
+      "published_at_ms": 1794115047314,
       "timezone": "Asia/Shanghai",
-      "content_text": "11月7日首唐宝生废钢执行价，一级破碎2220二级破碎2120、1-2厚2120，3-5厚2190、6厚以上2230、8厚以上2270钢筋压块2170铁丝压块1950纯龙骨、马口铁1740-1900生铁暖气片1930车架子小压块1970彩瓦小压块1940不含税。",
-      "content_html": "11月7日首唐宝生废钢执行价，一级破碎2220二级破碎2120、1-2厚2120，3-5厚2190、6厚以上2230、8厚以上2270钢筋压块2170铁丝压块1950纯龙骨、马口铁1740-1900生铁暖气片1930车架子小压块1970彩瓦小压块1940不含税。",
-      "raw_content": "11月7日首唐宝生废钢执行价，一级破碎2220二级破碎2120、1-2厚2120，3-5厚2190、6厚以上2230、8厚以上2270钢筋压块2170铁丝压块1950纯龙骨、马口铁1740-1900生铁暖气片1930车架子小压块1970彩瓦小压块1940不含税。",
+      "content_text": "11月8日张宣科技废钢最新挂牌价价格：重型2216-2236，中型2176，小型2099，轻料1788，不含税。",
+      "content_html": "11月8日张宣科技废钢最新挂牌价价格：重型2216-2236，中型2176，小型2099，轻料1788，不含税。",
+      "raw_content": "11月8日张宣科技废钢最新挂牌价价格：重型2216-2236，中型2176，小型2099，轻料1788，不含税。",
       "category": {
         "id": 2,
         "name": "2"
@@ -99,13 +117,69 @@
           "source": "relationBreed"
         },
         {
-          "id": "车架子",
-          "name": "车架子",
+          "id": "再生金属",
+          "name": "再生金属",
+          "source": "breedTag"
+        }
+      ],
+      "regions": [
+        {
+          "id": "01040307",
+          "name": "张家口"
+        }
+      ],
+      "source_name": null,
+      "source_url": null,
+      "in_article_url": null,
+      "out_article_url": null,
+      "in_article_title": null,
+      "out_article_title": null,
+      "source_link_status": "no_link",
+      "data_source": 2,
+      "publisher_id": 221086,
+      "relation_id": 7727604,
+      "ai_flag": 0,
+      "platform_product_line": null,
+      "mapping_status": "ambiguous",
+      "quality_flags": [
+        "source_link_missing"
+      ]
+    },
+    {
+      "news_id": "4969139",
+      "published_at": "2026-11-08T05:17:04.588Z",
+      "published_at_ms": 1794115024588,
+      "timezone": "Asia/Shanghai",
+      "content_text": "11月8日石家庄敬业废钢最新执行价格，钢筋压块2250，花铁压块2250，中型1类10厚2204，中型2类6厚2187，重型3类15厚2222，钢筋头冲豆2213，异形冲料2215，不含税。",
+      "content_html": "11月8日石家庄敬业废钢最新执行价格，钢筋压块2250，花铁压块2250，中型1类10厚2204，中型2类6厚2187，重型3类15厚2222，钢筋头冲豆2213，异形冲料2215，不含税。",
+      "raw_content": "11月8日石家庄敬业废钢最新执行价格，钢筋压块2250，花铁压块2250，中型1类10厚2204，中型2类6厚2187，重型3类15厚2222，钢筋头冲豆2213，异形冲料2215，不含税。",
+      "category": {
+        "id": 2,
+        "name": "2"
+      },
+      "section": {
+        "id": 9,
+        "name": "9"
+      },
+      "products": [
+        {
+          "id": "0306",
+          "name": "废钢",
+          "source": "relationBreed"
+        },
+        {
+          "id": "钢筋头",
+          "name": "钢筋头",
           "source": "breedTag"
         },
         {
           "id": "钢筋压块",
           "name": "钢筋压块",
+          "source": "breedTag"
+        },
+        {
+          "id": "冲子",
+          "name": "冲子",
           "source": "breedTag"
         },
         {
@@ -116,8 +190,8 @@
       ],
       "regions": [
         {
-          "id": "01040302",
-          "name": "唐山"
+          "id": "01040301",
+          "name": "石家庄"
         }
       ],
       "source_name": null,
@@ -128,8 +202,8 @@
       "out_article_title": null,
       "source_link_status": "no_link",
       "data_source": 2,
-      "publisher_id": 220615,
-      "relation_id": 7727574,
+      "publisher_id": 221086,
+      "relation_id": 7727603,
       "ai_flag": 0,
       "platform_product_line": null,
       "mapping_status": "ambiguous",
@@ -138,13 +212,13 @@
       ]
     },
     {
-      "news_id": "4969091",
-      "published_at": "2026-11-07T03:51:36.339Z",
-      "published_at_ms": 1794023496339,
+      "news_id": "4969138",
+      "published_at": "2026-11-08T05:07:27.362Z",
+      "published_at_ms": 1794114447362,
       "timezone": "Asia/Shanghai",
-      "content_text": "11月7日首唐宝生通知：即时起降20元。详见价格表。",
-      "content_html": "11月7日首唐宝生通知：即时起降20元。详见价格表。",
-      "raw_content": "11月7日首唐宝生通知：即时起降20元。详见价格表。",
+      "content_text": "11月8日石家庄敬业毛料废钢价格：二级剪切料2071，二级剪切料优2141，二级剪切料压块1997，三级剪切料1960，三级剪切料优1981，中型1类A:2193，中型2类A:2175，重型3类A:2210，不含税。",
+      "content_html": "11月8日石家庄敬业毛料废钢价格：二级剪切料2071，二级剪切料优2141，二级剪切料压块1997，三级剪切料1960，三级剪切料优1981，中型1类A:2193，中型2类A:2175，重型3类A:2210，不含税。",
+      "raw_content": "11月8日石家庄敬业毛料废钢价格：二级剪切料2071，二级剪切料优2141，二级剪切料压块1997，三级剪切料1960，三级剪切料优1981，中型1类A:2193，中型2类A:2175，重型3类A:2210，不含税。",
       "category": {
         "id": 2,
         "name": "2"
@@ -158,12 +232,22 @@
           "id": "0306",
           "name": "废钢",
           "source": "relationBreed"
+        },
+        {
+          "id": "中废",
+          "name": "中废",
+          "source": "breedTag"
+        },
+        {
+          "id": "再生金属",
+          "name": "再生金属",
+          "source": "breedTag"
         }
       ],
       "regions": [
         {
-          "id": "01040302",
-          "name": "唐山"
+          "id": "01040301",
+          "name": "石家庄"
         }
       ],
       "source_name": null,
@@ -174,8 +258,8 @@
       "out_article_title": null,
       "source_link_status": "no_link",
       "data_source": 2,
-      "publisher_id": 220615,
-      "relation_id": 7727573,
+      "publisher_id": 221086,
+      "relation_id": 7727602,
       "ai_flag": 0,
       "platform_product_line": null,
       "mapping_status": "ambiguous",
@@ -184,13 +268,115 @@
       ]
     },
     {
-      "news_id": "4969090",
-      "published_at": "2026-11-07T03:33:31.087Z",
-      "published_at_ms": 1794022411087,
+      "news_id": "4969137",
+      "published_at": "2026-11-08T04:41:39.526Z",
+      "published_at_ms": 1794112899526,
       "timezone": "Asia/Shanghai",
-      "content_text": "11月7日唐山瑞丰带钢报价：485-645报3095稳，685-885报3125降10，1000-1230报3115降10，含税出厂。（元/吨）",
-      "content_html": "11月7日唐山瑞丰带钢报价：485-645报3095稳，685-885报3125降10，1000-1230报3115降10，含税出厂。（元/吨）",
-      "raw_content": "11月7日唐山瑞丰带钢报价：485-645报3095稳，685-885报3125降10，1000-1230报3115降10，含税出厂。（元/吨）",
+      "content_text": "11月8日敬业通知：11月8日12点起本部废钢价格调整，具体详见价格表。",
+      "content_html": "11月8日敬业通知：11月8日12点起本部废钢价格调整，具体详见价格表。",
+      "raw_content": "11月8日敬业通知：11月8日12点起本部废钢价格调整，具体详见价格表。",
+      "category": {
+        "id": 2,
+        "name": "2"
+      },
+      "section": {
+        "id": 9,
+        "name": "9"
+      },
+      "products": [
+        {
+          "id": "0306",
+          "name": "废钢",
+          "source": "relationBreed"
+        },
+        {
+          "id": "再生金属",
+          "name": "再生金属",
+          "source": "breedTag"
+        }
+      ],
+      "regions": [
+        {
+          "id": "01040301",
+          "name": "石家庄"
+        }
+      ],
+      "source_name": null,
+      "source_url": null,
+      "in_article_url": null,
+      "out_article_url": null,
+      "in_article_title": null,
+      "out_article_title": null,
+      "source_link_status": "no_link",
+      "data_source": 2,
+      "publisher_id": 221086,
+      "relation_id": 7727601,
+      "ai_flag": 0,
+      "platform_product_line": null,
+      "mapping_status": "ambiguous",
+      "quality_flags": [
+        "source_link_missing"
+      ]
+    },
+    {
+      "news_id": "4969136",
+      "published_at": "2026-11-08T04:41:19.913Z",
+      "published_at_ms": 1794112879913,
+      "timezone": "Asia/Shanghai",
+      "content_text": "11月8日张宣科技废钢采购挂牌价：汽车底盘酸洗板，08铝散片，小型加工1.0、2.0，新铁板料下调10元/吨；精品打包块0.5，精品打包块1.0，精品打包块2.0下调20元/吨，其他废钢料型不做调整。执行时间2026年11月8日11:30。详情以价格表为准。",
+      "content_html": "11月8日张宣科技废钢采购挂牌价：汽车底盘酸洗板，08铝散片，小型加工1.0、2.0，新铁板料下调10元/吨；精品打包块0.5，精品打包块1.0，精品打包块2.0下调20元/吨，其他废钢料型不做调整。执行时间2026年11月8日11:30。详情以价格表为准。",
+      "raw_content": "11月8日张宣科技废钢采购挂牌价：汽车底盘酸洗板，08铝散片，小型加工1.0、2.0，新铁板料下调10元/吨；精品打包块0.5，精品打包块1.0，精品打包块2.0下调20元/吨，其他废钢料型不做调整。执行时间2026年11月8日11:30。详情以价格表为准。",
+      "category": {
+        "id": 2,
+        "name": "2"
+      },
+      "section": {
+        "id": 9,
+        "name": "9"
+      },
+      "products": [
+        {
+          "id": "0306",
+          "name": "废钢",
+          "source": "relationBreed"
+        },
+        {
+          "id": "再生金属",
+          "name": "再生金属",
+          "source": "breedTag"
+        }
+      ],
+      "regions": [
+        {
+          "id": "01040307",
+          "name": "张家口"
+        }
+      ],
+      "source_name": null,
+      "source_url": null,
+      "in_article_url": null,
+      "out_article_url": null,
+      "in_article_title": null,
+      "out_article_title": null,
+      "source_link_status": "no_link",
+      "data_source": 2,
+      "publisher_id": 221086,
+      "relation_id": 7727600,
+      "ai_flag": 0,
+      "platform_product_line": null,
+      "mapping_status": "ambiguous",
+      "quality_flags": [
+        "source_link_missing"
+      ]
+    },
+    {
+      "news_id": "4969135",
+      "published_at": "2026-11-08T03:17:26.656Z",
+      "published_at_ms": 1794107846656,
+      "timezone": "Asia/Shanghai",
+      "content_text": "11月8日唐山瑞丰带钢报价全线稳：485-645报3095，685-885报3125，1000-1230报3115，含税出厂。（元/吨）",
+      "content_html": "11月8日唐山瑞丰带钢报价全线稳：485-645报3095，685-885报3125，1000-1230报3115，含税出厂。（元/吨）",
+      "raw_content": "11月8日唐山瑞丰带钢报价全线稳：485-645报3095，685-885报3125，1000-1230报3115，含税出厂。（元/吨）",
       "category": {
         "id": 2,
         "name": "2"
@@ -221,7 +407,7 @@
       "source_link_status": "no_link",
       "data_source": 2,
       "publisher_id": 225930,
-      "relation_id": 7727572,
+      "relation_id": 7727598,
       "ai_flag": 0,
       "platform_product_line": null,
       "mapping_status": "ambiguous",
@@ -230,13 +416,117 @@
       ]
     },
     {
-      "news_id": "4969089",
-      "published_at": "2026-11-07T03:26:12.951Z",
-      "published_at_ms": 1794021972951,
+      "news_id": "4969134",
+      "published_at": "2026-11-08T03:05:00.000Z",
+      "published_at_ms": 1794107100000,
       "timezone": "Asia/Shanghai",
-      "content_text": "11月7日唐山燕钢废钢最新价：重型一2310，优质2290，重型二2290，重A2270，重B2170，中A2230，中B2130，优质铸铁2150，普通铸铁1950，大件剪切2240；炉料一2170，炉料二2120，镀锌压块2050，散片2140；一级剪切料2040，二级剪切料2020，彩钢散片1850，北京码边料1770，不含税。",
-      "content_html": "11月7日唐山燕钢废钢最新价：重型一2310，优质2290，重型二2290，重A2270，重B2170，中A2230，中B2130，优质铸铁2150，普通铸铁1950，大件剪切2240；炉料一2170，炉料二2120，镀锌压块2050，散片2140；一级剪切料2040，二级剪切料2020，彩钢散片1850，北京码边料1770，不含税。",
-      "raw_content": "11月7日唐山燕钢废钢最新价：重型一2310，优质2290，重型二2290，重A2270，重B2170，中A2230，中B2130，优质铸铁2150，普通铸铁1950，大件剪切2240；炉料一2170，炉料二2120，镀锌压块2050，散片2140；一级剪切料2040，二级剪切料2020，彩钢散片1850，北京码边料1770，不含税。",
+      "content_text": "据Mysteel调研，2026年10月国内41家不锈钢厂冷轧产量合计143.63万吨，环比减少2.68万吨，减幅1.83%，同比减少0.64%。其中：200系产量39.65万吨，环比减少4.64万吨；300系产量77.1万吨，环比增加1.45万吨；400系产量26.88万吨，环比增加0.51万吨。 11月冷轧排产预计为149.96万吨，预计环比增加6.33万吨。其中：200系排产量43.2万吨，预计环比增加3.55万吨；300系排产量79.18万吨，预计环比增加2.08万吨；400系排产量27.58万吨，预计环比增加0.7万吨。",
+      "content_html": "据Mysteel调研，2026年10月国内41家不锈钢厂冷轧产量合计143.63万吨，环比减少2.68万吨，减幅1.83%，同比减少0.64%。其中：200系产量39.65万吨，环比减少4.64万吨；300系产量77.1万吨，环比增加1.45万吨；400系产量26.88万吨，环比增加0.51万吨。 11月冷轧排产预计为149.96万吨，预计环比增加6.33万吨。其中：200系排产量43.2万吨，预计环比增加3.55万吨；300系排产量79.18万吨，预计环比增加2.08万吨；400系排产量27.58万吨，预计环比增加0.7万吨。",
+      "raw_content": "据Mysteel调研，2026年10月国内41家不锈钢厂冷轧产量合计143.63万吨，环比减少2.68万吨，减幅1.83%，同比减少0.64%。其中：200系产量39.65万吨，环比减少4.64万吨；300系产量77.1万吨，环比增加1.45万吨；400系产量26.88万吨，环比增加0.51万吨。 11月冷轧排产预计为149.96万吨，预计环比增加6.33万吨。其中：200系排产量43.2万吨，预计环比增加3.55万吨；300系排产量79.18万吨，预计环比增加2.08万吨；400系排产量27.58万吨，预计环比增加0.7万吨。",
+      "category": {
+        "id": 11,
+        "name": "11"
+      },
+      "section": {
+        "id": 4,
+        "name": "4"
+      },
+      "products": [
+        {
+          "id": "0102160101",
+          "name": "冷轧",
+          "source": "relationBreed"
+        },
+        {
+          "id": "不锈钢卷",
+          "name": "不锈钢卷",
+          "source": "breedTag"
+        }
+      ],
+      "regions": [
+        {
+          "id": "01",
+          "name": "国内"
+        },
+        {
+          "id": "021825",
+          "name": "中国"
+        }
+      ],
+      "source_name": "我的钢铁网(Mysteel)",
+      "source_url": "http://bxg.mysteel.com/a/26110619/B979A9B2F06EBD62.html",
+      "in_article_url": "http://bxg.mysteel.com/a/26110619/B979A9B2F06EBD62.html",
+      "out_article_url": null,
+      "in_article_title": "Mysteel数据：2026年10月中国不锈钢冷轧产量及11月排产调查统计",
+      "out_article_title": null,
+      "source_link_status": "article_link",
+      "data_source": 1,
+      "publisher_id": 221547,
+      "relation_id": 46396066,
+      "ai_flag": 0,
+      "platform_product_line": "cold-rolled",
+      "mapping_status": "mapped",
+      "quality_flags": []
+    },
+    {
+      "news_id": "4969133",
+      "published_at": "2026-11-08T02:58:19.549Z",
+      "published_at_ms": 1794106699549,
+      "timezone": "Asia/Shanghai",
+      "content_text": "11月8日辽宁鑫亿废钢价格上调10，最新执行价：0.5-1厚1870-1920，1-2厚1930-1970，2-4厚2030-2070，3-5厚2060-2100，4-6厚以上2090-2130，发动机（变速箱）1990-2030，鸡笼1720-1790，纯铁丝1820-1890，钢丝绳1740-1810，不含税。",
+      "content_html": "11月8日辽宁鑫亿废钢价格上调10，最新执行价：0.5-1厚1870-1920，1-2厚1930-1970，2-4厚2030-2070，3-5厚2060-2100，4-6厚以上2090-2130，发动机（变速箱）1990-2030，鸡笼1720-1790，纯铁丝1820-1890，钢丝绳1740-1810，不含税。",
+      "raw_content": "11月8日辽宁鑫亿废钢价格上调10，最新执行价：0.5-1厚1870-1920，1-2厚1930-1970，2-4厚2030-2070，3-5厚2060-2100，4-6厚以上2090-2130，发动机（变速箱）1990-2030，鸡笼1720-1790，纯铁丝1820-1890，钢丝绳1740-1810，不含税。",
+      "category": {
+        "id": 2,
+        "name": "2"
+      },
+      "section": {
+        "id": 9,
+        "name": "9"
+      },
+      "products": [
+        {
+          "id": "0306",
+          "name": "废钢",
+          "source": "relationBreed"
+        },
+        {
+          "id": "再生金属",
+          "name": "再生金属",
+          "source": "breedTag"
+        }
+      ],
+      "regions": [
+        {
+          "id": "01050107",
+          "name": "辽阳"
+        }
+      ],
+      "source_name": null,
+      "source_url": null,
+      "in_article_url": null,
+      "out_article_url": null,
+      "in_article_title": null,
+      "out_article_title": null,
+      "source_link_status": "no_link",
+      "data_source": 2,
+      "publisher_id": 224407,
+      "relation_id": 7727597,
+      "ai_flag": 0,
+      "platform_product_line": null,
+      "mapping_status": "ambiguous",
+      "quality_flags": [
+        "source_link_missing"
+      ]
+    },
+    {
+      "news_id": "4969132",
+      "published_at": "2026-11-08T02:33:37.802Z",
+      "published_at_ms": 1794105217802,
+      "timezone": "Asia/Shanghai",
+      "content_text": "11月8日唐山燕钢废钢最新价：重型一2320，优质2300，重型二2300，重A2280，重B2180，中A2240，中B2140，优质铸铁2160，普通铸铁1960，大件剪切2250；炉料一2180，炉料二2130，镀锌压块2060，散片2150；一级剪切料2040，二级剪切料2020，彩钢散片1850，北京码边料1770，不含税。",
+      "content_html": "11月8日唐山燕钢废钢最新价：重型一2320，优质2300，重型二2300，重A2280，重B2180，中A2240，中B2140，优质铸铁2160，普通铸铁1960，大件剪切2250；炉料一2180，炉料二2130，镀锌压块2060，散片2150；一级剪切料2040，二级剪切料2020，彩钢散片1850，北京码边料1770，不含税。",
+      "raw_content": "11月8日唐山燕钢废钢最新价：重型一2320，优质2300，重型二2300，重A2280，重B2180，中A2240，中B2140，优质铸铁2160，普通铸铁1960，大件剪切2250；炉料一2180，炉料二2130，镀锌压块2060，散片2150；一级剪切料2040，二级剪切料2020，彩钢散片1850，北京码边料1770，不含税。",
       "category": {
         "id": 2,
         "name": "2"
@@ -286,8 +576,8 @@
       "out_article_title": null,
       "source_link_status": "no_link",
       "data_source": 2,
-      "publisher_id": 220615,
-      "relation_id": 7727571,
+      "publisher_id": 221086,
+      "relation_id": 7727596,
       "ai_flag": 0,
       "platform_product_line": null,
       "mapping_status": "ambiguous",
@@ -296,403 +586,13 @@
       ]
     },
     {
-      "news_id": "4969088",
-      "published_at": "2026-11-07T03:00:00.000Z",
-      "published_at_ms": 1794020400000,
+      "news_id": "4969131",
+      "published_at": "2026-11-08T02:07:36.711Z",
+      "published_at_ms": 1794103656711,
       "timezone": "Asia/Shanghai",
-      "content_text": "西南钢价窄幅震荡，库存下降。重庆投116.8亿金融工具助项目落地，48.6亿广合高速西线及3.37亿巫山治水项目中标。云南碗厂磷矿9.6亿井下工程定标。贵州印发“十五五”通信规划，保山铁路货运破2000万吨，宜攀高速宁巧隧道贯通。",
-      "content_html": "西南钢价窄幅震荡，库存下降。重庆投116.8亿金融工具助项目落地，48.6亿广合高速西线及3.37亿巫山治水项目中标。云南碗厂磷矿9.6亿井下工程定标。贵州印发“十五五”通信规划，保山铁路货运破2000万吨，宜攀高速宁巧隧道贯通。",
-      "raw_content": "西南钢价窄幅震荡，库存下降。重庆投116.8亿金融工具助项目落地，48.6亿广合高速西线及3.37亿巫山治水项目中标。云南碗厂磷矿9.6亿井下工程定标。贵州印发“十五五”通信规划，保山铁路货运破2000万吨，宜攀高速宁巧隧道贯通。",
-      "category": {
-        "id": 1,
-        "name": "1"
-      },
-      "section": {
-        "id": 8,
-        "name": "8"
-      },
-      "products": [
-        {
-          "id": "010101",
-          "name": "建筑钢材",
-          "source": "relationBreed"
-        }
-      ],
-      "regions": [
-        {
-          "id": "010601",
-          "name": "重庆"
-        },
-        {
-          "id": "010602",
-          "name": "四川"
-        },
-        {
-          "id": "01060201",
-          "name": "成都"
-        },
-        {
-          "id": "01060202",
-          "name": "乐山"
-        },
-        {
-          "id": "01060203",
-          "name": "攀枝花"
-        },
-        {
-          "id": "01060204",
-          "name": "达州"
-        },
-        {
-          "id": "01060205",
-          "name": "宜宾"
-        },
-        {
-          "id": "01060206",
-          "name": "绵阳"
-        },
-        {
-          "id": "01060207",
-          "name": "凉山"
-        },
-        {
-          "id": "01060214",
-          "name": "泸州"
-        },
-        {
-          "id": "010603",
-          "name": "贵州"
-        },
-        {
-          "id": "010604",
-          "name": "云南"
-        }
-      ],
-      "source_name": "我的钢铁网(Mysteel)",
-      "source_url": "http://gc.mysteel.com/a/26110617/52CCAEFE28B475A7.html",
-      "in_article_url": "http://gc.mysteel.com/a/26110617/52CCAEFE28B475A7.html",
-      "out_article_url": null,
-      "in_article_title": "Mysteel周报：西南一周产经—西南建筑钢材价格窄幅震荡运行 库存继续下降",
-      "out_article_title": null,
-      "source_link_status": "article_link",
-      "data_source": 1,
-      "publisher_id": 203960,
-      "relation_id": 46395742,
-      "ai_flag": 0,
-      "platform_product_line": null,
-      "mapping_status": "ambiguous",
-      "quality_flags": []
-    },
-    {
-      "news_id": "4969087",
-      "published_at": "2026-11-07T02:37:40.488Z",
-      "published_at_ms": 1794019060488,
-      "timezone": "Asia/Shanghai",
-      "content_text": "11月7日唐山中厚板市场价格稳，14-20普板河钢中厚板3260，低合金报3410。（元/吨）",
-      "content_html": "11月7日唐山中厚板市场价格稳，14-20普板河钢中厚板3260，低合金报3410。（元/吨）",
-      "raw_content": "11月7日唐山中厚板市场价格稳，14-20普板河钢中厚板3260，低合金报3410。（元/吨）",
-      "category": {
-        "id": 2,
-        "name": "2"
-      },
-      "section": {
-        "id": 7,
-        "name": "7"
-      },
-      "products": [
-        {
-          "id": "010102",
-          "name": "中板",
-          "source": "relationBreed"
-        },
-        {
-          "id": "低合金高强板",
-          "name": "低合金高强板",
-          "source": "breedTag"
-        }
-      ],
-      "regions": [
-        {
-          "id": "010403",
-          "name": "河北"
-        }
-      ],
-      "source_name": null,
-      "source_url": null,
-      "in_article_url": null,
-      "out_article_url": null,
-      "in_article_title": null,
-      "out_article_title": null,
-      "source_link_status": "no_link",
-      "data_source": 2,
-      "publisher_id": 227963,
-      "relation_id": 7727569,
-      "ai_flag": 0,
-      "platform_product_line": null,
-      "mapping_status": "ambiguous",
-      "quality_flags": [
-        "source_link_missing"
-      ]
-    },
-    {
-      "news_id": "4969086",
-      "published_at": "2026-11-07T02:33:00.000Z",
-      "published_at_ms": 1794018780000,
-      "timezone": "Asia/Shanghai",
-      "content_text": "兴业银锡全资子公司山南锑金拟向*ST威领无偿捐赠现金3.5亿元，旨在补充*ST威领权益资本、改善财务结构，为*ST威领经营恢复及嘉宇矿业资源开发创造条件。此次捐赠系在兴业银锡11月4日取得*ST威领控制权后不久进行，有助于*ST威领净资产由负转正以规避退市风险。",
-      "content_html": "兴业银锡全资子公司山南锑金拟向*ST威领无偿捐赠现金3.5亿元，旨在补充*ST威领权益资本、改善财务结构，为*ST威领经营恢复及嘉宇矿业资源开发创造条件。此次捐赠系在兴业银锡11月4日取得*ST威领控制权后不久进行，有助于*ST威领净资产由负转正以规避退市风险。",
-      "raw_content": "兴业银锡全资子公司山南锑金拟向*ST威领无偿捐赠现金3.5亿元，旨在补充*ST威领权益资本、改善财务结构，为*ST威领经营恢复及嘉宇矿业资源开发创造条件。此次捐赠系在兴业银锡11月4日取得*ST威领控制权后不久进行，有助于*ST威领净资产由负转正以规避退市风险。",
-      "category": {
-        "id": 4,
-        "name": "4"
-      },
-      "section": {
-        "id": 8,
-        "name": "8"
-      },
-      "products": [
-        {
-          "id": "020701",
-          "name": "锡锭",
-          "source": "relationBreed"
-        },
-        {
-          "id": "020703",
-          "name": "锡材",
-          "source": "relationBreed"
-        },
-        {
-          "id": "020705",
-          "name": "锡精矿",
-          "source": "relationBreed"
-        },
-        {
-          "id": "02070601",
-          "name": "焊锡",
-          "source": "relationBreed"
-        },
-        {
-          "id": "锑",
-          "name": "锑",
-          "source": "breedTag"
-        },
-        {
-          "id": "锡",
-          "name": "锡",
-          "source": "breedTag"
-        }
-      ],
-      "regions": [],
-      "source_name": "财联社",
-      "source_url": "http://youse.mysteel.com/a/26110710/864546FF06562BA3.html",
-      "in_article_url": "http://youse.mysteel.com/a/26110710/864546FF06562BA3.html",
-      "out_article_url": null,
-      "in_article_title": "入主数日即“输血”，兴业银锡拟向*ST威领无偿赠与现金3.5亿元",
-      "out_article_title": null,
-      "source_link_status": "article_link",
-      "data_source": 1,
-      "publisher_id": 221060,
-      "relation_id": 46396232,
-      "ai_flag": 0,
-      "platform_product_line": null,
-      "mapping_status": "ambiguous",
-      "quality_flags": []
-    },
-    {
-      "news_id": "4969085",
-      "published_at": "2026-11-07T02:24:27.612Z",
-      "published_at_ms": 1794018267612,
-      "timezone": "Asia/Shanghai",
-      "content_text": "11月7日晨间蒙古国煤炭查干哈达-甘其毛都口岸短盘运费价格指数报82.0元/吨，较上一通关日持平。杭吉-满都拉口岸短盘运费价格指数报70.0元/吨，较上一通关日持平。",
-      "content_html": "11月7日晨间蒙古国煤炭查干哈达-甘其毛都口岸短盘运费价格指数报82.0元/吨，较上一通关日持平。杭吉-满都拉口岸短盘运费价格指数报70.0元/吨，较上一通关日持平。",
-      "raw_content": "11月7日晨间蒙古国煤炭查干哈达-甘其毛都口岸短盘运费价格指数报82.0元/吨，较上一通关日持平。杭吉-满都拉口岸短盘运费价格指数报70.0元/吨，较上一通关日持平。",
-      "category": {
-        "id": 12,
-        "name": "12"
-      },
-      "section": {
-        "id": 7,
-        "name": "7"
-      },
-      "products": [
-        {
-          "id": "0502",
-          "name": "煤炭",
-          "source": "relationBreed"
-        }
-      ],
-      "regions": [
-        {
-          "id": "02",
-          "name": "国外"
-        }
-      ],
-      "source_name": null,
-      "source_url": null,
-      "in_article_url": null,
-      "out_article_url": null,
-      "in_article_title": null,
-      "out_article_title": null,
-      "source_link_status": "no_link",
-      "data_source": 2,
-      "publisher_id": 221633,
-      "relation_id": 7727568,
-      "ai_flag": 0,
-      "platform_product_line": null,
-      "mapping_status": "ambiguous",
-      "quality_flags": [
-        "source_link_missing"
-      ]
-    },
-    {
-      "news_id": "4969084",
-      "published_at": "2026-11-07T02:12:00.000Z",
-      "published_at_ms": 1794017520000,
-      "timezone": "Asia/Shanghai",
-      "content_text": "据央行数据，中国10月末黄金储备报7830万盎司，9月末为7747万盎司，为连续第24个月增持黄金。",
-      "content_html": "据央行数据，中国10月末黄金储备报7830万盎司，9月末为7747万盎司，为连续第24个月增持黄金。",
-      "raw_content": "据央行数据，中国10月末黄金储备报7830万盎司，9月末为7747万盎司，为连续第24个月增持黄金。",
-      "category": {
-        "id": 15,
-        "name": "15"
-      },
-      "section": {
-        "id": 8,
-        "name": "8"
-      },
-      "products": [
-        {
-          "id": "0209",
-          "name": "金",
-          "source": "relationBreed"
-        },
-        {
-          "id": "黄金",
-          "name": "黄金",
-          "source": "breedTag"
-        }
-      ],
-      "regions": [],
-      "source_name": "财联社",
-      "source_url": "http://news.mysteel.com/a/26110710/506077F63727A546.html",
-      "in_article_url": "http://news.mysteel.com/a/26110710/506077F63727A546.html",
-      "out_article_url": null,
-      "in_article_title": "中国10月末黄金储备报7830万盎司，为连续第24个月增持黄金",
-      "out_article_title": null,
-      "source_link_status": "article_link",
-      "data_source": 1,
-      "publisher_id": 221060,
-      "relation_id": 46396211,
-      "ai_flag": 0,
-      "platform_product_line": null,
-      "mapping_status": "ambiguous",
-      "quality_flags": []
-    },
-    {
-      "news_id": "4969083",
-      "published_at": "2026-11-07T02:09:00.000Z",
-      "published_at_ms": 1794017340000,
-      "timezone": "Asia/Shanghai",
-      "content_text": "11月7日，据央行，中国10月末外汇储备报34051.78亿美元，环比9月增加49.27亿美元。",
-      "content_html": "11月7日，据央行，中国10月末外汇储备报34051.78亿美元，环比9月增加49.27亿美元。",
-      "raw_content": "11月7日，据央行，中国10月末外汇储备报34051.78亿美元，环比9月增加49.27亿美元。",
-      "category": {
-        "id": 1,
-        "name": "1"
-      },
-      "section": {
-        "id": 8,
-        "name": "8"
-      },
-      "products": [],
-      "regions": [],
-      "source_name": "财联社",
-      "source_url": "http://news.mysteel.com/a/26110710/E671761EE3E81982.html",
-      "in_article_url": "http://news.mysteel.com/a/26110710/E671761EE3E81982.html",
-      "out_article_url": null,
-      "in_article_title": "央行：10月末外汇储备报34051.78亿美元",
-      "out_article_title": null,
-      "source_link_status": "article_link",
-      "data_source": 1,
-      "publisher_id": 221060,
-      "relation_id": 46396207,
-      "ai_flag": 0,
-      "platform_product_line": null,
-      "mapping_status": "unmapped",
-      "quality_flags": []
-    },
-    {
-      "news_id": "4969082",
-      "published_at": "2026-11-07T02:00:00.000Z",
-      "published_at_ms": 1794016800000,
-      "timezone": "Asia/Shanghai",
-      "content_text": "央行加码支持资本市场，下调回购再贷款利率。华中钢市涨跌互现：湖南供需双增、库存去化价格上行；湖北稳中小涨；河南偏弱震荡。前9月湖北交通投资超1500亿元，湖南江华抽水蓄能电站开工。宏观政策发力，钢价有望震荡筑底。",
-      "content_html": "央行加码支持资本市场，下调回购再贷款利率。华中钢市涨跌互现：湖南供需双增、库存去化价格上行；湖北稳中小涨；河南偏弱震荡。前9月湖北交通投资超1500亿元，湖南江华抽水蓄能电站开工。宏观政策发力，钢价有望震荡筑底。",
-      "raw_content": "央行加码支持资本市场，下调回购再贷款利率。华中钢市涨跌互现：湖南供需双增、库存去化价格上行；湖北稳中小涨；河南偏弱震荡。前9月湖北交通投资超1500亿元，湖南江华抽水蓄能电站开工。宏观政策发力，钢价有望震荡筑底。",
-      "category": {
-        "id": 2,
-        "name": "2"
-      },
-      "section": {
-        "id": 6,
-        "name": "6"
-      },
-      "products": [
-        {
-          "id": "010101",
-          "name": "建筑钢材",
-          "source": "relationBreed"
-        }
-      ],
-      "regions": [
-        {
-          "id": "010301",
-          "name": "河南"
-        },
-        {
-          "id": "01030101",
-          "name": "郑州"
-        },
-        {
-          "id": "010302",
-          "name": "湖北"
-        },
-        {
-          "id": "01030204",
-          "name": "武汉"
-        },
-        {
-          "id": "010303",
-          "name": "湖南"
-        },
-        {
-          "id": "01030301",
-          "name": "长沙"
-        }
-      ],
-      "source_name": "我的钢铁网(Mysteel)",
-      "source_url": "http://gc.mysteel.com/a/26110618/58BB4E7517D5216A.html",
-      "in_article_url": "http://gc.mysteel.com/a/26110618/58BB4E7517D5216A.html",
-      "out_article_url": null,
-      "in_article_title": "Mysteel周报：华中一周产经——Mysteel周报：华中一周产经——金融支持资本市场政策持续加码 周内区域市场涨跌互现",
-      "out_article_title": null,
-      "source_link_status": "article_link",
-      "data_source": 1,
-      "publisher_id": 224732,
-      "relation_id": 46395997,
-      "ai_flag": 0,
-      "platform_product_line": null,
-      "mapping_status": "ambiguous",
-      "quality_flags": []
-    },
-    {
-      "news_id": "4969081",
-      "published_at": "2026-11-07T01:56:59.405Z",
-      "published_at_ms": 1794016619405,
-      "timezone": "Asia/Shanghai",
-      "content_text": "11月7日唐山建筑钢材市场价格收盘稳，现三级大螺纹3070，三级小螺纹3100，盘螺3340。（元/吨）",
-      "content_html": "11月7日唐山建筑钢材市场价格收盘稳，现三级大螺纹3070，三级小螺纹3100，盘螺3340。（元/吨）",
-      "raw_content": "11月7日唐山建筑钢材市场价格收盘稳，现三级大螺纹3070，三级小螺纹3100，盘螺3340。（元/吨）",
+      "content_text": "11月8日唐山建筑钢材市场价格早盘主稳，现三级大螺纹3070元/吨，三级小螺纹3100元/吨，盘螺3340元/吨。",
+      "content_html": "11月8日唐山建筑钢材市场价格早盘主稳，现三级大螺纹3070元/吨，三级小螺纹3100元/吨，盘螺3340元/吨。",
+      "raw_content": "11月8日唐山建筑钢材市场价格早盘主稳，现三级大螺纹3070元/吨，三级小螺纹3100元/吨，盘螺3340元/吨。",
       "category": {
         "id": 2,
         "name": "2"
@@ -732,8 +632,8 @@
       "out_article_title": null,
       "source_link_status": "no_link",
       "data_source": 2,
-      "publisher_id": 227963,
-      "relation_id": 7727567,
+      "publisher_id": 221172,
+      "relation_id": 7727595,
       "ai_flag": 0,
       "platform_product_line": null,
       "mapping_status": "ambiguous",
@@ -742,46 +642,13 @@
       ]
     },
     {
-      "news_id": "4969080",
-      "published_at": "2026-11-07T01:36:00.000Z",
-      "published_at_ms": 1794015360000,
+      "news_id": "4969130",
+      "published_at": "2026-11-08T01:59:58.807Z",
+      "published_at_ms": 1794103198807,
       "timezone": "Asia/Shanghai",
-      "content_text": "11月7日，商务部新闻发言人就美制裁中国企业答记者问。针对美国务院以涉古巴为由制裁两家中国企业的消息，中方表示坚决反对。美方升级对中方制裁打压，密集出台多项歧视性限制措施，严重损害中国企业权益，背离两国元首达成的重要共识，破坏中美经贸关系稳定。中方敦促美方纠正错误做法，并保留采取必要措施维护自身正当权益的权利。",
-      "content_html": "11月7日，商务部新闻发言人就美制裁中国企业答记者问。针对美国务院以涉古巴为由制裁两家中国企业的消息，中方表示坚决反对。美方升级对中方制裁打压，密集出台多项歧视性限制措施，严重损害中国企业权益，背离两国元首达成的重要共识，破坏中美经贸关系稳定。中方敦促美方纠正错误做法，并保留采取必要措施维护自身正当权益的权利。",
-      "raw_content": "11月7日，商务部新闻发言人就美制裁中国企业答记者问。针对美国务院以涉古巴为由制裁两家中国企业的消息，中方表示坚决反对。美方升级对中方制裁打压，密集出台多项歧视性限制措施，严重损害中国企业权益，背离两国元首达成的重要共识，破坏中美经贸关系稳定。中方敦促美方纠正错误做法，并保留采取必要措施维护自身正当权益的权利。",
-      "category": {
-        "id": 1,
-        "name": "1"
-      },
-      "section": {
-        "id": 8,
-        "name": "8"
-      },
-      "products": [],
-      "regions": [],
-      "source_name": "财联社",
-      "source_url": "http://news.mysteel.com/a/26110709/294540499E8D7EA8.html",
-      "in_article_url": "http://news.mysteel.com/a/26110709/294540499E8D7EA8.html",
-      "out_article_url": null,
-      "in_article_title": "商务部新闻发言人就美制裁中国企业答记者问",
-      "out_article_title": null,
-      "source_link_status": "article_link",
-      "data_source": 1,
-      "publisher_id": 221060,
-      "relation_id": 46396186,
-      "ai_flag": 0,
-      "platform_product_line": null,
-      "mapping_status": "unmapped",
-      "quality_flags": []
-    },
-    {
-      "news_id": "4969079",
-      "published_at": "2026-11-07T01:35:41.945Z",
-      "published_at_ms": 1794015341945,
-      "timezone": "Asia/Shanghai",
-      "content_text": "11月7日唐山热轧带钢价格稳，现2.5*355主流宏兴3060元/吨，鑫达3050元/吨；3.0*685佰工3110元/吨，天柱3100元/吨。",
-      "content_html": "11月7日唐山热轧带钢价格稳，现2.5*355主流宏兴3060元/吨，鑫达3050元/吨；3.0*685佰工3110元/吨，天柱3100元/吨。",
-      "raw_content": "11月7日唐山热轧带钢价格稳，现2.5*355主流宏兴3060元/吨，鑫达3050元/吨；3.0*685佰工3110元/吨，天柱3100元/吨。",
+      "content_text": "11月8日唐山热轧带钢价格稳，现2.5*355主流宏兴3060元/吨，鑫达3050元/吨；3.0*685佰工3110元/吨，天柱3100元/吨。",
+      "content_html": "11月8日唐山热轧带钢价格稳，现2.5*355主流宏兴3060元/吨，鑫达3050元/吨；3.0*685佰工3110元/吨，天柱3100元/吨。",
+      "raw_content": "11月8日唐山热轧带钢价格稳，现2.5*355主流宏兴3060元/吨，鑫达3050元/吨；3.0*685佰工3110元/吨，天柱3100元/吨。",
       "category": {
         "id": 2,
         "name": "2"
@@ -811,8 +678,8 @@
       "out_article_title": null,
       "source_link_status": "no_link",
       "data_source": 2,
-      "publisher_id": 227963,
-      "relation_id": 7727566,
+      "publisher_id": 221172,
+      "relation_id": 7727594,
       "ai_flag": 0,
       "platform_product_line": "hot-rolled",
       "mapping_status": "mapped",
@@ -821,13 +688,130 @@
       ]
     },
     {
-      "news_id": "4969078",
-      "published_at": "2026-11-07T01:33:37.082Z",
-      "published_at_ms": 1794015217082,
+      "news_id": "4969129",
+      "published_at": "2026-11-08T01:58:00.000Z",
+      "published_at_ms": 1794103080000,
       "timezone": "Asia/Shanghai",
-      "content_text": "11月7日唐山主流145热轧带钢钢厂早盘价格较昨稳，现2.5*145报价3140元/吨，含税出厂，成交一般。",
-      "content_html": "11月7日唐山主流145热轧带钢钢厂早盘价格较昨稳，现2.5*145报价3140元/吨，含税出厂，成交一般。",
-      "raw_content": "11月7日唐山主流145热轧带钢钢厂早盘价格较昨稳，现2.5*145报价3140元/吨，含税出厂，成交一般。",
+      "content_text": "11月7日，拓斯达在全球开放日活动上发布三套面向工业真实场景的产业解决方案，落地场景聚焦多品种小批量分拣、多工序集成作业、智能搬运。",
+      "content_html": "11月7日，拓斯达在全球开放日活动上发布三套面向工业真实场景的产业解决方案，落地场景聚焦多品种小批量分拣、多工序集成作业、智能搬运。",
+      "raw_content": "11月7日，拓斯达在全球开放日活动上发布三套面向工业真实场景的产业解决方案，落地场景聚焦多品种小批量分拣、多工序集成作业、智能搬运。",
+      "category": {
+        "id": 18,
+        "name": "18"
+      },
+      "section": {
+        "id": 8,
+        "name": "8"
+      },
+      "products": [],
+      "regions": [],
+      "source_name": "财联社",
+      "source_url": "http://news.mysteel.com/a/26110809/9149B78B8BA6A618.html",
+      "in_article_url": "http://news.mysteel.com/a/26110809/9149B78B8BA6A618.html",
+      "out_article_url": null,
+      "in_article_title": "拓斯达发布三套工业场景解决方案",
+      "out_article_title": null,
+      "source_link_status": "article_link",
+      "data_source": 1,
+      "publisher_id": 216274,
+      "relation_id": 46396395,
+      "ai_flag": 0,
+      "platform_product_line": null,
+      "mapping_status": "unmapped",
+      "quality_flags": []
+    },
+    {
+      "news_id": "4969128",
+      "published_at": "2026-11-08T01:57:00.000Z",
+      "published_at_ms": 1794103020000,
+      "timezone": "Asia/Shanghai",
+      "content_text": "苹果研究团队披露人形机器人自主控制系统HALO进展，在360次单项任务测试中平均成功率为91%；在真实环境中3种组合任务测试平均成功率70%。目前数据生成需人工参与，且机器人依赖视觉感知，接触情况感知不足，后续拟加入触觉感知以改进性能。",
+      "content_html": "苹果研究团队披露人形机器人自主控制系统HALO进展，在360次单项任务测试中平均成功率为91%；在真实环境中3种组合任务测试平均成功率70%。目前数据生成需人工参与，且机器人依赖视觉感知，接触情况感知不足，后续拟加入触觉感知以改进性能。",
+      "raw_content": "苹果研究团队披露人形机器人自主控制系统HALO进展，在360次单项任务测试中平均成功率为91%；在真实环境中3种组合任务测试平均成功率70%。目前数据生成需人工参与，且机器人依赖视觉感知，接触情况感知不足，后续拟加入触觉感知以改进性能。",
+      "category": {
+        "id": 18,
+        "name": "18"
+      },
+      "section": {
+        "id": 8,
+        "name": "8"
+      },
+      "products": [],
+      "regions": [],
+      "source_name": "财联社",
+      "source_url": "http://news.mysteel.com/a/26110809/137340574F11ECBF.html",
+      "in_article_url": "http://news.mysteel.com/a/26110809/137340574F11ECBF.html",
+      "out_article_url": null,
+      "in_article_title": "苹果研究团队披露机器人“大脑”进展，单项任务测试平均成功率为91%",
+      "out_article_title": null,
+      "source_link_status": "article_link",
+      "data_source": 1,
+      "publisher_id": 216274,
+      "relation_id": 46396392,
+      "ai_flag": 0,
+      "platform_product_line": null,
+      "mapping_status": "unmapped",
+      "quality_flags": []
+    },
+    {
+      "news_id": "4969127",
+      "published_at": "2026-11-08T01:56:38.355Z",
+      "published_at_ms": 1794102998355,
+      "timezone": "Asia/Shanghai",
+      "content_text": "11月8日唐山中厚板市场价格稳，14-20普板河钢中厚板3260元/吨，低合金报3410元/吨。",
+      "content_html": "11月8日唐山中厚板市场价格稳，14-20普板河钢中厚板3260元/吨，低合金报3410元/吨。",
+      "raw_content": "11月8日唐山中厚板市场价格稳，14-20普板河钢中厚板3260元/吨，低合金报3410元/吨。",
+      "category": {
+        "id": 2,
+        "name": "2"
+      },
+      "section": {
+        "id": 7,
+        "name": "7"
+      },
+      "products": [
+        {
+          "id": "010102",
+          "name": "中板",
+          "source": "relationBreed"
+        },
+        {
+          "id": "低合金高强板",
+          "name": "低合金高强板",
+          "source": "breedTag"
+        }
+      ],
+      "regions": [
+        {
+          "id": "010403",
+          "name": "河北"
+        }
+      ],
+      "source_name": null,
+      "source_url": null,
+      "in_article_url": null,
+      "out_article_url": null,
+      "in_article_title": null,
+      "out_article_title": null,
+      "source_link_status": "no_link",
+      "data_source": 2,
+      "publisher_id": 221172,
+      "relation_id": 7727592,
+      "ai_flag": 0,
+      "platform_product_line": null,
+      "mapping_status": "ambiguous",
+      "quality_flags": [
+        "source_link_missing"
+      ]
+    },
+    {
+      "news_id": "4969126",
+      "published_at": "2026-11-08T01:54:26.386Z",
+      "published_at_ms": 1794102866386,
+      "timezone": "Asia/Shanghai",
+      "content_text": "11月8日唐山主流145热轧带钢钢厂早盘价格较昨稳，现2.5*145报价3140元/吨，含税出厂，成交偏弱。",
+      "content_html": "11月8日唐山主流145热轧带钢钢厂早盘价格较昨稳，现2.5*145报价3140元/吨，含税出厂，成交偏弱。",
+      "raw_content": "11月8日唐山主流145热轧带钢钢厂早盘价格较昨稳，现2.5*145报价3140元/吨，含税出厂，成交偏弱。",
       "category": {
         "id": 2,
         "name": "2"
@@ -862,8 +846,8 @@
       "out_article_title": null,
       "source_link_status": "no_link",
       "data_source": 2,
-      "publisher_id": 227963,
-      "relation_id": 7727565,
+      "publisher_id": 221172,
+      "relation_id": 7727591,
       "ai_flag": 0,
       "platform_product_line": "hot-rolled",
       "mapping_status": "mapped",
@@ -872,13 +856,113 @@
       ]
     },
     {
-      "news_id": "4969077",
-      "published_at": "2026-11-07T01:30:00.000Z",
-      "published_at_ms": 1794015000000,
+      "news_id": "4969125",
+      "published_at": "2026-11-08T01:54:10.376Z",
+      "published_at_ms": 1794102850376,
       "timezone": "Asia/Shanghai",
-      "content_text": "2026年11月6日，中国商务部部长王文涛与加蓬外交、合作、一体化和海外侨民部部长塔西拉签署《关于结束〈中国和加蓬共同发展经济伙伴关系协定早期收获安排〉谈判的谅解备忘录》。中加双方于2026年10月开展一轮谈判，对货物贸易关税减让、原产地规则和实施程序、机制设置等内容达成一致，同意结束早收安排谈判。中加早收安排是落实习近平主席对外宣布的对非洲建交国100%税目产品零关税举措的制度化设计，是中方扩大自主开放的重要举措。",
-      "content_html": "2026年11月6日，中国商务部部长王文涛与加蓬外交、合作、一体化和海外侨民部部长塔西拉签署《关于结束〈中国和加蓬共同发展经济伙伴关系协定早期收获安排〉谈判的谅解备忘录》。中加双方于2026年10月开展一轮谈判，对货物贸易关税减让、原产地规则和实施程序、机制设置等内容达成一致，同意结束早收安排谈判。中加早收安排是落实习近平主席对外宣布的对非洲建交国100%税目产品零关税举措的制度化设计，是中方扩大自主开放的重要举措。",
-      "raw_content": "2026年11月6日，中国商务部部长王文涛与加蓬外交、合作、一体化和海外侨民部部长塔西拉签署《关于结束〈中国和加蓬共同发展经济伙伴关系协定早期收获安排〉谈判的谅解备忘录》。中加双方于2026年10月开展一轮谈判，对货物贸易关税减让、原产地规则和实施程序、机制设置等内容达成一致，同意结束早收安排谈判。中加早收安排是落实习近平主席对外宣布的对非洲建交国100%税目产品零关税举措的制度化设计，是中方扩大自主开放的重要举措。",
+      "content_text": "11 月 8日 10时 00 分：揭阳新顺废铁场 工业料冲剪 2040 马口铁、工业镀锌 1820 模具 2130 直钢筋 2110 杂生铁、硬钢 2080 纯工槽钢 2090 注塑机脚 2830 纯电机生 2060 6 厘以上分割 2060 5 厘以上分割 2030 工地建筑排山管 1980 3-4 厘以上纯剪料 1980 2 厘以上剪料 1950 杂厚碎铁 1800 纯铁皮（干净无腐蚀）1660 乱钢筋 2030 打楼钢筋 2060 生活杂铁 1270-1350 钢丝绳、床垫网 1580 变压器壳 2010 夹层铁皮防火铁皮 770-1170 备注：具体看货给价（化学桶、煤气瓶、氧气瓶、灭火器、千斤顶、避震等密封件，如发现当杂质扣除，做假重罚）询价，联系人：陈濂隐：13828196195 覃光南：15119390987 地址：揭阳榕城仙桥湖心村新路中段（新顺废铁场）",
+      "content_html": "11 月 8日 10时 00 分：揭阳新顺废铁场\n工业料冲剪 2040\n马口铁、工业镀锌 1820\n模具 2130\n直钢筋 2110\n杂生铁、硬钢 2080\n纯工槽钢 2090\n注塑机脚 2830\n纯电机生 2060\n6 厘以上分割 2060\n5 厘以上分割 2030\n工地建筑排山管 1980\n3-4 厘以上纯剪料 1980\n2 厘以上剪料 1950\n杂厚碎铁 1800\n纯铁皮（干净无腐蚀）1660\n乱钢筋 2030\n打楼钢筋 2060\n生活杂铁 1270-1350\n钢丝绳、床垫网 1580\n变压器壳 2010\n夹层铁皮防火铁皮 770-1170\n备注：具体看货给价（化学桶、煤气瓶、氧气瓶、灭火器、千斤顶、避震等密封件，如发现当杂质扣除，做假重罚）询价，联系人：陈濂隐：13828196195 覃光南：15119390987\n地址：揭阳榕城仙桥湖心村新路中段（新顺废铁场）",
+      "raw_content": "11 月 8日 10时 00 分：揭阳新顺废铁场\n工业料冲剪 2040\n马口铁、工业镀锌 1820\n模具 2130\n直钢筋 2110\n杂生铁、硬钢 2080\n纯工槽钢 2090\n注塑机脚 2830\n纯电机生 2060\n6 厘以上分割 2060\n5 厘以上分割 2030\n工地建筑排山管 1980\n3-4 厘以上纯剪料 1980\n2 厘以上剪料 1950\n杂厚碎铁 1800\n纯铁皮（干净无腐蚀）1660\n乱钢筋 2030\n打楼钢筋 2060\n生活杂铁 1270-1350\n钢丝绳、床垫网 1580\n变压器壳 2010\n夹层铁皮防火铁皮 770-1170\n备注：具体看货给价（化学桶、煤气瓶、氧气瓶、灭火器、千斤顶、避震等密封件，如发现当杂质扣除，做假重罚）询价，联系人：陈濂隐：13828196195 覃光南：15119390987\n地址：揭阳榕城仙桥湖心村新路中段（新顺废铁场）",
+      "category": {
+        "id": 2,
+        "name": "2"
+      },
+      "section": {
+        "id": 7,
+        "name": "7"
+      },
+      "products": [
+        {
+          "id": "03061402",
+          "name": "其它废料",
+          "source": "relationBreed"
+        },
+        {
+          "id": "钢筋头",
+          "name": "钢筋头",
+          "source": "breedTag"
+        },
+        {
+          "id": "中废",
+          "name": "中废",
+          "source": "breedTag"
+        },
+        {
+          "id": "再生金属",
+          "name": "再生金属",
+          "source": "breedTag"
+        }
+      ],
+      "regions": [
+        {
+          "id": "010201",
+          "name": "广东"
+        },
+        {
+          "id": "01020101",
+          "name": "广州"
+        },
+        {
+          "id": "01020110",
+          "name": "揭阳"
+        }
+      ],
+      "source_name": "我的钢铁网",
+      "source_url": "https://feigang.mysteel.com/a/26110809/6B677A05419004F3.html",
+      "in_article_url": "https://feigang.mysteel.com/a/26110809/6B677A05419004F3.html",
+      "out_article_url": null,
+      "in_article_title": "8日揭阳新顺废钢采购价格调整信息",
+      "out_article_title": null,
+      "source_link_status": "article_link",
+      "data_source": 1,
+      "publisher_id": 209768,
+      "relation_id": 46396391,
+      "ai_flag": 0,
+      "platform_product_line": null,
+      "mapping_status": "ambiguous",
+      "quality_flags": []
+    },
+    {
+      "news_id": "4969124",
+      "published_at": "2026-11-08T01:46:00.000Z",
+      "published_at_ms": 1794102360000,
+      "timezone": "Asia/Shanghai",
+      "content_text": "11月7日，星河动力航天公司在酒泉卫星发射中心成功实施谷神星二号（遥三）运载火箭飞行试验任务，将观澜试验星、云遥一号28星等4颗卫星送入535公里太阳同步轨道。",
+      "content_html": "11月7日，星河动力航天公司在酒泉卫星发射中心成功实施谷神星二号（遥三）运载火箭飞行试验任务，将观澜试验星、云遥一号28星等4颗卫星送入535公里太阳同步轨道。",
+      "raw_content": "11月7日，星河动力航天公司在酒泉卫星发射中心成功实施谷神星二号（遥三）运载火箭飞行试验任务，将观澜试验星、云遥一号28星等4颗卫星送入535公里太阳同步轨道。",
+      "category": {
+        "id": 18,
+        "name": "18"
+      },
+      "section": {
+        "id": 8,
+        "name": "8"
+      },
+      "products": [],
+      "regions": [],
+      "source_name": "财联社",
+      "source_url": "http://news.mysteel.com/a/26110809/894BF46FE7328461.html",
+      "in_article_url": "http://news.mysteel.com/a/26110809/894BF46FE7328461.html",
+      "out_article_url": null,
+      "in_article_title": "一箭四星谷神星二号遥三火箭飞行试验成功",
+      "out_article_title": null,
+      "source_link_status": "article_link",
+      "data_source": 1,
+      "publisher_id": 216274,
+      "relation_id": 46396376,
+      "ai_flag": 0,
+      "platform_product_line": null,
+      "mapping_status": "unmapped",
+      "quality_flags": []
+    },
+    {
+      "news_id": "4969123",
+      "published_at": "2026-11-08T01:34:00.000Z",
+      "published_at_ms": 1794101640000,
+      "timezone": "Asia/Shanghai",
+      "content_text": "【雨雪降温席卷北方多地，多条高速公路临时封闭限行】受强冷空气影响，11月6日以来，我国北方多地迎来大范围雨雪降温天气，华北、西北及东北部分地区出现大到暴雪，局地遭遇特大暴雪。受路面结冰、能见度下降等因素影响，天津、甘肃、山西、黑龙江等多省市高速公路相继采取封闭、限行管制措施。交通运输部已启动低温雨雪冰冻三级防御响应，全力保障道路通行安全。",
+      "content_html": "【雨雪降温席卷北方多地，多条高速公路临时封闭限行】受强冷空气影响，11月6日以来，我国北方多地迎来大范围雨雪降温天气，华北、西北及东北部分地区出现大到暴雪，局地遭遇特大暴雪。受路面结冰、能见度下降等因素影响，天津、甘肃、山西、黑龙江等多省市高速公路相继采取封闭、限行管制措施。交通运输部已启动低温雨雪冰冻三级防御响应，全力保障道路通行安全。",
+      "raw_content": "【雨雪降温席卷北方多地，多条高速公路临时封闭限行】受强冷空气影响，11月6日以来，我国北方多地迎来大范围雨雪降温天气，华北、西北及东北部分地区出现大到暴雪，局地遭遇特大暴雪。受路面结冰、能见度下降等因素影响，天津、甘肃、山西、黑龙江等多省市高速公路相继采取封闭、限行管制措施。交通运输部已启动低温雨雪冰冻三级防御响应，全力保障道路通行安全。",
       "category": {
         "id": 1,
         "name": "1"
@@ -889,29 +973,323 @@
       },
       "products": [],
       "regions": [],
-      "source_name": "财联社",
-      "source_url": "http://news.mysteel.com/a/26110709/62D8B9F5F0D14200.html",
-      "in_article_url": "http://news.mysteel.com/a/26110709/62D8B9F5F0D14200.html",
+      "source_name": "我的钢铁网(Mysteel)",
+      "source_url": "http://news.mysteel.com/a/26110809/A46760D3751D1425.html",
+      "in_article_url": "http://news.mysteel.com/a/26110809/A46760D3751D1425.html",
       "out_article_url": null,
-      "in_article_title": "中国与加蓬签署结束共同发展经济伙伴关系协定早期收获安排谈判的谅解备忘录",
+      "in_article_title": "雨雪降温席卷北方多地，多条高速公路临时封闭限行",
       "out_article_title": null,
       "source_link_status": "article_link",
       "data_source": 1,
-      "publisher_id": 221060,
-      "relation_id": 46396182,
+      "publisher_id": 205089,
+      "relation_id": 46396368,
       "ai_flag": 0,
       "platform_product_line": null,
       "mapping_status": "unmapped",
       "quality_flags": []
     },
     {
-      "news_id": "4969075",
-      "published_at": "2026-11-07T01:25:17.824Z",
-      "published_at_ms": 1794014717824,
+      "news_id": "4969122",
+      "published_at": "2026-11-08T01:31:00.000Z",
+      "published_at_ms": 1794101460000,
       "timezone": "Asia/Shanghai",
-      "content_text": "11月7日统计华东主导钢企废钢到货昨卸13108吨，较前一日减少4.44%，今统计到船46条，大小车81车。",
-      "content_html": "11月7日统计华东主导钢企废钢到货昨卸13108吨，较前一日减少4.44%，今统计到船46条，大小车81车。",
-      "raw_content": "11月7日统计华东主导钢企废钢到货昨卸13108吨，较前一日减少4.44%，今统计到船46条，大小车81车。",
+      "content_text": "11月6日，民政部等六部门联合印发《关于培育多元场景 促进适老用品产品消费的若干措施》，提到推动智慧适老用品应用，加快具身智能、大语言模型、脑机接口、外骨骼等前沿技术在养老领域的应用，提供智能照护解决方案。",
+      "content_html": "11月6日，民政部等六部门联合印发《关于培育多元场景 促进适老用品产品消费的若干措施》，提到推动智慧适老用品应用，加快具身智能、大语言模型、脑机接口、外骨骼等前沿技术在养老领域的应用，提供智能照护解决方案。",
+      "raw_content": "11月6日，民政部等六部门联合印发《关于培育多元场景 促进适老用品产品消费的若干措施》，提到推动智慧适老用品应用，加快具身智能、大语言模型、脑机接口、外骨骼等前沿技术在养老领域的应用，提供智能照护解决方案。",
+      "category": {
+        "id": 18,
+        "name": "18"
+      },
+      "section": {
+        "id": 8,
+        "name": "8"
+      },
+      "products": [],
+      "regions": [],
+      "source_name": "财联社",
+      "source_url": "http://news.mysteel.com/a/26110809/A82280B0027909F1.html",
+      "in_article_url": "http://news.mysteel.com/a/26110809/A82280B0027909F1.html",
+      "out_article_url": null,
+      "in_article_title": "六部门：加快推进具身智能、脑机接口等前沿技术在养老领域应用",
+      "out_article_title": null,
+      "source_link_status": "article_link",
+      "data_source": 1,
+      "publisher_id": 216274,
+      "relation_id": 46396366,
+      "ai_flag": 0,
+      "platform_product_line": null,
+      "mapping_status": "unmapped",
+      "quality_flags": []
+    },
+    {
+      "news_id": "4969121",
+      "published_at": "2026-11-08T01:23:06.135Z",
+      "published_at_ms": 1794100986135,
+      "timezone": "Asia/Shanghai",
+      "content_text": "11月8日唐山角钢主流市场价格持稳，5#3200-3260，6.3-10#3260，11-12.5#3300，14-20#3300。（元/吨）",
+      "content_html": "11月8日唐山角钢主流市场价格持稳，5#3200-3260，6.3-10#3260，11-12.5#3300，14-20#3300。（元/吨）",
+      "raw_content": "11月8日唐山角钢主流市场价格持稳，5#3200-3260，6.3-10#3260，11-12.5#3300，14-20#3300。（元/吨）",
+      "category": {
+        "id": 2,
+        "name": "2"
+      },
+      "section": {
+        "id": 7,
+        "name": "7"
+      },
+      "products": [
+        {
+          "id": "010107",
+          "name": "型钢",
+          "source": "relationBreed"
+        },
+        {
+          "id": "角钢",
+          "name": "角钢",
+          "source": "breedTag"
+        }
+      ],
+      "regions": [
+        {
+          "id": "010403",
+          "name": "河北"
+        }
+      ],
+      "source_name": null,
+      "source_url": null,
+      "in_article_url": null,
+      "out_article_url": null,
+      "in_article_title": null,
+      "out_article_title": null,
+      "source_link_status": "no_link",
+      "data_source": 2,
+      "publisher_id": 221172,
+      "relation_id": 7727590,
+      "ai_flag": 0,
+      "platform_product_line": null,
+      "mapping_status": "ambiguous",
+      "quality_flags": [
+        "source_link_missing"
+      ]
+    },
+    {
+      "news_id": "4969120",
+      "published_at": "2026-11-08T01:21:02.294Z",
+      "published_at_ms": 1794100862294,
+      "timezone": "Asia/Shanghai",
+      "content_text": "11月8日唐山槽钢主流市场价格持稳：5#3250，6.3#3220，8-20#3210-3260，22-30#3260-3320，32#3420。（元/吨)",
+      "content_html": "11月8日唐山槽钢主流市场价格持稳：5#3250，6.3#3220，8-20#3210-3260，22-30#3260-3320，32#3420。（元/吨)",
+      "raw_content": "11月8日唐山槽钢主流市场价格持稳：5#3250，6.3#3220，8-20#3210-3260，22-30#3260-3320，32#3420。（元/吨)",
+      "category": {
+        "id": 2,
+        "name": "2"
+      },
+      "section": {
+        "id": 7,
+        "name": "7"
+      },
+      "products": [
+        {
+          "id": "010107",
+          "name": "型钢",
+          "source": "relationBreed"
+        },
+        {
+          "id": "槽钢",
+          "name": "槽钢",
+          "source": "breedTag"
+        }
+      ],
+      "regions": [
+        {
+          "id": "010403",
+          "name": "河北"
+        }
+      ],
+      "source_name": null,
+      "source_url": null,
+      "in_article_url": null,
+      "out_article_url": null,
+      "in_article_title": null,
+      "out_article_title": null,
+      "source_link_status": "no_link",
+      "data_source": 2,
+      "publisher_id": 221172,
+      "relation_id": 7727588,
+      "ai_flag": 0,
+      "platform_product_line": null,
+      "mapping_status": "ambiguous",
+      "quality_flags": [
+        "source_link_missing"
+      ]
+    },
+    {
+      "news_id": "4969119",
+      "published_at": "2026-11-08T01:00:00.000Z",
+      "published_at_ms": 1794099600000,
+      "timezone": "Asia/Shanghai",
+      "content_text": "本周螺纹钢均价3306元/吨，微涨0.03%。供需双弱延续，产量回升但处低位，表需季节性回落，库存去化放缓。成本端铁矿强、双焦弱。宏观情绪与基本面牵制，预计下周钢价窄幅震荡运行。",
+      "content_html": "本周螺纹钢均价3306元/吨，微涨0.03%。供需双弱延续，产量回升但处低位，表需季节性回落，库存去化放缓。成本端铁矿强、双焦弱。宏观情绪与基本面牵制，预计下周钢价窄幅震荡运行。",
+      "raw_content": "本周螺纹钢均价3306元/吨，微涨0.03%。供需双弱延续，产量回升但处低位，表需季节性回落，库存去化放缓。成本端铁矿强、双焦弱。宏观情绪与基本面牵制，预计下周钢价窄幅震荡运行。",
+      "category": {
+        "id": 2,
+        "name": "2"
+      },
+      "section": {
+        "id": 6,
+        "name": "6"
+      },
+      "products": [
+        {
+          "id": "01010101",
+          "name": "螺纹钢",
+          "source": "relationBreed"
+        },
+        {
+          "id": "01010102",
+          "name": "线材",
+          "source": "relationBreed"
+        },
+        {
+          "id": "01010103",
+          "name": "盘螺",
+          "source": "relationBreed"
+        }
+      ],
+      "regions": [
+        {
+          "id": "0106",
+          "name": "西南"
+        },
+        {
+          "id": "010601",
+          "name": "重庆"
+        },
+        {
+          "id": "010602",
+          "name": "四川"
+        },
+        {
+          "id": "01060201",
+          "name": "成都"
+        },
+        {
+          "id": "010603",
+          "name": "贵州"
+        },
+        {
+          "id": "01060301",
+          "name": "贵阳"
+        },
+        {
+          "id": "010604",
+          "name": "云南"
+        },
+        {
+          "id": "01060401",
+          "name": "昆明"
+        }
+      ],
+      "source_name": "我的钢铁网(Mysteel)",
+      "source_url": "http://gc.mysteel.com/a/26110716/C5057F2A13388E13.html",
+      "in_article_url": "http://gc.mysteel.com/a/26110716/C5057F2A13388E13.html",
+      "out_article_url": null,
+      "in_article_title": "Mysteel全国钢市周度洞察：供需双弱格局延续 市场谨慎观望为主 预计下周价格或窄幅震荡运行（11.2-11.6）",
+      "out_article_title": null,
+      "source_link_status": "article_link",
+      "data_source": 1,
+      "publisher_id": 227419,
+      "relation_id": 46396309,
+      "ai_flag": 0,
+      "platform_product_line": null,
+      "mapping_status": "ambiguous",
+      "quality_flags": []
+    },
+    {
+      "news_id": "4969118",
+      "published_at": "2026-11-08T00:59:00.000Z",
+      "published_at_ms": 1794099540000,
+      "timezone": "Asia/Shanghai",
+      "content_text": "11月8日，山东济宁泗水、汶上、梁山褐壳鸡蛋价格持稳，主流到户价4.30元/斤。当前货源供应稳定，市场走货节奏一般，蛋价整体表现平稳。",
+      "content_html": "11月8日，山东济宁泗水、汶上、梁山褐壳鸡蛋价格持稳，主流到户价4.30元/斤。当前货源供应稳定，市场走货节奏一般，蛋价整体表现平稳。",
+      "raw_content": "11月8日，山东济宁泗水、汶上、梁山褐壳鸡蛋价格持稳，主流到户价4.30元/斤。当前货源供应稳定，市场走货节奏一般，蛋价整体表现平稳。",
+      "category": {
+        "id": 5,
+        "name": "5"
+      },
+      "section": {
+        "id": 7,
+        "name": "7"
+      },
+      "products": [
+        {
+          "id": "07120301",
+          "name": "鸡蛋",
+          "source": "relationBreed"
+        }
+      ],
+      "regions": [
+        {
+          "id": "010102",
+          "name": "山东"
+        }
+      ],
+      "source_name": "我的钢铁网(Mysteel)",
+      "source_url": "http://ncp.mysteel.com/a/26110808/9AEE887C51568B18.html",
+      "in_article_url": "http://ncp.mysteel.com/a/26110808/9AEE887C51568B18.html",
+      "out_article_url": null,
+      "in_article_title": "Mysteel：山东济宁泗水、汶上、梁山鸡蛋价格稳",
+      "out_article_title": null,
+      "source_link_status": "article_link",
+      "data_source": 1,
+      "publisher_id": 221001,
+      "relation_id": 46396349,
+      "ai_flag": 0,
+      "platform_product_line": null,
+      "mapping_status": "ambiguous",
+      "quality_flags": []
+    },
+    {
+      "news_id": "4969117",
+      "published_at": "2026-11-08T00:48:00.000Z",
+      "published_at_ms": 1794098880000,
+      "timezone": "Asia/Shanghai",
+      "content_text": "11月7日，国家防减救灾委办公室、应急管理部会同中国气象局组织专题会商，分析研判本轮雨雪发展趋势，调度安徽、江西、北京、河北、辽宁等重点省份，部署当前暴雪和强降雨防范应对工作。据气象部门预测，7日至10日，受较强冷空气影响，我国中东部大部地区将有大范围雨雪和降温天气。",
+      "content_html": "11月7日，国家防减救灾委办公室、应急管理部会同中国气象局组织专题会商，分析研判本轮雨雪发展趋势，调度安徽、江西、北京、河北、辽宁等重点省份，部署当前暴雪和强降雨防范应对工作。据气象部门预测，7日至10日，受较强冷空气影响，我国中东部大部地区将有大范围雨雪和降温天气。",
+      "raw_content": "11月7日，国家防减救灾委办公室、应急管理部会同中国气象局组织专题会商，分析研判本轮雨雪发展趋势，调度安徽、江西、北京、河北、辽宁等重点省份，部署当前暴雪和强降雨防范应对工作。据气象部门预测，7日至10日，受较强冷空气影响，我国中东部大部地区将有大范围雨雪和降温天气。",
+      "category": {
+        "id": 1,
+        "name": "1"
+      },
+      "section": {
+        "id": 8,
+        "name": "8"
+      },
+      "products": [],
+      "regions": [],
+      "source_name": "应急管理部",
+      "source_url": "http://news.mysteel.com/a/26110808/4809233D9F6F41AE.html",
+      "in_article_url": "http://news.mysteel.com/a/26110808/4809233D9F6F41AE.html",
+      "out_article_url": null,
+      "in_article_title": "两部门会商调度雨雪天气防范应对工作",
+      "out_article_title": null,
+      "source_link_status": "article_link",
+      "data_source": 1,
+      "publisher_id": 205089,
+      "relation_id": 46396344,
+      "ai_flag": 0,
+      "platform_product_line": null,
+      "mapping_status": "unmapped",
+      "quality_flags": []
+    },
+    {
+      "news_id": "4969116",
+      "published_at": "2026-11-08T00:34:10.869Z",
+      "published_at_ms": 1794098050869,
+      "timezone": "Asia/Shanghai",
+      "content_text": "11月8日统计华东主导钢企废钢到货昨卸12615吨，较前一日减少3.76%，今统计到船43条，大小车78车。",
+      "content_html": "11月8日统计华东主导钢企废钢到货昨卸12615吨，较前一日减少3.76%，今统计到船43条，大小车78车。",
+      "raw_content": "11月8日统计华东主导钢企废钢到货昨卸12615吨，较前一日减少3.76%，今统计到船43条，大小车78车。",
       "category": {
         "id": 2,
         "name": "2"
@@ -947,7 +1325,7 @@
       "source_link_status": "no_link",
       "data_source": 2,
       "publisher_id": 220087,
-      "relation_id": 7727564,
+      "relation_id": 7727587,
       "ai_flag": 0,
       "platform_product_line": null,
       "mapping_status": "ambiguous",
@@ -956,389 +1334,13 @@
       ]
     },
     {
-      "news_id": "4969076",
-      "published_at": "2026-11-07T01:25:00.000Z",
-      "published_at_ms": 1794014700000,
+      "news_id": "4969115",
+      "published_at": "2026-11-08T00:32:18.106Z",
+      "published_at_ms": 1794097938106,
       "timezone": "Asia/Shanghai",
-      "content_text": "美国国家经济委员会主任凯文·哈塞特表示，尽管中期选举中民主党横扫国会且多项限制数据中心建设的提案获多数选民支持，但预计已排期项目仍按计划推进，未来数据中心将在态度友好的州扩张。特朗普称100%支持超级智能（SI），强调对行业支持未动摇。",
-      "content_html": "美国国家经济委员会主任凯文·哈塞特表示，尽管中期选举中民主党横扫国会且多项限制数据中心建设的提案获多数选民支持，但预计已排期项目仍按计划推进，未来数据中心将在态度友好的州扩张。特朗普称100%支持超级智能（SI），强调对行业支持未动摇。",
-      "raw_content": "美国国家经济委员会主任凯文·哈塞特表示，尽管中期选举中民主党横扫国会且多项限制数据中心建设的提案获多数选民支持，但预计已排期项目仍按计划推进，未来数据中心将在态度友好的州扩张。特朗普称100%支持超级智能（SI），强调对行业支持未动摇。",
-      "category": {
-        "id": 1,
-        "name": "1"
-      },
-      "section": {
-        "id": 8,
-        "name": "8"
-      },
-      "products": [],
-      "regions": [],
-      "source_name": "财联社",
-      "source_url": "http://news.mysteel.com/a/26110709/8B429CA5EB36D5AD.html",
-      "in_article_url": "http://news.mysteel.com/a/26110709/8B429CA5EB36D5AD.html",
-      "out_article_url": null,
-      "in_article_title": "“蓝潮”无碍数据中心建设！白宫高官安抚市场，特朗普称100%支持SI",
-      "out_article_title": null,
-      "source_link_status": "article_link",
-      "data_source": 1,
-      "publisher_id": 221060,
-      "relation_id": 46396176,
-      "ai_flag": 0,
-      "platform_product_line": null,
-      "mapping_status": "unmapped",
-      "quality_flags": []
-    },
-    {
-      "news_id": "4969074",
-      "published_at": "2026-11-07T01:22:11.795Z",
-      "published_at_ms": 1794014531795,
-      "timezone": "Asia/Shanghai",
-      "content_text": "11月7日南通中天废钢价格下调20-30执行价：钢筋切粒停收，矽钢片2450，优质废钢2530，精炼粉碎料2470，炉料2470-2500，重废2380-2440，剪中2370，中废2280-2360，轻废2230-2260，统废2050，刨花2220-2260，含税，单位：元/吨。",
-      "content_html": "11月7日南通中天废钢价格下调20-30执行价：钢筋切粒停收，矽钢片2450，优质废钢2530，精炼粉碎料2470，炉料2470-2500，重废2380-2440，剪中2370，中废2280-2360，轻废2230-2260，统废2050，刨花2220-2260，含税，单位：元/吨。",
-      "raw_content": "11月7日南通中天废钢价格下调20-30执行价：钢筋切粒停收，矽钢片2450，优质废钢2530，精炼粉碎料2470，炉料2470-2500，重废2380-2440，剪中2370，中废2280-2360，轻废2230-2260，统废2050，刨花2220-2260，含税，单位：元/吨。",
-      "category": {
-        "id": 2,
-        "name": "2"
-      },
-      "section": {
-        "id": 9,
-        "name": "9"
-      },
-      "products": [
-        {
-          "id": "0306",
-          "name": "废钢",
-          "source": "relationBreed"
-        },
-        {
-          "id": "轻废",
-          "name": "轻废",
-          "source": "breedTag"
-        },
-        {
-          "id": "冲花料",
-          "name": "冲花料",
-          "source": "breedTag"
-        },
-        {
-          "id": "钢筋切粒",
-          "name": "钢筋切粒",
-          "source": "breedTag"
-        },
-        {
-          "id": "废钢刨花",
-          "name": "废钢刨花",
-          "source": "breedTag"
-        },
-        {
-          "id": "再生金属",
-          "name": "再生金属",
-          "source": "breedTag"
-        }
-      ],
-      "regions": [
-        {
-          "id": "01010308",
-          "name": "南通"
-        }
-      ],
-      "source_name": null,
-      "source_url": null,
-      "in_article_url": null,
-      "out_article_url": null,
-      "in_article_title": null,
-      "out_article_title": null,
-      "source_link_status": "no_link",
-      "data_source": 2,
-      "publisher_id": 220087,
-      "relation_id": 7727563,
-      "ai_flag": 0,
-      "platform_product_line": null,
-      "mapping_status": "ambiguous",
-      "quality_flags": [
-        "source_link_missing"
-      ]
-    },
-    {
-      "news_id": "4969073",
-      "published_at": "2026-11-07T01:21:00.000Z",
-      "published_at_ms": 1794014460000,
-      "timezone": "Asia/Shanghai",
-      "content_text": "微软正逐步终止向甲骨文租用人工智能算力的协议，此举是微软重新评估云合作项目的一部分。甲骨文表示市场对包括早期GPU在内的基础设施需求依然强劲。此前，IREN因微软要求调整网络设计，推迟部分基础设施交付，原定年底前上线的算力容量延至明年1月或2月底投运。",
-      "content_html": "微软正逐步终止向甲骨文租用人工智能算力的协议，此举是微软重新评估云合作项目的一部分。甲骨文表示市场对包括早期GPU在内的基础设施需求依然强劲。此前，IREN因微软要求调整网络设计，推迟部分基础设施交付，原定年底前上线的算力容量延至明年1月或2月底投运。",
-      "raw_content": "微软正逐步终止向甲骨文租用人工智能算力的协议，此举是微软重新评估云合作项目的一部分。甲骨文表示市场对包括早期GPU在内的基础设施需求依然强劲。此前，IREN因微软要求调整网络设计，推迟部分基础设施交付，原定年底前上线的算力容量延至明年1月或2月底投运。",
-      "category": {
-        "id": 18,
-        "name": "18"
-      },
-      "section": {
-        "id": 8,
-        "name": "8"
-      },
-      "products": [],
-      "regions": [],
-      "source_name": "财联社",
-      "source_url": "http://news.mysteel.com/a/26110709/D3DD7F864E8F916F.html",
-      "in_article_url": "http://news.mysteel.com/a/26110709/D3DD7F864E8F916F.html",
-      "out_article_url": null,
-      "in_article_title": "不愿为旧芯片买单？微软据报逐步终止甲骨文算力租约",
-      "out_article_title": null,
-      "source_link_status": "article_link",
-      "data_source": 1,
-      "publisher_id": 221060,
-      "relation_id": 46396172,
-      "ai_flag": 0,
-      "platform_product_line": null,
-      "mapping_status": "unmapped",
-      "quality_flags": []
-    },
-    {
-      "news_id": "4969072",
-      "published_at": "2026-11-07T01:15:01.550Z",
-      "published_at_ms": 1794014101550,
-      "timezone": "Asia/Shanghai",
-      "content_text": "11月7日唐山槽钢主流市场价格持稳：5#3250，6.3#3220，8-20#3210-3260，22-30#3260-3320，32#3420。（元/吨)",
-      "content_html": "11月7日唐山槽钢主流市场价格持稳：5#3250，6.3#3220，8-20#3210-3260，22-30#3260-3320，32#3420。（元/吨)",
-      "raw_content": "11月7日唐山槽钢主流市场价格持稳：5#3250，6.3#3220，8-20#3210-3260，22-30#3260-3320，32#3420。（元/吨)",
-      "category": {
-        "id": 2,
-        "name": "2"
-      },
-      "section": {
-        "id": 7,
-        "name": "7"
-      },
-      "products": [
-        {
-          "id": "010107",
-          "name": "型钢",
-          "source": "relationBreed"
-        },
-        {
-          "id": "槽钢",
-          "name": "槽钢",
-          "source": "breedTag"
-        }
-      ],
-      "regions": [
-        {
-          "id": "010403",
-          "name": "河北"
-        }
-      ],
-      "source_name": null,
-      "source_url": null,
-      "in_article_url": null,
-      "out_article_url": null,
-      "in_article_title": null,
-      "out_article_title": null,
-      "source_link_status": "no_link",
-      "data_source": 2,
-      "publisher_id": 227963,
-      "relation_id": 7727562,
-      "ai_flag": 0,
-      "platform_product_line": null,
-      "mapping_status": "ambiguous",
-      "quality_flags": [
-        "source_link_missing"
-      ]
-    },
-    {
-      "news_id": "4969071",
-      "published_at": "2026-11-07T01:15:00.363Z",
-      "published_at_ms": 1794014100363,
-      "timezone": "Asia/Shanghai",
-      "content_text": "11月7日常州东方特钢废钢采购价格下调20，执行价：边角精料2540，钢筋切粒2540，船板料2480-2520，冲压精料2510-2540，炉料2450-2490，重废2270-2410，含税，单位：元/吨。",
-      "content_html": "11月7日常州东方特钢废钢采购价格下调20，执行价：边角精料2540，钢筋切粒2540，船板料2480-2520，冲压精料2510-2540，炉料2450-2490，重废2270-2410，含税，单位：元/吨。",
-      "raw_content": "11月7日常州东方特钢废钢采购价格下调20，执行价：边角精料2540，钢筋切粒2540，船板料2480-2520，冲压精料2510-2540，炉料2450-2490，重废2270-2410，含税，单位：元/吨。",
-      "category": {
-        "id": 2,
-        "name": "2"
-      },
-      "section": {
-        "id": 9,
-        "name": "9"
-      },
-      "products": [
-        {
-          "id": "0306",
-          "name": "废钢",
-          "source": "relationBreed"
-        },
-        {
-          "id": "钢筋切粒",
-          "name": "钢筋切粒",
-          "source": "breedTag"
-        },
-        {
-          "id": "再生金属",
-          "name": "再生金属",
-          "source": "breedTag"
-        }
-      ],
-      "regions": [
-        {
-          "id": "01010305",
-          "name": "常州"
-        }
-      ],
-      "source_name": null,
-      "source_url": null,
-      "in_article_url": null,
-      "out_article_url": null,
-      "in_article_title": null,
-      "out_article_title": null,
-      "source_link_status": "no_link",
-      "data_source": 2,
-      "publisher_id": 220087,
-      "relation_id": 7727561,
-      "ai_flag": 0,
-      "platform_product_line": null,
-      "mapping_status": "ambiguous",
-      "quality_flags": [
-        "source_link_missing"
-      ]
-    },
-    {
-      "news_id": "4969070",
-      "published_at": "2026-11-07T01:09:00.000Z",
-      "published_at_ms": 1794013740000,
-      "timezone": "Asia/Shanghai",
-      "content_text": "11月6日下午，中国国家主席习近平在北京人民大会堂同来华进行国事访问的加蓬总统恩圭马举行会谈。两国领导人共同宣布将双边关系定位提升为新时代中加命运共同体。",
-      "content_html": "11月6日下午，中国国家主席习近平在北京人民大会堂同来华进行国事访问的加蓬总统恩圭马举行会谈。两国领导人共同宣布将双边关系定位提升为新时代中加命运共同体。",
-      "raw_content": "11月6日下午，中国国家主席习近平在北京人民大会堂同来华进行国事访问的加蓬总统恩圭马举行会谈。两国领导人共同宣布将双边关系定位提升为新时代中加命运共同体。",
-      "category": {
-        "id": 1,
-        "name": "1"
-      },
-      "section": {
-        "id": 8,
-        "name": "8"
-      },
-      "products": [],
-      "regions": [],
-      "source_name": "中国新闻网",
-      "source_url": "http://news.mysteel.com/a/26110709/A0660080BD7BA9A7.html",
-      "in_article_url": "http://news.mysteel.com/a/26110709/A0660080BD7BA9A7.html",
-      "out_article_url": null,
-      "in_article_title": "习近平同加蓬总统恩圭马会谈",
-      "out_article_title": null,
-      "source_link_status": "article_link",
-      "data_source": 1,
-      "publisher_id": 221060,
-      "relation_id": 46396164,
-      "ai_flag": 0,
-      "platform_product_line": null,
-      "mapping_status": "unmapped",
-      "quality_flags": []
-    },
-    {
-      "news_id": "4969069",
-      "published_at": "2026-11-07T01:04:00.000Z",
-      "published_at_ms": 1794013440000,
-      "timezone": "Asia/Shanghai",
-      "content_text": "11月6日，据伊朗方面消息，伊朗军队发言人阿克拉米尼亚表示，美国接受伊朗提出的七项条件，是重新开放霍尔木兹海峡的唯一途径，再次侵略或进一步挑衅都不会促使该海峡重新开放。",
-      "content_html": "11月6日，据伊朗方面消息，伊朗军队发言人阿克拉米尼亚表示，美国接受伊朗提出的七项条件，是重新开放霍尔木兹海峡的唯一途径，再次侵略或进一步挑衅都不会促使该海峡重新开放。",
-      "raw_content": "11月6日，据伊朗方面消息，伊朗军队发言人阿克拉米尼亚表示，美国接受伊朗提出的七项条件，是重新开放霍尔木兹海峡的唯一途径，再次侵略或进一步挑衅都不会促使该海峡重新开放。",
-      "category": {
-        "id": 1,
-        "name": "1"
-      },
-      "section": {
-        "id": 8,
-        "name": "8"
-      },
-      "products": [],
-      "regions": [],
-      "source_name": "财联社",
-      "source_url": "http://news.mysteel.com/a/26110709/D2AF7B1852745C07.html",
-      "in_article_url": "http://news.mysteel.com/a/26110709/D2AF7B1852745C07.html",
-      "out_article_url": null,
-      "in_article_title": "伊朗军队发言人：美接受伊朗条件是霍尔木兹海峡重开关键",
-      "out_article_title": null,
-      "source_link_status": "article_link",
-      "data_source": 1,
-      "publisher_id": 221060,
-      "relation_id": 46396162,
-      "ai_flag": 0,
-      "platform_product_line": null,
-      "mapping_status": "unmapped",
-      "quality_flags": []
-    },
-    {
-      "news_id": "4969068",
-      "published_at": "2026-11-07T01:02:00.000Z",
-      "published_at_ms": 1794013320000,
-      "timezone": "Asia/Shanghai",
-      "content_text": "特斯拉CEO马斯克宣布，得州超级工厂将于明年年中前后逐步停产Cybertruck，以腾出产能用于Cybercab扩产。目前Cybertruck实际销量仅为规划年产能25万辆的12%左右，2025年在美国销量同比下降48%。",
-      "content_html": "特斯拉CEO马斯克宣布，得州超级工厂将于明年年中前后逐步停产Cybertruck，以腾出产能用于Cybercab扩产。目前Cybertruck实际销量仅为规划年产能25万辆的12%左右，2025年在美国销量同比下降48%。",
-      "raw_content": "特斯拉CEO马斯克宣布，得州超级工厂将于明年年中前后逐步停产Cybertruck，以腾出产能用于Cybercab扩产。目前Cybertruck实际销量仅为规划年产能25万辆的12%左右，2025年在美国销量同比下降48%。",
-      "category": {
-        "id": 13,
-        "name": "13"
-      },
-      "section": {
-        "id": 8,
-        "name": "8"
-      },
-      "products": [],
-      "regions": [],
-      "source_name": "财联社",
-      "source_url": "http://news.mysteel.com/a/26110709/D89C73912F04080F.html",
-      "in_article_url": "http://news.mysteel.com/a/26110709/D89C73912F04080F.html",
-      "out_article_url": null,
-      "in_article_title": "马斯克宣布Cybertruck明年逐步停产，得州工厂产能转投Cybercab",
-      "out_article_title": null,
-      "source_link_status": "article_link",
-      "data_source": 1,
-      "publisher_id": 221060,
-      "relation_id": 46396161,
-      "ai_flag": 0,
-      "platform_product_line": null,
-      "mapping_status": "unmapped",
-      "quality_flags": []
-    },
-    {
-      "news_id": "4969067",
-      "published_at": "2026-11-07T00:56:00.000Z",
-      "published_at_ms": 1794012960000,
-      "timezone": "Asia/Shanghai",
-      "content_text": "北京时间11月6日晚，中美经贸中方牵头人、国务院副总理何立峰与美方牵头人、美国财政部长贝森特和贸易代表格里尔举行视频通话。双方围绕落实中美元首北京和华盛顿会晤重要共识和经贸磋商成果，就彼此关心的重要经贸问题进行了坦诚、深入、建设性的交流。中方就近期美对华经贸限制措施表达严正关切。双方同意在两国元首战略引领下，继续发挥好中美经贸磋商机制作用，持续加强合作，妥善管控分歧，推动中美经贸关系持续稳定向好发展。",
-      "content_html": "北京时间11月6日晚，中美经贸中方牵头人、国务院副总理何立峰与美方牵头人、美国财政部长贝森特和贸易代表格里尔举行视频通话。双方围绕落实中美元首北京和华盛顿会晤重要共识和经贸磋商成果，就彼此关心的重要经贸问题进行了坦诚、深入、建设性的交流。中方就近期美对华经贸限制措施表达严正关切。双方同意在两国元首战略引领下，继续发挥好中美经贸磋商机制作用，持续加强合作，妥善管控分歧，推动中美经贸关系持续稳定向好发展。",
-      "raw_content": "北京时间11月6日晚，中美经贸中方牵头人、国务院副总理何立峰与美方牵头人、美国财政部长贝森特和贸易代表格里尔举行视频通话。双方围绕落实中美元首北京和华盛顿会晤重要共识和经贸磋商成果，就彼此关心的重要经贸问题进行了坦诚、深入、建设性的交流。中方就近期美对华经贸限制措施表达严正关切。双方同意在两国元首战略引领下，继续发挥好中美经贸磋商机制作用，持续加强合作，妥善管控分歧，推动中美经贸关系持续稳定向好发展。",
-      "category": {
-        "id": 1,
-        "name": "1"
-      },
-      "section": {
-        "id": 8,
-        "name": "8"
-      },
-      "products": [],
-      "regions": [],
-      "source_name": "财联社",
-      "source_url": "http://news.mysteel.com/a/26110708/9524FEE5DF478488.html",
-      "in_article_url": "http://news.mysteel.com/a/26110708/9524FEE5DF478488.html",
-      "out_article_url": null,
-      "in_article_title": "何立峰与美国财政部长贝森特、贸易代表格里尔举行视频通话",
-      "out_article_title": null,
-      "source_link_status": "article_link",
-      "data_source": 1,
-      "publisher_id": 221060,
-      "relation_id": 46396157,
-      "ai_flag": 0,
-      "platform_product_line": null,
-      "mapping_status": "unmapped",
-      "quality_flags": []
-    },
-    {
-      "news_id": "4969066",
-      "published_at": "2026-11-07T00:44:53.635Z",
-      "published_at_ms": 1794012293635,
-      "timezone": "Asia/Shanghai",
-      "content_text": "11月7日唐山工字钢主流市场价格下跌10，10-12#3260,14-22#3240,25#3270。(元/吨)",
-      "content_html": "11月7日唐山工字钢主流市场价格下跌10，10-12#3260,14-22#3240,25#3270。(元/吨)",
-      "raw_content": "11月7日唐山工字钢主流市场价格下跌10，10-12#3260,14-22#3240,25#3270。(元/吨)",
+      "content_text": "11月8日唐山工字钢主流市场价格持稳，10-12#3260,14-22#3240,25#3270。(元/吨)",
+      "content_html": "11月8日唐山工字钢主流市场价格持稳，10-12#3260,14-22#3240,25#3270。(元/吨)",
+      "raw_content": "11月8日唐山工字钢主流市场价格持稳，10-12#3260,14-22#3240,25#3270。(元/吨)",
       "category": {
         "id": 2,
         "name": "2"
@@ -1373,8 +1375,8 @@
       "out_article_title": null,
       "source_link_status": "no_link",
       "data_source": 2,
-      "publisher_id": 227963,
-      "relation_id": 7727560,
+      "publisher_id": 221172,
+      "relation_id": 7727586,
       "ai_flag": 0,
       "platform_product_line": null,
       "mapping_status": "ambiguous",
@@ -1383,16 +1385,16 @@
       ]
     },
     {
-      "news_id": "4969065",
-      "published_at": "2026-11-07T00:38:30.927Z",
-      "published_at_ms": 1794011910927,
+      "news_id": "4969114",
+      "published_at": "2026-11-08T00:21:00.000Z",
+      "published_at_ms": 1794097260000,
       "timezone": "Asia/Shanghai",
-      "content_text": "11月7日唐山角钢主流市场价格部分下跌20，5#3200-3260，6.3-10#3260，11-12.5#3300，14-20#3300。（元/吨）",
-      "content_html": "11月7日唐山角钢主流市场价格部分下跌20，5#3200-3260，6.3-10#3260，11-12.5#3300，14-20#3300。（元/吨）",
-      "raw_content": "11月7日唐山角钢主流市场价格部分下跌20，5#3200-3260，6.3-10#3260，11-12.5#3300，14-20#3300。（元/吨）",
+      "content_text": "11月8日，黑龙江哈尔滨拉林鸡蛋价格稳定，30斤筐装褐壳大码主流到户价4.30元/斤。货源正常，走货正常，蛋价稳定。",
+      "content_html": "11月8日，黑龙江哈尔滨拉林鸡蛋价格稳定，30斤筐装褐壳大码主流到户价4.30元/斤。货源正常，走货正常，蛋价稳定。",
+      "raw_content": "11月8日，黑龙江哈尔滨拉林鸡蛋价格稳定，30斤筐装褐壳大码主流到户价4.30元/斤。货源正常，走货正常，蛋价稳定。",
       "category": {
-        "id": 2,
-        "name": "2"
+        "id": 5,
+        "name": "5"
       },
       "section": {
         "id": 7,
@@ -1400,141 +1402,40 @@
       },
       "products": [
         {
-          "id": "010107",
-          "name": "型钢",
+          "id": "07120301",
+          "name": "鸡蛋",
           "source": "relationBreed"
-        },
-        {
-          "id": "角钢",
-          "name": "角钢",
-          "source": "breedTag"
         }
       ],
       "regions": [
         {
-          "id": "010403",
-          "name": "河北"
+          "id": "010503",
+          "name": "黑龙江"
         }
       ],
-      "source_name": null,
-      "source_url": null,
-      "in_article_url": null,
+      "source_name": "我的钢铁网(Mysteel)",
+      "source_url": "http://ncp.mysteel.com/a/26110808/C5FDF8671559642C.html",
+      "in_article_url": "http://ncp.mysteel.com/a/26110808/C5FDF8671559642C.html",
       "out_article_url": null,
-      "in_article_title": null,
-      "out_article_title": null,
-      "source_link_status": "no_link",
-      "data_source": 2,
-      "publisher_id": 227963,
-      "relation_id": 7727558,
-      "ai_flag": 0,
-      "platform_product_line": null,
-      "mapping_status": "ambiguous",
-      "quality_flags": [
-        "source_link_missing"
-      ]
-    },
-    {
-      "news_id": "4969064",
-      "published_at": "2026-11-07T00:36:04.902Z",
-      "published_at_ms": 1794011764902,
-      "timezone": "Asia/Shanghai",
-      "content_text": "11月7日中天（南通）废钢收购价从2026年11月7日起，矽钢片、刨花下调30元/吨，其他料型下调20元/吨。",
-      "content_html": "11月7日中天（南通）废钢收购价从2026年11月7日起，矽钢片、刨花下调30元/吨，其他料型下调20元/吨。",
-      "raw_content": "11月7日中天（南通）废钢收购价从2026年11月7日起，矽钢片、刨花下调30元/吨，其他料型下调20元/吨。",
-      "category": {
-        "id": 2,
-        "name": "2"
-      },
-      "section": {
-        "id": 9,
-        "name": "9"
-      },
-      "products": [
-        {
-          "id": "0306",
-          "name": "废钢",
-          "source": "relationBreed"
-        },
-        {
-          "id": "冲花料",
-          "name": "冲花料",
-          "source": "breedTag"
-        },
-        {
-          "id": "废钢刨花",
-          "name": "废钢刨花",
-          "source": "breedTag"
-        },
-        {
-          "id": "再生金属",
-          "name": "再生金属",
-          "source": "breedTag"
-        }
-      ],
-      "regions": [
-        {
-          "id": "01010308",
-          "name": "南通"
-        }
-      ],
-      "source_name": null,
-      "source_url": null,
-      "in_article_url": null,
-      "out_article_url": null,
-      "in_article_title": null,
-      "out_article_title": null,
-      "source_link_status": "no_link",
-      "data_source": 2,
-      "publisher_id": 226590,
-      "relation_id": 7727557,
-      "ai_flag": 0,
-      "platform_product_line": null,
-      "mapping_status": "ambiguous",
-      "quality_flags": [
-        "source_link_missing"
-      ]
-    },
-    {
-      "news_id": "4969063",
-      "published_at": "2026-11-07T00:28:00.000Z",
-      "published_at_ms": 1794011280000,
-      "timezone": "Asia/Shanghai",
-      "content_text": "国务院总理李强11月6日主持召开国务院常务会议。会议指出，持续化解地方政府债务、中小金融机构等领域风险。完善资本市场稳市机制，增强股市内在稳定性，促进资本市场平稳健康发展。",
-      "content_html": "国务院总理李强11月6日主持召开国务院常务会议。会议指出，持续化解地方政府债务、中小金融机构等领域风险。完善资本市场稳市机制，增强股市内在稳定性，促进资本市场平稳健康发展。",
-      "raw_content": "国务院总理李强11月6日主持召开国务院常务会议。会议指出，持续化解地方政府债务、中小金融机构等领域风险。完善资本市场稳市机制，增强股市内在稳定性，促进资本市场平稳健康发展。",
-      "category": {
-        "id": 1,
-        "name": "1"
-      },
-      "section": {
-        "id": 8,
-        "name": "8"
-      },
-      "products": [],
-      "regions": [],
-      "source_name": "新华财经",
-      "source_url": "http://news.mysteel.com/a/26110708/AB4BCF2F8412F98C.html",
-      "in_article_url": "http://news.mysteel.com/a/26110708/AB4BCF2F8412F98C.html",
-      "out_article_url": null,
-      "in_article_title": "国常会：完善资本市场稳市机制，增强股市内在稳定性",
+      "in_article_title": "Mysteel：黑龙江拉林鸡蛋价格平稳",
       "out_article_title": null,
       "source_link_status": "article_link",
       "data_source": 1,
-      "publisher_id": 211405,
-      "relation_id": 46396140,
+      "publisher_id": 219287,
+      "relation_id": 46396336,
       "ai_flag": 0,
       "platform_product_line": null,
-      "mapping_status": "unmapped",
+      "mapping_status": "ambiguous",
       "quality_flags": []
     },
     {
-      "news_id": "4969062",
-      "published_at": "2026-11-07T00:26:00.000Z",
-      "published_at_ms": 1794011160000,
+      "news_id": "4969113",
+      "published_at": "2026-11-08T00:05:00.000Z",
+      "published_at_ms": 1794096300000,
       "timezone": "Asia/Shanghai",
-      "content_text": "白宫国家经济委员会主任凯文·哈塞特表示，数据中心建设仍有很大发展空间，相关项目应由当地社区决定。他同时表示，即使数据中心建设速度放缓，美国经济仍有望实现强劲增长。哈塞特回应了有关AI“泡沫”担忧的问题称，AI“泡沫”确实值得关注。",
-      "content_html": "白宫国家经济委员会主任凯文·哈塞特表示，数据中心建设仍有很大发展空间，相关项目应由当地社区决定。他同时表示，即使数据中心建设速度放缓，美国经济仍有望实现强劲增长。哈塞特回应了有关AI“泡沫”担忧的问题称，AI“泡沫”确实值得关注。",
-      "raw_content": "白宫国家经济委员会主任凯文·哈塞特表示，数据中心建设仍有很大发展空间，相关项目应由当地社区决定。他同时表示，即使数据中心建设速度放缓，美国经济仍有望实现强劲增长。哈塞特回应了有关AI“泡沫”担忧的问题称，AI“泡沫”确实值得关注。",
+      "content_text": "美国中央司令部司令库珀当地时间11月7日下令成立一支名为“铁门”（TaskForceIronGate）的特遣队，旨在配合美国政府正在开展的相关行动，阻止伊朗通过陆路运输先进武器及其他物资。",
+      "content_html": "美国中央司令部司令库珀当地时间11月7日下令成立一支名为“铁门”（TaskForceIronGate）的特遣队，旨在配合美国政府正在开展的相关行动，阻止伊朗通过陆路运输先进武器及其他物资。",
+      "raw_content": "美国中央司令部司令库珀当地时间11月7日下令成立一支名为“铁门”（TaskForceIronGate）的特遣队，旨在配合美国政府正在开展的相关行动，阻止伊朗通过陆路运输先进武器及其他物资。",
       "category": {
         "id": 1,
         "name": "1"
@@ -1546,15 +1447,48 @@
       "products": [],
       "regions": [],
       "source_name": "财联社",
-      "source_url": "http://news.mysteel.com/a/26110708/FCA7B1F9536FBBDD.html",
-      "in_article_url": "http://news.mysteel.com/a/26110708/FCA7B1F9536FBBDD.html",
+      "source_url": "http://news.mysteel.com/a/26110808/402561092B89C2D6.html",
+      "in_article_url": "http://news.mysteel.com/a/26110808/402561092B89C2D6.html",
       "out_article_url": null,
-      "in_article_title": "白宫经济顾问哈塞特：数据中心仍有很大发展空间，即使建设放缓美国经济仍可保持强劲增长",
+      "in_article_title": "美中央司令部成立特遣队，阻止伊朗通过陆路运输先进武器",
       "out_article_title": null,
       "source_link_status": "article_link",
       "data_source": 1,
-      "publisher_id": 211405,
-      "relation_id": 46396136,
+      "publisher_id": 205089,
+      "relation_id": 46396331,
+      "ai_flag": 0,
+      "platform_product_line": null,
+      "mapping_status": "unmapped",
+      "quality_flags": []
+    },
+    {
+      "news_id": "4969112",
+      "published_at": "2026-11-08T00:03:00.000Z",
+      "published_at_ms": 1794096180000,
+      "timezone": "Asia/Shanghai",
+      "content_text": "此前受海外停产传闻刺激，RTX50系列显卡开启连续上涨，一口气连涨11个交易日。从10月28日开始，行情突然掉头向下。RTX5080从最高近2万元，跌到1.6万元，价格回调两成。",
+      "content_html": "此前受海外停产传闻刺激，RTX50系列显卡开启连续上涨，一口气连涨11个交易日。从10月28日开始，行情突然掉头向下。RTX5080从最高近2万元，跌到1.6万元，价格回调两成。",
+      "raw_content": "此前受海外停产传闻刺激，RTX50系列显卡开启连续上涨，一口气连涨11个交易日。从10月28日开始，行情突然掉头向下。RTX5080从最高近2万元，跌到1.6万元，价格回调两成。",
+      "category": {
+        "id": 18,
+        "name": "18"
+      },
+      "section": {
+        "id": 8,
+        "name": "8"
+      },
+      "products": [],
+      "regions": [],
+      "source_name": "财联社",
+      "source_url": "http://news.mysteel.com/a/26110808/761CE1C3458C2654.html",
+      "in_article_url": "http://news.mysteel.com/a/26110808/761CE1C3458C2654.html",
+      "out_article_url": null,
+      "in_article_title": "显卡价格连涨11个交易日后急跌，华强北显卡半天一个价",
+      "out_article_title": null,
+      "source_link_status": "article_link",
+      "data_source": 1,
+      "publisher_id": 205089,
+      "relation_id": 46396330,
       "ai_flag": 0,
       "platform_product_line": null,
       "mapping_status": "unmapped",
@@ -1563,12 +1497,12 @@
   ],
   "quality": {
     "raw_count": 100,
-    "accepted_count": 32,
-    "rejected_count": 68,
+    "accepted_count": 30,
+    "rejected_count": 70,
     "deduped_count": 0,
-    "missing_source_link_count": 16,
-    "missing_product_count": 12,
-    "malformed_content_count": 68,
+    "missing_source_link_count": 17,
+    "missing_product_count": 8,
+    "malformed_content_count": 70,
     "duplicate_group_count": 0,
     "warnings": [
       "API 报告总量超过本次分页采集量；快照仅覆盖目标日期窗口，需按分类/地区拆分请求补全。"
