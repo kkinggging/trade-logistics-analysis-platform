@@ -6,10 +6,10 @@
     "dashboard_url": "https://www.mysteel.com/fastcomment/#/",
     "api_url": "https://openapi.mysteel.com/without_sign/newsflash/flashnews/query_by_tags.htm",
     "taxonomy_url": "https://a.mysteelcdn.com/common/publish/newsflash/newsflash_column.json",
-    "captured_at": "2026-11-15T06:16:45.762Z",
+    "captured_at": "2026-11-15T07:44:28.580Z",
     "coverage_start": "2026-11-15",
     "coverage_end": "2026-11-15",
-    "latest_published_at": "2026-11-15T03:59:25.808Z",
+    "latest_published_at": "2026-11-15T07:12:00.000Z",
     "timezone": "Asia/Shanghai",
     "fetch_mode": "api",
     "request_params": {
@@ -23,17 +23,17 @@
         ]
       ]
     },
-    "raw_sha256": "e6499afa3b651bb3216cf5633e0495cc7d7cf69572a48ae9e377486b89624604",
+    "raw_sha256": "9be5a32c6e47a68defd774b26f86360f3a1a8b7eccf17e512bf30fb36c4f64e7",
     "taxonomy_sha256": "c98f5bfdacde3401c98ea8f43bac3ca63d35b569f6aad3e1fff2f39b58a0dbf3",
     "response_sha256": [
-      "80bef8dd86aaede4d88d82b07177c231ff1374f18e99a8f1485eedacea0cf5cb"
+      "bff8591903d863f3fff76c59711a37cc169b33cfe7160239ab744350be11c90c"
     ],
     "page_count": 1,
     "reported_total": 10000,
     "truncation_detected": true,
     "watermark": {
-      "publisher_time_ms": 1794715165808,
-      "id": "4984528"
+      "publisher_time_ms": 1794726720000,
+      "id": "4984529"
     },
     "retry": {
       "attempts": 3,
@@ -43,6 +43,39 @@
     }
   },
   "items": [
+    {
+      "news_id": "4984529",
+      "published_at": "2026-11-15T07:12:00.000Z",
+      "published_at_ms": 1794726720000,
+      "timezone": "Asia/Shanghai",
+      "content_text": "11月15日，中国人民银行上调金融机构外汇存款准备金率正式生效，外汇存款准备金率由现行的4%提高到6%。",
+      "content_html": "11月15日，中国人民银行上调金融机构外汇存款准备金率正式生效，外汇存款准备金率由现行的4%提高到6%。",
+      "raw_content": "11月15日，中国人民银行上调金融机构外汇存款准备金率正式生效，外汇存款准备金率由现行的4%提高到6%。",
+      "category": {
+        "id": 1,
+        "name": "1"
+      },
+      "section": {
+        "id": 8,
+        "name": "8"
+      },
+      "products": [],
+      "regions": [],
+      "source_name": "财联社",
+      "source_url": "http://news.mysteel.com/a/26111515/C42C2D64ACE47430.html",
+      "in_article_url": "http://news.mysteel.com/a/26111515/C42C2D64ACE47430.html",
+      "out_article_url": null,
+      "in_article_title": "金融机构外汇存款准备金率今起提高至6%",
+      "out_article_title": null,
+      "source_link_status": "article_link",
+      "data_source": 1,
+      "publisher_id": 220399,
+      "relation_id": 46450783,
+      "ai_flag": 0,
+      "platform_product_line": null,
+      "mapping_status": "unmapped",
+      "quality_flags": []
+    },
     {
       "news_id": "4984528",
       "published_at": "2026-11-15T03:59:25.808Z",
@@ -1305,12 +1338,12 @@
   ],
   "quality": {
     "raw_count": 100,
-    "accepted_count": 25,
-    "rejected_count": 75,
+    "accepted_count": 26,
+    "rejected_count": 74,
     "deduped_count": 0,
     "missing_source_link_count": 15,
-    "missing_product_count": 4,
-    "malformed_content_count": 75,
+    "missing_product_count": 5,
+    "malformed_content_count": 74,
     "duplicate_group_count": 0,
     "warnings": [
       "API 报告总量超过本次分页采集量；快照仅覆盖目标日期窗口，需按分类/地区拆分请求补全。"
