@@ -6,10 +6,10 @@
     "dashboard_url": "https://www.mysteel.com/fastcomment/#/",
     "api_url": "https://openapi.mysteel.com/without_sign/newsflash/flashnews/query_by_tags.htm",
     "taxonomy_url": "https://a.mysteelcdn.com/common/publish/newsflash/newsflash_column.json",
-    "captured_at": "2026-11-24T09:44:43.677Z",
+    "captured_at": "2026-11-24T10:49:30.825Z",
     "coverage_start": "2026-11-24",
     "coverage_end": "2026-11-24",
-    "latest_published_at": "2026-11-24T09:44:00.000Z",
+    "latest_published_at": "2026-11-24T10:31:30.601Z",
     "timezone": "Asia/Shanghai",
     "fetch_mode": "api",
     "request_params": {
@@ -23,45 +23,45 @@
         ]
       ]
     },
-    "raw_sha256": "709ff83d5fe4819446eaac75825d01ae0040a6e03778fcabf22548a46bcc6686",
+    "raw_sha256": "c846cfec05e1467719d63cd35261c689fcb85fe525745e6fb0cb52bf727e0b73",
     "taxonomy_sha256": "c98f5bfdacde3401c98ea8f43bac3ca63d35b569f6aad3e1fff2f39b58a0dbf3",
     "response_sha256": [
-      "410004daba247fffb0c2e771f6217bbcad5a087ff6e308723806076716b26a4f",
-      "45f6d0128253961902dd00fe7f354cd157fe0089fab4e2e763778910a49b25cf",
-      "b3d1294fcede9c88eec9bc0a4a89c8c03ab4cbcb98ecfd88b0593d04c46238a2",
-      "692b70c4e106e49e2b4f774feb5d69aa0b6dd1400046577008a103ff416ef5ed",
-      "4dcfe3647833cfdf191ecabd48b37463e6ffd0e86f764c78753903727ad2a930",
-      "e714568d1b6946eaed94d73e0452d14943f6b44bb9a5458ac791ef5caf6c21b8",
-      "dcbddd910d6e2c5b94f808a25527c0ea9b89571dcd4ed3c2fa266098a43a0f51",
-      "fa74e4ae49287fbd417222d2176cec1be3cf065d91fcacd5b126155ea97ec7e0",
-      "f2eaed652d995e9b5a966456f8d9543e519ae8230ec5eaa8386886957309b158",
-      "29b8b5d54f48ff2b17cf0137cd16e544f4e06cc68380532fe0416b504db687da",
-      "68276734a549033569f7573ff93cd5aa881d56c9b364d7537eda565e9bb3396d",
-      "b2936a7ae2e08e9d42d21e2fb4b8660cf27ac26c11ecdc33ddc6faea3904b6a2",
-      "c39b5bca60c328c7b929afd565a968e349594d7b3a889f161d650c3ef11f2670",
-      "96ee2bf52b974f0f5790e5cecc208e6ed86ad4e973d7e9dd1ae913ce9a0bba1a",
-      "d83ca9d9651cc5bea9800fa3f23d8ed983be71f6dc16818882ca0fff2f5d468f",
-      "93d95f1309e6e52ad8c66cd24bc1d89c650eeaca3b426eac2029312a2399120f",
-      "65af5a769ef3157ba3e9be1406056389fa85be2e229db8f10589d8548069c293",
-      "9cb8bb4a72673c5c6328684b1c6487bf6b2e09c2d43aeca3e63cfe0efa7e763d",
-      "5c1a120cf3b1dd8ddb51d03384fb1cb1191c8586b840e727f848608ab5197f34",
-      "dfd2072eae6538da651404d0f77acd2ad1ac6fad06e585294bce64f2c55dd218",
-      "0dbe41bd36f015de48334c6c1d4c4b492f21ea32d098c2fc13cd38ff1921d144",
-      "ffecd655806dc884bcde6cf4fa1267be471e4e87350f994bc07eebafce0c841f",
-      "78d72e052e2520d5ee733e76caa38bd50eaef022abd3469739d9f3bc918a734f",
-      "1daf1f2a039250d40b968465ba5f1315b0c06cbebb3900bd1e08de256a96b266",
-      "f476c231a73906a20dfb9e697fa6225c54aa381ce7140735be95770ac99f4c35",
-      "d035679bfebfd213fd4a090bb43a38037803c90e692642d51fcba8ad18ab9cfb",
-      "d8a76bb62f0a9f17f8b8165a2493599ca71565d68f1ffeed89c2523ef0bc57c3",
-      "95c84c37af24b120ca74af79716f4eae6527183e3d02d8a89d1d111adb684864",
-      "35e3bee82fdf6125d6e76ec7b832f942f053a6e0a48ba0d4d786bab4f0f017a4"
+      "63bfbbef0527551bffc454c6f2cf08d7fb4de732fae5361d87de628315015a7b",
+      "92711fb7352da3e6041ef92ec71467ad70243a429a9c22fbaaaf0e48c5903248",
+      "922765bd62c612ec642afa5b69aa075df6da7c3ee597ad54ef291fab8044ff42",
+      "98695c067931ac4d286c1bf41956fa535ef6b9145918e3b03db37890ef580b69",
+      "bb374c658f3559f96b95e8784e718c9f040471066fdf8493ca67700ad359d7de",
+      "ae06f52839ea7a272e0ee8d30525a946b06f3205267d772634d3c5cbb4ca4ed0",
+      "dee300b15e001ea150f6491a7a6ba99b13087c098e7aa1233ec172b6eb8e8a5c",
+      "8008c121bd3b6f78f9d67ab61c3d1ced1727ea9f9cf42a73df8097474dc944ed",
+      "a60b6d0b38010f2097df9fe3d6ccaca984c6d1e87bde67db8c56be8e152b1912",
+      "78191b11ad6239d29fa7bc439462d19bc59997cc1afcb3904ea4ef03a1b11b1e",
+      "848593b682b3efea0d6ce59f66c36c94f8c15706690a1a61facaf5dcd8a02414",
+      "ecf67f083b18a33a52808a212645153682929a32f4f3e19b804db0be498a1bc8",
+      "d6f4a2b81610de4ca8492b1b263d0ceb3a3e62104f1e1103f4fccd0f6f62db63",
+      "d9fd6b632da13cb2ed576c1bac7df339dacfc72df0233dbbc7a548966c007a8c",
+      "e60cb03b9590589e1e84fcf1f945c273cc9e99cb6de2e74a2ea6babea494ef12",
+      "67e14e4dcc3f927465e680b081f6a1ce94436417fc5f3c716332d3b9774d6784",
+      "e13de61846a5a7523bab1315db9cfa7d57d5e3a519af922302d262282a43a4fa",
+      "b3088daf52958344200be9a369ab5a987e2230df6ec51b69c8052122c5656b82",
+      "b97d2ddd1d11d01eb8212200d2568961d1718abdc91d20455df8618db610daa5",
+      "737ce53b67ad7b515bd9af39d093fa62ab596b84d7701653ac31237abe1c6a77",
+      "e6914864d83cc76acdcf5a565cdf3a5fb3875e717880da8a595d78b96146c0a9",
+      "c28cafc192c4ef38b94e5d4cbddd9bd06e02fabe19e5c0f869be527427d54ec7",
+      "d8715cc1f9c2b2750d19dbc6c8f745a97c0f3e652a8a85f511b5729b4ec1c6b4",
+      "e22e69e648ac9a341d45766b960a431c567037be380f521a68b94d45a537300d",
+      "d104ad5af59cbe773ead0ed0b0a33d040fcd712ef426e8b55722e072ccba6de3",
+      "aa01942c077717b6df6724f16a6e5d055c5642359c89d97eb1bed6fb347bf0cc",
+      "b241d6420618ab722017cf72b8f355bf7aa545eaff415cbbf9065d87a7c30686",
+      "6c0c613110cafe72e76cb71d9ac8111fd2200f23439b95e06edbc9cdfecfc65b",
+      "de3cefc1f9b8a6f0ab6fadee2edd107099b263acc85d538420b794546f7e5671"
     ],
     "page_count": 29,
     "reported_total": 10000,
     "truncation_detected": true,
     "watermark": {
-      "publisher_time_ms": 1795513440000,
-      "id": "5005933"
+      "publisher_time_ms": 1795516290601,
+      "id": "5005961"
     },
     "retry": {
       "attempts": 3,
@@ -71,6 +71,1456 @@
     }
   },
   "items": [
+    {
+      "news_id": "5005961",
+      "published_at": "2026-11-24T10:31:30.601Z",
+      "published_at_ms": 1795516290601,
+      "timezone": "Asia/Shanghai",
+      "content_text": "11月24日Mysteel铁矿石港口块矿溢价人民币价格为1.5614元/干吨度，跌0.0111；美元折算价为0.2337美元/干吨度，跌0.0017。",
+      "content_html": "11月24日Mysteel铁矿石港口块矿溢价人民币价格为1.5614元/干吨度，跌0.0111；美元折算价为0.2337美元/干吨度，跌0.0017。",
+      "raw_content": "11月24日Mysteel铁矿石港口块矿溢价人民币价格为1.5614元/干吨度，跌0.0111；美元折算价为0.2337美元/干吨度，跌0.0017。",
+      "category": {
+        "id": 2,
+        "name": "2"
+      },
+      "section": {
+        "id": 7,
+        "name": "7"
+      },
+      "products": [
+        {
+          "id": "0311",
+          "name": "铁矿石",
+          "source": "relationBreed"
+        },
+        {
+          "id": "块矿",
+          "name": "块矿",
+          "source": "breedTag"
+        }
+      ],
+      "regions": [
+        {
+          "id": "01",
+          "name": "国内"
+        }
+      ],
+      "source_name": null,
+      "source_url": null,
+      "in_article_url": null,
+      "out_article_url": null,
+      "in_article_title": null,
+      "out_article_title": null,
+      "source_link_status": "no_link",
+      "data_source": 2,
+      "publisher_id": 225637,
+      "relation_id": 7766362,
+      "ai_flag": 0,
+      "platform_product_line": null,
+      "mapping_status": "ambiguous",
+      "quality_flags": [
+        "source_link_missing"
+      ]
+    },
+    {
+      "news_id": "5005960",
+      "published_at": "2026-11-24T10:30:03.885Z",
+      "published_at_ms": 1795516203885,
+      "timezone": "Asia/Shanghai",
+      "content_text": "11月24日进口铁矿全国港口现货价格：现青岛港PB粉60.8%632涨3；江阴港PB粉60.8%659涨1，麦克粉659涨1；曹妃甸港PB粉60.8%643涨4，纽曼筛后块812涨3；天津港PB粉60.8%640涨5，卡粉798涨5；防城港港PB粉60.8%641涨3。（对比前一工作日晚间价格；单位：元/湿吨）",
+      "content_html": "11月24日进口铁矿全国港口现货价格：现青岛港PB粉60.8%632涨3；江阴港PB粉60.8%659涨1，麦克粉659涨1；曹妃甸港PB粉60.8%643涨4，纽曼筛后块812涨3；天津港PB粉60.8%640涨5，卡粉798涨5；防城港港PB粉60.8%641涨3。（对比前一工作日晚间价格；单位：元/湿吨）",
+      "raw_content": "11月24日进口铁矿全国港口现货价格：现青岛港PB粉60.8%632涨3；江阴港PB粉60.8%659涨1，麦克粉659涨1；曹妃甸港PB粉60.8%643涨4，纽曼筛后块812涨3；天津港PB粉60.8%640涨5，卡粉798涨5；防城港港PB粉60.8%641涨3。（对比前一工作日晚间价格；单位：元/湿吨）",
+      "category": {
+        "id": 2,
+        "name": "2"
+      },
+      "section": {
+        "id": 7,
+        "name": "7"
+      },
+      "products": [
+        {
+          "id": "0311",
+          "name": "铁矿石",
+          "source": "relationBreed"
+        },
+        {
+          "id": "巴粉",
+          "name": "巴粉",
+          "source": "breedTag"
+        },
+        {
+          "id": "纽曼粉",
+          "name": "纽曼粉",
+          "source": "breedTag"
+        },
+        {
+          "id": "麦克粉",
+          "name": "麦克粉",
+          "source": "breedTag"
+        },
+        {
+          "id": "纽曼块",
+          "name": "纽曼块",
+          "source": "breedTag"
+        }
+      ],
+      "regions": [
+        {
+          "id": "01",
+          "name": "国内"
+        }
+      ],
+      "source_name": null,
+      "source_url": null,
+      "in_article_url": null,
+      "out_article_url": null,
+      "in_article_title": null,
+      "out_article_title": null,
+      "source_link_status": "no_link",
+      "data_source": 2,
+      "publisher_id": 222949,
+      "relation_id": 7766360,
+      "ai_flag": 0,
+      "platform_product_line": null,
+      "mapping_status": "ambiguous",
+      "quality_flags": [
+        "source_link_missing"
+      ]
+    },
+    {
+      "news_id": "5005959",
+      "published_at": "2026-11-24T10:29:30.833Z",
+      "published_at_ms": 1795516170833,
+      "timezone": "Asia/Shanghai",
+      "content_text": "24日铁矿石成交量港口现货：全国主港铁矿累计成交57.2万吨，环比上涨10.21%；本周平均每日成交54.6万吨，环比下跌33.66%；本月平均每日成交67.1万吨，环比下跌1.61%。远期现货：远期现货累计成交27.0万吨（2笔），环比下跌53.45%，(其中矿山成交量为27万吨)；本周平均每日成交42.5万吨，环比下跌62.49%；本月平均每日成交69.5万吨，环比下跌15.66%。",
+      "content_html": "24日铁矿石成交量港口现货：全国主港铁矿累计成交57.2万吨，环比上涨10.21%；本周平均每日成交54.6万吨，环比下跌33.66%；本月平均每日成交67.1万吨，环比下跌1.61%。远期现货：远期现货累计成交27.0万吨（2笔），环比下跌53.45%，(其中矿山成交量为27万吨)；本周平均每日成交42.5万吨，环比下跌62.49%；本月平均每日成交69.5万吨，环比下跌15.66%。",
+      "raw_content": "24日铁矿石成交量港口现货：全国主港铁矿累计成交57.2万吨，环比上涨10.21%；本周平均每日成交54.6万吨，环比下跌33.66%；本月平均每日成交67.1万吨，环比下跌1.61%。远期现货：远期现货累计成交27.0万吨（2笔），环比下跌53.45%，(其中矿山成交量为27万吨)；本周平均每日成交42.5万吨，环比下跌62.49%；本月平均每日成交69.5万吨，环比下跌15.66%。",
+      "category": {
+        "id": 2,
+        "name": "2"
+      },
+      "section": {
+        "id": 7,
+        "name": "7"
+      },
+      "products": [
+        {
+          "id": "0311",
+          "name": "铁矿石",
+          "source": "relationBreed"
+        }
+      ],
+      "regions": [
+        {
+          "id": "01",
+          "name": "国内"
+        }
+      ],
+      "source_name": null,
+      "source_url": null,
+      "in_article_url": null,
+      "out_article_url": null,
+      "in_article_title": null,
+      "out_article_title": null,
+      "source_link_status": "no_link",
+      "data_source": 2,
+      "publisher_id": 219296,
+      "relation_id": 7766359,
+      "ai_flag": 0,
+      "platform_product_line": null,
+      "mapping_status": "ambiguous",
+      "quality_flags": [
+        "source_link_missing"
+      ]
+    },
+    {
+      "news_id": "5005958",
+      "published_at": "2026-11-24T10:16:08.871Z",
+      "published_at_ms": 1795515368871,
+      "timezone": "Asia/Shanghai",
+      "content_text": "11月24日京唐港进口矿铁矿价格全天累计1-6，供应端贸易商报价情绪尚可；需求端钢厂方面以刚需采购为主，市场交投情绪一般，现货成交情况整体一般。现60.8%PB粉648涨6，卡粉802涨4，混合粉624涨6，61.6%PB块798涨3，61.5%NTH粉622涨4。（对比前一工作日晚间价格；单位：元/湿吨）",
+      "content_html": "11月24日京唐港进口矿铁矿价格全天累计1-6，供应端贸易商报价情绪尚可；需求端钢厂方面以刚需采购为主，市场交投情绪一般，现货成交情况整体一般。现60.8%PB粉648涨6，卡粉802涨4，混合粉624涨6，61.6%PB块798涨3，61.5%NTH粉622涨4。（对比前一工作日晚间价格；单位：元/湿吨）",
+      "raw_content": "11月24日京唐港进口矿铁矿价格全天累计1-6，供应端贸易商报价情绪尚可；需求端钢厂方面以刚需采购为主，市场交投情绪一般，现货成交情况整体一般。现60.8%PB粉648涨6，卡粉802涨4，混合粉624涨6，61.6%PB块798涨3，61.5%NTH粉622涨4。（对比前一工作日晚间价格；单位：元/湿吨）",
+      "category": {
+        "id": 2,
+        "name": "2"
+      },
+      "section": {
+        "id": 7,
+        "name": "7"
+      },
+      "products": [
+        {
+          "id": "0311",
+          "name": "铁矿石",
+          "source": "relationBreed"
+        },
+        {
+          "id": "印粉",
+          "name": "印粉",
+          "source": "breedTag"
+        },
+        {
+          "id": "FMG混合粉",
+          "name": "FMG混合粉",
+          "source": "breedTag"
+        },
+        {
+          "id": "块矿",
+          "name": "块矿",
+          "source": "breedTag"
+        }
+      ],
+      "regions": [
+        {
+          "id": "010403",
+          "name": "河北"
+        }
+      ],
+      "source_name": null,
+      "source_url": null,
+      "in_article_url": null,
+      "out_article_url": null,
+      "in_article_title": null,
+      "out_article_title": null,
+      "source_link_status": "no_link",
+      "data_source": 2,
+      "publisher_id": 227379,
+      "relation_id": 7766356,
+      "ai_flag": 0,
+      "platform_product_line": null,
+      "mapping_status": "ambiguous",
+      "quality_flags": [
+        "source_link_missing"
+      ]
+    },
+    {
+      "news_id": "5005957",
+      "published_at": "2026-11-24T10:15:18.655Z",
+      "published_at_ms": 1795515318655,
+      "timezone": "Asia/Shanghai",
+      "content_text": "11月24日黄骅港进口铁矿价格全天累计上涨3-5。贸易商报价情绪尚可，钢厂询货情绪一般，市场成交几无。现60.8%PB粉644涨5，麦克粉650涨5，熙丰标准粉621涨5。（对比前一工作日晚间价格；单位：元/湿吨）",
+      "content_html": "11月24日黄骅港进口铁矿价格全天累计上涨3-5。贸易商报价情绪尚可，钢厂询货情绪一般，市场成交几无。现60.8%PB粉644涨5，麦克粉650涨5，熙丰标准粉621涨5。（对比前一工作日晚间价格；单位：元/湿吨）",
+      "raw_content": "11月24日黄骅港进口铁矿价格全天累计上涨3-5。贸易商报价情绪尚可，钢厂询货情绪一般，市场成交几无。现60.8%PB粉644涨5，麦克粉650涨5，熙丰标准粉621涨5。（对比前一工作日晚间价格；单位：元/湿吨）",
+      "category": {
+        "id": 2,
+        "name": "2"
+      },
+      "section": {
+        "id": 7,
+        "name": "7"
+      },
+      "products": [
+        {
+          "id": "0311",
+          "name": "铁矿石",
+          "source": "relationBreed"
+        },
+        {
+          "id": "麦克粉",
+          "name": "麦克粉",
+          "source": "breedTag"
+        },
+        {
+          "id": "巴粉",
+          "name": "巴粉",
+          "source": "breedTag"
+        }
+      ],
+      "regions": [],
+      "source_name": null,
+      "source_url": null,
+      "in_article_url": null,
+      "out_article_url": null,
+      "in_article_title": null,
+      "out_article_title": null,
+      "source_link_status": "no_link",
+      "data_source": 2,
+      "publisher_id": 225240,
+      "relation_id": 7766353,
+      "ai_flag": 0,
+      "platform_product_line": null,
+      "mapping_status": "ambiguous",
+      "quality_flags": [
+        "source_link_missing"
+      ]
+    },
+    {
+      "news_id": "5005956",
+      "published_at": "2026-11-24T10:15:15.637Z",
+      "published_at_ms": 1795515315637,
+      "timezone": "Asia/Shanghai",
+      "content_text": "11月24日成交方面，全国主要油厂豆粕成交7.95万吨，较前一交易日减6.51万吨，其中现货成交6.65万吨，较前一交易日减2.81万吨，远月基差成交1.30万吨，较前一交易日减3.70万吨。开机方面，今日全国动态全样本油厂开机率为55.51%，较前一日下降0.13%。",
+      "content_html": "11月24日成交方面，全国主要油厂豆粕成交7.95万吨，较前一交易日减6.51万吨，其中现货成交6.65万吨，较前一交易日减2.81万吨，远月基差成交1.30万吨，较前一交易日减3.70万吨。开机方面，今日全国动态全样本油厂开机率为55.51%，较前一日下降0.13%。",
+      "raw_content": "11月24日成交方面，全国主要油厂豆粕成交7.95万吨，较前一交易日减6.51万吨，其中现货成交6.65万吨，较前一交易日减2.81万吨，远月基差成交1.30万吨，较前一交易日减3.70万吨。开机方面，今日全国动态全样本油厂开机率为55.51%，较前一日下降0.13%。",
+      "category": {
+        "id": 5,
+        "name": "5"
+      },
+      "section": {
+        "id": 7,
+        "name": "7"
+      },
+      "products": [
+        {
+          "id": "070301",
+          "name": "豆粕",
+          "source": "relationBreed"
+        }
+      ],
+      "regions": [
+        {
+          "id": "01",
+          "name": "国内"
+        }
+      ],
+      "source_name": null,
+      "source_url": null,
+      "in_article_url": null,
+      "out_article_url": null,
+      "in_article_title": null,
+      "out_article_title": null,
+      "source_link_status": "no_link",
+      "data_source": 2,
+      "publisher_id": 225046,
+      "relation_id": 7766352,
+      "ai_flag": 0,
+      "platform_product_line": null,
+      "mapping_status": "ambiguous",
+      "quality_flags": [
+        "source_link_missing"
+      ]
+    },
+    {
+      "news_id": "5005955",
+      "published_at": "2026-11-24T10:15:12.553Z",
+      "published_at_ms": 1795515312553,
+      "timezone": "Asia/Shanghai",
+      "content_text": "11月24日曹妃甸港进口铁矿价格全天累计上涨2-5，市场端贸易商报价情绪尚可，定价多紧跟市场行情灵活调整；采购端钢厂按需刚性拿货，现货交投表现一般。现60.8%PB粉643涨4，纽曼筛后块812涨3，麦克粉645涨3，混合粉609涨4，61.5%五矿标准粉637涨4。（对比前一工作日价格；单位：元/湿吨）",
+      "content_html": "11月24日曹妃甸港进口铁矿价格全天累计上涨2-5，市场端贸易商报价情绪尚可，定价多紧跟市场行情灵活调整；采购端钢厂按需刚性拿货，现货交投表现一般。现60.8%PB粉643涨4，纽曼筛后块812涨3，麦克粉645涨3，混合粉609涨4，61.5%五矿标准粉637涨4。（对比前一工作日价格；单位：元/湿吨）",
+      "raw_content": "11月24日曹妃甸港进口铁矿价格全天累计上涨2-5，市场端贸易商报价情绪尚可，定价多紧跟市场行情灵活调整；采购端钢厂按需刚性拿货，现货交投表现一般。现60.8%PB粉643涨4，纽曼筛后块812涨3，麦克粉645涨3，混合粉609涨4，61.5%五矿标准粉637涨4。（对比前一工作日价格；单位：元/湿吨）",
+      "category": {
+        "id": 2,
+        "name": "2"
+      },
+      "section": {
+        "id": 7,
+        "name": "7"
+      },
+      "products": [
+        {
+          "id": "0311",
+          "name": "铁矿石",
+          "source": "relationBreed"
+        },
+        {
+          "id": "纽曼粉",
+          "name": "纽曼粉",
+          "source": "breedTag"
+        },
+        {
+          "id": "麦克粉",
+          "name": "麦克粉",
+          "source": "breedTag"
+        },
+        {
+          "id": "FMG混合粉",
+          "name": "FMG混合粉",
+          "source": "breedTag"
+        },
+        {
+          "id": "纽曼块",
+          "name": "纽曼块",
+          "source": "breedTag"
+        }
+      ],
+      "regions": [
+        {
+          "id": "010403",
+          "name": "河北"
+        }
+      ],
+      "source_name": null,
+      "source_url": null,
+      "in_article_url": null,
+      "out_article_url": null,
+      "in_article_title": null,
+      "out_article_title": null,
+      "source_link_status": "no_link",
+      "data_source": 2,
+      "publisher_id": 227379,
+      "relation_id": 7766351,
+      "ai_flag": 0,
+      "platform_product_line": null,
+      "mapping_status": "ambiguous",
+      "quality_flags": [
+        "source_link_missing"
+      ]
+    },
+    {
+      "news_id": "5005954",
+      "published_at": "2026-11-24T10:15:02.812Z",
+      "published_at_ms": 1795515302812,
+      "timezone": "Asia/Shanghai",
+      "content_text": "11月24日北仑港进口铁矿价格全天累计上涨1-4。市场交投情绪较为冷清，今日成交几无。现PB粉60.8%632涨2，PB块61.6%785涨2。(对比前一工作日晚间价格；单位：元/湿吨)",
+      "content_html": "11月24日北仑港进口铁矿价格全天累计上涨1-4。市场交投情绪较为冷清，今日成交几无。现PB粉60.8%632涨2，PB块61.6%785涨2。(对比前一工作日晚间价格；单位：元/湿吨)",
+      "raw_content": "11月24日北仑港进口铁矿价格全天累计上涨1-4。市场交投情绪较为冷清，今日成交几无。现PB粉60.8%632涨2，PB块61.6%785涨2。(对比前一工作日晚间价格；单位：元/湿吨)",
+      "category": {
+        "id": 2,
+        "name": "2"
+      },
+      "section": {
+        "id": 7,
+        "name": "7"
+      },
+      "products": [
+        {
+          "id": "0311",
+          "name": "铁矿石",
+          "source": "relationBreed"
+        },
+        {
+          "id": "粉矿",
+          "name": "粉矿",
+          "source": "breedTag"
+        },
+        {
+          "id": "PB块",
+          "name": "PB块",
+          "source": "breedTag"
+        }
+      ],
+      "regions": [],
+      "source_name": null,
+      "source_url": null,
+      "in_article_url": null,
+      "out_article_url": null,
+      "in_article_title": null,
+      "out_article_title": null,
+      "source_link_status": "no_link",
+      "data_source": 2,
+      "publisher_id": 226515,
+      "relation_id": 7766350,
+      "ai_flag": 0,
+      "platform_product_line": null,
+      "mapping_status": "ambiguous",
+      "quality_flags": [
+        "source_link_missing"
+      ]
+    },
+    {
+      "news_id": "5005953",
+      "published_at": "2026-11-24T10:14:29.735Z",
+      "published_at_ms": 1795515269735,
+      "timezone": "Asia/Shanghai",
+      "content_text": "11月24日防城港港进口铁矿价格全天累计上涨3。市场交投情绪较为冷清，成交几无。现60.8%PB粉641涨3，南非粉707涨3。（对比前一工作日晚间价格；单位：元/湿吨 ）",
+      "content_html": "11月24日防城港港进口铁矿价格全天累计上涨3。市场交投情绪较为冷清，成交几无。现60.8%PB粉641涨3，南非粉707涨3。（对比前一工作日晚间价格；单位：元/湿吨 ）",
+      "raw_content": "11月24日防城港港进口铁矿价格全天累计上涨3。市场交投情绪较为冷清，成交几无。现60.8%PB粉641涨3，南非粉707涨3。（对比前一工作日晚间价格；单位：元/湿吨 ）",
+      "category": {
+        "id": 2,
+        "name": "2"
+      },
+      "section": {
+        "id": 7,
+        "name": "7"
+      },
+      "products": [
+        {
+          "id": "0311",
+          "name": "铁矿石",
+          "source": "relationBreed"
+        },
+        {
+          "id": "澳粉",
+          "name": "澳粉",
+          "source": "breedTag"
+        },
+        {
+          "id": "南非粉",
+          "name": "南非粉",
+          "source": "breedTag"
+        }
+      ],
+      "regions": [],
+      "source_name": null,
+      "source_url": null,
+      "in_article_url": null,
+      "out_article_url": null,
+      "in_article_title": null,
+      "out_article_title": null,
+      "source_link_status": "no_link",
+      "data_source": 2,
+      "publisher_id": 225405,
+      "relation_id": 7766348,
+      "ai_flag": 0,
+      "platform_product_line": null,
+      "mapping_status": "ambiguous",
+      "quality_flags": [
+        "source_link_missing"
+      ]
+    },
+    {
+      "news_id": "5005952",
+      "published_at": "2026-11-24T10:14:22.511Z",
+      "published_at_ms": 1795515262511,
+      "timezone": "Asia/Shanghai",
+      "content_text": "11月24日湛江港进口铁矿价格全天累计上涨3。市场交投情绪较冷清，成交无几。现60.8%PB粉641涨3，卡粉789平。（对比前一工作日晚间价格；单位：元/湿吨 )",
+      "content_html": "11月24日湛江港进口铁矿价格全天累计上涨3。市场交投情绪较冷清，成交无几。现60.8%PB粉641涨3，卡粉789平。（对比前一工作日晚间价格；单位：元/湿吨 )",
+      "raw_content": "11月24日湛江港进口铁矿价格全天累计上涨3。市场交投情绪较冷清，成交无几。现60.8%PB粉641涨3，卡粉789平。（对比前一工作日晚间价格；单位：元/湿吨 )",
+      "category": {
+        "id": 2,
+        "name": "2"
+      },
+      "section": {
+        "id": 7,
+        "name": "7"
+      },
+      "products": [
+        {
+          "id": "0311",
+          "name": "铁矿石",
+          "source": "relationBreed"
+        },
+        {
+          "id": "澳粉",
+          "name": "澳粉",
+          "source": "breedTag"
+        },
+        {
+          "id": "巴粉",
+          "name": "巴粉",
+          "source": "breedTag"
+        }
+      ],
+      "regions": [],
+      "source_name": null,
+      "source_url": null,
+      "in_article_url": null,
+      "out_article_url": null,
+      "in_article_title": null,
+      "out_article_title": null,
+      "source_link_status": "no_link",
+      "data_source": 2,
+      "publisher_id": 225405,
+      "relation_id": 7766347,
+      "ai_flag": 0,
+      "platform_product_line": null,
+      "mapping_status": "ambiguous",
+      "quality_flags": [
+        "source_link_missing"
+      ]
+    },
+    {
+      "news_id": "5005951",
+      "published_at": "2026-11-24T10:14:20.891Z",
+      "published_at_ms": 1795515260891,
+      "timezone": "Asia/Shanghai",
+      "content_text": "11月24日天津港进口铁矿价格全天累计上涨2-5。贸易商报价情绪尚可，钢厂询货情绪一般，市场成交一般。现PB粉60.8%640涨5，纽曼筛后块807涨2，混合粉610涨5。（对比前一工作日晚间价格；单位：元/湿吨）",
+      "content_html": "11月24日天津港进口铁矿价格全天累计上涨2-5。贸易商报价情绪尚可，钢厂询货情绪一般，市场成交一般。现PB粉60.8%640涨5，纽曼筛后块807涨2，混合粉610涨5。（对比前一工作日晚间价格；单位：元/湿吨）",
+      "raw_content": "11月24日天津港进口铁矿价格全天累计上涨2-5。贸易商报价情绪尚可，钢厂询货情绪一般，市场成交一般。现PB粉60.8%640涨5，纽曼筛后块807涨2，混合粉610涨5。（对比前一工作日晚间价格；单位：元/湿吨）",
+      "category": {
+        "id": 2,
+        "name": "2"
+      },
+      "section": {
+        "id": 7,
+        "name": "7"
+      },
+      "products": [
+        {
+          "id": "0311",
+          "name": "铁矿石",
+          "source": "relationBreed"
+        },
+        {
+          "id": "FMG混合粉",
+          "name": "FMG混合粉",
+          "source": "breedTag"
+        },
+        {
+          "id": "纽曼块",
+          "name": "纽曼块",
+          "source": "breedTag"
+        }
+      ],
+      "regions": [
+        {
+          "id": "010402",
+          "name": "天津"
+        }
+      ],
+      "source_name": null,
+      "source_url": null,
+      "in_article_url": null,
+      "out_article_url": null,
+      "in_article_title": null,
+      "out_article_title": null,
+      "source_link_status": "no_link",
+      "data_source": 2,
+      "publisher_id": 225240,
+      "relation_id": 7766346,
+      "ai_flag": 0,
+      "platform_product_line": null,
+      "mapping_status": "ambiguous",
+      "quality_flags": [
+        "source_link_missing"
+      ]
+    },
+    {
+      "news_id": "5005950",
+      "published_at": "2026-11-24T10:14:18.682Z",
+      "published_at_ms": 1795515258682,
+      "timezone": "Asia/Shanghai",
+      "content_text": "11月24日岚桥港进口铁矿价格全天累计上涨3。市场交投情绪较为冷清，成交几无。现60.8%PB粉630涨3，61.6%PB块784涨3，混合粉598涨3，SPGF混合粉615涨3。(对比前一工作日晚间价格；单位：元/湿吨)",
+      "content_html": "11月24日岚桥港进口铁矿价格全天累计上涨3。市场交投情绪较为冷清，成交几无。现60.8%PB粉630涨3，61.6%PB块784涨3，混合粉598涨3，SPGF混合粉615涨3。(对比前一工作日晚间价格；单位：元/湿吨)",
+      "raw_content": "11月24日岚桥港进口铁矿价格全天累计上涨3。市场交投情绪较为冷清，成交几无。现60.8%PB粉630涨3，61.6%PB块784涨3，混合粉598涨3，SPGF混合粉615涨3。(对比前一工作日晚间价格；单位：元/湿吨)",
+      "category": {
+        "id": 2,
+        "name": "2"
+      },
+      "section": {
+        "id": 7,
+        "name": "7"
+      },
+      "products": [
+        {
+          "id": "0311",
+          "name": "铁矿石",
+          "source": "relationBreed"
+        },
+        {
+          "id": "皮尔巴拉混合粉",
+          "name": "皮尔巴拉混合粉",
+          "source": "breedTag"
+        },
+        {
+          "id": "PB块",
+          "name": "PB块",
+          "source": "breedTag"
+        }
+      ],
+      "regions": [],
+      "source_name": null,
+      "source_url": null,
+      "in_article_url": null,
+      "out_article_url": null,
+      "in_article_title": null,
+      "out_article_title": null,
+      "source_link_status": "no_link",
+      "data_source": 2,
+      "publisher_id": 226475,
+      "relation_id": 7766345,
+      "ai_flag": 0,
+      "platform_product_line": null,
+      "mapping_status": "ambiguous",
+      "quality_flags": [
+        "source_link_missing"
+      ]
+    },
+    {
+      "news_id": "5005949",
+      "published_at": "2026-11-24T10:14:16.124Z",
+      "published_at_ms": 1795515256124,
+      "timezone": "Asia/Shanghai",
+      "content_text": "11月24日岚山港进口铁矿价格全天累计上涨3。市场交投情绪较为冷清，成交几无。现60.8%PB粉630涨3，混合粉598涨3，麦克粉637涨3。（对比前一工作日晚间价格；单位：元/湿吨 )",
+      "content_html": "11月24日岚山港进口铁矿价格全天累计上涨3。市场交投情绪较为冷清，成交几无。现60.8%PB粉630涨3，混合粉598涨3，麦克粉637涨3。（对比前一工作日晚间价格；单位：元/湿吨 )",
+      "raw_content": "11月24日岚山港进口铁矿价格全天累计上涨3。市场交投情绪较为冷清，成交几无。现60.8%PB粉630涨3，混合粉598涨3，麦克粉637涨3。（对比前一工作日晚间价格；单位：元/湿吨 )",
+      "category": {
+        "id": 2,
+        "name": "2"
+      },
+      "section": {
+        "id": 7,
+        "name": "7"
+      },
+      "products": [
+        {
+          "id": "0311",
+          "name": "铁矿石",
+          "source": "relationBreed"
+        },
+        {
+          "id": "皮尔巴拉混合粉",
+          "name": "皮尔巴拉混合粉",
+          "source": "breedTag"
+        },
+        {
+          "id": "巴粉",
+          "name": "巴粉",
+          "source": "breedTag"
+        },
+        {
+          "id": "FMG混合粉",
+          "name": "FMG混合粉",
+          "source": "breedTag"
+        }
+      ],
+      "regions": [],
+      "source_name": null,
+      "source_url": null,
+      "in_article_url": null,
+      "out_article_url": null,
+      "in_article_title": null,
+      "out_article_title": null,
+      "source_link_status": "no_link",
+      "data_source": 2,
+      "publisher_id": 226475,
+      "relation_id": 7766344,
+      "ai_flag": 0,
+      "platform_product_line": null,
+      "mapping_status": "ambiguous",
+      "quality_flags": [
+        "source_link_missing"
+      ]
+    },
+    {
+      "news_id": "5005948",
+      "published_at": "2026-11-24T10:14:13.018Z",
+      "published_at_ms": 1795515253018,
+      "timezone": "Asia/Shanghai",
+      "content_text": "11月24日日照港进口铁矿价格全天累计上涨3。市场交投情绪较为冷清，今日成交品种以PB粉为主，成交较少。现60.8%PB粉631涨3，61.6%PB块782涨3，卡粉782平，混合粉595涨3，56.7%SP10粉561涨3，48.5%榕海烘干镍铁矿400平。(对比前一工作日晚间价格；单位：元/湿吨)",
+      "content_html": "11月24日日照港进口铁矿价格全天累计上涨3。市场交投情绪较为冷清，今日成交品种以PB粉为主，成交较少。现60.8%PB粉631涨3，61.6%PB块782涨3，卡粉782平，混合粉595涨3，56.7%SP10粉561涨3，48.5%榕海烘干镍铁矿400平。(对比前一工作日晚间价格；单位：元/湿吨)",
+      "raw_content": "11月24日日照港进口铁矿价格全天累计上涨3。市场交投情绪较为冷清，今日成交品种以PB粉为主，成交较少。现60.8%PB粉631涨3，61.6%PB块782涨3，卡粉782平，混合粉595涨3，56.7%SP10粉561涨3，48.5%榕海烘干镍铁矿400平。(对比前一工作日晚间价格；单位：元/湿吨)",
+      "category": {
+        "id": 2,
+        "name": "2"
+      },
+      "section": {
+        "id": 7,
+        "name": "7"
+      },
+      "products": [
+        {
+          "id": "0311",
+          "name": "铁矿石",
+          "source": "relationBreed"
+        },
+        {
+          "id": "巴粉",
+          "name": "巴粉",
+          "source": "breedTag"
+        },
+        {
+          "id": "FMG混合粉",
+          "name": "FMG混合粉",
+          "source": "breedTag"
+        },
+        {
+          "id": "PB块",
+          "name": "PB块",
+          "source": "breedTag"
+        }
+      ],
+      "regions": [
+        {
+          "id": "010102",
+          "name": "山东"
+        }
+      ],
+      "source_name": null,
+      "source_url": null,
+      "in_article_url": null,
+      "out_article_url": null,
+      "in_article_title": null,
+      "out_article_title": null,
+      "source_link_status": "no_link",
+      "data_source": 2,
+      "publisher_id": 226475,
+      "relation_id": 7766343,
+      "ai_flag": 0,
+      "platform_product_line": null,
+      "mapping_status": "ambiguous",
+      "quality_flags": [
+        "source_link_missing"
+      ]
+    },
+    {
+      "news_id": "5005947",
+      "published_at": "2026-11-24T10:13:37.786Z",
+      "published_at_ms": 1795515217786,
+      "timezone": "Asia/Shanghai",
+      "content_text": "11月24日连云港港进口铁矿价格全天累计上涨3-4。市场交投情绪较为冷清，成交寥寥。现60.8%PB粉633涨3，61.6%PB块783涨3，混合粉597涨4，卡粉778平，62.5%巴混（BRBF）686涨3。（对比前一工作日晚间价格；单位：元/湿吨)",
+      "content_html": "11月24日连云港港进口铁矿价格全天累计上涨3-4。市场交投情绪较为冷清，成交寥寥。现60.8%PB粉633涨3，61.6%PB块783涨3，混合粉597涨4，卡粉778平，62.5%巴混（BRBF）686涨3。（对比前一工作日晚间价格；单位：元/湿吨)",
+      "raw_content": "11月24日连云港港进口铁矿价格全天累计上涨3-4。市场交投情绪较为冷清，成交寥寥。现60.8%PB粉633涨3，61.6%PB块783涨3，混合粉597涨4，卡粉778平，62.5%巴混（BRBF）686涨3。（对比前一工作日晚间价格；单位：元/湿吨)",
+      "category": {
+        "id": 2,
+        "name": "2"
+      },
+      "section": {
+        "id": 7,
+        "name": "7"
+      },
+      "products": [
+        {
+          "id": "0311",
+          "name": "铁矿石",
+          "source": "relationBreed"
+        },
+        {
+          "id": "FMG混合粉",
+          "name": "FMG混合粉",
+          "source": "breedTag"
+        },
+        {
+          "id": "巴西混合粉",
+          "name": "巴西混合粉",
+          "source": "breedTag"
+        },
+        {
+          "id": "PB块",
+          "name": "PB块",
+          "source": "breedTag"
+        }
+      ],
+      "regions": [
+        {
+          "id": "010103",
+          "name": "江苏"
+        }
+      ],
+      "source_name": null,
+      "source_url": null,
+      "in_article_url": null,
+      "out_article_url": null,
+      "in_article_title": null,
+      "out_article_title": null,
+      "source_link_status": "no_link",
+      "data_source": 2,
+      "publisher_id": 225405,
+      "relation_id": 7766342,
+      "ai_flag": 0,
+      "platform_product_line": null,
+      "mapping_status": "ambiguous",
+      "quality_flags": [
+        "source_link_missing"
+      ]
+    },
+    {
+      "news_id": "5005946",
+      "published_at": "2026-11-24T10:13:24.999Z",
+      "published_at_ms": 1795515204999,
+      "timezone": "Asia/Shanghai",
+      "content_text": "11月24日青岛港进口铁矿价格全天累计上涨3。市场交投情绪较为冷清，今日成交品种以PB粉为主，成交较少。现60.8%PB粉632涨3，混合粉596涨3，61.6%PB块778涨3，卡粉782平，SPGF混合粉617涨3。（对比前一工作日晚间价格；单位：元/湿吨 )",
+      "content_html": "11月24日青岛港进口铁矿价格全天累计上涨3。市场交投情绪较为冷清，今日成交品种以PB粉为主，成交较少。现60.8%PB粉632涨3，混合粉596涨3，61.6%PB块778涨3，卡粉782平，SPGF混合粉617涨3。（对比前一工作日晚间价格；单位：元/湿吨 )",
+      "raw_content": "11月24日青岛港进口铁矿价格全天累计上涨3。市场交投情绪较为冷清，今日成交品种以PB粉为主，成交较少。现60.8%PB粉632涨3，混合粉596涨3，61.6%PB块778涨3，卡粉782平，SPGF混合粉617涨3。（对比前一工作日晚间价格；单位：元/湿吨 )",
+      "category": {
+        "id": 2,
+        "name": "2"
+      },
+      "section": {
+        "id": 7,
+        "name": "7"
+      },
+      "products": [
+        {
+          "id": "0311",
+          "name": "铁矿石",
+          "source": "relationBreed"
+        },
+        {
+          "id": "皮尔巴拉混合粉",
+          "name": "皮尔巴拉混合粉",
+          "source": "breedTag"
+        },
+        {
+          "id": "PB块",
+          "name": "PB块",
+          "source": "breedTag"
+        }
+      ],
+      "regions": [
+        {
+          "id": "010102",
+          "name": "山东"
+        }
+      ],
+      "source_name": null,
+      "source_url": null,
+      "in_article_url": null,
+      "out_article_url": null,
+      "in_article_title": null,
+      "out_article_title": null,
+      "source_link_status": "no_link",
+      "data_source": 2,
+      "publisher_id": 225405,
+      "relation_id": 7766341,
+      "ai_flag": 0,
+      "platform_product_line": null,
+      "mapping_status": "ambiguous",
+      "quality_flags": [
+        "source_link_missing"
+      ]
+    },
+    {
+      "news_id": "5005945",
+      "published_at": "2026-11-24T10:12:54.971Z",
+      "published_at_ms": 1795515174971,
+      "timezone": "Asia/Shanghai",
+      "content_text": "本周Mysteel统计独立焦企全样本：产能利用率71.09%，增0.89%；焦炭日均产量60.99万吨，增0.76万吨；焦炭库存68.48万吨，减2.82万吨；炼焦煤总库存898.61万吨，减5.06万吨；焦煤可用天数11.1天，减0.2天。全国230家独立焦企样本：产能利用率70.34%，增0.86%；焦炭日均产量48.57万吨，增0.6万吨；焦炭库存37.53万吨，减1.52万吨；炼焦煤总库存748.89万吨，减3.77万吨；焦煤可用天数11.6天，减0.21天。",
+      "content_html": "<p>本周Mysteel统计独立焦企全样本：产能利用率71.09%，增0.89%；焦炭日均产量60.99万吨，增0.76万吨；焦炭库存68.48万吨，减2.82万吨；炼焦煤总库存898.61万吨，减5.06万吨；焦煤可用天数11.1天，减0.2天。全国230家独立焦企样本：产能利用率70.34%，增0.86%；焦炭日均产量48.57万吨，增0.6万吨；焦炭库存37.53万吨，减1.52万吨；炼焦煤总库存748.89万吨，减3.77万吨；焦煤可用天数11.6天，减0.21天。</p>",
+      "raw_content": "<p>本周Mysteel统计独立焦企全样本：产能利用率71.09%，增0.89%；焦炭日均产量60.99万吨，增0.76万吨；焦炭库存68.48万吨，减2.82万吨；炼焦煤总库存898.61万吨，减5.06万吨；焦煤可用天数11.1天，减0.2天。全国230家独立焦企样本：产能利用率70.34%，增0.86%；焦炭日均产量48.57万吨，增0.6万吨；焦炭库存37.53万吨，减1.52万吨；炼焦煤总库存748.89万吨，减3.77万吨；焦煤可用天数11.6天，减0.21天。</p>",
+      "category": {
+        "id": 2,
+        "name": "2"
+      },
+      "section": {
+        "id": 4,
+        "name": "4"
+      },
+      "products": [
+        {
+          "id": "焦炭",
+          "name": "焦炭",
+          "source": "breedTag"
+        },
+        {
+          "id": "炼焦煤",
+          "name": "炼焦煤",
+          "source": "breedTag"
+        }
+      ],
+      "regions": [],
+      "source_name": null,
+      "source_url": null,
+      "in_article_url": null,
+      "out_article_url": null,
+      "in_article_title": null,
+      "out_article_title": null,
+      "source_link_status": "no_link",
+      "data_source": 0,
+      "publisher_id": 202650,
+      "relation_id": 0,
+      "ai_flag": 0,
+      "platform_product_line": null,
+      "mapping_status": "ambiguous",
+      "quality_flags": [
+        "source_link_missing"
+      ]
+    },
+    {
+      "news_id": "5005944",
+      "published_at": "2026-11-24T10:11:54.996Z",
+      "published_at_ms": 1795515114996,
+      "timezone": "Asia/Shanghai",
+      "content_text": "中汽协：2026年10月全国二手车市场交易量150.74万辆，环比下降4.16%，同比下降14.25%，交易金额为937.97亿元。",
+      "content_html": "<p>中汽协：2026年10月全国二手车市场交易量150.74万辆，环比下降4.16%，同比下降14.25%，交易金额为937.97亿元。</p>",
+      "raw_content": "<p>中汽协：2026年10月全国二手车市场交易量150.74万辆，环比下降4.16%，同比下降14.25%，交易金额为937.97亿元。</p>",
+      "category": {
+        "id": 2,
+        "name": "2"
+      },
+      "section": {
+        "id": 4,
+        "name": "4"
+      },
+      "products": [],
+      "regions": [],
+      "source_name": null,
+      "source_url": null,
+      "in_article_url": null,
+      "out_article_url": null,
+      "in_article_title": null,
+      "out_article_title": null,
+      "source_link_status": "no_link",
+      "data_source": 0,
+      "publisher_id": 202650,
+      "relation_id": 0,
+      "ai_flag": 0,
+      "platform_product_line": null,
+      "mapping_status": "unmapped",
+      "quality_flags": [
+        "source_link_missing"
+      ]
+    },
+    {
+      "news_id": "5005943",
+      "published_at": "2026-11-24T10:11:23.037Z",
+      "published_at_ms": 1795515083037,
+      "timezone": "Asia/Shanghai",
+      "content_text": "11月23日，总部位于巴西的矿业公司淡水河谷（Vale）宣布，将部分恢复位于巴西米纳斯吉拉斯州孔戈尼亚斯市的维加（Viga）矿区的运营。",
+      "content_html": "<p>11月23日，总部位于巴西的矿业公司淡水河谷（Vale）宣布，将部分恢复位于巴西米纳斯吉拉斯州孔戈尼亚斯市的维加（Viga）矿区的运营。</p><p><br/></p>",
+      "raw_content": "<p>11月23日，总部位于巴西的矿业公司淡水河谷（Vale）宣布，将部分恢复位于巴西米纳斯吉拉斯州孔戈尼亚斯市的维加（Viga）矿区的运营。</p><p><br/></p>",
+      "category": {
+        "id": 2,
+        "name": "2"
+      },
+      "section": {
+        "id": 4,
+        "name": "4"
+      },
+      "products": [],
+      "regions": [],
+      "source_name": null,
+      "source_url": null,
+      "in_article_url": null,
+      "out_article_url": null,
+      "in_article_title": null,
+      "out_article_title": null,
+      "source_link_status": "no_link",
+      "data_source": 0,
+      "publisher_id": 202650,
+      "relation_id": 0,
+      "ai_flag": 0,
+      "platform_product_line": null,
+      "mapping_status": "unmapped",
+      "quality_flags": [
+        "source_link_missing"
+      ]
+    },
+    {
+      "news_id": "5005942",
+      "published_at": "2026-11-24T10:04:00.000Z",
+      "published_at_ms": 1795514640000,
+      "timezone": "Asia/Shanghai",
+      "content_text": "优质碳酸锂市场价格区间在91000-92000元/吨，行情较上一个工作日下调250元，电池级碳酸锂市场价格区间在89000-92000元/吨，行情较上一个工作日下调250元，工业级碳酸锂市场价格区间在87000-90000元/吨，行情较上一个工作日下调250元。锂矿端：价格区间震荡，锂盐厂询货采购动作开始活跃，开始对明年1月的备库，贸易商港口可售库存偏低，加工费稳定。四季度较三季度环增确定性高，但27年初津巴禁出口将带来供给扰动。锂盐端：今日锂盐成交为刚需采买，成交基差持稳。由于27Q1需求将显著环比下降，市场整体对未来价格呈悲观预期。需求端：碳酸锂采买方面，由于客供及之前价格下跌备库较多，铁锂厂散单采买需求减弱，在碳酸锂价格震荡时维持逢低刚需采买。11月部分企业订单有所下滑，加上企业有去库动作，预计十一月铁锂排产小幅走弱，且市场对后续需求预期较为悲观，关注订单是否出现继续下调情况。总结：碳酸锂价格持续区间震荡一个月，当前估值已反映了年底及27Q1需求预期走弱，往下需等待现实累库，向上暂无驱动。长期价格走势关注明年实际需求的预期差，储能的边际变化，锂矿实际能到港量，需进一步积累矛盾。",
+      "content_html": "优质碳酸锂市场价格区间在91000-92000元/吨，行情较上一个工作日下调250元，电池级碳酸锂市场价格区间在89000-92000元/吨，行情较上一个工作日下调250元，工业级碳酸锂市场价格区间在87000-90000元/吨，行情较上一个工作日下调250元。锂矿端：价格区间震荡，锂盐厂询货采购动作开始活跃，开始对明年1月的备库，贸易商港口可售库存偏低，加工费稳定。四季度较三季度环增确定性高，但27年初津巴禁出口将带来供给扰动。锂盐端：今日锂盐成交为刚需采买，成交基差持稳。由于27Q1需求将显著环比下降，市场整体对未来价格呈悲观预期。需求端：碳酸锂采买方面，由于客供及之前价格下跌备库较多，铁锂厂散单采买需求减弱，在碳酸锂价格震荡时维持逢低刚需采买。11月部分企业订单有所下滑，加上企业有去库动作，预计十一月铁锂排产小幅走弱，且市场对后续需求预期较为悲观，关注订单是否出现继续下调情况。总结：碳酸锂价格持续区间震荡一个月，当前估值已反映了年底及27Q1需求预期走弱，往下需等待现实累库，向上暂无驱动。长期价格走势关注明年实际需求的预期差，储能的边际变化，锂矿实际能到港量，需进一步积累矛盾。",
+      "raw_content": "优质碳酸锂市场价格区间在91000-92000元/吨，行情较上一个工作日下调250元，电池级碳酸锂市场价格区间在89000-92000元/吨，行情较上一个工作日下调250元，工业级碳酸锂市场价格区间在87000-90000元/吨，行情较上一个工作日下调250元。锂矿端：价格区间震荡，锂盐厂询货采购动作开始活跃，开始对明年1月的备库，贸易商港口可售库存偏低，加工费稳定。四季度较三季度环增确定性高，但27年初津巴禁出口将带来供给扰动。锂盐端：今日锂盐成交为刚需采买，成交基差持稳。由于27Q1需求将显著环比下降，市场整体对未来价格呈悲观预期。需求端：碳酸锂采买方面，由于客供及之前价格下跌备库较多，铁锂厂散单采买需求减弱，在碳酸锂价格震荡时维持逢低刚需采买。11月部分企业订单有所下滑，加上企业有去库动作，预计十一月铁锂排产小幅走弱，且市场对后续需求预期较为悲观，关注订单是否出现继续下调情况。总结：碳酸锂价格持续区间震荡一个月，当前估值已反映了年底及27Q1需求预期走弱，往下需等待现实累库，向上暂无驱动。长期价格走势关注明年实际需求的预期差，储能的边际变化，锂矿实际能到港量，需进一步积累矛盾。",
+      "category": {
+        "id": 14,
+        "name": "14"
+      },
+      "section": {
+        "id": 8,
+        "name": "8"
+      },
+      "products": [
+        {
+          "id": "110201",
+          "name": "碳酸锂",
+          "source": "relationBreed"
+        },
+        {
+          "id": "11020301",
+          "name": "锂辉石",
+          "source": "relationBreed"
+        },
+        {
+          "id": "锂矿",
+          "name": "锂矿",
+          "source": "breedTag"
+        },
+        {
+          "id": "磷酸铁锂",
+          "name": "磷酸铁锂",
+          "source": "breedTag"
+        }
+      ],
+      "regions": [],
+      "source_name": "我的钢铁网(Mysteel)",
+      "source_url": "http://xny.mysteel.com/a/26112418/233F999EEAC15073.html",
+      "in_article_url": "http://xny.mysteel.com/a/26112418/233F999EEAC15073.html",
+      "out_article_url": null,
+      "in_article_title": "Mysteel：碳酸锂日评（20261124）",
+      "out_article_title": null,
+      "source_link_status": "article_link",
+      "data_source": 1,
+      "publisher_id": 227077,
+      "relation_id": 46527460,
+      "ai_flag": 0,
+      "platform_product_line": null,
+      "mapping_status": "ambiguous",
+      "quality_flags": []
+    },
+    {
+      "news_id": "5005941",
+      "published_at": "2026-11-24T10:01:00.000Z",
+      "published_at_ms": 1795514460000,
+      "timezone": "Asia/Shanghai",
+      "content_text": "11月24日上海钢筋网片价格止跌回升，主流报价涨10元至3700元/吨附近。回踩确认后终端采购放量，贸易商惜售，钢厂挺价。预计明日稳中偏强运行，主流区间3690-3710元/吨，高位成交仍需验证。",
+      "content_html": "11月24日上海钢筋网片价格止跌回升，主流报价涨10元至3700元/吨附近。回踩确认后终端采购放量，贸易商惜售，钢厂挺价。预计明日稳中偏强运行，主流区间3690-3710元/吨，高位成交仍需验证。",
+      "raw_content": "11月24日上海钢筋网片价格止跌回升，主流报价涨10元至3700元/吨附近。回踩确认后终端采购放量，贸易商惜售，钢厂挺价。预计明日稳中偏强运行，主流区间3690-3710元/吨，高位成交仍需验证。",
+      "category": {
+        "id": 2,
+        "name": "2"
+      },
+      "section": {
+        "id": 6,
+        "name": "6"
+      },
+      "products": [
+        {
+          "id": "01010105",
+          "name": "焊接钢筋网片",
+          "source": "relationBreed"
+        },
+        {
+          "id": "010110",
+          "name": "建筑制品",
+          "source": "relationBreed"
+        },
+        {
+          "id": "钢筋网片",
+          "name": "钢筋网片",
+          "source": "breedTag"
+        }
+      ],
+      "regions": [
+        {
+          "id": "010101",
+          "name": "上海"
+        }
+      ],
+      "source_name": "我的钢铁网(Mysteel)",
+      "source_url": "http://gc.mysteel.com/a/26112418/9C01B318FDA7798A.html",
+      "in_article_url": "http://gc.mysteel.com/a/26112418/9C01B318FDA7798A.html",
+      "out_article_url": null,
+      "in_article_title": "Mysteel日报：今日上海市场钢筋网片价格小幅上涨运行",
+      "out_article_title": null,
+      "source_link_status": "article_link",
+      "data_source": 1,
+      "publisher_id": 224418,
+      "relation_id": 46527445,
+      "ai_flag": 0,
+      "platform_product_line": null,
+      "mapping_status": "ambiguous",
+      "quality_flags": []
+    },
+    {
+      "news_id": "5005940",
+      "published_at": "2026-11-24T09:57:00.674Z",
+      "published_at_ms": 1795514220674,
+      "timezone": "Asia/Shanghai",
+      "content_text": "据调研统计，11月24日 华北地区10家主流焊管生产企业今日出库量共计 35790吨，较上一交易日 增加11554吨，增幅为 47.67%。",
+      "content_html": "据调研统计，11月24日 华北地区10家主流焊管生产企业今日出库量共计 35790吨，较上一交易日 增加11554吨，增幅为 47.67%。&nbsp;",
+      "raw_content": "据调研统计，11月24日 华北地区10家主流焊管生产企业今日出库量共计 35790吨，较上一交易日 增加11554吨，增幅为 47.67%。&nbsp;",
+      "category": {
+        "id": 2,
+        "name": "2"
+      },
+      "section": {
+        "id": 4,
+        "name": "4"
+      },
+      "products": [
+        {
+          "id": "010109",
+          "name": "钢管",
+          "source": "relationBreed"
+        },
+        {
+          "id": "焊管",
+          "name": "焊管",
+          "source": "breedTag"
+        }
+      ],
+      "regions": [],
+      "source_name": null,
+      "source_url": null,
+      "in_article_url": null,
+      "out_article_url": null,
+      "in_article_title": null,
+      "out_article_title": null,
+      "source_link_status": "no_link",
+      "data_source": 0,
+      "publisher_id": 208846,
+      "relation_id": 0,
+      "ai_flag": 0,
+      "platform_product_line": null,
+      "mapping_status": "ambiguous",
+      "quality_flags": [
+        "source_link_missing"
+      ]
+    },
+    {
+      "news_id": "5005939",
+      "published_at": "2026-11-24T09:54:00.000Z",
+      "published_at_ms": 1795514040000,
+      "timezone": "Asia/Shanghai",
+      "content_text": "浙江发布做好2027年度电力市场化交易通知，提出年度集中竞价按月开展，送浙煤电及非市场化上网电量按预测全年电量60%投放，依2026年季度用电占比分解。电网代理购电申报量为预测市场化采购电量50%，作为价格接受者出清。",
+      "content_html": "浙江发布做好2027年度电力市场化交易通知，提出年度集中竞价按月开展，送浙煤电及非市场化上网电量按预测全年电量60%投放，依2026年季度用电占比分解。电网代理购电申报量为预测市场化采购电量50%，作为价格接受者出清。",
+      "raw_content": "浙江发布做好2027年度电力市场化交易通知，提出年度集中竞价按月开展，送浙煤电及非市场化上网电量按预测全年电量60%投放，依2026年季度用电占比分解。电网代理购电申报量为预测市场化采购电量50%，作为价格接受者出清。",
+      "category": {
+        "id": 18,
+        "name": "18"
+      },
+      "section": {
+        "id": 8,
+        "name": "8"
+      },
+      "products": [],
+      "regions": [],
+      "source_name": "浙江电力交易中心",
+      "source_url": "http://news.mysteel.com/a/26112417/4826F6BC18B05FC1.html",
+      "in_article_url": "http://news.mysteel.com/a/26112417/4826F6BC18B05FC1.html",
+      "out_article_url": null,
+      "in_article_title": "浙江发布关于做好2027年度浙江省电力市场化交易相关工作的通知",
+      "out_article_title": null,
+      "source_link_status": "article_link",
+      "data_source": 1,
+      "publisher_id": 216059,
+      "relation_id": 46527409,
+      "ai_flag": 0,
+      "platform_product_line": null,
+      "mapping_status": "unmapped",
+      "quality_flags": []
+    },
+    {
+      "news_id": "5005938",
+      "published_at": "2026-11-24T09:53:00.000Z",
+      "published_at_ms": 1795513980000,
+      "timezone": "Asia/Shanghai",
+      "content_text": "11月24日国内建筑钢材价格稳中偏强运行，市场成交一般。早盘期螺高开高走，全国建筑钢材现货报价多数暂稳，部分探涨10元/吨，市场观望情绪浓厚，成交多集中于低位资源；午后盘面继续上行，低位资源有所消失，当涨价后下游承接不佳，多以少数刚需采购为主。北方气温快速下降、工地施工进度放缓，需求季节性转弱特征逐步显现。短期钢厂普遍亏损，亏损幅度连续收窄但尚未转正，成本支撑仍较稳固；但淡季需求走弱趋势难逆，市场对高价资源接受度有限，预计明日建筑钢材现货价格或窄幅震荡运行。全国建筑钢材成交量89508吨，日环比减5.9%，周环比增18.85%。",
+      "content_html": "11月24日国内建筑钢材价格稳中偏强运行，市场成交一般。早盘期螺高开高走，全国建筑钢材现货报价多数暂稳，部分探涨10元/吨，市场观望情绪浓厚，成交多集中于低位资源；午后盘面继续上行，低位资源有所消失，当涨价后下游承接不佳，多以少数刚需采购为主。北方气温快速下降、工地施工进度放缓，需求季节性转弱特征逐步显现。短期钢厂普遍亏损，亏损幅度连续收窄但尚未转正，成本支撑仍较稳固；但淡季需求走弱趋势难逆，市场对高价资源接受度有限，预计明日建筑钢材现货价格或窄幅震荡运行。全国建筑钢材成交量89508吨，日环比减5.9%，周环比增18.85%。",
+      "raw_content": "11月24日国内建筑钢材价格稳中偏强运行，市场成交一般。早盘期螺高开高走，全国建筑钢材现货报价多数暂稳，部分探涨10元/吨，市场观望情绪浓厚，成交多集中于低位资源；午后盘面继续上行，低位资源有所消失，当涨价后下游承接不佳，多以少数刚需采购为主。北方气温快速下降、工地施工进度放缓，需求季节性转弱特征逐步显现。短期钢厂普遍亏损，亏损幅度连续收窄但尚未转正，成本支撑仍较稳固；但淡季需求走弱趋势难逆，市场对高价资源接受度有限，预计明日建筑钢材现货价格或窄幅震荡运行。全国建筑钢材成交量89508吨，日环比减5.9%，周环比增18.85%。",
+      "category": {
+        "id": 2,
+        "name": "2"
+      },
+      "section": {
+        "id": 6,
+        "name": "6"
+      },
+      "products": [
+        {
+          "id": "01010101",
+          "name": "螺纹钢",
+          "source": "relationBreed"
+        },
+        {
+          "id": "01010102",
+          "name": "线材",
+          "source": "relationBreed"
+        },
+        {
+          "id": "01010103",
+          "name": "盘螺",
+          "source": "relationBreed"
+        },
+        {
+          "id": "建筑钢材",
+          "name": "建筑钢材",
+          "source": "breedTag"
+        }
+      ],
+      "regions": [
+        {
+          "id": "01",
+          "name": "国内"
+        },
+        {
+          "id": "0101",
+          "name": "华东"
+        },
+        {
+          "id": "010101",
+          "name": "上海"
+        },
+        {
+          "id": "010102",
+          "name": "山东"
+        },
+        {
+          "id": "010103",
+          "name": "江苏"
+        },
+        {
+          "id": "010104",
+          "name": "浙江"
+        },
+        {
+          "id": "010107",
+          "name": "安徽"
+        },
+        {
+          "id": "010201",
+          "name": "广东"
+        },
+        {
+          "id": "0103",
+          "name": "华中"
+        },
+        {
+          "id": "0104",
+          "name": "华北"
+        },
+        {
+          "id": "0105",
+          "name": "东北"
+        },
+        {
+          "id": "0106",
+          "name": "西南"
+        },
+        {
+          "id": "0107",
+          "name": "西北"
+        }
+      ],
+      "source_name": "我的钢铁网(Mysteel)",
+      "source_url": "http://gc.mysteel.com/a/26112417/03A3AC825EC50DC3.html",
+      "in_article_url": "http://gc.mysteel.com/a/26112417/03A3AC825EC50DC3.html",
+      "out_article_url": null,
+      "in_article_title": "Mysteel日报：全国建筑钢材价格稳中偏强运行 市场观望情绪浓厚",
+      "out_article_title": null,
+      "source_link_status": "article_link",
+      "data_source": 1,
+      "publisher_id": 225260,
+      "relation_id": 46527405,
+      "ai_flag": 0,
+      "platform_product_line": null,
+      "mapping_status": "ambiguous",
+      "quality_flags": []
+    },
+    {
+      "news_id": "5005937",
+      "published_at": "2026-11-24T09:50:00.000Z",
+      "published_at_ms": 1795513800000,
+      "timezone": "Asia/Shanghai",
+      "content_text": "《2027年浙江电力现货市场运行方案》印发，明确统调及非统调煤电、水电、新能源、储能及工商业用户参与现货市场，适时探索引入虚拟电厂。批发用户以报量不报价方式参与，零售用户由售电公司代理申报。",
+      "content_html": "《2027年浙江电力现货市场运行方案》印发，明确统调及非统调煤电、水电、新能源、储能及工商业用户参与现货市场，适时探索引入虚拟电厂。批发用户以报量不报价方式参与，零售用户由售电公司代理申报。",
+      "raw_content": "《2027年浙江电力现货市场运行方案》印发，明确统调及非统调煤电、水电、新能源、储能及工商业用户参与现货市场，适时探索引入虚拟电厂。批发用户以报量不报价方式参与，零售用户由售电公司代理申报。",
+      "category": {
+        "id": 18,
+        "name": "18"
+      },
+      "section": {
+        "id": 8,
+        "name": "8"
+      },
+      "products": [],
+      "regions": [],
+      "source_name": "浙江电力交易中心",
+      "source_url": "http://news.mysteel.com/a/26112417/18B4A678312561AA.html",
+      "in_article_url": "http://news.mysteel.com/a/26112417/18B4A678312561AA.html",
+      "out_article_url": null,
+      "in_article_title": "《2027年浙江电力现货市场运行方案》印发：适时探索引入虚拟电厂等新型主体参与",
+      "out_article_title": null,
+      "source_link_status": "article_link",
+      "data_source": 1,
+      "publisher_id": 216059,
+      "relation_id": 46527393,
+      "ai_flag": 0,
+      "platform_product_line": null,
+      "mapping_status": "unmapped",
+      "quality_flags": []
+    },
+    {
+      "news_id": "5005936",
+      "published_at": "2026-11-24T09:50:00.000Z",
+      "published_at_ms": 1795513800000,
+      "timezone": "Asia/Shanghai",
+      "content_text": "11月24日湖南建筑钢材价格涨跌互现，长沙主流螺纹钢3110-3120元/吨。早盘期螺提振报价上调，午后市场趋稳，成交清淡，终端刚需为主。预计明日价格盘整运行。目前武汉、南昌等地价差变化不大。",
+      "content_html": "11月24日湖南建筑钢材价格涨跌互现，长沙主流螺纹钢3110-3120元/吨。早盘期螺提振报价上调，午后市场趋稳，成交清淡，终端刚需为主。预计明日价格盘整运行。目前武汉、南昌等地价差变化不大。",
+      "raw_content": "11月24日湖南建筑钢材价格涨跌互现，长沙主流螺纹钢3110-3120元/吨。早盘期螺提振报价上调，午后市场趋稳，成交清淡，终端刚需为主。预计明日价格盘整运行。目前武汉、南昌等地价差变化不大。",
+      "category": {
+        "id": 2,
+        "name": "2"
+      },
+      "section": {
+        "id": 6,
+        "name": "6"
+      },
+      "products": [
+        {
+          "id": "010101",
+          "name": "建筑钢材",
+          "source": "relationBreed"
+        },
+        {
+          "id": "螺纹钢",
+          "name": "螺纹钢",
+          "source": "breedTag"
+        }
+      ],
+      "regions": [
+        {
+          "id": "01030301",
+          "name": "长沙"
+        }
+      ],
+      "source_name": "我的钢铁网(Mysteel)",
+      "source_url": "http://gc.mysteel.com/a/26112417/3AACBA96EE609796.html",
+      "in_article_url": "http://gc.mysteel.com/a/26112417/3AACBA96EE609796.html",
+      "out_article_url": null,
+      "in_article_title": "Mysteel日报：湖南建筑钢材",
+      "out_article_title": null,
+      "source_link_status": "article_link",
+      "data_source": 1,
+      "publisher_id": 208561,
+      "relation_id": 46527389,
+      "ai_flag": 0,
+      "platform_product_line": null,
+      "mapping_status": "ambiguous",
+      "quality_flags": []
+    },
+    {
+      "news_id": "5005935",
+      "published_at": "2026-11-24T09:48:00.000Z",
+      "published_at_ms": 1795513680000,
+      "timezone": "Asia/Shanghai",
+      "content_text": "24日国内主流焊管厂价格多数上涨20元/吨。受期市震荡走高影响，商家心态修复，但受天气转冷及原料松动制约，交投清淡。鉴于厂商库存低位，下行空间有限，预计明日管厂价格将以震荡运行为主。",
+      "content_html": "24日国内主流焊管厂价格多数上涨20元/吨。受期市震荡走高影响，商家心态修复，但受天气转冷及原料松动制约，交投清淡。鉴于厂商库存低位，下行空间有限，预计明日管厂价格将以震荡运行为主。",
+      "raw_content": "24日国内主流焊管厂价格多数上涨20元/吨。受期市震荡走高影响，商家心态修复，但受天气转冷及原料松动制约，交投清淡。鉴于厂商库存低位，下行空间有限，预计明日管厂价格将以震荡运行为主。",
+      "category": {
+        "id": 2,
+        "name": "2"
+      },
+      "section": {
+        "id": 6,
+        "name": "6"
+      },
+      "products": [
+        {
+          "id": "010109",
+          "name": "钢管",
+          "source": "relationBreed"
+        },
+        {
+          "id": "焊管",
+          "name": "焊管",
+          "source": "breedTag"
+        }
+      ],
+      "regions": [],
+      "source_name": "我的钢铁网(Mysteel)",
+      "source_url": "http://gg.mysteel.com/a/26112417/C4444BD750B15BEC.html",
+      "in_article_url": "http://gg.mysteel.com/a/26112417/C4444BD750B15BEC.html",
+      "out_article_url": null,
+      "in_article_title": "Mysteel快讯：24日国内主流焊管厂价格调整汇总",
+      "out_article_title": null,
+      "source_link_status": "article_link",
+      "data_source": 1,
+      "publisher_id": 196767,
+      "relation_id": 46527384,
+      "ai_flag": 0,
+      "platform_product_line": null,
+      "mapping_status": "ambiguous",
+      "quality_flags": []
+    },
+    {
+      "news_id": "5005934",
+      "published_at": "2026-11-24T09:46:00.000Z",
+      "published_at_ms": 1795513560000,
+      "timezone": "Asia/Shanghai",
+      "content_text": "《2027年浙江省电力市场化交易方案》印发，明确全省工商业用户全部参与市场化交易，分为直接和间接参与两种方式。原则上中长期交易电量占比不低于90%，煤电交易价格上下浮动范围不超过20%。现货市场实施二级限价机制",
+      "content_html": "《2027年浙江省电力市场化交易方案》印发，明确全省工商业用户全部参与市场化交易，分为直接和间接参与两种方式。原则上中长期交易电量占比不低于90%，煤电交易价格上下浮动范围不超过20%。现货市场实施二级限价机制",
+      "raw_content": "《2027年浙江省电力市场化交易方案》印发，明确全省工商业用户全部参与市场化交易，分为直接和间接参与两种方式。原则上中长期交易电量占比不低于90%，煤电交易价格上下浮动范围不超过20%。现货市场实施二级限价机制",
+      "category": {
+        "id": 18,
+        "name": "18"
+      },
+      "section": {
+        "id": 8,
+        "name": "8"
+      },
+      "products": [],
+      "regions": [],
+      "source_name": "浙江电力交易中心",
+      "source_url": "http://news.mysteel.com/a/26112417/8D72248A431E0810.html",
+      "in_article_url": "http://news.mysteel.com/a/26112417/8D72248A431E0810.html",
+      "out_article_url": null,
+      "in_article_title": "《2027年浙江省电力市场化交易方案》印发：全省工商业用户全部参与市场化交易",
+      "out_article_title": null,
+      "source_link_status": "article_link",
+      "data_source": 1,
+      "publisher_id": 216059,
+      "relation_id": 46527376,
+      "ai_flag": 0,
+      "platform_product_line": null,
+      "mapping_status": "unmapped",
+      "quality_flags": []
+    },
     {
       "news_id": "5005933",
       "published_at": "2026-11-24T09:44:00.000Z",
@@ -108,7 +1558,7 @@
       "source_url": "http://gc.mysteel.com/a/26112417/4B83ABC84204C49A.html",
       "in_article_url": "http://gc.mysteel.com/a/26112417/4B83ABC84204C49A.html",
       "out_article_url": null,
-      "in_article_title": "Mysteel日报：江西建筑钢材价格平稳运行 上涨动力相对不足",
+      "in_article_title": "Mysteel日报：江西建筑钢材价格平稳运行 价格向上动力不足",
       "out_article_title": null,
       "source_link_status": "article_link",
       "data_source": 1,
@@ -150024,12 +151474,12 @@
   ],
   "quality": {
     "raw_count": 2900,
-    "accepted_count": 2831,
-    "rejected_count": 69,
+    "accepted_count": 2859,
+    "rejected_count": 41,
     "deduped_count": 0,
-    "missing_source_link_count": 2240,
-    "missing_product_count": 78,
-    "malformed_content_count": 69,
+    "missing_source_link_count": 2260,
+    "missing_product_count": 83,
+    "malformed_content_count": 41,
     "duplicate_group_count": 0,
     "warnings": [
       "API 报告总量超过本次分页采集量；快照仅覆盖目标日期窗口，需按分类/地区拆分请求补全。"
